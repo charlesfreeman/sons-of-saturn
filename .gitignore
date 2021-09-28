@@ -1,0 +1,5 @@
+# ignore these files, as recommended by the godot docs
+.import/
+*.translation
+export_presets.cfg
+.mono/

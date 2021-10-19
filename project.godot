@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Twine dialogue system"
-run/main_scene="res://Node2D.tscn"
+run/main_scene="res://dialogue_system/Node2D.tscn"
 
 [input]
 

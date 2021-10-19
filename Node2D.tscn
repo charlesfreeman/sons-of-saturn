@@ -1,0 +1,123 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://dialogue_system/VBoxContainer.gd" type="Script" id=1]
+[ext_resource path="res://dialogue_system/Button.gd" type="Script" id=2]
+[ext_resource path="res://dialogue_system/ContinueButton.gd" type="Script" id=3]
+
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 504.0
+margin_bottom = 256.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
+margin_right = 504.0
+margin_bottom = 160.0
+size_flags_vertical = 3
+bbcode_enabled = true
+
+[node name="ContinueButton" type="Button" parent="VBoxContainer"]
+margin_top = 164.0
+margin_right = 504.0
+margin_bottom = 184.0
+script = ExtResource( 3 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ContinueButton"]
+anchor_right = 0.3
+anchor_bottom = 0.778
+margin_top = -164.0
+margin_right = -111.2
+margin_bottom = -139.56
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button1" type="Button" parent="VBoxContainer" groups=[
+"buttons",
+]]
+margin_top = 188.0
+margin_right = 504.0
+margin_bottom = 208.0
+focus_neighbour_left = NodePath("../Button2")
+focus_neighbour_bottom = NodePath("../Button2")
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/Button1"]
+margin_right = 502.0
+margin_bottom = 18.0
+mouse_filter = 1
+size_flags_horizontal = 3
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="VBoxContainer" groups=[
+"buttons",
+]]
+margin_top = 212.0
+margin_right = 504.0
+margin_bottom = 232.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/Button2"]
+margin_right = 501.0
+margin_bottom = 18.0
+mouse_filter = 1
+size_flags_horizontal = 3
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="VBoxContainer" groups=[
+"buttons",
+]]
+margin_top = 236.0
+margin_right = 504.0
+margin_bottom = 256.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/Button3"]
+margin_right = 499.0
+margin_bottom = 18.0
+mouse_filter = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="VBoxContainer/ContinueButton" to="VBoxContainer" method="_on_ContinueButton_pressed"]
+[connection signal="focus_entered" from="VBoxContainer/Button1" to="VBoxContainer" method="_on_Button1_focus_entered"]
+[connection signal="focus_exited" from="VBoxContainer/Button1" to="VBoxContainer" method="_on_Button1_focus_exited"]
+[connection signal="mouse_entered" from="VBoxContainer/Button1" to="VBoxContainer" method="_on_Button1_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/Button1" to="VBoxContainer" method="_on_Button1_pressed"]
+[connection signal="focus_entered" from="VBoxContainer/Button2" to="VBoxContainer" method="_on_Button2_focus_entered"]
+[connection signal="focus_exited" from="VBoxContainer/Button2" to="VBoxContainer" method="_on_Button2_focus_exited"]
+[connection signal="mouse_entered" from="VBoxContainer/Button2" to="VBoxContainer" method="_on_Button2_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="VBoxContainer" method="_on_Button1_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="VBoxContainer" method="_on_Button2_pressed"]
+[connection signal="focus_entered" from="VBoxContainer/Button3" to="VBoxContainer" method="_on_Button3_focus_entered"]
+[connection signal="focus_exited" from="VBoxContainer/Button3" to="VBoxContainer" method="_on_Button3_focus_exited"]
+[connection signal="mouse_entered" from="VBoxContainer/Button3" to="VBoxContainer" method="_on_Button3_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="VBoxContainer" method="_on_Button3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="VBoxContainer" method="_on_Button1_pressed"]

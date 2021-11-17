@@ -3,7 +3,7 @@
 [ext_resource path="res://dialogue_system/VBoxContainer.gd" type="Script" id=1]
 [ext_resource path="res://fonts/PTSerifReg48.tres" type="DynamicFont" id=2]
 [ext_resource path="res://dialogue_system/ContinueButton.gd" type="Script" id=3]
-[ext_resource path="res://DialogueOption.tscn" type="PackedScene" id=4]
+[ext_resource path="res://dialogue_system/DialogueOption.tscn" type="PackedScene" id=4]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0

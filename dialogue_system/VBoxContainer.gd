@@ -17,23 +17,24 @@ var link_names
 var passage_index = 0
 var paragraph_array
 
+# dict for associating character names with colors for dialogue box
+var char_colors = {"Wigley": "aqua", "Amelie": "red", "Stalker": "red"}
+# for keeping track of current character speaking
+var current_char: String = "None"
+
 func _ready():
-	# Initialize the script
-	#Twison.parse_file(scriptPath, funcref(Twison, "link_filter_bbcode"))
 	Twison.parse_file(scriptPath)
 
 	self.buttons_array = get_tree().get_nodes_in_group("buttons")
 	$ContinueButton.hide()
 	var starting_node = Twison.get_starting_node()
-	# Print some info about the story
-	print("Story name: ", Twison.get_story_name())
-	print("Starting node: ", starting_node)
 	# Show first passage in our RichTextLabel 
 	self._load_next_block(starting_node)
 
 
+# handles setting up next twison passage and corresponding links
 func _load_next_block(name):
-	print("next_chapter: ", name)
+	# extract the next chapter using the identifier
 	var next_chapter
 	if typeof(name) == TYPE_STRING:
 		next_chapter = Twison.get_passage_by_name(name)
@@ -42,11 +43,16 @@ func _load_next_block(name):
 	else:
 		assert(false, "Passage identifier name neither a string nor an int")
 		
-	self.link_names = Twison.get_passage_link_names(next_chapter)
+	# get the links from the chapter
+	self.link_names = Twison.get_passage_links(next_chapter)
+	print("link names: ", self.link_names)
+	# need to call twice to have single delimiting line between paragraphs
 	$RichTextLabel.newline()
 	$RichTextLabel.newline()
+	# extract text from the chapter and split based on newlines
 	var np_text = next_chapter["text"]
 	self.paragraph_array = np_text.split("\n")
+	# convoluted way of removing the null entries
 	var indices_to_cut = []
 	for i in range(self.paragraph_array.size()):
 		if self.paragraph_array[i] == "":
@@ -55,118 +61,125 @@ func _load_next_block(name):
 	for index in indices_to_cut:
 		self.paragraph_array.remove(index)
 	var num_paragraphs = self.paragraph_array.size()
-	# $RichTextLabel.append_bbcode("[indent]"+self.paragraph_array[0]+"[/indent]")
 	self._load_paragraph(self.paragraph_array[0])
 	if num_paragraphs == 1:
 		self._display_buttons()
-		$Button1.release_focus()
-		$Button1.grab_focus()
+		$Option1.release_focus()
+		$Option1.grab_focus()
 	else:
+		self._hide_buttons()
+		$ContinueButton.load_block_mode = false
 		$ContinueButton.show()
+		$ContinueButton.grab_focus()
 
 
 func _load_paragraph(paragraph):
-		if ":" in paragraph:
-			var para_array = paragraph.split(":")
-			var char_name = para_array[0]
-			var text = para_array[1]
-			var line_length = 80
-			$RichTextLabel.append_bbcode("\n[color=aqua]"+char_name+"[/color]")
-			if text.length() < line_length:
-				$RichTextLabel.append_bbcode("\n[indent]"+text+"[/indent]")
-			else:
-				var index = line_length
-				while index < text.length():
-					while text[index] != " ":
-						index -= 1
-					index += 1
-					text = text.insert(index, "\n")
-					index += 1
-					print("index:")
-					print(text[index])
-					index += 1
-					index += line_length
-				$RichTextLabel.append_bbcode("\n[indent]"+text+"[/indent]")
-			print("hi there"[2] == " ")
-		else:
-			$RichTextLabel.append_bbcode("\n[indent]"+paragraph+"[/indent]")
-	
+	var para_array
+	var char_name
+	var text
+	if ":" in paragraph:
+		para_array = paragraph.split(":")
+		char_name = para_array[0]
+		text = para_array[1]
+		if char_name != self.current_char:
+			self.current_char = char_name
+			var char_color = self.char_colors[char_name]
+			$RichTextLabel.append_bbcode("\n[color=%s]"%char_color+char_name+"[/color]")
+	else:
+		text = paragraph
+	# likely need to adjust this once dims settled
+	var line_length = 80
+	if text.length() < line_length:
+		$RichTextLabel.append_bbcode("\n[indent]"+text+"[/indent]")
+	else:
+		var index = line_length
+		while index < text.length():
+			while text[index] != " ":
+				index -= 1
+			index += 1
+			text = text.insert(index, "\n")
+			index += 1
+			index += 1
+			index += line_length
+		$RichTextLabel.append_bbcode("\n[indent]"+text+"[/indent]")
+	$RichTextLabel.newline()
 
 
 func _display_buttons():
-	# if this is being called we can hide the continue button
-	$ContinueButton.hide()
-	
 	var num_buttons_to_show = len(self.link_names)
-	if num_buttons_to_show < self.num_buttons_displayed:
-		for i in range(num_buttons_to_show, self.max_num_buttons):
-			self.buttons_array[i].hide()
-	elif num_buttons_to_show > self.num_buttons_displayed:
-		for i in range(self.num_buttons_displayed, num_buttons_to_show):
-			self.buttons_array[i].show()
-	for i in range(num_buttons_to_show):
-		self.buttons_array[i].set_text(self.link_names[i])
-	self.num_buttons_displayed = num_buttons_to_show
-
-
-func _on_Button1_pressed():
-	self._load_next_block($Button1/RichTextLabel.text)
-
-
-func _on_Button2_pressed():
-	self._load_next_block($Button2/RichTextLabel.text)
-
-
-func _on_Button3_pressed():
-	self._load_next_block($Button3/RichTextLabel.text)
-
-
-func _on_Button1_focus_entered():
-	print("button 1 focus entered")
-	self.buttons_array[0].highlight_text()
-
-
-func _on_Button1_focus_exited():
-	print("focus exited")
-	self.buttons_array[0].dehighlight_text()
-
-
-func _on_Button2_focus_entered():
-	print("button 2 focus entered")
-	self.buttons_array[1].highlight_text()
-
-
-func _on_Button2_focus_exited():
-	print("focus 2 exited")
-	self.buttons_array[1].dehighlight_text()
-
-
-func _on_Button3_focus_entered():
-	print("button 3 focus entered")
-	self.buttons_array[2].highlight_text()
-
-
-func _on_Button3_focus_exited():
-	print("focus 3 exited")
-	self.buttons_array[2].dehighlight_text()
-
-
-func _on_Button1_mouse_entered():
-	self.buttons_array[0].grab_focus()
-
-
-func _on_Button2_mouse_entered():
-	self.buttons_array[1].grab_focus()
 	
+	if num_buttons_to_show == 1:
+		# if only one link want continue button to take over
+		# hide other buttons, set to load_block_mode, call set_next_passage
+		self._hide_buttons()
+		$ContinueButton.load_block_mode = true
+		var button_text = self.link_names[0]
+		if "->" in button_text:
+			print("splitting link")
+			var button_text_array = button_text.split("->")
+			$ContinueButton.set_next_passage(button_text_array[1])
+		else:
+			$ContinueButton.set_next_passage(button_text)
+		$ContinueButton.show()
+	else:
+		$ContinueButton.hide()
+		
+		# make the correct number of buttons visible
+		if num_buttons_to_show < self.num_buttons_displayed:
+			for i in range(num_buttons_to_show, self.max_num_buttons):
+				self.buttons_array[i].hide()
+		elif num_buttons_to_show > self.num_buttons_displayed:
+			for i in range(self.num_buttons_displayed, num_buttons_to_show):
+				self.buttons_array[i].show()
+				
+		for i in range(num_buttons_to_show):
+			print("link names: ", self.link_names[i])
+			var button_text = self.link_names[i]
+			if "->" in button_text:
+				print("splitting link")
+				var button_text_array = button_text.split("->")
+				self.buttons_array[i].set_text(button_text_array[0])
+				self.buttons_array[i].set_next_passage(button_text_array[1])
+			else:
+				self.buttons_array[i].set_text(button_text)
 
-func _on_Button3_mouse_entered():
-	self.buttons_array[2].grab_focus()
+		self.num_buttons_displayed = num_buttons_to_show
+
+
+# specialty function needed in a few circumstances
+func _hide_buttons():
+	for i in range(self.max_num_buttons):
+		self.buttons_array[i].hide()
+		self.num_buttons_displayed = 0
+
+
+func _on_Option1_pressed():
+	self._load_next_block($Option1.get_next_passage())
+	
+	
+func _on_Option2_pressed():
+	self._load_next_block($Option2.get_next_passage())
+	
+	
+func _on_Option3_pressed():
+	self._load_next_block($Option3.get_next_passage())
 
 
 func _on_ContinueButton_pressed():
-	self.passage_index += 1
-	# $RichTextLabel.append_bbcode(self.paragraph_array[self.passage_index])
-	self._load_paragraph(self.paragraph_array[self.passage_index])
-	if self.passage_index == self.paragraph_array.size():
-		self._display_buttons()
+	# for connecting between twine cells with only one option
+	if $ContinueButton.load_block_mode:
+		self._load_next_block($ContinueButton.get_next_passage())
+	# for in between paragraphs separated by newlines
+	# does the labor of indexing through number of paragraphs in the cell, 
+	# and loads the buttons when it's time for the player to speak
+	else:
+		self.passage_index += 1
+		if self.passage_index == self.paragraph_array.size():
+			self.passage_index = 0
+			self._display_buttons()
+		else:
+			self._load_paragraph(self.paragraph_array[self.passage_index])
 	
+	
+
+

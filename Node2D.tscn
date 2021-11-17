@@ -4,7 +4,6 @@
 [ext_resource path="res://dialogue_system/Button.gd" type="Script" id=2]
 [ext_resource path="res://dialogue_system/ContinueButton.gd" type="Script" id=3]
 
-
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -119,5 +118,5 @@ __meta__ = {
 [connection signal="focus_entered" from="VBoxContainer/Button3" to="VBoxContainer" method="_on_Button3_focus_entered"]
 [connection signal="focus_exited" from="VBoxContainer/Button3" to="VBoxContainer" method="_on_Button3_focus_exited"]
 [connection signal="mouse_entered" from="VBoxContainer/Button3" to="VBoxContainer" method="_on_Button3_mouse_entered"]
-[connection signal="pressed" from="VBoxContainer/Button3" to="VBoxContainer" method="_on_Button3_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button3" to="VBoxContainer" method="_on_Button1_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="VBoxContainer" method="_on_Button3_pressed"]

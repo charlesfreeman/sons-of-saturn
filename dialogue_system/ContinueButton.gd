@@ -1,27 +1,37 @@
-extends Button
+extends TextureButton
 
-var button_text
+var button_text : String
+var next_passage : String
+var load_block_mode : bool = false
 
 
 # Hide button by default
 func _ready():
 	self.hide()
+	self.button_text = "\u00AC Continue"
 
 
 # Method to set the text of the button
 # Also stores text as a variable, for use in grabbing twison passages
-func set_text(text: String):
-	self.button_text = text
-	$RichTextLabel.set_bbcode(text)
-	
-	
-# highlight the focused text
-func highlight_text():
+func set_next_passage(text: String):
+	self.next_passage = text
+
+
+func get_next_passage() -> String:
+	return self.next_passage
+
+
+func _on_ContinueButton_focus_entered():
 	var highlighted_text = "[color=yellow]" + self.button_text + "[/color]"
-	$RichTextLabel.set_bbcode(highlighted_text)
+	print(highlighted_text)
+	$OptionText.set_bbcode(highlighted_text)
 
 
-# dehighlight the text when focus moved
-func dehighlight_text():
-	print("dehighlighting")
-	$RichTextLabel.set_bbcode(self.button_text)
+func _on_ContinueButton_focus_exited():
+	$OptionText.set_bbcode(self.button_text)
+
+
+func _on_ContinueButton_mouse_entered():
+	self.grab_focus()
+
+

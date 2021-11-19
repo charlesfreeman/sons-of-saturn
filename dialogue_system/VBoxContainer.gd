@@ -18,7 +18,7 @@ var passage_index = 0
 var paragraph_array
 
 # dict for associating character names with colors for dialogue box
-var char_colors = {"Wigley": "aqua", "Amelie": "red", "Stalker": "red"}
+var char_colors = {"Wigley": "aqua", "You": "red"}
 # for keeping track of current character speaking
 var current_char: String = "None"
 
@@ -47,8 +47,8 @@ func _load_next_block(name):
 	self.link_names = Twison.get_passage_links(next_chapter)
 	print("link names: ", self.link_names)
 	# need to call twice to have single delimiting line between paragraphs
-	$RichTextLabel.newline()
-	$RichTextLabel.newline()
+	# $RichTextLabel.newline()
+	# $RichTextLabel.newline()
 	# extract text from the chapter and split based on newlines
 	var np_text = next_chapter["text"]
 	self.paragraph_array = np_text.split("\n")
@@ -154,15 +154,49 @@ func _hide_buttons():
 
 
 func _on_Option1_pressed():
+	var you_text = "You:" + $Option1.get_text()
+	self._load_paragraph(you_text)
+	
+	var t = Timer.new()
+	t.set_wait_time(0.5)
+	t.set_one_shot(true)
+	self.add_child(t)
+	t.start()
+	yield(t, "timeout")
+	t.queue_free()
+		
 	self._load_next_block($Option1.get_next_passage())
 	
 	
 func _on_Option2_pressed():
+	var you_text = "You:" + $Option2.get_text()
+	self._load_paragraph(you_text)
+	
+	var t = Timer.new()
+	t.set_wait_time(0.5)
+	t.set_one_shot(true)
+	self.add_child(t)
+	t.start()
+	yield(t, "timeout")
+	t.queue_free()
+	
 	self._load_next_block($Option2.get_next_passage())
 	
 	
 func _on_Option3_pressed():
+	var you_text = "You:" + $Option3.get_text()
+	self._load_paragraph(you_text)
+	
+	var t = Timer.new()
+	t.set_wait_time(0.5)
+	t.set_one_shot(true)
+	self.add_child(t)
+	t.start()
+	yield(t, "timeout")
+	t.queue_free()
+	
 	self._load_next_block($Option3.get_next_passage())
+	$RichTextLabel.append_bbcode("\n[indent]"+$Option3.get_text()+"[/indent]")
 
 
 func _on_ContinueButton_pressed():

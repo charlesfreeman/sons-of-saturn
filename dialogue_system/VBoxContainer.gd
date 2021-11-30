@@ -16,9 +16,10 @@ var buttons_array
 var link_names
 var passage_index = 0
 var paragraph_array
+var stack = []
 
 # dict for associating character names with colors for dialogue box
-var char_colors = {"Wigley": "aqua", "You": "red"}
+var char_colors = {"Wigley": "aqua", "You": "red", "Georgia": "blue"}
 # for keeping track of current character speaking
 var current_char: String = "None"
 
@@ -46,9 +47,7 @@ func _load_next_block(name):
 	# get the links from the chapter
 	self.link_names = Twison.get_passage_links(next_chapter)
 	print("link names: ", self.link_names)
-	# need to call twice to have single delimiting line between paragraphs
-	# $RichTextLabel.newline()
-	# $RichTextLabel.newline()
+
 	# extract text from the chapter and split based on newlines
 	var np_text = next_chapter["text"]
 	self.paragraph_array = np_text.split("\n")
@@ -135,13 +134,7 @@ func _display_buttons():
 		for i in range(num_buttons_to_show):
 			print("link names: ", self.link_names[i])
 			var button_text = self.link_names[i]
-			if "->" in button_text:
-				print("splitting link")
-				var button_text_array = button_text.split("->")
-				self.buttons_array[i].set_text(button_text_array[0])
-				self.buttons_array[i].set_next_passage(button_text_array[1])
-			else:
-				self.buttons_array[i].set_text(button_text)
+			self.buttons_array[i].extract_text_and_modifiers(button_text)
 
 		self.num_buttons_displayed = num_buttons_to_show
 

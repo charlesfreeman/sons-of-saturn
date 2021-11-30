@@ -21,7 +21,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scriptPath = "res://infirmary/door_slam/door_slam_convo.json"
+scriptPath = "res://infirmary/log_book/log_book_convo.json"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
 margin_right = 5376.0

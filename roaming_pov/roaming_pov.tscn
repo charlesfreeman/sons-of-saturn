@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://images/stalker_kindergarten.jpg" type="Texture" id=1]
+[ext_resource path="res://roaming_pov/pop_up_dialogue.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 2005.89, 1502.35 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+size_flags_stretch_ratio = 5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PoV" type="TextureRect" parent="HBoxContainer"]
+margin_right = 4032.0
+margin_bottom = 3024.0
+rect_min_size = Vector2( 4032, 3024 )
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 1 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="HBoxContainer/PoV" groups=[
+"clickable_group",
+]]
+z_index = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HBoxContainer/PoV/Area2D"]
+polygon = PoolVector2Array( 754.493, 1270.81, 1000.1, 1324.2, 1085.53, 1564.47, 1245.71, 1697.96, 1256.39, 1778.05, 1154.94, 1863.48, 1085.53, 1916.87, 1405.89, 2285.29, 1534.04, 2205.2, 1555.4, 2317.32, 1459.29, 2397.41, 1352.5, 2408.09, 1315.13, 2466.83, 1208.34, 2472.16, 941.37, 2317.32, 845.262, 2306.64, 733.135, 2045.02, 669.063, 2290.63, 572.954, 2285.29, 546.258, 2103.75, 594.312, 1756.69, 508.882, 1511.08, 556.936, 1318.86 )
+
+[node name="FullRect" type="Area2D" parent="HBoxContainer/PoV"]
+z_index = -2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HBoxContainer/PoV/FullRect"]
+position = Vector2( 2020.55, 1514.53 )
+z_index = 2
+shape = SubResource( 1 )
+
+[node name="DollPopUp" parent="HBoxContainer/PoV" instance=ExtResource( 3 )]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 4036.0
+margin_right = 5376.0
+margin_bottom = 3024.0
+mouse_filter = 2
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="HBoxContainer/VBoxContainer"]
+margin_right = 1340.0
+margin_bottom = 1340.0
+rect_min_size = Vector2( 1340, 1340 )
+[connection signal="input_event" from="HBoxContainer/PoV/Area2D" to="HBoxContainer/PoV" method="_on_Area2D_input_event"]
+[connection signal="input_event" from="HBoxContainer/PoV/FullRect" to="HBoxContainer/PoV" method="_on_FullRect_input_event"]

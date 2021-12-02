@@ -23,6 +23,8 @@ var char_colors = {"Wigley": "aqua", "You": "red", "Georgia": "blue"}
 # for keeping track of current character speaking
 var current_char: String = "None"
 
+signal change_char(character)
+
 func _ready():
 	Twison.parse_file(scriptPath)
 
@@ -47,29 +49,41 @@ func _load_next_block(name):
 	# get the links from the chapter
 	self.link_names = Twison.get_passage_links(next_chapter)
 	print("link names: ", self.link_names)
+	
+	# mechanism to not repeat same text when returning from short loop
+	# hacky as hell but so is everything else
+	if not next_chapter in self.stack or len(self.link_names) == 1:
+		print("name not in stack")
+		self.stack.append(next_chapter)
 
-	# extract text from the chapter and split based on newlines
-	var np_text = next_chapter["text"]
-	self.paragraph_array = np_text.split("\n")
-	# convoluted way of removing the null entries
-	var indices_to_cut = []
-	for i in range(self.paragraph_array.size()):
-		if self.paragraph_array[i] == "":
-			indices_to_cut.append(i)
-	indices_to_cut.invert()
-	for index in indices_to_cut:
-		self.paragraph_array.remove(index)
-	var num_paragraphs = self.paragraph_array.size()
-	self._load_paragraph(self.paragraph_array[0])
-	if num_paragraphs == 1:
+		# extract text from the chapter and split based on newlines
+		var np_text = next_chapter["text"]
+		self.paragraph_array = np_text.split("\n")
+		# convoluted way of removing the null entries
+		var indices_to_cut = []
+		for i in range(self.paragraph_array.size()):
+			if self.paragraph_array[i] == "":
+				indices_to_cut.append(i)
+		indices_to_cut.invert()
+		for index in indices_to_cut:
+			self.paragraph_array.remove(index)
+		var num_paragraphs = self.paragraph_array.size()
+		self._load_paragraph(self.paragraph_array[0])
+		if num_paragraphs == 1:
+			self._display_buttons()
+			$Option1.release_focus()
+			$Option1.grab_focus()
+		else:
+			self._hide_buttons()
+			$ContinueButton.load_block_mode = false
+			$ContinueButton.show()
+			$ContinueButton.grab_focus()
+			
+	else:
 		self._display_buttons()
 		$Option1.release_focus()
 		$Option1.grab_focus()
-	else:
-		self._hide_buttons()
-		$ContinueButton.load_block_mode = false
-		$ContinueButton.show()
-		$ContinueButton.grab_focus()
+		
 
 
 func _load_paragraph(paragraph):
@@ -81,6 +95,7 @@ func _load_paragraph(paragraph):
 		char_name = para_array[0]
 		text = para_array[1]
 		if char_name != self.current_char:
+			emit_signal("change_char", char_name)
 			self.current_char = char_name
 			var char_color = self.char_colors[char_name]
 			$RichTextLabel.append_bbcode("\n[color=%s]"%char_color+char_name+"[/color]")

@@ -20,8 +20,8 @@ run/main_scene="res://dialogue_system/Dialogue.tscn"
 
 [display]
 
-window/size/width=5376
-window/size/height=3024
+window/size/width=3840
+window/size/height=2160
 window/stretch/mode="2d"
 window/stretch/aspect="expand"
 

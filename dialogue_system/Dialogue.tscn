@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://dialogue_system/VBoxContainer.gd" type="Script" id=1]
 [ext_resource path="res://fonts/PTSerifReg48.tres" type="DynamicFont" id=2]
 [ext_resource path="res://dialogue_system/ContinueButton.gd" type="Script" id=3]
 [ext_resource path="res://dialogue_system/DialogueOption.tscn" type="PackedScene" id=4]
+[ext_resource path="res://dialogue_system/AudioStreamPlayer.gd" type="Script" id=5]
+[ext_resource path="res://160678__bmaczero__typewriter.wav" type="AudioStream" id=6]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -24,38 +26,40 @@ __meta__ = {
 scriptPath = "res://infirmary/log_book/log_book_convo.json"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
-margin_right = 5376.0
-margin_bottom = 2208.0
+margin_right = 3840.0
+margin_bottom = 1344.0
 size_flags_vertical = 3
 custom_fonts/normal_font = ExtResource( 2 )
 bbcode_enabled = true
-scroll_following = true
 
 [node name="Option1" parent="VBoxContainer" groups=[
 "buttons",
 ] instance=ExtResource( 4 )]
-margin_top = 2212.0
-margin_bottom = 2412.0
+margin_top = 1348.0
+margin_right = 3840.0
+margin_bottom = 1548.0
 rect_min_size = Vector2( 0, 200 )
 
 [node name="Option2" parent="VBoxContainer" groups=[
 "buttons",
 ] instance=ExtResource( 4 )]
-margin_top = 2416.0
-margin_bottom = 2616.0
+margin_top = 1552.0
+margin_right = 3840.0
+margin_bottom = 1752.0
 rect_min_size = Vector2( 0, 200 )
 
 [node name="Option3" parent="VBoxContainer" groups=[
 "buttons",
 ] instance=ExtResource( 4 )]
-margin_top = 2620.0
-margin_bottom = 2820.0
+margin_top = 1756.0
+margin_right = 3840.0
+margin_bottom = 1956.0
 rect_min_size = Vector2( 0, 200 )
 
 [node name="ContinueButton" type="TextureButton" parent="VBoxContainer"]
-margin_top = 2824.0
-margin_right = 5376.0
-margin_bottom = 3024.0
+margin_top = 1960.0
+margin_right = 3840.0
+margin_bottom = 2160.0
 rect_min_size = Vector2( 0, 200 )
 script = ExtResource( 3 )
 
@@ -68,10 +72,16 @@ bbcode_enabled = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+script = ExtResource( 5 )
 [connection signal="pressed" from="VBoxContainer/Option1" to="VBoxContainer" method="_on_Option1_pressed"]
 [connection signal="pressed" from="VBoxContainer/Option2" to="VBoxContainer" method="_on_Option2_pressed"]
 [connection signal="pressed" from="VBoxContainer/Option3" to="VBoxContainer" method="_on_Option3_pressed"]
 [connection signal="focus_entered" from="VBoxContainer/ContinueButton" to="VBoxContainer/ContinueButton" method="_on_ContinueButton_focus_entered"]
 [connection signal="focus_exited" from="VBoxContainer/ContinueButton" to="VBoxContainer/ContinueButton" method="_on_ContinueButton_focus_exited"]
 [connection signal="mouse_entered" from="VBoxContainer/ContinueButton" to="VBoxContainer/ContinueButton" method="_on_ContinueButton_mouse_entered"]
+[connection signal="play_click" from="VBoxContainer/ContinueButton" to="AudioStreamPlayer" method="_on_ContinueButton_play_click"]
 [connection signal="pressed" from="VBoxContainer/ContinueButton" to="VBoxContainer" method="_on_ContinueButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/ContinueButton" to="VBoxContainer/ContinueButton" method="_on_ContinueButton_pressed"]

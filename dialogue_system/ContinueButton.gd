@@ -4,6 +4,7 @@ var button_text : String
 var next_passage : String
 var load_block_mode : bool = false
 
+signal play_click
 
 # Hide button by default
 func _ready():
@@ -35,3 +36,5 @@ func _on_ContinueButton_mouse_entered():
 	self.grab_focus()
 
 
+func _on_ContinueButton_pressed():
+	emit_signal("play_click")

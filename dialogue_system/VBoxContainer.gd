@@ -8,6 +8,11 @@ extends VBoxContainer
 
 onready var twison = preload("res://modules/twison-godot/twison_helper.gd")
 onready var Twison = twison.new()
+onready var text_box = $ScrollContainer/RichTextLabel
+onready var scroll_container = $ScrollContainer
+onready var tween = $Tween
+onready var scroll_bar = text_box.get_v_scroll()
+
 export(String, FILE, "*.json") var scriptPath = "res://dialogue_system/conversations/test_scene.json"
 
 var max_num_buttons = 3
@@ -30,9 +35,23 @@ func _ready():
 
 	self.buttons_array = get_tree().get_nodes_in_group("buttons")
 	$ContinueButton.hide()
+	
+	scroll_bar.connect("changed", self, "handle_scrollbar_changed")
+	
 	var starting_node = Twison.get_starting_node()
 	# Show first passage in our RichTextLabel 
+	print(scroll_bar.max_value)
+	for i in range(30):
+		text_box.newline()
 	self._load_next_block(starting_node)
+	print(scroll_bar.max_value)
+	# tween.interpolate_property(scroll_container, "scroll_vertical", scroll_container.scroll_vertical, scroll_bar.max_value, 0.3, Tween.TRANS_QUAD, Tween.EASE_IN)
+	# scroll_container.scroll_vertical = scroll_bar.max_value
+	
+	
+func handle_scrollbar_changed():
+	print("scroll bar changed")
+	scroll_bar.scroll_vertical = scroll_bar.max_value
 
 
 # handles setting up next twison passage and corresponding links
@@ -98,13 +117,13 @@ func _load_paragraph(paragraph):
 			emit_signal("change_char", char_name)
 			self.current_char = char_name
 			var char_color = self.char_colors[char_name]
-			$RichTextLabel.append_bbcode("\n[color=%s]"%char_color+char_name+"[/color]")
+			text_box.append_bbcode("\n[color=%s]"%char_color+char_name+"[/color]")
 	else:
 		text = paragraph
 	# likely need to adjust this once dims settled
 	var line_length = 80
 	if text.length() < line_length:
-		$RichTextLabel.append_bbcode("\n[indent]"+text+"[/indent]")
+		text_box.append_bbcode("\n[indent]"+text+"[/indent]")
 	else:
 		var index = line_length
 		while index < text.length():
@@ -115,8 +134,8 @@ func _load_paragraph(paragraph):
 			index += 1
 			index += 1
 			index += line_length
-		$RichTextLabel.append_bbcode("\n[indent]"+text+"[/indent]")
-	$RichTextLabel.newline()
+		text_box.append_bbcode("\n[indent]"+text+"[/indent]")
+	text_box.newline()
 
 
 func _display_buttons():

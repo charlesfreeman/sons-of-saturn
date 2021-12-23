@@ -6,12 +6,15 @@ extends VBoxContainer
 # This script expects the helper script to be located at
 # res://modules/twison-godot/twison_helper.gd
 
+const SpokenLine = preload("res://dialogue_system/SpokenLine.tscn")
+const spoken_line_nochar = preload("res://dialogue_system/SpokenLineNoChar.tscn")
+
 onready var twison = preload("res://modules/twison-godot/twison_helper.gd")
 onready var Twison = twison.new()
-onready var text_box = $ScrollContainer/RichTextLabel
 onready var scroll_container = $ScrollContainer
+onready var spoken_lines_container = $ScrollContainer/SpokenLinesContainer
 onready var tween = $Tween
-onready var scroll_bar = text_box.get_v_scroll()
+onready var scroll_bar = scroll_container.get_v_scrollbar()
 
 export(String, FILE, "*.json") var scriptPath = "res://dialogue_system/conversations/test_scene.json"
 
@@ -23,14 +26,10 @@ var passage_index = 0
 var paragraph_array
 var stack = []
 
-# dict for associating character names with colors for dialogue box
-var char_colors = {"Wigley": "aqua", "You": "red", "Georgia": "blue"}
-# for keeping track of current character speaking
-var current_char: String = "None"
-
 signal change_char(character)
 
 func _ready():
+	print("initializing")
 	Twison.parse_file(scriptPath)
 
 	self.buttons_array = get_tree().get_nodes_in_group("buttons")
@@ -40,11 +39,8 @@ func _ready():
 	
 	var starting_node = Twison.get_starting_node()
 	# Show first passage in our RichTextLabel 
-	print(scroll_bar.max_value)
-	for i in range(30):
-		text_box.newline()
+
 	self._load_next_block(starting_node)
-	print(scroll_bar.max_value)
 	# tween.interpolate_property(scroll_container, "scroll_vertical", scroll_container.scroll_vertical, scroll_bar.max_value, 0.3, Tween.TRANS_QUAD, Tween.EASE_IN)
 	# scroll_container.scroll_vertical = scroll_bar.max_value
 	
@@ -52,8 +48,8 @@ func _ready():
 func handle_scrollbar_changed():
 	print("scroll bar changed")
 	scroll_bar.scroll_vertical = scroll_bar.max_value
-
-
+	
+	
 # handles setting up next twison passage and corresponding links
 func _load_next_block(name):
 	# extract the next chapter using the identifier
@@ -110,32 +106,17 @@ func _load_paragraph(paragraph):
 	var char_name
 	var text
 	if ":" in paragraph:
+		var spoken_line = SpokenLine.instance()
 		para_array = paragraph.split(":")
 		char_name = para_array[0]
 		text = para_array[1]
-		if char_name != self.current_char:
-			emit_signal("change_char", char_name)
-			self.current_char = char_name
-			var char_color = self.char_colors[char_name]
-			text_box.append_bbcode("\n[color=%s]"%char_color+char_name+"[/color]")
+		spoken_line.set_speaker_name(char_name)
+		spoken_line.set_dialogue_line(text)
+		spoken_lines_container.add_child(spoken_line)
 	else:
-		text = paragraph
-	# likely need to adjust this once dims settled
-	var line_length = 80
-	if text.length() < line_length:
-		text_box.append_bbcode("\n[indent]"+text+"[/indent]")
-	else:
-		var index = line_length
-		while index < text.length():
-			while text[index] != " ":
-				index -= 1
-			index += 1
-			text = text.insert(index, "\n")
-			index += 1
-			index += 1
-			index += line_length
-		text_box.append_bbcode("\n[indent]"+text+"[/indent]")
-	text_box.newline()
+		var spoken_line = spoken_line_nochar.instance()
+		spoken_line.set_text(paragraph)
+		spoken_lines_container.add_child(spoken_line)
 
 
 func _display_buttons():

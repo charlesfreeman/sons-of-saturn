@@ -1,0 +1,55 @@
+{
+  "passages": [
+    {
+      "text": "Stalker:Blyat....We're going to have to go through the educational district.  The electromagnetic climate [color=red]commands[/color] it.\n\nHopefully we'll make it through in one piece. \n\nBut somehow, I'm not so sure.\n\nMonologue:What makes him say that?\n\n[[You sound hesitant]]\n[[I was also hoping to avoid the school district]]\n",
+      "links": [
+        {
+          "name": "You sound hesitant",
+          "link": "You sound hesitant",
+          "pid": "2"
+        },
+        {
+          "name": "I was also hoping to avoid the school district",
+          "link": "I was also hoping to avoid the school district",
+          "pid": "3"
+        }
+      ],
+      "name": "Avoidance",
+      "pid": "1",
+      "position": {
+        "x": "1179",
+        "y": "593"
+      }
+    },
+    {
+      "text": "I am hesitant.  Passing through that route means contending with the mule.  \n[[Go back->Avoidance]] ",
+      "links": [
+        {
+          "name": "Go back",
+          "link": "Avoidance",
+          "pid": "1"
+        }
+      ],
+      "name": "You sound hesitant",
+      "pid": "2",
+      "position": {
+        "x": "1058",
+        "y": "743"
+      }
+    },
+    {
+      "text": "School sucks\n",
+      "name": "I was also hoping to avoid the school district",
+      "pid": "3",
+      "position": {
+        "x": "1299",
+        "y": "743"
+      }
+    }
+  ],
+  "name": "Toy Scene 1",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "32EE3237-B5FF-4B1A-ADCE-A87A85F3A9EC"
+}

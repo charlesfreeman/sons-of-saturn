@@ -6,13 +6,13 @@
 [ext_resource path="res://dialogue_system/DialogueOption.tscn" type="PackedScene" id=4]
 [ext_resource path="res://dialogue_system/AudioStreamPlayer.gd" type="Script" id=5]
 [ext_resource path="res://160678__bmaczero__typewriter.wav" type="AudioStream" id=6]
-[ext_resource path="res://dialogue_system/SpokenLine.gd" type="Script" id=7]
+[ext_resource path="res://dialogue_system/SpokenLineNoChar.tscn" type="PackedScene" id=7]
 [ext_resource path="res://dialogue_system/DialogueTheme.tres" type="Theme" id=8]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 2160.0
+margin_right = -2160.0
 mouse_filter = 2
 theme = ExtResource( 8 )
 __meta__ = {
@@ -22,6 +22,7 @@ __meta__ = {
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+rect_min_size = Vector2( 1680, 0 )
 mouse_filter = 2
 script = ExtResource( 1 )
 __meta__ = {
@@ -30,51 +31,50 @@ __meta__ = {
 scriptPath = "res://infirmary/log_book/log_book_convo.json"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
-visible = false
-margin_right = 3840.0
-margin_bottom = 1344.0
+margin_right = 1680.0
+margin_bottom = 2092.0
 size_flags_vertical = 3
 scroll_horizontal_enabled = false
 
-[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer"]
-margin_right = 3840.0
-margin_bottom = 1344.0
+[node name="SpokenLinesContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer"]
+margin_right = 1680.0
+margin_bottom = 2092.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/normal_font = ExtResource( 2 )
-bbcode_enabled = true
+custom_constants/separation = 20
 
 [node name="Option1" parent="VBoxContainer" groups=[
 "buttons",
 ] instance=ExtResource( 4 )]
 visible = false
-margin_top = 0.0
-margin_right = 3840.0
-margin_bottom = 200.0
+margin_top = 1280.0
+margin_right = 1680.0
+margin_bottom = 1480.0
 rect_min_size = Vector2( 0, 200 )
 
 [node name="Option2" parent="VBoxContainer" groups=[
 "buttons",
 ] instance=ExtResource( 4 )]
 visible = false
-margin_top = 0.0
-margin_right = 3840.0
-margin_bottom = 200.0
+margin_top = 1484.0
+margin_right = 1680.0
+margin_bottom = 1684.0
 rect_min_size = Vector2( 0, 200 )
 
 [node name="Option3" parent="VBoxContainer" groups=[
 "buttons",
 ] instance=ExtResource( 4 )]
 visible = false
-margin_top = 0.0
-margin_right = 3840.0
-margin_bottom = 200.0
+margin_top = 1688.0
+margin_right = 1680.0
+margin_bottom = 1888.0
 rect_min_size = Vector2( 0, 200 )
 
 [node name="ContinueButton" type="TextureButton" parent="VBoxContainer"]
 visible = false
-margin_right = 3840.0
-margin_bottom = 200.0
+margin_top = 1892.0
+margin_right = 1680.0
+margin_bottom = 2092.0
 rect_min_size = Vector2( 0, 200 )
 script = ExtResource( 3 )
 
@@ -90,39 +90,9 @@ __meta__ = {
 
 [node name="Tween" type="Tween" parent="VBoxContainer"]
 
-[node name="SpokenLine" type="VBoxContainer" parent="VBoxContainer"]
-margin_right = 1680.0
-margin_bottom = 613.0
-custom_constants/separation = 15
-script = ExtResource( 7 )
-
-[node name="SpeakerName" type="RichTextLabel" parent="VBoxContainer/SpokenLine"]
-margin_right = 1680.0
-margin_bottom = 65.0
-size_flags_horizontal = 3
-size_flags_vertical = 4
-bbcode_enabled = true
-bbcode_text = "[color=aqua]CharName[/color]"
-text = "CharName"
-fit_content_height = true
-scroll_active = false
-
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/SpokenLine"]
-margin_top = 80.0
-margin_right = 1680.0
-margin_bottom = 613.0
-custom_constants/separation = 100
-
-[node name="Placeholder" type="Control" parent="VBoxContainer/SpokenLine/HBoxContainer"]
-margin_bottom = 533.0
-
-[node name="DialogueLine" type="Label" parent="VBoxContainer/SpokenLine/HBoxContainer"]
-margin_left = 100.0
-margin_right = 1680.0
-margin_bottom = 533.0
-size_flags_horizontal = 3
-text = "Spoken example sentence, as dictacted by the above character Spoken example sentence, as dictacted by the above character Spoken example sentence, as dictacted by the above character Spoken example sentence, as dictacted by the above character Spoken example sentence, as dictacted by the above character Spoken example sentence, as dictacted by the above character Spoken example sentence, as dictacted by the above character Spoken example sentence, as dictacted by the above character"
-autowrap = true
+[node name="SpokenLineNoChar" parent="VBoxContainer" instance=ExtResource( 7 )]
+margin_top = 2096.0
+margin_bottom = 2160.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
@@ -134,5 +104,5 @@ script = ExtResource( 5 )
 [connection signal="focus_exited" from="VBoxContainer/ContinueButton" to="VBoxContainer/ContinueButton" method="_on_ContinueButton_focus_exited"]
 [connection signal="mouse_entered" from="VBoxContainer/ContinueButton" to="VBoxContainer/ContinueButton" method="_on_ContinueButton_mouse_entered"]
 [connection signal="play_click" from="VBoxContainer/ContinueButton" to="AudioStreamPlayer" method="_on_ContinueButton_play_click"]
-[connection signal="pressed" from="VBoxContainer/ContinueButton" to="VBoxContainer" method="_on_ContinueButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/ContinueButton" to="VBoxContainer/ContinueButton" method="_on_ContinueButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/ContinueButton" to="VBoxContainer" method="_on_ContinueButton_pressed"]

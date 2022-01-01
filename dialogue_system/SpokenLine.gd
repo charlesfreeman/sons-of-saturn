@@ -5,6 +5,8 @@ var char_colors = {"Wigley": "aqua", "You": "red", "Georgia": "blue"}
 # for keeping track of current character speaking
 var current_char: String = "None"
 
+signal change_char(character)
+
 func _ready():
 	pass
 

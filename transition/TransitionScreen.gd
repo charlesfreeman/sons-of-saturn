@@ -5,8 +5,7 @@ signal transitioned
 
 
 func _ready():
-	print("ready")
-	transition()
+	pass
 
 
 func transition():

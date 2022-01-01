@@ -104,5 +104,5 @@ script = ExtResource( 5 )
 [connection signal="focus_exited" from="VBoxContainer/ContinueButton" to="VBoxContainer/ContinueButton" method="_on_ContinueButton_focus_exited"]
 [connection signal="mouse_entered" from="VBoxContainer/ContinueButton" to="VBoxContainer/ContinueButton" method="_on_ContinueButton_mouse_entered"]
 [connection signal="play_click" from="VBoxContainer/ContinueButton" to="AudioStreamPlayer" method="_on_ContinueButton_play_click"]
-[connection signal="pressed" from="VBoxContainer/ContinueButton" to="VBoxContainer/ContinueButton" method="_on_ContinueButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/ContinueButton" to="VBoxContainer" method="_on_ContinueButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/ContinueButton" to="VBoxContainer/ContinueButton" method="_on_ContinueButton_pressed"]

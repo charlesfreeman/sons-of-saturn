@@ -26,8 +26,6 @@ var passage_index = 0
 var paragraph_array
 var stack = []
 
-signal change_char(character)
-
 func _ready():
 	print("initializing")
 	Twison.parse_file(scriptPath)

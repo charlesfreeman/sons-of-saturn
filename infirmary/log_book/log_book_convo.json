@@ -1,0 +1,116 @@
+{
+  "passages": [
+    {
+      "text": "Georgia:We've made it to the last stop - end of the line.  If your records aren't in this log book, then they aren't anywhere in the cradle.  Every act of the slightest import was recorded here - certain...fastiduous employees in our accounting department made sure of that.\n\nYou're fading fast.  What is she even saying?  You can't focus, won't focus.  Has anyone checked the Carbon Monoxide levels?  Doubt they're functional around here.\n\n[[I'm feeling pretty woozy.]]\n[[0,P:(Action) Flip through the log book->log book]]",
+      "links": [
+        {
+          "name": "I'm feeling pretty woozy.",
+          "link": "I'm feeling pretty woozy.",
+          "pid": "2"
+        },
+        {
+          "name": "0,P:(Action) Flip through the log book",
+          "link": "log book",
+          "pid": "3"
+        }
+      ],
+      "name": "Reunited",
+      "pid": "1",
+      "position": {
+        "x": "1180",
+        "y": "593.5"
+      }
+    },
+    {
+      "text": "Georgia: I can imagine\n\n[[Reunited]] ",
+      "links": [
+        {
+          "name": "Reunited",
+          "link": "Reunited",
+          "pid": "1"
+        }
+      ],
+      "name": "I'm feeling pretty woozy.",
+      "pid": "2",
+      "position": {
+        "x": "1096",
+        "y": "742.5"
+      }
+    },
+    {
+      "text": "You send the signal to your right arm that it's high time to leap into action, but the lazy bastard doesn't take the bait.  Your call to action goes unheaded.  A second, much more forceful arousal of your muscles manages to produce a spastic, poorly controlled lunge, but the deliriously uncoordinated movement fails to guide your arm to the logbook before you.  \n\nThis abysmal failure reminds you to take stock of the rest of your corporeal form.  You notice just how much concentration you need just to remain standing.  Your thinking is also extremely muddy, albeit still within the realms of lucidity.  \n\n[[I feel even worse than normal.]]\n[[I need to get out of here.  I'm being exposed to soul poison]]\n\n",
+      "links": [
+        {
+          "name": "I feel even worse than normal.",
+          "link": "I feel even worse than normal.",
+          "pid": "4"
+        },
+        {
+          "name": "I need to get out of here.  I'm being exposed to soul poison",
+          "link": "I need to get out of here.  I'm being exposed to soul poison",
+          "pid": "5"
+        }
+      ],
+      "name": "log book",
+      "pid": "3",
+      "position": {
+        "x": "1255",
+        "y": "743.5"
+      }
+    },
+    {
+      "text": "Georgia:I know.  The Cradle is always brutal to the bodies of outsiders.  You'd do well not to fight it too much.  Thrashing about will only prolong the process.  And in the end this is best for everyone.\n\nGeorgia approaches from behind and clasps her hands on your shoulders.  The sensations, while warm, provide little comfort.  Sadly, your attempts at recoiling are ignored by your increasingly numb body.\n\n[[What process?  ?]]\n[[You've poisoned me.  I don't know how but you have.]]",
+      "links": [
+        {
+          "name": "What process?  ?",
+          "link": "What process?  ?",
+          "pid": "7"
+        },
+        {
+          "name": "You've poisoned me.  I don't know how but you have.",
+          "link": "You've poisoned me.  I don't know how but you have.",
+          "pid": "6"
+        }
+      ],
+      "name": "I feel even worse than normal.",
+      "pid": "4",
+      "position": {
+        "x": "1180",
+        "y": "893.5"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "I need to get out of here.  I'm being exposed to soul poison",
+      "pid": "5",
+      "position": {
+        "x": "1330",
+        "y": "893.5"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "You've poisoned me.  I don't know how but you have.",
+      "pid": "6",
+      "position": {
+        "x": "1255",
+        "y": "1043.5"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "What process?  ?",
+      "pid": "7",
+      "position": {
+        "x": "1135",
+        "y": "1043.5"
+      }
+    }
+  ],
+  "name": "Reunite with Wigley",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "5FBD702D-869E-4D16-AE3C-BBABA9026BA5"
+}
+

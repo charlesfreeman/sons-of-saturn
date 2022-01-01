@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://fonts/PTSerifReg64.tres" type="DynamicFont" id=1]
-[ext_resource path="res://images/gas_mask_cropped_no_marquee.png" type="Texture" id=2]
 [ext_resource path="res://roaming_pov/pop_up_dialogue.gd" type="Script" id=3]
 
 [node name="HBoxContainer" type="HBoxContainer"]
@@ -18,18 +17,15 @@ __meta__ = {
 }
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-margin_right = 1024.0
 margin_bottom = 1379.0
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer"]
-margin_right = 1024.0
 margin_bottom = 1379.0
-texture = ExtResource( 2 )
 stretch_mode = 1
 
 [node name="Control" type="Control" parent="."]
-margin_left = 1104.0
-margin_right = 4065.0
+margin_left = 80.0
+margin_right = 2529.0
 margin_bottom = 1379.0
 size_flags_horizontal = 3
 
@@ -37,7 +33,6 @@ size_flags_horizontal = 3
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 1 )
-text = "Example Text"
 valign = 1
 autowrap = true
 __meta__ = {

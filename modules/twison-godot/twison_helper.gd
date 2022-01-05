@@ -111,7 +111,7 @@ static func identify_link(link: String):
 	return {"name": link, "link": link}
 
 # Simply erases strings. This is the default filter.
-static func link_filter_erase(link: RegExMatch):
+static func link_filter_erase(_link: RegExMatch):
 	return ""
 
 # Replaces links with bbcode urls.

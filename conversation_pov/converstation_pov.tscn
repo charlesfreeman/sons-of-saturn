@@ -1,47 +1,51 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://images/scroll_texture.jpg" type="Texture" id=1]
+[ext_resource path="res://conversation_pov/spiral_scroll_texture_50_pixel_width.png" type="Texture" id=1]
+[ext_resource path="res://conversation_pov/converstation_pov.gd" type="Script" id=2]
 [ext_resource path="res://dialogue_system/Dialogue.tscn" type="PackedScene" id=3]
 
-[node name="Control" type="Control"]
+[node name="HBoxContainer" type="HBoxContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+custom_constants/separation = 0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="View" type="TextureRect" parent="."]
+margin_right = 2160.0
+margin_bottom = 2160.0
+rect_min_size = Vector2( 2160, 0 )
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="View"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -630.0
+margin_top = -690.0
+
+[node name="Avatar" type="TextureRect" parent="View/Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -228.586
+margin_bottom = -228.586
+expand = true
+stretch_mode = 6
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-custom_constants/separation = 0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ViewTexture" type="TextureRect" parent="HBoxContainer"]
-margin_right = 1920.0
-margin_bottom = 2160.0
-size_flags_horizontal = 3
-
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/ViewTexture"]
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -402.0
-margin_top = -536.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer"]
-margin_left = 1920.0
-margin_right = 3840.0
+margin_left = 2160.0
+margin_right = 4000.0
 margin_bottom = 2160.0
 size_flags_horizontal = 3
 custom_constants/separation = 120
 
-[node name="ScrollTexture" type="TextureRect" parent="HBoxContainer/HBoxContainer"]
+[node name="ScrollTexture" type="TextureRect" parent="HBoxContainer"]
 margin_right = 40.0
 margin_bottom = 2160.0
 rect_min_size = Vector2( 40, 0 )
@@ -52,10 +56,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Control" parent="HBoxContainer/HBoxContainer" instance=ExtResource( 3 )]
+[node name="Control" parent="HBoxContainer" instance=ExtResource( 3 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 160.0
-margin_right = 1920.0
+margin_right = 1840.0
 margin_bottom = 2160.0
 size_flags_horizontal = 3
+[connection signal="change_char" from="HBoxContainer/Control" to="." method="_on_Control_change_char"]

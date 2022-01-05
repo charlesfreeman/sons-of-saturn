@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://infirmary/post_office/PostOfficeMural.tscn" type="PackedScene" id=1]
 [ext_resource path="res://roaming_pov/roaming_pov.gd" type="Script" id=2]
@@ -19,7 +19,7 @@
 
 [sub_resource type="Animation" id=1]
 resource_name = "fade_to_black"
-length = 0.5
+length = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("ColorRect:color")
 tracks/0/interp = 1
@@ -27,7 +27,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
+"times": PoolRealArray( 0, 0.2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
@@ -35,7 +35,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=2]
 resource_name = "fade_to_normal"
-length = 0.5
+length = 0.4
 tracks/0/type = "value"
 tracks/0/path = NodePath("ColorRect:color")
 tracks/0/interp = 1
@@ -43,10 +43,26 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
+"times": PoolRealArray( -0.1, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "stay_on_black"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 1 ) ]
 }
 
 [node name="HBoxContainer" type="HBoxContainer"]
@@ -153,6 +169,7 @@ __meta__ = {
 [node name="AnimationPlayer" type="AnimationPlayer" parent="TransitionScreen"]
 anims/fade_to_black = SubResource( 1 )
 anims/fade_to_normal = SubResource( 2 )
+anims/stay_on_black = SubResource( 3 )
 [connection signal="pressed" from="VBoxContainer/GridContainer/UpButton" to="." method="_on_UpButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/GridContainer/LeftButton" to="." method="_on_LeftButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/GridContainer/RightButton" to="." method="_on_RightButton_pressed"]

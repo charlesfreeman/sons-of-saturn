@@ -22,7 +22,3 @@ fit_content_height = true
 scroll_active = false
 
 [node name="SpokenLineNoChar" parent="." instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 30.0
-margin_right = 1680.0
-margin_bottom = 44.0

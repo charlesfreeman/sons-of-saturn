@@ -18,7 +18,6 @@ func extract_text_and_modifiers(text: String):
 	# the four things we need.  Button text eventually split into 
 	# button_text_minus_mods and modifiers.  button_text and next_passage_name
 	# may or may not be identical depending on context
-	var button_text
 	var next_passage_name
 	var modifiers
 	var button_text_minus_mods

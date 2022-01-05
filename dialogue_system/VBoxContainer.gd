@@ -25,6 +25,10 @@ var link_names
 var passage_index = 0
 var paragraph_array
 var stack = []
+# for keeping track of current character speaking
+var current_char: String = "None"
+
+signal change_char(character)
 
 func _ready():
 	print("initializing")
@@ -45,7 +49,7 @@ func _ready():
 	
 func handle_scrollbar_changed():
 	print("scroll bar changed")
-	scroll_bar.scroll_vertical = scroll_bar.max_value
+	# scroll_bar.scroll_vertical = scroll_bar.max_value
 	
 	
 # handles setting up next twison passage and corresponding links
@@ -111,6 +115,9 @@ func _load_paragraph(paragraph):
 		spoken_line.set_speaker_name(char_name)
 		spoken_line.set_dialogue_line(text)
 		spoken_lines_container.add_child(spoken_line)
+		if char_name != current_char:
+			current_char = char_name
+			emit_signal("change_char", current_char)
 	else:
 		var spoken_line = spoken_line_nochar.instance()
 		spoken_line.set_text(paragraph)

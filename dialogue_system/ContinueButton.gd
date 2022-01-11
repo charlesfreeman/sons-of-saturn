@@ -2,13 +2,11 @@ extends TextureButton
 
 var button_text : String
 var next_passage : String
-var load_block_mode : bool = false
 
 signal play_click
 
 # Hide button by default
 func _ready():
-	self.hide()
 	self.button_text = "\u00AC Continue"
 
 
@@ -24,12 +22,11 @@ func get_next_passage() -> String:
 
 func _on_ContinueButton_focus_entered():
 	var highlighted_text = "[color=yellow]" + self.button_text + "[/color]"
-	print(highlighted_text)
-	$OptionText.set_bbcode(highlighted_text)
+	$ContinueText.set_bbcode(highlighted_text)
 
 
 func _on_ContinueButton_focus_exited():
-	$OptionText.set_bbcode(self.button_text)
+	$ContinueText.set_bbcode(self.button_text)
 
 
 func _on_ContinueButton_mouse_entered():
@@ -37,4 +34,5 @@ func _on_ContinueButton_mouse_entered():
 
 
 func _on_ContinueButton_pressed():
+	print("clicked continue")
 	emit_signal("play_click")

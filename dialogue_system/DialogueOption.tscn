@@ -3,12 +3,11 @@
 [ext_resource path="res://dialogue_system/Button.gd" type="Script" id=1]
 
 [node name="DialogueOption" type="TextureButton"]
-margin_top = 2932.0
-margin_right = 5376.0
-margin_bottom = 2952.0
+anchor_right = 1.0
 rect_min_size = Vector2( 0, 75 )
 focus_neighbour_left = NodePath("../Button2")
 focus_neighbour_bottom = NodePath("../Button2")
+size_flags_horizontal = 3
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -20,9 +19,11 @@ anchor_bottom = 1.0
 mouse_filter = 1
 size_flags_horizontal = 3
 bbcode_enabled = true
+fit_content_height = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 [connection signal="focus_entered" from="." to="." method="_on_DialogueOption_focus_entered"]
 [connection signal="focus_exited" from="." to="." method="_on_DialogueOption_focus_exited"]
 [connection signal="mouse_entered" from="." to="." method="_on_DialogueOption_mouse_entered"]
+[connection signal="pressed" from="." to="." method="_on_DialogueOption_pressed"]

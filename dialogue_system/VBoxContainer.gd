@@ -11,6 +11,7 @@ const spokenLineNochar = preload("res://dialogue_system/SpokenLineNoChar.tscn")
 
 onready var twison = preload("res://modules/twison-godot/twison_helper.gd")
 onready var Twison = twison.new()
+onready var button_container = $ButtonContainer
 onready var scroll_container = $ScrollContainer
 onready var spoken_lines_container = $ScrollContainer/SpokenLinesContainer
 onready var tween = $Tween
@@ -26,11 +27,13 @@ var paragraph_array
 var buttons_array
 var link_names
 var stack = []
+var links_clicked = []
 # for keeping track of current character speaking
 var current_char: String = "None"
 var continue_button
 
 signal change_char(character)
+signal tag(tags)
 
 func _ready():
 	print("initializing")
@@ -68,13 +71,17 @@ func _load_next_block(name):
 		next_chapter = Twison.get_passage(name)
 	else:
 		assert(false, "Passage identifier name neither a string nor an int")
-		
+	
+	var tags = twison.get_passage_tags(next_chapter)
+	if len(tags) > 0:
+		print("emitting tag signal: ", tags)
+		emit_signal("tag", tags)
+	
 	# get the links from the chapter
 	self.link_names = Twison.get_passage_links(next_chapter)
 	
 	# mechanism to not repeat same text when returning from short loop
 	if not next_chapter in self.stack or len(self.link_names) == 1:
-		print("name not in stack")
 		self.stack.append(next_chapter)
 
 		# extract text from the chapter and split based on newlines
@@ -84,12 +91,10 @@ func _load_next_block(name):
 		var num_paragraphs = self.paragraph_array.size()
 		self._load_paragraph(self.paragraph_array[0])
 		if num_paragraphs == 1:
-			print("adding buttons")
 			self._add_buttons()
 		else:
-			print("instancing continue button")
 			self.continue_button = continueButton.instance()
-			add_child(self.continue_button)
+			button_container.add_child(self.continue_button)
 			self.continue_button.connect("pressed", self, "_on_ContinueButton_pressed")
 			self.continue_button.grab_focus()
 	# if chapter is in stack and multiple buttons, skip straight to displaying
@@ -123,16 +128,30 @@ func _load_paragraph(paragraph):
 	var char_name
 	var text
 	if "::" in paragraph:
-		var spoken_line = spokenLine.instance()
 		para_array = paragraph.split("::")
 		char_name = para_array[0]
-		text = "\"" + para_array[1] + "\""
+		text = para_array[1]
+		
+	else:
+		char_name = "Voice"
+		text = paragraph
+		
+	if current_char != char_name:
+		var spoken_line = spokenLine.instance()
+		current_char = char_name
+		# Don't want (Action) or (Progression) to be echoed, and don't want 
+		# (Action)'s to be surrounded by quotes
+		if not "(Action)" in text and char_name != "Voice":
+			text = "\"" + text + "\""
+		text = text.trim_prefix("(Action) ")
+		if "(Progression)" in text:
+			text = "\"" + text.trim_prefix("\"(Progression) ")
+		
 		spoken_line.set_speaker_name(char_name)
 		spoken_line.set_dialogue_line(text)
 		spoken_lines_container.add_child(spoken_line)
-		if char_name != current_char:
-			current_char = char_name
-			emit_signal("change_char", current_char)
+		emit_signal("change_char", current_char)
+		
 	else:
 		var spoken_line = spokenLineNochar.instance()
 		spoken_line.set_text(paragraph)
@@ -143,11 +162,15 @@ func _add_buttons():
 	for i in range(len(self.link_names)):
 		print("adding button ", i)
 		var dialogue_opt = dialogueOption.instance()
-		add_child(dialogue_opt)
+		button_container.add_child(dialogue_opt)
 		dialogue_opt.connect("pressed", self, "_pressed", [i])
+		# TODO consider if buttons_array at all necessary
 		self.buttons_array.append(dialogue_opt)
 		var button_text = self.link_names[i]
+		if button_text in self.links_clicked:
+			dialogue_opt.set_as_clicked()
 		dialogue_opt.extract_text_and_modifiers(button_text)
+		dialogue_opt.set_opt_number(i+1)
 		if i == 0:
 			# TODO might need to release focus first but I'm not sure
 			dialogue_opt.grab_focus()
@@ -170,6 +193,9 @@ func _pressed(index: int):
 	if not button.continue_mode:
 		var you_text = "You::" + button.get_text()
 		self._load_paragraph(you_text)
+		# possible memory leak if the user does an absolutely stupid amount
+		# of clicking, not worth fixing probably
+		self.links_clicked.append(self.link_names[index])
 	
 #	var t = Timer.new()
 #	t.set_wait_time(0.5)
@@ -178,7 +204,7 @@ func _pressed(index: int):
 #	t.start()
 #	yield(t, "timeout")
 #	t.queue_free()
-		
+
 	self._load_next_block(button.get_next_passage())
 	
 	

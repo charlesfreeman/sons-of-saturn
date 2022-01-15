@@ -1,19 +1,21 @@
 extends TextureButton
 
-onready var label_node = $OptionText
+onready var label_node = $HBoxContainer/OptionText
 
 var button_text
 var next_passage
+var clicked: bool = false
 var progression_button: bool = false
 var continue_mode: bool = false
+var mode_set: bool = false
 
 signal play_click
 
 
 # Hide button by default
 func _ready():
-	pass
-
+	pass 
+	
 
 # method to unpack button label text, next passage identifier, button 
 # modifiers, and other info from the link text.  Previously some of this labor 
@@ -48,30 +50,64 @@ func extract_text_and_modifiers(text: String):
 		button_text_minus_mods = link_text
 		
 	if "p" in modifiers:
-		print("setting as progression")
 		set_as_progression()
 	
-	set_label_text(button_text_minus_mods)
+	set_label_text(_insert_newlines(button_text_minus_mods))
 	
-	label_node.set_bbcode(self.button_text)
-	print("num newlines: ", len(label_node.bbcode_text.split("\n", true)))
-	self.rect_size.y = label_node.rect_size.y
+	var num_newlines = len(label_node.text.split("\n"))
+	self.rect_min_size.y = num_newlines * 64
+	label_node.rect_min_size.y = num_newlines * 64
+	
 	if self.progression_button:
-		change_color("red")
+		change_color(Color(1, 0.5, 0, 1))
+	elif self.clicked:
+		change_color(Color(0.75, 0.75, 0.75, 1))
 
+
+func _insert_newlines(text: String) -> String:
+	var line_length = 62
+	if text.length() >= line_length:
+		var index = line_length
+		while index < text.length():
+			while text[index] != " ":
+				index -= 1
+			index += 1
+			text = text.insert(index, "\n")
+			index += 1
+			print("index:")
+			print(text[index])
+			index += 1
+			index += line_length
+	return text
+ 
 
 func set_label_text(text: String):
 	if text == "Continue":
 		self.button_text = "\u00AC Continue"
 		self.continue_mode = true
+		$HBoxContainer.set("custom_constants/separation", 50)
 	else:
 		self.button_text = text
+	self.mode_set = true
+	label_node.text = self.button_text
 	
 
-func change_color(color: String):
-	print("changing color - ", color)
-	var highlighted_text = "[color=%s]"%color + self.button_text + "[/color]"
-	label_node.set_bbcode(highlighted_text)
+# set the number preceding the option
+func set_opt_number(num: int):
+	var num_label = $HBoxContainer/Control/OptNumber
+	assert(self.mode_set)
+	if not self.continue_mode:
+		num_label.text = "%s)."%num
+	else:
+		num_label.text = ""
+
+
+func set_as_clicked():
+	self.clicked = true
+
+
+func change_color(color: Color):
+	label_node.add_color_override("font_color", color)
 
 
 func set_as_progression():
@@ -93,14 +129,18 @@ func get_next_passage() -> String:
 
 
 func _on_DialogueOption_focus_entered():
-	change_color("yellow")
+	label_node.add_color_override("font_color", Color(1,1,0,1))
 
 
 func _on_DialogueOption_focus_exited():
 	if not self.progression_button:
-		label_node.set_bbcode(self.button_text)
+		if not self.clicked:
+			change_color(Color(1, 1, 1, 1))
+		else:
+			change_color(Color(0.75, 0.75, 0.75, 1))
 	else:
-		change_color("red")
+		# change color to orange
+		change_color(Color(1, 0.5, 0, 1))
 
 
 func _on_DialogueOption_mouse_entered():

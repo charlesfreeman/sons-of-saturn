@@ -4,7 +4,8 @@
 
 [node name="DialogueOption" type="TextureButton"]
 anchor_right = 1.0
-rect_min_size = Vector2( 0, 75 )
+margin_bottom = 64.0
+rect_min_size = Vector2( 0, 64 )
 focus_neighbour_left = NodePath("../Button2")
 focus_neighbour_bottom = NodePath("../Button2")
 size_flags_horizontal = 3
@@ -13,16 +14,36 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="OptionText" type="RichTextLabel" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-mouse_filter = 1
-size_flags_horizontal = 3
-bbcode_enabled = true
-fit_content_height = true
+custom_constants/separation = 100
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+margin_bottom = 64.0
+
+[node name="OptNumber" type="Label" parent="HBoxContainer/Control"]
+anchor_right = 1.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionText" type="Label" parent="HBoxContainer"]
+margin_left = 100.0
+margin_top = 25.0
+margin_right = 3840.0
+margin_bottom = 39.0
+mouse_filter = 1
+size_flags_horizontal = 3
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="focus_entered" from="." to="." method="_on_DialogueOption_focus_entered"]
 [connection signal="focus_exited" from="." to="." method="_on_DialogueOption_focus_exited"]
 [connection signal="mouse_entered" from="." to="." method="_on_DialogueOption_mouse_entered"]

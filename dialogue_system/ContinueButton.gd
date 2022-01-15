@@ -1,5 +1,7 @@
 extends TextureButton
 
+onready var text_label = $HBoxContainer/ContinueText
+
 var button_text : String
 var next_passage : String
 
@@ -22,11 +24,11 @@ func get_next_passage() -> String:
 
 func _on_ContinueButton_focus_entered():
 	var highlighted_text = "[color=yellow]" + self.button_text + "[/color]"
-	$ContinueText.set_bbcode(highlighted_text)
+	text_label.set_bbcode(highlighted_text)
 
 
 func _on_ContinueButton_focus_exited():
-	$ContinueText.set_bbcode(self.button_text)
+	text_label.set_bbcode(self.button_text)
 
 
 func _on_ContinueButton_mouse_entered():

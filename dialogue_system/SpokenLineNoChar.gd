@@ -1,8 +1,9 @@
-extends HBoxContainer
+extends Label
 
 
 func _ready():
 	pass
 
-func set_text(text: String):
-	$DialogueLine.text = text
+
+func set_text(line_text: String):
+	self.text = line_text

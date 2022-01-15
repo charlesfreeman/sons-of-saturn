@@ -22,4 +22,5 @@ z_index = -2
 position = Vector2( 1444.46, 1078.03 )
 z_index = 2
 shape = SubResource( 1 )
+
 [connection signal="input_event" from="FullRect" to="." method="_on_FullRect_input_event"]

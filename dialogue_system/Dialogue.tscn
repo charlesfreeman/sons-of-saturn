@@ -23,6 +23,7 @@ rect_min_size = Vector2( 1680, 0 )
 mouse_filter = 2
 size_flags_vertical = 3
 theme = ExtResource( 8 )
+custom_constants/separation = 50
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -31,20 +32,20 @@ scriptPath = "res://infirmary/log_book/log_book_convo.json"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 margin_right = 3840.0
-margin_bottom = 2160.0
+margin_bottom = 2060.0
 size_flags_vertical = 3
 theme = SubResource( 1 )
 scroll_horizontal_enabled = false
 
 [node name="SpokenLinesContainer" type="VBoxContainer" parent="ScrollContainer"]
-margin_right = 3840.0
+margin_right = 3828.0
 margin_bottom = 2160.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_constants/separation = 20
+custom_constants/separation = 50
 
 [node name="Control" type="Control" parent="ScrollContainer/SpokenLinesContainer"]
-margin_right = 3840.0
+margin_right = 3828.0
 margin_bottom = 2160.0
 rect_min_size = Vector2( 0, 2160 )
 size_flags_vertical = 3
@@ -54,3 +55,13 @@ size_flags_vertical = 3
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
 script = ExtResource( 5 )
+
+[node name="ButtonContainer" type="VBoxContainer" parent="."]
+margin_top = 2110.0
+margin_right = 3840.0
+margin_bottom = 2110.0
+
+[node name="Control" type="Control" parent="."]
+margin_top = 2160.0
+margin_right = 3840.0
+margin_bottom = 2160.0

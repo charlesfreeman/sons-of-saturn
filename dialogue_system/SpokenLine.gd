@@ -1,9 +1,13 @@
 extends VBoxContainer
 
+onready var speaker_name = $SpeakerName
+onready var dialogue_line = $DialogueLine
+
 # for associating the char with the right color
-var char_colors = {"Wigley": "aqua", "You": "red", "Georgia": "blue"}
+var char_colors = {"Wigley": "aqua", "Ferryman": "aqua", "You": "red", "Georgia": "blue", "Voice": "aqua"}
 
 signal change_char(character)
+
 
 func _ready():
 	pass
@@ -11,8 +15,10 @@ func _ready():
 
 func set_speaker_name(char_name):
 	var char_color = self.char_colors[char_name]
-	$SpeakerName.append_bbcode("\n[color=%s]"%char_color+char_name+"[/color]")
+	# onready var's don't seem to be working, must resort to direct reference
+	# probably a timing issue?
+	$SpeakerName.append_bbcode("[color=%s]"%char_color+char_name+"[/color]")
 	
 	
 func set_dialogue_line(text):
-	$SpokenLineNoChar.set_text(text)
+	$DialogueLine.text = text

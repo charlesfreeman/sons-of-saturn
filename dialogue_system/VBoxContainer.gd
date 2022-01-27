@@ -139,13 +139,10 @@ func _load_paragraph(paragraph):
 	if current_char != char_name:
 		var spoken_line = spokenLine.instance()
 		current_char = char_name
-		# Don't want (Action) or (Progression) to be echoed, and don't want 
-		# (Action)'s to be surrounded by quotes
-		if not "(Action)" in text and char_name != "Voice":
-			text = "\"" + text + "\""
+		# if prepended with neither (Action) or (Progression) these operators
+		# do nothing, as desired
 		text = text.trim_prefix("(Action) ")
-		if "(Progression)" in text:
-			text = "\"" + text.trim_prefix("\"(Progression) ")
+		text = text.trim_prefix("(Progression) ")
 		
 		spoken_line.set_speaker_name(char_name)
 		spoken_line.set_dialogue_line(text)
@@ -154,26 +151,31 @@ func _load_paragraph(paragraph):
 		
 	else:
 		var spoken_line = spokenLineNochar.instance()
-		spoken_line.set_text(paragraph)
+		spoken_line.set_text(text)
 		spoken_lines_container.add_child(spoken_line)
 
 
 func _add_buttons():
 	for i in range(len(self.link_names)):
-		print("adding button ", i)
-		var dialogue_opt = dialogueOption.instance()
-		button_container.add_child(dialogue_opt)
-		dialogue_opt.connect("pressed", self, "_pressed", [i])
-		# TODO consider if buttons_array at all necessary
-		self.buttons_array.append(dialogue_opt)
 		var button_text = self.link_names[i]
-		if button_text in self.links_clicked:
-			dialogue_opt.set_as_clicked()
-		dialogue_opt.extract_text_and_modifiers(button_text)
-		dialogue_opt.set_opt_number(i+1)
-		if i == 0:
-			# TODO might need to release focus first but I'm not sure
-			dialogue_opt.grab_focus()
+		var display_button = true
+		if ";" in button_text:
+			var required_passage_index = int(button_text[0])
+			display_button = _check_if_clicked(required_passage_index)
+		if display_button:
+			print("adding button ", i)
+			var dialogue_opt = dialogueOption.instance()
+			button_container.add_child(dialogue_opt)
+			dialogue_opt.connect("pressed", self, "_pressed", [i])
+			# TODO consider if buttons_array at all necessary
+			self.buttons_array.append(dialogue_opt)
+			if button_text in self.links_clicked:
+				dialogue_opt.set_as_clicked()
+			dialogue_opt.extract_text_and_modifiers(button_text)
+			dialogue_opt.set_opt_number(i+1)
+			if i == 0:
+				# TODO might need to release focus first but I'm not sure
+				dialogue_opt.grab_focus()
 	# after adding buttons the ScrollContainer is sometimes resized, so we need
 	# to make sure the scrollbar is set to the very end
 	_scroll_to_end()
@@ -186,6 +188,13 @@ func _remove_buttons():
 		self.buttons_array.remove(i)
 
 
+func _check_if_clicked(index: int) -> bool:
+	if self.link_names[index] in self.links_clicked:
+		return true
+	else:
+		return false
+
+
 func _pressed(index: int):
 	print("button pressed", index)
 	var button = buttons_array[index]
@@ -193,9 +202,8 @@ func _pressed(index: int):
 	if not button.continue_mode:
 		var you_text = "You::" + button.get_text()
 		self._load_paragraph(you_text)
-		# possible memory leak if the user does an absolutely stupid amount
-		# of clicking, not worth fixing probably
-		self.links_clicked.append(self.link_names[index])
+		if not _check_if_clicked(index):
+			self.links_clicked.append(self.link_names[index])
 	
 #	var t = Timer.new()
 #	t.set_wait_time(0.5)

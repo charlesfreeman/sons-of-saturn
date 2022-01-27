@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://conversation_pov/spiral_scroll_texture_50_pixel_width.png" type="Texture" id=1]
 [ext_resource path="res://conversation_pov/converstation_pov.gd" type="Script" id=2]
 [ext_resource path="res://dialogue_system/Dialogue.tscn" type="PackedScene" id=3]
 [ext_resource path="res://images/looking_up_well_square.png" type="Texture" id=4]
+[ext_resource path="res://sounds/545664__nox-sound__ambiance-stream-sewer-reverb-small-loop-stereo-dr05.wav" type="AudioStream" id=5]
 
 [node name="HBoxContainer" type="HBoxContainer"]
 anchor_right = 1.0
@@ -23,12 +24,10 @@ size_flags_horizontal = 3
 texture = ExtResource( 4 )
 
 [node name="Control" type="Control" parent="View"]
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -630.0
-margin_top = -690.0
+margin_left = 1530.0
+margin_top = 1470.0
+margin_right = 1530.0
+margin_bottom = 3630.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -78,5 +77,9 @@ margin_left = 1630.0
 margin_right = 1680.0
 margin_bottom = 2160.0
 rect_min_size = Vector2( 50, 0 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
 
 [connection signal="change_char" from="HBoxContainer/Dialogue" to="." method="_on_Control_change_char"]

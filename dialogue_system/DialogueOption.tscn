@@ -6,8 +6,6 @@
 anchor_right = 1.0
 margin_bottom = 64.0
 rect_min_size = Vector2( 0, 64 )
-focus_neighbour_left = NodePath("../Button2")
-focus_neighbour_bottom = NodePath("../Button2")
 size_flags_horizontal = 3
 script = ExtResource( 1 )
 __meta__ = {

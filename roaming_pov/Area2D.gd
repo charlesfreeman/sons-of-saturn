@@ -1,14 +1,18 @@
 extends Area2D
 
+var char_path_dict = {
+	"Rando": "res://images/gas_mask_cropped_no_marquee.png"
+}
+
 onready var popup = $PopUp
 
-export(String, FILE) var popup_image_path
+export var popup_image_char = "Rando"
 export var popup_text = "example text for popup"
 
 
 func _ready():
 	popup.hide()
-	popup.set_popup_image_path(popup_image_path)
+	popup.set_popup_image_path(char_path_dict[popup_image_char])
 	popup.set_popup_text(popup_text)
 
 

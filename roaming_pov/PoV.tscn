@@ -6,7 +6,7 @@
 extents = Vector2( 1430.73, 1068.51 )
 
 [node name="PoV" type="TextureRect"]
-margin_right = 1918.0
+margin_right = 2880.0
 margin_bottom = 2160.0
 mouse_filter = 2
 size_flags_horizontal = 3

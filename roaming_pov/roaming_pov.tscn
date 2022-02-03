@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://infirmary/post_office/PostOfficeMural.tscn" type="PackedScene" id=1]
 [ext_resource path="res://roaming_pov/roaming_pov.gd" type="Script" id=2]
@@ -16,6 +16,8 @@
 [ext_resource path="res://roaming_pov/images/arrow_disabled_down.png" type="Texture" id=14]
 [ext_resource path="res://roaming_pov/images/arrow_disabled_up.png" type="Texture" id=15]
 [ext_resource path="res://transition/TransitionScreen.gd" type="Script" id=16]
+[ext_resource path="res://roaming_pov/Wigley.tscn" type="PackedScene" id=17]
+[ext_resource path="res://images/amelie_270x360_no_mirror.png" type="Texture" id=18]
 
 [sub_resource type="Animation" id=1]
 resource_name = "fade_to_black"
@@ -83,20 +85,40 @@ margin_right = 3840.0
 margin_bottom = 2160.0
 mouse_filter = 2
 size_flags_horizontal = 3
+custom_constants/separation = 30
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
+[node name="TabContainer" type="TabContainer" parent="VBoxContainer"]
 margin_right = 956.0
+margin_bottom = 936.0
+rect_min_size = Vector2( 0, 936 )
+
+[node name="Viewport" type="Viewport" parent="VBoxContainer/TabContainer"]
+size = Vector2( 900, 900 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 966.0
+margin_right = 956.0
+margin_bottom = 1771.0
+
+[node name="Placeholder" type="Control" parent="VBoxContainer/HBoxContainer"]
+margin_right = 71.0
+margin_bottom = 805.0
+size_flags_horizontal = 3
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/HBoxContainer"]
+margin_left = 75.0
+margin_right = 880.0
 margin_bottom = 805.0
 columns = 3
 
-[node name="Placeholder" type="Control" parent="VBoxContainer/GridContainer"]
+[node name="Placeholder" type="Control" parent="VBoxContainer/HBoxContainer/GridContainer"]
 margin_right = 253.0
 margin_bottom = 253.0
 
-[node name="UpButton" type="TextureButton" parent="VBoxContainer/GridContainer"]
+[node name="UpButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/GridContainer"]
 margin_left = 257.0
 margin_right = 548.0
 margin_bottom = 253.0
@@ -104,12 +126,12 @@ texture_normal = ExtResource( 4 )
 texture_hover = ExtResource( 10 )
 texture_disabled = ExtResource( 15 )
 
-[node name="Placeholder2" type="Control" parent="VBoxContainer/GridContainer"]
+[node name="Placeholder2" type="Control" parent="VBoxContainer/HBoxContainer/GridContainer"]
 margin_left = 552.0
 margin_right = 805.0
 margin_bottom = 253.0
 
-[node name="LeftButton" type="TextureButton" parent="VBoxContainer/GridContainer"]
+[node name="LeftButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/GridContainer"]
 margin_top = 257.0
 margin_right = 253.0
 margin_bottom = 548.0
@@ -117,7 +139,7 @@ texture_normal = ExtResource( 8 )
 texture_hover = ExtResource( 7 )
 texture_disabled = ExtResource( 13 )
 
-[node name="Placeholder3" type="TextureRect" parent="VBoxContainer/GridContainer"]
+[node name="Placeholder3" type="TextureRect" parent="VBoxContainer/HBoxContainer/GridContainer"]
 margin_left = 257.0
 margin_top = 257.0
 margin_right = 548.0
@@ -125,7 +147,7 @@ margin_bottom = 548.0
 texture = ExtResource( 11 )
 expand = true
 
-[node name="RightButton" type="TextureButton" parent="VBoxContainer/GridContainer"]
+[node name="RightButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/GridContainer"]
 margin_left = 552.0
 margin_top = 257.0
 margin_right = 805.0
@@ -134,12 +156,12 @@ texture_normal = ExtResource( 6 )
 texture_hover = ExtResource( 5 )
 texture_disabled = ExtResource( 12 )
 
-[node name="Placeholder4" type="Control" parent="VBoxContainer/GridContainer"]
+[node name="Placeholder4" type="Control" parent="VBoxContainer/HBoxContainer/GridContainer"]
 margin_top = 552.0
 margin_right = 253.0
 margin_bottom = 805.0
 
-[node name="DownButton" type="TextureButton" parent="VBoxContainer/GridContainer"]
+[node name="DownButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/GridContainer"]
 margin_left = 257.0
 margin_top = 552.0
 margin_right = 548.0
@@ -148,11 +170,31 @@ texture_normal = ExtResource( 9 )
 texture_hover = ExtResource( 3 )
 texture_disabled = ExtResource( 14 )
 
-[node name="Placeholder5" type="Control" parent="VBoxContainer/GridContainer"]
+[node name="Placeholder5" type="Control" parent="VBoxContainer/HBoxContainer/GridContainer"]
 margin_left = 552.0
 margin_top = 552.0
 margin_right = 805.0
 margin_bottom = 805.0
+
+[node name="Placeholder2" type="Control" parent="VBoxContainer/HBoxContainer"]
+margin_left = 884.0
+margin_right = 956.0
+margin_bottom = 805.0
+size_flags_horizontal = 3
+
+[node name="PartyContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 1801.0
+margin_right = 956.0
+margin_bottom = 2097.0
+custom_constants/separation = 20
+
+[node name="Amelie" type="TextureButton" parent="VBoxContainer/PartyContainer"]
+margin_right = 270.0
+margin_bottom = 296.0
+texture_normal = ExtResource( 18 )
+stretch_mode = 4
+
+[node name="Wigley" parent="VBoxContainer/PartyContainer" instance=ExtResource( 17 )]
 
 [node name="TransitionScreen" type="CanvasLayer" parent="."]
 script = ExtResource( 16 )
@@ -171,9 +213,9 @@ anims/fade_to_black = SubResource( 1 )
 anims/fade_to_normal = SubResource( 2 )
 anims/stay_on_black = SubResource( 3 )
 
-[connection signal="pressed" from="VBoxContainer/GridContainer/UpButton" to="." method="_on_UpButton_pressed"]
-[connection signal="pressed" from="VBoxContainer/GridContainer/LeftButton" to="." method="_on_LeftButton_pressed"]
-[connection signal="pressed" from="VBoxContainer/GridContainer/RightButton" to="." method="_on_RightButton_pressed"]
-[connection signal="pressed" from="VBoxContainer/GridContainer/DownButton" to="." method="_on_DownButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/GridContainer/UpButton" to="." method="_on_UpButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/GridContainer/LeftButton" to="." method="_on_LeftButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/GridContainer/RightButton" to="." method="_on_RightButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/GridContainer/DownButton" to="." method="_on_DownButton_pressed"]
 [connection signal="transitioned" from="TransitionScreen" to="." method="_on_TransitionScreen_transitioned"]
 [connection signal="animation_finished" from="TransitionScreen/AnimationPlayer" to="TransitionScreen" method="_on_AnimationPlayer_animation_finished"]

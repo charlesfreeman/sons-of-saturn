@@ -3,19 +3,17 @@
 [ext_resource path="res://roaming_pov/Area2D.gd" type="Script" id=1]
 [ext_resource path="res://roaming_pov/pop_up_dialogue.tscn" type="PackedScene" id=2]
 
-[node name="OnClickPopUp" type="Area2D" groups=[
-"popups",
-]]
+[node name="OnClickPopUp" type="Area2D" groups=["popups"]]
 z_index = 1
 script = ExtResource( 1 )
-popup_image_path = "res://images/gas_mask_cropped_no_marquee.png"
 popup_text = "welcome to daddy's zone"
 
-[node name="Polygon2D" type="CollisionPolygon2D" parent="."]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( 2815.34, 1194.99 )
 rotation = -2.5077
 
 [node name="PopUp" parent="." instance=ExtResource( 2 )]
 margin_right = 2854.0
 margin_bottom = 1099.0
+
 [connection signal="input_event" from="." to="." method="_on_OnClickPopUp_input_event"]

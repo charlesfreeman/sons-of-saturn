@@ -59,19 +59,19 @@ func _on_TransitionScreen_transitioned():
 
 func _update_buttons():
 	if $PoV.scene_up == "None":
-		$VBoxContainer/GridContainer/UpButton.disabled = true
+		$VBoxContainer/HBoxContainer/GridContainer/UpButton.disabled = true
 	else:
-		$VBoxContainer/GridContainer/UpButton.disabled = false
+		$VBoxContainer/HBoxContainer/GridContainer/UpButton.disabled = false
 	if $PoV.scene_right == "None":
-		$VBoxContainer/GridContainer/RightButton.disabled = true
+		$VBoxContainer/HBoxContainer/GridContainer/RightButton.disabled = true
 	else:
-		$VBoxContainer/GridContainer/RightButton.disabled = false
+		$VBoxContainer/HBoxContainer/GridContainer/RightButton.disabled = false
 	if $PoV.scene_down == "None":
-		$VBoxContainer/GridContainer/DownButton.disabled = true
+		$VBoxContainer/HBoxContainer/GridContainer/DownButton.disabled = true
 	else:
-		$VBoxContainer/GridContainer/DownButton.disabled = false
+		$VBoxContainer/HBoxContainer/GridContainer/DownButton.disabled = false
 	if $PoV.scene_left == "None":
-		$VBoxContainer/GridContainer/LeftButton.disabled = true
+		$VBoxContainer/HBoxContainer/GridContainer/LeftButton.disabled = true
 	else:
-		$VBoxContainer/GridContainer/LeftButton.disabled = false
+		$VBoxContainer/HBoxContainer/GridContainer/LeftButton.disabled = false
 	

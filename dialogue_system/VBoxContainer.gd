@@ -20,6 +20,7 @@ var dialogueOption = load("res://dialogue_system/DialogueOption.tscn")
 var continueButton = load("res://dialogue_system/ContinueButton.tscn")
 
 export(String, FILE, "*.json") var scriptPath = "res://dialogue_system/conversations/test_scene.json"
+export(String, FILE, "*.tscn") var nextScenePath = "res://infirmary/log_book/LogBook.tscn"
 
 var max_scroll_length = 0
 var passage_index = 0
@@ -35,7 +36,7 @@ var continue_button
 signal change_char(character)
 signal tag(tags)
 
-func _ready():
+func init():
 	print("initializing")
 	Twison.parse_file(scriptPath)
 
@@ -156,6 +157,12 @@ func _load_paragraph(paragraph):
 
 
 func _add_buttons():
+	if len(self.link_names) == 0:
+		self.continue_button = continueButton.instance()
+		button_container.add_child(self.continue_button)
+		self.continue_button.connect("pressed", self, "_load_next_scene")
+		self.continue_button.grab_focus()
+	
 	for i in range(len(self.link_names)):
 		var button_text = self.link_names[i]
 		var display_button = true
@@ -163,7 +170,6 @@ func _add_buttons():
 			var required_passage_index = int(button_text[0])
 			display_button = _check_if_clicked(required_passage_index)
 		if display_button:
-			print("adding button ", i)
 			var dialogue_opt = dialogueOption.instance()
 			button_container.add_child(dialogue_opt)
 			dialogue_opt.connect("pressed", self, "_pressed", [i])
@@ -183,7 +189,6 @@ func _add_buttons():
 
 func _remove_buttons():
 	for i in range(len(buttons_array)-1, -1, -1):
-		print("removing ", i)
 		self.buttons_array[i].queue_free()
 		self.buttons_array.remove(i)
 
@@ -196,7 +201,6 @@ func _check_if_clicked(index: int) -> bool:
 
 
 func _pressed(index: int):
-	print("button pressed", index)
 	var button = buttons_array[index]
 	# only need to echo input back to scrollContainer if not in continue mode
 	if not button.continue_mode:
@@ -223,3 +227,12 @@ func _on_ContinueButton_pressed():
 		self.passage_index = 0
 		self.continue_button.queue_free()
 		self._add_buttons()
+
+
+# for programatically setting the dialogue path when instancing
+func set_script_path(path):
+	scriptPath = path
+
+
+func _load_next_scene():
+	SceneManager.change_scene(nextScenePath)

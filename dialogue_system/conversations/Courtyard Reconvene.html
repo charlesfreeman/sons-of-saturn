@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <title>Courtyard Reconvene</title>
+    <script type="text/javascript">
+      /**
+       * Twison - Twine 2 JSON Export Story Format
+       *
+       * Copyright (c) 2015 Em Walker
+       * https://lazerwalker.com
+       *
+       * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+       * associated documentation files (the "Software"), to deal in the Software without restriction,
+       * including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+       * and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+       * subject to the following conditions:
+       *
+       * The above copyright notice and this permission notice shall be included in all copies or substantial
+       * portions of the Software.
+       *
+       * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+       * LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+       * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+       * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+       * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+       */
+      var Twison={extractLinksFromText:function(t){var n=t.match(/\[\[.+?\]\]/g);return n?n.map(function(t){var n=t.match(/\[\[(.*?)\-\&gt;(.*?)\]\]/);return n?{name:n[1],link:n[2]}:(t=t.substring(2,t.length-2),{name:t,link:t})}):null},extractPropsFromText:function(t){var n,r={},e=!1;const a=/\{\{((\s|\S)+?)\}\}((\s|\S)+?)\{\{\/\1\}\}/gm;for(;null!==(n=a.exec(t));){const o=n[1],s=n[3].replace(/(\r\n|\n|\r)/gm,""),i=this.extractPropsFromText(s);r[o]=null!==i?i:s,e=!0}return e?r:null},convertPassage:function(t){var n={text:t.innerHTML},r=Twison.extractLinksFromText(n.text);r&&(n.links=r);const e=Twison.extractPropsFromText(n.text);if(e&&(n.props=e),["name","pid","position","tags"].forEach(function(r){var e=t.attributes[r].value;e&&(n[r]=e)}),n.position){var a=n.position.split(",");n.position={x:a[0],y:a[1]}}return n.tags&&(n.tags=n.tags.split(" ")),n},convertStory:function(t){var n=t.getElementsByTagName("tw-passagedata"),r=Array.prototype.slice.call(n).map(Twison.convertPassage),e={passages:r};["name","startnode","creator","creator-version","ifid"].forEach(function(n){var r=t.attributes[n].value;r&&(e[n]=r)});var a={};return e.passages.forEach(function(t){a[t.name]=t.pid}),e.passages.forEach(function(t){t.links&&t.links.forEach(function(t){t.pid=a[t.link],t.pid||(t.broken=!0)})}),e},convert:function(){var t=document.getElementsByTagName("tw-storydata")[0],n=JSON.stringify(Twison.convertStory(t),null,2);document.getElementById("output").innerHTML=n}};window.Twison=Twison;
+    </script>
+  </head>
+  <body>
+    <pre id="output"></pre>
+    <div id="storyData" style="display: none;">
+      <tw-storydata name="Courtyard Reconvene" startnode="1" creator="Twine" creator-version="2.3.14" ifid="85F0B4C9-3873-4777-B5D8-F8A0F32A62C0" zoom="1" format="Twison" format-version="0.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="1179,606.5" size="100,100">You&#39;ve finally managed to come to.  You see Wigley by your side, watching over you.
+
+Wigley::Hey there.  You feeling ok?
+
+[[p:I mean.  No.  But also yes.]]
+[[p:I&#39;m alive, and coherent.  So pretty good overall.-&gt;p:I mean.  No.  But also yes.]]
+[[p:I think my toe is broken.]]</tw-passagedata><tw-passagedata pid="2" name="p:I mean.  No.  But also yes." tags="" position="1179,756.5" size="100,100">Wigley::I get what you mean.  You can&#39;t be feeling great.
+
+Wigley::But still, you made it through.
+
+[[p:How did I end up here?]]</tw-passagedata><tw-passagedata pid="3" name="p:How did I end up here?" tags="" position="1179,906.5" size="100,100">Wigley::You collapsed as soon as you let me into the basement quarters, after saying something along the lines of &quot;we don&#39;t need to worry about Jane anymore.&quot;  I brought you up here for some fresh air.
+
+[[p:Thanks.]]</tw-passagedata><tw-passagedata pid="4" name="p:Thanks." tags="" position="1179,1056.5" size="100,100">Wigley::Don&#39;t worry about it.  I thought you&#39;d probably need some rest and fresh air before we make our way out of here.
+
+[[p:Out of here?  You mean deeper into the Cradle right?]]
+[[p:You aren&#39;t suggesting we leave are you?-&gt;p:Out of here?  You mean deeper into the Cradle right?]]</tw-passagedata><tw-passagedata pid="5" name="p:I think my toe is broken." tags="" position="1299,756.5" size="100,100">Wigley::I&#39;m guessing it broke during the elevator free-fall?  I can prepare a spling if you like.
+
+[[p:No, that&#39;s alright.  How did I end up here?-&gt;p:How did I end up here?]]</tw-passagedata><tw-passagedata pid="6" name="p:Out of here?  You mean deeper into the Cradle right?" tags="" position="1180,1206.5" size="100,100">Wigley is silent for a moment.
+
+Wigley::Miss, you&#39;ve already gotten so much more than you bargained for.  This section of the Cradle is usually abnormally tame.  Yet just in passing through this section you&#39;ve been knocked out, injured, poisoned...
+
+He trails off.
+
+Wigley::I&#39;ll follow you whereever, as obligated.  But I really think pressing on would be unwise.
+
+Again, he&#39;s being polite.  He thinks you are a maniac.
+
+[[p:I have to find out more about Mom.  I have a lead suggesting we&#39;ll find out more in the School District.]]</tw-passagedata><tw-passagedata pid="7" name="p:I have to find out more about Mom.  I have a lead suggesting we&#39;ll find out more in the School District." tags="" position="1180,1356.5" size="100,100">Wigley::Alright.  If you are certain.  I&#39;ve helped a lot of people find closure here.  You won&#39;t be the first I fail.
+
+Wigley::But be prepared for the consequences.  I don&#39;t have any clue what to expect.
+
+I don&#39;t either.
+
+Wigley::Let us rest here for a few more moments and wait for your body to clear out the poison.  Then we can begin making our way to the School District.
+
+He retains his corteous professionalism.  But his tone and intonations reveal the truth.  He&#39;s watching a frenzied sheep walk towards the edge of a cliff.
+
+Wigley::There&#39;s another matter.  The route to the School District is...tricky.
+
+[[p:What&#39;s the problem with getting to the School District?]]</tw-passagedata><tw-passagedata pid="8" name="p:What&#39;s the problem with getting to the School District?" tags="" position="1180,1508.5" size="100,100">Wigley::The School District was blocked off from the rest of the Cradle, prior to the Cradle&#39;s abandonment, due to excessive reverb phenomena.  In that way it is similar to the basement of this infirmary, though obviously much larger in scale.
+
+Wigley::All of the roads have been blocked off.  Even the utility tunnels connecting it to the steam plants were filled in.
+
+Wigley::But there&#39;s still a way in, albeit pretty contrived.
+
+[[p:Just tell me what I need to do.]]</tw-passagedata><tw-passagedata pid="9" name="p:Just tell me what I need to do." tags="" position="1180,1658.5" size="100,100">Wigley::There is a potter&#39;s field within the walled off perimeter.  Collection Agents make the rounds every night and collect cadavers from mortuaries around the Cradle.  They have special access that allows them through the perimeter.  
+
+[[That&#39;s a pretty macabre combo, a School and a Potter&#39;s Field.]]
+[[Collection Agents?  I didn&#39;t think any Cradle personnel were still on duty.]]
+[[p:So we have to pretend to be cadavers?]]</tw-passagedata><tw-passagedata pid="10" name="That&#39;s a pretty macabre combo, a School and a Potter&#39;s Field." tags="" position="1007,1819.5" size="100,100">Yeah, it is.  But to be honest, while the Cradle was inhabited, I don&#39;t think most residents even knew the Potter&#39;s Field was there.  The lot of land is rather inconspicuous.
+
+[[Continue-&gt;p:Just tell me what I need to do.]] </tw-passagedata><tw-passagedata pid="11" name="p:So we have to pretend to be cadavers?" tags="" position="1333,1825.5" size="100,100">Wigley::Yes.  And the act needs to be convincing.
+
+Wigley::The infirmary supply cabinet has a supply of tetrodotoxin, kept in stock as an emergency analgesic.  We&#39;ll each need to take a small dose to induce a temporary paralysis.
+
+Wigley::This will be a risky maneuver.  We&#39;ll need to get the dose of tetrodotoxin exactly right.
+
+His warnings are useless.  Surely he knows better than to expect you to be the voice of restraint.
+
+[[Tetrodotoxin?  The poison those bright colored octopi use?]]
+[[The &quot;Collection Agents&quot; won&#39;t be able to tell we aren&#39;t actually dead?]]
+[[p:Alright.  Let&#39;s go load up on tetrodotoxin.]]</tw-passagedata><tw-passagedata pid="12" name="Collection Agents?  I didn&#39;t think any Cradle personnel were still on duty." tags="" position="1173,1823.5" size="100,100">Wigley::They aren&#39;t personnel.  They aren&#39;t really human anymore.  Truth be told I don&#39;t really know what they are, or where they came from.  They are humanoid automatons.
+
+[[Continue-&gt;p:Just tell me what I need to do.]] </tw-passagedata><tw-passagedata pid="13" name="Tetrodotoxin?  The poison those bright colored octopi use?" tags="" position="1190,1979.5" size="100,100">Yes, along with other sea life.</tw-passagedata><tw-passagedata pid="14" name="The &quot;Collection Agents&quot; won&#39;t be able to tell we aren&#39;t actually dead?" tags="" position="1332,1980.5" size="100,100">Wigley::If we get the dose right, no, they won&#39;t.
+
+If you get the dose wrong, they might correctly assess that you are dead.</tw-passagedata><tw-passagedata pid="15" name="p:Alright.  Let&#39;s go load up on tetrodotoxin." tags="" position="1473,1979.5" size="100,100">Wigley::Hold on, Miss.  We have a bit more time to rest before we need to prepare for that.  The Collection Agents won&#39;t be here for a few more hours, after the sun sets.
+
+Wigley::You should spend some time recuparating.  You had several very close calls while you were here.
+
+[[p:So we&#39;ve got a minute to talk?]]</tw-passagedata><tw-passagedata pid="16" name="p:So we&#39;ve got a minute to talk?" tags="" position="1473,2129.5" size="100,100">Wigley::Yes, we do.
+
+Wigley::Is there something you would like to know?
+
+[[p:No.  There&#39;s something you should know.]]</tw-passagedata><tw-passagedata pid="17" name="p:No.  There&#39;s something you should know." tags="" position="1473,2279.5" size="100,100">Wigley::Yes?  What&#39;s that?
+
+[[p:When I was in the nurses quarters, I found a certificate of stillbirth.  With your name on it.]]</tw-passagedata><tw-passagedata pid="18" name="p:When I was in the nurses quarters, I found a certificate of stillbirth.  With your name on it." tags="" position="1473,2429.5" size="100,100">Wigley::I&#39;m...I&#39;m not sure I understand.
+
+[[p:You weren&#39;t rescued as a child.  You were stolen from your parents.]]</tw-passagedata><tw-passagedata pid="19" name="p:You weren&#39;t rescued as a child.  You were stolen from your parents." tags="" position="1473,2579.5" size="100,100">His expression goes blank as he stares at the space in front of him.
+
+[[p:Hey, are you ok?]]
+[[p:(Action) Give him space.]]</tw-passagedata><tw-passagedata pid="20" name="p:Hey, are you ok?" tags="" position="1398,2729.5" size="100,100">He is unresponsive.  He continues processing the psychic violence this bit of information inflicted.  His expression is distinctly vacuous; there is something uniquely unsettling about the blankness of his expression.
+
+[[Continue-&gt;Silence]]</tw-passagedata><tw-passagedata pid="21" name="p:(Action) Give him space." tags="" position="1548,2729.5" size="100,100">He continues processing the psychic violence this bit of information inflicted.  His expression is distinctly vacuous; there is something uniquely unsettling about the blankness of his expression.
+
+[[Continue-&gt;Silence]]</tw-passagedata><tw-passagedata pid="22" name="Silence" tags="" position="1470,2878.5" size="100,100">An agonizing number of moments pass in torturous silence.  Every sound, the rustle of leaves, feels like water torture.
+
+Wiggly::Did...You...Keep the document?
+
+Wiggly::I...Need to see it.  For Myself.
+
+The words drip out of him.  They hit you like water torture.
+
+[[p:Yes.  I did.]]</tw-passagedata><tw-passagedata pid="23" name="p:Yes.  I did." tags="" position="1470,3028.5" size="100,100">You hand Wiggly the certificate of stillbirth, issued for one &quot;Paul Lowman.&quot;
+
+He tenderly seizes the parchment and begins looking it over, his hands trembling as he reads.
+
+Another agonizing eternity of silence.  You almost expect him to scream.
+
+Instead, he finally breaks, and gently folds the parchment before sliding it into his jacket.
+
+Wiggly::This is all difficult for me to process.  I&#39;m sure you understand.
+
+You do understand.
+
+Wiggly::Can I...have an hour or so?  Alone?  Just...Wait here.  I understand this is a somewhat unprofessional request, but I just need a bit of time to myself.
+
+You can tell he has no practice advocating for himself.
+
+[[p:Of course.  I&#39;m not going anywhere.]]</tw-passagedata><tw-passagedata pid="24" name="p:Of course.  I&#39;m not going anywhere." tags="" position="1470,3178.5" size="100,100">He nods, and silently heads to the corner of the courtyard.  He pops a small hatch, presumably leading to the Cradle Underground, and heads down.
+
+[[Continue-&gt;Time Lapse.]]</tw-passagedata><tw-passagedata pid="25" name="Time Lapse." tags="" position="1470,3328.5" size="100,100">You rest in silence for the space of about half an hour.  </tw-passagedata></tw-storydata>
+    </div>
+    <script>
+      Twison.convert();
+    </script>
+  </body>
+</html>

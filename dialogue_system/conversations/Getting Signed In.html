@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <title>Getting Signed In</title>
+    <script type="text/javascript">
+      /**
+       * Twison - Twine 2 JSON Export Story Format
+       *
+       * Copyright (c) 2015 Em Walker
+       * https://lazerwalker.com
+       *
+       * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+       * associated documentation files (the "Software"), to deal in the Software without restriction,
+       * including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+       * and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+       * subject to the following conditions:
+       *
+       * The above copyright notice and this permission notice shall be included in all copies or substantial
+       * portions of the Software.
+       *
+       * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+       * LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+       * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+       * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+       * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+       */
+      var Twison={extractLinksFromText:function(t){var n=t.match(/\[\[.+?\]\]/g);return n?n.map(function(t){var n=t.match(/\[\[(.*?)\-\&gt;(.*?)\]\]/);return n?{name:n[1],link:n[2]}:(t=t.substring(2,t.length-2),{name:t,link:t})}):null},extractPropsFromText:function(t){var n,r={},e=!1;const a=/\{\{((\s|\S)+?)\}\}((\s|\S)+?)\{\{\/\1\}\}/gm;for(;null!==(n=a.exec(t));){const o=n[1],s=n[3].replace(/(\r\n|\n|\r)/gm,""),i=this.extractPropsFromText(s);r[o]=null!==i?i:s,e=!0}return e?r:null},convertPassage:function(t){var n={text:t.innerHTML},r=Twison.extractLinksFromText(n.text);r&&(n.links=r);const e=Twison.extractPropsFromText(n.text);if(e&&(n.props=e),["name","pid","position","tags"].forEach(function(r){var e=t.attributes[r].value;e&&(n[r]=e)}),n.position){var a=n.position.split(",");n.position={x:a[0],y:a[1]}}return n.tags&&(n.tags=n.tags.split(" ")),n},convertStory:function(t){var n=t.getElementsByTagName("tw-passagedata"),r=Array.prototype.slice.call(n).map(Twison.convertPassage),e={passages:r};["name","startnode","creator","creator-version","ifid"].forEach(function(n){var r=t.attributes[n].value;r&&(e[n]=r)});var a={};return e.passages.forEach(function(t){a[t.name]=t.pid}),e.passages.forEach(function(t){t.links&&t.links.forEach(function(t){t.pid=a[t.link],t.pid||(t.broken=!0)})}),e},convert:function(){var t=document.getElementsByTagName("tw-storydata")[0],n=JSON.stringify(Twison.convertStory(t),null,2);document.getElementById("output").innerHTML=n}};window.Twison=Twison;
+    </script>
+  </head>
+  <body>
+    <pre id="output"></pre>
+    <div id="storyData" style="display: none;">
+      <tw-storydata name="Getting Signed In" startnode="1" creator="Twine" creator-version="2.3.14" ifid="A4647507-8CE5-44D0-B037-1204F30A1DAA" zoom="1" format="Twison" format-version="0.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="1179,606" size="100,100">Jane::Here, this is the front desk.  This should only take a moment.
+
+Jane approaches the octagonal station before you and gazes directly into the cavity behind the central pane.  Her eyes light up as she begins to converse with someone.
+
+Jane::This young lady is in need of secondary services.
+
+Jane::...
+
+Jane::Just let me fill out her forms for her, we&#39;re in something of a hurry.
+
+Jane::...
+
+Jane::Yes, I know she&#39;ll need to provide the closing signature, but I can perform the rest.
+
+This doesn&#39;t make any sense.  The infirmary was abandoned twenty years ago along with the rest of the Cradle.  Who is behind that glass?
+
+Jane turns her head to address you.
+
+Jane::Oh, I forgot to ask - what is your name miss?
+
+[[p:Amelie]]
+[[p:Am...ber]]</tw-passagedata><tw-passagedata pid="2" name="p:Amelie" tags="" position="1106,755" size="100,100">Jane::Got it. 
+
+She jots your name in.
+
+[[Continue-&gt;Scribbling]]</tw-passagedata><tw-passagedata pid="3" name="p:Am...ber" tags="" position="1254,756" size="100,100">She glances at you a little suspiciously, but decides to pursue her intuitions no further.
+
+Jane::Alright, I&#39;ll jot that in.
+
+[[Continue-&gt;Scribbling]] </tw-passagedata><tw-passagedata pid="4" name="Scribbling" tags="" position="1163,939" size="100,100">Jane::No, she isn&#39;t really here for any non-secondary procedures.  So let&#39;s jot her down for something...non-invansive.  Ingrown toe removal, we&#39;ll go with that as the official malady.
+
+It seems you need an &quot;official&quot; reason to be here, and whatever she has planned for you isn&#39;t suitable.  So she&#39;s taken to slandering the virility of your healthy, perfectly formed toes.  Just so she can have an &quot;official&quot; reason to sign you in.
+
+[[p:My toes are immaculate.]]
+[[p:(Action) Remain silent and take the blow to your toe-centric ego.]]</tw-passagedata><tw-passagedata pid="5" name="p:My toes are immaculate." tags="" position="1088,1089" size="100,100">Jane glares at you cuttingly.
+
+Jane::No.  I&quot;m quite certain I saw an infected lip on the left side of your left toe.  Are we on the same page?
+
+She wants you to drop it.  Now.
+
+[[Continue-&gt;Sign the page]] </tw-passagedata><tw-passagedata pid="6" name="p:(Action) Remain silent and take the blow to your toe-centric ego." tags="" position="1239,1089" size="100,100">Jane seems to appreciate your cooperation.  But your toes wail in vain, narcisistic agony.
+
+[[Continue-&gt;Sign the page]]</tw-passagedata><tw-passagedata pid="7" name="Sign the page" tags="" position="1164,1242" size="100,100">Jane motions for you to come to the pane.
+
+Jane::Alright, we just need your signature, and we&#39;ll be set.
+
+You approach the counter.
+
+[[Continue-&gt;Approach the counter]]</tw-passagedata><tw-passagedata pid="8" name="Approach the counter" tags="" position="1164,1398" size="100,100">You approach the pane, keeping your focus fixed upon the document prostrated out on the counter as you advance.  You begin scanning the document for suspicious clauses when you notice something amiss in your periphery.
+
+[[Continue-&gt;Look Up]]</tw-passagedata><tw-passagedata pid="9" name="Look Up" tags="" position="1161,1545" size="100,100">No one is behind the counter.
+
+Nothing fills the cavity but a vacuum, along with an ether of dust and insulative particulate circulating about the air.  
+
+This ward has been shuttered for decades.  There was never anyone at the front desk.  &quot;Jane&quot; imagined the entire encounter.  
+
+You are unnerved, even a little shocked.  But, at a gut level, you are not exactly surprised.  
+
+[[Continue-&gt;Looming]]</tw-passagedata><tw-passagedata pid="10" name="Looming" tags="" position="1158,1691" size="100,100">Jane waits behind you, expectantly hovering.
+
+[[p:Alright what the hell is going on?]]
+[[p:(Action) Make no comment and sign the document.]]</tw-passagedata><tw-passagedata pid="11" name="p:Alright what the hell is going on?" tags="" position="1158,1837" size="100,100">Jane throws a quick glance up to the pane towards whomever she imagines residing within the cavity.  You detect a hint of anguish in her face.  She is embarrassed by your outburst.
+
+Jane::I&#39;m asking you to sign this document for Valery as I explained on the way here.  I...understand that your nerves might be a little jumpy right now.  But there really isn&#39;t any circumstance for such outbursts.  
+
+[[Who is Valery?  Why would I do anything for someone named Valery?]]
+[[I don&#39;t know what you see, but there is no one on the other side of the pane.]]
+[[(Action) Read the document.]]
+[[If I sign this, you&#39;ll open up the door ahead?]]
+[[p:(Action) Sign the document-&gt;p:(Action) Make no comment and sign the document.]] 
+[[p:I&#39;m not going to sign this.]]</tw-passagedata><tw-passagedata pid="12" name="p:(Action) Make no comment and sign the document." tags="" position="1640,1999" size="100,100">You shakily sign your name.  We&#39;ll go along with this for now - we don&#39;t have much choice if we want to reach the records room.
+
+[[Continue-&gt;pushes file]]</tw-passagedata><tw-passagedata pid="13" name="Who is Valery?  Why would I do anything for someone named Valery?" tags="" position="913,1990" size="100,100">She again glances nervously at the pane - you are embarrassing her.
+
+Jane::Because Valery has been kind enough to pull a few levers and get you in to see us, despite a few...&quot;administrative roadblocks.&quot;
+
+Valery is the person she thinks is behind the pane.  Apparently they are doing us a favor.
+
+[[Continue-&gt;p:Alright what the hell is going on?]] </tw-passagedata><tw-passagedata pid="14" name="I don&#39;t know what you see, but there is no one on the other side of the pane." tags="" position="1036,1995" size="100,100">Jane::That&#39;s absurd, of course there is.  
+
+She does not engage further.  The turn of face is subtle, but you can sense it.  You pick up on a tinge of dissonance just beneath the surface.  She conceals it, very well, she&#39;s had much practice - but not perfectly.
+
+[[Continue-&gt;p:Alright what the hell is going on?]] </tw-passagedata><tw-passagedata pid="15" name="(Action) Read the document." tags="" position="1156,1998" size="100,100">The page is visibly worn, fitting for a document likely stored within a cabinet for 20 years.  Otherwise, it seems to be a perfectly standard medical sign in sheet, documenting your fictitious toe injury.
+
+[[Continue-&gt;p:Alright what the hell is going on?]] </tw-passagedata><tw-passagedata pid="16" name="p:I&#39;m not going to sign this." tags="" position="1412,1994" size="100,100">Jane::Then you aren&#39;t getting your operation.  Only Valery can grant access to the second floor of this facility, the operations ward.  
+
+She&#39;s serious.  If you don&#39;t officiate this occasion before the invisible clerk before you then there will be no further progression.  You won&#39;t find your Mom.  All the effort poured into organizing and funding this infiltration will have been in vain.
+
+[[p:(Action) I&#39;m not signing it, even if it means I don&#39;t get to go forward.]]</tw-passagedata><tw-passagedata pid="17" name="If I sign this, you&#39;ll open up the door ahead?" tags="" position="1282,2002" size="100,100">Jane::Yes, as I said before, we&#39;ll be granted access to the Maternity Ward. 
+
+Jane::You won&#39;t find any alternative routes, I might add.
+
+[[Continue-&gt;p:Alright what the hell is going on?]] </tw-passagedata><tw-passagedata pid="18" name="p:(Action) I&#39;m not signing it, even if it means I don&#39;t get to go forward." tags="" position="1415,2143" size="100,100">You really don&#39;t have any choice in the matter.
+
+You *are* going to sign the document.  We are moving forward.  We don&#39;t have any other choice.
+
+You can feel your hand rising towards the pen.
+
+[[This isn&#39;t fair.  I should never have had to deal with all of this]]</tw-passagedata><tw-passagedata pid="19" name="This isn&#39;t fair.  I should never have had to deal with all of this" tags="" position="1413,2294" size="100,100">You of all people should know this place doesn&#39;t play fair.  You ought to have soaked that in by now.
+
+[[Continue-&gt;p:Alright what the hell is going on?]] </tw-passagedata><tw-passagedata pid="20" name="pushes file" tags="" position="1640,2149" size="100,100">Jane pushes the signed document forward.
+
+Jane::Thank you for cooperating.  I know this procedure probably seems excessively elaborate, but we&#39;ve got to take the proper precautions and document your visit.  We&#39;re subject to very intense scrutiny by a number of HART accountants, as I&#39;m sure you are aware.
+
+Jane makes a quick gesture to the vacuous entity behind the glass and pivots to the right.  She expects you to follow her lead and start heading down the hall.
+
+Let&#39;s keep an eye on Jane from here on out. She doesn&#39;t seem malicious, but she&#39;s clearly very off balance.</tw-passagedata></tw-storydata>
+    </div>
+    <script>
+      Twison.convert();
+    </script>
+  </body>
+</html>

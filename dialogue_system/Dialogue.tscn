@@ -28,7 +28,6 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scriptPath = "res://infirmary/log_book/log_book_convo.json"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 margin_right = 3840.0

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://infirmary/log_book/LogBook.gd" type="Script" id=1]
 [ext_resource path="res://infirmary/log_book/log_book_post_processing.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -16,7 +16,6 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_left = "res://infirmary/post_office/PostOfficeMural.tscn"
 
 [node name="FullRect" type="Area2D" parent="."]
 z_index = -2
@@ -25,4 +24,5 @@ z_index = -2
 position = Vector2( 1444.46, 1078.03 )
 z_index = 2
 shape = SubResource( 1 )
+
 [connection signal="input_event" from="FullRect" to="." method="_on_FullRect_input_event"]

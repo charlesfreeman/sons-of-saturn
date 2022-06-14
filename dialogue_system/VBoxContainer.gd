@@ -19,8 +19,9 @@ onready var scroll_bar = scroll_container.get_v_scrollbar()
 var dialogueOption = load("res://dialogue_system/DialogueOption.tscn")
 var continueButton = load("res://dialogue_system/ContinueButton.tscn")
 
-export(String, FILE, "*.json") var scriptPath = "res://dialogue_system/conversations/test_scene.json"
-export(String, FILE, "*.tscn") var nextScenePath = "res://infirmary/log_book/LogBook.tscn"
+var scriptPath = "res://dialogue_system/conversations/test_scene.json"
+var nextScenePath = "res://roaming_pov/roaming_pov.tscn"
+var nextLocation = "res://infirmary/post_office/PostOfficeMural.tscn"
 
 var max_scroll_length = 0
 var passage_index = 0
@@ -32,6 +33,10 @@ var links_clicked = []
 # for keeping track of current character speaking
 var current_char: String = "None"
 var continue_button
+# might need to refactor to array if ever want to add more than one party mem
+# following a convo
+var new_party_mem = ""
+var mem_to_remove = ""
 
 signal change_char(character)
 signal tag(tags)
@@ -232,7 +237,27 @@ func _on_ContinueButton_pressed():
 # for programatically setting the dialogue path when instancing
 func set_script_path(path):
 	scriptPath = path
+	
+
+func set_next_scene_path(path):
+	nextScenePath = path
+	
+	
+func set_mem_to_add(mem):
+	new_party_mem = mem
+
+
+func set_mem_to_remove(mem):
+	mem_to_remove = mem
 
 
 func _load_next_scene():
+	Global.add_to_party(new_party_mem)
+	Global.remove_from_party(mem_to_remove)
 	SceneManager.change_scene(nextScenePath)
+
+
+
+
+
+

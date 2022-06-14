@@ -1,9 +1,15 @@
 extends HBoxContainer
 
 var global_scene_path = "None"
+var pov_scene
+var pov_instance
 
 
 func _ready():
+	print("global location: ", Global.location)
+	pov_instance = load(Global.location).instance()
+	add_child(pov_instance)
+	move_child(pov_instance, 0)
 	_update_buttons()
 	
 
@@ -16,13 +22,6 @@ func _process(_delta):
 		change_PoV($PoV.scene_down)
 	elif Input.is_action_pressed("ui_left"):
 		change_PoV($PoV.scene_left)
-
-
-# func _on_Area2D2_input_event(_viewport, event, _shape_idx):
-# 	if event is InputEventMouseButton \
-#	and event.button_index == BUTTON_LEFT \
-#	and event.pressed:
-#		SceneManager.change_scene(scene_right, {"speed": 3.8, "wait_time": 0.3})
 
 
 func _on_RightButton_pressed():
@@ -38,22 +37,28 @@ func _on_LeftButton_pressed():
 
 
 func _on_UpButton_pressed():
-	change_PoV($PoV.scene_up)
+	print("Pressed Up!")
+	change_PoV(pov_instance.scene_up)
 	
 	
 func change_PoV(scene_path):
+	print("Changing PoV")
 	# load the next scene and unpack it into a node
 	if scene_path != "None":
+		print("Calling TransitionScreen")
 		global_scene_path = scene_path
 		$TransitionScreen.transition()
 
 
 func _on_TransitionScreen_transitioned():
-	var scene = load(global_scene_path)
-	var node = scene.instance()
-	remove_child($PoV)
-	add_child(node)
-	move_child(node, 0)
+	print("Transitioning!")
+	print("global scene path: ", global_scene_path)
+	# TODO refactor all of this
+	remove_child(pov_instance)
+	pov_scene = load(global_scene_path)
+	pov_instance = pov_scene.instance()
+	add_child(pov_instance)
+	move_child(pov_instance, 0)
 	_update_buttons()
 	
 

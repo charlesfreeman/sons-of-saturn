@@ -26,6 +26,7 @@ run/main_scene="res://dialogue_system/Dialogue.tscn"
 [autoload]
 
 SceneManager="*res://addons/scene_manager/SceneManager.tscn"
+Global="*res://Global.gd"
 
 [display]
 

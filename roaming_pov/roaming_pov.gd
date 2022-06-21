@@ -25,35 +25,29 @@ func _process(_delta):
 
 
 func _on_RightButton_pressed():
-	change_PoV($PoV.scene_right)
+	change_PoV(pov_instance.scene_right)
 
 
 func _on_DownButton_pressed():
-	change_PoV($PoV.scene_down)
+	change_PoV(pov_instance.scene_down)
 
 
 func _on_LeftButton_pressed():
-	change_PoV($PoV.scene_left)
+	change_PoV(pov_instance.scene_left)
 
 
 func _on_UpButton_pressed():
-	print("Pressed Up!")
 	change_PoV(pov_instance.scene_up)
 	
 	
 func change_PoV(scene_path):
-	print("Changing PoV")
 	# load the next scene and unpack it into a node
 	if scene_path != "None":
-		print("Calling TransitionScreen")
 		global_scene_path = scene_path
 		$TransitionScreen.transition()
 
 
 func _on_TransitionScreen_transitioned():
-	print("Transitioning!")
-	print("global scene path: ", global_scene_path)
-	# TODO refactor all of this
 	remove_child(pov_instance)
 	pov_scene = load(global_scene_path)
 	pov_instance = pov_scene.instance()

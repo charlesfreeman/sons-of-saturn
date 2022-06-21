@@ -4,7 +4,7 @@
 [ext_resource path="res://dialogue_system/Dialogue.tscn" type="PackedScene" id=2]
 [ext_resource path="res://sewer/convo_looking_up_well/looking_up_well_square.png" type="Texture" id=3]
 [ext_resource path="res://conversation_pov/spiral_scroll_texture_50_pixel_width.png" type="Texture" id=4]
-[ext_resource path="res://ConvoTransitionScreen.tscn" type="PackedScene" id=5]
+[ext_resource path="res://conversation_pov/ConvoTransitionScreen.tscn" type="PackedScene" id=5]
 
 [node name="HBoxContainer" type="HBoxContainer"]
 anchor_right = 1.0

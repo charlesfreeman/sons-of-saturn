@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://sewer/just_stood_up/ClickToEnter.gd" type="Script" id=1]
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=2]
+[ext_resource path="res://sewer/just_stood_up/just_stood_up_filtered_cropped.jpg" type="Texture" id=3]
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_up = "res://infirmary/log_book/LogBook.tscn"
+
+[node name="ClickToEnter" type="Area2D" parent="."]
+script = ExtResource( 1 )
+my_collision_polygon_node_path = NodePath("CollisionPolygon2D")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ClickToEnter"]
+polygon = PoolVector2Array( 1209.08, 1650.85, 1219.16, 1000.73, 1314.92, 864.663, 1511.46, 869.703, 1622.34, 995.695, 1617.3, 1610.54, 1622.34, 1660.93 )
+
+[connection signal="input_event" from="ClickToEnter" to="." method="_move_pov_up"]

@@ -1,0 +1,596 @@
+{
+  "passages": [
+    {
+      "text": "This is the first time you've seen sunlight in nearly six hours.  You thought the light would be soothing, freeing to soak in, but it's not.  \n\nInstead you feel like a man on a life raft dying of thirst.  Water water everywhere, but not a drop to drink.  A celibate monk at the moment of greatest temptation.  Indulgence would be fatal.\n\nAnd yet you cannot help but fixate on the light above.  You lie flat on your back and stare up the well, rapt and in awe.\n\nAs you lay flat, drops of water occasionally mist your forehead.  It feels like water torture.\n\n[[We've only been crawling through the sewer for six hours?]] \n[[p:(Progression) I want to climb out.  Feel the sun and the air.]] ",
+      "links": [
+        {
+          "name": "We've only been crawling through the sewer for six hours?",
+          "link": "We've only been crawling through the sewer for six hours?",
+          "pid": "2"
+        },
+        {
+          "name": "p:(Progression) I want to climb out.  Feel the sun and the air.",
+          "link": "p:(Progression) I want to climb out.  Feel the sun and the air.",
+          "pid": "3"
+        }
+      ],
+      "name": "Looking Up",
+      "pid": "1",
+      "position": {
+        "x": "937",
+        "y": "409"
+      }
+    },
+    {
+      "text": "Didn't it feel more like eight?  But yes, it's 10:00 in the morning, and you entered the tunnels outside the Cradle just after 4:00.  \n\nIf it's any consolation, that means you've been moving at a pretty steady clip.  Fifteen miles in six hours is respectable time by sewer-speed standards.\n\n[[Continue->Looking Up]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Looking Up",
+          "pid": "1"
+        }
+      ],
+      "name": "We've only been crawling through the sewer for six hours?",
+      "pid": "2",
+      "position": {
+        "x": "827",
+        "y": "576"
+      }
+    },
+    {
+      "text": "You easily could climb this well.  Even fatigued, chimney-ing up this cylinder would require only mild sweating and grunting.\n\nBut you won't.\n\n[[Why wouldn't I?  Why can't I just pop out the top and bask in the light?]]\n[[But sunlight is the only thing I crave.  I'm climbing out of this well and basking in it for a bit.]]\n[[p:(Progression) It's not too late to turn back.  I can just pop out of this well and run straight out of the Cradle.]]",
+      "links": [
+        {
+          "name": "Why wouldn't I?  Why can't I just pop out the top and bask in the light?",
+          "link": "Why wouldn't I?  Why can't I just pop out the top and bask in the light?",
+          "pid": "6"
+        },
+        {
+          "name": "But sunlight is the only thing I crave.  I'm climbing out of this well and basking in it for a bit.",
+          "link": "But sunlight is the only thing I crave.  I'm climbing out of this well and basking in it for a bit.",
+          "pid": "4"
+        },
+        {
+          "name": "p:(Progression) It's not too late to turn back.  I can just pop out of this well and run straight out of the Cradle.",
+          "link": "p:(Progression) It's not too late to turn back.  I can just pop out of this well and run straight out of the Cradle.",
+          "pid": "5"
+        }
+      ],
+      "name": "p:(Progression) I want to climb out.  Feel the sun and the air.",
+      "pid": "3",
+      "position": {
+        "x": "1054",
+        "y": "576"
+      }
+    },
+    {
+      "text": "Alright, go for it.  No reason you can't get out of here and roll around in the fresh air for a few minutes.  You've afforded yourself that much before.  We both know you'll climb right back down though.\n\nGo ahead.  Don't be long now.\n\n...\n\nSee?  You don't have the nerve.  \n\n[[Continue->p:(Progression) I want to climb out.  Feel the sun and the air.]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:(Progression) I want to climb out.  Feel the sun and the air.",
+          "pid": "3"
+        }
+      ],
+      "name": "But sunlight is the only thing I crave.  I'm climbing out of this well and basking in it for a bit.",
+      "pid": "4",
+      "position": {
+        "x": "1048",
+        "y": "745"
+      }
+    },
+    {
+      "text": "Well, it actually is kind of too late for that.  In the material sense, no less.  \n\nNo, really.  You've been tunneling for six hours.  You're well into the off-limits section of the Cradle.  You could probably get away with popping your head out for a few minutes, but trying to get out of here without your Ferryman guide would be suicide.  \n\nSpeaking of, shouldn't he be here by now?  You were only a few minutes ahead of him.\n\n[[p:(Action) Shout for the Ferryman]]\n[[p:(Action) Just wait and enjoy the view a bit longer]]",
+      "links": [
+        {
+          "name": "p:(Action) Shout for the Ferryman",
+          "link": "p:(Action) Shout for the Ferryman",
+          "pid": "7"
+        },
+        {
+          "name": "p:(Action) Just wait and enjoy the view a bit longer",
+          "link": "p:(Action) Just wait and enjoy the view a bit longer",
+          "pid": "8"
+        }
+      ],
+      "name": "p:(Progression) It's not too late to turn back.  I can just pop out of this well and run straight out of the Cradle.",
+      "pid": "5",
+      "position": {
+        "x": "1236",
+        "y": "750"
+      }
+    },
+    {
+      "text": "Look at yourself.  You are covered in tar and stuck to the top of a terrifying but beautiful horse.  And the horse is doing its damndest to keep you down there, at the bottom of this well.  Anyone would find it difficult to climb under those circumstances.\n\nYou came here for a reason.  You might flirt with the idea of bailing, escaping your fate, but deep down we both know what track your on.\n\n[[Why do I need to continue into the Cradle?  What's so important about that place?]] \n\n",
+      "links": [
+        {
+          "name": "Why do I need to continue into the Cradle?  What's so important about that place?",
+          "link": "Why do I need to continue into the Cradle?  What's so important about that place?",
+          "pid": "25"
+        }
+      ],
+      "name": "Why wouldn't I?  Why can't I just pop out the top and bask in the light?",
+      "pid": "6",
+      "position": {
+        "x": "853",
+        "y": "745"
+      }
+    },
+    {
+      "text": "The reverberations of your voice bouncing off the sewer walls sound unearthly and strained.  One could be forgiven for thinking that a screaming donkey in heat resided in this tunnel.\n\n...\n\nNo response from the Ferryman.  I think its time to discontinue the experimental orchestra and get back to sunbathing.\n\n[[p:How much longer do I have left?]]",
+      "links": [
+        {
+          "name": "p:How much longer do I have left?",
+          "link": "p:How much longer do I have left?",
+          "pid": "9"
+        }
+      ],
+      "name": "p:(Action) Shout for the Ferryman",
+      "pid": "7",
+      "position": {
+        "x": "1161",
+        "y": "900"
+      }
+    },
+    {
+      "text": "That's a pretty enthralling circle isn't it?  Simply sublime.\n\nBut really though, how long can you stay entertained by staring at a hole in the ceiling?\n\n[[p:How much longer do I have left?]] \n\n\n\n\n",
+      "links": [
+        {
+          "name": "p:How much longer do I have left?",
+          "link": "p:How much longer do I have left?",
+          "pid": "9"
+        }
+      ],
+      "name": "p:(Action) Just wait and enjoy the view a bit longer",
+      "pid": "8",
+      "position": {
+        "x": "1311",
+        "y": "900"
+      }
+    },
+    {
+      "text": "Until the Ferryman catches up to you?  Who knows.\n\nOr until you reach the end of this god forsaken sewer and finally find your way into the infirmary?  I don't know that either.  But probably not too long.\n\n[[p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.]]",
+      "links": [
+        {
+          "name": "p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.",
+          "link": "p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.",
+          "pid": "10"
+        }
+      ],
+      "name": "p:How much longer do I have left?",
+      "pid": "9",
+      "position": {
+        "x": "1237",
+        "y": "1054"
+      }
+    },
+    {
+      "text": "Yep, pretty sure the situation won't get any more complicated than that.  These tunnels will take you straight to the infirmary, right at the edge of the Cradle.  You'll pop out of an indoor manhole cover or whatever, find a nicely formatted document explaining what happend to your Mom on a nearby desk, and then escape the same way you got in.\n\n[[You sound facetious, internal monologue.  Or whatever you are.]]\n[[What if I can't find any trace of what happened to mom?]]\n[[p:This will all be worth it, right?]]",
+      "links": [
+        {
+          "name": "You sound facetious, internal monologue.  Or whatever you are.",
+          "link": "You sound facetious, internal monologue.  Or whatever you are.",
+          "pid": "11"
+        },
+        {
+          "name": "What if I can't find any trace of what happened to mom?",
+          "link": "What if I can't find any trace of what happened to mom?",
+          "pid": "23"
+        },
+        {
+          "name": "p:This will all be worth it, right?",
+          "link": "p:This will all be worth it, right?",
+          "pid": "12"
+        }
+      ],
+      "name": "p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.",
+      "pid": "10",
+      "position": {
+        "x": "1237",
+        "y": "1204"
+      }
+    },
+    {
+      "text": "So you aren't too tone-deaf, it seems.  You're right, I'm being facetious.  The Cradle is never that simple.  The knotted complex of buildings inside twist and turn in every direction, full of traps and surprises.\n\nThat's why you had to hire a Ferryman as a guide.\n\n[[Continue->p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.",
+          "pid": "10"
+        }
+      ],
+      "name": "You sound facetious, internal monologue.  Or whatever you are.",
+      "pid": "11",
+      "position": {
+        "x": "1036",
+        "y": "1357"
+      }
+    },
+    {
+      "text": "If you find the closure your after, miraculously cure all your psychic ills in the process, use your newfound unhindered and undamaged brain to become rich, famous, and wildly successful, and then retire early, then sure, this excursion will be \"worth it.\"  \n\nBut if you die here, you probably wouldn't consider it \"worth it.\"\n\n[[If I die I wouldn't consider it \"not worth it\" either, technically]]\n[[0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi]]\n[[1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel]]",
+      "links": [
+        {
+          "name": "If I die I wouldn't consider it \"not worth it\" either, technically",
+          "link": "If I die I wouldn't consider it \"not worth it\" either, technically",
+          "pid": "13"
+        },
+        {
+          "name": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi",
+          "link": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi",
+          "pid": "24"
+        },
+        {
+          "name": "1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel",
+          "link": "1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel",
+          "pid": "15"
+        }
+      ],
+      "name": "p:This will all be worth it, right?",
+      "pid": "12",
+      "position": {
+        "x": "1359",
+        "y": "1351"
+      }
+    },
+    {
+      "text": "Vacuously, that's true.  But you'd consider it a shame right now, wouldn't you?  While your still breathing?\n\nThink about everything that would leave unresolved.  All the humiliations and all the pain that would ultimately amount to nothing if you were to die here, rendering your entire life absurd.  You don't want that do you?\n\nYou'd be comparable to one of the baby sea turtles who never makes it to the ocean.  You were born, pecked at, and now you'll die.\n\n[[No one wants that.]] \n[[Everything is relaxed when there's no anything.]]",
+      "links": [
+        {
+          "name": "No one wants that.",
+          "link": "No one wants that.",
+          "pid": "14"
+        },
+        {
+          "name": "Everything is relaxed when there's no anything.",
+          "link": "Everything is relaxed when there's no anything.",
+          "pid": "16"
+        }
+      ],
+      "name": "If I die I wouldn't consider it \"not worth it\" either, technically",
+      "pid": "13",
+      "position": {
+        "x": "1052",
+        "y": "1574"
+      }
+    },
+    {
+      "text": "But plenty of people *get* that.\n\nYou think any baby sea turtle plans on being the one to get eaten by a crab?  You think any kid in Scottish folk tales plans on being one of the children dragged down by a Kelpie?\n\nLet's make sure you aren't one of them.  Because it's a real possibility, a real fate that could befall you.\n\n[[Continue->p:This will all be worth it, right?]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:This will all be worth it, right?",
+          "pid": "12"
+        }
+      ],
+      "name": "No one wants that.",
+      "pid": "14",
+      "position": {
+        "x": "862",
+        "y": "1670"
+      }
+    },
+    {
+      "text": "Yeah, dying after actually entering the Cradle proper would be a lot less humiliating at least.  You've gotta protect your reputation among the cabal of observers you're imagining in your head right now.\n\nSpeaking of, what's that noise?\n\n[[Continue->Ferryman]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Ferryman",
+          "pid": "17"
+        }
+      ],
+      "name": "1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel",
+      "pid": "15",
+      "position": {
+        "x": "1542",
+        "y": "1507"
+      }
+    },
+    {
+      "text": "So you would consider the fate of 99.9% of baby sea turtles a success?  After all, there's nothing to resolve if you've been eaten by a crab.\n\n[[Continue->p:This will all be worth it, right?]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:This will all be worth it, right?",
+          "pid": "12"
+        }
+      ],
+      "name": "Everything is relaxed when there's no anything.",
+      "pid": "16",
+      "position": {
+        "x": "1137",
+        "y": "1716"
+      }
+    },
+    {
+      "text": "Ferryman::...\n\nFerryman::Is everything alright Miss?\n\n[[Why do you think there's something wrong with me?]]\n[[p:I feel fine.  What took you so long?]]",
+      "links": [
+        {
+          "name": "Why do you think there's something wrong with me?",
+          "link": "Why do you think there's something wrong with me?",
+          "pid": "18"
+        },
+        {
+          "name": "p:I feel fine.  What took you so long?",
+          "link": "p:I feel fine.  What took you so long?",
+          "pid": "19"
+        }
+      ],
+      "name": "Ferryman",
+      "pid": "17",
+      "position": {
+        "x": "1541",
+        "y": "1658"
+      },
+      "tags": [
+        "ferryman"
+      ]
+    },
+    {
+      "text": "Ferryman::I apologize.  I just...got concerned when I saw you lying flat on your back.\n\nLying in diluted sewage, no less.\n\n[[Continue->Ferryman]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Ferryman",
+          "pid": "17"
+        }
+      ],
+      "name": "Why do you think there's something wrong with me?",
+      "pid": "18",
+      "position": {
+        "x": "1422",
+        "y": "1822"
+      }
+    },
+    {
+      "text": "Ferryman::Apologies for falling behind, I'm not as fit as I was when I first became a Ferryman.  I couldn't keep up with someone as athletic as yourself.  \n\nFerryman::...\n\nFerryman::Also, I knew it would be fine if you got a bit ahead.  The more labyrinthine portions of the sewers are behind us - its a straight shot from here to the infirmary, and only I have the key to the locked entrance ahead.\n\n[[p:Alright, let's get going]]\n[[p:Can I stay here just a bit longer?]]\n\n",
+      "links": [
+        {
+          "name": "p:Alright, let's get going",
+          "link": "p:Alright, let's get going",
+          "pid": "20"
+        },
+        {
+          "name": "p:Can I stay here just a bit longer?",
+          "link": "p:Can I stay here just a bit longer?",
+          "pid": "21"
+        }
+      ],
+      "name": "p:I feel fine.  What took you so long?",
+      "pid": "19",
+      "position": {
+        "x": "1639",
+        "y": "1820"
+      }
+    },
+    {
+      "text": "Ferryman::Yes, let's.  We want to be out of the Cradle before the sun sets.\n\n[[p:(Action) Stand up.]]",
+      "links": [
+        {
+          "name": "p:(Action) Stand up.",
+          "link": "p:(Action) Stand up.",
+          "pid": "22"
+        }
+      ],
+      "name": "p:Alright, let's get going",
+      "pid": "20",
+      "position": {
+        "x": "1565",
+        "y": "1970"
+      }
+    },
+    {
+      "text": "Ferryman::Well... I would like to accomodate this request, but I really cannot recommend staying here any longer.  The water levels in these tunnels rise during mid-day.  And we shouldn't waste time - we don't know exactly where the documents you are after are, and we should avoid being stuck in the Cradle after sunset.\n\nHe's being polite.  Staying here any longer is an awful idea.\n\n[[p:(Action) Stand up.]]",
+      "links": [
+        {
+          "name": "p:(Action) Stand up.",
+          "link": "p:(Action) Stand up.",
+          "pid": "22"
+        }
+      ],
+      "name": "p:Can I stay here just a bit longer?",
+      "pid": "21",
+      "position": {
+        "x": "1711",
+        "y": "1975"
+      }
+    },
+    {
+      "text": "You rise to your feet a little too quickly, leaving you slightly disoriented.  You can still make out the words of your Ferryman guide echoing down the drain.\n\nFerryman::The entrance to the Maternity Ward is just a bit further ahead.\n\n[[How much further?]]\n[[Will there be more sunlight up ahead?]]\n[[p:Let's get going then.]]",
+      "links": [
+        {
+          "name": "How much further?",
+          "link": "How much further?",
+          "pid": "27"
+        },
+        {
+          "name": "Will there be more sunlight up ahead?",
+          "link": "Will there be more sunlight up ahead?",
+          "pid": "28"
+        },
+        {
+          "name": "p:Let's get going then.",
+          "link": "p:Let's get going then.",
+          "pid": "29"
+        }
+      ],
+      "name": "p:(Action) Stand up.",
+      "pid": "22",
+      "position": {
+        "x": "1646",
+        "y": "2133"
+      },
+      "tags": [
+        "rise"
+      ]
+    },
+    {
+      "text": "Then you're out of luck.  Organizing this infiltration took a full year.  Scrounging up enough to pay the Ferryman's broker took several months on top of that.  And that only supplemented the very large loan you took out to pay for this clandestine excursion.  \n\nSo, you better hope you find a little emotional closure somewhere in there.  You'll suffer a very poor return on investment otherwise.\n\n[[Continue->p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.",
+          "pid": "10"
+        }
+      ],
+      "name": "What if I can't find any trace of what happened to mom?",
+      "pid": "23",
+      "position": {
+        "x": "1178",
+        "y": "1357"
+      }
+    },
+    {
+      "text": "You are full of poison.  You got that much correct.  So in a way, you are pretty similar to an aquatic blue-ringed fiend.  \n\nBut you've also got a lot in common with an octopus's victim.  You're a tourist sap who ended up petrified on the beach, pumped full of tetrodotoxin, unable even to close their eyes, staring directly at the sun.\n\nYou are flat on your back, paralyzed.  You even lack the wit to shut your eyelids, and the foreign sun is turning your irises into swiss cheese.\n\n[[Continue->p:This will all be worth it, right?]] \n",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:This will all be worth it, right?",
+          "pid": "12"
+        }
+      ],
+      "name": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi",
+      "pid": "24",
+      "position": {
+        "x": "1361",
+        "y": "1509"
+      }
+    },
+    {
+      "text": "Ostensibly, you came here to find out what happened to your Mom.  Everyone who comes to the Cradle is looking for closure of some form, and you're no different.  \n\n[[Why should I care about finding my mom?  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.]]",
+      "links": [
+        {
+          "name": "Why should I care about finding my mom?  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
+          "link": "Why should I care about finding my mom?  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
+          "pid": "26"
+        }
+      ],
+      "name": "Why do I need to continue into the Cradle?  What's so important about that place?",
+      "pid": "25",
+      "position": {
+        "x": "853",
+        "y": "895"
+      }
+    },
+    {
+      "text": "She disappeared nine years ago, when you were 13 years old.  The void she left scabbed over, got filled with scar tissue - but never really healed.  No hair follicules grow in that part of your psyche.\n\nYour mom was research faculty at the HART generating facility in the Cradle.  She, like many others, had to drop everything and escape during the collapse.  She escaped carrying a smaller, four year old version of yourself.  \n\nNine years ago, she hired a Ferryman and ventured back into the Cradle, trying to salvage what she could of her research.  She didn't come back.  So you came here to retrace her steps and find out what happened.  That's why you are in a sewer and not running through a field of bullet ant infested sunflowers.\n\n[[Continue->p:(Progression) I want to climb out.  Feel the sun and the air.]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:(Progression) I want to climb out.  Feel the sun and the air.",
+          "pid": "3"
+        }
+      ],
+      "name": "Why should I care about finding my mom?  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
+      "pid": "26",
+      "position": {
+        "x": "851",
+        "y": "1044"
+      }
+    },
+    {
+      "text": "Ferryman::Perhaps a hundred meters, at most.  We are very close Miss.\n\nFerryman::In fact, that well emerges into one of the General Hospital's interior courtyards.  That's how close we are.\n\nSee?  That well was a false hope.  You made the right call.\n\n[[C->p:(Action) Stand up.]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:(Action) Stand up.",
+          "pid": "22"
+        }
+      ],
+      "name": "How much further?",
+      "pid": "27",
+      "position": {
+        "x": "1484",
+        "y": "2289"
+      }
+    },
+    {
+      "text": "Ferryman::Yes, actually.  The Hospital's chief architect designed the Maternity Ward to admit an abundance of natural lighting.  He believed such a design would mitigate the effects of postpartum depression.  \n\nSee?  You never needed this well.\n\n[[C->p:(Action) Stand up.]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:(Action) Stand up.",
+          "pid": "22"
+        }
+      ],
+      "name": "Will there be more sunlight up ahead?",
+      "pid": "28",
+      "position": {
+        "x": "1649",
+        "y": "2287"
+      }
+    },
+    {
+      "text": "The Ferryman nods his head sharply in agreement.  It's time to get a move on.\n\nThe marionette strings tugging you along grow more and more insistent.  You've been hung and drawn - now it's time to get quarted.  \n\nReady to get this show started?\n\n[[p:Yes!]]\n[[p:No.->p:Stop pretending that it matters, it's insulting.]]\n[[p:Stop pretending that it matters, it's insulting.]]",
+      "links": [
+        {
+          "name": "p:Yes!",
+          "link": "p:Yes!",
+          "pid": "30"
+        },
+        {
+          "name": "p:No.",
+          "link": "p:Stop pretending that it matters, it's insulting.",
+          "pid": "31"
+        },
+        {
+          "name": "p:Stop pretending that it matters, it's insulting.",
+          "link": "p:Stop pretending that it matters, it's insulting.",
+          "pid": "31"
+        }
+      ],
+      "name": "p:Let's get going then.",
+      "pid": "29",
+      "position": {
+        "x": "1801",
+        "y": "2286"
+      }
+    },
+    {
+      "text": "Finally! Past grief and anger, acceptance has arrived.  We're going with the flow now.\n\n[[C->Follow]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Follow",
+          "pid": "32"
+        }
+      ],
+      "name": "p:Yes!",
+      "pid": "30",
+      "position": {
+        "x": "1726",
+        "y": "2436"
+      }
+    },
+    {
+      "text": "Being a bad sport about it doesn't ease the pain at all.  All the anger in the world won't barter your way out of this one.\n\n[[C->Follow]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Follow",
+          "pid": "32"
+        }
+      ],
+      "name": "p:Stop pretending that it matters, it's insulting.",
+      "pid": "31",
+      "position": {
+        "x": "1876",
+        "y": "2436"
+      }
+    },
+    {
+      "text": "The Ferryman does a quick turn and begins to slip further down the cavern.\n\nRelunctantly, mechanically, senselessly, you begin to follow. ",
+      "name": "Follow",
+      "pid": "32",
+      "position": {
+        "x": "1805",
+        "y": "2590"
+      }
+    }
+  ],
+  "name": "Introduction",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "A6A99B78-AEB2-430F-8A0A-EA01B5A56687"
+}
+

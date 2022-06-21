@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://dialogue_system/ContinueButton.gd" type="Script" id=1]
+
+[node name="ContinueButton" type="TextureButton"]
+anchor_right = 1.0
+rect_min_size = Vector2( 0, 64 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 50
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Placeholder" type="Control" parent="HBoxContainer"]
+margin_bottom = 64.0
+
+[node name="ContinueText" type="RichTextLabel" parent="HBoxContainer"]
+margin_left = 50.0
+margin_right = 3840.0
+margin_bottom = 64.0
+mouse_filter = 1
+size_flags_horizontal = 3
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="focus_entered" from="." to="." method="_on_ContinueButton_focus_entered"]
+[connection signal="focus_exited" from="." to="." method="_on_ContinueButton_focus_exited"]
+[connection signal="mouse_entered" from="." to="." method="_on_ContinueButton_mouse_entered"]
+[connection signal="pressed" from="." to="." method="_on_ContinueButton_pressed"]

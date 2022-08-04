@@ -152,6 +152,9 @@ func change_scene(path, setted_options: Dictionary = {}):
 	yield(_fade_out(options), "completed")
 	if not options["no_scene_change"]:
 		_replace_scene(path)
+	# source code change to reset cursor upon changing scenes
+	# necessary as otherwise would be stuck with last used custom cursor
+	Input.set_custom_mouse_cursor(null)
 	yield(_tree.create_timer(options["wait_time"]), "timeout")
 	yield(_fade_in(options), "completed")
 

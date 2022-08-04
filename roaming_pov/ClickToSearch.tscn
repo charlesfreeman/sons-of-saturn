@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://infirmary/tann_office/ClickToSearch.gd" type="Script" id=1]
+
+[node name="ClickToSearch" type="Area2D"]
+script = ExtResource( 1 )
+next_scene = "res://roaming_pov/roaming_pov.tscn"
+
+[connection signal="input_event" from="." to="." method="_on_ClickToSearch_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_ClickToSearch_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_ClickToSearch_mouse_exited"]

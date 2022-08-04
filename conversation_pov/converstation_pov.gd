@@ -12,6 +12,7 @@ export var fade_tag_dict = {}
 # following a convo
 export var new_party_mem = ""
 export var mem_to_remove = ""
+export var prog_flag = "None"
 
 onready var avatar = $View/Control/Avatar
 onready var background = $View
@@ -40,6 +41,8 @@ signal tag(tag)
 
 
 func _ready():
+	if prog_flag != "None":
+		Global.flip_prog_flag(prog_flag)
 	Global.location = nextLocation
 	dialogue_sys.set_script_path(scriptPath)
 	dialogue_sys.set_next_scene_path(nextScenePath)
@@ -47,10 +50,11 @@ func _ready():
 	dialogue_sys.set_mem_to_remove(mem_to_remove)
 	dialogue_sys.init()
 	avatar.texture = load(amelie_in_mirror)
+	change_background(backgroundPath)
 
 
 func _on_Control_change_char(character):
-	if character != "Voice" and character != subject:
+	if character != "Voice" and character != subject and character in char_textures.keys():
 		avatar.texture = load(char_textures[character])
 
 

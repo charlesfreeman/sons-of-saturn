@@ -12,7 +12,7 @@ __meta__ = {
 
 [node name="HBoxContainer" parent="." instance=ExtResource( 1 )]
 backgroundPath = "res://sewer/convo_looking_up_well/looking_up_well_square.png"
-nextLocation = "res://infirmary/log_book/LogBook.tscn"
+nextLocation = "res://sewer/just_stood_up/just_stood_up.tscn"
 fade_tag_dict = {
 "rise": "res://sewer/convo_looking_up_well/just_stood_up_square.jpg"
 }

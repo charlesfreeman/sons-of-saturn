@@ -1,0 +1,51 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://sewer/mason_drain_corner/mason_drain_corner.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/DescPopUp.tscn" type="PackedScene" id=4]
+[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=5]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 351.72
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 441.44, 495.119 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 315.583, 307.83 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_up = "res://sewer/big_leaking_tunnel/big_leaking_tunnel.tscn"
+popup_background = "res://sewer/curving_tunnel_empty/curving_tunnel_empty.png"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1393.74, 1133.41 )
+shape = SubResource( 1 )
+
+[node name="DescPopUp" parent="." instance=ExtResource( 4 )]
+popup_text = [ "Sentence 1", "Sentence 2" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DescPopUp"]
+position = Vector2( 2352.27, 1192.32 )
+shape = SubResource( 2 )
+
+[node name="PopUp" parent="." instance=ExtResource( 5 )]
+popup_text = [ "Amelie::Example Text", "Wiggly::We should round the corner and see what's there.  I'm sure it's something interesting.  How about it?", "Wiggly::Let's go, I don't want to be late" ]
+diff_background = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
+position = Vector2( 488.376, 1017.02 )
+shape = SubResource( 3 )

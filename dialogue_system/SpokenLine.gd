@@ -4,7 +4,14 @@ onready var speaker_name = $SpeakerName
 onready var dialogue_line = $DialogueLine
 
 # for associating the char with the right color
-var char_colors = {"Wigley": "aqua", "Ferryman": "aqua", "You": "red", "Georgia": "blue", "Voice": "aqua"}
+var char_colors = {"Wigley": "aqua", 
+	"Ferryman": "aqua", 
+	"You": "red", 
+	"Tann": "fuchsia", 
+	"Ansel": "blue",
+	"Vera": "green",
+	"Voice": "aqua",
+}
 
 signal change_char(character)
 

@@ -1,49 +1,14 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://roaming_pov/PopUp.gd" type="Script" id=2]
-[ext_resource path="res://fonts/PTSerifReg64.tres" type="DynamicFont" id=3]
+[ext_resource path="res://fonts/PTSerifReg96.tres" type="DynamicFont" id=3]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 1430.73, 1068.51 )
 
 [node name="PopUp" type="Area2D" groups=["popups"]]
 z_index = 1
 script = ExtResource( 2 )
-
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-anchor_right = 1.0
-margin_right = 2877.0
-margin_bottom = 756.0
-rect_min_size = Vector2( 2880, 756 )
-rect_scale = Vector2( 1, 0.68 )
-mouse_filter = 2
-custom_constants/separation = 80
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
-margin_bottom = 756.0
-
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/MarginContainer"]
-margin_bottom = 756.0
-stretch_mode = 1
-
-[node name="Control" type="Control" parent="HBoxContainer"]
-margin_left = 80.0
-margin_right = 2880.0
-margin_bottom = 756.0
-size_flags_horizontal = 3
-
-[node name="Label" type="Label" parent="HBoxContainer/Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-custom_fonts/font = ExtResource( 3 )
-valign = 1
-autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="FullRect" type="Area2D" parent="."]
 z_index = -2
@@ -51,7 +16,95 @@ z_index = -2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FullRect"]
 position = Vector2( 1444.46, 1078.03 )
 z_index = 2
-shape = SubResource( 1 )
+shape = SubResource( 2 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_top = 75.0
+margin_right = 2880.0
+margin_bottom = 831.0
+rect_min_size = Vector2( 2805, 756 )
+mouse_filter = 2
+custom_constants/separation = 80
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+margin_bottom = 756.0
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
+margin_left = 80.0
+margin_right = 836.0
+margin_bottom = 756.0
+rect_min_size = Vector2( 756, 0 )
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/MarginContainer"]
+margin_right = 756.0
+margin_bottom = 756.0
+expand = true
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 916.0
+margin_right = 2880.0
+margin_bottom = 756.0
+mouse_filter = 2
+size_flags_horizontal = 3
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control4" type="Control" parent="HBoxContainer/VBoxContainer"]
+margin_right = 1964.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="Control" type="Control" parent="HBoxContainer/VBoxContainer"]
+margin_top = 50.0
+margin_right = 1964.0
+margin_bottom = 259.0
+mouse_filter = 2
+size_flags_vertical = 3
+
+[node name="LabelContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
+margin_top = 259.0
+margin_right = 1964.0
+margin_bottom = 387.0
+mouse_filter = 2
+custom_constants/separation = 150
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/LabelContainer"]
+margin_right = 1814.0
+margin_bottom = 128.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 3 )
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer/LabelContainer"]
+margin_left = 1964.0
+margin_right = 1964.0
+margin_bottom = 128.0
+mouse_filter = 2
+
+[node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer"]
+margin_top = 387.0
+margin_right = 1964.0
+margin_bottom = 596.0
+mouse_filter = 2
+size_flags_vertical = 3
+
+[node name="Control3" type="Control" parent="HBoxContainer/VBoxContainer"]
+margin_top = 596.0
+margin_right = 1964.0
+margin_bottom = 756.0
+rect_min_size = Vector2( 0, 160 )
 
 [connection signal="mouse_entered" from="." to="." method="_on_OnClickPopUp_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_OnClickPopUp_mouse_exited"]

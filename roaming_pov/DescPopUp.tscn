@@ -1,0 +1,80 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://fonts/PTSerifReg96.tres" type="DynamicFont" id=2]
+[ext_resource path="res://roaming_pov/DescPopUp.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 1430.73, 1068.51 )
+
+[node name="DescPopUp" type="Area2D" groups=["popups"]]
+z_index = 1
+script = ExtResource( 3 )
+popup_text = [ "Example Text" ]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 1600.0
+margin_right = 2880.0
+margin_bottom = 2356.0
+rect_scale = Vector2( 1, 0.68 )
+mouse_filter = 2
+custom_constants/separation = 20
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="VBoxContainer"]
+margin_right = 2880.0
+margin_bottom = 487.0
+mouse_filter = 2
+size_flags_vertical = 3
+
+[node name="LabelContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 507.0
+margin_right = 2880.0
+margin_bottom = 635.0
+mouse_filter = 2
+custom_constants/separation = 150
+
+[node name="Control" type="Control" parent="VBoxContainer/LabelContainer"]
+margin_bottom = 128.0
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/LabelContainer"]
+margin_left = 150.0
+margin_right = 2730.0
+margin_bottom = 128.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 2 )
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control2" type="Control" parent="VBoxContainer/LabelContainer"]
+margin_left = 2880.0
+margin_right = 2880.0
+margin_bottom = 128.0
+mouse_filter = 2
+
+[node name="Control2" type="Control" parent="VBoxContainer"]
+margin_top = 655.0
+margin_right = 2880.0
+margin_bottom = 756.0
+rect_min_size = Vector2( 0, 101 )
+
+[node name="FullRect" type="Area2D" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+z_index = -2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FullRect"]
+position = Vector2( 1444.46, 1078.03 )
+z_index = 2
+shape = SubResource( 2 )
+
+[connection signal="mouse_entered" from="." to="." method="_on_OnClickPopUp_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_OnClickPopUp_mouse_exited"]
+[connection signal="input_event" from="FullRect" to="." method="_on_FullRect_input_event"]

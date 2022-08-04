@@ -108,7 +108,6 @@ func _load_next_block(name):
 	# preceding block of text over and over when returning to a dialogue node
 	# with branching options
 	else:
-		print("name in stack")
 		self._add_buttons()
 
 
@@ -147,7 +146,7 @@ func _load_paragraph(paragraph):
 		current_char = char_name
 		# if prepended with neither (Action) or (Progression) these operators
 		# do nothing, as desired
-		text = text.trim_prefix("(Action) ")
+		# text = text.trim_prefix("(Action) ")
 		text = text.trim_prefix("(Progression) ")
 		
 		spoken_line.set_speaker_name(char_name)
@@ -171,9 +170,14 @@ func _add_buttons():
 	for i in range(len(self.link_names)):
 		var button_text = self.link_names[i]
 		var display_button = true
+		# TODO consider using a different symbol as this prevents the use of semicolons in text
 		if ";" in button_text:
+			# TODO I think this only allows for requiring one clicked passage?
 			var required_passage_index = int(button_text[0])
 			display_button = _check_if_clicked(required_passage_index)
+			if "->" in button_text:
+				var text_array = button_text.split("->")
+				display_button = display_button or text_array[1] in self.links_clicked
 		if display_button:
 			var dialogue_opt = dialogueOption.instance()
 			button_container.add_child(dialogue_opt)

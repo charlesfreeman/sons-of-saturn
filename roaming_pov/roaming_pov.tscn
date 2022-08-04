@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://images/menu-bg-filtered-cropped.png" type="Texture" id=1]
 [ext_resource path="res://roaming_pov/roaming_pov.gd" type="Script" id=2]
@@ -16,10 +16,11 @@
 [ext_resource path="res://roaming_pov/images/arrow_disabled_down.png" type="Texture" id=14]
 [ext_resource path="res://roaming_pov/images/arrow_disabled_up.png" type="Texture" id=15]
 [ext_resource path="res://roaming_pov/TransitionScreen.tscn" type="PackedScene" id=16]
-[ext_resource path="res://roaming_pov/Wigley.tscn" type="PackedScene" id=17]
+[ext_resource path="res://images/sewer_map.png" type="Texture" id=17]
 [ext_resource path="res://images/amelie_270x360_no_mirror.png" type="Texture" id=18]
 [ext_resource path="res://images/inv-gear.png" type="Texture" id=19]
-[ext_resource path="res://images/doll_and_drawing.jpg" type="Texture" id=20]
+[ext_resource path="res://images/up_pointer_blue.png" type="Texture" id=20]
+[ext_resource path="res://roaming_pov/PartyContainer.gd" type="Script" id=21]
 
 [sub_resource type="StyleBoxFlat" id=4]
 bg_color = Color( 0.141176, 0.141176, 0.141176, 0 )
@@ -56,7 +57,7 @@ __meta__ = {
 
 [node name="TabContainer" type="TabContainer" parent="VBoxContainer"]
 margin_right = 960.0
-margin_bottom = 936.0
+margin_bottom = 936.5
 rect_min_size = Vector2( 960, 936 )
 theme = SubResource( 5 )
 custom_styles/tab_fg = SubResource( 6 )
@@ -68,15 +69,27 @@ anchor_bottom = 1.0
 margin_top = 34.0
 
 [node name="Viewport" type="Viewport" parent="VBoxContainer/TabContainer/Map"]
-size = Vector2( 900, 900 )
+size = Vector2( 960, 902 )
+handle_input_locally = false
+render_target_update_mode = 3
 
-[node name="TextureRect" type="TextureRect" parent="VBoxContainer/TabContainer/Map/Viewport"]
-margin_right = 40.0
-margin_bottom = 40.0
+[node name="MapRect" type="TextureRect" parent="VBoxContainer/TabContainer/Map/Viewport"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 2100.0
+margin_bottom = 1105.0
+mouse_filter = 2
+texture = ExtResource( 17 )
+
+[node name="CharRect" type="TextureRect" parent="VBoxContainer/TabContainer/Map/Viewport/MapRect"]
+margin_left = 2000.0
+margin_top = 1400.0
+margin_right = 2040.0
+margin_bottom = 1440.0
 texture = ExtResource( 20 )
 
-[node name="Camera2D" type="Camera2D" parent="VBoxContainer/TabContainer/Map/Viewport/TextureRect"]
-position = Vector2( 1000, 1000 )
+[node name="Camera2D" type="Camera2D" parent="VBoxContainer/TabContainer/Map/Viewport/MapRect"]
+position = Vector2( 2000, 1200 )
 current = true
 smoothing_enabled = true
 
@@ -84,7 +97,7 @@ smoothing_enabled = true
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 24.0
+margin_top = 34.0
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 1
@@ -102,7 +115,7 @@ __meta__ = {
 
 [node name="Inventory" type="GridContainer" parent="VBoxContainer/TabContainer/Inv/MarginContainer"]
 margin_right = 790.0
-margin_bottom = 772.0
+margin_bottom = 762.0
 custom_constants/vseparation = 20
 custom_constants/hseparation = 20
 columns = 3
@@ -209,19 +222,21 @@ margin_right = 960.0
 margin_bottom = 2097.0
 size_flags_horizontal = 3
 custom_constants/separation = 20
+script = ExtResource( 21 )
 
-[node name="Amelie" type="TextureButton" parent="VBoxContainer/PartyContainer"]
+[node name="Amelie" type="TextureRect" parent="VBoxContainer/PartyContainer"]
 margin_right = 270.0
 margin_bottom = 296.0
-texture_normal = ExtResource( 18 )
-stretch_mode = 4
-
-[node name="Wigley" parent="VBoxContainer/PartyContainer" instance=ExtResource( 17 )]
+texture = ExtResource( 18 )
+stretch_mode = 6
 
 [node name="TransitionScreen" parent="." instance=ExtResource( 16 )]
+
+[node name="TransitionScreenTexture" parent="." instance=ExtResource( 16 )]
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/GridContainer/UpButton" to="." method="_on_UpButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/GridContainer/LeftButton" to="." method="_on_LeftButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/GridContainer/RightButton" to="." method="_on_RightButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/GridContainer/DownButton" to="." method="_on_DownButton_pressed"]
 [connection signal="transitioned" from="TransitionScreen" to="." method="_on_TransitionScreen_transitioned"]
+[connection signal="transitioned" from="TransitionScreenTexture" to="." method="_on_TransitionScreenTexture_transitioned"]

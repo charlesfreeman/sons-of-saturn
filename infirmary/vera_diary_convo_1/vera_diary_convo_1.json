@@ -1,0 +1,119 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Vera::Mood diary.  Entry 2.  July 3th.\n\nVera::Forgot to fill this in for the last few days but that's ok because they'd not look any different from the initial entry.  The accounting here is hellishly monotonous.  Do you have any clue how difficult it is to bore someone passionate about accounting? \n\nVera::Within the SATURN core I felt like I was actually making an impact at least.  I guess Rosalind was so \"thrilled\" I blew the whistle on the fraudulently produced safety test results that she decided I could make an even bigger impact here, making sure no screaming newborns double dip in the hospital account.\n\nVera::The only things of any import to keep track of are the medicine consumption tabulations and the infant sickness rates and correlations.  Sometimes more than one gets hepatitis, and there's a link.  Sometimes some fent fiend decides to dip into the medical supply closets.  Petty indiscrepancies.  It's not much but it's all I've got to work with.\n\nThat name.  There it is.  Your heart rate spikes, and your passages dilate.  The hairs on your neck and arms are put on full alert.  A strong response to such a simple phonetic construct.\n\nFerryman::Hey, \"Rosalind\" is your Mom's name, right? \n\n[[Yes.  It is.]]\n[[p:(Action) Nod silently.->Yes.  It is.]]",
+      "links": [
+        {
+          "name": "Yes.  It is.",
+          "link": "Yes.  It is.",
+          "pid": "5"
+        },
+        {
+          "name": "p:(Action) Nod silently.",
+          "link": "Yes.  It is.",
+          "pid": "5"
+        }
+      ],
+      "name": "Page 2",
+      "pid": "1",
+      "position": {
+        "x": "955",
+        "y": "518.5"
+      }
+    },
+    {
+      "text": "Vera::Mood diary.  Entry 1.  June 27th.\n\nVera::Feel bad.  Difficulty getting up in the morning.  Unappetized at lunch.  Foggy in the afternoon.  Strong undercurrent of malaise all day.\n\nVera::I would have written the same on days minus-14 to 0 if I started this earlier.\n\nVera::Getting \"promoted\" to the maternity ward.  What an infuriating euphemism.  The pay is the same, the work is even less important, and I'm surrounded by screaming newborns.  I hate children!  Famously!  Sending me here was a sick joke.\n\nVera::Perhaps if I'm as obnoxious in this position in the last, I can get \"promoted\" out of here yet again...\n\nFerryman::Seems as though \"Vera\" was pretty unhappy to be transferred here.\n\n[[p:(Action) Flip the page.->Page 2]]",
+      "links": [
+        {
+          "name": "p:(Action) Flip the page.",
+          "link": "Page 2",
+          "pid": "1"
+        }
+      ],
+      "name": "Page 1",
+      "pid": "2",
+      "position": {
+        "x": "958",
+        "y": "296.5"
+      },
+      "tags": [
+        "page1"
+      ]
+    },
+    {
+      "text": "You find an encrusted, tattered notebook lying in the bottom-right drawer of the corner desk.  The name \"Vera Silkwood\" is scribbled on the cover.\n\nFerryman::Good find.  That notebook probably belonged to one of the accountants that worked here in the administration wing.  You might glean a few things about what went on around here by flipping through it.\n\n[[This appears to be someone's diary.  Wouldn't that be a little invasive?]]\n[[p:(Action) Open the diary.->Page 1]]",
+      "links": [
+        {
+          "name": "This appears to be someone's diary.  Wouldn't that be a little invasive?",
+          "link": "This appears to be someone's diary.  Wouldn't that be a little invasive?",
+          "pid": "4"
+        },
+        {
+          "name": "p:(Action) Open the diary.",
+          "link": "Page 1",
+          "pid": "2"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "3",
+      "position": {
+        "x": "946",
+        "y": "13.5"
+      }
+    },
+    {
+      "text": "Ferryman::Well, yes.  But whoever it belonged to is almost certainly dead.  I don't think anyone will mind.\n\nSince when have privacy concerns been an impediment to you?\n\nOpen it.\n\n[[C->Untitled Passage]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Untitled Passage",
+          "pid": "3"
+        }
+      ],
+      "name": "This appears to be someone's diary.  Wouldn't that be a little invasive?",
+      "pid": "4",
+      "position": {
+        "x": "811",
+        "y": "165.5"
+      }
+    },
+    {
+      "text": "Ferryman::Think we've got a match?  I doubt all that many Rosalind's worked at the SATURN Core.\n\n[[p:Definitely a match.  She was in charge of staff rotation and transfer, amongst other duties.]]\n[[p:It's her.  I just know, somehow.->p:Definitely a match.  She was in charge of staff rotation and transfer, amongst other duties.]]",
+      "links": [
+        {
+          "name": "p:Definitely a match.  She was in charge of staff rotation and transfer, amongst other duties.",
+          "link": "p:Definitely a match.  She was in charge of staff rotation and transfer, amongst other duties.",
+          "pid": "6"
+        },
+        {
+          "name": "p:It's her.  I just know, somehow.",
+          "link": "p:Definitely a match.  She was in charge of staff rotation and transfer, amongst other duties.",
+          "pid": "6"
+        }
+      ],
+      "name": "Yes.  It is.",
+      "pid": "5",
+      "position": {
+        "x": "961",
+        "y": "669.5"
+      }
+    },
+    {
+      "text": "Ferryman::Hmm.  I see.  In that case we should definitely keep reading.\n\nFerryman::...Oh, what's this?  It seems the rest of the pages have been ripped out.  I wonder why...\n\nFerryman::Let's keep an eye out for the remaining pages as we explore the rest of the accounting block.  We might glean a bit more information about Rosalind, if we happen across them.\n\nYou've got to find those pages.  Time to invoke bloodhound mode.",
+      "name": "p:Definitely a match.  She was in charge of staff rotation and transfer, amongst other duties.",
+      "pid": "6",
+      "position": {
+        "x": "947",
+        "y": "827.5"
+      }
+    }
+  ],
+  "name": "Vera Diary 1",
+  "startnode": "3",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "4D3770AA-95D7-48C3-BCB1-B143F57B9120"
+}
+

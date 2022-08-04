@@ -1,0 +1,202 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Ansel::TRANSFER NEEDED PLAUSIBLE EXPLANATION AS PROMOTION STOP VERA EXTREMELY COMPETENT UNFORTUNATELY STOP EVEN TRIED GIVING BAD ASSIGNMENTS TO JUSTIFY DEMOTION BEFORE RESTORTING TO PROMOTION STOP I AM SORRY\n\n[[C->Page 7]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Page 7",
+          "pid": "7"
+        }
+      ],
+      "name": "Page 6",
+      "pid": "1",
+      "position": {
+        "x": "738",
+        "y": "1053.5"
+      },
+      "tags": [
+        "page6"
+      ]
+    },
+    {
+      "text": "Tann::THE HELL WERE YOU THINKING STOP WHY SEND VERA TO THIS DEPARTMENT SNOOPING NOSE WHERE DOES NOT BELONG STOP POTENTIALLY DISATROUS\n\n[[C->Page 2]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Page 2",
+          "pid": "3"
+        }
+      ],
+      "name": "Page 1",
+      "pid": "2",
+      "position": {
+        "x": "746",
+        "y": "321.5"
+      },
+      "tags": [
+        "page1"
+      ]
+    },
+    {
+      "text": "Ansel::EVEN WORSE IN SATURN CORE STOP NO MATTER HOW BAD YOU THINK YOU HAVE IT SHE WAS MUCH HIGHER RISK HERE\n\nFerryman::\"Vera.\"  Sounds as though they are discussing the woman who authored that diary.\n\n[[C->Page 3]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Page 3",
+          "pid": "4"
+        }
+      ],
+      "name": "Page 2",
+      "pid": "3",
+      "position": {
+        "x": "749",
+        "y": "463.5"
+      },
+      "tags": [
+        "page2"
+      ]
+    },
+    {
+      "text": "Tann::WHY NOT TERMINATE HER STOP NOT SAFE IN ANY BURO STOP TOO NOSY NOTICES DISCREPANCIES LIKE HAWK STOP WHY US\n\n[[C->Page 4]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Page 4",
+          "pid": "5"
+        }
+      ],
+      "name": "Page 3",
+      "pid": "4",
+      "position": {
+        "x": "742",
+        "y": "602.5"
+      },
+      "tags": [
+        "page3"
+      ]
+    },
+    {
+      "text": "Ansel::VERA EXTREMELY PRODUCTIVE JUDGED BY QUANTITATIVE METRICS AND FAMILY WELL CONNECTED WITH ADMIN STOP TERMINATION WOULD BE OPTICAL DISASTER FROM MANY ANGLES STOP ORDER CAME STRAIGHT FROM ROSALIND\n\nThere it is again - that chill.\n\nFerryman::\"Rosalind\" - there it is again, that name.  Do you think they are referring to your Mom?\n\n[[p:Probably.  She was often tasked with overseeing the transfer of staff.  Let's keep going.->Page 5]]",
+      "links": [
+        {
+          "name": "p:Probably.  She was often tasked with overseeing the transfer of staff.  Let's keep going.",
+          "link": "Page 5",
+          "pid": "6"
+        }
+      ],
+      "name": "Page 4",
+      "pid": "5",
+      "position": {
+        "x": "739",
+        "y": "740.5"
+      },
+      "tags": [
+        "page4"
+      ]
+    },
+    {
+      "text": "Tann::SEND BEAN COUNTER SOMEWHERE SHE CANT DO MUCH DAMAGE STOP RELEGATE TO THEATER DEPT OR FOOD PRODUCT BURO STOP IF SHE FINDS OUT TOO MUCH BAD FOR BOTH OF US\n\n[[C->Page 6]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Page 6",
+          "pid": "1"
+        }
+      ],
+      "name": "Page 5",
+      "pid": "6",
+      "position": {
+        "x": "740",
+        "y": "895.5"
+      },
+      "tags": [
+        "page5"
+      ]
+    },
+    {
+      "text": "Tann::YOU ARE USELESS\n\nYou've reached the end of the stack.\n\nFerryman::Interesting exchange, but it doesn't tell us much about your Mom, other than that she didn't want Vera hanging around the SATURN core.  We should probably keep looking for the rest of Vera's notes, they might prove more illuminating.\n\n[[p:Agreed.  But, I am curious why they were so terrified of Vera.  Makes you wonder what they were trying to hide.]]",
+      "links": [
+        {
+          "name": "p:Agreed.  But, I am curious why they were so terrified of Vera.  Makes you wonder what they were trying to hide.",
+          "link": "p:Agreed.  But, I am curious why they were so terrified of Vera.  Makes you wonder what they were trying to hide.",
+          "pid": "10"
+        }
+      ],
+      "name": "Page 7",
+      "pid": "7",
+      "position": {
+        "x": "737",
+        "y": "1213.5"
+      },
+      "tags": [
+        "page7"
+      ]
+    },
+    {
+      "text": "Before you sits a small desk hosting an antique typewriter.  The scene is tastefully backlit by a pair of partially smashed stained glass windows.  Judging by the relatively ornate detailings, you guess this office might have belonged to the head administrator.\n\n[[p:(Action) Rummage through the desk.]]",
+      "links": [
+        {
+          "name": "p:(Action) Rummage through the desk.",
+          "link": "p:(Action) Rummage through the desk.",
+          "pid": "9"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "8",
+      "position": {
+        "x": "747",
+        "y": "20"
+      }
+    },
+    {
+      "text": "Upon searching the desk, you discover a neatly stacked set of withered telegram cards, layered in the order of their delivery and reception.\n\n[[p:(Action) Read through the stack of telegram cards->Page 1]] ",
+      "links": [
+        {
+          "name": "p:(Action) Read through the stack of telegram cards",
+          "link": "Page 1",
+          "pid": "2"
+        }
+      ],
+      "name": "p:(Action) Rummage through the desk.",
+      "pid": "9",
+      "position": {
+        "x": "743",
+        "y": "173.5"
+      }
+    },
+    {
+      "text": "Ferryman::Yeah, I don't know.  Couldn't be anything too nefarious if they were willing to just leave telegrams like this in unsecured office drawers - if it was something serious they'd be more cautious.\n\nHe seems eager to move on from this train of thought.  I encourage indulging him.\n\n[[p:Alright.  Let's go find the rest of Vera's diary entries.]]",
+      "links": [
+        {
+          "name": "p:Alright.  Let's go find the rest of Vera's diary entries.",
+          "link": "p:Alright.  Let's go find the rest of Vera's diary entries.",
+          "pid": "11"
+        }
+      ],
+      "name": "p:Agreed.  But, I am curious why they were so terrified of Vera.  Makes you wonder what they were trying to hide.",
+      "pid": "10",
+      "position": {
+        "x": "737",
+        "y": "1363.5"
+      }
+    },
+    {
+      "text": "The Ferryman nodes.  You return the telegrams to the desk and continue on your way.",
+      "name": "p:Alright.  Let's go find the rest of Vera's diary entries.",
+      "pid": "11",
+      "position": {
+        "x": "737",
+        "y": "1513.5"
+      }
+    }
+  ],
+  "name": "Telegrams",
+  "startnode": "8",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "490882C3-D691-4AC5-9246-3549815CE049"
+}
+

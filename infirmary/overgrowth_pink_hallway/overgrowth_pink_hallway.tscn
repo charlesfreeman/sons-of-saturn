@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/DescPopUp.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 365.103, 497.135 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 333.354, 569.877 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 258.747, 387.326 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_up = "res://infirmary/conduits_hallway/conduits_hallway.tscn"
+scene_right = "res://infirmary/vera_office/vera_office.tscn"
+popup_background = "res://infirmary/overgrowth_pink_hallway/seaside_exterior_colorful.png"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+right_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 2142.08, 1233.21 )
+shape = SubResource( 1 )
+
+[node name="DescPopUp" parent="." instance=ExtResource( 4 )]
+popup_text = [ "Through the overgrown window, you can get a clear view of the hospital building's exterior.", "The portion visible to you is U-shaped.  The architecture is vaguely nautical, perhaps because the building faces a small river.  ", "The architecture seems to allow for copious natural light and airflow.  Perhaps it was first designed as a sanatorium?" ]
+diff_background = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DescPopUp"]
+position = Vector2( 824.534, 1100.15 )
+shape = SubResource( 2 )
+
+[node name="ClickToEnter2" parent="." instance=ExtResource( 3 )]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2( 1461.08, 1085.86 )
+shape = SubResource( 3 )

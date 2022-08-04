@@ -1,0 +1,196 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Vera::Mood diary.  Entry 3.  July 8th.\n\nVera::I actually found something fascinating today, the first break in the monotony since my transfer.  While looking through records pertaining to the hospital's infant mortality rate, I noticed that incidents of stillbirth in the maternity ward are almost never isolated.  \n\nVera::As in, there is never only one stillbirth on any given day.  Always there are two or three, sometimes more, then zero for weeks or months.  That's pretty strong evidence of malpractice by one or more employees.\n\nVera::I'm trying to isolate any obvious common denominators between the stillbirth cases; perhaps they can be tied to someone's shifts in the Maternity Ward.\n\nVera::Oh yeah, mood a little better.\n\nFerryman::Nothing about Rosalind yet...\n\n[[p:(Action) Flip the page.->Page 4]]",
+      "links": [
+        {
+          "name": "p:(Action) Flip the page.",
+          "link": "Page 4",
+          "pid": "2"
+        }
+      ],
+      "name": "Page 3",
+      "pid": "1",
+      "position": {
+        "x": "546",
+        "y": "843.5"
+      },
+      "tags": [
+        "page1"
+      ]
+    },
+    {
+      "text": "Vera::Mood diary.  Entry 4.  July 9th.\n\nVera::I noticed a pattern when looking at the nurses’ time sheets: stillbirth tends to occur only when one of four or five nurses are on shift.  Currently trying to sniff out any commonalities amongst those nurses.  Furthermore, I've noticed the clusters of infant stillbirths nearly always coincide with an anomalous drop in the amount of ergot and datura reported in the medicinal supply cabinet.  Medicinal stocks are only recorded weekly so the correlation is rather coarse and I cannot be sure, though it is an intriguing lead nonetheless.\n\nVera::I've requested my office be moved to the maternity ward, up on the second floor.  They probably think I'm nuts since the offices on that floor are so much smaller.  But I need my eyes and ears there if I'm to figure this out.\n\nFerryman::Looks like that's all that's here.  Maybe we'll find more entries if we can find her office in the maternity ward.\n\n[[This hospital had supplies of ergot and datura?]]\n[[p:Not much about Mom in this one.]]",
+      "links": [
+        {
+          "name": "This hospital had supplies of ergot and datura?",
+          "link": "This hospital had supplies of ergot and datura?",
+          "pid": "3"
+        },
+        {
+          "name": "p:Not much about Mom in this one.",
+          "link": "p:Not much about Mom in this one.",
+          "pid": "4"
+        }
+      ],
+      "name": "Page 4",
+      "pid": "2",
+      "position": {
+        "x": "546",
+        "y": "986.5"
+      },
+      "tags": [
+        "page2"
+      ]
+    },
+    {
+      "text": "Ferryman::The Cradle was the center of a lot of groundbreaking medical research prior to its abandonment.  As such a pretty wide variety of exotic medicinal chemicals were kept in stock - anyone with even slim medical credentials could get there hands on some pretty esoteric stuff without too many questions being asked.\n\nFerryman::In fact, a team working in this very hospital is credited with discovering that Ergot could be used to treat migraines.  As for Datura, I recall hearing they had some luck using it to treat dandruff.\n\n[[p:Personally I'd rather deal with dandruff than regularly ingest nightshade.->Page 4]]\n[[p:I guess a little bit of poison is worth it if it prevents your scalp from falling out.->Page 4]]",
+      "links": [
+        {
+          "name": "p:Personally I'd rather deal with dandruff than regularly ingest nightshade.",
+          "link": "Page 4",
+          "pid": "2"
+        },
+        {
+          "name": "p:I guess a little bit of poison is worth it if it prevents your scalp from falling out.",
+          "link": "Page 4",
+          "pid": "2"
+        }
+      ],
+      "name": "This hospital had supplies of ergot and datura?",
+      "pid": "3",
+      "position": {
+        "x": "456",
+        "y": "1138.5"
+      }
+    },
+    {
+      "text": "Ferryman::True.  Finding the rest might still prove worthwhile, however.  From the sound of things, Vera was digging into something pretty shady going on around here.  Even if it doesn't pertain directly to Rosalind we might be better off figuring out what it is.\n\n[[I'm kind of surprised you don't know more about what is going on.  You seem like you know your way around pretty well.]]\n[[p:Alright, what do you think we should investigate next?]]",
+      "links": [
+        {
+          "name": "I'm kind of surprised you don't know more about what is going on.  You seem like you know your way around pretty well.",
+          "link": "I'm kind of surprised you don't know more about what is going on.  You seem like you know your way around pretty well.",
+          "pid": "5"
+        },
+        {
+          "name": "p:Alright, what do you think we should investigate next?",
+          "link": "p:Alright, what do you think we should investigate next?",
+          "pid": "9"
+        }
+      ],
+      "name": "p:Not much about Mom in this one.",
+      "pid": "4",
+      "position": {
+        "x": "607",
+        "y": "1141.5"
+      }
+    },
+    {
+      "text": "Ferryman::Eh, this stuff, it's all adult stuff.  I've always tried not to worry about it too much.  And like I said, I don't spend too much time in the hospital, other than passing through.\n\n\"Adult stuff.\"  He's at least in his early thirties.\n\nFerryman::That said, it seems likely enough that whatever was going on here is connected to Rosalind somehow, given that she was in charge of some of the staff transfers.  I suggest we keep digging.\n\n[[C->p:Not much about Mom in this one.]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:Not much about Mom in this one.",
+          "pid": "4"
+        }
+      ],
+      "name": "I'm kind of surprised you don't know more about what is going on.  You seem like you know your way around pretty well.",
+      "pid": "5",
+      "position": {
+        "x": "532",
+        "y": "1300.5"
+      }
+    },
+    {
+      "text": "You peer into the cavity of the trash chute on the right side of the room.  Little light escapes from inside, and a layer of detritus strewn about the interior makes details difficult to distinguish.  Despite this, you notice a pair of loose leaf papers stuck to the back of the receptacle.\n\n[[p:(Action) Grab the papers.]]",
+      "links": [
+        {
+          "name": "p:(Action) Grab the papers.",
+          "link": "p:(Action) Grab the papers.",
+          "pid": "7"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "6",
+      "position": {
+        "x": "541",
+        "y": "570.5"
+      }
+    },
+    {
+      "text": "To your shock, the papers appear to be the third and fourth entries of Vera's diary.\n\n[[Look!  I found some of the remaining diary entries!]]\n[[p:(Action) Read the entries.->Page 3]] ",
+      "links": [
+        {
+          "name": "Look!  I found some of the remaining diary entries!",
+          "link": "Look!  I found some of the remaining diary entries!",
+          "pid": "8"
+        },
+        {
+          "name": "p:(Action) Read the entries.",
+          "link": "Page 3",
+          "pid": "1"
+        }
+      ],
+      "name": "p:(Action) Grab the papers.",
+      "pid": "7",
+      "position": {
+        "x": "538",
+        "y": "699.5"
+      }
+    },
+    {
+      "text": "Ferryman::Huh, yeah, you did.  What are they doing here I wonder?  Why would Vera rip them out and throw them into a trash chute?\n\n[[I don't think Vera was the one to rip them out.->p:(Action) Grab the papers.]]\n[[Who cares, let's dig into them.->p:(Action) Grab the papers.]]",
+      "links": [
+        {
+          "name": "I don't think Vera was the one to rip them out.",
+          "link": "p:(Action) Grab the papers.",
+          "pid": "7"
+        },
+        {
+          "name": "Who cares, let's dig into them.",
+          "link": "p:(Action) Grab the papers.",
+          "pid": "7"
+        }
+      ],
+      "name": "Look!  I found some of the remaining diary entries!",
+      "pid": "8",
+      "position": {
+        "x": "400",
+        "y": "843.5"
+      }
+    },
+    {
+      "text": "Ferryman::The medical supply closets referred to in the diary entries are right below us, in the sub basement.  Those are probably worth investigating.  We can get there by taking the stairwell at the end of the hall.\n\n[[p:Yeah, I kind of doubt we'll find much but the entries did mention some anomolous dips in medical supplies.  So we should probably go take a look.]]",
+      "links": [
+        {
+          "name": "p:Yeah, I kind of doubt we'll find much but the entries did mention some anomolous dips in medical supplies.  So we should probably go take a look.",
+          "link": "p:Yeah, I kind of doubt we'll find much but the entries did mention some anomolous dips in medical supplies.  So we should probably go take a look.",
+          "pid": "10"
+        }
+      ],
+      "name": "p:Alright, what do you think we should investigate next?",
+      "pid": "9",
+      "position": {
+        "x": "689",
+        "y": "1300.5"
+      }
+    },
+    {
+      "text": "Ferryman::Yep.  Following you.",
+      "name": "p:Yeah, I kind of doubt we'll find much but the entries did mention some anomolous dips in medical supplies.  So we should probably go take a look.",
+      "pid": "10",
+      "position": {
+        "x": "689",
+        "y": "1450.5"
+      }
+    }
+  ],
+  "name": "Vera Diary 2",
+  "startnode": "6",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "E606C403-C9FB-4376-85CB-07D0A3FE3A75"
+}
+

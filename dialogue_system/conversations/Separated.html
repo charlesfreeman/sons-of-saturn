@@ -1,0 +1,220 @@
+<html>
+  <head>
+    <title>Separated</title>
+    <script type="text/javascript">
+      /**
+       * Twison - Twine 2 JSON Export Story Format
+       *
+       * Copyright (c) 2015 Em Walker
+       * https://lazerwalker.com
+       *
+       * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+       * associated documentation files (the "Software"), to deal in the Software without restriction,
+       * including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+       * and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+       * subject to the following conditions:
+       *
+       * The above copyright notice and this permission notice shall be included in all copies or substantial
+       * portions of the Software.
+       *
+       * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+       * LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+       * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+       * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+       * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+       */
+      var Twison={extractLinksFromText:function(t){var n=t.match(/\[\[.+?\]\]/g);return n?n.map(function(t){var n=t.match(/\[\[(.*?)\-\&gt;(.*?)\]\]/);return n?{name:n[1],link:n[2]}:(t=t.substring(2,t.length-2),{name:t,link:t})}):null},extractPropsFromText:function(t){var n,r={},e=!1;const a=/\{\{((\s|\S)+?)\}\}((\s|\S)+?)\{\{\/\1\}\}/gm;for(;null!==(n=a.exec(t));){const o=n[1],s=n[3].replace(/(\r\n|\n|\r)/gm,""),i=this.extractPropsFromText(s);r[o]=null!==i?i:s,e=!0}return e?r:null},convertPassage:function(t){var n={text:t.innerHTML},r=Twison.extractLinksFromText(n.text);r&&(n.links=r);const e=Twison.extractPropsFromText(n.text);if(e&&(n.props=e),["name","pid","position","tags"].forEach(function(r){var e=t.attributes[r].value;e&&(n[r]=e)}),n.position){var a=n.position.split(",");n.position={x:a[0],y:a[1]}}return n.tags&&(n.tags=n.tags.split(" ")),n},convertStory:function(t){var n=t.getElementsByTagName("tw-passagedata"),r=Array.prototype.slice.call(n).map(Twison.convertPassage),e={passages:r};["name","startnode","creator","creator-version","ifid"].forEach(function(n){var r=t.attributes[n].value;r&&(e[n]=r)});var a={};return e.passages.forEach(function(t){a[t.name]=t.pid}),e.passages.forEach(function(t){t.links&&t.links.forEach(function(t){t.pid=a[t.link],t.pid||(t.broken=!0)})}),e},convert:function(){var t=document.getElementsByTagName("tw-storydata")[0],n=JSON.stringify(Twison.convertStory(t),null,2);document.getElementById("output").innerHTML=n}};window.Twison=Twison;
+    </script>
+  </head>
+  <body>
+    <pre id="output"></pre>
+    <div id="storyData" style="display: none;">
+      <tw-storydata name="Separated" startnode="29" creator="Twine" creator-version="2.3.14" ifid="5931245B-6C80-4CD5-B01F-382B3471635D" zoom="1" format="Twison" format-version="0.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="p:Why did you slam the door?" tags="" position="421,919" size="100,100">Ferryman::I didn&#39;t.  The Cradle did.  
+
+[[Continue-&gt;Stalker Forces]]</tw-passagedata><tw-passagedata pid="2" name="p:Did the door just slam on its own?" tags="" position="623,920" size="100,100">Ferryman::Well, not &quot;on it&#39;s own&quot; exactly.  In the way that Marionettes don&#39;t move on their own.
+
+[[Continue-&gt;Stalker Forces]] </tw-passagedata><tw-passagedata pid="3" name="Stalker Forces" tags="wsad" position="533,1049" size="100,100">Ferryman::I&#39;m sure you&#39;ve heard the famous 
+
+Ferryman::I think the broker must have mentioned them in the introductory sermon he gives to all infiltrators, though he probably didn&#39;t go into much detail.  Every minute with him is under pressure, especially given the clandestine nature of what we&#39;re doing.
+
+[[Is this door locked now?]]
+[[p:(Action) Kick the door]]</tw-passagedata><tw-passagedata pid="4" name="p:(Action) Kick the door" tags="" position="624,1203" size="100,100">You plant your left foot with firm force.  It becomes tightly fixed in place, as if stuck in concrete.  Without thought, your left glute tightens and your core tenses up.  You raise your right foot and tuck it in, like a cobra ready to strike.
+
+The moment of action arrives.  Your right foot springs forward like a head springing from a Jack in the Box.  
+
+First Contact is made.  A ripple shoots through your leg and into your pelvis, dissipating before making it to your torso and left thigh.  The force was completely reflected by the door.
+
+Ferryman::M&#39;am, that&#39;s not going to do anything.
+
+[[p:Oww!]]</tw-passagedata><tw-passagedata pid="5" name="Is this door locked now?" tags="" position="420,1201" size="100,100">Ferryman::The door isn&#39;t &quot;locked&quot;, it&#39;s completely sealed.  The effects of incidents like these are rarely malleable.  Parts of the Cradle seem to come to life, confusing and disorienting those who breach its envelope.  Some infiltrators get more &quot;special treatment&quot; than others.
+
+Ferryman::Speaking of, encountering resistance this early on is unusual.  We should stay on our toes - the Cradle seems to be reacting strongly to your presence.
+
+[[Continue-&gt;Stalker Forces]] </tw-passagedata><tw-passagedata pid="6" name="p:Oww!" tags="" position="420,1359" size="100,100">Ferryman::Yes, &quot;Oww.&quot; Kicking this door isn&#39;t going to do anything.  The Cradle doesn&#39;t respond to blunt force trauma like that.
+
+[[That sucks.  Blunt force trauma is my specialty]]
+[[What will it respond to?]]</tw-passagedata><tw-passagedata pid="7" name="That sucks.  Blunt force trauma is my specialty" tags="" position="343,1508" size="100,100">Ferryman::Indeed, you appear to have an impressive physique.  I was strong like you, when I was younger.
+
+&quot;When I was younger&quot;?  He can&#39;t be much older than you.
+
+Ferryman::But, that&#39;s besides the point.  A wrecking ball careening at full speed wouldn&#39;t so much as dent this door.
+
+[[Continue-&gt;Door won&#39;t move]]</tw-passagedata><tw-passagedata pid="8" name="What will it respond to?" tags="" position="495,1509" size="100,100">Ferryman::Probably nothing.  Sometimes there are ways to bargain with The Cradle, but I don&#39;t believe this is one of those cases.
+
+[[Continue-&gt;Door won&#39;t move]] </tw-passagedata><tw-passagedata pid="9" name="Door won&#39;t move" tags="" position="410,1660" size="100,100">No way around it, this door is staying closed.  
+
+[[(Action) Kick it again]]
+[[p:So what are we going to do?]]</tw-passagedata><tw-passagedata pid="10" name="(Action) Kick it again" tags="" position="282,1809" size="100,100">You reassume your primordial stump-like form.  Once again your heel-cobra is unleashed upon the door, your boot landing with a shocking thud with tremendous reverberations arising from your strike.
+
+Other than the shock waves though, nothing happens.  
+
+The Ferryman watches you with his characteristic infinite patience.  But he understands what you are doing is futile.
+
+Ferryman::M&#39;am, I&#39;m very sure that isn&#39;t going to get us anywhere.  Of course, you are free to keep trying, but if I were you I would focus on preserving my energies.
+
+Again, he&#39;s being polite.  What you are doing is idiotic.
+
+[[Continue-&gt;Door won&#39;t move]] </tw-passagedata><tw-passagedata pid="11" name="p:So what are we going to do?" tags="" position="439,1802" size="100,100">Ferryman::Don&#39;t worry.  I have a plan for getting out of here.  
+
+Ferryman::The shift managers used to call me &quot;Wiggly.&quot;  That nickname stuck for a reason.  I&#39;m very thin and very flexible - even the tightest conduits and interstitial spaces aren&#39;t a challenge for me.
+
+Ferryman::The utility tunnels that weaves underneath the Cradle - they&#39;re too narrow and contorted for most people to fit through.  That&#39;s why children were typically selected to maintain and repair them.  
+
+Ferryman::But I&#39;m flexible, and skinny, and...Wiggly enough to get through them without much issue, even as an adult.
+
+Ferryman::I&#39;ll have to backtrack a bit, but I know a route through the pipes I can follow that should spit me out at the back of the maternity wards.  We can reconvene there.
+
+[[How are you planning to get into the utility tunnel network?  You&#39;re trapped in an isolation cell.]]
+[[Were you one of the children tasked with maintaining the steam tunnels?]]
+[[1:So you just spent your entire childhood running around maintaining underground infrastructure?]]
+[[How am I supposed to navigate this place?]]
+[[What if I run into any more &quot;reverb&quot; type phenomena?]]
+[[p:Would you mind if I started calling you Wiggly?]]</tw-passagedata><tw-passagedata pid="12" name="How am I supposed to navigate this place?" tags="" position="419,1974" size="100,100">Ferryman::Don&#39;t worry.  This is one of the safest parts of The Cradle.  Even if you do get lost you won&#39;t run into much trouble.
+
+Ferryman::And you&#39;ll have to try pretty hard to get lost.  The infirmary has a pretty simple ribbon-shaped layout.
+
+[[Continue-&gt;p:So what are we going to do?]] 
+</tw-passagedata><tw-passagedata pid="13" name="What if I run into any more &quot;reverb&quot; type phenomena?" tags="" position="701,1979" size="100,100">Ferryman::You might have a few more doors slam into your face.  Other than that I wouldn&#39;t worry too much.  We&#39;re still on the southernmost periphery of the Cradle, far from the Core, so the reverb activity should still be weak.  
+
+Ferryman::Though as I said, the fact we&#39;re seeing any phenomena at all at this stage is alarming.  So stay on your toes.
+
+[[Continue-&gt;p:So what are we going to do?]] </tw-passagedata><tw-passagedata pid="14" name="Untitled Passage" tags="" position="531,607" size="100,100">The Ferryman approaches a door on the right side of the end of the hallway.
+
+Ferryman::These are some of the old isolation cells.  They were used for document storage after falling into disuse, so we should check them as well.
+
+He steps through the doorframe on the right.
+
+[[Continue-&gt;Door Slam]]</tw-passagedata><tw-passagedata pid="15" name="Door Slam" tags="Slam" position="526,750" size="100,100">As soon as the Ferryman enters the room, you hear the door slam shut behind him.  You hear him readjust his feet in response.
+
+[[p:Why did you slam the door?]]
+[[p:Did the door just slam on its own?]]</tw-passagedata><tw-passagedata pid="16" name="Were you one of the children tasked with maintaining the steam tunnels?" tags="" position="152,1979" size="100,100">Ferryman::Yes, along with the telegrammatic communication tunnels.  I also spent shifts in the sewer, drainage, and transit systems as well, though less frequently.  Maintenance of those systems was my main job growing up.
+
+Ferryman::Actually, my familiarity with the tunnels is the main reason I was able to find work as a Ferryman.  It&#39;s my main asset, in a sense.
+
+[[Continue-&gt;p:So what are we going to do?]] </tw-passagedata><tw-passagedata pid="17" name="1:So you just spent your entire childhood running around maintaining underground infrastructure?" tags="" position="555,1975" size="100,100">Ferryman::Yes.  
+
+[[p:And that&#39;s not weird to you?]]
+[[p:That&#39;s child labour.  Child abuse.]]</tw-passagedata><tw-passagedata pid="18" name="p:And that&#39;s not weird to you?" tags="" position="472,2112" size="100,100">Ferryman::Nope.
+
+He pauses to reflect for a moment.
+
+Ferryman::I mean, this is all I&#39;ve ever known, really.  That&#39;s why I like working with clients like you - outsiders.  I enjoy hearing about the world outside of the Cradle.  Learning what other people&#39;s lives are like.
+
+[[p:You&#39;re not upset you had to spend your entire childhood doing menial labour for the sake of this failed city?]]</tw-passagedata><tw-passagedata pid="19" name="p:That&#39;s child labour.  Child abuse." tags="" position="622,2112" size="100,100">He&#39;s uncharacteristicly quiet for a brief moment.
+
+Ferryman::I can see how some would see it that way.
+
+[[That doesn&#39;t piss you off?-&gt;p:You&#39;re not upset you had to spend your entire childhood doing menial labour for the sake of this failed city?]]</tw-passagedata><tw-passagedata pid="20" name="p:You&#39;re not upset you had to spend your entire childhood doing menial labour for the sake of this failed city?" tags="" position="515,2262" size="100,100">Ferryman::I mean, I was born on this path.  There was never a fork in the road.  Getting upset, or angry, about my lot doesn&#39;t seem likely to change much.
+
+Ferryman::All that would happen is I would be upset and no one would notice.
+
+[[p:There is so much you could have done with your life.  They denied you that.]]</tw-passagedata><tw-passagedata pid="21" name="p:There is so much you could have done with your life.  They denied you that." tags="" position="514,2412" size="100,100">Ferryman::No, &quot;they&quot; really didn&#39;t.  I was orphaned at an early age - early enough that I don&#39;t remember my parents.  I&#39;m lucky to have any life whatsoever.
+
+Ferryman::And I&#39;m doubly lucky to have landed an occupation that taught a few useful skills.  Really, the SATURN technicians did me a huge favor by taking me in.
+
+[[p:If you say so.-&gt;p:So what are we going to do?]] </tw-passagedata><tw-passagedata pid="22" name="p:Would you mind if I started calling you Wiggly?" tags="" position="852,1979" size="100,100">Wiggly::Not at all - really it&#39;s the only name I&#39;ve ever gone by.
+
+Wiggly::In fact, I wouldn&#39;t even know my legal name if I didn&#39;t once stumbled across some tunnel maintenance shift scheduling ledgers in the administrative district.
+
+Wiggly::&quot;Paul Lowman.&quot;  That name never meant anything to me.  It&#39;s a little stuffy for my taste.
+
+[[p:Paul is a pretty solid name.]]
+[[p:Wiggly is definitely more suiting.]]</tw-passagedata><tw-passagedata pid="23" name="p:Paul is a pretty solid name." tags="" position="780,2127" size="100,100">Wiggly::Too solid if you ask me.  Can&#39;t imagine someone named Paul writhing through a storm drain for fun can you?
+
+[[Continue-&gt;Get Going]]</tw-passagedata><tw-passagedata pid="24" name="p:Wiggly is definitely more suiting." tags="" position="927,2129" size="100,100">Wiggly::I mean, &quot;Wiggly&quot; is literally an apt adjective for describing me, you know?  Hard to get more fitting than that.
+
+[[Continue-&gt;Get Going]]</tw-passagedata><tw-passagedata pid="25" name="Get Going" tags="" position="848,2279" size="100,100">Wiggly::Anyhow, we should get going.  I&#39;ll head into the tunnels - like I said, we&#39;ll reconvene in the Maternity Ward.
+
+Wiggly::You&#39;ll have to navigate there on your own.  Just go up the stairs, down the hallway, and take a left.  You&#39;ll find an entrance there that should be unlocked.
+
+Wiggly::You shouldn&#39;t run into any trouble, but be careful anyhow.  Things get tricky around here.
+
+[[p:Alright, see you on the other side.]]</tw-passagedata><tw-passagedata pid="26" name="How are you planning to get into the utility tunnel network?  You&#39;re trapped in an isolation cell." tags="" position="287,1973" size="100,100">Ferryman::See that waste chute in the corner?
+
+He gestures behind him.
+
+Ferryman::I&#39;ll clumb up that.  There I&#39;ll find a connection to the steam transport layer, which runs through the operational sections of the infirmary.
+
+[[p:You mean to say you can fit into that?]]</tw-passagedata><tw-passagedata pid="27" name="p:You mean to say you can fit into that?" tags="" position="287,2123" size="100,100">Ferryman::Please.
+
+He seems almost insulted.
+
+Ferryman::That chute is wide enough to route a trolley through.  I&#39;ll get through just fine.
+
+Ferryman::Honestly, the only conduits I have any trouble with are the pneumatic transport lines.  And I can even get through some of those.
+
+[[p:Alright, so long as I don&#39;t have to rescue you after you get stuck.-&gt;p:So what are we going to do?]]</tw-passagedata><tw-passagedata pid="28" name="p:Alright, see you on the other side." tags="" position="848,2429" size="100,100">Wiggly nods, does a heel turn, and disappears down the chute, sliding down it with a speed you&#39;d never expect.  It&#39;s as if he were coated in layer of vaseline.
+
+On our own now.  Let&#39;s head to the Maternity Ward.</tw-passagedata><tw-passagedata pid="29" name="Untitled Passage 1" tags="" position="921,41" size="100,100">You come to a stop after exiting the stairwell.  You hear something.  Some horrible, captivating racket is escaping from a room on the right side of the hallway.
+
+You focus your ears.  Though heavily distorted, you clearly recognize the source: a woman, crying.
+
+[[p:Is someone in there?  It sounds like a woman crying.]]</tw-passagedata><tw-passagedata pid="30" name="p:Is someone in there?  It sounds like a woman crying." tags="" position="918,168" size="100,100">Ferryman::Shhhh!
+
+Your guide aggressively shushes you before you can finish.  He appears calm, but his fixed gaze and tense stance betray intense tension.
+
+Ferryman::Stay here.  I&#39;ll investigate.
+
+[[C-&gt;Slink]] </tw-passagedata><tw-passagedata pid="31" name="Slink" tags="slink aquestioning" position="919,301" size="100,100">Your guide slinks to the side of the door without making a sound.  He moves like a cat.
+
+[[C-&gt;Peer]] </tw-passagedata><tw-passagedata pid="32" name="Peer" tags="peer" position="923,445" size="100,100">He peers around the corner of the doorframe.
+
+[[C-&gt;Enter]]</tw-passagedata><tw-passagedata pid="33" name="Enter" tags="enter auncertain" position="921,567" size="100,100">After taking a look, the Ferryman rounds the corner and enters the room.
+
+Several moments pass in silence.
+
+Say something!
+
+[[p:See anything?-&gt;p:Hey champ.  Everything going alright in there?]]
+[[p:Hey champ.  Everything going alright in there?]]</tw-passagedata><tw-passagedata pid="34" name="p:Hey champ.  Everything going alright in there?" tags="slam" position="912,707" size="100,100">Before the words have a chance to escape, you hear the door slam shut.
+
+[[C-&gt;look]]</tw-passagedata><tw-passagedata pid="35" name="look" tags="look" position="741,772" size="100,100">You instinctively run up to the door and peer through the grate.  Wiggly is staring back at you.
+
+[[p:Why did you slam the door?]]
+[[p:Did the door just slam on its own?]]</tw-passagedata><tw-passagedata pid="36" name="Untitled Passage 2" tags="" position="1179,1136.5" size="100,100">Ferryman::Have you heard of the sorts of incidents Infiltrators sometimes report near the SATURN Core?  I know your time with him was necessarily brief, but presumably the Broker went over them at least in passing.
+
+[[Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who&#39;ve been dead for twenty years...]]</tw-passagedata><tw-passagedata pid="37" name="Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who&#39;ve been dead for twenty years..." tags="" position="1175,1288.5" size="100,100">Ferryman::They are not hallucinations.
+
+He is unusually forceful.
+
+Ferryman::You just saw this door slam shut.  That was no trick - feel it!
+
+He grabs the door and gives it a good shake, as if encouraging you to do the same.
+
+Ferryman::This room is an old isolation cell, so it should lock and unlock from the outside.  Yet I&#39;m willing to bet you won&#39;t find any means of opening it.  The Cradle has decided it should remain shut.
+
+[[p:(Action) try to open the door.]]
+[[p:I&#39;ll take your word for it.]]</tw-passagedata><tw-passagedata pid="38" name="p:(Action) try to open the door." tags="" position="1100,1438.5" size="100,100">You grab the exterior handle and shake the door, but nothing gives.  The barrier refuses to move even a millimeter.  
+
+You examine the locking mechanism.  The exposed keyhole moderates the extension and retraction of a bolt that restrains the right hand side of the door.  
+
+You peer into the crevice separating the door from its frame.  The gap is wide enough for you to see: no bolts are extended.  The door is unlocked.
+
+[[p:This door isn&#39;t even locked!  Why won&#39;t it open?]]
+[[p:You&#39;re right.  This is no hallucination.]]</tw-passagedata><tw-passagedata pid="39" name="p:I&#39;ll take your word for it." tags="" position="1250,1438.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="40" name="p:This door isn&#39;t even locked!  Why won&#39;t it open?" tags="" position="1025,1588.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="41" name="p:You&#39;re right.  This is no hallucination." tags="" position="1175,1588.5" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+    </div>
+    <script>
+      Twison.convert();
+    </script>
+  </body>
+</html>

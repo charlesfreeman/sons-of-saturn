@@ -20,8 +20,11 @@
       "pid": "1",
       "position": {
         "x": "955",
-        "y": "518.5"
-      }
+        "y": "518"
+      },
+      "tags": [
+        "page2"
+      ]
     },
     {
       "text": "Vera::Mood diary.  Entry 1.  June 27th.\n\nVera::Feel bad.  Difficulty getting up in the morning.  Unappetized at lunch.  Foggy in the afternoon.  Strong undercurrent of malaise all day.\n\nVera::I would have written the same on days minus-14 to 0 if I started this earlier.\n\nVera::Getting \"promoted\" to the maternity ward.  What an infuriating euphemism.  The pay is the same, the work is even less important, and I'm surrounded by screaming newborns.  I hate children!  Famously!  Sending me here was a sick joke.\n\nVera::Perhaps if I'm as obnoxious in this position in the last, I can get \"promoted\" out of here yet again...\n\nFerryman::Seems as though \"Vera\" was pretty unhappy to be transferred here.\n\n[[p:(Action) Flip the page.->Page 2]]",
@@ -36,7 +39,7 @@
       "pid": "2",
       "position": {
         "x": "958",
-        "y": "296.5"
+        "y": "296"
       },
       "tags": [
         "page1"
@@ -60,7 +63,7 @@
       "pid": "3",
       "position": {
         "x": "946",
-        "y": "13.5"
+        "y": "13"
       }
     },
     {
@@ -76,7 +79,7 @@
       "pid": "4",
       "position": {
         "x": "811",
-        "y": "165.5"
+        "y": "165"
       }
     },
     {
@@ -97,7 +100,7 @@
       "pid": "5",
       "position": {
         "x": "961",
-        "y": "669.5"
+        "y": "669"
       }
     },
     {
@@ -106,7 +109,7 @@
       "pid": "6",
       "position": {
         "x": "947",
-        "y": "827.5"
+        "y": "827"
       }
     }
   ],

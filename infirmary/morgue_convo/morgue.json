@@ -99,7 +99,7 @@
       "name": "(Action) Take a peak.",
       "pid": "6",
       "position": {
-        "x": "633",
+        "x": "637",
         "y": "764"
       },
       "tags": [
@@ -149,12 +149,12 @@
       "name": "Appears",
       "pid": "8",
       "position": {
-        "x": "858",
-        "y": "377"
+        "x": "859",
+        "y": "378"
       }
     },
     {
-      "text": "Ferryman::No, everything really will go more smoothly if you take the lead.  Trust me.\n\nFerryman::Also...I don't actually know my way around the maternity ward all that well, at least compared to the underground networks.  I know the layout perfectly well and can guide people through, but I haven't spent that much time pouring over documents here or going through every single room, accounting for everything left behind.\n\nFerryman::The maternity ward is a transitional area in most excursions, just a place most clients need to pass through to reach the residential districts.  Rarely do I spend much time here.\n\n[[Continue->0;p:Where do we go from here?]] ",
+      "text": "Ferryman::I'll provide suggestions and let you know where we should search, but ultimately you should take the reigns.  Things will go more smoothly that way, trust me.\n\nFerryman::Also...I don't actually know my way around the maternity ward all that well, at least compared to the underground networks.  I know the layout perfectly well and can guide people through, but I haven't spent that much time pouring over documents here or going through every single room, accounting for everything left behind.\n\nFerryman::The maternity ward is a transitional area in most excursions, just a place most clients need to pass through to reach the residential districts.  Rarely do I spend much time here.\n\n[[Continue->0;p:Where do we go from here?]] ",
       "links": [
         {
           "name": "Continue",
@@ -165,8 +165,8 @@
       "name": "Shouldn't you be the one leading the way, given that you know this place like the back of your hand?",
       "pid": "9",
       "position": {
-        "x": "1035",
-        "y": "734"
+        "x": "1053",
+        "y": "729"
       }
     },
     {
@@ -218,7 +218,7 @@
       }
     },
     {
-      "text": "Double-click this passage to edit it.",
+      "text": "",
       "name": "p:Alright, let's start looking.",
       "pid": "13",
       "position": {

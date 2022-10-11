@@ -20,7 +20,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_down = "res://infirmary/stairwell_outside_morgue/stairwell_outside_morgue.tscn"
+scene_down = "res://infirmary/morgue_stairwell_base/morgue_stairwell_base.tscn"
 scene_left = "res://infirmary/autopsy_table/autospy_table.tscn"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]

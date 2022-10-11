@@ -12,8 +12,10 @@ __meta__ = {
 
 [node name="Convo" parent="." instance=ExtResource( 1 )]
 scriptPath = "res://infirmary/vera_diary_convo_2/vera_diary_convo_2.json"
-backgroundPath = "res://infirmary/vera_diary_convo_2/trash_chute cropped.png"
+backgroundPath = "res://infirmary/vera_diary_convo_2/trash_chute_crop_2300x2160.png"
+sliverPath = "res://infirmary/vera_diary_convo_2/trash_chute_sliver.png"
 nextLocation = "res://infirmary/trash_chute/trash_chute.tscn"
+prog_flag = "trash_chute_convo"
 
 [node name="Documents" parent="." instance=ExtResource( 2 )]
 docs = [ "res://infirmary/vera_diary_convo_2/MoodDiary3Cropped.png", "res://infirmary/vera_diary_convo_2/MoodDiary4Cropped.png" ]

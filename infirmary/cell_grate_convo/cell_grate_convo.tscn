@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
+[ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=2]
+[ext_resource path="res://infirmary/cell_grate_convo/wiggly_slinking.png" type="Texture" id=3]
+[ext_resource path="res://infirmary/cell_grate_convo/wiggly_looking_around_corner.png" type="Texture" id=4]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Convo" parent="." instance=ExtResource( 1 )]
+scriptPath = "res://infirmary/cell_grate_convo/cell_grate_convo.json"
+backgroundPath = "res://infirmary/cell_grate_convo/isolation_cells_2300x2160.png"
+sliverPath = "res://images/isolation_cells_right_sliver.png"
+nextLocation = "res://infirmary/isolation_cells/isolation_cells.tscn"
+fade_tag_dict = {
+"back_to_wiggly": "res://infirmary/cell_grate_convo/cell_grate_wiggly_crop_2300x2160.png",
+"disappear": "res://infirmary/cell_grate_convo/cell_grate_no_wiggly_crop_2300x2160.png",
+"look": "res://infirmary/cell_grate_convo/cell_grate_wiggly_crop_2300x2160.png",
+"slam": "res://infirmary/cell_grate_convo/all_black_2300x2160.png",
+"utility": "res://infirmary/cell_grate_convo/soviet_conduits_crop_2300x2160.png",
+"waste_chute": "res://infirmary/cell_grate_convo/cell_tube_crop_2300x2160.png"
+}
+fade_tag_dict_sliver = {
+"back_to_wiggly": "res://infirmary/cell_grate_convo/cell_grate_sliver.png",
+"disappear": "res://infirmary/cell_grate_convo/cell_grate_sliver.png",
+"look": "res://infirmary/cell_grate_convo/cell_grate_sliver.png",
+"slam": "res://infirmary/cell_grate_convo/all_black_sliver.png",
+"utility": "res://infirmary/cell_grate_convo/conduits_sliver.png",
+"waste_chute": "res://infirmary/cell_grate_convo/cell_tube_sliver.png"
+}
+mem_to_remove = "Wiggly"
+prog_flag = "cell_grate_convo"
+
+[node name="CharacterRect" parent="." instance=ExtResource( 2 )]
+margin_left = 2044.0
+margin_top = 513.0
+margin_right = 2868.0
+margin_bottom = 2457.0
+texture = ExtResource( 3 )
+appear_tag = "slink"
+disappear_tag = "peer"
+
+[node name="CharacterRect2" parent="." instance=ExtResource( 2 )]
+margin_left = 1830.0
+margin_top = 690.0
+margin_right = 2318.0
+margin_bottom = 2267.0
+texture = ExtResource( 4 )
+appear_tag = "peer"
+disappear_tag = "enter"

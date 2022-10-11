@@ -12,8 +12,10 @@ __meta__ = {
 
 [node name="Convo" parent="." instance=ExtResource( 1 )]
 scriptPath = "res://infirmary/telegram_convo/telegram_convo.json"
-backgroundPath = "res://infirmary/telegram_convo/tann_office_cropped.png"
+backgroundPath = "res://infirmary/telegram_convo/tann_office_crop_2300x2160.png"
+sliverPath = "res://infirmary/telegram_convo/tann_office_sliver.png"
 nextLocation = "res://infirmary/tann_office/tann_office.tscn"
+prog_flag = "tann_office_convo"
 
 [node name="Documents" parent="." instance=ExtResource( 2 )]
 docs = [ "res://infirmary/telegram_convo/Telegram1.png", "res://infirmary/telegram_convo/Telegram2.png", "res://infirmary/telegram_convo/Telegram3.png", "res://infirmary/telegram_convo/Telegram4.png", "res://infirmary/telegram_convo/Telegram5.png", "res://infirmary/telegram_convo/Telegram6.png", "res://infirmary/telegram_convo/Telegram7.png" ]

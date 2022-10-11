@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=2]
+[ext_resource path="res://infirmary/morgue_stairwell_base/morgue_stairwell_base.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 898.786, 223.248 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 444.797, 776.122 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 3 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_up = "res://infirmary/morgue_stairwell_1f/morgue_stairwell_1f.tscn"
+scene_down = "res://infirmary/morgue/morgue.tscn"
+alt_scene_up = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.tscn"
+req_flag_up = "overgrowth_pink_hallway"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 2 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1934.6, 1914.37 )
+shape = SubResource( 1 )
+
+[node name="ClickToEnter2" parent="." instance=ExtResource( 2 )]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2( 512.708, 1343.51 )
+shape = SubResource( 2 )

@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.png" type="Texture" id=2]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
 [ext_resource path="res://roaming_pov/DescPopUp.tscn" type="PackedScene" id=4]
+[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 365.103, 497.135 )
@@ -13,6 +14,9 @@ extents = Vector2( 333.354, 569.877 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 258.747, 387.326 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 1057.23, 226.474 )
 
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
@@ -26,7 +30,10 @@ __meta__ = {
 }
 scene_up = "res://infirmary/conduits_hallway/conduits_hallway.tscn"
 scene_right = "res://infirmary/vera_office/vera_office.tscn"
+scene_down = "res://infirmary/morgue_stairwell_1f/morgue_stairwell_1f.tscn"
 popup_background = "res://infirmary/overgrowth_pink_hallway/seaside_exterior_colorful.png"
+req_flag_up = "vera_office_convo"
+prog_flag = "overgrowth_pink_hallway"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 right_path = true
@@ -49,3 +56,15 @@ up_path = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
 position = Vector2( 1461.08, 1085.86 )
 shape = SubResource( 3 )
+
+[node name="ClickToEnter3" parent="." instance=ExtResource( 3 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter3"]
+position = Vector2( 1454.73, 1951 )
+scale = Vector2( 0.929409, 0.890169 )
+shape = SubResource( 4 )
+
+[node name="PopUp" parent="." instance=ExtResource( 5 )]
+popup_text = [ "Wiggly::We should search the offices in this hall before moving forward.  Or rather, that is my recommendation." ]
+nav_popup = true

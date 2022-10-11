@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://infirmary/isolation_stairwell_base/isolation_stairwell_base.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 386.895, 538.25 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 765.633, 204.126 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_up = "res://infirmary/isolation_stairwell_1f/isolation_stairwell_1f.tscn"
+scene_down = "res://infirmary/isolation_cells/isolation_cells.tscn"
+req_flag_up = "medicine_cabinet_inspection"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 2153.89, 1166.53 )
+shape = SubResource( 1 )
+
+[node name="ClickToEnter2" parent="." instance=ExtResource( 3 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2( 1382.6, 1950.14 )
+shape = SubResource( 2 )
+
+[node name="PopUp" parent="." instance=ExtResource( 4 )]
+popup_text = [ "Amelie::Wiggly said I should search that medicine cabinet before heading upstairs." ]
+nav_popup = true

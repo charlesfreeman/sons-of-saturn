@@ -9,7 +9,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HBoxContainer" parent="." instance=ExtResource( 1 )]
+[node name="Convo" parent="." instance=ExtResource( 1 )]
 scriptPath = "res://sewer/convo_looking_up_ladder/ladder_convo.json"
 backgroundPath = "res://sewer/convo_looking_up_ladder/climbing_sewer_ladder.png"
+sliverPath = "res://sewer/convo_looking_up_ladder/climbing_ladder_sliver.png"
 nextScenePath = "res://infirmary/morgue_convo/morgue_convo.tscn"

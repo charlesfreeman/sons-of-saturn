@@ -10,8 +10,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HBoxContainer" parent="." instance=ExtResource( 1 )]
-backgroundPath = "res://sewer/convo_looking_up_well/looking_up_well_square.png"
+[node name="Convo" parent="." instance=ExtResource( 1 )]
+backgroundPath = "res://sewer/convo_looking_up_well/looking_up_well_crop_2300x2160.png"
+sliverPath = "res://sewer/convo_looking_up_well/looking_up_well_sliver.png"
 nextLocation = "res://sewer/just_stood_up/just_stood_up.tscn"
 fade_tag_dict = {
 "rise": "res://sewer/convo_looking_up_well/just_stood_up_square.jpg"
@@ -19,5 +20,3 @@ fade_tag_dict = {
 new_party_mem = "Wiggly"
 
 [node name="CharacterRect" parent="." instance=ExtResource( 2 )]
-
-[connection signal="tag" from="HBoxContainer" to="CharacterRect" method="_on_HBoxContainer_tag"]

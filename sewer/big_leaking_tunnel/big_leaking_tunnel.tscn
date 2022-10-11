@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://sewer/big_leaking_tunnel/big_leaking_tunnel.png" type="Texture" id=2]
+[ext_resource path="res://sewer/big_leaking_tunnel/big_leaking_tunnel_2.png" type="Texture" id=2]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
 
-[sub_resource type="CircleShape2D" id=1]
-radius = 395.47
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 323.867, 328.738 )
 
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
@@ -23,5 +23,5 @@ scene_up = "res://sewer/drain_stairwell/drain_stairwell.tscn"
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 751.324, 1174.18 )
+position = Vector2( 683.866, 1187.1 )
 shape = SubResource( 1 )

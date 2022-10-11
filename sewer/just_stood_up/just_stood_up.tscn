@@ -15,6 +15,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://sewer/mason_drain_corner/mason_drain_corner.tscn"
+scene_right = "res://sewer/mason_drain_corner/mason_drain_corner.tscn"
+scene_down = "res://sewer/mason_drain_corner/mason_drain_corner.tscn"
+scene_left = "res://sewer/mason_drain_corner/mason_drain_corner.tscn"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 1 )]
 up_path = true

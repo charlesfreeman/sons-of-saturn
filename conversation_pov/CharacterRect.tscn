@@ -3,13 +3,13 @@
 [ext_resource path="res://conversation_pov/CharacterRect.gd" type="Script" id=1]
 [ext_resource path="res://sewer/convo_looking_up_well/wiggly_looking_down_placeholder.png" type="Texture" id=2]
 
-[node name="CharacterRect" type="TextureRect"]
+[node name="CharacterRect" type="TextureRect" groups=["CharacterRects"]]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 663.0
 margin_right = 1523.0
 margin_bottom = 860.0
+mouse_filter = 2
 texture = ExtResource( 2 )
-expand = true
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false

@@ -4,6 +4,7 @@ var in_clickable_area = false
 var popup_done = false
 var index = 0
 var enabled = true
+var perm_disabled = false
 var popup_visible = false
 
 onready var popup = $VBoxContainer
@@ -14,6 +15,11 @@ onready var mag_glass = load("res://roaming_pov/images/mag_glass.png")
 export var popup_on_entry = false
 export var popup_text = ["example text for popup", "example 2"]
 export var diff_background = false
+export var nav_popup = false
+# for single use popups to work we need to set a progression flag for them so
+# we can remember if they've been invoked.
+export var single_use = false
+export var prog_flag = "None"
 
 signal disable_buttons
 signal enable_buttons
@@ -21,10 +27,14 @@ signal swap_bg
 
 
 func _ready():
+	if single_use and Global.get_prog_flag(prog_flag):
+		self.perm_disabled = true
 	add_to_group("click_areas")
 	add_to_group("popups")
 	if diff_background:
 		add_to_group("diff_bg")
+	if nav_popup:
+		add_to_group("nav_popups")
 	if not self.popup_on_entry:
 		popup.hide()
 	else:
@@ -37,6 +47,10 @@ func _on_FullRect_input_event(_viewport, event, _shape_idx):
 	and event.button_index == BUTTON_LEFT \
 	and event.pressed:
 		if self.popup_done:
+			if prog_flag != "None":
+				Global.flip_prog_flag(prog_flag)
+				if single_use:
+					self.perm_disabled = true
 			popup.hide()
 			self.popup_done = false
 			Input.set_custom_mouse_cursor(null)
@@ -44,14 +58,18 @@ func _on_FullRect_input_event(_viewport, event, _shape_idx):
 			emit_signal("enable_buttons")
 			if diff_background:
 				emit_signal("swap_bg")
-		elif (self.in_clickable_area and self.enabled) or self.index != 0:
-			get_tree().call_group("click_areas", "disable")
-			Input.set_custom_mouse_cursor(cont_sym)
-			if self.index == 0:
-				emit_signal("disable_buttons")
-				if diff_background:
-					emit_signal("swap_bg")
-			self._show_next_text()
+		elif (self.in_clickable_area and self.enabled and not self.perm_disabled) or self.index != 0:
+			init_popup()
+
+
+func init_popup():
+	get_tree().call_group("click_areas", "disable")
+	Input.set_custom_mouse_cursor(cont_sym)
+	if self.index == 0:
+		emit_signal("disable_buttons")
+		if diff_background:
+			emit_signal("swap_bg")
+	self._show_next_text()
 
 
 func _show_next_text():
@@ -73,20 +91,22 @@ func make_visible():
 
 
 func _on_OnClickPopUp_mouse_entered():
-	if self.enabled:
+	if self.enabled and not self.perm_disabled:
 		self.in_clickable_area = true
 		Input.set_custom_mouse_cursor(mag_glass)
 
 
 func _on_OnClickPopUp_mouse_exited():
 	self.in_clickable_area = false
-	if self.enabled:
+	if self.enabled and not self.perm_disabled:
 		Input.set_custom_mouse_cursor(null)
 		
 		
 func enable():
+	print("enabling")
 	self.enabled = true
 		
 		
 func disable():
+	print("disabling")
 	self.enabled = false

@@ -1,17 +1,17 @@
 extends Area2D
 
 var char_path_dict = {
-	"Rando": "res://images/gas_mask_cropped_no_marquee.png",
-	"Wiggly" : "res://images/wigley_headshot_feathered.png",
-	"Amelie" : "res://images/amelie_270x360_no_mirror.png",
+	"Wiggly" : "res://conversation_pov/char_profiles/wiggly/wiggly_sad.png",
+	"Amelie" : "res://conversation_pov/char_profiles/amelie/amelie_neutral.png",
 }
 var in_clickable_area = false
 var popup_done = false
 var index = 0
 var characters_array = []
 var text_array = []
-var all_in_party = false
+var all_in_party = true
 var enabled = true
+var perm_disabled = false
 var popup_visible = false
 
 export var popup_on_entry = false
@@ -20,7 +20,11 @@ export var popup_text = [
 	"Wiggly::Wiggly Text"
 ]
 export var diff_background = false
-export(String, FILE) var popup_texture = "None"
+export var nav_popup = false
+# for single use popups to work we need to set a progression flag for them so
+# we can remember if they've been invoked.
+export var single_use = false
+export var prog_flag = "None"
 
 onready var popup = $HBoxContainer
 onready var label = $HBoxContainer/VBoxContainer/LabelContainer/Label
@@ -34,20 +38,27 @@ signal swap_bg
 
 
 func _ready():
+	if single_use and Global.get_prog_flag(prog_flag):
+		self.perm_disabled = true
 	add_to_group("click_areas")
 	add_to_group("popups")
 	if diff_background:
 		add_to_group("diff_bg")
-	if not self.popup_on_entry:
-		popup.hide()
-	else:
-		self._show_next_text()
+	if nav_popup:
+		add_to_group("nav_popups")
+	
 	for pair in popup_text:
 		var pair_array = pair.split("::")
 		var char_name = pair_array[0]
 		var text = pair_array[1]
 		characters_array.append(char_name)
 		text_array.append(text)
+
+	if not self.popup_on_entry:
+		popup.hide()
+	else:
+		self._show_next_text()
+	
 	all_in_party = _check_in_party()
 
 
@@ -57,6 +68,10 @@ func _on_FullRect_input_event(_viewport, event, _shape_idx):
 	and event.pressed:
 		if all_in_party:
 			if self.popup_done:
+				if prog_flag != "None":
+					Global.flip_prog_flag(prog_flag)
+					if single_use:
+						self.perm_disabled = true
 				popup.hide()
 				self.popup_done = false
 				Input.set_custom_mouse_cursor(null)
@@ -64,20 +79,26 @@ func _on_FullRect_input_event(_viewport, event, _shape_idx):
 				emit_signal("enable_buttons")
 				if diff_background:
 					emit_signal("swap_bg")
-			elif (self.in_clickable_area and self.enabled) or self.index != 0:
-				get_tree().call_group("click_areas", "disable")
-				Input.set_custom_mouse_cursor(cont_sym)
-				if self.index == 0:
-					emit_signal("disable_buttons")
-					if diff_background:
-						emit_signal("swap_bg")
-				self._show_next_text()
+			elif (self.in_clickable_area and self.enabled and not self.perm_disabled) or self.index != 0:
+				init_popup()
+
+
+func init_popup():
+	get_tree().call_group("click_areas", "disable")
+	Input.set_custom_mouse_cursor(cont_sym)
+	if self.index == 0:
+		emit_signal("disable_buttons")
+		if diff_background:
+			emit_signal("swap_bg")
+	self._show_next_text()
 
 
 func _check_in_party():
 	var in_party = true
 	for character in characters_array:
-		in_party = in_party and character in Global.party
+		# can safely assume Amelie always in party, so she doesn't appear in global party list
+		if character != "Amelie":
+			in_party = in_party and character in Global.party
 	return in_party
 
 
@@ -101,14 +122,14 @@ func make_visible():
 
 
 func _on_OnClickPopUp_mouse_entered():
-	if self.enabled:
+	if self.enabled and not self.perm_disabled:
 		self.in_clickable_area = true
 		Input.set_custom_mouse_cursor(mag_glass)
 
 
 func _on_OnClickPopUp_mouse_exited():
 	self.in_clickable_area = false
-	if self.enabled:
+	if self.enabled and not self.perm_disabled:
 		Input.set_custom_mouse_cursor(null)
 		
 		

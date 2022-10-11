@@ -12,7 +12,6 @@ var mode_set: bool = false
 signal play_click
 
 
-# Hide button by default
 func _ready():
 	pass 
 	
@@ -65,7 +64,7 @@ func extract_text_and_modifiers(text: String):
 
 
 func _insert_newlines(text: String) -> String:
-	var line_length = 62
+	var line_length = 48
 	if text.length() >= line_length:
 		var index = line_length
 		while index < text.length():
@@ -147,5 +146,10 @@ func _on_DialogueOption_mouse_entered():
 	self.grab_focus()
 
 
+func _on_DialogueOption_mouse_exited():
+	self.release_focus()
+
+
 func _on_DialogueOption_pressed():
 	emit_signal("play_click")
+

@@ -92,6 +92,12 @@ func _load_next_block(name):
 
 		# extract text from the chapter and split based on newlines
 		var np_text = next_chapter["text"]
+		
+		# if no text in block, finish convo and load next scene
+		if np_text == "":
+			_load_next_scene()
+			return
+
 		self.paragraph_array = _split_block(np_text)
 		
 		var num_paragraphs = self.paragraph_array.size()

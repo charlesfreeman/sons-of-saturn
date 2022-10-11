@@ -4,12 +4,16 @@ onready var speaker_name = $SpeakerName
 onready var dialogue_line = $DialogueLine
 
 # for associating the char with the right color
+# TODO remove "Wigley"
 var char_colors = {"Wigley": "aqua", 
+	"Wiggly": "aqua",
 	"Ferryman": "aqua", 
 	"You": "red", 
 	"Tann": "fuchsia", 
 	"Ansel": "blue",
 	"Vera": "green",
+	"Frail Woman": "purple",
+	"Julia": "purple",
 	"Voice": "aqua",
 }
 

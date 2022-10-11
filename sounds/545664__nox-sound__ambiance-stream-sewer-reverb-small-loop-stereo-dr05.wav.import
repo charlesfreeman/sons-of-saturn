@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/545664__nox-sound__ambiance-stream-sewer-reverb-small-loop-stereo-dr05.wav-8ddc840dd3677f93c0ea6a731529b3fc.sample"
+
+[deps]
+
+source_file="res://sounds/545664__nox-sound__ambiance-stream-sewer-reverb-small-loop-stereo-dr05.wav"
+dest_files=[ "res://.import/545664__nox-sound__ambiance-stream-sewer-reverb-small-loop-stereo-dr05.wav-8ddc840dd3677f93c0ea6a731529b3fc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

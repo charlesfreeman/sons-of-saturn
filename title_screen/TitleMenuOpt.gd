@@ -30,5 +30,5 @@ func _on_Continue_pressed():
 
 
 func _on_NewGame_pressed():
-	SceneManager.change_scene("res://sewer/convo_looking_up_well/bottom_of_well.tscn")
+	SceneManager.change_scene("res://intro/quote/Quote.tscn")
 

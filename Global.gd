@@ -1,14 +1,20 @@
 extends Node
 
-var location = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.tscn"
-var party = ["Amelie" ,"Wiggly"]
+var location = "res://infirmary/top_floor_middle_hallway/top_floor_middle_hallway.tscn"
+# Amelie always assumed to be in party, never reason to check
+var party = ["Wiggly"]
 var active_popup = false
 var prog_flags = {
-	"exited_morgue" : false,
+	"overgrowth_pink_hallway" : false,
 	"vera_office_convo" : false,
 	"tann_office_convo" : false,
 	"trash_chute_convo" : false,
 	"cell_grate_convo" : false,
+	"door_open_popup" : false,
+	"julia_first_convo" : false,
+	"medicine_cabinet_inspection" : false,
+	"None" : true,
+	"False" : false,
 }
 
 func _ready():

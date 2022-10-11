@@ -5,6 +5,11 @@ export(String, FILE) var scene_right = "None"
 export(String, FILE) var scene_down = "None"
 export(String, FILE) var scene_left = "None"
 
+export(String, FILE) var alt_scene_up = "None"
+export(String, FILE) var alt_scene_right = "None"
+export(String, FILE) var alt_scene_down = "None"
+export(String, FILE) var alt_scene_left = "None"
+
 export(String, FILE) var popup_background = "None"
 
 export var non_roam_scene_up = false
@@ -12,9 +17,19 @@ export var non_roam_scene_right = false
 export var non_roam_scene_down = false
 export var non_roam_scene_left = false
 
-export var position = Vector2(400, 800)
+export var req_flag_up = "None"
+export var req_flag_right = "None"
+export var req_flag_down = "None"
+export var req_flag_left = "None"
 
 export var prog_flag = "None"
+
+export var position = Vector2(400, 800)
+
+# functionality to moving to new scene instead of new PoV already exists but sometimes more natural
+# to transition after having entered new PoV
+export var new_scene_on_ready = false
+export(String, FILE) var new_scene = "None"
 
 onready var area = $ClickToEnter
 onready var bg = self.texture
@@ -34,13 +49,22 @@ func _ready():
 	if prog_flag != "None":
 		Global.flip_prog_flag(prog_flag)
 	# TODO change this to rely instead on signals
-	get_parent().set_pos(position)
+	# get_parent().set_pos(position)
 	for node in get_tree().get_nodes_in_group("popups"):
 		print("connecting node")
 		node.connect("disable_buttons", self, "_disable_buttons")
 		node.connect("enable_buttons", self, "_enable_buttons")
 		node.connect("swap_bg", self, "_swap_bg")
 
+	if new_scene_on_ready:
+		var t = Timer.new()
+		t.set_wait_time(1.0)
+		t.set_one_shot(true)
+		self.add_child(t)
+		t.start()
+		yield(t, "timeout")
+		t.queue_free()
+		SceneManager.change_scene(new_scene)
 	# TODO add logic to disable clickable area if path not available
 
 func swap_bg():

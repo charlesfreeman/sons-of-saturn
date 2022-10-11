@@ -1,0 +1,396 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Wiggly::Yes.  You repeatedly muttered a few phrases, along the lines of \"I've fucked everything up\" or \"nothing can ever fix this\" or \"none of this is my fault!\"  \n\nWiggly::You also said something about finding a time machine somewhere in the Cradle, fixing it up, and using it to undo everything that you couldn't understand.  You said something along those lines, in different ways, three or four times actually.\n\n[[That's not what I remember dreaming.]]",
+      "links": [
+        {
+          "name": "That's not what I remember dreaming.",
+          "link": "That's not what I remember dreaming.",
+          "pid": "2"
+        }
+      ],
+      "name": "Did I say anything while I was out?",
+      "pid": "1",
+      "position": {
+        "x": "1179",
+        "y": "756"
+      }
+    },
+    {
+      "text": "Wiggly::Well, it's what I remember you saying.\n\n[[C->Hey, hey, I hear you.]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Hey, hey, I hear you.",
+          "pid": "5"
+        }
+      ],
+      "name": "That's not what I remember dreaming.",
+      "pid": "2",
+      "position": {
+        "x": "1179",
+        "y": "906"
+      }
+    },
+    {
+      "text": "Wiggly::Not long, maybe 30 minutes.  You went out pretty much immediately after you flung yourself into the ventillation shaft - it all happened pretty fast, but I think you might have hit your head or something.\n\nWiggly::I wasn't sure what was going on, so I closed up the grate and pulled you a dozen meter or so into this more spacious area.  I've been looking over you since.\n\n[[I didn't hit my head.  I was drugged.]]",
+      "links": [
+        {
+          "name": "I didn't hit my head.  I was drugged.",
+          "link": "I didn't hit my head.  I was drugged.",
+          "pid": "13"
+        }
+      ],
+      "name": "How long was I out for?",
+      "pid": "3",
+      "position": {
+        "x": "1050",
+        "y": "760"
+      }
+    },
+    {
+      "text": "Miss?  Can you hear me?\n\nMiss?\n\n[[Hey, hey, I hear you.]]\n[[Settle down, I'm fine.  I've always been fine.  Why are you not fine?->Hey, hey, I hear you.]]",
+      "links": [
+        {
+          "name": "Hey, hey, I hear you.",
+          "link": "Hey, hey, I hear you.",
+          "pid": "5"
+        },
+        {
+          "name": "Settle down, I'm fine.  I've always been fine.  Why are you not fine?",
+          "link": "Hey, hey, I hear you.",
+          "pid": "5"
+        }
+      ],
+      "name": "Untitled Passage 1",
+      "pid": "4",
+      "position": {
+        "x": "1176",
+        "y": "350.5"
+      }
+    },
+    {
+      "text": "The look of concern dissipates from his face, leaving only hints of exhasperation.\n\nWiggly::Thank goodness miss.  You really had me worried.\n\nWiggly::You weren't responding - I was worried I might have lost another client.\n\n[[Why is my hair wet?]]\n[[How long was I out for?]]\n[[Did I say anything while I was out?]]\n[[p:How did you know I needed to be rescued from that room?]]",
+      "links": [
+        {
+          "name": "Why is my hair wet?",
+          "link": "Why is my hair wet?",
+          "pid": "12"
+        },
+        {
+          "name": "How long was I out for?",
+          "link": "How long was I out for?",
+          "pid": "3"
+        },
+        {
+          "name": "Did I say anything while I was out?",
+          "link": "Did I say anything while I was out?",
+          "pid": "1"
+        },
+        {
+          "name": "p:How did you know I needed to be rescued from that room?",
+          "link": "p:How did you know I needed to be rescued from that room?",
+          "pid": "6"
+        }
+      ],
+      "name": "Hey, hey, I hear you.",
+      "pid": "5",
+      "position": {
+        "x": "1175",
+        "y": "530"
+      }
+    },
+    {
+      "text": "Wiggly::I didn't, miss.  But the way you were behaving, well, I could tell something unusual was going on.\n\nWiggly::I was in the overhead ventillation system in the hallway outside of that room, so I tried yelling through the vents, but you couldn't hear me.  You were only a few feet away.\n\nWiggly::I saw you enter that room, so I decided to tunnel that way.  And when I opened that grate, you dived in.  You acted like you were trying to get away from something, so I closed up the grate and dragged you to this more spacious section of the tunnels.\n\n[[p:What about the woman I was with, Julia?  What happened to her?]]",
+      "links": [
+        {
+          "name": "p:What about the woman I was with, Julia?  What happened to her?",
+          "link": "p:What about the woman I was with, Julia?  What happened to her?",
+          "pid": "7"
+        }
+      ],
+      "name": "p:How did you know I needed to be rescued from that room?",
+      "pid": "6",
+      "position": {
+        "x": "1316",
+        "y": "752"
+      }
+    },
+    {
+      "text": "For a brief moment, Wiggly's face looks perplexed.  This quickly gives way to a look of intense, focused concern.\n\nWiggly::Miss.  There wasn't anyone else with you.\n\nWiggly::Not in the hallway, and not in the room.\n\nHow could he have missed her?  She was right there.  He must have not been paying attention.\n\n[[p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.]]\n[[p:I must have taken a big blow to the head.  I remember a woman, who said her name was Julia, leading me to that room.->p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.]]",
+      "links": [
+        {
+          "name": "p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.",
+          "link": "p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.",
+          "pid": "8"
+        },
+        {
+          "name": "p:I must have taken a big blow to the head.  I remember a woman, who said her name was Julia, leading me to that room.",
+          "link": "p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.",
+          "pid": "8"
+        }
+      ],
+      "name": "p:What about the woman I was with, Julia?  What happened to her?",
+      "pid": "7",
+      "position": {
+        "x": "1316",
+        "y": "902"
+      }
+    },
+    {
+      "text": "Wiggly's grave look of concern grows deeper, more pronounced.\n\nWiggly::I...see.  This is very bad, miss.  Very serious.\n\nWiggly::This \"Julia\" who's been following you - she's not like you or me.  She's a part of the Cradle.  And for whatever reason, she's attached to you.\n\n[[How can someone be \"part of the Cradle\"?]]\n[[Who is \"Julia,\" exactly?->How can someone be \"part of the Cradle\"?]]",
+      "links": [
+        {
+          "name": "How can someone be \"part of the Cradle\"?",
+          "link": "How can someone be \"part of the Cradle\"?",
+          "pid": "9"
+        },
+        {
+          "name": "Who is \"Julia,\" exactly?",
+          "link": "How can someone be \"part of the Cradle\"?",
+          "pid": "9"
+        }
+      ],
+      "name": "p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.",
+      "pid": "8",
+      "position": {
+        "x": "1316",
+        "y": "1052"
+      }
+    },
+    {
+      "text": "Wiggly::Not everyone left behind during the catastrophe was lucky enough to die.  An unfortunate few are still here.  Lingering on, nails dug deep into their palms, past their expiration.\n\nWiggly::\"Julia\" is one of them, I'm sure.  The fact only you could see her confirms it.\n\nWiggly::You're in deep trouble, miss.\n\n[[But I still don't understand how?]]",
+      "links": [
+        {
+          "name": "But I still don't understand how?",
+          "link": "But I still don't understand how?",
+          "pid": "10"
+        }
+      ],
+      "name": "How can someone be \"part of the Cradle\"?",
+      "pid": "9",
+      "position": {
+        "x": "1252",
+        "y": "1209"
+      }
+    },
+    {
+      "text": "Wiggly::Neither do we.  No one does.  \n\nWiggly::But nonetheless I've seen this before.  So have the other Ferrymen.  A client, usually someone with some baggage, enters the Cradle.  And then, usually somewhere near the SATURN Core, they start having delusions of a third party.\n\nWiggly::Their presence might be innocuous enough at first - helpful, even.  But soon they get sick.  Fall over.  Start having hallucinations.\n\nWiggly::No matter how many times I see it happen, it never fails to shake me to my core - seeing a client, incapacited, writhing in terror at someone in the room I cannot even see.\n\n[[You've gone through this before - that means you know what to do?]]",
+      "links": [
+        {
+          "name": "You've gone through this before - that means you know what to do?",
+          "link": "You've gone through this before - that means you know what to do?",
+          "pid": "11"
+        }
+      ],
+      "name": "But I still don't understand how?",
+      "pid": "10",
+      "position": {
+        "x": "1252",
+        "y": "1359"
+      }
+    },
+    {
+      "text": "He is quiet for a moment, confirming your worst fears.\n\nWiggly::Well, we are not completely bereft of options miss.  But there is no way to run away from this.  Julia is attached to you.  You'll need to find a way to shake her off.\n\n[[Your other clients - how did they get through it?]]\n[[Give me the details, how do I shake her off?->Your other clients - how did they get through it?]]",
+      "links": [
+        {
+          "name": "Your other clients - how did they get through it?",
+          "link": "Your other clients - how did they get through it?",
+          "pid": "14"
+        },
+        {
+          "name": "Give me the details, how do I shake her off?",
+          "link": "Your other clients - how did they get through it?",
+          "pid": "14"
+        }
+      ],
+      "name": "You've gone through this before - that means you know what to do?",
+      "pid": "11",
+      "position": {
+        "x": "1252",
+        "y": "1509"
+      }
+    },
+    {
+      "text": "Wiggly::Because I threw water on your face to wake you up.\n\n[[Oh.  That makes sense.->Hey, hey, I hear you.]] \n[[Please never do that again.->Hey, hey, I hear you.]] ",
+      "links": [
+        {
+          "name": "Oh.  That makes sense.",
+          "link": "Hey, hey, I hear you.",
+          "pid": "5"
+        },
+        {
+          "name": "Please never do that again.",
+          "link": "Hey, hey, I hear you.",
+          "pid": "5"
+        }
+      ],
+      "name": "Why is my hair wet?",
+      "pid": "12",
+      "position": {
+        "x": "916",
+        "y": "760"
+      }
+    },
+    {
+      "text": "Wiggly::Hmm.  I don't see how that could have happened, but if you say so, miss.\n\n[[C->Hey, hey, I hear you.]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Hey, hey, I hear you.",
+          "pid": "5"
+        }
+      ],
+      "name": "I didn't hit my head.  I was drugged.",
+      "pid": "13",
+      "position": {
+        "x": "1050",
+        "y": "910"
+      }
+    },
+    {
+      "text": "Wiggly::The client who got through found some old family photo belonging to her attachment.  I couldn't see exactly what happened, but she reported that showing the family photo to the entity haunting her allowed her to break free.\n\nWiggly::We should hunt for some sort of personal artifact that means something to Julia.  I think that's your best chance.\n\nWiggly::What can you tell me about Julia?  Any leads that might point us towards personal artifacts of hers?]]\n\n[[\"Client\"?  As in, singular?]]\n[[p:She's a nurse who works in the maternity ward.  She acted like the visitation she was bringing me in for was extremely discreet, and was very cagey about what it was actually for.  She had some sort of emotional reaction to the auditorium.  That's really all I know.]]",
+      "links": [
+        {
+          "name": "\"Client\"?  As in, singular?",
+          "link": "\"Client\"?  As in, singular?",
+          "pid": "15"
+        },
+        {
+          "name": "p:She's a nurse who works in the maternity ward.  She acted like the visitation she was bringing me in for was extremely discreet, and was very cagey about what it was actually for.  She had some sort of emotional reaction to the auditorium.  That's really all I know.",
+          "link": "p:She's a nurse who works in the maternity ward.  She acted like the visitation she was bringing me in for was extremely discreet, and was very cagey about what it was actually for.  She had some sort of emotional reaction to the auditorium.  That's really all I know.",
+          "pid": "16"
+        }
+      ],
+      "name": "Your other clients - how did they get through it?",
+      "pid": "14",
+      "position": {
+        "x": "1248",
+        "y": "1659"
+      }
+    },
+    {
+      "text": "Wiggly::Yes.  I'm not going to lie to you, miss.  I've only had one client make it through something like this.  The rest either expired or disappeared.\n\n[[Good to know.->Your other clients - how did they get through it?]]",
+      "links": [
+        {
+          "name": "Good to know.",
+          "link": "Your other clients - how did they get through it?",
+          "pid": "14"
+        }
+      ],
+      "name": "\"Client\"?  As in, singular?",
+      "pid": "15",
+      "position": {
+        "x": "1142",
+        "y": "1814"
+      }
+    },
+    {
+      "text": "Wiggly::Visitation?  She saw you for a visitation?\n\n[[p:Yes.  She assumed that's what I was there for when I first encountered her.  I went along with it because the door to the maternity ward was locked, and she said she could bring me here.]]",
+      "links": [
+        {
+          "name": "p:Yes.  She assumed that's what I was there for when I first encountered her.  I went along with it because the door to the maternity ward was locked, and she said she could bring me here.",
+          "link": "p:Yes.  She assumed that's what I was there for when I first encountered her.  I went along with it because the door to the maternity ward was locked, and she said she could bring me here.",
+          "pid": "17"
+        }
+      ],
+      "name": "p:She's a nurse who works in the maternity ward.  She acted like the visitation she was bringing me in for was extremely discreet, and was very cagey about what it was actually for.  She had some sort of emotional reaction to the auditorium.  That's really all I know.",
+      "pid": "16",
+      "position": {
+        "x": "1309",
+        "y": "1804"
+      }
+    },
+    {
+      "text": "Wiggly::I see.  That door shouldn't have been locked.  Kind of suspicious...\n\nWiggly::In any case, that's not a lot to work with, but it's a start.  It'll be high risk, but we should scour the maternity ward for anything we can find pertaining to Julia.  I doubt we'll find the personal artifacts we're looking for, but we might find a few clues as to her identity and exact role.\n\n[[p:Alright.  I don't see any point in wasting time.]]\n[[p:Seems like a long shot, but I don't have much other choice.]]",
+      "links": [
+        {
+          "name": "p:Alright.  I don't see any point in wasting time.",
+          "link": "p:Alright.  I don't see any point in wasting time.",
+          "pid": "18"
+        },
+        {
+          "name": "p:Seems like a long shot, but I don't have much other choice.",
+          "link": "p:Seems like a long shot, but I don't have much other choice.",
+          "pid": "19"
+        }
+      ],
+      "name": "p:Yes.  She assumed that's what I was there for when I first encountered her.  I went along with it because the door to the maternity ward was locked, and she said she could bring me here.",
+      "pid": "17",
+      "position": {
+        "x": "1309",
+        "y": "1954"
+      }
+    },
+    {
+      "text": "Wiggly::I agree.  The tunnels behind me are pretty much a straight shot.  They terminate at a hatch that leads up to one of the maternity ward offices.  I suggest we start heading through them.\n\nWiggly::Are you feeling stable, good to walk?  We can spend a few more minutes recovering here, but I wouldn't want to linger for long.\n\n[[p:I'm fine.  Let's get going.]]\n[[p:Trust me, I'm not going to feel any better in a few minutes.->p:I'm fine.  Let's get going.]]",
+      "links": [
+        {
+          "name": "p:I'm fine.  Let's get going.",
+          "link": "p:I'm fine.  Let's get going.",
+          "pid": "20"
+        },
+        {
+          "name": "p:Trust me, I'm not going to feel any better in a few minutes.",
+          "link": "p:I'm fine.  Let's get going.",
+          "pid": "20"
+        }
+      ],
+      "name": "p:Alright.  I don't see any point in wasting time.",
+      "pid": "18",
+      "position": {
+        "x": "1249",
+        "y": "2232"
+      }
+    },
+    {
+      "text": "Correct.  No other choice.\n\n[[C->p:Alright.  I don't see any point in wasting time.]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:Alright.  I don't see any point in wasting time.",
+          "pid": "18"
+        }
+      ],
+      "name": "p:Seems like a long shot, but I don't have much other choice.",
+      "pid": "19",
+      "position": {
+        "x": "1384",
+        "y": "2104"
+      }
+    },
+    {
+      "text": "Wiggly::If you say so, miss.\n\n[[C->Rises]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Rises",
+          "pid": "21"
+        }
+      ],
+      "name": "p:I'm fine.  Let's get going.",
+      "pid": "20",
+      "position": {
+        "x": "1250",
+        "y": "2382"
+      }
+    },
+    {
+      "text": "Wiggly rises from his kneeling position and moves behind your chair, perhaps to help you stand if he feels it necessary.\n\nWiggly::I'll be following you, miss.\n\nReady when you are.",
+      "name": "Rises",
+      "pid": "21",
+      "position": {
+        "x": "1250",
+        "y": "2532"
+      }
+    }
+  ],
+  "name": "Come To",
+  "startnode": "4",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "3F34A2B0-C26E-4409-B53F-5FF2331F0628"
+}
+

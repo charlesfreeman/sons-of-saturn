@@ -1,17 +1,14 @@
 extends Area2D
 
-
-export(NodePath) var my_collision_polygon_node_path
-
 export var up_path = false
 export var right_path = false
 export var down_path = false
 export var left_path = false
 
-var pointer_up = load("res://images/up_pointer_blue.png")
-var pointer_right = load("res://images/right_pointer_blue.png")
-var pointer_down = load("res://images/down_pointer_blue.png")
-var pointer_left = load("res://images/left_pointer_blue.png")
+var pointer_up = load("res://roaming_pov/images/arrow_up_cursor.png")
+var pointer_right = load("res://roaming_pov/images/arrow_right_cursor.png")
+var pointer_down = load("res://roaming_pov/images/arrow_down_cursor.png")
+var pointer_left = load("res://roaming_pov/images/arrow_left_cursor.png")
 
 var enabled = true
 

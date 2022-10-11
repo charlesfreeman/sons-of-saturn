@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
+[ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=2]
+[ext_resource path="res://rooftop/machine_room_convo/wiggly_looking_down.png" type="Texture" id=3]
+[ext_resource path="res://rooftop/machine_room_convo/wiggly_pointing_to_fuse.png" type="Texture" id=4]
+[ext_resource path="res://rooftop/machine_room_convo/wiggly_hands_in_pockets.png" type="Texture" id=5]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Convo" parent="." instance=ExtResource( 1 )]
+scriptPath = "res://rooftop/machine_room_convo/machine_room_convo.json"
+backgroundPath = "res://rooftop/machine_room_convo/elevator_machine_room_crop.png"
+sliverPath = "res://rooftop/machine_room_convo/elevator_room_sliver.png"
+nextLocation = "res://infirmary/morgue/morgue.tscn"
+fade_tag_dict = {
+"morgue": "res://infirmary/morgue_convo/morgue_cropped.png"
+}
+
+[node name="HandsInPockets" parent="." instance=ExtResource( 2 )]
+margin_left = 565.0
+margin_top = 671.0
+margin_right = 1188.0
+margin_bottom = 2187.0
+texture = ExtResource( 5 )
+on_start = true
+appear_tag = ""
+disappear_tag = "points"
+
+[node name="HandsInPockets2" parent="." instance=ExtResource( 2 )]
+margin_left = 565.0
+margin_top = 671.0
+margin_right = 1188.0
+margin_bottom = 2187.0
+texture = ExtResource( 5 )
+appear_tag = "pockets"
+disappear_tag = "resigned"
+
+[node name="PointingToFuse" parent="." instance=ExtResource( 2 )]
+margin_left = 818.0
+margin_top = 736.0
+margin_right = 1805.0
+margin_bottom = 2413.0
+texture = ExtResource( 4 )
+appear_tag = "points"
+disappear_tag = "pockets"
+
+[node name="LookingDown" parent="." instance=ExtResource( 2 )]
+margin_left = 565.0
+margin_top = 671.0
+margin_right = 1184.0
+margin_bottom = 2187.0
+texture = ExtResource( 3 )
+appear_tag = "resigned"
+disappear_tag = ""

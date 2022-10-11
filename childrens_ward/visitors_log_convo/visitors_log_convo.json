@@ -1,0 +1,150 @@
+
+
+{
+  "passages": [
+    {
+      "text": "A visitation logbook lies conspicuously atop the pile of documents strewn about the room.  As before, the booklet's placement is suspiciously prominent.\n\n[[p:(Action) Read the visitor's logs.]]\n[[p:(Action) Leave.]]",
+      "links": [
+        {
+          "name": "p:(Action) Read the visitor's logs.",
+          "link": "p:(Action) Read the visitor's logs.",
+          "pid": "2"
+        },
+        {
+          "name": "p:(Action) Leave.",
+          "link": "p:(Action) Leave.",
+          "pid": "3"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "1179",
+        "y": "607.5"
+      }
+    },
+    {
+      "text": "You open the first page of the log book.  Entries of visits, organized into time slots, populate the rows of the sheet.\n\nYou scan the columns for familiar names: Rosalind.  Julia.  Thomas.  Paul Loman.  Amelie.  \n\nNone appear.\n\n[[p:(Action) Scan the next page.]]",
+      "links": [
+        {
+          "name": "p:(Action) Scan the next page.",
+          "link": "p:(Action) Scan the next page.",
+          "pid": "4"
+        }
+      ],
+      "name": "p:(Action) Read the visitor's logs.",
+      "pid": "2",
+      "position": {
+        "x": "1238",
+        "y": "766.5"
+      },
+      "tags": [
+        "page1"
+      ]
+    },
+    {
+      "text": "",
+      "name": "p:(Action) Leave.",
+      "pid": "3",
+      "position": {
+        "x": "997",
+        "y": "768.5"
+      }
+    },
+    {
+      "text": "You scan the second page.  No familiar names appear.\n\nVisitations appear relatively sparse.  You could scan this entire book for familiar names in not much time.  Years of hospital visits are recorded, so you're likely to find a little info on Julia and Thomas at least.\n\n[[p:(Action) Scan the rest of the booklet.]]",
+      "links": [
+        {
+          "name": "p:(Action) Scan the rest of the booklet.",
+          "link": "p:(Action) Scan the rest of the booklet.",
+          "pid": "5"
+        }
+      ],
+      "name": "p:(Action) Scan the next page.",
+      "pid": "4",
+      "position": {
+        "x": "1238",
+        "y": "916.5"
+      },
+      "tags": [
+        "page2"
+      ]
+    },
+    {
+      "text": "You spend several minutes running your eyes over the entries on every page.  Years of visitation slip by, depressingly quickly.  You see no mention of Julia.  Nor of Thomas.\n\n[[C->final page]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "final page",
+          "pid": "6"
+        }
+      ],
+      "name": "p:(Action) Scan the rest of the booklet.",
+      "pid": "5",
+      "position": {
+        "x": "1238",
+        "y": "1066.5"
+      }
+    },
+    {
+      "text": "You arrive at the final page.  The columns terminate.  No more visits.\n\nNot a single mention of Julia or Thomas in the entire booklet.\n\nShe never visited her son, who was two stories below her quarters...\n\n[[p:That's too sad for me to even want to acknowledge.]]\n[[p:I understand.  I'd be too ashamed to visit.->p:That's too sad for me to even want to acknowledge.]]\n[[p:Good for her.  This place is depressing.->p:That's too sad for me to even want to acknowledge.]]",
+      "links": [
+        {
+          "name": "p:That's too sad for me to even want to acknowledge.",
+          "link": "p:That's too sad for me to even want to acknowledge.",
+          "pid": "7"
+        },
+        {
+          "name": "p:I understand.  I'd be too ashamed to visit.",
+          "link": "p:That's too sad for me to even want to acknowledge.",
+          "pid": "7"
+        },
+        {
+          "name": "p:Good for her.  This place is depressing.",
+          "link": "p:That's too sad for me to even want to acknowledge.",
+          "pid": "7"
+        }
+      ],
+      "name": "final page",
+      "pid": "6",
+      "position": {
+        "x": "1238",
+        "y": "1216.5"
+      },
+      "tags": [
+        "page3"
+      ]
+    },
+    {
+      "text": "We're in agreement.  The best way to move on from tragedy is to pretend the tragedy never happened and never think about it again.  Send the tragedy to the basement, and then get it together.\n\nOh yeah, what were we doing here again?\n\n[[p:Looking for some way to remove Julia's attachment.]]",
+      "links": [
+        {
+          "name": "p:Looking for some way to remove Julia's attachment.",
+          "link": "p:Looking for some way to remove Julia's attachment.",
+          "pid": "8"
+        }
+      ],
+      "name": "p:That's too sad for me to even want to acknowledge.",
+      "pid": "7",
+      "position": {
+        "x": "1238",
+        "y": "1366.5"
+      }
+    },
+    {
+      "text": "Right.  Let's go find her son's room.",
+      "name": "p:Looking for some way to remove Julia's attachment.",
+      "pid": "8",
+      "position": {
+        "x": "1238",
+        "y": "1516.5"
+      }
+    }
+  ],
+  "name": "visitors_log",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "8C1A07A0-090E-4F5E-9682-2456FED57ED4"
+}
+

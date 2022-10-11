@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
+[ext_resource path="res://conversation_pov/Documents.tscn" type="PackedScene" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Convo" parent="." instance=ExtResource( 1 )]
+scriptPath = "res://childrens_ward/visitors_log_convo/visitors_log_convo.json"
+backgroundPath = "res://childrens_ward/visitors_log_convo/basement_doc_room_crop_2300x2160.png"
+sliverPath = "res://childrens_ward/visitors_log_convo/visitors_doc_convo_sliver.png"
+nextLocation = "res://infirmary/vera_office/vera_office.tscn"
+prog_flag = "vera_office_convo"
+
+[node name="Documents" parent="." instance=ExtResource( 2 )]
+docs = [ "res://childrens_ward/visitors_log_convo/visitor_log_1.png", "res://childrens_ward/visitors_log_convo/visitor_log_2.png", "res://childrens_ward/visitors_log_convo/visitor_log_3.png" ]

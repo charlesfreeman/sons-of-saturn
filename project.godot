@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Twine dialogue system"
-run/main_scene="res://dialogue_system/Dialogue.tscn"
+run/main_scene="res://title_screen/TitleScreen.tscn"
 
 [autoload]
 

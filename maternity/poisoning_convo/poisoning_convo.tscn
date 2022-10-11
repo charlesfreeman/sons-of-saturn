@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
+[ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=2]
+[ext_resource path="res://infirmary/morgue_convo/wiggly_stooping_2.png" type="Texture" id=3]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" parent="." instance=ExtResource( 1 )]
+scriptPath = "res://tunnels/coming_to_convo/coming_to_convo.json"
+backgroundPath = "res://maternity/poisoning_convo/abor_room_crop_0.png"
+nextLocation = "res://infirmary/morgue/morgue.tscn"
+fade_tag_dict = {
+"morgue": "res://infirmary/morgue_convo/morgue_cropped.png"
+}
+
+[node name="CharacterRect" parent="." instance=ExtResource( 2 )]
+margin_left = 1362.0
+margin_top = 1299.0
+margin_right = 2263.0
+margin_bottom = 2556.0
+texture = ExtResource( 3 )
+expand = false
+on_start = true

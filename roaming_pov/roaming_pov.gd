@@ -35,29 +35,49 @@ func _process(_delta):
 func _on_UpButton_pressed():
 		if pov_instance.non_roam_scene_up:
 			SceneManager.change_scene(pov_instance.scene_up)
-		else:
+		elif Global.get_prog_flag(pov_instance.req_flag_up):
 			change_PoV(pov_instance.scene_up)
+		else:
+			if pov_instance.alt_scene_up != "None":
+				change_PoV(pov_instance.alt_scene_up)
+			else:
+				get_tree().call_group("nav_popups", "init_popup")
 
 
 func _on_RightButton_pressed():
 		if pov_instance.non_roam_scene_right:
 			SceneManager.change_scene(pov_instance.scene_right)
-		else:
+		elif Global.get_prog_flag(pov_instance.req_flag_right):
 			change_PoV(pov_instance.scene_right)
+		else:
+			if pov_instance.alt_scene_right != "None":
+				change_PoV(pov_instance.alt_scene_right)
+			else:
+				get_tree().call_group("nav_popups", "init_popup")
 
 
 func _on_DownButton_pressed():
 		if pov_instance.non_roam_scene_down:
 			SceneManager.change_scene(pov_instance.scene_down)
-		else:
+		elif Global.get_prog_flag(pov_instance.req_flag_down):
 			change_PoV(pov_instance.scene_down)
+		else:
+			if pov_instance.alt_scene_down != "None":
+				change_PoV(pov_instance.alt_scene_down)
+			else:
+				get_tree().call_group("nav_popups", "init_popup")
 
 
 func _on_LeftButton_pressed():
 		if pov_instance.non_roam_scene_left:
 			SceneManager.change_scene(pov_instance.scene_left)
-		else:
+		elif Global.get_prog_flag(pov_instance.req_flag_left):
 			change_PoV(pov_instance.scene_left)
+		else:
+			if pov_instance.alt_scene_left != "None":
+				change_PoV(pov_instance.alt_scene_left)
+			else:
+				get_tree().call_group("nav_popups", "init_popup")
 
 
 func change_PoV(scene_path):

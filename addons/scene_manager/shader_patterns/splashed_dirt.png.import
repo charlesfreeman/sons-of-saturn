@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/radial.png-45b81257cf212bc197b861ea33052002.stex"
+path="res://.import/splashed_dirt.png-4f2f3115ccfbe31e3a02d7afe74bb787.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/scene_manager/shader_patterns/radial.png"
-dest_files=[ "res://.import/radial.png-45b81257cf212bc197b861ea33052002.stex" ]
+source_file="res://addons/scene_manager/shader_patterns/splashed_dirt.png"
+dest_files=[ "res://.import/splashed_dirt.png-4f2f3115ccfbe31e3a02d7afe74bb787.stex" ]
 
 [params]
 

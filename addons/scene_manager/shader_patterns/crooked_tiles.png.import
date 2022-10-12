@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/radial.png-45b81257cf212bc197b861ea33052002.stex"
+path="res://.import/crooked_tiles.png-e3a12014fe840f5d967093ab510cab52.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/scene_manager/shader_patterns/radial.png"
-dest_files=[ "res://.import/radial.png-45b81257cf212bc197b861ea33052002.stex" ]
+source_file="res://addons/scene_manager/shader_patterns/crooked_tiles.png"
+dest_files=[ "res://.import/crooked_tiles.png-e3a12014fe840f5d967093ab510cab52.stex" ]
 
 [params]
 

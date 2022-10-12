@@ -27,7 +27,7 @@ texture = ExtResource( 3 )
 expand = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="View"]
-layer = 2
+layer = 0
 
 [node name="Avatar" type="TextureRect" parent="View/CanvasLayer"]
 anchor_right = 1.0

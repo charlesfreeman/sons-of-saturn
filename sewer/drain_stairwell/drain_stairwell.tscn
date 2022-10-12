@@ -17,7 +17,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_up = "res://sewer/convo_looking_up_ladder/ladder_convo.tscn"
+scene_up = "ladder_convo"
 non_roam_scene_up = true
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]

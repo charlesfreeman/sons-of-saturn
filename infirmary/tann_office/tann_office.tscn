@@ -24,7 +24,7 @@ __meta__ = {
 scene_down = "res://infirmary/conduits_hallway/conduits_hallway.tscn"
 
 [node name="ClickToSearch" parent="." instance=ExtResource( 3 )]
-next_scene = "res://infirmary/telegram_convo/telegram_convo.tscn"
+next_scene = "telegram_convo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
 position = Vector2( 1434.12, 1448.6 )

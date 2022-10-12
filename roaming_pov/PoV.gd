@@ -35,6 +35,7 @@ onready var area = $ClickToEnter
 onready var bg = self.texture
 
 var default_bg = true
+var new_scene_played = false
 
 signal move_pov_up
 signal move_pov_down
@@ -56,7 +57,8 @@ func _ready():
 		node.connect("enable_buttons", self, "_enable_buttons")
 		node.connect("swap_bg", self, "_swap_bg")
 
-	if new_scene_on_ready:
+	if new_scene_on_ready and not new_scene_played:
+		new_scene_played = true
 		var t = Timer.new()
 		t.set_wait_time(1.0)
 		t.set_one_shot(true)
@@ -64,7 +66,9 @@ func _ready():
 		t.start()
 		yield(t, "timeout")
 		t.queue_free()
-		SceneManager.change_scene(new_scene)
+		var options = SceneManager.create_options()
+		var general_options = SceneManager.create_general_options()
+		SceneManager.change_scene(new_scene, options, options, general_options)
 	# TODO add logic to disable clickable area if path not available
 
 func swap_bg():

@@ -19,7 +19,7 @@ __meta__ = {
 }
 scene_down = "res://infirmary/wash_room/wash_room.tscn"
 new_scene_on_ready = true
-new_scene = "res://infirmary/julia_first_convo/julia_first_convo.tscn"
+new_scene = "julia_first_convo"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
 down_path = true

@@ -5,6 +5,9 @@ var global_texture_path = "None"
 var pov_scene
 var pov_instance
 
+var options = SceneManager.create_options()
+var general_options = SceneManager.create_general_options()
+
 onready var camera = $VBoxContainer/TabContainer/Map/Viewport/MapRect/Camera2D
 onready var char_rect = $VBoxContainer/TabContainer/Map/Viewport/MapRect/CharRect
 onready var up_button = $VBoxContainer/HBoxContainer/GridContainer/UpButton
@@ -34,7 +37,7 @@ func _process(_delta):
 
 func _on_UpButton_pressed():
 		if pov_instance.non_roam_scene_up:
-			SceneManager.change_scene(pov_instance.scene_up)
+			SceneManager.change_scene(pov_instance.scene_up, options, options, general_options)
 		elif Global.get_prog_flag(pov_instance.req_flag_up):
 			change_PoV(pov_instance.scene_up)
 		else:
@@ -46,7 +49,7 @@ func _on_UpButton_pressed():
 
 func _on_RightButton_pressed():
 		if pov_instance.non_roam_scene_right:
-			SceneManager.change_scene(pov_instance.scene_right)
+			SceneManager.change_scene(pov_instance.scene_right, options, options, general_options)
 		elif Global.get_prog_flag(pov_instance.req_flag_right):
 			change_PoV(pov_instance.scene_right)
 		else:
@@ -58,7 +61,7 @@ func _on_RightButton_pressed():
 
 func _on_DownButton_pressed():
 		if pov_instance.non_roam_scene_down:
-			SceneManager.change_scene(pov_instance.scene_down)
+			SceneManager.change_scene(pov_instance.scene_down, options, options, general_options)
 		elif Global.get_prog_flag(pov_instance.req_flag_down):
 			change_PoV(pov_instance.scene_down)
 		else:
@@ -70,7 +73,7 @@ func _on_DownButton_pressed():
 
 func _on_LeftButton_pressed():
 		if pov_instance.non_roam_scene_left:
-			SceneManager.change_scene(pov_instance.scene_left)
+			SceneManager.change_scene(pov_instance.scene_left, options, options, general_options)
 		elif Global.get_prog_flag(pov_instance.req_flag_left):
 			change_PoV(pov_instance.scene_left)
 		else:

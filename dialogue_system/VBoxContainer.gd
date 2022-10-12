@@ -1,11 +1,5 @@
 extends VBoxContainer
 
-# Example script to demonstrate how to use twison helper.
-# Please attach this script to RichTextLabel with bbcodes enabled.
-# Then, attach meta_clicked(...) signal to _on_meta_clicked(...) function.
-# This script expects the helper script to be located at
-# res://modules/twison-godot/twison_helper.gd
-
 const spokenLine = preload("res://dialogue_system/SpokenLine.tscn")
 const spokenLineNochar = preload("res://dialogue_system/SpokenLineNoChar.tscn")
 
@@ -19,9 +13,8 @@ onready var scroll_bar = scroll_container.get_v_scrollbar()
 var dialogueOption = load("res://dialogue_system/DialogueOption.tscn")
 var continueButton = load("res://dialogue_system/ContinueButton.tscn")
 
-var scriptPath = "res://dialogue_system/conversations/test_scene.json"
-var nextScenePath = "res://roaming_pov/roaming_pov.tscn"
-var nextLocation = "res://infirmary/post_office/PostOfficeMural.tscn"
+var script_path = "res://dialogue_system/conversations/test_scene.json"
+var next_scene = "roaming_pov"
 
 var max_scroll_length = 0
 var passage_index = 0
@@ -43,7 +36,7 @@ signal tag(tags)
 
 func init():
 	print("initializing")
-	Twison.parse_file(scriptPath)
+	Twison.parse_file(script_path)
 
 	self.buttons_array = get_tree().get_nodes_in_group("buttons")
 	
@@ -223,14 +216,6 @@ func _pressed(index: int):
 		self._load_paragraph(you_text)
 		if not _check_if_clicked(index):
 			self.links_clicked.append(self.link_names[index])
-	
-#	var t = Timer.new()
-#	t.set_wait_time(0.5)
-#	t.set_one_shot(true)
-#	self.add_child(t)
-#	t.start()
-#	yield(t, "timeout")
-#	t.queue_free()
 
 	self._load_next_block(button.get_next_passage())
 	
@@ -246,11 +231,11 @@ func _on_ContinueButton_pressed():
 
 # for programatically setting the dialogue path when instancing
 func set_script_path(path):
-	scriptPath = path
+	script_path = path
 	
 
 func set_next_scene_path(path):
-	nextScenePath = path
+	next_scene = path
 	
 	
 func set_mem_to_add(mem):
@@ -264,7 +249,9 @@ func set_mem_to_remove(mem):
 func _load_next_scene():
 	Global.add_to_party(new_party_mem)
 	Global.remove_from_party(mem_to_remove)
-	SceneManager.change_scene(nextScenePath)
+	var options = SceneManager.create_options()
+	var general_options = SceneManager.create_general_options()
+	SceneManager.change_scene(next_scene, options, options, general_options)
 
 
 

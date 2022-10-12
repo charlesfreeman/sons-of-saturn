@@ -1,6 +1,6 @@
 extends Node
 
-var location = "res://infirmary/top_floor_middle_hallway/top_floor_middle_hallway.tscn"
+var location = "res://sewer/just_stood_up/just_stood_up.tscn"
 # Amelie always assumed to be in party, never reason to check
 var party = ["Wiggly"]
 var active_popup = false
@@ -61,4 +61,6 @@ func load_game():
 	print(save_data.keys())
 	location = save_data["location"]
 	party = save_data["party"]
-	SceneManager.change_scene("res://roaming_pov/roaming_pov.tscn")
+	var options = SceneManager.create_options()
+	var general_options = SceneManager.create_general_options()
+	SceneManager.change_scene("roaming_pov", options, options, general_options)

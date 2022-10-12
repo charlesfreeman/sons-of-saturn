@@ -13,4 +13,4 @@ __meta__ = {
 scriptPath = "res://sewer/convo_looking_up_ladder/ladder_convo.json"
 backgroundPath = "res://sewer/convo_looking_up_ladder/climbing_sewer_ladder.png"
 sliverPath = "res://sewer/convo_looking_up_ladder/climbing_ladder_sliver.png"
-nextScenePath = "res://infirmary/morgue_convo/morgue_convo.tscn"
+nextScenePath = "morgue_convo"

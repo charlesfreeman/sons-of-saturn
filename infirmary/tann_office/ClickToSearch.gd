@@ -21,4 +21,6 @@ func _on_ClickToSearch_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton \
 		and event.button_index == BUTTON_LEFT \
 		and event.pressed:
-			SceneManager.change_scene(next_scene)
+			var options = SceneManager.create_options()
+			var general_options = SceneManager.create_general_options()
+			SceneManager.change_scene(next_scene, options, options, general_options)

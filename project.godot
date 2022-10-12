@@ -8,16 +8,6 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Object",
-"class": "SceneManagerConstants",
-"language": "GDScript",
-"path": "res://addons/scene_manager/SceneManagerConstants.gd"
-} ]
-_global_script_class_icons={
-"SceneManagerConstants": ""
-}
-
 [application]
 
 config/name="Twine dialogue system"
@@ -25,8 +15,9 @@ run/main_scene="res://title_screen/TitleScreen.tscn"
 
 [autoload]
 
-SceneManager="*res://addons/scene_manager/SceneManager.tscn"
 Global="*res://Global.gd"
+SceneManager="*res://addons/scene_manager/scene_manager.tscn"
+Scenes="*res://addons/scene_manager/scenes.gd"
 
 [display]
 
@@ -38,7 +29,7 @@ window/stretch/aspect="keep"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "scene_manager" )
+enabled=PoolStringArray( "res://addons/scene_manager/plugin.cfg" )
 
 [input]
 

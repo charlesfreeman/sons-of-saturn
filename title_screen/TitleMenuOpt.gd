@@ -30,5 +30,7 @@ func _on_Continue_pressed():
 
 
 func _on_NewGame_pressed():
-	SceneManager.change_scene("res://intro/quote/Quote.tscn")
+	var options = SceneManager.create_options()
+	var general_options = SceneManager.create_general_options()
+	SceneManager.change_scene("Quote", options, options, general_options)
 

@@ -26,7 +26,7 @@ __meta__ = {
 }
 scene_right = "res://infirmary/isolation_wing_top_floor/isolation_wing_top_floor.tscn"
 scene_down = "res://infirmary/bright_arched_hallway/bright_arched_hallway.tscn"
-scene_left = "res://infirmary/cell_grate_convo/cell_grate_convo.tscn"
+scene_left = "cell_grate_convo"
 alt_scene_left = "res://infirmary/isolation_cells/isolation_cells.tscn"
 non_roam_scene_left = true
 req_flag_right = "cell_grate_convo"

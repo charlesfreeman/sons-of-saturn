@@ -15,7 +15,7 @@ __meta__ = {
 [node name="Convo" parent="." instance=ExtResource( 1 )]
 scriptPath = "res://infirmary/cell_grate_convo/cell_grate_convo.json"
 backgroundPath = "res://infirmary/cell_grate_convo/isolation_cells_2300x2160.png"
-sliverPath = "res://images/isolation_cells_right_sliver.png"
+sliverPath = "res://infirmary/cell_grate_convo/isolation_cells_right_sliver.png"
 nextLocation = "res://infirmary/isolation_cells/isolation_cells.tscn"
 fade_tag_dict = {
 "back_to_wiggly": "res://infirmary/cell_grate_convo/cell_grate_wiggly_crop_2300x2160.png",

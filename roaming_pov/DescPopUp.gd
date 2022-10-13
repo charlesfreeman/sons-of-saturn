@@ -9,7 +9,7 @@ var popup_visible = false
 
 onready var popup = $VBoxContainer
 onready var label = $VBoxContainer/LabelContainer/Label
-onready var cont_sym = load("res://images/cont_arrow.png")
+onready var cont_sym = load("res://roaming_pov/images/cont_arrow.png")
 onready var mag_glass = load("res://roaming_pov/images/mag_glass.png")
 
 export var popup_on_entry = false

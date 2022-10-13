@@ -30,7 +30,7 @@ onready var popup = $HBoxContainer
 onready var label = $HBoxContainer/VBoxContainer/LabelContainer/Label
 onready var texture = $HBoxContainer/MarginContainer/TextureRect
 onready var mag_glass = load("res://roaming_pov/images/mag_glass.png")
-onready var cont_sym = load("res://images/cont_arrow.png")
+onready var cont_sym = load("res://roaming_pov/images/cont_arrow.png")
 
 signal disable_buttons
 signal enable_buttons

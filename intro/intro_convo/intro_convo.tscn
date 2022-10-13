@@ -13,16 +13,17 @@ __meta__ = {
 [node name="Convo" parent="." instance=ExtResource( 1 )]
 scriptPath = "res://intro/intro_convo/intro_convo.json"
 backgroundPath = "res://intro/intro_convo/ia_dark_amelie_drooped_2300x2160.png"
+sliverPath = "res://intro/intro_convo/intro_auditorium_sliver.png"
 nextLocation = "res://sewer/just_stood_up/just_stood_up.tscn"
 fade_tag_dict = {
 "lookingup": "res://sewer/convo_looking_up_well/looking_up_well_crop_2300x2160.png",
-"rise": "res://sewer/convo_looking_up_well/just_stood_up_square.jpg",
+"rise": "res://intro/intro_convo/just_stood_up_2300x2160.png",
 "wakeup": "res://intro/intro_convo/ia_amelie_bright_headup_2300x2160.png"
 }
 fade_tag_dict_sliver = {
 "lookingup": "res://sewer/convo_looking_up_well/looking_up_well_sliver.png",
-"rise": "res://sewer/convo_looking_up_well/looking_up_well_sliver.png",
-"wakeup": "res://sewer/convo_looking_up_well/looking_up_well_sliver.png"
+"rise": "res://intro/intro_convo/just_stood_up_sliver.png",
+"wakeup": "res://intro/intro_convo/intro_auditorium_sliver.png"
 }
 
 [node name="CharacterRect" parent="." instance=ExtResource( 2 )]

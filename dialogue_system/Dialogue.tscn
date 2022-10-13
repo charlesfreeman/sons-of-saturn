@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://dialogue_system/VBoxContainer.gd" type="Script" id=1]
-[ext_resource path="res://dialogue_system/AudioStreamPlayer.gd" type="Script" id=5]
 [ext_resource path="res://sounds/160678__bmaczero__typewriter.wav" type="AudioStream" id=6]
 [ext_resource path="res://dialogue_system/DialogueTheme.tres" type="Theme" id=8]
 
@@ -53,7 +52,6 @@ size_flags_vertical = 3
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
-script = ExtResource( 5 )
 
 [node name="ButtonContainer" type="VBoxContainer" parent="."]
 margin_top = 2110.0

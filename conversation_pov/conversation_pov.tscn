@@ -5,7 +5,7 @@
 [ext_resource path="res://sewer/convo_looking_up_well/looking_up_well_square.png" type="Texture" id=3]
 [ext_resource path="res://conversation_pov/rose_pattern_border_darkcolor.png" type="Texture" id=4]
 [ext_resource path="res://conversation_pov/ConvoTransitionScreen.tscn" type="PackedScene" id=5]
-[ext_resource path="res://images/isolation_cells_right_sliver.png" type="Texture" id=6]
+[ext_resource path="res://infirmary/cell_grate_convo/isolation_cells_right_sliver.png" type="Texture" id=6]
 [ext_resource path="res://conversation_pov/rose_border_flipped.png" type="Texture" id=7]
 
 [node name="Convo" type="HBoxContainer"]
@@ -17,6 +17,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scriptPath = "res://sewer/convo_looking_up_well/looking_up_well.json"
+backgroundPath = "res://sewer/convo_looking_up_well/looking_up_well_crop_2300x2160.png"
 
 [node name="View" type="TextureRect" parent="."]
 margin_right = 2300.0

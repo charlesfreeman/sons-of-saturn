@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://conversation_pov/converstation_pov.gd" type="Script" id=1]
+[ext_resource path="res://conversation_pov/conversation_pov.gd" type="Script" id=1]
 [ext_resource path="res://dialogue_system/Dialogue.tscn" type="PackedScene" id=2]
 [ext_resource path="res://sewer/convo_looking_up_well/looking_up_well_square.png" type="Texture" id=3]
 [ext_resource path="res://conversation_pov/rose_pattern_border_darkcolor.png" type="Texture" id=4]

@@ -231,6 +231,7 @@ func change_scene(key: String, fade_out_options: Options, fade_in_options: Optio
 		_set_pattern(fade_out_options, general_options)
 		if _fade_out(fade_out_options.fade_speed):
 			yield(_animation_player, "animation_finished")
+		Input.set_custom_mouse_cursor(null)
 		if _change_scene(key):
 			yield(get_tree(), "node_added")
 		if _timeout(general_options.timeout):

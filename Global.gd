@@ -1,6 +1,6 @@
 extends Node
 
-var location = "res://sewer/just_stood_up/just_stood_up.tscn"
+var location = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.tscn"
 # Amelie always assumed to be in party, never reason to check
 var party = ["Wiggly"]
 var active_popup = false
@@ -13,12 +13,52 @@ var prog_flags = {
 	"door_open_popup" : false,
 	"julia_first_convo" : false,
 	"medicine_cabinet_inspection" : false,
+	"wiggly_reunite" : false,
 	"None" : true,
 	"False" : false,
 }
+var song = "None"
+var soundscape = "None"
+var songs = []
+var soundscapes = []
 
 func _ready():
-	pass
+	for c in Mdm.get_children():
+		songs.append(c.get_name())
+	for c in Mds.get_children():
+		soundscapes.append(c.get_name())
+
+func change_song(song):
+	if song == "None":
+		if Global.song != "None":
+			self.stop_song()
+	else:
+		if Global.song == "None":
+			Mdm.init_song(song)
+			Mdm.play(song)
+		else:
+			Mdm.queue_beat_transition(song)
+		Global.song = song
+
+func stop_song():
+	Mdm.stop(Global.song)
+	Global.song = "None"
+	
+func change_soundscape(scape_name):
+	if scape_name == "Stop":
+		if Global.soundscape != "None":
+			self.stop_soundscape()
+	elif scape_name != "None" and scape_name != Global.soundscape:
+		if Global.soundscape != "None":
+			stop_soundscape()
+		var ss = Mds.get_node(scape_name)
+		ss.play()
+		Global.soundscape = scape_name
+			
+func stop_soundscape():
+	var ss = Mds.get_node(Global.soundscape)
+	ss.stop()
+	Global.soundscape = "None"
 
 func flip_prog_flag(flag: String):
 	prog_flags[flag] = true

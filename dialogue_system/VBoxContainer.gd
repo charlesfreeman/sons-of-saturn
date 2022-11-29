@@ -10,7 +10,7 @@ onready var scroll_container = $ScrollContainer
 onready var spoken_lines_container = $ScrollContainer/SpokenLinesContainer
 onready var tween = $Tween
 onready var scroll_bar = scroll_container.get_v_scrollbar()
-onready var stream = $AudioStreamPlayer
+onready var typewriter = $RanSoundContainer
 var dialogueOption = load("res://dialogue_system/DialogueOption.tscn")
 var continueButton = load("res://dialogue_system/ContinueButton.tscn")
 
@@ -210,7 +210,7 @@ func _check_if_clicked(index: int) -> bool:
 
 
 func _pressed(index: int):
-	stream.play()
+	typewriter.play()
 	var button = buttons_array[index]
 	# only need to echo input back to scrollContainer if not in continue mode
 	if not button.continue_mode:
@@ -223,7 +223,7 @@ func _pressed(index: int):
 	
 	
 func _on_ContinueButton_pressed():
-	stream.play()
+	typewriter.play()
 	self.passage_index += 1
 	self._load_paragraph(self.paragraph_array[self.passage_index])
 	if self.passage_index == self.paragraph_array.size()-1:

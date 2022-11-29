@@ -1,8 +1,6 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
-[ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=2]
-[ext_resource path="res://infirmary/morgue_convo/wiggly_stooping_2.png" type="Texture" id=3]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -11,19 +9,27 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HBoxContainer" parent="." instance=ExtResource( 1 )]
-scriptPath = "res://tunnels/coming_to_convo/coming_to_convo.json"
-backgroundPath = "res://maternity/poisoning_convo/abor_room_crop_0.png"
+[node name="Convo" parent="." instance=ExtResource( 1 )]
+scriptPath = "res://maternity/poisoning_convo/poisoning_convo.json"
+backgroundPath = "res://maternity/poisoning_convo/abor_room_dream_0.png"
+sliverPath = "res://maternity/poisoning_convo/abor_room_sliver.png"
+nextScenePath = "dead_cat_convo"
 nextLocation = "res://infirmary/morgue/morgue.tscn"
 fade_tag_dict = {
-"morgue": "res://infirmary/morgue_convo/morgue_cropped.png"
+"ceiling": "res://maternity/poisoning_convo/abor_ceiling_dream_2300x2160.png",
+"chair": "res://maternity/poisoning_convo/chair_legs_dream_2300x2160.png",
+"closer": "res://maternity/poisoning_convo/abor_room_dream_2.png",
+"corner": "res://maternity/poisoning_convo/dream_corner_2300x2160.png",
+"door": "res://maternity/poisoning_convo/door_abor_dream_2300x2160.png",
+"fall": "res://maternity/poisoning_convo/ampoules_dream.png",
+"window": "res://maternity/poisoning_convo/dream_window_2300x2160.png"
 }
-
-[node name="CharacterRect" parent="." instance=ExtResource( 2 )]
-margin_left = 1362.0
-margin_top = 1299.0
-margin_right = 2263.0
-margin_bottom = 2556.0
-texture = ExtResource( 3 )
-expand = false
-on_start = true
+fade_tag_dict_sliver = {
+"ceiling": "res://maternity/poisoning_convo/abor_ceiling_dream_sliver.png",
+"chair": "res://maternity/poisoning_convo/chair_legs_dream_sliver.png",
+"closer": "res://maternity/poisoning_convo/abor_room_sliver.png",
+"corner": "res://maternity/poisoning_convo/dream_corner_sliver.png",
+"door": "res://maternity/poisoning_convo/door_abor_dream_sliver.png",
+"fall": "res://maternity/poisoning_convo/ampoules_dream_sliver.png",
+"window": "res://maternity/poisoning_convo/dream_window_sliver.png"
+}

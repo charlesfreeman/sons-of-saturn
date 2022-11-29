@@ -1,0 +1,768 @@
+
+
+{
+  "passages": [
+    {
+      "text": "This is it, the room at the end of the wing - where Wiggly was supposed to meet you.\n\nJulia::Miss?  Miss!\n\nJulia is behind you.  She followed you all the way down the hall.\n\nJulia::Miss, slow down!  You're medicated, you shouldn't be walking without assistance!\n\n[[Continue->Not Alright]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Not Alright",
+          "pid": "2"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "1177",
+        "y": "613"
+      }
+    },
+    {
+      "text": "Do not stop, do not wait for her.  Where is Wiggly?  Try to find Wiggly.  He should be here.  You are not alright.\n\nHildegardian distortions are afflicting your visual field, and an aching tension has colonized your jaw.  Furthermore, an unmistakably metallic taste is blistering your tongue.\n\nWhat's more, standing without falling over now requires your active attention.  Your proprioceptive competencies have been reduced to goop - standing is now a \"manual mode\" activity.  \n\nYou are losing your balance, quickly.  \n\n[[p:(Action) Find something to grab and regain balance.]]\n",
+      "links": [
+        {
+          "name": "p:(Action) Find something to grab and regain balance.",
+          "link": "p:(Action) Find something to grab and regain balance.",
+          "pid": "3"
+        }
+      ],
+      "name": "Not Alright",
+      "pid": "2",
+      "position": {
+        "x": "1177",
+        "y": "763"
+      },
+      "tags": [
+        "closer"
+      ]
+    },
+    {
+      "text": "You flail your hands wildly, groping haphazardly for an anchor.  Your right hand lands first, finding a handle on the nearby medical cabinet.\n\nThe cabinet is your only source of stability.  You put all your weight on it, trying to balance.\n\nIt's not as heavy as you imagined.  You can feel it tipping towards you.  There's no stopping it.\n\n[[p:(Action) Dodge out of the way.]]",
+      "links": [
+        {
+          "name": "p:(Action) Dodge out of the way.",
+          "link": "p:(Action) Dodge out of the way.",
+          "pid": "4"
+        }
+      ],
+      "name": "p:(Action) Find something to grab and regain balance.",
+      "pid": "3",
+      "position": {
+        "x": "1177",
+        "y": "913"
+      }
+    },
+    {
+      "text": "You flail forwards towards the back of the room, mostly clear of the falling cabinet, but your legs end up pinned underneath.  \n\nA mutlicolored assortment of vials, syringes, and ampoules flow forth from the cabinet.  They stain the floor you're pinned to.\n\nNot a moment later, you hear clanging footsteps.  Julia is closing the distance.  \n\n[[Continue->Restraint]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Restraint",
+          "pid": "5"
+        }
+      ],
+      "name": "p:(Action) Dodge out of the way.",
+      "pid": "4",
+      "position": {
+        "x": "1175",
+        "y": "1062"
+      },
+      "tags": [
+        "fall"
+      ]
+    },
+    {
+      "text": "Julia enters the room, jams her knee between your shoulderblades, and arrests your left wrist, pulling it behind your back.  Her skin feels like ice.  \n\nThe distortions intensify the moment her skin touches yours.  \n\nShe's restraining you, and she's poisoning you.\n\n[[p:Hey!  Let me go!]]\n[[p:Julia, what are you doing?!?->p:Hey!  Let me go!]]",
+      "links": [
+        {
+          "name": "p:Hey!  Let me go!",
+          "link": "p:Hey!  Let me go!",
+          "pid": "6"
+        },
+        {
+          "name": "p:Julia, what are you doing?!?",
+          "link": "p:Hey!  Let me go!",
+          "pid": "6"
+        }
+      ],
+      "name": "Restraint",
+      "pid": "5",
+      "position": {
+        "x": "1177",
+        "y": "1213"
+      }
+    },
+    {
+      "text": "Julia::The patient is behaving violently, initiating restrainment procedures.\n\nJulia is shouting down the hall.  She pretends not to hear you.\n\nYou struggle, but Julia has a stranglehold on your left wrist, and her knee on your back.  \n\nYour legs remain pinned by the medical cabinet, though you can tell it isn't too heavy.  \n\nOnly your right arm remains emancipated.  Use it!\n\n[[(Action) Grab a syringe-tipped ampoule and stab Julia.]]\n[[(Action) Look at the needle.]]\n[[0,1:I thought you weren't supposed to share needles.]]\n[[1,p:(Action) Stab yourself with the hypodermic needle.]] ",
+      "links": [
+        {
+          "name": "(Action) Grab a syringe-tipped ampoule and stab Julia.",
+          "link": "(Action) Grab a syringe-tipped ampoule and stab Julia.",
+          "pid": "7"
+        },
+        {
+          "name": "(Action) Look at the needle.",
+          "link": "(Action) Look at the needle.",
+          "pid": "8"
+        },
+        {
+          "name": "0,1:I thought you weren't supposed to share needles.",
+          "link": "0,1:I thought you weren't supposed to share needles.",
+          "pid": "10"
+        },
+        {
+          "name": "1,p:(Action) Stab yourself with the hypodermic needle.",
+          "link": "1,p:(Action) Stab yourself with the hypodermic needle.",
+          "pid": "9"
+        }
+      ],
+      "name": "p:Hey!  Let me go!",
+      "pid": "6",
+      "position": {
+        "x": "1178",
+        "y": "1364"
+      }
+    },
+    {
+      "text": "You sieze the needle and violently strike Julia's right thigh.  You penetrate her envelope, breaking her epidermis, causing an electric shock to shiver down your spine.  You shake off the intrusions.\n\nJulia doesn't react to the invasion in any way.  She isn't even trying to prevent a second strike.  She finds it familiar.\n\nThe room begins to reek of organic solvents.  Your shoulder blades and left wrist start to rot.\n\n[[Continue->p:Hey!  Let me go!]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:Hey!  Let me go!",
+          "pid": "6"
+        }
+      ],
+      "name": "(Action) Grab a syringe-tipped ampoule and stab Julia.",
+      "pid": "7",
+      "position": {
+        "x": "922",
+        "y": "1542"
+      }
+    },
+    {
+      "text": "You drag the vial into your field of view.  You can make out the label now.  The needle contains a dose of norepinephrine.\n\nInject it!  Straight into the mainline.  This should still be intuitive for you.\n\nUse the boost to wrestle out of Julia's grip.\n\n[[Continue->p:Hey!  Let me go!]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:Hey!  Let me go!",
+          "pid": "6"
+        }
+      ],
+      "name": "(Action) Look at the needle.",
+      "pid": "8",
+      "position": {
+        "x": "1084",
+        "y": "1546"
+      }
+    },
+    {
+      "text": "You haphazardly plunge the needle into the outer side of your right thigh, midway between your hip and knee.  The sting of violent self-penetration reverberates through your leg.\n\nJulia::...Aaahg!...\n\nJulia releases her grip and throws herself back.  You failed to navigate the norepinephrine to a viable vein, but stabbing yourself has thrown Julia off balance.  \n\n[[p:(Action) Free yourself.]]",
+      "links": [
+        {
+          "name": "p:(Action) Free yourself.",
+          "link": "p:(Action) Free yourself.",
+          "pid": "11"
+        }
+      ],
+      "name": "1,p:(Action) Stab yourself with the hypodermic needle.",
+      "pid": "9",
+      "position": {
+        "x": "1439",
+        "y": "1546"
+      },
+      "tags": [
+        "chair"
+      ]
+    },
+    {
+      "text": "You aren't, but you've got more pressing concerns.  Rot takes 40 years to kill you these days.\n\n[[Continue->p:Hey!  Let me go!]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:Hey!  Let me go!",
+          "pid": "6"
+        }
+      ],
+      "name": "0,1:I thought you weren't supposed to share needles.",
+      "pid": "10",
+      "position": {
+        "x": "1263",
+        "y": "1546"
+      }
+    },
+    {
+      "text": "You pull your legs out from under the cabinet, and coil yourself into a pouncing position.  You need to get up and make a run for it.\n\nYou notice your left hand is covered in blood.\n\n[[p:(Action) Stan up, turn around, and run for it.]]",
+      "links": [
+        {
+          "name": "p:(Action) Stan up, turn around, and run for it.",
+          "link": "p:(Action) Stan up, turn around, and run for it.",
+          "pid": "12"
+        }
+      ],
+      "name": "p:(Action) Free yourself.",
+      "pid": "11",
+      "position": {
+        "x": "1438",
+        "y": "1696"
+      }
+    },
+    {
+      "text": "You press your chest up and tuck in your knees, quickly but deliberately putting your weight on your right foot.  You begin to push your center of mass up.\n\n[[Continue->Standing]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Standing",
+          "pid": "13"
+        }
+      ],
+      "name": "p:(Action) Stan up, turn around, and run for it.",
+      "pid": "12",
+      "position": {
+        "x": "1437",
+        "y": "1826"
+      }
+    },
+    {
+      "text": "Your balance fades slightly as your right leg nears full extension.  You slam your left leg firmly into the liquid floor, stabilizing yourself.\n\nBoth legs are fully extended now.  You're doing it.  You're standing.\n\n[[p:Turn around.]]",
+      "links": [
+        {
+          "name": "p:Turn around.",
+          "link": "p:Turn around.",
+          "pid": "14"
+        }
+      ],
+      "name": "Standing",
+      "pid": "13",
+      "position": {
+        "x": "1432",
+        "y": "1956"
+      },
+      "tags": [
+        "window"
+      ]
+    },
+    {
+      "text": "Julia has retreated to the corner, hyperventillating.  \n\n[[C->Shut door]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Shut door",
+          "pid": "42"
+        }
+      ],
+      "name": "p:Turn around.",
+      "pid": "14",
+      "position": {
+        "x": "1417",
+        "y": "2092"
+      },
+      "tags": [
+        "corner"
+      ]
+    },
+    {
+      "text": "You still haven't fully regained the capacity to coordinate your muscles.  You ramble through the door, clumsily but successfully.\n\nFuck, which way do you go?  Left or right?\n\n[[p:Left.]]\n[[p:Right.]]",
+      "links": [
+        {
+          "name": "p:Left.",
+          "link": "p:Left.",
+          "broken": true
+        },
+        {
+          "name": "p:Right.",
+          "link": "p:Right.",
+          "pid": "16"
+        }
+      ],
+      "name": "p:(Action) Run out the door.",
+      "pid": "15",
+      "position": {
+        "x": "1644",
+        "y": "4003"
+      }
+    },
+    {
+      "text": "Yeah, right has been going well for us lately.  Had to use your right arm for stabbing, grabbing, and all that.  And by god it got the job done.\n\nNow, run, no, ramble down the hallway!\n\n[[p:(Action) Ramble down the hallway.->Ramble]]",
+      "links": [
+        {
+          "name": "p:(Action) Ramble down the hallway.",
+          "link": "Ramble",
+          "broken": true
+        }
+      ],
+      "name": "p:Right.",
+      "pid": "16",
+      "position": {
+        "x": "1439",
+        "y": "4016"
+      }
+    },
+    {
+      "text": "You've made it into the Foyer.  You hear footsteps following you.  Look for a place to hide!\n\n[[(Action) Look Left.]]\n[[(Action) Look Down.]]\n[[(Action) Look Right.]]\n[[2,p:(Action) Follow Wigley into the tunnels.]]",
+      "links": [
+        {
+          "name": "(Action) Look Left.",
+          "link": "(Action) Look Left.",
+          "broken": true
+        },
+        {
+          "name": "(Action) Look Down.",
+          "link": "(Action) Look Down.",
+          "broken": true
+        },
+        {
+          "name": "(Action) Look Right.",
+          "link": "(Action) Look Right.",
+          "pid": "18"
+        },
+        {
+          "name": "2,p:(Action) Follow Wigley into the tunnels.",
+          "link": "2,p:(Action) Follow Wigley into the tunnels.",
+          "pid": "19"
+        }
+      ],
+      "name": "Nearly There",
+      "pid": "17",
+      "position": {
+        "x": "1559",
+        "y": "3999"
+      }
+    },
+    {
+      "text": "On the right, you see-\n\nHey, look.  That's Wigley!\n\nWigley::This way.\n\nWisely, he speaks in a subdued tone.  He must know someone is after you.\n\n",
+      "name": "(Action) Look Right.",
+      "pid": "18",
+      "position": {
+        "x": "1642",
+        "y": "3876"
+      }
+    },
+    {
+      "text": "You propel yourself to the tunnel entrance, and ungangly, yet awe inspiring and majestic sight.\n\n[[Continue->Looking Down Hatch]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Looking Down Hatch",
+          "pid": "20"
+        }
+      ],
+      "name": "2,p:(Action) Follow Wigley into the tunnels.",
+      "pid": "19",
+      "position": {
+        "x": "1764",
+        "y": "3731"
+      }
+    },
+    {
+      "text": "As you approach the hatch Wigley begins descending the ladder.  Follow his lead.\n\n[[p:(Action) Descend.]]",
+      "links": [
+        {
+          "name": "p:(Action) Descend.",
+          "link": "p:(Action) Descend.",
+          "pid": "21"
+        }
+      ],
+      "name": "Looking Down Hatch",
+      "pid": "20",
+      "position": {
+        "x": "1764",
+        "y": "3880"
+      }
+    },
+    {
+      "text": "Getting your right foot onto the top rung goes smoothly enough, but getting the left on proves tricky.  You miss the next rung, and feel your foot unexpectedly hit the one beneath.  You lose grip and fall back.\n\n[[Continue->Fall]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Fall",
+          "pid": "22"
+        }
+      ],
+      "name": "p:(Action) Descend.",
+      "pid": "21",
+      "position": {
+        "x": "1764",
+        "y": "4030"
+      }
+    },
+    {
+      "text": "You fall about six feet, onto your back.  You bring Wigley down with you.  You lay back, staring up at the open hatch.\n\n[[Wiggly, close the hatch.]]",
+      "links": [
+        {
+          "name": "Wiggly, close the hatch.",
+          "link": "Wiggly, close the hatch.",
+          "pid": "23"
+        }
+      ],
+      "name": "Fall",
+      "pid": "22",
+      "position": {
+        "x": "1764",
+        "y": "4180"
+      }
+    },
+    {
+      "text": "Wiggly shakes himself out of his shock, then processes your command.  He seems to understand.  He collects himself and hurries to the top of the ladder.  You can sense light footsteps inducing vibrations in the dust above, causing minute amounts of insulation to fall onto your face.\n\nWiggly makes it to the top of the ladder and closes the latch, locking it as he does so.  ",
+      "name": "Wiggly, close the hatch.",
+      "pid": "23",
+      "position": {
+        "x": "1764",
+        "y": "4330"
+      }
+    },
+    {
+      "text": "The door is locked now.  You violently shake the handle.  It's as if the door is glued into its frame.\n\nIt's just like the isolation cell door that seperated you from Wiggly.\n\nThe Cradle wants you here.\n\nYou feel an icy tug on your right leg.\n\n[[C->Look down]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Look down",
+          "pid": "41"
+        }
+      ],
+      "name": "p:(Action) Open the door.",
+      "pid": "24",
+      "position": {
+        "x": "1286",
+        "y": "2283"
+      }
+    },
+    {
+      "text": "Julia is huddled in the corner, whimpering.  Her body is lightly convulsing, as if she were being electrocuted.\n\nShe is pathetic.\n\n[[p:What did you inject me with?  Why did you pin me to the ground?]]\n[[p:(Action) Kick Julia.]]",
+      "links": [
+        {
+          "name": "p:What did you inject me with?  Why did you pin me to the ground?",
+          "link": "p:What did you inject me with?  Why did you pin me to the ground?",
+          "pid": "26"
+        },
+        {
+          "name": "p:(Action) Kick Julia.",
+          "link": "p:(Action) Kick Julia.",
+          "pid": "27"
+        }
+      ],
+      "name": "p:(Action) Approach Julia.",
+      "pid": "25",
+      "position": {
+        "x": "1535",
+        "y": "2322"
+      },
+      "tags": [
+        "corner"
+      ]
+    },
+    {
+      "text": "Julia doesn't respond.  Instead, she falls forward, onto your feet.\n\nThen, she begins to climb your leg.  Her fingers delve through your cloth, into your skin.\n\n[[C->Julia looks up]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Julia looks up",
+          "pid": "28"
+        }
+      ],
+      "name": "p:What did you inject me with?  Why did you pin me to the ground?",
+      "pid": "26",
+      "position": {
+        "x": "1432",
+        "y": "2475"
+      }
+    },
+    {
+      "text": "You swing your right leg into Julia, but she intercepts the blow.  \n\nShe latches onto your leg.  Her fingers delve through your cloth, into your skin.\n\n[[C->Julia looks up]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Julia looks up",
+          "pid": "28"
+        }
+      ],
+      "name": "p:(Action) Kick Julia.",
+      "pid": "27",
+      "position": {
+        "x": "1602",
+        "y": "2473"
+      }
+    },
+    {
+      "text": "DEMO NOTE:  Julia looks up at you with gouged out eyes at this point.  Felt I should mention this for the sake of clarity. - Charles\n\nJulia::Help me out of this.  Give me the sedatives, miss.  You should be so grateful I gave them to you.\n\nJulia::Please, Miss, I am in pain.  You don't know what this feels like.\n\n[[p:(Action) Try to tug away.]]\n[[p:(Action) Strike Julia.]]",
+      "links": [
+        {
+          "name": "p:(Action) Try to tug away.",
+          "link": "p:(Action) Try to tug away.",
+          "pid": "29"
+        },
+        {
+          "name": "p:(Action) Strike Julia.",
+          "link": "p:(Action) Strike Julia.",
+          "pid": "30"
+        }
+      ],
+      "name": "Julia looks up",
+      "pid": "28",
+      "position": {
+        "x": "1516",
+        "y": "2607"
+      }
+    },
+    {
+      "text": "Julia::Miss, no, please don't leave me like this.  Please not here, not in this room!\n\nJulia::Leave me alone, anywhere else!\n\nHer fingers sink deeper.  Your calf begins to sear.\n\n[[p:(Action) Try to break free.]]\n[[p:(Action) Kiss Julia.]]",
+      "links": [
+        {
+          "name": "p:(Action) Try to break free.",
+          "link": "p:(Action) Try to break free.",
+          "pid": "31"
+        },
+        {
+          "name": "p:(Action) Kiss Julia.",
+          "link": "p:(Action) Kiss Julia.",
+          "pid": "32"
+        }
+      ],
+      "name": "p:(Action) Try to tug away.",
+      "pid": "29",
+      "position": {
+        "x": "1437",
+        "y": "2753"
+      }
+    },
+    {
+      "text": "Her contorted body is like a bag of ice.  Every blow is absorbed and ignored.\n\nJulia::Please, Miss, just help me.  Help me out of it.\n\nHer fingers sink deeper.  Your calf begins to sear.\n\n[[p:(Action) Try to break free.]]\n[[p:(Action) Kiss Julia.]]",
+      "links": [
+        {
+          "name": "p:(Action) Try to break free.",
+          "link": "p:(Action) Try to break free.",
+          "pid": "31"
+        },
+        {
+          "name": "p:(Action) Kiss Julia.",
+          "link": "p:(Action) Kiss Julia.",
+          "pid": "32"
+        }
+      ],
+      "name": "p:(Action) Strike Julia.",
+      "pid": "30",
+      "position": {
+        "x": "1587",
+        "y": "2753"
+      }
+    },
+    {
+      "text": "You put your hands around Julia's neck and squeeze.  Violently you push her away.\n\nJulia sheepishly shrinks back into the corner.  She begins shaking again.\n\n[[->Hands]]",
+      "links": [
+        {
+          "name": "",
+          "link": "Hands",
+          "pid": "33"
+        }
+      ],
+      "name": "p:(Action) Try to break free.",
+      "pid": "31",
+      "position": {
+        "x": "1577",
+        "y": "2918"
+      }
+    },
+    {
+      "text": "You cave to the intrusions.  You bend down and press your lips against Julia's.  You move your right hand down her chest.\n\nYou feel a pleasant shock, ringing through your jaw.  Sensations you've never felt, never knew to desire.\n\nFor a moment, the contact feels radiant, and beautiful.\n\nBut the radiance soon gives way to heat.  Burning, painful heat.\n\nYour lips inflame.  Your hand recoils.  Bullet ants begin swarming your body.\n\nThe pain is so far along the horseshoe, you aren't sure if it's fire or frostbite.\n\n[[C->Recoil]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Recoil",
+          "pid": "34"
+        }
+      ],
+      "name": "p:(Action) Kiss Julia.",
+      "pid": "32",
+      "position": {
+        "x": "1414",
+        "y": "2912"
+      }
+    },
+    {
+      "text": "She raises her hands to her face.\n\nJulia::Why?  Why do I still see these?\n\nYour own hands begin to burn.  Violently.\n\nThe sensation spreads.  Bullet ants begin swarming your body.\n\nThe pain is so far along the horseshoe, you aren't sure if it's fire or frostbite.\n\n[[C->Recoil]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Recoil",
+          "pid": "34"
+        }
+      ],
+      "name": "Hands",
+      "pid": "33",
+      "position": {
+        "x": "1557",
+        "y": "3056"
+      }
+    },
+    {
+      "text": "You recoil, lose balance, and land flat on your back.\n\nThe ceiling is trying to suck you in.  It's succeeding.\n\nYour legs and arms extend, retract, taking on bizarre proportions.  \n\nYou feel like a triangle with paradoxical edge lengths.  You shouldn't exist.\n\nWhy do I keep finding you like this?\n\n[[p:(Action) Soak in the sights and just vibe.]]\n[[p:(Action) Try to regain composure.]]",
+      "links": [
+        {
+          "name": "p:(Action) Soak in the sights and just vibe.",
+          "link": "p:(Action) Soak in the sights and just vibe.",
+          "pid": "35"
+        },
+        {
+          "name": "p:(Action) Try to regain composure.",
+          "link": "p:(Action) Try to regain composure.",
+          "pid": "36"
+        }
+      ],
+      "name": "Recoil",
+      "pid": "34",
+      "position": {
+        "x": "1415",
+        "y": "3062"
+      },
+      "tags": [
+        "ceiling"
+      ]
+    },
+    {
+      "text": "This maneuver has never, ever worked for you in the past.  But sure, let's try again.\n\nLet's just assess how this ceiling, and this body, feel.\n\nThe sights are horrific and the vibes are rancid.  This isn't going well.\n\n[[C->Noise]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Noise",
+          "pid": "37"
+        }
+      ],
+      "name": "p:(Action) Soak in the sights and just vibe.",
+      "pid": "35",
+      "position": {
+        "x": "1340",
+        "y": "3181"
+      }
+    },
+    {
+      "text": "Gaslight yourself.  Your legs and arms ARE the same length.  Proprioceptive senses lie.\n\nThe ceiling is just a normal ceiling, adorned with a cool pattern.  You can just see it more clearly now.\n\nThe nerve endings fraying along your appendages are merely toxins leaving the body.  You will come out of this healthy.\n\n[[C->Noise]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Noise",
+          "pid": "37"
+        }
+      ],
+      "name": "p:(Action) Try to regain composure.",
+      "pid": "36",
+      "position": {
+        "x": "1490",
+        "y": "3182"
+      }
+    },
+    {
+      "text": "Your fog is interuppted by an intrusive, grating sound.  The sound of a hatch opening?\n\n[[C->Wiggly Arrives]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Wiggly Arrives",
+          "pid": "38"
+        }
+      ],
+      "name": "Noise",
+      "pid": "37",
+      "position": {
+        "x": "1412",
+        "y": "3316"
+      }
+    },
+    {
+      "text": "Wiggly::Amelie!  Climb in here!\n\nHe's opened the grate leading to the ducts for you.  Dive for it!\n\n[[p:(Action) Dive into the aperature.]]",
+      "links": [
+        {
+          "name": "p:(Action) Dive into the aperature.",
+          "link": "p:(Action) Dive into the aperature.",
+          "pid": "39"
+        }
+      ],
+      "name": "Wiggly Arrives",
+      "pid": "38",
+      "position": {
+        "x": "1412",
+        "y": "3466"
+      },
+      "tags": [
+        "hole"
+      ]
+    },
+    {
+      "text": "You hurl yourself into a horrible configuration some would call \"upright.\"\n\nYou launch yourself into the hole.\n\n[[C->fadeout]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "fadeout",
+          "pid": "40"
+        }
+      ],
+      "name": "p:(Action) Dive into the aperature.",
+      "pid": "39",
+      "position": {
+        "x": "1412",
+        "y": "3616"
+      }
+    },
+    {
+      "text": "...",
+      "name": "fadeout",
+      "pid": "40",
+      "position": {
+        "x": "1412",
+        "y": "3767"
+      }
+    },
+    {
+      "text": "You look down.  Julia is tugging at you.\n\nHer body is lightly convulsing, as if she were being electrocuted.\n\nShe is pathetic.\n\n[[p:What did you inject me with?  Why did you pin me to the ground?]]\n[[p:(Action) Kick Julia.]]",
+      "links": [
+        {
+          "name": "p:What did you inject me with?  Why did you pin me to the ground?",
+          "link": "p:What did you inject me with?  Why did you pin me to the ground?",
+          "pid": "26"
+        },
+        {
+          "name": "p:(Action) Kick Julia.",
+          "link": "p:(Action) Kick Julia.",
+          "pid": "27"
+        }
+      ],
+      "name": "Look down",
+      "pid": "41",
+      "position": {
+        "x": "1287",
+        "y": "2404"
+      },
+      "tags": [
+        "corner"
+      ]
+    },
+    {
+      "text": "She shut the door when she entered.\n\n[[p:(Action) Open the door.]]\n[[p:(Action) Approach Julia.]]",
+      "links": [
+        {
+          "name": "p:(Action) Open the door.",
+          "link": "p:(Action) Open the door.",
+          "pid": "24"
+        },
+        {
+          "name": "p:(Action) Approach Julia.",
+          "link": "p:(Action) Approach Julia.",
+          "pid": "25"
+        }
+      ],
+      "name": "Shut door",
+      "pid": "42",
+      "position": {
+        "x": "1406",
+        "y": "2220"
+      },
+      "tags": [
+        "door"
+      ]
+    }
+  ],
+  "name": "Poisoning",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "91A1133A-5AE7-4277-B9BD-C3681FEC031E"
+}
+

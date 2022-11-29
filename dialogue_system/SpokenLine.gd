@@ -15,6 +15,7 @@ var char_colors = {"Wigley": "aqua",
 	"Frail Woman": "purple",
 	"Julia": "purple",
 	"Voice": "aqua",
+	"Dead Cat": "grey"
 }
 
 signal change_char(character)

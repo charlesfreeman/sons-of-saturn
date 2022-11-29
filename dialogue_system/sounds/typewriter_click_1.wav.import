@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/typewriter_click_1.wav-141bf62a1a22c1f39608ae3d38ca6ac7.sample"
+
+[deps]
+
+source_file="res://dialogue_system/sounds/typewriter_click_1.wav"
+dest_files=[ "res://.import/typewriter_click_1.wav-141bf62a1a22c1f39608ae3d38ca6ac7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

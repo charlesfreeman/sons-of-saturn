@@ -14,6 +14,7 @@ onready var up_button = $VBoxContainer/HBoxContainer/GridContainer/UpButton
 onready var right_button = $VBoxContainer/HBoxContainer/GridContainer/RightButton
 onready var down_button = $VBoxContainer/HBoxContainer/GridContainer/DownButton
 onready var left_button = $VBoxContainer/HBoxContainer/GridContainer/LeftButton
+onready var tile_footsteps = $RanSoundContainer
 
 
 func _ready():
@@ -36,54 +37,55 @@ func _process(_delta):
 
 
 func _on_UpButton_pressed():
-		if pov_instance.non_roam_scene_up:
-			SceneManager.change_scene(pov_instance.scene_up, options, options, general_options)
-		elif Global.get_prog_flag(pov_instance.req_flag_up):
-			change_PoV(pov_instance.scene_up)
+	if pov_instance.non_roam_scene_up:
+		SceneManager.change_scene(pov_instance.scene_up, options, options, general_options)
+	elif Global.get_prog_flag(pov_instance.req_flag_up):
+		change_PoV(pov_instance.scene_up)
+	else:
+		if pov_instance.alt_scene_up != "None":
+			change_PoV(pov_instance.alt_scene_up)
 		else:
-			if pov_instance.alt_scene_up != "None":
-				change_PoV(pov_instance.alt_scene_up)
-			else:
-				get_tree().call_group("nav_popups", "init_popup")
+			get_tree().call_group("nav_popups_up", "init_popup")
 
 
 func _on_RightButton_pressed():
-		if pov_instance.non_roam_scene_right:
-			SceneManager.change_scene(pov_instance.scene_right, options, options, general_options)
-		elif Global.get_prog_flag(pov_instance.req_flag_right):
-			change_PoV(pov_instance.scene_right)
+	if pov_instance.non_roam_scene_right:
+		SceneManager.change_scene(pov_instance.scene_right, options, options, general_options)
+	elif Global.get_prog_flag(pov_instance.req_flag_right):
+		change_PoV(pov_instance.scene_right)
+	else:
+		if pov_instance.alt_scene_right != "None":
+			change_PoV(pov_instance.alt_scene_right)
 		else:
-			if pov_instance.alt_scene_right != "None":
-				change_PoV(pov_instance.alt_scene_right)
-			else:
-				get_tree().call_group("nav_popups", "init_popup")
+			get_tree().call_group("nav_popups_right", "init_popup")
 
 
 func _on_DownButton_pressed():
-		if pov_instance.non_roam_scene_down:
-			SceneManager.change_scene(pov_instance.scene_down, options, options, general_options)
-		elif Global.get_prog_flag(pov_instance.req_flag_down):
-			change_PoV(pov_instance.scene_down)
+	if pov_instance.non_roam_scene_down:
+		SceneManager.change_scene(pov_instance.scene_down, options, options, general_options)
+	elif Global.get_prog_flag(pov_instance.req_flag_down):
+		change_PoV(pov_instance.scene_down)
+	else:
+		if pov_instance.alt_scene_down != "None":
+			change_PoV(pov_instance.alt_scene_down)
 		else:
-			if pov_instance.alt_scene_down != "None":
-				change_PoV(pov_instance.alt_scene_down)
-			else:
-				get_tree().call_group("nav_popups", "init_popup")
+			get_tree().call_group("nav_popups_down", "init_popup")
 
 
 func _on_LeftButton_pressed():
-		if pov_instance.non_roam_scene_left:
-			SceneManager.change_scene(pov_instance.scene_left, options, options, general_options)
-		elif Global.get_prog_flag(pov_instance.req_flag_left):
-			change_PoV(pov_instance.scene_left)
+	if pov_instance.non_roam_scene_left:
+		SceneManager.change_scene(pov_instance.scene_left, options, options, general_options)
+	elif Global.get_prog_flag(pov_instance.req_flag_left):
+		change_PoV(pov_instance.scene_left)
+	else:
+		if pov_instance.alt_scene_left != "None":
+			change_PoV(pov_instance.alt_scene_left)
 		else:
-			if pov_instance.alt_scene_left != "None":
-				change_PoV(pov_instance.alt_scene_left)
-			else:
-				get_tree().call_group("nav_popups", "init_popup")
+			get_tree().call_group("nav_popups_left", "init_popup")
 
 
 func change_PoV(scene_path):
+	tile_footsteps.play()
 	# load the next scene and unpack it into a node
 	if scene_path != "None":
 		global_scene_path = scene_path

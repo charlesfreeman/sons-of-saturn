@@ -20,7 +20,10 @@ export var popup_text = [
 	"Wiggly::Wiggly Text"
 ]
 export var diff_background = false
-export var nav_popup = false
+export var nav_popup_up = false
+export var nav_popup_right = false
+export var nav_popup_down = false
+export var nav_popup_left = false
 # for single use popups to work we need to set a progression flag for them so
 # we can remember if they've been invoked.
 export var single_use = false
@@ -44,8 +47,14 @@ func _ready():
 	add_to_group("popups")
 	if diff_background:
 		add_to_group("diff_bg")
-	if nav_popup:
-		add_to_group("nav_popups")
+	if nav_popup_up:
+		add_to_group("nav_popups_up")
+	if nav_popup_right:
+		add_to_group("nav_popups_right")
+	if nav_popup_down:
+		add_to_group("nav_popups_down")
+	if nav_popup_left:
+		add_to_group("nav_popups_left")
 	
 	for pair in popup_text:
 		var pair_array = pair.split("::")

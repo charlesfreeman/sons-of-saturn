@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/tile_footsteps_4.wav-fbfc70875013fbd6c9f3e020764516da.sample"
+
+[deps]
+
+source_file="res://roaming_pov/sounds/tile_footsteps_4.wav"
+dest_files=[ "res://.import/tile_footsteps_4.wav-fbfc70875013fbd6c9f3e020764516da.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

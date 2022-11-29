@@ -26,6 +26,9 @@ export var prog_flag = "None"
 
 export var position = Vector2(400, 800)
 
+export var song = "None"
+export var soundscape = "None"
+
 # functionality to moving to new scene instead of new PoV already exists but sometimes more natural
 # to transition after having entered new PoV
 export var new_scene_on_ready = false
@@ -51,6 +54,10 @@ func _ready():
 		Global.flip_prog_flag(prog_flag)
 	# TODO change this to rely instead on signals
 	# get_parent().set_pos(position)
+	
+	Global.change_song(song)
+	Global.change_soundscape(soundscape)
+	
 	for node in get_tree().get_nodes_in_group("popups"):
 		print("connecting node")
 		node.connect("disable_buttons", self, "_disable_buttons")
@@ -59,13 +66,14 @@ func _ready():
 
 	if new_scene_on_ready and not new_scene_played:
 		new_scene_played = true
-		var t = Timer.new()
-		t.set_wait_time(1.0)
-		t.set_one_shot(true)
-		self.add_child(t)
-		t.start()
-		yield(t, "timeout")
-		t.queue_free()
+#		var t = Timer.new()
+#		t.set_wait_time(1.0)
+#		t.set_one_shot(true)
+#		self.add_child(t)
+#		t.start()
+#		yield(t, "timeout")
+#		t.queue_free()
+		yield(get_tree().create_timer(1.0), "timeout")
 		var options = SceneManager.create_options()
 		var general_options = SceneManager.create_general_options()
 		SceneManager.change_scene(new_scene, options, options, general_options)

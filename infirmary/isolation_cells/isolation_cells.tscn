@@ -28,6 +28,7 @@ scene_right = "res://infirmary/chute_room/chute_room.tscn"
 scene_down = "res://infirmary/isolation_stairwell_base/isolation_stairwell_base.tscn"
 scene_left = "res://infirmary/medicine_cabinet/medicine_cabinet.tscn"
 req_flag_right = "door_open_popup"
+soundscape = "InfirmaryAmbient"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 down_path = true
@@ -52,5 +53,4 @@ shape = SubResource( 3 )
 
 [node name="PopUp" parent="." instance=ExtResource( 4 )]
 popup_text = [ "Amelie::What?  This door was sealed shut just a few seconds ago!", "Amelie::Is Wiggly gone already?  Is my mind playing tricks?" ]
-nav_popup = true
 prog_flag = "door_open_popup"

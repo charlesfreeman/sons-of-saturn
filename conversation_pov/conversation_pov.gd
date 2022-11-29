@@ -16,11 +16,14 @@ export var fade_tag_dict_sliver = {}
 export var new_party_mem = ""
 export var mem_to_remove = ""
 export var prog_flag = "None"
+export var song = "None"
+export var soundscape = "None"
 
 onready var avatar = $View/CanvasLayer/Avatar
 onready var background = $View
 onready var bg_sliver = $RightSideBG
 onready var dialogue_sys = $HBoxContainer/Dialogue
+onready var current_bg_path = backgroundPath
 var amelie = "aneutral"
 var wiggly = "wneutral"
 var current_char = "You"
@@ -31,7 +34,7 @@ var fade_tag
 
 # array to keep track of which tags already been emitted, so we might avoid
 # playing the same effects repeatedly
-var tags_emitted = []
+var bg_tags_emitted = []
 
 var char_textures = {
 	# not sure these two are needed anymore
@@ -62,9 +65,11 @@ var char_profiles = {
 signal tag(tag)
 
 
-func _ready():
+func _ready():	
 	if prog_flag != "None":
 		Global.flip_prog_flag(prog_flag)
+#	Global.change_song(song)
+#	Global.change_soundscape(soundscape)
 	Global.location = nextLocation
 	dialogue_sys.set_script_path(scriptPath)
 	dialogue_sys.set_next_scene_path(nextScenePath)
@@ -92,6 +97,7 @@ func _add_subject(sub: String):
 func change_background(res_path):
 	var new_background = load(res_path)
 	background.texture = new_background
+	current_bg_path = res_path
 
 
 func change_background_sliver(res_path):
@@ -101,20 +107,22 @@ func change_background_sliver(res_path):
 
 func _on_Dialogue_tag(tags):
 	for tag in tags:
-		print("tag: ", tag)
-		
-		# sometimes need to add or drop subject mid-convo
-		# TODO add mechanism for adding or dropping subject
-		
 		emit_signal("tag", tag)
 		get_tree().call_group("CharacterRects", "appear_disappear", tag)
-		if not tag in tags_emitted:
+		if not tag in bg_tags_emitted:
 			if tag in tag_dict.keys():
-				change_background(tag_dict[tag])
-				change_background_sliver(tag_dict_sliver[tag])
+				if tag_dict[tag] != current_bg_path:
+					change_background(tag_dict[tag])
+					change_background_sliver(tag_dict_sliver[tag])
+#					if not tag.ends_with("_repeat"):
+#						bg_tags_emitted.append(tag)
 			elif tag in fade_tag_dict.keys():
-				fade_tag = tag
-				$TransitionScreen.transition()
+				if fade_tag_dict[tag] != current_bg_path:
+					fade_tag = tag
+					$TransitionScreen.transition()
+#					if not tag.ends_with("_repeat"):
+#						bg_tags_emitted.append(tag)
+				
 			elif tag in char_profiles.keys():
 				# might need more formal approach to distinguishing which 
 				# var to load into if we have more than three characters
@@ -126,10 +134,30 @@ func _on_Dialogue_tag(tags):
 					amelie = tag
 					if current_char == "You":
 						avatar.texture = load(char_profiles[amelie])
-			tags_emitted.append(tag)
+						
+			elif tag == "add_wiggly":
+				self._add_subject("Wiggly")
+			elif tag == "remove_wiggly":
+				self._remove_subject()
+			elif tag == "add_julia":
+				self._add_subject("Julia")
+			elif tag == "remove_julia":
+				self._remove_subject()
+				
+			elif tag in Global.songs:
+				Global.change_song(tag)
+			elif tag == "stop_song":
+				Global.stop_song()
+			elif tag in Global.soundscapes:
+				Global.change_soundscape(tag)
+			elif tag == "stop_soundscape":
+				Global.stop_soundscape()
+				
+			get_tree().call_group("convo_sound_effect", "check_tag", tag)
 
 
 func _on_TransitionScreen_transitioned():
 	print("changing to fade background")
 	change_background(fade_tag_dict[fade_tag])
 	change_background_sliver(fade_tag_dict_sliver[fade_tag])
+	current_bg_path = fade_tag_dict[fade_tag]

@@ -17,6 +17,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_up = "res://tunnels/flooded_tunnel/flooded_tunnel.tscn"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true

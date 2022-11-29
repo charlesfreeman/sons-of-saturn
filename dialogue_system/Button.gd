@@ -64,7 +64,7 @@ func extract_text_and_modifiers(text: String):
 
 
 func _insert_newlines(text: String) -> String:
-	var line_length = 48
+	var line_length = 47
 	if text.length() >= line_length:
 		var index = line_length
 		while index < text.length():

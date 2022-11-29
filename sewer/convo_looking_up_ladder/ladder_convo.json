@@ -40,12 +40,19 @@
       }
     },
     {
-      "text": "The words come out of you as if directed by a puppeteer.  Except you are both the marionette and the one pulling the strings.\n\nYour Ferryman guide opens the hatch and climbs through.  You quickly clamber up after, pulling yourself through the portal at the top.",
+      "text": "The words come out of you as if directed by a puppeteer.  Except you are both the marionette and the one pulling the strings.\n\n[[C->Open Hatch]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Open Hatch",
+          "pid": "6"
+        }
+      ],
       "name": "p:Alright, open the hatch.",
       "pid": "3",
       "position": {
-        "x": "934",
-        "y": "576"
+        "x": "942",
+        "y": "577"
       }
     },
     {
@@ -79,6 +86,18 @@
         "x": "784",
         "y": "876"
       }
+    },
+    {
+      "text": "Your Ferryman guide opens the hatch and climbs through.  You quickly clamber up after, pulling yourself through the portal at the top.",
+      "name": "Open Hatch",
+      "pid": "6",
+      "position": {
+        "x": "942",
+        "y": "727"
+      },
+      "tags": [
+        "open_hatch"
+      ]
     }
   ],
   "name": "Exiting Sewer",

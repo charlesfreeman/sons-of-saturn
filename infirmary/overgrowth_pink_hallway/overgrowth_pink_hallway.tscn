@@ -34,6 +34,7 @@ scene_down = "res://infirmary/morgue_stairwell_1f/morgue_stairwell_1f.tscn"
 popup_background = "res://infirmary/overgrowth_pink_hallway/seaside_exterior_colorful.png"
 req_flag_up = "vera_office_convo"
 prog_flag = "overgrowth_pink_hallway"
+soundscape = "InfirmaryAmbient"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 right_path = true
@@ -67,4 +68,3 @@ shape = SubResource( 4 )
 
 [node name="PopUp" parent="." instance=ExtResource( 5 )]
 popup_text = [ "Wiggly::We should search the offices in this hall before moving forward.  Or rather, that is my recommendation." ]
-nav_popup = true

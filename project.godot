@@ -18,6 +18,8 @@ run/main_scene="res://title_screen/TitleScreen.tscn"
 Global="*res://Global.gd"
 SceneManager="*res://addons/scene_manager/scene_manager.tscn"
 Scenes="*res://addons/scene_manager/scenes.gd"
+Mdm="*res://sounds/MDM.tscn"
+Mds="*res://sounds/MDS.tscn"
 
 [display]
 
@@ -30,7 +32,7 @@ window/stretch/aspect="keep"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/scene_manager/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/mixing-desk/plugin.cfg", "res://addons/scene_manager/plugin.cfg" )
 
 [input]
 

@@ -1,0 +1,93 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://addons/mixing-desk/music/containers/core_cont.gd" type="Script" id=1]
+[ext_resource path="res://addons/mixing-desk/music/song.gd" type="Script" id=2]
+[ext_resource path="res://addons/mixing-desk/music/mixing_desk_music.gd" type="Script" id=3]
+[ext_resource path="res://sounds/alien_drips.wav" type="AudioStream" id=4]
+[ext_resource path="res://sounds/running_water.wav" type="AudioStream" id=5]
+[ext_resource path="res://sounds/saturnsounds.wav" type="AudioStream" id=6]
+
+[node name="MDM" type="Node"]
+script = ExtResource( 3 )
+play_mode = 1
+
+[node name="alien_drips" type="Node" parent="."]
+script = ExtResource( 2 )
+tempo = 120
+bars = 8
+beats_in_bar = 4
+transition_beats = 2.0
+
+[node name="CoreContainer" type="Node" parent="alien_drips"]
+script = ExtResource( 1 )
+
+[node name="alien_drips" type="AudioStreamPlayer" parent="alien_drips/CoreContainer"]
+stream = ExtResource( 4 )
+volume_db = -11.0
+
+[node name="sewer_light_flow" type="Node" parent="."]
+script = ExtResource( 2 )
+tempo = 120
+bars = 8
+beats_in_bar = 4
+transition_beats = 2.0
+
+[node name="CoreContainer" type="Node" parent="sewer_light_flow"]
+script = ExtResource( 1 )
+
+[node name="alien_drips" type="AudioStreamPlayer" parent="sewer_light_flow/CoreContainer"]
+stream = ExtResource( 4 )
+volume_db = -20.0
+
+[node name="running_water" type="AudioStreamPlayer" parent="sewer_light_flow/CoreContainer"]
+stream = ExtResource( 5 )
+volume_db = -55.0
+
+[node name="sewer_med_flow" type="Node" parent="."]
+script = ExtResource( 2 )
+tempo = 120
+bars = 8
+beats_in_bar = 4
+transition_beats = 2.0
+
+[node name="CoreContainer" type="Node" parent="sewer_med_flow"]
+script = ExtResource( 1 )
+
+[node name="alien_drips" type="AudioStreamPlayer" parent="sewer_med_flow/CoreContainer"]
+stream = ExtResource( 4 )
+volume_db = -20.0
+
+[node name="running_water" type="AudioStreamPlayer" parent="sewer_med_flow/CoreContainer"]
+stream = ExtResource( 5 )
+volume_db = -40.0
+
+[node name="sewer_high_flow" type="Node" parent="."]
+script = ExtResource( 2 )
+tempo = 120
+bars = 8
+beats_in_bar = 4
+transition_beats = 2.0
+
+[node name="CoreContainer" type="Node" parent="sewer_high_flow"]
+script = ExtResource( 1 )
+
+[node name="alien_drips" type="AudioStreamPlayer" parent="sewer_high_flow/CoreContainer"]
+stream = ExtResource( 4 )
+volume_db = -20.0
+
+[node name="running_water" type="AudioStreamPlayer" parent="sewer_high_flow/CoreContainer"]
+stream = ExtResource( 5 )
+volume_db = -20.0
+
+[node name="saturn" type="Node" parent="."]
+script = ExtResource( 2 )
+tempo = 120
+bars = 8
+beats_in_bar = 4
+transition_beats = 2.0
+
+[node name="CoreContainer" type="Node" parent="saturn"]
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="saturn/CoreContainer"]
+stream = ExtResource( 6 )

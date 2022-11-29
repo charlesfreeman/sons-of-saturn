@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Convo" parent="." instance=ExtResource( 1 )]
+scriptPath = "res://maternity/front_desk_convo/front_desk_convo.json"
+backgroundPath = "res://maternity/front_desk_convo/nurse_station_sideview_2300x2160.png"
+sliverPath = "res://maternity/front_desk_convo/nurse_station_sideview_sliver.png"
+nextLocation = "res://maternity/front_desk/front_desk.tscn"
+fade_tag_dict = {
+"approach": "res://maternity/front_desk_convo/front_desk_signin_2300x2160.png",
+"lookup": "res://maternity/front_desk_convo/peer_into_desk_cavity_2300x2160.png"
+}
+fade_tag_dict_sliver = {
+"approach": "res://maternity/front_desk_convo/front_desk_signin_sliver.png",
+"lookup": "res://maternity/front_desk_convo/peer_into_desk_cavity_sliver.png"
+}

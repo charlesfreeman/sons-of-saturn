@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://maternity/bed_overlook/bed_overlook.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 822.604, 124.732 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 229.182, 643.13 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 549.201, 459.182 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_down = "res://maternity/front_desk/front_desk.tscn"
+scene_left = "res://maternity/inspection_hallway/inspection_hallway.tscn"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1518.16, 2033.47 )
+shape = SubResource( 1 )
+
+[node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+left_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2( 241.86, 1101.82 )
+shape = SubResource( 2 )
+
+[node name="PopUp" parent="." instance=ExtResource( 3 )]
+popup_text = [ "Amelie::Another overlook?" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
+position = Vector2( 1456.42, 1237.89 )
+shape = SubResource( 3 )

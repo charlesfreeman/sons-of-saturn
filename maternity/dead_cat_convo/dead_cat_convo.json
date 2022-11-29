@@ -1,0 +1,254 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Dead Cat::Hey there.  Been a while.\n\nWhat is he doing here.  Get him out of here.\n\n[[No it hasn't.  It hasn't been long at all.  You never leave me alone!]]\n[[Now is really not the best time.]]\n[[Wait, am I stuck in a spectrograph?]]\n[[p:I can go back, I can correct for it, I can fix it all!]]",
+      "links": [
+        {
+          "name": "No it hasn't.  It hasn't been long at all.  You never leave me alone!",
+          "link": "No it hasn't.  It hasn't been long at all.  You never leave me alone!",
+          "pid": "2"
+        },
+        {
+          "name": "Now is really not the best time.",
+          "link": "Now is really not the best time.",
+          "pid": "3"
+        },
+        {
+          "name": "Wait, am I stuck in a spectrograph?",
+          "link": "Wait, am I stuck in a spectrograph?",
+          "pid": "9"
+        },
+        {
+          "name": "p:I can go back, I can correct for it, I can fix it all!",
+          "link": "p:I can go back, I can correct for it, I can fix it all!",
+          "pid": "5"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "1179",
+        "y": "606"
+      }
+    },
+    {
+      "text": "Dead Cat::I wouldn't have to keep showing up if you'd just get it together, Amelie.\n\n[[C->Untitled Passage]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Untitled Passage",
+          "pid": "1"
+        }
+      ],
+      "name": "No it hasn't.  It hasn't been long at all.  You never leave me alone!",
+      "pid": "2",
+      "position": {
+        "x": "897",
+        "y": "781"
+      }
+    },
+    {
+      "text": "Dead Cat::\"I need more time!\"\n\nDead Cat::That's all you ever do: try to buy yourself a little more time.  \"I'll do this for you, I'll make it happen, I just need a few more moments to get back up on my feet.\"  Yet you never get it together, do you?\n\nDead Cat::Let's face it, you were never going to be prepared for this.  So we should just jump in and get this over with.\n\nThat scraggly rat is lying.  You were seconds away from getting your shit together.  \n\n[[C->Untitled Passage]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Untitled Passage",
+          "pid": "1"
+        }
+      ],
+      "name": "Now is really not the best time.",
+      "pid": "3",
+      "position": {
+        "x": "1065",
+        "y": "776"
+      }
+    },
+    {
+      "text": "Dead Cat::Trust me, anyone would have gotten that message loud and clear.  After what you did...\n\nStop!  Stop!  Get her out of here!\n\nDead Cat::Ignore me. Grope me with a thousand hands and eyes.  Either way I'll keep on slinking through your inner recesses.\n\nNo, don't buy it, she can be excised.  Like a bullet lodged within the brain.  Standard foreign body removal.\n\nDead Cat::Removing me will be a traumatic procedure.  Prepare yourself for a lot of psychic self-mutilation - I'm lodged pretty deep.\n\nFine then, nothing beneath the cerebral cortex has been doing much for us lately anyway.  And right amygdala ablations are all the rage right now.\n\nLosing a little grey matter is a small price to pay for ridding your brain of vermin.\n\nSo many parts of your brain are redundant.  Even that guy who took a rod through the skull eventually made a full recovery.  Cut her out!\n\nDead Cat::Huh, that voice really doesn't like me, does it?\n\nThat's just because I'm looking out for you. Your whole life is an ongoing tapestry of permanent, uncorrectable injustices - and this little furball is the root.  \n\nAnd you aren't fated for any Athenian intervention; that tapestry just keeps on rolling.\n\n[[C->p:Will you forgive me?]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:Will you forgive me?",
+          "pid": "8"
+        }
+      ],
+      "name": "Then I don't wanna play with you anymore!",
+      "pid": "4",
+      "position": {
+        "x": "1632",
+        "y": "1165"
+      }
+    },
+    {
+      "text": "Dead Cat::No, you cannot.  Your past stands forever as an uneraseable monument to spite and stupidity and lust.  \n\nDead Cat::You squander your youth and beauty, writhing, wailing, vainly trying to chisel that ugly marble into something it just isn't.\n\n[[How can it be both too horrible to fathom and permanently uncorrectable?  That's not fair to me!]]\n[[p:Will you forgive me?]]\n[[p:Is it too late for me?->p:Will you forgive me?]]",
+      "links": [
+        {
+          "name": "How can it be both too horrible to fathom and permanently uncorrectable?  That's not fair to me!",
+          "link": "How can it be both too horrible to fathom and permanently uncorrectable?  That's not fair to me!",
+          "pid": "6"
+        },
+        {
+          "name": "p:Will you forgive me?",
+          "link": "p:Will you forgive me?",
+          "pid": "8"
+        },
+        {
+          "name": "p:Is it too late for me?",
+          "link": "p:Will you forgive me?",
+          "pid": "8"
+        }
+      ],
+      "name": "p:I can go back, I can correct for it, I can fix it all!",
+      "pid": "5",
+      "position": {
+        "x": "1551",
+        "y": "772"
+      }
+    },
+    {
+      "text": "Dead Cat::I see no reason why the laws of physics wouldn't permit both.  You can't comprehend it, but that doesn't mean it isn't possible.\n\nDead Cat::And The Powers That Be are not concerned if that is fair to you.\n\n[[So there's nothing I can do?  Just wallow in pain and absurdity?]]",
+      "links": [
+        {
+          "name": "So there's nothing I can do?  Just wallow in pain and absurdity?",
+          "link": "So there's nothing I can do?  Just wallow in pain and absurdity?",
+          "pid": "7"
+        }
+      ],
+      "name": "How can it be both too horrible to fathom and permanently uncorrectable?  That's not fair to me!",
+      "pid": "6",
+      "position": {
+        "x": "1511",
+        "y": "925"
+      }
+    },
+    {
+      "text": "Dead Cat::Don't sell yourself short.  You've been wallowing in a lot more than that: sewage, cancerous insulation, expired research chemicals.  Guilt.\n\nDead Cat::And yes, that's pretty much all you can do.  That's how time works.  Your distaste for reality is impotent.\n\n[[C->p:I can go back, I can correct for it, I can fix it all!]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:I can go back, I can correct for it, I can fix it all!",
+          "pid": "5"
+        }
+      ],
+      "name": "So there's nothing I can do?  Just wallow in pain and absurdity?",
+      "pid": "7",
+      "position": {
+        "x": "1452",
+        "y": "1099"
+      }
+    },
+    {
+      "text": "Dead Cat::Please cease these loaded, rhetorical questions.  We both know I'm in no condition to forgive you.\n\n[[Then I don't wanna play with you anymore!]]\n[[p:Then what am I supposed to do?  Someone, please, tell me what to do!]]\n[[p:(Action) Just keep on thrashing and wallowing.]]",
+      "links": [
+        {
+          "name": "Then I don't wanna play with you anymore!",
+          "link": "Then I don't wanna play with you anymore!",
+          "pid": "4"
+        },
+        {
+          "name": "p:Then what am I supposed to do?  Someone, please, tell me what to do!",
+          "link": "p:Then what am I supposed to do?  Someone, please, tell me what to do!",
+          "pid": "11"
+        },
+        {
+          "name": "p:(Action) Just keep on thrashing and wallowing.",
+          "link": "p:(Action) Just keep on thrashing and wallowing.",
+          "pid": "10"
+        }
+      ],
+      "name": "p:Will you forgive me?",
+      "pid": "8",
+      "position": {
+        "x": "1671",
+        "y": "922"
+      }
+    },
+    {
+      "text": "Dead Cat::Better than the one where you're naked in public, right?\n\nHe's right, this is a lot more tolerable than that nightmare.  Better than the ones where your teeth start falling out too.\n\n[[C->Untitled Passage]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Untitled Passage",
+          "pid": "1"
+        }
+      ],
+      "name": "Wait, am I stuck in a spectrograph?",
+      "pid": "9",
+      "position": {
+        "x": "1377",
+        "y": "795"
+      }
+    },
+    {
+      "text": "Yes, that's the best course of action right now.  The only course of action, really.\n\nDead Cat::I must admit, that's awfully spirited thrashing\n\n[[C->Light splash]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Light splash",
+          "pid": "12"
+        }
+      ],
+      "name": "p:(Action) Just keep on thrashing and wallowing.",
+      "pid": "10",
+      "position": {
+        "x": "1964",
+        "y": "1164"
+      }
+    },
+    {
+      "text": "Dead Cat::Thrash about in mud and tar as a horrifying horse drags you down.\n\nDead Cat::Just kidding.  You probably should have seen a psycho-analytic specialist or something.  But instead you came here.\n\n[[C->Light splash]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Light splash",
+          "pid": "12"
+        }
+      ],
+      "name": "p:Then what am I supposed to do?  Someone, please, tell me what to do!",
+      "pid": "11",
+      "position": {
+        "x": "1797",
+        "y": "1163"
+      }
+    },
+    {
+      "text": "You feel a light splash hit your face.\n\nAnd then another.\n\n...\n\nAnd then another.  Water torture?  If so, fitting.\n\nDead Cat::Looks like our time is once again coming to a close.\n\n[[p:I'll figure this all out, make everything right.  Undo what was done.  I promise I'll succeed.]]",
+      "links": [
+        {
+          "name": "p:I'll figure this all out, make everything right.  Undo what was done.  I promise I'll succeed.",
+          "link": "p:I'll figure this all out, make everything right.  Undo what was done.  I promise I'll succeed.",
+          "pid": "13"
+        }
+      ],
+      "name": "Light splash",
+      "pid": "12",
+      "position": {
+        "x": "1875",
+        "y": "1310"
+      },
+      "tags": [
+        "splash"
+      ]
+    },
+    {
+      "text": "Dead Cat::Hahahaha.\n\nHer laugh is withering.\n\nDead Cat::You just don't get it, do you?\n\nDead Cat::You returned here.  You've already failed.",
+      "name": "p:I'll figure this all out, make everything right.  Undo what was done.  I promise I'll succeed.",
+      "pid": "13",
+      "position": {
+        "x": "1875",
+        "y": "1461"
+      },
+      "tags": [
+        "sideview"
+      ]
+    }
+  ],
+  "name": "Dead Cat",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "31B4F7AB-C285-460D-8336-C12E89048D46"
+}
+

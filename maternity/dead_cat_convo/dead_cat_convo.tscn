@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
+[ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=2]
+[ext_resource path="res://maternity/dead_cat_convo/cat_looking_forward.png" type="Texture" id=3]
+[ext_resource path="res://maternity/dead_cat_convo/cat_sideview.png" type="Texture" id=4]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Convo" parent="." instance=ExtResource( 1 )]
+scriptPath = "res://maternity/dead_cat_convo/dead_cat_convo.json"
+backgroundPath = "res://maternity/dead_cat_convo/dead_cat_bg_2300x2160.png"
+sliverPath = "res://maternity/dead_cat_convo/dead_cat_bg_sliver.png"
+nextScenePath = "come_to_convo"
+song = "saturn"
+
+[node name="CharacterRect" parent="." instance=ExtResource( 2 )]
+margin_left = 929.0
+margin_top = 727.0
+margin_right = 1789.0
+margin_bottom = 1587.0
+texture = ExtResource( 3 )
+on_start = true
+appear_tag = ""
+disappear_tag = "sideview"
+
+[node name="CharacterRect2" parent="." instance=ExtResource( 2 )]
+margin_left = 701.0
+margin_top = 727.0
+margin_right = 1599.0
+margin_bottom = 1587.0
+texture = ExtResource( 4 )
+appear_tag = "sideview"
+disappear_tag = ""

@@ -1,0 +1,122 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Before you lies a small stage.  A rotten piano, imploded in on itself, sits atop, resting beneath a shattered engraving of women waving torches.\n\nPresumably this served as some sort of auditorium, or music hall, for the patients and staff.\n\n[[p:What's the deal with this auditorium?  Seems a little out of place in an infirmary.]] ",
+      "links": [
+        {
+          "name": "p:What's the deal with this auditorium?  Seems a little out of place in an infirmary.",
+          "link": "p:What's the deal with this auditorium?  Seems a little out of place in an infirmary.",
+          "pid": "2"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "1179",
+        "y": "606"
+      }
+    },
+    {
+      "text": "Julia::...\n\nJulia doesn't hear you.\n\n[[Continue->Jane Longing]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Jane Longing",
+          "pid": "3"
+        }
+      ],
+      "name": "p:What's the deal with this auditorium?  Seems a little out of place in an infirmary.",
+      "pid": "2",
+      "position": {
+        "x": "1183",
+        "y": "758"
+      }
+    },
+    {
+      "text": "Julia is unreachable, staring at the stage.  Beneath her rapt expression you sense deep longing, and loss.\n\n[[p:Hello?  You there?]]\n[[p:Come here often?]]",
+      "links": [
+        {
+          "name": "p:Hello?  You there?",
+          "link": "p:Hello?  You there?",
+          "pid": "4"
+        },
+        {
+          "name": "p:Come here often?",
+          "link": "p:Come here often?",
+          "pid": "5"
+        }
+      ],
+      "name": "Jane Longing",
+      "pid": "3",
+      "position": {
+        "x": "1179",
+        "y": "906"
+      }
+    },
+    {
+      "text": "She jerks her head, dispelling whatever trance she lost herself in.\n\nJulia::Yes, sorry.  What's the matter?\n\n[[p:I'm guessing you visit this auditorium often?]]",
+      "links": [
+        {
+          "name": "p:I'm guessing you visit this auditorium often?",
+          "link": "p:I'm guessing you visit this auditorium often?",
+          "pid": "6"
+        }
+      ],
+      "name": "p:Hello?  You there?",
+      "pid": "4",
+      "position": {
+        "x": "1104",
+        "y": "1056"
+      }
+    },
+    {
+      "text": "Julia::I...\n\nShe hesitates.\n\n[[Continue->Get Going]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Get Going",
+          "pid": "7"
+        }
+      ],
+      "name": "p:Come here often?",
+      "pid": "5",
+      "position": {
+        "x": "1254",
+        "y": "1056"
+      }
+    },
+    {
+      "text": "Again, she hesitates.  \n\n[[Continue->Get Going]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Get Going",
+          "pid": "7"
+        }
+      ],
+      "name": "p:I'm guessing you visit this auditorium often?",
+      "pid": "6",
+      "position": {
+        "x": "1105",
+        "y": "1206"
+      }
+    },
+    {
+      "text": "Julia::No, I don't.\n\nJulia::We should keep moving.  We still need to sign you in at the front desk.",
+      "name": "Get Going",
+      "pid": "7",
+      "position": {
+        "x": "1184",
+        "y": "1364"
+      }
+    }
+  ],
+  "name": "Auditorium",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "EBDB446D-5CAF-4016-8517-6F2C9E82DE64"
+}
+

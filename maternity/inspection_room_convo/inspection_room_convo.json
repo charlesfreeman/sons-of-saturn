@@ -1,0 +1,628 @@
+
+
+{
+  "passages": [
+    {
+      "text": "You enter a small, poorly lit room.  In the center is a small gurney flanked by antiquated medical eqipment, all of it covered in a thick layer of grime.\n\nJulia::Please, mam, lie down on the table.  We just need to get a few physical readings from you.\n\n[[This entire setup looks a little...insufficiently sterilized.]]\n[[p:Will this require anything invasive?  I like my envelopes unbreached and intact.]]",
+      "links": [
+        {
+          "name": "This entire setup looks a little...insufficiently sterilized.",
+          "link": "This entire setup looks a little...insufficiently sterilized.",
+          "pid": "5"
+        },
+        {
+          "name": "p:Will this require anything invasive?  I like my envelopes unbreached and intact.",
+          "link": "p:Will this require anything invasive?  I like my envelopes unbreached and intact.",
+          "pid": "4"
+        }
+      ],
+      "name": "Start",
+      "pid": "1",
+      "position": {
+        "x": "1264",
+        "y": "414"
+      },
+      "tags": [
+        "enter"
+      ]
+    },
+    {
+      "text": "Julia::No need to be apprehensive miss, this won't take long.\n\nJulia::As I said, it'll only be a few quick inspections.\n\n[[p:(Action) Lay down on the bed, relaxed.]]\n[[p:(Action) Lad down on the bed, apprehensively.->p:(Action) Lay down on the bed, relaxed.]]",
+      "links": [
+        {
+          "name": "p:(Action) Lay down on the bed, relaxed.",
+          "link": "p:(Action) Lay down on the bed, relaxed.",
+          "pid": "6"
+        },
+        {
+          "name": "p:(Action) Lad down on the bed, apprehensively.",
+          "link": "p:(Action) Lay down on the bed, relaxed.",
+          "pid": "6"
+        }
+      ],
+      "name": "p:Fine, let's get this over with.",
+      "pid": "2",
+      "position": {
+        "x": "1225",
+        "y": "923"
+      }
+    },
+    {
+      "text": "No, you don't.\n\nJulia::No, you don't.  We need to perform at least cursory inspections before we can admit you into operations. \n\nJulia::I'm sorry, miss, but we can't accept the risk of performing operations without making sure our patients are healthy enough to go through with it.\n\n[[p:Alright.  I have to make it to operations.  So let's get this over with.->p:Fine, let's get this over with.]]",
+      "links": [
+        {
+          "name": "p:Alright.  I have to make it to operations.  So let's get this over with.",
+          "link": "p:Fine, let's get this over with.",
+          "pid": "2"
+        }
+      ],
+      "name": "p:Do I really have no other choice?",
+      "pid": "3",
+      "position": {
+        "x": "1329",
+        "y": "756"
+      }
+    },
+    {
+      "text": "Julia::No, miss, this won't require anything invasive.  I just need to perform a few quick inspections to ensure that you don't have any underlying health issues before we move forward.\n\n[[p:Fine, let's get this over with.]]\n[[p:Do I really have no other choice?]]",
+      "links": [
+        {
+          "name": "p:Fine, let's get this over with.",
+          "link": "p:Fine, let's get this over with.",
+          "pid": "2"
+        },
+        {
+          "name": "p:Do I really have no other choice?",
+          "link": "p:Do I really have no other choice?",
+          "pid": "3"
+        }
+      ],
+      "name": "p:Will this require anything invasive?  I like my envelopes unbreached and intact.",
+      "pid": "4",
+      "position": {
+        "x": "1264",
+        "y": "564"
+      }
+    },
+    {
+      "text": "Julia::I'm a professional, miss.  So are my colleagues.  Do you think so little of us that you would suggest we are using unsanitized equipment?  \n\nJulia::We are a little short staffed right now, true, but all of the important equipment has been thoroughly sterilized.\n\nYour protests seem to have made Julia defensive, and a little angry.  Just cut the bullshit, you don't care.\n\nYou waded through a sewer just to get here, stop pretending to be anything other than vile and lay down on the asbestos-caked gurney.\n\n[[C->Start]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Start",
+          "pid": "1"
+        }
+      ],
+      "name": "This entire setup looks a little...insufficiently sterilized.",
+      "pid": "5",
+      "position": {
+        "x": "1104",
+        "y": "564"
+      }
+    },
+    {
+      "text": "You lay flat on your back atop the dust covered gurney.  A pair of more modern surgical lights are wheeled in over you, though they are not yet turned on.  \n\nYou feel like a museum piece.\n\nJulia::Let's start by taking your blood pressure.\n\n[[p:Alright.]]\n[[p:It's probably pretty high right now.->p:Alright.]]",
+      "links": [
+        {
+          "name": "p:Alright.",
+          "link": "p:Alright.",
+          "pid": "12"
+        },
+        {
+          "name": "p:It's probably pretty high right now.",
+          "link": "p:Alright.",
+          "pid": "12"
+        }
+      ],
+      "name": "p:(Action) Lay down on the bed, relaxed.",
+      "pid": "6",
+      "position": {
+        "x": "1207",
+        "y": "1091"
+      },
+      "tags": [
+        "ongurney"
+      ]
+    },
+    {
+      "text": "Awck!  A sharp stinging pain rings throughout your left arm.  \n\nSharp, piercing, hot.  A needle jab.  \n\n[[p:Hey!  Did you just jab me?]]\n[[p:What the fuck!  We agreed you wouldn't stick anything into me!->p:Hey!  Did you just jab me?]]",
+      "links": [
+        {
+          "name": "p:Hey!  Did you just jab me?",
+          "link": "p:Hey!  Did you just jab me?",
+          "pid": "8"
+        },
+        {
+          "name": "p:What the fuck!  We agreed you wouldn't stick anything into me!",
+          "link": "p:Hey!  Did you just jab me?",
+          "pid": "8"
+        }
+      ],
+      "name": "p:Three.",
+      "pid": "7",
+      "position": {
+        "x": "1298",
+        "y": "3650"
+      }
+    },
+    {
+      "text": "Julia::Please, miss, relax.  It was just a pinprick.\n\n[[p:You said that you wouldn't jab me with anything!  What did you just put in me?]]\n[[p:Cut the shit, what was I just injected with?->p:You said that you wouldn't jab me with anything!  What did you just put in me?]]",
+      "links": [
+        {
+          "name": "p:You said that you wouldn't jab me with anything!  What did you just put in me?",
+          "link": "p:You said that you wouldn't jab me with anything!  What did you just put in me?",
+          "pid": "9"
+        },
+        {
+          "name": "p:Cut the shit, what was I just injected with?",
+          "link": "p:You said that you wouldn't jab me with anything!  What did you just put in me?",
+          "pid": "9"
+        }
+      ],
+      "name": "p:Hey!  Did you just jab me?",
+      "pid": "8",
+      "position": {
+        "x": "1292",
+        "y": "3802"
+      }
+    },
+    {
+      "text": "Julia::Please, miss, there's no need to make a scene.  I only provided a small dose of anti-anxiolytics and muscle relaxants, intramuscular, just to make the procedure a bit easier for you.\n\nJulia::And you aren't being charged anything for it either.  Really I'm doing you a pretty big favor.\n\nShe places her hands back on your collar bones.\n\nJulia::We're finished with the inspection, miss.  We can go on to operations.\n\n[[p:Who cares!  You said this physical would be non-invasive!]]",
+      "links": [
+        {
+          "name": "p:Who cares!  You said this physical would be non-invasive!",
+          "link": "p:Who cares!  You said this physical would be non-invasive!",
+          "pid": "10"
+        }
+      ],
+      "name": "p:You said that you wouldn't jab me with anything!  What did you just put in me?",
+      "pid": "9",
+      "position": {
+        "x": "1282",
+        "y": "3961"
+      }
+    },
+    {
+      "text": "Julia::Come on, you can hardly call that little prick \"invasive.\"  And had I warned you about it, it only would have given you anxiety.\n\n[[p:I'm done with this physical.  Take me into Maternity now!->p:Take me to the maternity ward.  Now.]]\n[[p:(Action) Get up from the gurney without speaking.]]",
+      "links": [
+        {
+          "name": "p:I'm done with this physical.  Take me into Maternity now!",
+          "link": "p:Take me to the maternity ward.  Now.",
+          "pid": "31"
+        },
+        {
+          "name": "p:(Action) Get up from the gurney without speaking.",
+          "link": "p:(Action) Get up from the gurney without speaking.",
+          "pid": "11"
+        }
+      ],
+      "name": "p:Who cares!  You said this physical would be non-invasive!",
+      "pid": "10",
+      "position": {
+        "x": "1282",
+        "y": "4109"
+      }
+    },
+    {
+      "text": "You lurch forward, off of the gurney, and dust yourself off.\n\n[[p:Take me to the maternity ward.  Now.]]",
+      "links": [
+        {
+          "name": "p:Take me to the maternity ward.  Now.",
+          "link": "p:Take me to the maternity ward.  Now.",
+          "pid": "31"
+        }
+      ],
+      "name": "p:(Action) Get up from the gurney without speaking.",
+      "pid": "11",
+      "position": {
+        "x": "1401",
+        "y": "4267"
+      },
+      "tags": [
+        "enter"
+      ]
+    },
+    {
+      "text": "Julia slips a small band around your left bicep.  Her fingers run along your forearm and elbow as they drag the band up.\n\n[[C->Pressure]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Pressure",
+          "pid": "13"
+        }
+      ],
+      "name": "p:Alright.",
+      "pid": "12",
+      "position": {
+        "x": "1207",
+        "y": "1241"
+      }
+    },
+    {
+      "text": "After the band is put in place, she gently lifts her fingers and turns to one of the machines.  You hear a slight whir.  Pressure begins accumulating on your bicep.\n\nJulia::Hmm.  How old are you, miss?\n\n[[How old are *you*?]]\n[[p:I'm 28.]]\n[[p:(Lie) I'm 23.->p:I'm 28.]]",
+      "links": [
+        {
+          "name": "How old are *you*?",
+          "link": "How old are *you*?",
+          "pid": "14"
+        },
+        {
+          "name": "p:I'm 28.",
+          "link": "p:I'm 28.",
+          "pid": "15"
+        },
+        {
+          "name": "p:(Lie) I'm 23.",
+          "link": "p:I'm 28.",
+          "pid": "15"
+        }
+      ],
+      "name": "Pressure",
+      "pid": "13",
+      "position": {
+        "x": "1205",
+        "y": "1391"
+      }
+    },
+    {
+      "text": "Julia::I'm only 32 myself, miss.\n\nShe looks a bit older to you.  But not much.\n\n[[C->Pressure]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Pressure",
+          "pid": "13"
+        }
+      ],
+      "name": "How old are *you*?",
+      "pid": "14",
+      "position": {
+        "x": "1096",
+        "y": "1546"
+      }
+    },
+    {
+      "text": "Julia::Hmm.  Your blood pressure is a little bit higher than it should be at your age.  Still within tolerances though, I suppose.\n\nYou spent too much time drinking and smoking in your early twenties.  Your body is already a shambles.  This is why you have dreams about your teeth falling out.\n\n[[p:Good to know.]]\n[[p:I'm sure my freakish, horse-like heart rate will make up for it.->p:Good to know.]]",
+      "links": [
+        {
+          "name": "p:Good to know.",
+          "link": "p:Good to know.",
+          "pid": "16"
+        },
+        {
+          "name": "p:I'm sure my freakish, horse-like heart rate will make up for it.",
+          "link": "p:Good to know.",
+          "pid": "16"
+        }
+      ],
+      "name": "p:I'm 28.",
+      "pid": "15",
+      "position": {
+        "x": "1295",
+        "y": "1547"
+      }
+    },
+    {
+      "text": "Julia::Now let's take a look at your heart rate.  \n\n[[C->Stethescope]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Stethescope",
+          "pid": "17"
+        }
+      ],
+      "name": "p:Good to know.",
+      "pid": "16",
+      "position": {
+        "x": "1295",
+        "y": "1697"
+      }
+    },
+    {
+      "text": "Julia grabs a stethoscope from underneath the adjacent table and equips the headset.  She presses the diaphragm to your left collarbone and slowly slides it down your chest.  The touch is icy but intimate.\n\nJulia::Your heart rate is a little bit lower than average - are you an athlete?\n\nYou are no athlete.  You're just presently deprived of your beloved uppers and your heart is slacking off in their administrative absense.\n\n[[p:I try to keep myself in shape, yes.]]\n[[p:No, my heart is just lazy.  And ugly.]]",
+      "links": [
+        {
+          "name": "p:I try to keep myself in shape, yes.",
+          "link": "p:I try to keep myself in shape, yes.",
+          "pid": "18"
+        },
+        {
+          "name": "p:No, my heart is just lazy.  And ugly.",
+          "link": "p:No, my heart is just lazy.  And ugly.",
+          "pid": "19"
+        }
+      ],
+      "name": "Stethescope",
+      "pid": "17",
+      "position": {
+        "x": "1295",
+        "y": "1846"
+      }
+    },
+    {
+      "text": "Julia::Heheh, I can tell.\n\n[[C->Dragging]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Dragging",
+          "pid": "20"
+        }
+      ],
+      "name": "p:I try to keep myself in shape, yes.",
+      "pid": "18",
+      "position": {
+        "x": "1220",
+        "y": "1996"
+      }
+    },
+    {
+      "text": "Julia::I...I see.\n\n[[C->Dragging]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Dragging",
+          "pid": "20"
+        }
+      ],
+      "name": "p:No, my heart is just lazy.  And ugly.",
+      "pid": "19",
+      "position": {
+        "x": "1370",
+        "y": "1996"
+      }
+    },
+    {
+      "text": "While keeping the diaphragm in place with her left hand, Julia runs her fingers along your right bicep, up to your shoulder.\n\n[[p:Part of the inspection?]]\n[[p:That...feels nice.]]",
+      "links": [
+        {
+          "name": "p:Part of the inspection?",
+          "link": "p:Part of the inspection?",
+          "pid": "21"
+        },
+        {
+          "name": "p:That...feels nice.",
+          "link": "p:That...feels nice.",
+          "pid": "22"
+        }
+      ],
+      "name": "Dragging",
+      "pid": "20",
+      "position": {
+        "x": "1296",
+        "y": "2149"
+      }
+    },
+    {
+      "text": "Julia::Oh, no, I apologize.  You just have an impressive physique.\n\n[[C->Removes]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Removes",
+          "pid": "23"
+        }
+      ],
+      "name": "p:Part of the inspection?",
+      "pid": "21",
+      "position": {
+        "x": "1188",
+        "y": "2296"
+      }
+    },
+    {
+      "text": "Julia::I'm happy to hear that.\n\n[[C->Removes]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Removes",
+          "pid": "23"
+        }
+      ],
+      "name": "p:That...feels nice.",
+      "pid": "22",
+      "position": {
+        "x": "1411",
+        "y": "2297"
+      }
+    },
+    {
+      "text": "Julia pulls back both the diaphragm and her right hand.\n\nJulia::Alright, your heart rate is healthy.  Now we just need to check that your breathing is normal.\n\nJulia::Try to take a few deep breaths for me, ok?\n\nJulia puts her ear down directly over your mouth.  You resist intrusive thoughts about gently nibbling it.\n\nShe's close enough that you can smell her.  She smells lightly of peppermint.\n\n[[p:(Action) Breath Deeply.->Breath]]",
+      "links": [
+        {
+          "name": "p:(Action) Breath Deeply.",
+          "link": "Breath",
+          "pid": "24"
+        }
+      ],
+      "name": "Removes",
+      "pid": "23",
+      "position": {
+        "x": "1295",
+        "y": "2446"
+      }
+    },
+    {
+      "text": "You breath deeply, slowly, in and out, for two or three cycles.\n\n[[Continue->Rises]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Rises",
+          "pid": "25"
+        }
+      ],
+      "name": "Breath",
+      "pid": "24",
+      "position": {
+        "x": "1295",
+        "y": "2596"
+      }
+    },
+    {
+      "text": "Julia rises a bit, her eyes remaining fixed on your chest.\n\nSlowly, she guides her hand to the top of your breasts and presses down firmly.\n\nJulia::Keep breathing, please.\n\n[[p:(Action) Keep it together and continue to breath.]]",
+      "links": [
+        {
+          "name": "p:(Action) Keep it together and continue to breath.",
+          "link": "p:(Action) Keep it together and continue to breath.",
+          "pid": "26"
+        }
+      ],
+      "name": "Rises",
+      "pid": "25",
+      "position": {
+        "x": "1295",
+        "y": "2746"
+      }
+    },
+    {
+      "text": "Easy now.  In and out.  In and out.  Focus on the breath itself.\n\nJulia::Your breathing is normal.  Though I can feel your heart rate spiking a little.\n\nIn and out.  In and out.  In and out.\n\n[[C->Finished]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Finished",
+          "pid": "27"
+        }
+      ],
+      "name": "p:(Action) Keep it together and continue to breath.",
+      "pid": "26",
+      "position": {
+        "x": "1297",
+        "y": "2896"
+      }
+    },
+    {
+      "text": "Julia slowly rises back up and removes her hand from your chest.  \n\nJulia::Very good.  Just one more check.\n\nJulia::I need you to count to zero, starting from five, going backwards.  Can you do that for me?\n\n[[p:Sure.]]\n[[p:Yes ma'am.->p:Sure.]]",
+      "links": [
+        {
+          "name": "p:Sure.",
+          "link": "p:Sure.",
+          "pid": "28"
+        },
+        {
+          "name": "p:Yes ma'am.",
+          "link": "p:Sure.",
+          "pid": "28"
+        }
+      ],
+      "name": "Finished",
+      "pid": "27",
+      "position": {
+        "x": "1295",
+        "y": "3046"
+      }
+    },
+    {
+      "text": "You hear the slightest amount of shuffling.\n\n[[p:Five.]]",
+      "links": [
+        {
+          "name": "p:Five.",
+          "link": "p:Five.",
+          "pid": "29"
+        }
+      ],
+      "name": "p:Sure.",
+      "pid": "28",
+      "position": {
+        "x": "1295",
+        "y": "3196"
+      }
+    },
+    {
+      "text": "Julia::Yes, like that.\n\n[[p:Four.]]",
+      "links": [
+        {
+          "name": "p:Four.",
+          "link": "p:Four.",
+          "pid": "30"
+        }
+      ],
+      "name": "p:Five.",
+      "pid": "29",
+      "position": {
+        "x": "1295",
+        "y": "3346"
+      }
+    },
+    {
+      "text": "Julia::Keep going.\n\n[[p:Three.]]",
+      "links": [
+        {
+          "name": "p:Three.",
+          "link": "p:Three.",
+          "pid": "7"
+        }
+      ],
+      "name": "p:Four.",
+      "pid": "30",
+      "position": {
+        "x": "1295",
+        "y": "3496"
+      }
+    },
+    {
+      "text": "Julia finally starts to look a little cross with you.\n\nJulia::Fine.  Maternity is back out and just down the hall.  If you're so eager, you lead the way.",
+      "name": "p:Take me to the maternity ward.  Now.",
+      "pid": "31",
+      "position": {
+        "x": "1401",
+        "y": "4417"
+      }
+    },
+    {
+      "text": "Julia::This way Miss.  We need to perform a quick inspection before proceeding.\n\nShe motions to the doorway on the right.\n\n[[p:Since when do I need an inspection?  You said all I had to do was sign in.]]\n[[p:Which of my body parts needs inspecting?  I just checked and they are all working fine.]]",
+      "links": [
+        {
+          "name": "p:Since when do I need an inspection?  You said all I had to do was sign in.",
+          "link": "p:Since when do I need an inspection?  You said all I had to do was sign in.",
+          "pid": "33"
+        },
+        {
+          "name": "p:Which of my body parts needs inspecting?  I just checked and they are all working fine.",
+          "link": "p:Which of my body parts needs inspecting?  I just checked and they are all working fine.",
+          "pid": "34"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "32",
+      "position": {
+        "x": "1279",
+        "y": "46.5"
+      }
+    },
+    {
+      "text": "Julia::I apologize for failing to mention this, but we also need to put you through a brief preliminary screening.\n\nJulia::Just a few quick scans to make sure you don't have any underlying health problems.  We want to avoid any complications during the operation, you see.\n\nJulia::Now, right this way.\n\n[[C->Start]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Start",
+          "pid": "1"
+        }
+      ],
+      "name": "p:Since when do I need an inspection?  You said all I had to do was sign in.",
+      "pid": "33",
+      "position": {
+        "x": "1194",
+        "y": "187.5"
+      }
+    },
+    {
+      "text": "Julia::I can't just take your word for that Miss.  I need to confirm for myself.\n\nJulia::Just a few quick scans to make sure you don't have any underlying health problems.  We want to avoid any complications during the operation, you see.\n\nJulia::Now, right this way.\n\n[[C->Start]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Start",
+          "pid": "1"
+        }
+      ],
+      "name": "p:Which of my body parts needs inspecting?  I just checked and they are all working fine.",
+      "pid": "34",
+      "position": {
+        "x": "1352",
+        "y": "185.5"
+      }
+    }
+  ],
+  "name": "Needled",
+  "startnode": "32",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "90DDA5D6-C454-44F1-8C99-39E8E5F6CCAD"
+}
+

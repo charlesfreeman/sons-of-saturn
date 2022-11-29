@@ -1,0 +1,185 @@
+
+
+{
+  "passages": [
+    {
+      "text": "\n\nJulia::Ugh, please Miss, let's not linger here.  I hate this room.\n\n[[p:Can we hang out here for just a bit?  This is the first time I've gotten fresh air since I made it here.]]\n[[p:You'd rather go back to the moldy, claustrophobic hallways?  Because to be honest that sounds preferable to me as well.]]",
+      "links": [
+        {
+          "name": "p:Can we hang out here for just a bit?  This is the first time I've gotten fresh air since I made it here.",
+          "link": "p:Can we hang out here for just a bit?  This is the first time I've gotten fresh air since I made it here.",
+          "pid": "2"
+        },
+        {
+          "name": "p:You'd rather go back to the moldy, claustrophobic hallways?  Because to be honest that sounds preferable to me as well.",
+          "link": "p:You'd rather go back to the moldy, claustrophobic hallways?  Because to be honest that sounds preferable to me as well.",
+          "pid": "3"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "1179",
+        "y": "593.5"
+      }
+    },
+    {
+      "text": "Julia::Miss, there is nothing fresh about the air here.\n\nNow that she's mentioned it, you do detect a hint of rot in your nostrils.\n\n[[p:Yeah, what's up with that smell?]]",
+      "links": [
+        {
+          "name": "p:Yeah, what's up with that smell?",
+          "link": "p:Yeah, what's up with that smell?",
+          "pid": "4"
+        }
+      ],
+      "name": "p:Can we hang out here for just a bit?  This is the first time I've gotten fresh air since I made it here.",
+      "pid": "2",
+      "position": {
+        "x": "1104",
+        "y": "743.5"
+      }
+    },
+    {
+      "text": "Julia::Yes, I really would.  I hate this overlook.\n\nJulia::Hate the view.  Hate the crib.  More than anything, I hate the smell.\n\n[[p:Yeah, what's up with that smell?]]",
+      "links": [
+        {
+          "name": "p:Yeah, what's up with that smell?",
+          "link": "p:Yeah, what's up with that smell?",
+          "pid": "4"
+        }
+      ],
+      "name": "p:You'd rather go back to the moldy, claustrophobic hallways?  Because to be honest that sounds preferable to me as well.",
+      "pid": "3",
+      "position": {
+        "x": "1254",
+        "y": "743.5"
+      }
+    },
+    {
+      "text": "Don't be coy, you recognize this smell.  It's the fruity smell of rot.\n\nJulia glances down in surrender.\n\nJulia::You're going to make me say it, aren't you?\n\nJulia::Sick babies, ones we've exhausted treatment for.  This is where we leave them.  \n\nJulia::Right here, in this crib.\n\nJulia::We tell the parents that there's nothing else we can do, but they still have a chance if they get some sunlight and fresh air.\n\nJulia::One of those claims is true.\n\nJulia::We know it's not gonna work.  I think the mom and dad usually know, too.  But we keep bringing babies here all the same.\n\nJulia::*I* keep bringing babies here.  They always make me do it.\n\n[[p:That's...genuinely horrific.]]\n[[p:I guess that explains the smell.]]",
+      "links": [
+        {
+          "name": "p:That's...genuinely horrific.",
+          "link": "p:That's...genuinely horrific.",
+          "pid": "5"
+        },
+        {
+          "name": "p:I guess that explains the smell.",
+          "link": "p:I guess that explains the smell.",
+          "pid": "6"
+        }
+      ],
+      "name": "p:Yeah, what's up with that smell?",
+      "pid": "4",
+      "position": {
+        "x": "1103",
+        "y": "913.5"
+      }
+    },
+    {
+      "text": "Julia returns to you with a newfound intensity.\n\nJulia::Someone has to do this dirty work, Miss.  If I don't, no one will.\n\n[[Did any of the babies you left here pull through?]]\n[[How many infants get sick and die here?]]\n[[p:Why did it always fall on you?]]",
+      "links": [
+        {
+          "name": "Did any of the babies you left here pull through?",
+          "link": "Did any of the babies you left here pull through?",
+          "pid": "7"
+        },
+        {
+          "name": "How many infants get sick and die here?",
+          "link": "How many infants get sick and die here?",
+          "pid": "10"
+        },
+        {
+          "name": "p:Why did it always fall on you?",
+          "link": "p:Why did it always fall on you?",
+          "pid": "8"
+        }
+      ],
+      "name": "p:That's...genuinely horrific.",
+      "pid": "5",
+      "position": {
+        "x": "1028",
+        "y": "1063.5"
+      }
+    },
+    {
+      "text": "Julia::We don't even bother cleaning the crib after collection.  Of course it reeks.\n\n[[C->p:That's...genuinely horrific.]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:That's...genuinely horrific.",
+          "pid": "5"
+        }
+      ],
+      "name": "p:I guess that explains the smell.",
+      "pid": "6",
+      "position": {
+        "x": "1178",
+        "y": "1063.5"
+      }
+    },
+    {
+      "text": "Julia::Only a handful.  Babies that have a real chance don't end up here.\n\n[[C->p:That's...genuinely horrific.]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:That's...genuinely horrific.",
+          "pid": "5"
+        }
+      ],
+      "name": "Did any of the babies you left here pull through?",
+      "pid": "7",
+      "position": {
+        "x": "823",
+        "y": "1214.5"
+      }
+    },
+    {
+      "text": "Julia::It didn't always.  They used to just make the newest nurse take on this responsibility.  \n\nJulia::But I...\n\nShe trails off.\n\nJulia::I don't want to go into it, but I'm very indebted to some of the higher up staff here.\n\nJulia::So a lot of the tougher work is falling on me for a while.\n\n[[That isn't fair.  You shouldn't have to do all of this alone.]]",
+      "links": [
+        {
+          "name": "That isn't fair.  You shouldn't have to do all of this alone.",
+          "link": "That isn't fair.  You shouldn't have to do all of this alone.",
+          "pid": "9"
+        }
+      ],
+      "name": "p:Why did it always fall on you?",
+      "pid": "8",
+      "position": {
+        "x": "1113",
+        "y": "1213.5"
+      }
+    },
+    {
+      "text": "Julia::Life isn't fair, miss.  I've made my peace with that, and I suggest you do the same.",
+      "name": "That isn't fair.  You shouldn't have to do all of this alone.",
+      "pid": "9",
+      "position": {
+        "x": "1119",
+        "y": "1363.5"
+      }
+    },
+    {
+      "text": "Julia::Before our budget was reduced?  Too many.\n\nJulia::After the slash?  Way, way too many.  Usually of respiratory distress.\n\n[[C->p:That's...genuinely horrific.]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:That's...genuinely horrific.",
+          "pid": "5"
+        }
+      ],
+      "name": "How many infants get sick and die here?",
+      "pid": "10",
+      "position": {
+        "x": "983",
+        "y": "1213.5"
+      }
+    }
+  ],
+  "name": "Open Air Cradle",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "49BE4838-F760-4516-93DD-811A9327E846"
+}
+

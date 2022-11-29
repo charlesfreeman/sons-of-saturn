@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=2]
+[ext_resource path="res://maternity/tilted_dream_hallways/dream_hallway_3.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 296.844, 303.472 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 3 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_up = "res://maternity/tilted_dream_hallways/tilted_dream_hallway_4.tscn"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 2 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1464.26, 1036.38 )
+shape = SubResource( 1 )

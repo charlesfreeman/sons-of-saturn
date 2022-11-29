@@ -1,0 +1,377 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Julia::This is the front desk.  This is where you should have gone as soon as you got here.  Remember that in the future.\n\nJulia approaches the octagonal station before you and gazes directly into the cavity behind the central pane.  Her eyes light up as she begins to converse with someone.\n\nJulia::This young lady is in need of secondary services.\n\nJulia::...\n\nJulia::Just let me fill out her forms for her, we're in something of a hurry.\n\nJulia::...\n\nJulia::Yes, I know she'll need to provide the closing signature, but I can perform the rest.\n\nThis hospital hasn't been operational in over a decade.  Who is she talking to?\n\nJulia::Oh, I forgot to ask - what is your name miss?\n\n[[p:Amelie]]\n[[p:Am...ber]]",
+      "links": [
+        {
+          "name": "p:Amelie",
+          "link": "p:Amelie",
+          "pid": "2"
+        },
+        {
+          "name": "p:Am...ber",
+          "link": "p:Am...ber",
+          "pid": "3"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "1179",
+        "y": "606"
+      }
+    },
+    {
+      "text": "Julia::Got it. \n\nShe jots your name in.\n\n[[Continue->Scribbling]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Scribbling",
+          "pid": "4"
+        }
+      ],
+      "name": "p:Amelie",
+      "pid": "2",
+      "position": {
+        "x": "1106",
+        "y": "755"
+      }
+    },
+    {
+      "text": "She glances at you a little suspiciously, but decides to pursue her intuitions no further.\n\nJulia::Alright, I'll jot that in.\n\n[[Continue->Scribbling]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Scribbling",
+          "pid": "4"
+        }
+      ],
+      "name": "p:Am...ber",
+      "pid": "3",
+      "position": {
+        "x": "1254",
+        "y": "756"
+      }
+    },
+    {
+      "text": "Julia::No, she isn't really here for any non-secondary procedures.  Jot her down for something...non-invansive.  Ingrown toe removal, go with that as the official malady.\n\nIt seems you need an \"official\" reason to be here, and whatever Julia has planned for you isn't suitable.  So she's taken to slandering the virility of your healthy, perfectly formed toes.  Just so she can have an \"official\" reason to sign you in.\n\n[[p:My toes are immaculate.]]\n[[p:(Action) Remain silent and take the blow to your ego.]]",
+      "links": [
+        {
+          "name": "p:My toes are immaculate.",
+          "link": "p:My toes are immaculate.",
+          "pid": "5"
+        },
+        {
+          "name": "p:(Action) Remain silent and take the blow to your ego.",
+          "link": "p:(Action) Remain silent and take the blow to your ego.",
+          "pid": "6"
+        }
+      ],
+      "name": "Scribbling",
+      "pid": "4",
+      "position": {
+        "x": "1163",
+        "y": "939"
+      }
+    },
+    {
+      "text": "Julia glares at you cuttingly.\n\nJulia::No.  I\"m quite certain I saw an infected lip on the left side of your left toe.  Are we on the same page?\n\nShe wants you to drop it.  Now.\n\n[[Continue->Sign the page]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Sign the page",
+          "pid": "7"
+        }
+      ],
+      "name": "p:My toes are immaculate.",
+      "pid": "5",
+      "position": {
+        "x": "1088",
+        "y": "1089"
+      }
+    },
+    {
+      "text": "Julia seems to appreciate your cooperation.  But your toes wail in vain, narcisistic agony.\n\n[[Continue->Sign the page]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Sign the page",
+          "pid": "7"
+        }
+      ],
+      "name": "p:(Action) Remain silent and take the blow to your ego.",
+      "pid": "6",
+      "position": {
+        "x": "1239",
+        "y": "1089"
+      }
+    },
+    {
+      "text": "Julia::Alright, we just need your signature, and we'll be set.\n\nJulia motions for you to come to the pane.  \n\nYou approach the counter.\n\n[[Continue->Approach the counter]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Approach the counter",
+          "pid": "8"
+        }
+      ],
+      "name": "Sign the page",
+      "pid": "7",
+      "position": {
+        "x": "1164",
+        "y": "1242"
+      }
+    },
+    {
+      "text": "As you approach, you keep your focus fixed on the document prostrated out on the counter.  \n\nAs you scan the document for suspicious clauses you start feeling something off, something amiss.\n\nYou sense something in your periphery.  You glance up.\n\n[[Continue->Look Up]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Look Up",
+          "pid": "9"
+        }
+      ],
+      "name": "Approach the counter",
+      "pid": "8",
+      "position": {
+        "x": "1164",
+        "y": "1398"
+      },
+      "tags": [
+        "approach"
+      ]
+    },
+    {
+      "text": "No one is behind the counter.\n\nNothing fills the cavity but a vacuum, along with an ether of dust and insulative particulate circulating about the air.  \n\nThis ward has been shuttered for decades.  There was never anyone at the front desk.  Julia imagined the entire encounter.  \n\n[[Continue->Looming]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Looming",
+          "pid": "10"
+        }
+      ],
+      "name": "Look Up",
+      "pid": "9",
+      "position": {
+        "x": "1161",
+        "y": "1545"
+      },
+      "tags": [
+        "lookup"
+      ]
+    },
+    {
+      "text": "Julia waits behind you, expectantly hovering.\n\n[[p:Alright what the hell is going on?]]\n[[p:(Action) Make no comment and sign the document.]]",
+      "links": [
+        {
+          "name": "p:Alright what the hell is going on?",
+          "link": "p:Alright what the hell is going on?",
+          "pid": "11"
+        },
+        {
+          "name": "p:(Action) Make no comment and sign the document.",
+          "link": "p:(Action) Make no comment and sign the document.",
+          "pid": "12"
+        }
+      ],
+      "name": "Looming",
+      "pid": "10",
+      "position": {
+        "x": "1158",
+        "y": "1691"
+      }
+    },
+    {
+      "text": "Julia throws a quick glance up to the pane towards whomever she imagines residing within the cavity.  You detect a hint of anguish in her face.  She is embarrassed by your outburst.\n\nJulia::I'm asking you to sign this document for Valery as I explained on the way here.  I...understand that your nerves might be a little jumpy right now.  But there really isn't any circumstance for such outbursts.  \n\n[[Who is Valery?  Why would I do anything for someone named Valery?]]\n[[I don't know what you see, but there is no one on the other side of the pane.]]\n[[(Action) Read the document.]]\n[[If I sign this, you'll open up the door ahead?]]\n[[p:(Action) Sign the document->p:(Action) Make no comment and sign the document.]] \n[[p:I'm not going to sign this.]]",
+      "links": [
+        {
+          "name": "Who is Valery?  Why would I do anything for someone named Valery?",
+          "link": "Who is Valery?  Why would I do anything for someone named Valery?",
+          "pid": "13"
+        },
+        {
+          "name": "I don't know what you see, but there is no one on the other side of the pane.",
+          "link": "I don't know what you see, but there is no one on the other side of the pane.",
+          "pid": "14"
+        },
+        {
+          "name": "(Action) Read the document.",
+          "link": "(Action) Read the document.",
+          "pid": "15"
+        },
+        {
+          "name": "If I sign this, you'll open up the door ahead?",
+          "link": "If I sign this, you'll open up the door ahead?",
+          "pid": "17"
+        },
+        {
+          "name": "p:(Action) Sign the document",
+          "link": "p:(Action) Make no comment and sign the document.",
+          "pid": "12"
+        },
+        {
+          "name": "p:I'm not going to sign this.",
+          "link": "p:I'm not going to sign this.",
+          "pid": "16"
+        }
+      ],
+      "name": "p:Alright what the hell is going on?",
+      "pid": "11",
+      "position": {
+        "x": "1158",
+        "y": "1837"
+      },
+      "tags": [
+        "lookup"
+      ]
+    },
+    {
+      "text": "You shakily sign your name.  We'll go along with this for now - we don't have much choice.\n\n[[Continue->pushes file]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "pushes file",
+          "pid": "20"
+        }
+      ],
+      "name": "p:(Action) Make no comment and sign the document.",
+      "pid": "12",
+      "position": {
+        "x": "1640",
+        "y": "1999"
+      }
+    },
+    {
+      "text": "She again glances nervously at the pane - you are embarrassing her.\n\nJulia::Because Valery has been kind enough to pull a few levers and get you in to see us, despite a few...\"administrative roadblocks.\"\n\nValery is the person she thinks is behind the pane.  Apparently they are doing us a favor.\n\n[[Continue->p:Alright what the hell is going on?]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:Alright what the hell is going on?",
+          "pid": "11"
+        }
+      ],
+      "name": "Who is Valery?  Why would I do anything for someone named Valery?",
+      "pid": "13",
+      "position": {
+        "x": "903",
+        "y": "2002"
+      }
+    },
+    {
+      "text": "Julia::That's absurd, of course there is.  \n\nShe does not engage further.  Her statement is firm, but a tinge of cognitive dissonance lies just beneath the surface.  She conceals it, very well, she's had much practice - but not perfectly.\n\n[[Continue->p:Alright what the hell is going on?]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:Alright what the hell is going on?",
+          "pid": "11"
+        }
+      ],
+      "name": "I don't know what you see, but there is no one on the other side of the pane.",
+      "pid": "14",
+      "position": {
+        "x": "1036",
+        "y": "1995"
+      }
+    },
+    {
+      "text": "The page is visibly worn, fitting for a document likely stored within a cabinet for 20 years.  \n\nOtherwise, it seems to be a perfectly standard medical sign in sheet, documenting your fictitious toe injury.\n\n[[Continue->p:Alright what the hell is going on?]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:Alright what the hell is going on?",
+          "pid": "11"
+        }
+      ],
+      "name": "(Action) Read the document.",
+      "pid": "15",
+      "position": {
+        "x": "1156",
+        "y": "1998"
+      },
+      "tags": [
+        "approach"
+      ]
+    },
+    {
+      "text": "Julia::Then you aren't getting your operation.  Only Valery can grant access to the second floor of this facility, the operations ward.  \n\nShe's serious.  If you don't officiate this occasion before the invisible clerk before you then there will be no further progression.  \n\nYou won't find your Mom.  All the effort poured into organizing and funding this infiltration will have been in vain.\n\n[[p:I'm not signing it, even if it means I don't get to go forward.]]",
+      "links": [
+        {
+          "name": "p:I'm not signing it, even if it means I don't get to go forward.",
+          "link": "p:I'm not signing it, even if it means I don't get to go forward.",
+          "pid": "18"
+        }
+      ],
+      "name": "p:I'm not going to sign this.",
+      "pid": "16",
+      "position": {
+        "x": "1417",
+        "y": "1999"
+      }
+    },
+    {
+      "text": "Julia::Yes, as I said before, we'll be granted access to the Maternity Ward. \n\nJulia::You won't find any alternative routes, I might add.\n\n[[Continue->p:Alright what the hell is going on?]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:Alright what the hell is going on?",
+          "pid": "11"
+        }
+      ],
+      "name": "If I sign this, you'll open up the door ahead?",
+      "pid": "17",
+      "position": {
+        "x": "1282",
+        "y": "2002"
+      }
+    },
+    {
+      "text": "You really don't have any choice in the matter.\n\nYou *are* going to sign the document.  We are moving forward.  We don't have any other choice.\n\nYou can feel your hand rising towards the pen.\n\n[[p:This isn't fair.  I shouldn't have to do this!]]",
+      "links": [
+        {
+          "name": "p:This isn't fair.  I shouldn't have to do this!",
+          "link": "p:This isn't fair.  I shouldn't have to do this!",
+          "pid": "19"
+        }
+      ],
+      "name": "p:I'm not signing it, even if it means I don't get to go forward.",
+      "pid": "18",
+      "position": {
+        "x": "1415",
+        "y": "2143"
+      }
+    },
+    {
+      "text": "You of all people should know this place doesn't play fair.  You ought to have soaked that in by now.\n\n[[p:(Action) Sign the document.->p:(Action) Make no comment and sign the document.]] ",
+      "links": [
+        {
+          "name": "p:(Action) Sign the document.",
+          "link": "p:(Action) Make no comment and sign the document.",
+          "pid": "12"
+        }
+      ],
+      "name": "p:This isn't fair.  I shouldn't have to do this!",
+      "pid": "19",
+      "position": {
+        "x": "1413",
+        "y": "2294"
+      }
+    },
+    {
+      "text": "Julia pushes the signed document forward, towards \"Valery.\"\n\nJulia::Thank you for cooperating.  I know this procedure probably seems excessively elaborate, but we've got to take the proper precautions and document your visit.  \n\nWe're subject to very intense scrutiny by a number of HART accountants, as I'm sure you are aware.\n\nJulia makes a quick gesture to the vacuous entity behind the glass and pivots to the right.  She expects you to follow her lead and start heading down the hall.",
+      "name": "pushes file",
+      "pid": "20",
+      "position": {
+        "x": "1640",
+        "y": "2149"
+      }
+    }
+  ],
+  "name": "Getting Signed In",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "A4647507-8CE5-44D0-B037-1204F30A1DAA"
+}
+

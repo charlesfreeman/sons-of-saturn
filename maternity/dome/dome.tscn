@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://maternity/dome/dome.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 220.368, 610.25 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 1002.25, 180.108 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_right = "res://maternity/right_curved_hallway/right_curved_hallway.tscn"
+scene_down = "res://maternity/breezeway/breezeway.tscn"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 2655.53, 1542.4 )
+shape = SubResource( 1 )
+
+[node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2( 1415.96, 1968.3 )
+shape = SubResource( 2 )
+
+[node name="PopUp" parent="." instance=ExtResource( 3 )]
+popup_on_entry = true
+popup_text = [ "Amelie::Woah!  What's up with this dome?", "Amelie::Oh, this is just the foyer. ", "Amelie::Patients enter through here.  Someone comes to greet them and show them to the front desk.", "Amelie::At least, that's what they are supposed to do.", null ]
+single_use = true

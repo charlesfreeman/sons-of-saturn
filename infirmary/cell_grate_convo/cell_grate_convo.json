@@ -141,7 +141,7 @@
       }
     },
     {
-      "text": "Ferryman::Don't worry.  I have a plan for getting out of here.  \n\nFerryman::The shift managers used to call me \"Wiggly.\"  That nickname stuck for a reason.  I'm very thin and very flexible - even the tightest conduits and interstitial spaces aren't a challenge for me.\n\nFerryman::The utility tunnels that weaves underneath the Cradle - they're too narrow and contorted for most people to fit through.  That's why children were typically selected to maintain and repair them.  \n\nFerryman::But I'm flexible, and skinny, and...Wiggly enough to get through them without much issue, even as an adult.\n\nFerryman::I'll have to backtrack a bit, but I know a route through the pipes I can follow that should spit me out at the back of the maternity wards.  We can reconvene there.\n\n[[How are you planning to get into the utility tunnel network?  You're trapped in an isolation cell.]]\n[[Were you one of the children tasked with maintaining the steam tunnels?]]\n[[1:So you just spent your entire childhood running around maintaining underground infrastructure?]]\n[[How am I supposed to navigate this place?]]\n[[What if I run into any more \"reverb\" type phenomena?]]\n[[p:Would you mind if I started calling you Wiggly?]]",
+      "text": "Ferryman::Don't worry.  I have a plan for getting out of here.  \n\nFerryman::The shift managers used to call me \"Wiggly.\"  I didn't like it very much at first, but the nickname stuck for a reason.  I'm skinny, and flexible - even the tightest conduits and interstitial spaces aren't a challenge for me.\n\nFerryman::The utility tunnels that weave underneath the Cradle - they're too narrow and contorted for most people to fit through.  That's why they had to employ very young people, see?  \n\nFerryman::But I'm flexible, and skinny, and...Wiggly enough to get through them without much issue, even now.\n\nFerryman::I remember a path through the pipes that should spit me out at the back of the maternity wards.  We'll link back up there.\n\n[[How are you planning to get into the utility tunnel network?  You're trapped in an isolation cell.]]\n[[Were you one of the children tasked with maintaining the steam tunnels?]]\n[[1:You spent your entire childhood crawling around steam and sewer pipes?]]\n[[How am I supposed to navigate this place?]]\n[[What if I run into any more \"reverb\" type phenomena?]]\n[[p:Would you mind if I started calling you Wiggly?]]",
       "links": [
         {
           "name": "How are you planning to get into the utility tunnel network?  You're trapped in an isolation cell.",
@@ -154,8 +154,8 @@
           "pid": "14"
         },
         {
-          "name": "1:So you just spent your entire childhood running around maintaining underground infrastructure?",
-          "link": "1:So you just spent your entire childhood running around maintaining underground infrastructure?",
+          "name": "1:You spent your entire childhood crawling around steam and sewer pipes?",
+          "link": "1:You spent your entire childhood crawling around steam and sewer pipes?",
           "pid": "15"
         },
         {
@@ -270,7 +270,7 @@
       }
     },
     {
-      "text": "Ferryman::Yes.  \n\n[[p:And that's not weird to you?]]\n[[p:That's child labour.  Child abuse.]]",
+      "text": "Ferryman::Yes.  I had to help keep them running.\n\n[[p:And that's not weird to you?]]\n[[p:That's child labour.  Child abuse.]]",
       "links": [
         {
           "name": "p:And that's not weird to you?",
@@ -283,7 +283,7 @@
           "pid": "17"
         }
       ],
-      "name": "1:So you just spent your entire childhood running around maintaining underground infrastructure?",
+      "name": "1:You spent your entire childhood crawling around steam and sewer pipes?",
       "pid": "15",
       "position": {
         "x": "555",
@@ -291,7 +291,7 @@
       }
     },
     {
-      "text": "Ferryman::Nope.\n\nHe pauses to reflect for a moment.\n\nFerryman::I mean, this is all I've ever known, really.  That's why I like working with clients like you - outsiders.  I enjoy hearing about the world outside of the Cradle.  Learning what other people's lives are like.\n\n[[p:You're not upset you had to spend your entire childhood doing menial labour for the sake of this failed city?]]",
+      "text": "Ferryman::Nope.\n\nHe pauses to reflect for a moment.\n\nFerryman::I mean, this is all I've ever known, really.  That's why I like working with clients like you - outsiders.  \n\nFerryman::I enjoy hearing about the world outside of the Cradle.  Learning what other people's lives are like.\n\n[[p:You're not upset you had to spend your entire childhood doing menial labour for the sake of this failed city?]]",
       "links": [
         {
           "name": "p:You're not upset you had to spend your entire childhood doing menial labour for the sake of this failed city?",
@@ -323,7 +323,7 @@
       }
     },
     {
-      "text": "Ferryman::I mean, I was born on this path.  There was never a fork in the road.  Getting upset, or angry, about my lot doesn't seem likely to change much.\n\nFerryman::All that would happen is I would be upset and no one would notice.\n\n[[p:There is so much you could have done with your life.  They denied you that.]]",
+      "text": "Ferryman::Miss, I was orphaned.  There was never a fork in the road.  Getting upset, or angry, about my lot doesn't seem likely to change much.\n\nFerryman::All that would happen is I would be upset and no one would notice.\n\n[[p:There is so much you could have done with your life.  They denied you that.]]",
       "links": [
         {
           "name": "p:There is so much you could have done with your life.  They denied you that.",
@@ -492,7 +492,10 @@
       "position": {
         "x": "921",
         "y": "41"
-      }
+      },
+      "tags": [
+        "WomanCrying"
+      ]
     },
     {
       "text": "Ferryman::Shhhh!\n\nYour guide aggressively shushes you before you can finish.  He appears calm, but his fixed gaze and tense stance betray intense tension.\n\nFerryman::Stay here.  I'll investigate.\n\n[[C->Slink]] ",
@@ -571,7 +574,8 @@
       },
       "tags": [
         "enter",
-        "auncertain"
+        "auncertain",
+        "stop_soundscape"
       ]
     },
     {
@@ -618,7 +622,7 @@
       ]
     },
     {
-      "text": "Ferryman::Have you heard of the sorts of incidents Infiltrators sometimes report near the SATURN Core?  The Broker must have mentioned them in the introductory sermon he gives to all infiltrators, though he probably didn't go into much detail.  Every minute with him is metered.\n\n[[p:Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who've been dead for twenty years...]]",
+      "text": "Ferryman::Have you heard of the sorts of incidents Infiltrators sometimes report near the SATURN Core?  \n\nFerryman::The Broker must have mentioned them in the introductory sermon he gives to all infiltrators, though he probably didn't go into much detail.  Every minute with him is metered.\n\n[[p:Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who've been dead for twenty years...]]",
       "links": [
         {
           "name": "p:Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who've been dead for twenty years...",
@@ -630,7 +634,7 @@
       "pid": "34",
       "position": {
         "x": "533",
-        "y": "1037.5"
+        "y": "1037"
       }
     },
     {
@@ -646,7 +650,7 @@
       "pid": "35",
       "position": {
         "x": "688",
-        "y": "1047.5"
+        "y": "1047"
       }
     },
     {
@@ -662,7 +666,7 @@
       "pid": "36",
       "position": {
         "x": "1046",
-        "y": "1223.5"
+        "y": "1223"
       }
     },
     {
@@ -678,7 +682,7 @@
       "pid": "37",
       "position": {
         "x": "806",
-        "y": "1432.5"
+        "y": "1432"
       }
     },
     {
@@ -698,7 +702,7 @@
       }
     },
     {
-      "text": "Wiggly::This building wasn't always administrative.  It served as a sanatorium for Cradle residents who were in need of secluded recovery - that's why it's located here along the southern periphery, on the bank of the river.\n\nWiggly::Sometimes the patients here needed to be secluded from others, for safety and disciplinary reasons.  So cells such as these were needed.\n\n[[I guess that explains the basement morgue as well.->Shake]]",
+      "text": "Ferryman::This building wasn't always administrative.  It  originally served as a sanatorium for Cradle residents who were in need of secluded recovery.\n\nFerryman::That's why it's located here along the southern periphery, on the bank of the river.\n\nFerryman::Sometimes the patients here needed to be secluded from others, for safety and disciplinary reasons.  So cells such as these were needed.\n\n[[I guess that explains the basement morgue as well.->Shake]]",
       "links": [
         {
           "name": "I guess that explains the basement morgue as well.",
@@ -706,19 +710,19 @@
           "pid": "40"
         }
       ],
-      "name": "Isn't this the administratiive block?  Why are there isolation cells in the basement?",
+      "name": "You said this was the administration building - Why are there isolation cells in the basement?",
       "pid": "39",
       "position": {
         "x": "874",
-        "y": "1221.5"
+        "y": "1221"
       }
     },
     {
-      "text": "He grabs the door and gives it a good shake, as if encouraging you to do the same.  He is unusually forceful.\n\nFerryman::This room is an old isolation cell, so it should lock and unlock from the outside.  Yet I'm willing to bet you won't find any means of opening it.  The Cradle has decided it should remain shut.\n\n[[Isn't this the administratiive block?  Why are there isolation cells in the basement?]]\n[[p:(Action) try to open the door.]]",
+      "text": "He grabs the door and gives it a good shake, as if encouraging you to do the same.  He is unusually forceful.\n\nFerryman::This room is an old isolation cell, so it should lock and unlock from the outside.  Yet I'm willing to bet you won't find any means of opening it.  The Cradle has decided it should remain shut.\n\n[[You said this was the administration building - Why are there isolation cells in the basement?]]\n[[p:(Action) try to open the door.]]",
       "links": [
         {
-          "name": "Isn't this the administratiive block?  Why are there isolation cells in the basement?",
-          "link": "Isn't this the administratiive block?  Why are there isolation cells in the basement?",
+          "name": "You said this was the administration building - Why are there isolation cells in the basement?",
+          "link": "You said this was the administration building - Why are there isolation cells in the basement?",
           "pid": "39"
         },
         {
@@ -731,7 +735,7 @@
       "pid": "40",
       "position": {
         "x": "831",
-        "y": "1050.5"
+        "y": "1050"
       }
     },
     {

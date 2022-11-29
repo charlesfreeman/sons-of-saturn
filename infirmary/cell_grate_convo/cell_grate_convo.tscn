@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
 [ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=2]
 [ext_resource path="res://infirmary/cell_grate_convo/wiggly_slinking.png" type="Texture" id=3]
 [ext_resource path="res://infirmary/cell_grate_convo/wiggly_looking_around_corner.png" type="Texture" id=4]
+[ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=5]
+[ext_resource path="res://infirmary/cell_grate_convo/heavy_door_slam.wav" type="AudioStream" id=6]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -53,3 +55,8 @@ margin_bottom = 2267.0
 texture = ExtResource( 4 )
 appear_tag = "peer"
 disappear_tag = "enter"
+
+[node name="ConvoSoundEffect" parent="." instance=ExtResource( 5 )]
+stream = ExtResource( 6 )
+volume_db = -5.0
+tag_to_play = "slam"

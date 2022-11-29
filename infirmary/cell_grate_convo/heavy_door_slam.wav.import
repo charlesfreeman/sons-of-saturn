@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/heavy_door_slam.wav-dc290494318e6c01f260a07299850401.sample"
+
+[deps]
+
+source_file="res://infirmary/cell_grate_convo/heavy_door_slam.wav"
+dest_files=[ "res://.import/heavy_door_slam.wav-dc290494318e6c01f260a07299850401.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

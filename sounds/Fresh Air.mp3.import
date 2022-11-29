@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Fresh Air.mp3-0f9e52bc22048bbf779421d75f757be1.mp3str"
+
+[deps]
+
+source_file="res://sounds/Fresh Air.mp3"
+dest_files=[ "res://.import/Fresh Air.mp3-0f9e52bc22048bbf779421d75f757be1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

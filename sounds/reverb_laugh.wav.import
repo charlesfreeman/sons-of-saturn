@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/reverb_laugh.wav-c5a7d032290099188ef8633f1a73af0b.sample"
+
+[deps]
+
+source_file="res://sounds/reverb_laugh.wav"
+dest_files=[ "res://.import/reverb_laugh.wav-c5a7d032290099188ef8633f1a73af0b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

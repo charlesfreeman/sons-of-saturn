@@ -17,7 +17,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_up = "res://maternity/right_curved_hallway/right_curved_hallway.tscn"
+scene_up = "res://maternity/dome/dome.tscn"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true

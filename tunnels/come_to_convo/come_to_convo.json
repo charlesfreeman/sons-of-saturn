@@ -69,7 +69,10 @@
       "position": {
         "x": "1176",
         "y": "350"
-      }
+      },
+      "tags": [
+        "alien_drips"
+      ]
     },
     {
       "text": "The look of concern dissipates from his face, leaving only hints of exhasperation.\n\nWiggly::Thank goodness miss.  You really had me worried.\n\nWiggly::You weren't responding - I was worried I might have lost another client.\n\n[[Why is my hair wet?]]\n[[How long was I out for?]]\n[[Did I say anything while I was out?]]\n[[p:How did you know I needed to be rescued from that room?]]",

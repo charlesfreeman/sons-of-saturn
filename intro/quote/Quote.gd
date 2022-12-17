@@ -2,7 +2,7 @@ extends TextureRect
 
 
 func _ready():
-	Audio.get_node("AudioStreamPlayer").play()
+	Global.change_soundscape("FreshAir")
 	yield(get_tree().create_timer(7.0), "timeout")
 	var options = SceneManager.create_options()
 	var general_options = SceneManager.create_general_options()

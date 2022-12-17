@@ -95,7 +95,11 @@ func _load_next_block(name):
 		self.paragraph_array = _split_block(np_text)
 		
 		var num_paragraphs = self.paragraph_array.size()
-		self._load_paragraph(self.paragraph_array[0])
+		
+		# don't do anything if paragraph only exists for tag emission
+		if np_text != "TAG":
+			self._load_paragraph(self.paragraph_array[0])
+		
 		if num_paragraphs == 1:
 			self._add_buttons()
 		else:

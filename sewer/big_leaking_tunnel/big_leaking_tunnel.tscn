@@ -18,6 +18,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://sewer/drain_stairwell/drain_stairwell.tscn"
+position = Vector2( 1800, 430 )
+rotation = -63
 song = "sewer_med_flow"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]

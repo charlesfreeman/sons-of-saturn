@@ -19,11 +19,13 @@ __meta__ = {
 }
 scene_up = "ladder_convo"
 non_roam_scene_up = true
+position = Vector2( 1320, 660 )
+rotation = -180
 song = "sewer_high_flow"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1476.72, 888.839 )
+position = Vector2( 1488.05, 605.677 )
 shape = SubResource( 1 )

@@ -24,7 +24,8 @@ export var req_flag_left = "None"
 
 export var prog_flag = "None"
 
-export var position = Vector2(400, 800)
+export var position = Vector2(800, 800)
+export var rotation = 0
 
 export var song = "None"
 export var soundscape = "None"

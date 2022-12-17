@@ -8,8 +8,8 @@ var pov_instance
 var options = SceneManager.create_options()
 var general_options = SceneManager.create_general_options()
 
-onready var camera = $VBoxContainer/TabContainer/Map/Viewport/MapRect/Camera2D
-onready var char_rect = $VBoxContainer/TabContainer/Map/Viewport/MapRect/CharRect
+onready var camera = $VBoxContainer/ViewportContainer/Viewport/TextureRect/Camera2D
+onready var char_rect = $VBoxContainer/ViewportContainer/Viewport/TextureRect/CharRect
 onready var up_button = $VBoxContainer/HBoxContainer/GridContainer/UpButton
 onready var right_button = $VBoxContainer/HBoxContainer/GridContainer/RightButton
 onready var down_button = $VBoxContainer/HBoxContainer/GridContainer/DownButton
@@ -109,6 +109,7 @@ func _load_PoV_instance():
 	pov_instance.connect("disable_buttons", self, "_disable_buttons")
 	pov_instance.connect("enable_buttons", self, "_enable_buttons")
 	pov_instance.connect("swap_bg", self, "swap_texture")
+	set_pos_rot(pov_instance.position, pov_instance.rotation)
 
 
 func _on_TransitionScreen_transitioned():
@@ -151,9 +152,10 @@ func _enable_buttons():
 	_update_buttons()
 	
 	
-func set_pos(pos):
-	char_rect.rect_position.x = pos.x
-	char_rect.rect_position.y = pos.y
+func set_pos_rot(pos, rot):
+	char_rect.rect_position.x = pos.x - 65
+	char_rect.rect_position.y = pos.y - 60
+	char_rect.rect_rotation = rot
 	camera.position.x = pos.x
 	camera.position.y = pos.y
 

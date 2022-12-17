@@ -1,0 +1,260 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Vera::Mood diary.  Entry 5.  July 14th\n\nVera::Missed a few days again, though this time only because I'm so wrapped up in my work.\n\nVera::I've discovered that instances of infant mortality and stillbirth are synchronized with the medical supply irregularities I documented.  Every cluster of stillbirths is preceeded by a suspicious reduction in the quantities of ergot and datura we have on hand.  \n\nVera::The implications of this are...chilling.  I think someone is using the ergot to induce stillbirths.  That would explain why the stillbirths tend to occur in clusters, and why the medical supplies always go missing at the same time.  I'm going to try and get my hands on more precise staff time sheets, ideally with hourly precision.  Maybe there's a pattern I didn't see before.\n\nVera::Oh, yeah, mood positive.  Driven.\n\n[[p:She thinks someone is swiping the ergot and using it to induce abortions?]]\n[[p:This lady is obsessive.  No wonder that administrator didn't want her around.]]",
+      "links": [
+        {
+          "name": "p:She thinks someone is swiping the ergot and using it to induce abortions?",
+          "link": "p:She thinks someone is swiping the ergot and using it to induce abortions?",
+          "pid": "6"
+        },
+        {
+          "name": "p:This lady is obsessive.  No wonder that administrator didn't want her around.",
+          "link": "p:This lady is obsessive.  No wonder that administrator didn't want her around.",
+          "pid": "7"
+        }
+      ],
+      "name": "Page 1",
+      "pid": "1",
+      "position": {
+        "x": "782",
+        "y": "518.5"
+      },
+      "tags": [
+        "page1"
+      ]
+    },
+    {
+      "text": "Vera::Mood diary.  Entry 6.  July 16th\n\nVera::I managed to get my hands on the employee timesheets today.  It didn't take long for a pattern to emerge: Over 90% of the incidents of \"stillbirth\" occured either under the direct watch of Dr. Anthony Tann, or under the supervision of one of his nurses.  I suspect they are using ergot from the medical supply closet to induce miscarriage (though I'm uncertain of datura's utility).  Some of the medical equipment they need is only accessible intermittently, thus explaining the clustering.  \n\nVera::Dr. Tann's team has two women booked for visitation in series tomorrow morning, both for obviously frivolous afflictions.  I'm going to surveil one of their operations.  If they perform professionally, I'll probably just keep my mouth shut.  They're probably just a discretious team trying to provide a necessary service.  But I've got to see it with my own eyes - I want proof this isn't some shady mob-run outfit.\n\nVera::There's a ventillation grate in the room they are slated to use.  I can camp in the ducts and judge how they perform.\n\n[[p:So, Dr. Tann was running an underground abortion ring?]]\n[[p:No wonder Tann didn't want Vera here...]]",
+      "links": [
+        {
+          "name": "p:So, Dr. Tann was running an underground abortion ring?",
+          "link": "p:So, Dr. Tann was running an underground abortion ring?",
+          "pid": "8"
+        },
+        {
+          "name": "p:No wonder Tann didn't want Vera here...",
+          "link": "p:No wonder Tann didn't want Vera here...",
+          "pid": "9"
+        }
+      ],
+      "name": "Page 2",
+      "pid": "2",
+      "position": {
+        "x": "792",
+        "y": "830.5"
+      },
+      "tags": [
+        "page2"
+      ]
+    },
+    {
+      "text": "Wiggly::We're here - this is Vera's office.  Presumably the one she got after requesting a transfer.\n\nWiggly::I found some of her diary pages in that cabinet drawer, while I was working my way towards you. I hope you find them helpful, miss.\n\n[[Why bother stopping here?  We agreed to meet at the end of the hall.]]\n[[This office looks kind of dingy compared to her old one.]]\n[[p:(Action) Search the cabinet.]]\n",
+      "links": [
+        {
+          "name": "Why bother stopping here?  We agreed to meet at the end of the hall.",
+          "link": "Why bother stopping here?  We agreed to meet at the end of the hall.",
+          "pid": "4"
+        },
+        {
+          "name": "This office looks kind of dingy compared to her old one.",
+          "link": "This office looks kind of dingy compared to her old one.",
+          "pid": "14"
+        },
+        {
+          "name": "p:(Action) Search the cabinet.",
+          "link": "p:(Action) Search the cabinet.",
+          "pid": "5"
+        }
+      ],
+      "name": "start",
+      "pid": "3",
+      "position": {
+        "x": "784",
+        "y": "223.5"
+      }
+    },
+    {
+      "text": "Wiggly::It was on the way, so I decided hop out of the ducts and take a quick look around.\n\nWiggly::We could have linked up here instead, but I thought the room at the end of the corridors would be easier for you to find.\n\n[[C->start]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "start",
+          "pid": "3"
+        }
+      ],
+      "name": "Why bother stopping here?  We agreed to meet at the end of the hall.",
+      "pid": "4",
+      "position": {
+        "x": "500",
+        "y": "382.5"
+      }
+    },
+    {
+      "text": "You wretch open the cabinet drawer.  The interior emits a vaguely leathery odor.\n\n[[C->Page 1]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Page 1",
+          "pid": "1"
+        }
+      ],
+      "name": "p:(Action) Search the cabinet.",
+      "pid": "5",
+      "position": {
+        "x": "780",
+        "y": "376.5"
+      }
+    },
+    {
+      "text": "Wiggly::She suspects as much, at least.\n\nWiggly::She might have been correct.  Under the table abortion rings were pretty common in the Cradle.  And the medical supply irregularities are...suggestive.\n\n[[p:Let's keep reading->Page 2]] ",
+      "links": [
+        {
+          "name": "p:Let's keep reading",
+          "link": "Page 2",
+          "pid": "2"
+        }
+      ],
+      "name": "p:She thinks someone is swiping the ergot and using it to induce abortions?",
+      "pid": "6",
+      "position": {
+        "x": "675",
+        "y": "668.5"
+      }
+    },
+    {
+      "text": "Wiggly::She is certainly much more passionate than any accountant I've ever interacted with.\n\n[[p:Let's keep reading->Page 2]] ",
+      "links": [
+        {
+          "name": "p:Let's keep reading",
+          "link": "Page 2",
+          "pid": "2"
+        }
+      ],
+      "name": "p:This lady is obsessive.  No wonder that administrator didn't want her around.",
+      "pid": "7",
+      "position": {
+        "x": "915",
+        "y": "668.5"
+      }
+    },
+    {
+      "text": "Wiggly::Vera thought so.  And for what it's worth, I think so.\n\n[[p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.]]",
+      "links": [
+        {
+          "name": "p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.",
+          "link": "p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.",
+          "pid": "10"
+        }
+      ],
+      "name": "p:So, Dr. Tann was running an underground abortion ring?",
+      "pid": "8",
+      "position": {
+        "x": "667",
+        "y": "980.5"
+      }
+    },
+    {
+      "text": "Wiggly::His telegrams definitely corroborate Vera's hunch, I'll say that much.\n\n[[p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.]]",
+      "links": [
+        {
+          "name": "p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.",
+          "link": "p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.",
+          "pid": "10"
+        }
+      ],
+      "name": "p:No wonder Tann didn't want Vera here...",
+      "pid": "9",
+      "position": {
+        "x": "907",
+        "y": "980.5"
+      }
+    },
+    {
+      "text": "Wiggly::Yes.  I bet she took the exact same route through the tunnels we just did, though in reverse.  \n\nWiggly::That room at the end of the corridor is where they would have operated.\n\n[[She must have been really dedicated to finding out the truth if she was willing to go through those disgusting tunnels.]]\n[[p:I wonder if this has anything to do with Julia.]]",
+      "links": [
+        {
+          "name": "She must have been really dedicated to finding out the truth if she was willing to go through those disgusting tunnels.",
+          "link": "She must have been really dedicated to finding out the truth if she was willing to go through those disgusting tunnels.",
+          "pid": "11"
+        },
+        {
+          "name": "p:I wonder if this has anything to do with Julia.",
+          "link": "p:I wonder if this has anything to do with Julia.",
+          "pid": "12"
+        }
+      ],
+      "name": "p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.",
+      "pid": "10",
+      "position": {
+        "x": "792",
+        "y": "1132.5"
+      }
+    },
+    {
+      "text": "Wiggly::What do you mean?  Those are some of the nicest tunnels in the Cradle.  So spacious, you barely have to duck, and the water is less than knee deep the entire way.\n\nThere isn't even a hint of facetiousness in his voice.  He loves those tunnels.\n\n[[C->p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.",
+          "pid": "10"
+        }
+      ],
+      "name": "She must have been really dedicated to finding out the truth if she was willing to go through those disgusting tunnels.",
+      "pid": "11",
+      "position": {
+        "x": "724",
+        "y": "1282.5"
+      }
+    },
+    {
+      "text": "Wiggly::Something tells me it might.\n\nWiggly::Let's go search the top floor.  There are a few nurses quarters up there, maybe one of them belonged to Julia\n\nWiggly::There are also a few neonatal units up there, worth taking a look around.\n\nWiggly::The stairs up are just out the door, across the hall.\n\n[[p:Alright, let's go.]]",
+      "links": [
+        {
+          "name": "p:Alright, let's go.",
+          "link": "p:Alright, let's go.",
+          "pid": "13"
+        }
+      ],
+      "name": "p:I wonder if this has anything to do with Julia.",
+      "pid": "12",
+      "position": {
+        "x": "912",
+        "y": "1282.5"
+      }
+    },
+    {
+      "text": "",
+      "name": "p:Alright, let's go.",
+      "pid": "13",
+      "position": {
+        "x": "912",
+        "y": "1432.5"
+      }
+    },
+    {
+      "text": "Wiggly::Really, you think so?  I think it feels cozy.\n\nHe seems to find the cramped quarters and thick layer of dust comforting, soothing.\n\n[[C->start]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "start",
+          "pid": "3"
+        }
+      ],
+      "name": "This office looks kind of dingy compared to her old one.",
+      "pid": "14",
+      "position": {
+        "x": "645",
+        "y": "386.5"
+      }
+    }
+  ],
+  "name": "Vera Diary 3",
+  "startnode": "3",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "39C9D132-698E-4AF3-B88E-4CA34235F481"
+}
+

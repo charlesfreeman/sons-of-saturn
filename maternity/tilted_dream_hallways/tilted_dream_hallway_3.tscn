@@ -20,6 +20,7 @@ __meta__ = {
 scene_up = "res://maternity/tilted_dream_hallways/tilted_dream_hallway_4.tscn"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 2 )]
+up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
 position = Vector2( 1464.26, 1036.38 )

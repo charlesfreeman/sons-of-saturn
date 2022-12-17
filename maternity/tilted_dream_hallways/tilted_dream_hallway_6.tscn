@@ -17,9 +17,11 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_up = "res://maternity/tilted_dream_hallways/tilted_dream_hallway_6.tscn"
+scene_up = "poisoning_convo"
+non_roam_scene_up = true
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 2 )]
+up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
 position = Vector2( 1549.98, 1079.51 )

@@ -4,7 +4,7 @@
 
 [node name="ContinueButton" type="TextureButton"]
 anchor_right = 1.0
-rect_min_size = Vector2( 0, 64 )
+rect_min_size = Vector2( 0, 66 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -19,12 +19,12 @@ __meta__ = {
 }
 
 [node name="Placeholder" type="Control" parent="HBoxContainer"]
-margin_bottom = 64.0
+margin_bottom = 66.0
 
 [node name="ContinueText" type="RichTextLabel" parent="HBoxContainer"]
 margin_left = 50.0
 margin_right = 3840.0
-margin_bottom = 64.0
+margin_bottom = 66.0
 mouse_filter = 1
 size_flags_horizontal = 3
 bbcode_enabled = true

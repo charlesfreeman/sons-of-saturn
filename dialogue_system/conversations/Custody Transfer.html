@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title>Custody Transfer</title>
+    <script type="text/javascript">
+      /**
+       * Twison - Twine 2 JSON Export Story Format
+       *
+       * Copyright (c) 2015 Em Walker
+       * https://lazerwalker.com
+       *
+       * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+       * associated documentation files (the "Software"), to deal in the Software without restriction,
+       * including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+       * and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+       * subject to the following conditions:
+       *
+       * The above copyright notice and this permission notice shall be included in all copies or substantial
+       * portions of the Software.
+       *
+       * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+       * LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+       * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+       * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+       * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+       */
+      var Twison={extractLinksFromText:function(t){var n=t.match(/\[\[.+?\]\]/g);return n?n.map(function(t){var n=t.match(/\[\[(.*?)\-\&gt;(.*?)\]\]/);return n?{name:n[1],link:n[2]}:(t=t.substring(2,t.length-2),{name:t,link:t})}):null},extractPropsFromText:function(t){var n,r={},e=!1;const a=/\{\{((\s|\S)+?)\}\}((\s|\S)+?)\{\{\/\1\}\}/gm;for(;null!==(n=a.exec(t));){const o=n[1],s=n[3].replace(/(\r\n|\n|\r)/gm,""),i=this.extractPropsFromText(s);r[o]=null!==i?i:s,e=!0}return e?r:null},convertPassage:function(t){var n={text:t.innerHTML},r=Twison.extractLinksFromText(n.text);r&&(n.links=r);const e=Twison.extractPropsFromText(n.text);if(e&&(n.props=e),["name","pid","position","tags"].forEach(function(r){var e=t.attributes[r].value;e&&(n[r]=e)}),n.position){var a=n.position.split(",");n.position={x:a[0],y:a[1]}}return n.tags&&(n.tags=n.tags.split(" ")),n},convertStory:function(t){var n=t.getElementsByTagName("tw-passagedata"),r=Array.prototype.slice.call(n).map(Twison.convertPassage),e={passages:r};["name","startnode","creator","creator-version","ifid"].forEach(function(n){var r=t.attributes[n].value;r&&(e[n]=r)});var a={};return e.passages.forEach(function(t){a[t.name]=t.pid}),e.passages.forEach(function(t){t.links&&t.links.forEach(function(t){t.pid=a[t.link],t.pid||(t.broken=!0)})}),e},convert:function(){var t=document.getElementsByTagName("tw-storydata")[0],n=JSON.stringify(Twison.convertStory(t),null,2);document.getElementById("output").innerHTML=n}};window.Twison=Twison;
+    </script>
+  </head>
+  <body>
+    <pre id="output"></pre>
+    <div id="storyData" style="display: none;">
+      <tw-storydata name="Custody Transfer" startnode="1" creator="Twine" creator-version="2.3.14" ifid="B3F8B11E-D047-4BCD-A977-7A6E29EC9F86" zoom="1" format="Twison" format-version="0.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Page 1" tags="page1" position="737,635" size="100,100">Note::Official Notice of Custody Transfer
+
+Note::This document certifies that one Thomas Melnik is now a ward of the Saturn Interior Ministry.  This will be our final communication barring further requests for information.  
+
+Note::Subject: Thomas Melnic
+
+Note::Producer: Julia Melnic
+
+Note::Recipient: SATURN I.M.
+
+[[p:So, Julia put Thomas up for adoption?]]
+[[p:Guess Julia didn&#39;t love her kid very much.  I can respect that.]]</tw-passagedata><tw-passagedata pid="2" name="Untitled Passage 1" tags="" position="739,368" size="100,100">You scan the suitcases along the wall for familiar names.
+
+Andrew.  Sheldon.  Daniels.  All misses.
+
+Finally, a sense of familiarity occupies your periphery.  Julia.
+
+[[p:(Action) Search the suitcase.]]</tw-passagedata><tw-passagedata pid="3" name="p:(Action) Search the suitcase." tags="" position="738,503" size="100,100">The suitcase is stuffed with old documents - contracts, checks, and receipts.  
+
+One in particular catches you eye: a notice of custody transfer.
+
+[[p:(Action) Read the custody transfer document.-&gt;Page 1]]</tw-passagedata><tw-passagedata pid="4" name="p:So, Julia put Thomas up for adoption?" tags="" position="662,785" size="100,100">Wiggly::Not adoption, he was handed over the SATURN Interior Ministry.
+
+Wiggly::They take in indigent children, teach them vocational skills, provide some employment.
+
+Wiggly::Really kind of them, to look after kids in Thomas&#39;s position.
+
+[[p:Just like they were &quot;kind&quot; to you, right?]]</tw-passagedata><tw-passagedata pid="5" name="p:Guess Julia didn&#39;t love her kid very much.  I can respect that." tags="" position="812,785" size="100,100">Wiggly::I, uh, would like to think her feelings were more complicated.  But perhaps.
+
+Wiggly::He would have been well off in the care of the SATURN Interior Ministry.
+
+Wiggly::They take in indigent children, teach them vocational skills, provide some employment, eventually.
+
+Wiggly::Really kind of them, to look after kids in Thomas&#39;s position.
+
+[[p:Just like they were &quot;kind&quot; to you, right?]]
+[[p:Yes, very &quot;kind&quot; of them.]]</tw-passagedata><tw-passagedata pid="6" name="p:Just like they were &quot;kind&quot; to you, right?" tags="" position="662,935" size="100,100">Wiggly::Yeah, exactly!  Such good people.
+
+Wiggly::But I was in a totally different program than the one Thomas got put into.  He probably just got put in charge of telegrammatic upkeep or something, closer to the core.
+
+He&#39;s a grown man with the psychological profile of a puppy.
+
+Wiggly::Hey, what&#39;s that on the back of the notice?  Looks like a note of some sort
+
+[[p:(Action) Check the back of the notice.-&gt;Page 2]]</tw-passagedata><tw-passagedata pid="7" name="Page 2" tags="page2" position="728,1104" size="100,100">Note::Postscript:
+
+Note::I don&#39;t often include personal notes with these notices but these are unique circumstances.  Most women who put a child in our program don&#39;t live two floors above in the same building.  
+
+Note::Furthermore, some of my colleagues have expressed concerns that living in such close proximity to your former child might cause psychological duress.  Be informed that while we permit visitation, we don&#39;t encourage it, and two days prior notice is required in all cases.
+
+Note::Rosalind, Program Director.
+
+There it is again.
+
+Wiggly::That&#39;s your Mom again, right?  So I guess Thomas wasn&#39;t sent to the Interior.
+
+[[p:No, he was sent downstairs.  To Mom.]]
+[[p:Thomas ended up in Mom&#39;s program.  Do you think that&#39;s why Julia clung to me?]]  </tw-passagedata><tw-passagedata pid="8" name="p:Yes, very &quot;kind&quot; of them." tags="" position="813,935" size="100,100">Wiggly nods in agreement.  He seems to have not picked up on the sarcastic intonations.
+
+He takes everything at face value, doesn&#39;t he?
+
+Wiggly::Hey, what&#39;s that on the back of the notice?  Looks like a note of some sort.
+
+[[p:(Action) Check the back of the notice.-&gt;Page 2]]</tw-passagedata><tw-passagedata pid="9" name="p:No, he was sent downstairs.  To Mom." tags="" position="653,1254" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="10" name="p:Thomas ended up in Mom&#39;s program.  Do you think that&#39;s why Julia clung to me?" tags="" position="803,1254" size="100,100">Wiggly::...That might not be a coincidence, yeah.  
+
+Wiggly::I&#39;m not sure we know enough to say for sure, though.  And I&#39;m not sure that lead is going to be very helpful for shaking Julia off, either.
+
+</tw-passagedata></tw-storydata>
+    </div>
+    <script>
+      Twison.convert();
+    </script>
+  </body>
+</html>

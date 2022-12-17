@@ -29,7 +29,7 @@
   <body>
     <pre id="output"></pre>
     <div id="storyData" style="display: none;">
-      <tw-storydata name="Entering Morgue" startnode="1" creator="Twine" creator-version="2.3.14" ifid="C4B94694-B0D3-44B6-92AB-50C22D82A8B9" zoom="1" format="Twison" format-version="0.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Entering Morgue" tags="" position="861,209" size="100,100">You emerge from the hatch into the basement of the infirmary.  Before you is some sort of medical table.
+      <tw-storydata name="Entering Morgue" startnode="1" creator="Twine" creator-version="2.3.14" ifid="C4B94694-B0D3-44B6-92AB-50C22D82A8B9" zoom="1" format="Twison" format-version="0.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Entering Morgue" tags="" position="869,122" size="100,100">You emerge from the hatch into the basement of the infirmary.  Before you is some sort of medical table.
 
 Ferryman::Careful, stand clear.
 
@@ -41,21 +41,18 @@ Ferryman::We are in the hospital&#39;s mortuary.  If you take a peak through the
 
 [[I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?]]</tw-passagedata><tw-passagedata pid="4" name="0;:Was an 18 body morgue really necessary?  That seems excessive." tags="" position="935,576" size="100,100">Ferryman::This infirmary was a large facility, so a correspondingly large morgue was needed.  We could probably find accounting records pertaining to patient population and deaths somewhere in the infirmary complex, if you are truly curious.
 
-[[Continue-&gt;Appears]] </tw-passagedata><tw-passagedata pid="5" name="0;p:Where do we go from here?" tags="" position="1084,576" size="100,100">Ferryman::That&#39;s for you to decide, actually.  The Cradle usually responds more mercifully when the client takes the lead.  I&#39;m honestly less of a &quot;guide&quot;, and more of a &quot;sherpa.&quot; 
+[[Continue-&gt;rises]] </tw-passagedata><tw-passagedata pid="5" name="0;p:Where do we go from here?" tags="" position="1084,576" size="100,100">Ferryman::That&#39;s for you to decide, actually.  The Cradle usually responds more mercifully when the client takes the lead.  I&#39;m honestly less of a &quot;guide&quot;, and more of a &quot;sherpa.&quot; 
 
 Ferryman::That said...I do have a few suggestions.  You&#39;re here looking for your Mom, correct?  Well, we&#39;re right below the administrative section of the infirmary.  There&#39;s a flight of stairs right outside the door behind you - they&#39;ll take you right up.
 
 [[Shouldn&#39;t you be the one leading the way, given that you know this place like the back of your hand?]]
-[[p:You really think we&#39;ll find out what happened to Mom by searching this building?]]</tw-passagedata><tw-passagedata pid="6" name="(Action) Take a peak." tags="morgue" position="637,764" size="100,100">You peak around the corner and are greeted by an enormous, 18 body morgue.  The apparatus appears mostly intact, though a few of the doors have been wrestled from their hinges.  Even though this facility was shuttered years ago, you can perceive a faint whiff of Formaldehyde that continues to cling to the air.
+[[p:You really think we&#39;ll find out what happened to Mom by searching this building?]]</tw-passagedata><tw-passagedata pid="6" name="(Action) Take a peak." tags="morgue remove_subject" position="637,764" size="100,100">You peak around the corner and are greeted by an enormous, 18 body morgue.  The apparatus appears mostly intact, though a few of the doors have been wrestled from their hinges.  Even though this facility was shuttered years ago, you can perceive a faint whiff of Formaldehyde that continues to cling to the air.
 
-[[Continue-&gt;Appears]] </tw-passagedata><tw-passagedata pid="7" name="I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?" tags="" position="792,764" size="100,100">Ferryman::Well, I suppose so.  Medical science has come a long way in the last half century.
+[[Continue-&gt;rises]] </tw-passagedata><tw-passagedata pid="7" name="I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?" tags="" position="792,764" size="100,100">Ferryman::Well, I suppose so.  Medical science has come a long way in the last half century.
 
-[[Continue-&gt;Appears]] </tw-passagedata><tw-passagedata pid="8" name="Appears" tags="" position="859,378" size="100,100">He lets down the hatch in the corner very deliberately, as though to avoid making much noise.
+[[Continue-&gt;rises]] </tw-passagedata><tw-passagedata pid="8" name="Appears" tags="thud kneeling" position="854,275" size="100,100">He lets down the hatch in the corner very deliberately, as though to avoid making much noise.
 
-[[Was this table used to perform operations?]]
-[[0;:Why do they have a morgue?  I thought this was an infirmary.]]
-[[0;:Was an 18 body morgue really necessary?  That seems excessive.]]
-[[0;p:Where do we go from here?]]</tw-passagedata><tw-passagedata pid="9" name="Shouldn&#39;t you be the one leading the way, given that you know this place like the back of your hand?" tags="" position="1053,729" size="100,100">Ferryman::I&#39;ll provide suggestions and let you know where we should search, but ultimately you should take the reigns.  Things will go more smoothly that way, trust me.
+[[C-&gt;rises]]</tw-passagedata><tw-passagedata pid="9" name="Shouldn&#39;t you be the one leading the way, given that you know this place like the back of your hand?" tags="" position="1053,729" size="100,100">Ferryman::I&#39;ll provide suggestions and let you know where we should search, but ultimately you should take the reigns.  Things will go more smoothly that way, trust me.
 
 Ferryman::Also...I don&#39;t actually know my way around the maternity ward all that well, at least compared to the underground networks.  I know the layout perfectly well and can guide people through, but I haven&#39;t spent that much time pouring over documents here or going through every single room, accounting for everything left behind.
 
@@ -73,7 +70,12 @@ Ferryman::You mentioned that your Mom, Rosalind, often made professional visits 
 
 Ferryman::Alright, well, this hospital is huge and we&#39;ll never be able to canvas the entirety of it - let&#39;s focus our efforts on searching the administration building and maternity ward.
 
-[[p:Alright, let&#39;s start looking.]]</tw-passagedata><tw-passagedata pid="13" name="p:Alright, let&#39;s start looking." tags="" position="1204,1176" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[p:Alright, let&#39;s start looking.]]</tw-passagedata><tw-passagedata pid="13" name="p:Alright, let&#39;s start looking." tags="" position="1204,1176" size="100,100"></tw-passagedata><tw-passagedata pid="14" name="rises" tags="rises" position="855,429" size="100,100">TAG
+
+[[Was this table used to perform operations?]]
+[[0;:Why do they have a morgue?  I thought this was an infirmary.]]
+[[0;:Was an 18 body morgue really necessary?  That seems excessive.]]
+[[0;p:Where do we go from here?]]</tw-passagedata></tw-storydata>
     </div>
     <script>
       Twison.convert();

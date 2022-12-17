@@ -29,11 +29,11 @@
   <body>
     <pre id="output"></pre>
     <div id="storyData" style="display: none;">
-      <tw-storydata name="Needled" startnode="1" creator="Twine" creator-version="2.3.14" ifid="90DDA5D6-C454-44F1-8C99-39E8E5F6CCAD" zoom="1" format="Twison" format-version="0.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="1264,414" size="100,100">You enter a small, poorly lit room.  In the center is a small gurney flanked by antiquated medical eqipment, all of it covered in a thick layer of grime.  The arrangement of materials is oddly artificial.
+      <tw-storydata name="Needled" startnode="32" creator="Twine" creator-version="2.3.14" ifid="90DDA5D6-C454-44F1-8C99-39E8E5F6CCAD" zoom="1" format="Twison" format-version="0.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="enter" position="1264,414" size="100,100">You enter a small, poorly lit room.  In the center is a small gurney flanked by antiquated medical eqipment, all of it covered in a thick layer of grime.
 
 Julia::Please, mam, lie down on the table.  We just need to get a few physical readings from you.
 
-[[This gurney?  This entire setup looks a little...insufficiently sterilized.]]
+[[This entire setup looks a little...insufficiently sterilized.]]
 [[p:Will this require anything invasive?  I like my envelopes unbreached and intact.]]</tw-passagedata><tw-passagedata pid="2" name="p:Fine, let&#39;s get this over with." tags="" position="1225,923" size="100,100">Julia::No need to be apprehensive miss, this won&#39;t take long.
 
 Julia::As I said, it&#39;ll only be a few quick inspections.
@@ -48,13 +48,19 @@ Julia::I&#39;m sorry, miss, but we can&#39;t accept the risk of performing opera
 [[p:Alright.  I have to make it to operations.  So let&#39;s get this over with.-&gt;p:Fine, let&#39;s get this over with.]]</tw-passagedata><tw-passagedata pid="4" name="p:Will this require anything invasive?  I like my envelopes unbreached and intact." tags="" position="1264,564" size="100,100">Julia::No, miss, this won&#39;t require anything invasive.  I just need to perform a few quick inspections to ensure that you don&#39;t have any underlying health issues before we move forward.
 
 [[p:Fine, let&#39;s get this over with.]]
-[[p:Do I really have no other choice?]]</tw-passagedata><tw-passagedata pid="5" name="This gurney?  This entire setup looks a little...insufficiently sterilized." tags="" position="1103,564" size="100,100">Cut the bullshit, you don&#39;t care.
+[[p:Do I really have no other choice?]]</tw-passagedata><tw-passagedata pid="5" name="This entire setup looks a little...insufficiently sterilized." tags="" position="1104,564" size="100,100">Julia::I&#39;m a professional, miss.  So are my colleagues.  Do you think so little of us that you would suggest we are using unsanitized equipment?  
 
-You waded through a sewer just to get here, stop pretending to be anything other than vile.
+Julia::We are a little short staffed right now, true, but all of the important equipment has been thoroughly sterilized.
 
-Julia::Do not be alarmed miss.  We are a little short staffed right now, true, but all of the important equipment has been thoroughly sterilized.
+Your protests seem to have made Julia defensive, and a little angry.  Just cut the bullshit, you don&#39;t care.
 
-[[C-&gt;Start]] </tw-passagedata><tw-passagedata pid="6" name="p:(Action) Lay down on the bed, relaxed." tags="" position="1207,1091" size="100,100">You lay flat on your back atop the dust covered gurney.  A pair of more modern surgical lights are wheeled in over you, though they are not yet turned on.  
+You waded through a sewer just to get here, stop pretending to be anything other than vile and lay down on the asbestos-caked gurney.
+
+[[C-&gt;Start]] </tw-passagedata><tw-passagedata pid="6" name="p:(Action) Lay down on the bed, relaxed." tags="ongurney" position="1207,1091" size="100,100">You lay flat on your back atop the dust covered gurney.  
+
+The ceiling above is decorated by an intricate mold pattern, the product of decades of water damage.  It is beautiful.
+
+A pair of more modern surgical lights are wheeled in over you, though they are not yet turned on.  
 
 You feel like a museum piece.
 
@@ -65,10 +71,11 @@ Julia::Let&#39;s start by taking your blood pressure.
 
 Sharp, piercing, hot.  A needle jab.  
 
-[[p:Hey!  Did you just jab me?]]</tw-passagedata><tw-passagedata pid="8" name="p:Hey!  Did you just jab me?" tags="" position="1292,3802" size="100,100">Julia::Please, miss, relax.  It was just a pinprick.
+[[p:Hey!  Did you just jab me?]]
+[[p:What the fuck!  We agreed you wouldn&#39;t stick anything into me!-&gt;p:Hey!  Did you just jab me?]]</tw-passagedata><tw-passagedata pid="8" name="p:Hey!  Did you just jab me?" tags="" position="1292,3802" size="100,100">Julia::Please, miss, relax.  It was just a pinprick.
 
 [[p:You said that you wouldn&#39;t jab me with anything!  What did you just put in me?]]
-[[p:Cut the shit, what was I just injected with?]]</tw-passagedata><tw-passagedata pid="9" name="p:You said that you wouldn&#39;t jab me with anything!  What did you just put in me?" tags="" position="1433,3943" size="100,100">Julia::Please, miss, there&#39;s no need to make a scene.  I only provided a small dose of anti-anxiolytics and muscle relaxants, intramuscular, just to make the procedure a bit easier for you.
+[[p:Cut the shit, what was I just injected with?-&gt;p:You said that you wouldn&#39;t jab me with anything!  What did you just put in me?]]</tw-passagedata><tw-passagedata pid="9" name="p:You said that you wouldn&#39;t jab me with anything!  What did you just put in me?" tags="" position="1282,3961" size="100,100">Julia::Please, miss, there&#39;s no need to make a scene.  I only provided a small dose of anti-anxiolytics and muscle relaxants, intramuscular, just to make the procedure a bit easier for you.
 
 Julia::And you aren&#39;t being charged anything for it either.  Really I&#39;m doing you a pretty big favor.
 
@@ -78,45 +85,47 @@ Julia::We&#39;re finished with the inspection, miss.  We can go on to operations
 
 [[p:Who cares!  You said this physical would be non-invasive!]]</tw-passagedata><tw-passagedata pid="10" name="p:Who cares!  You said this physical would be non-invasive!" tags="" position="1282,4109" size="100,100">Julia::Come on, you can hardly call that little prick &quot;invasive.&quot;  And had I warned you about it, it only would have given you anxiety.
 
-[[p:I&#39;m done with this physical.]]
-[[p:(Action) Get up from the gurney without speaking.]]</tw-passagedata><tw-passagedata pid="11" name="p:I&#39;m done with this physical." tags="" position="1179,4269" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="12" name="p:(Action) Get up from the gurney without speaking." tags="" position="1401,4267" size="100,100">You lurch forward, off of the gurney, and dust yourself off.
+[[p:I&#39;m done with this physical.  Take me into Maternity now!-&gt;p:Take me to the maternity ward.  Now.]]
+[[p:(Action) Get up from the gurney without speaking.]]</tw-passagedata><tw-passagedata pid="11" name="p:(Action) Get up from the gurney without speaking." tags="enter" position="1401,4267" size="100,100">You lurch forward, off of the gurney, and dust yourself off.
 
-[[p:Take me to operations.  Now.]]</tw-passagedata><tw-passagedata pid="13" name="p:Alright." tags="" position="1207,1241" size="100,100">Julia slips a small band around your left bicep.  Her fingers run along your forearm and elbow as they drag the band up.
+[[p:Take me to the maternity ward.  Now.]]</tw-passagedata><tw-passagedata pid="12" name="p:Alright." tags="" position="1207,1241" size="100,100">Julia slips a small band around your left bicep.  Her fingers run along your forearm and elbow as they drag the band up.
 
-[[C-&gt;Pressure]]</tw-passagedata><tw-passagedata pid="14" name="Pressure" tags="" position="1205,1391" size="100,100">After the band is put in place, she gently lifts her fingers and turns to one of the machines.  You hear a slight whir.  Pressure begins accumulating on your bicep.
+[[C-&gt;Pressure]]</tw-passagedata><tw-passagedata pid="13" name="Pressure" tags="" position="1205,1391" size="100,100">After the band is put in place, she gently lifts her fingers and turns to one of the machines.  You hear a slight whir.  Pressure begins accumulating on your bicep.
 
 Julia::Hmm.  How old are you, miss?
 
 [[How old are *you*?]]
-[[p:I&#39;m 27.]]
-[[p:(Lie) I&#39;m 23.-&gt;p:I&#39;m 27.]]</tw-passagedata><tw-passagedata pid="15" name="How old are *you*?" tags="" position="1096,1546" size="100,100">Julia::I&#39;m only 32 myself, miss.
+[[p:I&#39;m 28.]]
+[[p:(Lie) I&#39;m 23.-&gt;p:I&#39;m 28.]]</tw-passagedata><tw-passagedata pid="14" name="How old are *you*?" tags="" position="1096,1546" size="100,100">Julia::I&#39;m only 32 myself, miss.
 
 She looks a bit older to you.  But not much.
 
-[[C-&gt;Pressure]] </tw-passagedata><tw-passagedata pid="16" name="p:I&#39;m 27." tags="" position="1295,1547" size="100,100">Julia::Hmm.  Your blood pressure is a little bit higher than it should be at your age.  Still within tolerances though, I suppose.
+[[C-&gt;Pressure]] </tw-passagedata><tw-passagedata pid="15" name="p:I&#39;m 28." tags="" position="1295,1547" size="100,100">Julia::Hmm.  Your blood pressure is a little bit higher than it should be at your age.  Still within tolerances though, I suppose.
 
 You spent too much time drinking and smoking in your early twenties.  Your body is already a shambles.  This is why you have dreams about your teeth falling out.
 
 [[p:Good to know.]]
-[[p:I&#39;m sure my freakish, horse-like heart rate will make up for it.-&gt;p:Good to know.]]</tw-passagedata><tw-passagedata pid="17" name="p:Good to know." tags="" position="1295,1697" size="100,100">Julia::Now let&#39;s take a look at your heart rate.  
+[[p:I&#39;m sure my freakish, horse-like heart rate will make up for it.-&gt;p:Good to know.]]</tw-passagedata><tw-passagedata pid="16" name="p:Good to know." tags="" position="1295,1697" size="100,100">Julia::Now let&#39;s take a look at your heart rate.  
 
-[[C-&gt;Stethescope]]</tw-passagedata><tw-passagedata pid="18" name="Stethescope" tags="" position="1295,1846" size="100,100">Julia grabs a stethoscope from underneath the adjacent table and equips the headset.  She presses the diaphragm to your left collarbone and slowly slides it down your chest.  The touch is icy but intimate.
+[[C-&gt;Stethescope]]</tw-passagedata><tw-passagedata pid="17" name="Stethescope" tags="" position="1295,1846" size="100,100">Julia grabs a stethoscope from underneath the adjacent table and equips the headset.  She presses the diaphragm to your left collarbone and slowly slides it down your chest.  The touch is icy but intimate.
 
 Julia::Your heart rate is a little bit lower than average - are you an athlete?
 
-You&#39;re no athlete.  You&#39;re just presently deprived of you beloved uppers and your heart is slacking off in their administrative absense.
+You are no athlete, but you are presently deprived of your beloved uppers.  Your heart is slacking off in their administrative absense.
 
 [[p:I try to keep myself in shape, yes.]]
-[[p:No, my heart is just lazy.  And ugly.]]</tw-passagedata><tw-passagedata pid="19" name="p:I try to keep myself in shape, yes." tags="" position="1220,1996" size="100,100">Julia::Heh, I can tell.
+[[p:No, my heart is just lazy.  And ugly.]]</tw-passagedata><tw-passagedata pid="18" name="p:I try to keep myself in shape, yes." tags="" position="1220,1996" size="100,100">Julia::Heheh, I can tell.
 
-[[C-&gt;Dragging]]</tw-passagedata><tw-passagedata pid="20" name="p:No, my heart is just lazy.  And ugly." tags="" position="1370,1996" size="100,100">Julia::I...I see.</tw-passagedata><tw-passagedata pid="21" name="Dragging" tags="" position="1296,2149" size="100,100">While keeping the diaphragm in place with her left hand, Julia runs her fingers along your right bicep, up to your shoulder.
+[[C-&gt;Dragging]]</tw-passagedata><tw-passagedata pid="19" name="p:No, my heart is just lazy.  And ugly." tags="" position="1370,1996" size="100,100">Julia::I...I see.
+
+[[C-&gt;Dragging]]</tw-passagedata><tw-passagedata pid="20" name="Dragging" tags="" position="1296,2149" size="100,100">While keeping the diaphragm in place with her left hand, Julia runs her fingers along your right bicep, up to your shoulder.
 
 [[p:Part of the inspection?]]
-[[p:That...feels nice.]]</tw-passagedata><tw-passagedata pid="22" name="p:Part of the inspection?" tags="" position="1188,2296" size="100,100">Julia::Oh, no, I apologize.  You just have an impressive physique.
+[[p:That...feels nice.]]</tw-passagedata><tw-passagedata pid="21" name="p:Part of the inspection?" tags="" position="1188,2296" size="100,100">Julia::Oh, no, I apologize.  You just have an impressive physique.
 
-[[C-&gt;Removes]] </tw-passagedata><tw-passagedata pid="23" name="p:That...feels nice." tags="" position="1411,2297" size="100,100">Julia::I&#39;m happy to hear that.
+[[C-&gt;Removes]] </tw-passagedata><tw-passagedata pid="22" name="p:That...feels nice." tags="" position="1411,2297" size="100,100">Julia::I&#39;m happy to hear that.
 
-[[C-&gt;Removes]]</tw-passagedata><tw-passagedata pid="24" name="Removes" tags="" position="1295,2446" size="100,100">Julia pulls back both the diaphragm and her right hand.
+[[C-&gt;Removes]]</tw-passagedata><tw-passagedata pid="23" name="Removes" tags="" position="1295,2446" size="100,100">Julia pulls back both the diaphragm and her right hand.
 
 Julia::Alright, your heart rate is healthy.  Now we just need to check that your breathing is normal.
 
@@ -126,36 +135,53 @@ Julia puts her ear down directly over your mouth.  You resist intrusive thoughts
 
 She&#39;s close enough that you can smell her.  She smells lightly of peppermint.
 
-[[p:(Action) Breath Deeply.-&gt;Breath]]</tw-passagedata><tw-passagedata pid="25" name="Breath" tags="" position="1295,2596" size="100,100">You breath deeply, slowly, in and out, for two or three cycles.
+[[p:(Action) Breath Deeply.-&gt;Breath]]</tw-passagedata><tw-passagedata pid="24" name="Breath" tags="" position="1295,2596" size="100,100">You breath deeply, slowly, in and out, for two or three cycles.
 
-[[Continue-&gt;Rises]]</tw-passagedata><tw-passagedata pid="26" name="Rises" tags="" position="1295,2746" size="100,100">Julia rises a bit, her eyes remaining fixed on your chest.
+[[Continue-&gt;Rises]]</tw-passagedata><tw-passagedata pid="25" name="Rises" tags="" position="1295,2746" size="100,100">Julia rises a bit, her eyes remaining fixed on your chest.
 
 Slowly, she guides her hand to the top of your breasts and presses down firmly.
 
 Julia::Keep breathing, please.
 
-[[p:(Action) Keep it together and continue to breath.]]</tw-passagedata><tw-passagedata pid="27" name="p:(Action) Keep it together and continue to breath." tags="" position="1297,2896" size="100,100">Easy now.  In and out.  In and out.  Focus on the breath itself.
+[[p:(Action) Keep it together and continue to breath.]]</tw-passagedata><tw-passagedata pid="26" name="p:(Action) Keep it together and continue to breath." tags="" position="1297,2896" size="100,100">Easy now.  In and out.  In and out.  Focus on the breath itself.
 
 Julia::Your breathing is normal.  Though I can feel your heart rate spiking a little.
 
 In and out.  In and out.  In and out.
 
-[[C-&gt;Finished]]</tw-passagedata><tw-passagedata pid="28" name="Finished" tags="" position="1295,3046" size="100,100">Julia slowly rises back up and removes her hand from your chest.  
+[[C-&gt;Finished]]</tw-passagedata><tw-passagedata pid="27" name="Finished" tags="" position="1295,3046" size="100,100">Julia slowly rises back up and removes her hand from your chest.  
 
 Julia::Very good.  Just one more check.
 
 Julia::I need you to count to zero, starting from five, going backwards.  Can you do that for me?
 
 [[p:Sure.]]
-[[p:Yes ma&#39;am.-&gt;p:Sure.]]</tw-passagedata><tw-passagedata pid="29" name="p:Sure." tags="" position="1295,3196" size="100,100">You hear the slightest amount of shuffling.
+[[p:Yes ma&#39;am.-&gt;p:Sure.]]</tw-passagedata><tw-passagedata pid="28" name="p:Sure." tags="" position="1295,3196" size="100,100">You hear the slightest amount of shuffling.
 
-[[p:Five.]]</tw-passagedata><tw-passagedata pid="30" name="p:Five." tags="" position="1295,3346" size="100,100">Julia::Yes, like that.
+[[p:Five.]]</tw-passagedata><tw-passagedata pid="29" name="p:Five." tags="" position="1295,3346" size="100,100">Julia::Yes, like that.
 
-[[p:Four.]]</tw-passagedata><tw-passagedata pid="31" name="p:Four." tags="" position="1295,3496" size="100,100">Julia::Keep going.
+[[p:Four.]]</tw-passagedata><tw-passagedata pid="30" name="p:Four." tags="" position="1295,3496" size="100,100">Julia::Keep going.
 
-[[p:Three.]]</tw-passagedata><tw-passagedata pid="32" name="p:Cut the shit, what was I just injected with?" tags="" position="1247,3960" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="33" name="p:Take me to operations.  Now." tags="" position="1401,4417" size="100,100">Julia finally starts to look a little cross with you.
+[[p:Three.]]</tw-passagedata><tw-passagedata pid="31" name="p:Take me to the maternity ward.  Now." tags="" position="1401,4417" size="100,100">Julia finally starts to look a little cross with you.
 
-Julia::Fine, miss.  Operations is through the door on your right.  If you&#39;re so eager, you lead the way.</tw-passagedata></tw-storydata>
+Julia::Fine.  Maternity is back out and just down the hall.  If you&#39;re so eager, you lead the way.</tw-passagedata><tw-passagedata pid="32" name="Untitled Passage" tags="" position="1279,46" size="100,100">Julia::This way Miss.  We need to perform a quick inspection before proceeding.
+
+She motions to the doorway on the right.
+
+[[p:Since when do I need an inspection?  You said all I had to do was sign in.]]
+[[p:Which of my body parts needs inspecting?  I just checked and they are all working fine.]]</tw-passagedata><tw-passagedata pid="33" name="p:Since when do I need an inspection?  You said all I had to do was sign in." tags="" position="1194,187" size="100,100">Julia::I apologize for failing to mention this, but we also need to put you through a brief preliminary screening.
+
+Julia::Just a few quick scans to make sure you don&#39;t have any underlying health problems.  We want to avoid any complications during the operation, you see.
+
+Julia::Now, right this way.
+
+[[C-&gt;Start]]</tw-passagedata><tw-passagedata pid="34" name="p:Which of my body parts needs inspecting?  I just checked and they are all working fine." tags="" position="1352,185" size="100,100">Julia::I can&#39;t just take your word for that Miss.  I need to confirm for myself.
+
+Julia::Just a few quick scans to make sure you don&#39;t have any underlying health problems.  We want to avoid any complications during the operation, you see.
+
+Julia::Now, right this way.
+
+[[C-&gt;Start]]</tw-passagedata></tw-storydata>
     </div>
     <script>
       Twison.convert();

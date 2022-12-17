@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>New Posters</title>
+    <script type="text/javascript">
+      /**
+       * Twison - Twine 2 JSON Export Story Format
+       *
+       * Copyright (c) 2015 Em Walker
+       * https://lazerwalker.com
+       *
+       * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+       * associated documentation files (the "Software"), to deal in the Software without restriction,
+       * including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+       * and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+       * subject to the following conditions:
+       *
+       * The above copyright notice and this permission notice shall be included in all copies or substantial
+       * portions of the Software.
+       *
+       * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+       * LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+       * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+       * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+       * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+       */
+      var Twison={extractLinksFromText:function(t){var n=t.match(/\[\[.+?\]\]/g);return n?n.map(function(t){var n=t.match(/\[\[(.*?)\-\&gt;(.*?)\]\]/);return n?{name:n[1],link:n[2]}:(t=t.substring(2,t.length-2),{name:t,link:t})}):null},extractPropsFromText:function(t){var n,r={},e=!1;const a=/\{\{((\s|\S)+?)\}\}((\s|\S)+?)\{\{\/\1\}\}/gm;for(;null!==(n=a.exec(t));){const o=n[1],s=n[3].replace(/(\r\n|\n|\r)/gm,""),i=this.extractPropsFromText(s);r[o]=null!==i?i:s,e=!0}return e?r:null},convertPassage:function(t){var n={text:t.innerHTML},r=Twison.extractLinksFromText(n.text);r&&(n.links=r);const e=Twison.extractPropsFromText(n.text);if(e&&(n.props=e),["name","pid","position","tags"].forEach(function(r){var e=t.attributes[r].value;e&&(n[r]=e)}),n.position){var a=n.position.split(",");n.position={x:a[0],y:a[1]}}return n.tags&&(n.tags=n.tags.split(" ")),n},convertStory:function(t){var n=t.getElementsByTagName("tw-passagedata"),r=Array.prototype.slice.call(n).map(Twison.convertPassage),e={passages:r};["name","startnode","creator","creator-version","ifid"].forEach(function(n){var r=t.attributes[n].value;r&&(e[n]=r)});var a={};return e.passages.forEach(function(t){a[t.name]=t.pid}),e.passages.forEach(function(t){t.links&&t.links.forEach(function(t){t.pid=a[t.link],t.pid||(t.broken=!0)})}),e},convert:function(){var t=document.getElementsByTagName("tw-storydata")[0],n=JSON.stringify(Twison.convertStory(t),null,2);document.getElementById("output").innerHTML=n}};window.Twison=Twison;
+    </script>
+  </head>
+  <body>
+    <pre id="output"></pre>
+    <div id="storyData" style="display: none;">
+      <tw-storydata name="New Posters" startnode="1" creator="Twine" creator-version="2.3.14" ifid="5F4583A2-D796-44E4-9D78-9F131E934859" zoom="1" format="Twison" format-version="0.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Page 1" tags="page1" position="739,488" size="100,100">Robert::Leslie, I apologize for the last minute change in plans, but we’ve got to pull the posters for the new play.  Don’t distribute them tomorrow.  
+
+Robert::We’ll have the new design finished by the end of the week.
+
+Robert::Best, Robert.</tw-passagedata><tw-passagedata pid="2" name="Page 2" tags="page2" position="739,608" size="100,100">Leslie::What the fuck?  The posters are scheduled to go up in six hours.  We&#39;ve been planning this for months.
+
+Leslie::Did one of the actors sleep with Tann&#39;s wife again?  Or end up on Rosalind&#39;s shit list?
+
+Leslie::I hope there is a very good fucking reason for this.</tw-passagedata><tw-passagedata pid="3" name="Page 3" tags="page3" position="740,722" size="100,100">Robert::I&#39;m sorry, Leslie.  It&#39;s one of our actresses.  Julia.
+
+Robert::She&#39;s pregnant.  Obviously pregnant.  We&#39;ve all been pretending not to notice but she&#39;s bulging so much, it&#39;s disgusting.
+
+Robert::We made the call to take her out of the play today.  But she&#39;s all over the posters, we&#39;ve got to redo them.</tw-passagedata><tw-passagedata pid="4" name="Page 4" tags="page4" position="741,838" size="100,100">Leslie::Fuck, fine.  Sent me a photograph of the new actresses head.  We&#39;ll just slap it on the existing posters, that will save some time.
+
+Leslie::You could have just told me the star was pregnant, you know.</tw-passagedata></tw-storydata>
+    </div>
+    <script>
+      Twison.convert();
+    </script>
+  </body>
+</html>

@@ -3,24 +3,19 @@
 {
   "passages": [
     {
-      "text": "You look up to see your Ferryman guide quickly ascending the cistern ladder.  At the top is a small hatch.  The hatch has a small aperature cut out on the left side, allowing both light and water to pour through.  You hear the faint sound of metal grating against metal - he's opening the lock securing the hatch at the top.  His voice reverberates as it echoes down the cylinder.\n\nFerryman::As soon as I open this hatch you'll need to clamber up the ladder as quickly as possible.  I won't be able to keep it open for long.  Ready?\n\n[[I've changed my mind, I don't want to go.]]\n[[p:Alright, open the hatch.]]",
+      "text": "You look up to see your Ferryman guide quickly ascending the cistern ladder.  \n\nAt the top is a small hatch.  The hatch has a small aperature cut out on the left side, allowing both light and water to pour through.  \n\n[[C->keys]]",
       "links": [
         {
-          "name": "I've changed my mind, I don't want to go.",
-          "link": "I've changed my mind, I don't want to go.",
-          "pid": "2"
-        },
-        {
-          "name": "p:Alright, open the hatch.",
-          "link": "p:Alright, open the hatch.",
-          "pid": "3"
+          "name": "C",
+          "link": "keys",
+          "pid": "7"
         }
       ],
       "name": "Exiting Sewer",
       "pid": "1",
       "position": {
-        "x": "859",
-        "y": "426"
+        "x": "866",
+        "y": "323"
       }
     },
     {
@@ -72,12 +67,12 @@
       }
     },
     {
-      "text": "Fine, then.  Go die like a baby sea turtle.  That won't be fair either, but life will still pan out that way.\n\n[[Continue->Exiting Sewer]] ",
+      "text": "Fine, then.  Go die like a baby sea turtle.  That won't be fair either, but life will still pan out that way.\n\n[[Continue->keys]] ",
       "links": [
         {
           "name": "Continue",
-          "link": "Exiting Sewer",
-          "pid": "1"
+          "link": "keys",
+          "pid": "7"
         }
       ],
       "name": "This isn't fair.  I shouldn't have to do this.",
@@ -97,6 +92,30 @@
       },
       "tags": [
         "open_hatch"
+      ]
+    },
+    {
+      "text": "You hear the faint sound of metal grating against metal - he's opening the lock securing the hatch at the top.  His voice reverberates as it echoes down the cylinder.\n\nFerryman::As soon as I open this hatch you'll need to clamber up the ladder as quickly as possible.  I won't be able to keep it open for long.  Ready?\n\n[[I've changed my mind, I don't want to go.]]\n[[p:Alright, open the hatch.]]",
+      "links": [
+        {
+          "name": "I've changed my mind, I don't want to go.",
+          "link": "I've changed my mind, I don't want to go.",
+          "pid": "2"
+        },
+        {
+          "name": "p:Alright, open the hatch.",
+          "link": "p:Alright, open the hatch.",
+          "pid": "3"
+        }
+      ],
+      "name": "keys",
+      "pid": "7",
+      "position": {
+        "x": "863",
+        "y": "460"
+      },
+      "tags": [
+        "keys"
       ]
     }
   ],

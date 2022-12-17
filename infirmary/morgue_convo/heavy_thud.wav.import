@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/heavy_thud.wav-d0f2c2fb642edf3d60f47c396bc16c55.sample"
+
+[deps]
+
+source_file="res://infirmary/morgue_convo/heavy_thud.wav"
+dest_files=[ "res://.import/heavy_thud.wav-d0f2c2fb642edf3d60f47c396bc16c55.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

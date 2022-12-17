@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://sounds/running_above.wav" type="AudioStream" id=1]
 [ext_resource path="res://addons/mixing-desk/sound/nonspatial/scatter_cont.gd" type="Script" id=2]
@@ -10,9 +10,11 @@
 [ext_resource path="res://sounds/running_in_distance.wav" type="AudioStream" id=8]
 [ext_resource path="res://sounds/wind_whooshing_2.wav" type="AudioStream" id=9]
 [ext_resource path="res://sounds/tanpura_strum_2.wav" type="AudioStream" id=10]
+[ext_resource path="res://addons/mixing-desk/sound/nonspatial/polysound.gd" type="Script" id=11]
 [ext_resource path="res://sounds/tanpura_strum_1.wav" type="AudioStream" id=12]
 [ext_resource path="res://sounds/wind_whooshing_1.wav" type="AudioStream" id=13]
 [ext_resource path="res://sounds/grating_metallic_creak.wav" type="AudioStream" id=14]
+[ext_resource path="res://sounds/Fresh Air.wav" type="AudioStream" id=15]
 
 [node name="MDS" type="Control"]
 margin_right = 40.0
@@ -57,7 +59,7 @@ autostart = false
 volume_range = 5.0
 pitch_range = 0.2
 voices = 1
-min_time = 3.0
+min_time = 7.0
 max_time = 10.0
 timeout = 0.0
 
@@ -86,3 +88,10 @@ stream = ExtResource( 1 )
 
 [node name="RunningInDistance" type="AudioStreamPlayer" parent="InfirmaryAmbient"]
 stream = ExtResource( 8 )
+
+[node name="FreshAir" type="Node" parent="."]
+script = ExtResource( 11 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="FreshAir"]
+stream = ExtResource( 15 )
+volume_db = -23.2

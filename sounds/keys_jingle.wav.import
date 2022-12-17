@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/rusty_hatch.wav-42286ea840524dbcb7515cfb710cee19.sample"
+path="res://.import/keys_jingle.wav-71f993c1806e61eab12564a4e933b06f.sample"
 
 [deps]
 
-source_file="res://sounds/rusty_hatch.wav"
-dest_files=[ "res://.import/rusty_hatch.wav-42286ea840524dbcb7515cfb710cee19.sample" ]
+source_file="res://sounds/keys_jingle.wav"
+dest_files=[ "res://.import/keys_jingle.wav-71f993c1806e61eab12564a4e933b06f.sample" ]
 
 [params]
 

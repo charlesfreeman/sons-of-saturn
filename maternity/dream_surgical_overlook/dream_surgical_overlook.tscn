@@ -17,6 +17,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_left = "res://maternity/tilted_dream_hallways/tilted_dream_hallway_1.tscn"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 left_path = true

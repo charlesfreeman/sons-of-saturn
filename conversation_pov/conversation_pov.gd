@@ -26,6 +26,7 @@ onready var dialogue_sys = $HBoxContainer/Dialogue
 onready var current_bg_path = backgroundPath
 var amelie = "aneutral"
 var wiggly = "wneutral"
+var julia = "jneutral"
 var current_char = "You"
 
 # need var to store tag so we can communicate between _on_Dialogue_tag and 
@@ -36,12 +37,15 @@ var fade_tag
 # playing the same effects repeatedly
 var bg_tags_emitted = []
 
+# for mapping speaking char to variable names
 var char_textures = {
 	# not sure these two are needed anymore
 	"None": amelie,
 	"You": amelie, 
 	"Wiggly": wiggly, 
 	"Ferryman": wiggly,
+	"Julia": julia,
+	"Frail Woman": julia,
 }
 
 var char_profiles = {
@@ -60,6 +64,7 @@ var char_profiles = {
 	"wsurprise" : "res://conversation_pov/char_profiles/wiggly/wiggly_surprised.png",
 	"wwincing" : "res://conversation_pov/char_profiles/wiggly/wiggly_wincing.png",
 	"wneutral" : "res://conversation_pov/char_profiles/wiggly/wigley_headshot_feathered.png",
+	"jneutral" : "res://conversation_pov/char_profiles/julia/julia_placeholder.png",
 }
 
 signal tag(tag)
@@ -68,8 +73,8 @@ signal tag(tag)
 func _ready():	
 	if prog_flag != "None":
 		Global.flip_prog_flag(prog_flag)
-#	Global.change_song(song)
-#	Global.change_soundscape(soundscape)
+	Global.change_song(song)
+	Global.change_soundscape(soundscape)
 	Global.location = nextLocation
 	dialogue_sys.set_script_path(scriptPath)
 	dialogue_sys.set_next_scene_path(nextScenePath)
@@ -137,11 +142,9 @@ func _on_Dialogue_tag(tags):
 						
 			elif tag == "add_wiggly":
 				self._add_subject("Wiggly")
-			elif tag == "remove_wiggly":
-				self._remove_subject()
 			elif tag == "add_julia":
 				self._add_subject("Julia")
-			elif tag == "remove_julia":
+			elif tag == "remove_subject":
 				self._remove_subject()
 				
 			elif tag in Global.songs:

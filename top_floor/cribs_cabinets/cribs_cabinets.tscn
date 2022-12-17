@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=2]
+[ext_resource path="res://top_floor/cribs_cabinets/cabinets_near_cribs.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 309.324, 647.938 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 3 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+position = Vector2( 1800, 430 )
+rotation = -63
+song = "sewer_med_flow"
+
+[node name="PopUp" parent="." instance=ExtResource( 2 )]
+diff_background = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
+position = Vector2( 2216.91, 1012.57 )
+shape = SubResource( 1 )

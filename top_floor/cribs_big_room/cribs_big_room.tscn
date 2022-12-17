@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://top_floor/cribs_big_room/big_cribroom_windowview.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/DescPopUp.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1019.19, 300.775 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+popup_background = "res://top_floor/cribs_big_room/big_cribroom_sideview.png"
+position = Vector2( 1800, 430 )
+rotation = -63
+song = "sewer_med_flow"
+
+[node name="DescPopUp" parent="." instance=ExtResource( 3 )]
+diff_background = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DescPopUp"]
+position = Vector2( 1370.64, 1406.18 )
+shape = SubResource( 1 )

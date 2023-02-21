@@ -2,6 +2,7 @@ extends VBoxContainer
 
 const spokenLine = preload("res://dialogue_system/SpokenLine.tscn")
 const spokenLineNochar = preload("res://dialogue_system/SpokenLineNoChar.tscn")
+const spokenLineNarrator = preload("res://dialogue_system/SpokenLineNarrator.tscn")
 
 onready var twison = preload("res://modules/twison-godot/twison_helper.gd")
 onready var Twison = twison.new()
@@ -34,9 +35,10 @@ var mem_to_remove = ""
 
 signal change_char(character)
 signal tag(tags)
+signal darken
+signal brighten
 
 func init():
-	print("initializing")
 	Twison.parse_file(script_path)
 
 	self.buttons_array = get_tree().get_nodes_in_group("buttons")
@@ -101,8 +103,13 @@ func _load_next_block(name):
 			self._load_paragraph(self.paragraph_array[0])
 		
 		if num_paragraphs == 1:
-			self._add_buttons()
+			print("only one paragraph, adding buttons")
+			if len(self.link_names) == 0:
+				self._make_continue_end()
+			else:
+				self._add_buttons()
 		else:
+			print("more than one paragraph, instancing continue")
 			self.continue_button = continueButton.instance()
 			button_container.add_child(self.continue_button)
 			self.continue_button.connect("pressed", self, "_on_ContinueButton_pressed")
@@ -137,40 +144,59 @@ func _load_paragraph(paragraph):
 	var char_name
 	var text
 	if "::" in paragraph:
+		if current_char == "Narrator":
+			print("cutting off narrator")
+			emit_signal("brighten")
 		para_array = paragraph.split("::")
 		char_name = para_array[0]
 		text = para_array[1]
 		
 	else:
-		char_name = "Voice"
+		char_name = "Narrator"
 		text = paragraph
+
+	text.trim_suffix("\n")
+	text.trim_suffix(" ")
+	text.trim_suffix(" ")
+	text.trim_suffix(" ")
 		
 	if current_char != char_name:
-		var spoken_line = spokenLine.instance()
-		current_char = char_name
-		# if prepended with neither (Action) or (Progression) these operators
-		# do nothing, as desired
-		# text = text.trim_prefix("(Action) ")
-		text = text.trim_prefix("(Progression) ")
-		
-		spoken_line.set_speaker_name(char_name)
-		spoken_line.set_dialogue_line(text)
-		spoken_lines_container.add_child(spoken_line)
+		if char_name == "Narrator":
+			emit_signal("darken")
+			current_char = char_name
+			print("introducing narrator")
+			var linebreak = spokenLineNochar.instance()
+			linebreak.set_text("  ------- ------- ------- ------- ------- ")
+			spoken_lines_container.add_child(linebreak)
+			
+			var spoken_line = spokenLineNarrator.instance()
+			spoken_line.set_text(text)
+			spoken_lines_container.add_child(spoken_line)
+		else:
+			var spoken_line = spokenLine.instance()
+			current_char = char_name
+			# if prepended with neither (Action) or (Progression) these operators
+			# do nothing, as desired
+			# text = text.trim_prefix("(Action) ")
+			# text = text.trim_prefix("(Progression) ")
+			
+			spoken_line.set_speaker_name(char_name)
+			spoken_line.set_dialogue_line(text)
+			spoken_lines_container.add_child(spoken_line)
 		emit_signal("change_char", current_char)
 		
 	else:
-		var spoken_line = spokenLineNochar.instance()
-		spoken_line.set_text(text)
-		spoken_lines_container.add_child(spoken_line)
+		if current_char == "Narrator":
+			var spoken_line = spokenLineNarrator.instance()
+			spoken_line.set_text(text)
+			spoken_lines_container.add_child(spoken_line)
+		else:
+			var spoken_line = spokenLineNochar.instance()
+			spoken_line.set_text(text)
+			spoken_lines_container.add_child(spoken_line)
 
 
 func _add_buttons():
-	if len(self.link_names) == 0:
-		self.continue_button = continueButton.instance()
-		button_container.add_child(self.continue_button)
-		self.continue_button.connect("pressed", self, "_load_next_scene")
-		self.continue_button.grab_focus()
-	
 	for i in range(len(self.link_names)):
 		var button_text = self.link_names[i]
 		var display_button = true
@@ -206,6 +232,7 @@ func _remove_buttons():
 		self.buttons_array.remove(i)
 
 
+# check if n'th dialogue option in list has been clicked before
 func _check_if_clicked(index: int) -> bool:
 	if self.link_names[index] in self.links_clicked:
 		return true
@@ -217,6 +244,7 @@ func _pressed(index: int):
 	typewriter.play()
 	var button = buttons_array[index]
 	# only need to echo input back to scrollContainer if not in continue mode
+	# don't want to add continue presses to scroll memory
 	if not button.continue_mode:
 		var you_text = "You::" + button.get_text()
 		self._load_paragraph(you_text)
@@ -232,8 +260,32 @@ func _on_ContinueButton_pressed():
 	self._load_paragraph(self.paragraph_array[self.passage_index])
 	if self.passage_index == self.paragraph_array.size()-1:
 		self.passage_index = 0
-		self.continue_button.queue_free()
-		self._add_buttons()
+		# if no links, instance continue and connect to load next scene
+		if len(self.link_names) == 0:
+			self.continue_button.queue_free()
+			self._make_continue_end()
+		elif len(self.link_names) == 1:
+			self.continue_button.queue_free()
+			self._add_buttons()
+		else: 
+			if self.link_names[0].begins_with("C->") or self.link_names[0].begins_with("Continue->"):
+				self.continue_button.queue_free()
+				self._add_buttons()
+			else:
+				self.continue_button.disconnect("pressed", self, "_on_ContinueButton_pressed")
+				self.continue_button.connect("pressed", self, "_final_continue")
+
+
+func _make_continue_end():
+	self.continue_button = continueButton.instance()
+	button_container.add_child(self.continue_button)
+	self.continue_button.connect("pressed", self, "_load_next_scene")
+	self.continue_button.grab_focus()
+
+func _final_continue():
+	typewriter.play()
+	self.continue_button.queue_free()
+	self._add_buttons()
 
 
 # for programatically setting the dialogue path when instancing

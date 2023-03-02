@@ -80,7 +80,6 @@ func _insert_newlines(text: String) -> String:
 
 func set_label_text(text: String):
 	if text == "Continue" or text == "C":
-		print("setting button to continue mode")
 		self.button_text = "\u00AC Continue"
 		self.continue_mode = true
 		$HBoxContainer.set("custom_constants/separation", 50)

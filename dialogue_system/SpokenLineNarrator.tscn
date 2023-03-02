@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://dialogue_system/SpokenLineNarrator.gd" type="Script" id=1]
+
+[node name="SpokenLineNarrator" type="Label" groups=["SpokenLines"]]
+margin_right = 1680.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+autowrap = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

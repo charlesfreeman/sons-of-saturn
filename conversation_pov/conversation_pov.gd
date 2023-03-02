@@ -18,6 +18,9 @@ export var mem_to_remove = ""
 export var prog_flag = "None"
 export var song = "None"
 export var soundscape = "None"
+# if true, checks the value of prog_flag to see if played before.
+# you must set prog_flag to some value to use this
+export var play_only_once = false
 
 onready var avatar = $View/CanvasLayer/Avatar
 onready var background = $View
@@ -27,7 +30,11 @@ onready var current_bg_path = backgroundPath
 var amelie = "aneutral"
 var wiggly = "wneutral"
 var julia = "jneutral"
+var jasper = "jasneutral"
+var voice = "voice"
+var malformed_lump = "malformed_lump"
 var current_char = "You"
+
 
 # need var to store tag so we can communicate between _on_Dialogue_tag and 
 # _on_TransitionScreen_transitioned methods
@@ -46,13 +53,16 @@ var char_textures = {
 	"Ferryman": wiggly,
 	"Julia": julia,
 	"Frail Woman": julia,
+	"Jasper": jasper,
+	"Malformed Lump": malformed_lump,
+	"Voice": voice,
 }
 
 var char_profiles = {
 	"adisgust" : "res://conversation_pov/char_profiles/amelie/amelie_disgusted.png",
 	"afuming" : "res://conversation_pov/char_profiles/amelie/amelie_fuming.png",
 	"aguilty" : "res://conversation_pov/char_profiles/amelie/amelie_guilty.png",
-	"aneutral" : "res://conversation_pov/char_profiles/amelie/amelie_neutral.png",
+	"aneutral" : "res://conversation_pov/char_profiles/amelie/amelie_headshot_feathered.png",
 	"aquestioning" : "res://conversation_pov/char_profiles/amelie/amelie_questioning.png",
 	"asad" : "res://conversation_pov/char_profiles/amelie/amelie_sad.png",
 	"atakenaback" : "res://conversation_pov/char_profiles/amelie/amelie_taken_aback.png",
@@ -63,8 +73,11 @@ var char_profiles = {
 	"wskeptic" : "res://conversation_pov/char_profiles/wiggly/wiggly_skeptical.png",
 	"wsurprise" : "res://conversation_pov/char_profiles/wiggly/wiggly_surprised.png",
 	"wwincing" : "res://conversation_pov/char_profiles/wiggly/wiggly_wincing.png",
-	"wneutral" : "res://conversation_pov/char_profiles/wiggly/wigley_headshot_feathered.png",
+	"wneutral" : "res://conversation_pov/char_profiles/wiggly/wiggly_feathered_closedin.png",
 	"jneutral" : "res://conversation_pov/char_profiles/julia/julia_placeholder.png",
+	"jasneutral" : "res://conversation_pov/char_profiles/jasper/jasper_headshot_feathered.png",
+	"voice" : "res://conversation_pov/char_profiles/jasper/voice_headshot.png",
+	"malformed_lump" : "res://conversation_pov/char_profiles/jasper/malformed_lump_headshot.png",
 }
 
 signal tag(tag)
@@ -87,7 +100,8 @@ func _ready():
 
 
 func _on_Control_change_char(character):
-	if character != "Voice" and character != subject and character in char_textures.keys():
+	print("Attempting to change char to ", character)
+	if character != "Narrator" and character != subject and character in char_textures.keys():
 		avatar.texture = load(char_profiles[char_textures[character]])
 
 
@@ -160,7 +174,16 @@ func _on_Dialogue_tag(tags):
 
 
 func _on_TransitionScreen_transitioned():
-	print("changing to fade background")
 	change_background(fade_tag_dict[fade_tag])
 	change_background_sliver(fade_tag_dict_sliver[fade_tag])
 	current_bg_path = fade_tag_dict[fade_tag]
+
+
+func _on_Dialogue_brighten():
+	print("brighten")
+	avatar.brighten()
+
+
+func _on_Dialogue_darken():
+	print("darken")
+	avatar.darken()

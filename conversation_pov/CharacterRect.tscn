@@ -10,6 +10,8 @@ margin_right = 1523.0
 margin_bottom = 860.0
 mouse_filter = 2
 texture = ExtResource( 2 )
+expand = true
+stretch_mode = 5
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -20,3 +22,9 @@ disappear_tag = "rise"
 [node name="TweenIn" type="Tween" parent="."]
 
 [node name="TweenOut" type="Tween" parent="."]
+
+[node name="TweenBrighten" type="Tween" parent="."]
+
+[node name="TweenDarken" type="Tween" parent="."]
+
+[node name="TweenAppearDark" type="Tween" parent="."]

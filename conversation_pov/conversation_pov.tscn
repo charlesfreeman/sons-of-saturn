@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.gd" type="Script" id=1]
 [ext_resource path="res://dialogue_system/Dialogue.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://conversation_pov/ConvoTransitionScreen.tscn" type="PackedScene" id=5]
 [ext_resource path="res://infirmary/cell_grate_convo/isolation_cells_right_sliver.png" type="Texture" id=6]
 [ext_resource path="res://conversation_pov/rose_border_flipped.png" type="Texture" id=7]
+[ext_resource path="res://conversation_pov/Avatar.gd" type="Script" id=8]
 
 [node name="Convo" type="HBoxContainer"]
 anchor_right = 1.0
@@ -33,15 +34,20 @@ layer = 0
 [node name="Avatar" type="TextureRect" parent="View/CanvasLayer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 1710.64
-margin_top = 1531.44
-margin_right = -1593.36
-margin_bottom = -3.56348
+margin_left = 1747.0
+margin_top = 1639.0
+margin_right = -1611.0
+margin_bottom = -58.0
 expand = true
-stretch_mode = 6
+stretch_mode = 5
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="TweenDarken" type="Tween" parent="View/CanvasLayer/Avatar"]
+
+[node name="TweenBrighten" type="Tween" parent="View/CanvasLayer/Avatar"]
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 margin_left = 2300.0
@@ -105,6 +111,8 @@ expand = true
 
 [node name="TransitionScreen" parent="." instance=ExtResource( 5 )]
 
+[connection signal="brighten" from="HBoxContainer/Dialogue" to="." method="_on_Dialogue_brighten"]
 [connection signal="change_char" from="HBoxContainer/Dialogue" to="." method="_on_Control_change_char"]
+[connection signal="darken" from="HBoxContainer/Dialogue" to="." method="_on_Dialogue_darken"]
 [connection signal="tag" from="HBoxContainer/Dialogue" to="." method="_on_Dialogue_tag"]
 [connection signal="transitioned" from="TransitionScreen" to="." method="_on_TransitionScreen_transitioned"]

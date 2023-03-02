@@ -51,5 +51,5 @@ position = Vector2( 439.826, 1538.46 )
 shape = SubResource( 3 )
 
 [node name="PopUp" parent="." instance=ExtResource( 4 )]
-popup_text = [ "Wiggly::The door at the top of this stairwell is locked.  If we want to go to the top floor we'll have to use the mirror stairwell in the opposing wing." ]
-nav_popup = true
+popup_text = [ "Wiggly::The door at the top of this stairwell is locked.", "Wiggly::If we want to go to the top floor we'll have to use the mirror stairwell in the opposing wing." ]
+nav_popup_left = true

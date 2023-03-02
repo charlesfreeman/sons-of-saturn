@@ -25,6 +25,8 @@ scene_down = "res://infirmary/conduits_hallway/conduits_hallway.tscn"
 
 [node name="ClickToSearch" parent="." instance=ExtResource( 3 )]
 next_scene = "telegram_convo"
+alt_next_scene = "telegram_convo_return"
+alt_req_prog_flag = "tann_office_convo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
 position = Vector2( 1434.12, 1448.6 )

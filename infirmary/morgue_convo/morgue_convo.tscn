@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
 [ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=2]
 [ext_resource path="res://infirmary/morgue_convo/wiggly_stooping_2.png" type="Texture" id=3]
-[ext_resource path="res://infirmary/morgue_convo/FreshAir.wav" type="AudioStream" id=4]
 [ext_resource path="res://infirmary/morgue_convo/wiggly_looking_down.png" type="Texture" id=5]
 [ext_resource path="res://infirmary/morgue_convo/heavy_thud.wav" type="AudioStream" id=6]
 [ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=7]
@@ -45,11 +44,6 @@ margin_bottom = 2160.0
 texture = ExtResource( 5 )
 appear_tag = "rises"
 disappear_tag = "remove_subject"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
-volume_db = -15.0
-autoplay = true
 
 [node name="ConvoSoundEffect" parent="." instance=ExtResource( 7 )]
 stream = ExtResource( 6 )

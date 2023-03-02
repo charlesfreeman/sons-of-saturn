@@ -72,7 +72,7 @@
       }
     },
     {
-      "text": "Ferryman::Indeed, you appear to have an impressive physique.  I was strong like you, when I was younger.\n\n\"When I was younger\"?  He can't be much older than you.\n\nFerryman::But, that's besides the point.  A wrecking ball careening at full speed wouldn't so much as dent this door.\n\n[[Continue->Door won't move]]",
+      "text": "Ferryman::Indeed, you appear to have an impressive physique.  I was strong like you, when I was younger.\n\nJasper::\"When I was younger?\"  He can't be much older than you.\n\nFerryman::But, that's besides the point.  A wrecking ball careening at full speed wouldn't so much as dent this door.\n\n[[Continue->Door won't move]]",
       "links": [
         {
           "name": "Continue",
@@ -120,12 +120,12 @@
       "name": "Door won't move",
       "pid": "7",
       "position": {
-        "x": "410",
+        "x": "411",
         "y": "1660"
       }
     },
     {
-      "text": "You reassume your primordial stump-like form.  Once again your heel-cobra is unleashed upon the door, your boot landing with a shocking thud with tremendous reverberations arising from your strike.\n\nOther than the shock waves though, nothing happens.  \n\nThe Ferryman watches you with his characteristic infinite patience.  But he understands what you are doing is futile.\n\nFerryman::M'am, I'm very sure that isn't going to get us anywhere.  Of course, you are free to keep trying, but if I were you I would focus on preserving my energies.\n\nAgain, he's being polite.  What you are doing is idiotic.\n\n[[Continue->Door won't move]] ",
+      "text": "You reassume your primordial stump-like form.  Once again your heel-cobra is unleashed upon the door, your boot landing with a shocking thud with tremendous reverberations arising from your strike.\n\nOther than the shock waves though, nothing happens.  \n\nThe Ferryman watches you with his characteristic infinite patience.  But he understands what you are doing is futile.\n\nFerryman::M'am, I'm very sure that isn't going to get us anywhere.  Of course, you are free to keep trying, but if I were you I would focus on preserving my energies.\n\nJasper::He's being polite.  This is idiotic.\n\n[[Continue->Door won't move]] ",
       "links": [
         {
           "name": "Continue",
@@ -182,7 +182,7 @@
       }
     },
     {
-      "text": "Ferryman::Don't worry.  This is one of the safest parts of The Cradle.  Even if you do get lost you won't run into much trouble.\n\nFerryman::And you'll have to try pretty hard to get lost.  The infirmary has a pretty simple ribbon-shaped layout.\n\n[[Continue->p:So what are we going to do?]] \n",
+      "text": "Ferryman::Don't worry.  This is one of the safest parts of The Cradle.  Even if you do get lost you won't run into much trouble.\n\nFerryman::And you'll have to try pretty hard to get lost.  The infirmary has a pretty simple layout.  \n\nFerryman::It looks like a scorpion from the top of the dome.  Right now we're in one of the pincers.  Just try to find your way to the stinger, and I'll meet you there.\n\n[[Continue->p:So what are we going to do?]] \n",
       "links": [
         {
           "name": "Continue",
@@ -254,7 +254,7 @@
       ]
     },
     {
-      "text": "Ferryman::Yes, along with the telegrammatic communication tunnels.  I also spent shifts in the sewer, drainage, and transit systems as well, though less frequently.  Maintenance of those systems was my main job growing up.\n\nFerryman::Actually, my familiarity with the tunnels is the main reason I was able to find work as a Ferryman.  It's my main asset, in a sense.\n\n[[Continue->p:So what are we going to do?]] ",
+      "text": "Ferryman::Yes, along with the telegrammatic communication tunnels.  I also spent shifts in the sewer, drainage, and transit systems as well, though less frequently.\n\nFerryman::I love it down there.  Honestly, I don't really feel comfortable anywhere else.\n\n[[Continue->p:So what are we going to do?]] ",
       "links": [
         {
           "name": "Continue",
@@ -291,11 +291,11 @@
       }
     },
     {
-      "text": "Ferryman::Nope.\n\nHe pauses to reflect for a moment.\n\nFerryman::I mean, this is all I've ever known, really.  That's why I like working with clients like you - outsiders.  \n\nFerryman::I enjoy hearing about the world outside of the Cradle.  Learning what other people's lives are like.\n\n[[p:You're not upset you had to spend your entire childhood doing menial labour for the sake of this failed city?]]",
+      "text": "Ferryman::Nope.\n\nFerryman::Well...\n\nFerryman::I mean, this is all I've ever known, really.  That's why I like working with clients like you - outsiders.  \n\nFerryman::I enjoy hearing about the world outside of the Cradle.  Learning what other people's lives are like.\n\n[[p:You had to spend your entire childhood doing menial labour for this failed city.  You should be pissed!]]",
       "links": [
         {
-          "name": "p:You're not upset you had to spend your entire childhood doing menial labour for the sake of this failed city?",
-          "link": "p:You're not upset you had to spend your entire childhood doing menial labour for the sake of this failed city?",
+          "name": "p:You had to spend your entire childhood doing menial labour for this failed city.  You should be pissed!",
+          "link": "p:You had to spend your entire childhood doing menial labour for this failed city.  You should be pissed!",
           "pid": "18"
         }
       ],
@@ -307,11 +307,11 @@
       }
     },
     {
-      "text": "He's uncharacteristicly quiet for a brief moment.\n\nFerryman::I can see how some would see it that way.\n\n[[That doesn't piss you off?->p:You're not upset you had to spend your entire childhood doing menial labour for the sake of this failed city?]]",
+      "text": "Ferryman::...\n\nFerryman::I can see how some would see it that way.\n\n[[That doesn't piss you off?->p:You had to spend your entire childhood doing menial labour for this failed city.  You should be pissed!]]",
       "links": [
         {
           "name": "That doesn't piss you off?",
-          "link": "p:You're not upset you had to spend your entire childhood doing menial labour for the sake of this failed city?",
+          "link": "p:You had to spend your entire childhood doing menial labour for this failed city.  You should be pissed!",
           "pid": "18"
         }
       ],
@@ -331,7 +331,7 @@
           "pid": "19"
         }
       ],
-      "name": "p:You're not upset you had to spend your entire childhood doing menial labour for the sake of this failed city?",
+      "name": "p:You had to spend your entire childhood doing menial labour for this failed city.  You should be pissed!",
       "pid": "18",
       "position": {
         "x": "515",
@@ -339,7 +339,7 @@
       }
     },
     {
-      "text": "Ferryman::No, \"they\" really didn't.  I was orphaned at an early age - early enough that I don't remember my parents.  I'm lucky to have any life whatsoever.\n\nFerryman::And I'm doubly lucky to have landed an occupation that taught a few useful skills.  Really, the SATURN technicians did me a huge favor by taking me in.\n\n[[p:If you say so.->p:So what are we going to do?]] ",
+      "text": "Ferryman::No, \"they\" really didn't.  I was orphaned at an early age - early enough that I don't remember my parents.  I'm lucky to have any life whatsoever.\n\nFerryman::And I'm doubly lucky to have landed an occupation that taught a few useful skills.  Really, the SATURN technicians did me a huge favor by taking me in.\n\nFerryman::They're the only reason I'm employed even today - if I weren't so familiar with the SATURN tunnel networks, I wouldn't have found work as a Ferryman.\n\n[[p:If you say so.->p:So what are we going to do?]] ",
       "links": [
         {
           "name": "p:If you say so.",
@@ -408,11 +408,11 @@
       }
     },
     {
-      "text": "Wiggly::Anyhow, we should get going.  I'll head into the tunnels - like I said, we'll reconvene in the Maternity Ward.\n\nWiggly::You'll have to navigate there on your own.  Just go up the stairs, down the hallway, and take a left.  You'll find an entrance there that should be unlocked.\n\nWiggly::You shouldn't run into any trouble, but be careful anyhow.  Things get tricky around here.\n\n[[You know, seeing your face behind this grate makes you look like an inmate, as if you were in jail.]]\n[[p:Alright, see you on the other side.]]",
+      "text": "Wiggly::Anyhow, we should get going.  I'll head into the tunnels - like I said, we'll reconvene in the Maternity Ward.\n\nWiggly::You'll have to navigate there on your own.  Just go up the stairs, down the hallway, and take a left.  You'll find an entrance there that should be unlocked.\n\nWiggly::There's an old operations room at the very end of the serial corridors that should be easy to find.  Just keep walking forward and straight when you get there, basically.\n\nWiggly::That room has a small vent that connects to the steam network.  I'll meet you there.\n\n[[You know, seeing your face behind this grate makes you look like a prisoner in a jail cell.]]\n[[p:Alright, see you on the other side.]]",
       "links": [
         {
-          "name": "You know, seeing your face behind this grate makes you look like an inmate, as if you were in jail.",
-          "link": "You know, seeing your face behind this grate makes you look like an inmate, as if you were in jail.",
+          "name": "You know, seeing your face behind this grate makes you look like a prisoner in a jail cell.",
+          "link": "You know, seeing your face behind this grate makes you look like a prisoner in a jail cell.",
           "pid": "38"
         },
         {
@@ -429,7 +429,7 @@
       }
     },
     {
-      "text": "Ferryman::See that waste chute in the corner?\n\nHe gestures behind him.\n\nFerryman::I'll climb up that.  \n\n[[C->utility]]",
+      "text": "Ferryman::See that waste chute in the corner?\n\nFerryman::I'll climb up that.  \n\n[[C->utility]]",
       "links": [
         {
           "name": "C",
@@ -448,7 +448,7 @@
       ]
     },
     {
-      "text": "Ferryman::Please.\n\nHe seems almost insulted.\n\nFerryman::That chute is wide enough to route a trolley through.  I'll get through just fine.\n\nFerryman::Honestly, the only conduits I have any trouble with are the pneumatic transport lines.  And I can even get through some of those.\n\n[[Alright, so long as I don't have to rescue you after you get stuck.->p:So what are we going to do?]]",
+      "text": "Ferryman::Please.\n\nFerryman::That chute is wide enough to route a trolley through.  I'll get through just fine.\n\nFerryman::Honestly, the only conduits I have any trouble with are the pneumatic transport lines.  And I can even get through some of those.\n\n[[Alright, so long as I don't have to rescue you after you get stuck.->p:So what are we going to do?]]",
       "links": [
         {
           "name": "Alright, so long as I don't have to rescue you after you get stuck.",
@@ -467,7 +467,7 @@
       ]
     },
     {
-      "text": "Wiggly nods, does a heel turn, and disappears down the chute, sliding down it with a speed you'd never expect.  It's as if he were coated in layer of vaseline.\n\nOn our own now.  Let's head to the Maternity Ward.",
+      "text": "Wiggly nods, does a heel turn, and disappears down the chute, sliding down it with a speed you'd never expect.  \n\nJasper::Did you see how fast he wiggled through there?  It's like he's covered in a layer of motor oil.\n\nJasper::Anyway, we're on our own now.  Let's head to the Maternity Ward.",
       "name": "p:Alright, see you on the other side.",
       "pid": "26",
       "position": {
@@ -553,7 +553,7 @@
       ]
     },
     {
-      "text": "After taking a look, the Ferryman rounds the corner and enters the room.\n\nSeveral moments pass in silence.\n\nSay something!\n\n[[p:See anything?->p:Hey champ.  Everything going alright in there?]]\n[[p:Hey champ.  Everything going alright in there?]]",
+      "text": "After taking a look, the Ferryman rounds the corner and enters the room.\n\nSeveral moments pass in silence.\n\nJasper::Say something!\n\n[[p:See anything?->p:Hey champ.  Everything going alright in there?]]\n[[p:Hey champ.  Everything going alright in there?]]",
       "links": [
         {
           "name": "p:See anything?",
@@ -598,7 +598,7 @@
       ]
     },
     {
-      "text": "You instinctively run up to the door and peer through the grate.  Wiggly is staring back at you.\n\n[[p:Why did you slam the door?]]\n[[p:Did the door just slam on its own?]]",
+      "text": "You instinctively run up to the door and peer through the grate.  The Ferryman is staring back at you.\n\n[[p:Why did you slam the door?]]\n[[p:Did the door just slam on its own?]]",
       "links": [
         {
           "name": "p:Why did you slam the door?",
@@ -622,7 +622,7 @@
       ]
     },
     {
-      "text": "Ferryman::Have you heard of the sorts of incidents Infiltrators sometimes report near the SATURN Core?  \n\nFerryman::The Broker must have mentioned them in the introductory sermon he gives to all infiltrators, though he probably didn't go into much detail.  Every minute with him is metered.\n\n[[p:Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who've been dead for twenty years...]]",
+      "text": "Ferryman::Have you heard of the sorts of incidents infiltrators sometimes report near the SATURN Core?  \n\nFerryman::The Broker must have mentioned them in the introductory sermon he gives to all his clients, though he probably didn't go into much detail.  Every minute with him is metered.\n\n[[p:Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who've been dead for twenty years...]]",
       "links": [
         {
           "name": "p:Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who've been dead for twenty years...",
@@ -670,7 +670,7 @@
       }
     },
     {
-      "text": "Ferryman::The door isn't \"locked\", it's completely sealed.  Parts of the Cradle sometimes come to life, confusing and disorienting those who breach its envelope.  \n\nFerryman::This isn't a simple locked door.  This is a trap, one I fell for.\n\nFerryman::Remember the crying woman?  That was bait, to lure one or both of us into this cell.  Look around - not a soul in sight.  Once I had slid in, the door sealed right behind me.\n\nFerryman::Really, I should have known better than to fall for a trick like this, given my experience level.  I'll have to report this; might even get demoted for it.  But I've learned it's better to not leave sounds like that uninvestigated.\n\nFerryman::Encountering resistance this early on is unusual, miss.  The Cradle seems to be reacting strongly to your presence.\n\nHe's talking too much.  Do something.\n\n[[p:(Action) Kick the door.]]",
+      "text": "Ferryman::The door isn't \"locked\", it's completely sealed.  Parts of the Cradle sometimes come to life, confusing and disorienting those who breach its envelope.  \n\nFerryman::This isn't a simple locked door.  This is a trap, one I fell for.\n\nFerryman::Remember the crying woman?  That was bait, to lure one or both of us into this cell.  Look around - not a soul in sight.  Once I had slid in, the door sealed right behind me.\n\nFerryman::Really, I should have known better than to fall for a trick like this.  But I can't just bring myself to leave sounds like that uninvestigated.\n\nFerryman::Encountering resistance this early on is unusual, miss.  Do you have some history in the Cradle, or with this building, I should know about?.\n\nJasper::He's talking too much.  Do something.\n\n[[p:(Action) Kick the door.]]",
       "links": [
         {
           "name": "p:(Action) Kick the door.",
@@ -694,7 +694,7 @@
           "pid": "23"
         }
       ],
-      "name": "You know, seeing your face behind this grate makes you look like an inmate, as if you were in jail.",
+      "name": "You know, seeing your face behind this grate makes you look like a prisoner in a jail cell.",
       "pid": "38",
       "position": {
         "x": "722",
@@ -739,7 +739,7 @@
       }
     },
     {
-      "text": "Ferryman::Through that, I'll find a connection to the steam transport layer, which runs through the operational sections of the infirmary.\n\nFerryman::There are several portals opening up into the Maternity Ward.  We can reconvene there.\n\n[[p:You mean to say you can fit into that?]]",
+      "text": "Ferryman::Through that, I'll find a connection to the steam transport layer, which runs through the operational sections of the infirmary.\n\nFerryman::There are several portals opening up into the Maternity Ward.  We can reconvene there, in the room at the end of all the hallways.\n\n[[p:You mean to say you can fit into that?]]",
       "links": [
         {
           "name": "p:You mean to say you can fit into that?",

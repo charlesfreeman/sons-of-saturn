@@ -1,0 +1,73 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Vera::Mood diary.  Entry 1.  June 27th.\n\nVera::Feel bad.  Difficulty getting up in the morning.  Unappetized at lunch.  Foggy in the afternoon.  Strong undercurrent of malaise all day.\n\nVera::I would have written the same on days minus-14 to 0 if I started this earlier.\n\nVera::Getting \"promoted\" to the maternity ward.  What an infuriating euphemism.  The pay is the same, the work is even less important, and I'm surrounded by screaming newborns.  I hate children!  Famously!  Sending me here was a sick joke.\n\nVera::Perhaps if I'm as obnoxious in this position in the last, I can get \"promoted\" out of here yet again...\n\n[[p:(Action) Flip the page.->Page 2]]",
+      "links": [
+        {
+          "name": "p:(Action) Flip the page.",
+          "link": "Page 2",
+          "pid": "2"
+        }
+      ],
+      "name": "Page 1",
+      "pid": "1",
+      "position": {
+        "x": "539",
+        "y": "606.5"
+      },
+      "tags": [
+        "page1"
+      ]
+    },
+    {
+      "text": "Vera::Mood diary.  Entry 2.  July 3th.\n\nVera::Forgot to fill this in for the last few days but that's ok because they'd not look any different from the initial entry.  The accounting here is hellishly monotonous.  Do you have any clue how difficult it is to bore someone passionate about accounting? \n\nVera::Within the SATURN core I felt like I was actually making an impact at least.  I guess Rosalind was so \"thrilled\" I blew the whistle on the fraudulently produced safety test results that she decided I could make an even bigger impact here, making sure no screaming newborns double dip in the hospital account.\n\nVera::The only things of any import to keep track of are the medicine consumption tabulations and the infant sickness rates and correlations.  Sometimes more than one gets hepatitis, and there's a link.  Sometimes some fent fiend decides to dip into the medical supply closets.  Petty indiscrepancies.  It's not much but it's all I've got to work with.",
+      "name": "Page 2",
+      "pid": "2",
+      "position": {
+        "x": "539",
+        "y": "756.5"
+      },
+      "tags": [
+        "page2"
+      ]
+    },
+    {
+      "text": "You pick the diary pages Vera left behind back up.\n\n[[p:(Action) Reread the diary entries.->Page 1]]\n[[p:(Action) Leave.]]",
+      "links": [
+        {
+          "name": "p:(Action) Reread the diary entries.",
+          "link": "Page 1",
+          "pid": "1"
+        },
+        {
+          "name": "p:(Action) Leave.",
+          "link": "p:(Action) Leave.",
+          "pid": "4"
+        }
+      ],
+      "name": "Untitled Passage 1",
+      "pid": "3",
+      "position": {
+        "x": "540",
+        "y": "458.5"
+      }
+    },
+    {
+      "text": "",
+      "name": "p:(Action) Leave.",
+      "pid": "4",
+      "position": {
+        "x": "659",
+        "y": "608.5"
+      }
+    }
+  ],
+  "name": "Vera Diary 1 Second Visit",
+  "startnode": "3",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "7AEF743B-FC99-4A0D-87E5-762309E39D45"
+}
+

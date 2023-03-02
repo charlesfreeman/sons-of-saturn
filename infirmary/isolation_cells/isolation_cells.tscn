@@ -12,7 +12,7 @@ extents = Vector2( 833.166, 154.256 )
 extents = Vector2( 325.198, 716.197 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 361.928, 719.093 )
+extents = Vector2( 371.232, 709.847 )
 
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
@@ -24,11 +24,12 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_right = "res://infirmary/chute_room/chute_room.tscn"
 scene_down = "res://infirmary/isolation_stairwell_base/isolation_stairwell_base.tscn"
 scene_left = "res://infirmary/medicine_cabinet/medicine_cabinet.tscn"
 req_flag_right = "door_open_popup"
-soundscape = "InfirmaryAmbient"
+prog_flag = "isolation_cells"
+new_scene_on_ready = true
+new_scene = "cell_grate_convo"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 down_path = true
@@ -44,13 +45,10 @@ left_path = true
 position = Vector2( 550.133, 1039.55 )
 shape = SubResource( 2 )
 
-[node name="ClickToEnter3" parent="." instance=ExtResource( 3 )]
-right_path = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter3"]
-position = Vector2( 2230.97, 1062.05 )
-shape = SubResource( 3 )
-
 [node name="PopUp" parent="." instance=ExtResource( 4 )]
-popup_text = [ "Amelie::What?  This door was sealed shut just a few seconds ago!", "Amelie::Is Wiggly gone already?  Is my mind playing tricks?" ]
+popup_text = [ "Amelie::What?  This door was sealed shut just a few seconds ago...", "Amelie::Figured it would only open once Wiggly was long gone." ]
 prog_flag = "door_open_popup"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
+position = Vector2( 2243.89, 1071.3 )
+shape = SubResource( 3 )

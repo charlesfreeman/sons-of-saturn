@@ -52,4 +52,4 @@ shape = SubResource( 3 )
 
 [node name="PopUp" parent="." instance=ExtResource( 4 )]
 popup_text = [ "Wiggly::We need to check the rooms in this hall too, miss." ]
-nav_popup = true
+nav_popup_up = true

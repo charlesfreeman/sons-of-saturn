@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "Vera::Mood diary.  Entry 3.  July 8th.\n\nVera::I actually found something fascinating today, the first break in the monotony since my transfer.  While looking through records pertaining to the hospital's infant mortality rate, I noticed that incidents of stillbirth in the maternity ward are almost never isolated.  \n\nVera::As in, there is never only one stillbirth on any given day.  Always there are two or three, sometimes more, then zero for weeks or months.  That's pretty strong evidence of malpractice by one or more employees.\n\nVera::I'm trying to isolate any obvious common denominators between the stillbirth cases; perhaps they can be tied to someone's shifts in the Maternity Ward.\n\nVera::Oh yeah, mood a little better.\n\nFerryman::Nothing about Rosalind yet...\n\n[[p:(Action) Flip the page.->Page 4]]",
+      "text": "Vera::Mood diary.  Entry 3.  July 8th.\n\nVera::I actually found something fascinating today, the first break in the monotony since my transfer.  While looking through records pertaining to the hospital's infant mortality rate, I noticed that incidents of stillbirth in the maternity ward are almost never isolated.  \n\nVera::As in, there is never only one stillbirth on any given day.  Always there are two or three, sometimes more, then zero for weeks or months.  That's pretty strong evidence of malpractice by one or more employees.\n\nVera::I'm trying to isolate any obvious common denominators between the stillbirth cases; perhaps they can be tied to someone's shifts in the Maternity Ward.\n\nVera::Oh yeah, mood a little better.\n\nJasper::Nothing about Rosalind yet...\n\n[[p:(Action) Flip the page.->Page 4]]",
       "links": [
         {
           "name": "p:(Action) Flip the page.",
@@ -15,7 +15,7 @@
       "pid": "1",
       "position": {
         "x": "546",
-        "y": "843.5"
+        "y": "843"
       },
       "tags": [
         "page1"
@@ -39,22 +39,22 @@
       "pid": "2",
       "position": {
         "x": "546",
-        "y": "986.5"
+        "y": "986"
       },
       "tags": [
         "page2"
       ]
     },
     {
-      "text": "Ferryman::The Cradle was the center of a lot of groundbreaking medical research prior to its abandonment.  As such a pretty wide variety of exotic medicinal chemicals were kept in stock - anyone with even slim medical credentials could get there hands on some pretty esoteric stuff without too many questions being asked.\n\nFerryman::In fact, a team working in this very hospital is credited with discovering that Ergot could be used to treat migraines.  As for Datura, I recall hearing they had some luck using it to treat dandruff.\n\n[[p:Personally I'd rather deal with dandruff than regularly ingest nightshade.->Page 4]]\n[[p:I guess a little bit of poison is worth it if it prevents your scalp from falling out.->Page 4]]",
+      "text": "Ferryman::The Cradle was the center of a lot of groundbreaking medical research prior to its abandonment.  As such a pretty wide variety of exotic medicinal chemicals were kept in stock - anyone with even slim medical credentials could get there hands on some pretty esoteric stuff without too many questions being asked.\n\nFerryman::In fact, a team working in this very hospital is credited with discovering that Ergot could be used to treat migraines.  As for Datura, I recall hearing they had some luck using it to treat dandruff.\n\n[[Personally I'd rather deal with dandruff than regularly ingest nightshade.->Page 4]]\n[[I guess a little bit of poison is worth it if it prevents your scalp from falling out.->Page 4]]",
       "links": [
         {
-          "name": "p:Personally I'd rather deal with dandruff than regularly ingest nightshade.",
+          "name": "Personally I'd rather deal with dandruff than regularly ingest nightshade.",
           "link": "Page 4",
           "pid": "2"
         },
         {
-          "name": "p:I guess a little bit of poison is worth it if it prevents your scalp from falling out.",
+          "name": "I guess a little bit of poison is worth it if it prevents your scalp from falling out.",
           "link": "Page 4",
           "pid": "2"
         }
@@ -63,7 +63,7 @@
       "pid": "3",
       "position": {
         "x": "456",
-        "y": "1138.5"
+        "y": "1138"
       }
     },
     {
@@ -84,11 +84,11 @@
       "pid": "4",
       "position": {
         "x": "607",
-        "y": "1141.5"
+        "y": "1141"
       }
     },
     {
-      "text": "Ferryman::Eh, this stuff, it's all adult stuff.  I've always tried not to worry about it too much.  And like I said, I don't spend too much time in the hospital, other than passing through.\n\n\"Adult stuff.\"  He's at least in his early thirties.\n\nFerryman::That said, it seems likely enough that whatever was going on here is connected to Rosalind somehow, given that she was in charge of some of the staff transfers.  I suggest we keep digging.\n\n[[C->p:Not much about Mom in this one.]]",
+      "text": "Ferryman::Eh, this stuff, it's all adult stuff.  I've always tried not to worry about it too much.  And like I said, I don't spend too much time in the hospital, other than passing through.\n\nJasper::\"Adult stuff.\"  He's at least in his early thirties.\n\nFerryman::That said, it seems likely enough that whatever was going on here is connected to Rosalind somehow, given that she was in charge of some of the staff transfers.  I suggest we keep digging.\n\n[[C->p:Not much about Mom in this one.]]",
       "links": [
         {
           "name": "C",
@@ -100,7 +100,7 @@
       "pid": "5",
       "position": {
         "x": "532",
-        "y": "1300.5"
+        "y": "1300"
       }
     },
     {
@@ -116,11 +116,11 @@
       "pid": "6",
       "position": {
         "x": "541",
-        "y": "570.5"
+        "y": "570"
       }
     },
     {
-      "text": "To your shock, the papers appear to be the third and fourth entries of Vera's diary.\n\n[[Look!  I found some of the remaining diary entries!]]\n[[p:(Action) Read the entries.->Page 3]] ",
+      "text": "Jasper::These are the next two diary entries!  \n\n[[Look!  I found some of the remaining diary entries!]]\n[[p:(Action) Read the entries.->Page 3]] ",
       "links": [
         {
           "name": "Look!  I found some of the remaining diary entries!",
@@ -137,7 +137,7 @@
       "pid": "7",
       "position": {
         "x": "538",
-        "y": "699.5"
+        "y": "699"
       }
     },
     {
@@ -158,7 +158,7 @@
       "pid": "8",
       "position": {
         "x": "400",
-        "y": "843.5"
+        "y": "843"
       }
     },
     {
@@ -174,7 +174,7 @@
       "pid": "9",
       "position": {
         "x": "689",
-        "y": "1300.5"
+        "y": "1300"
       }
     },
     {
@@ -183,7 +183,7 @@
       "pid": "10",
       "position": {
         "x": "689",
-        "y": "1450.5"
+        "y": "1450"
       }
     }
   ],

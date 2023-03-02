@@ -35,7 +35,7 @@
       }
     },
     {
-      "text": "Ferryman::Sadly, in the era the infirmary was active, death during childbirth was depressingly common.  The medical professionals here were top of the line, certainly, but they were still constrained by the limited medical knowledge available to them.\n\n[[I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?]]",
+      "text": "Ferryman::Back when the Maternity Ward was active, death during childbirth was pretty common.  \n\nFerryman::The medical professionals here were top of the line, certainly, but they were still constrained by the limited medical knowledge available to them.\n\n[[I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?]]",
       "links": [
         {
           "name": "I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?",
@@ -83,12 +83,12 @@
       "name": "0;p:Where do we go from here?",
       "pid": "5",
       "position": {
-        "x": "1084",
+        "x": "1083",
         "y": "576"
       }
     },
     {
-      "text": "You peak around the corner and are greeted by an enormous, 18 body morgue.  The apparatus appears mostly intact, though a few of the doors have been wrestled from their hinges.  Even though this facility was shuttered years ago, you can perceive a faint whiff of Formaldehyde that continues to cling to the air.\n\n[[Continue->rises]] ",
+      "text": "You peak around the corner and are greeted by an enormous, 18 body morgue.  The apparatus appears mostly intact, though a few of the doors have been wrestled from their hinges.  \n\nEven though this facility was shuttered years ago, you can perceive a faint whiff of Formaldehyde that continues to cling to the air.\n\n[[Continue->rises]] ",
       "links": [
         {
           "name": "Continue",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "text": "Ferryman::To be honest, we aren't likely to find exactly what you are looking for here.  We're probably going to need to pay a visit to operations ward or perhaps the chronic ward to find exactly what you are looking for.  \n\nFerryman::But we'll probably find enough info here to better narrow down our search.  Hopefully after we're done here, we'll know which section of the Cradle to focus our efforts on reaching.  We won't be able to canvas the whole region, of course.\n\nFerryman::You mentioned that your Mom, Rosalind, often made professional visits to this hospital, correct?\n\n[[p:Yes, she came here for work often.  I don't have any clue why though, she wouldn't tell me.]]",
+      "text": "Ferryman::To be honest, we aren't likely to find exactly what you are looking for here.  We're probably going to need to pay a visit to operations ward or perhaps the chronic ward to find exactly what you are looking for.\n\nFerryman::But we'll probably find enough info here to better narrow down our search.  Hopefully after we're done here, we'll know which section of the Cradle to focus our efforts on reaching.  We won't be able to canvas the whole region, of course.\n\nFerryman::You mentioned that your Mom, Rosalind, often made professional visits to this hospital, correct?\n\n[[p:Yes, she came here for work often.  I don't have any clue why though, she wouldn't tell me.]]",
       "links": [
         {
           "name": "p:Yes, she came here for work often.  I don't have any clue why though, she wouldn't tell me.",
@@ -171,7 +171,7 @@
       "name": "p:You really think we'll find out what happened to Mom by searching this building?",
       "pid": "10",
       "position": {
-        "x": "1204",
+        "x": "1205",
         "y": "726"
       }
     },
@@ -192,7 +192,7 @@
       }
     },
     {
-      "text": "That kind of lack of relationship?\n\nFerryman::Alright, well, this hospital is huge and we'll never be able to canvas the entirety of it - let's focus our efforts on searching the administration building and maternity ward.\n\n[[p:Alright, let's start looking.]]",
+      "text": "Jasper::That kind of lack of relationship?\n\nFerryman::Alright, well, this hospital is huge and we'll never be able to canvas the entirety of it - let's focus our efforts on searching the administration building and maternity ward.\n\n[[p:Alright, let's start looking.]]",
       "links": [
         {
           "name": "p:Alright, let's start looking.",

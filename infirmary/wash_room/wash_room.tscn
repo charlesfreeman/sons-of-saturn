@@ -42,7 +42,7 @@ position = Vector2( 1458.13, 1979.57 )
 shape = SubResource( 2 )
 
 [node name="PopUp" parent="." instance=ExtResource( 3 )]
-popup_text = [ "Amelie::This appears to be some sort of linen washing facility.  Not sure why it's in the adminitstration building." ]
+popup_text = [ "Amelie::This appears to be some sort of linen washing facility.  Not sure why it's in the administration building." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
 position = Vector2( 751.728, 1033.18 )

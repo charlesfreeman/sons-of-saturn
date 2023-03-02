@@ -26,11 +26,8 @@ __meta__ = {
 }
 scene_right = "res://infirmary/isolation_wing_top_floor/isolation_wing_top_floor.tscn"
 scene_down = "res://infirmary/bright_arched_hallway/bright_arched_hallway.tscn"
-scene_left = "cell_grate_convo"
-alt_scene_left = "res://infirmary/isolation_cells/isolation_cells.tscn"
-non_roam_scene_left = true
+scene_left = "res://infirmary/isolation_cells/isolation_cells.tscn"
 req_flag_right = "cell_grate_convo"
-req_flag_left = "cell_grate_convo"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 left_path = true
@@ -55,3 +52,4 @@ shape = SubResource( 3 )
 
 [node name="PopUp" parent="." instance=ExtResource( 4 )]
 popup_text = [ "Wiggly::I suggest we head to the bottom floor and check on those medical supply cabinets before going upstairs." ]
+nav_popup_right = true

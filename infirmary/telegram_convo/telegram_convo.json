@@ -15,7 +15,7 @@
       "pid": "1",
       "position": {
         "x": "738",
-        "y": "1053.5"
+        "y": "1053"
       },
       "tags": [
         "page6"
@@ -34,14 +34,14 @@
       "pid": "2",
       "position": {
         "x": "746",
-        "y": "321.5"
+        "y": "321"
       },
       "tags": [
         "page1"
       ]
     },
     {
-      "text": "Ansel::EVEN WORSE IN SATURN CORE STOP NO MATTER HOW BAD YOU THINK YOU HAVE IT SHE WAS MUCH HIGHER RISK HERE\n\nFerryman::\"Vera.\"  Sounds as though they are discussing the woman who authored that diary.\n\n[[C->Page 3]]",
+      "text": "Ansel::EVEN WORSE IN SATURN CORE STOP NO MATTER HOW BAD YOU THINK YOU HAVE IT SHE WAS MUCH HIGHER RISK HERE\n\nFerryman::\"Vera.\"  Sounds as though they are discussing the woman who authored that diary we found earlier.\n\n[[C->Page 3]]",
       "links": [
         {
           "name": "C",
@@ -53,7 +53,7 @@
       "pid": "3",
       "position": {
         "x": "749",
-        "y": "463.5"
+        "y": "463"
       },
       "tags": [
         "page2"
@@ -72,14 +72,14 @@
       "pid": "4",
       "position": {
         "x": "742",
-        "y": "602.5"
+        "y": "602"
       },
       "tags": [
         "page3"
       ]
     },
     {
-      "text": "Ansel::VERA EXTREMELY PRODUCTIVE JUDGED BY QUANTITATIVE METRICS AND FAMILY WELL CONNECTED WITH ADMIN STOP TERMINATION WOULD BE OPTICAL DISASTER FROM MANY ANGLES STOP ORDER CAME STRAIGHT FROM ROSALIND\n\nThere it is again - that chill.\n\nFerryman::\"Rosalind\" - there it is again, that name.  Do you think they are referring to your Mom?\n\n[[p:Probably.  She was often tasked with overseeing the transfer of staff.  Let's keep going.->Page 5]]",
+      "text": "Ansel::VERA EXTREMELY PRODUCTIVE JUDGED BY QUANTITATIVE METRICS AND FAMILY WELL CONNECTED WITH ADMIN STOP TERMINATION WOULD BE OPTICAL DISASTER FROM MANY ANGLES STOP ORDER CAME STRAIGHT FROM ROSALIND\n\nJasper::There it is again - that chill.\n\nFerryman::\"Rosalind\" - there it is again, that name.  Do you think they are referring to your Mom?\n\n[[p:Probably.  She was often tasked with overseeing the transfer of staff.  Let's keep going.->Page 5]]",
       "links": [
         {
           "name": "p:Probably.  She was often tasked with overseeing the transfer of staff.  Let's keep going.",
@@ -91,7 +91,7 @@
       "pid": "5",
       "position": {
         "x": "739",
-        "y": "740.5"
+        "y": "741"
       },
       "tags": [
         "page4"
@@ -110,7 +110,7 @@
       "pid": "6",
       "position": {
         "x": "740",
-        "y": "895.5"
+        "y": "895"
       },
       "tags": [
         "page5"
@@ -129,14 +129,14 @@
       "pid": "7",
       "position": {
         "x": "737",
-        "y": "1213.5"
+        "y": "1213"
       },
       "tags": [
         "page7"
       ]
     },
     {
-      "text": "Before you sits a small desk hosting an antique typewriter.  The scene is tastefully backlit by a pair of partially smashed stained glass windows.  Judging by the relatively ornate detailings, you guess this office might have belonged to the head administrator.\n\n[[p:(Action) Rummage through the desk.]]",
+      "text": "Before you sits a small desk hosting an antique typewriter.  The scene is tastefully backlit by a pair of partially smashed stained glass windows.  \nThe details of the room are relatively ornate.  This office likely belonged to someone \"high up\" within the administrative staff.\n\n[[p:(Action) Rummage through the desk.]]",
       "links": [
         {
           "name": "p:(Action) Rummage through the desk.",
@@ -164,11 +164,11 @@
       "pid": "9",
       "position": {
         "x": "743",
-        "y": "173.5"
+        "y": "173"
       }
     },
     {
-      "text": "Ferryman::Yeah, I don't know.  Couldn't be anything too nefarious if they were willing to just leave telegrams like this in unsecured office drawers - if it was something serious they'd be more cautious.\n\nHe seems eager to move on from this train of thought.  I encourage indulging him.\n\n[[p:Alright.  Let's go find the rest of Vera's diary entries.]]",
+      "text": "Ferryman::Yeah, I don't know.  Couldn't be anything too nefarious if they were willing to just leave telegrams like this in unsecured office drawers - if it was something serious they'd be more cautious.\n\nJasper::He seems eager to move on from this train of thought.  I encourage indulging him.\n\n[[p:Alright.  Let's go find the rest of Vera's diary entries.]]",
       "links": [
         {
           "name": "p:Alright.  Let's go find the rest of Vera's diary entries.",
@@ -179,17 +179,17 @@
       "name": "p:Agreed.  But, I am curious why they were so terrified of Vera.  Makes you wonder what they were trying to hide.",
       "pid": "10",
       "position": {
-        "x": "737",
-        "y": "1363.5"
+        "x": "741",
+        "y": "1363"
       }
     },
     {
-      "text": "The Ferryman nodes.  You return the telegrams to the desk and continue on your way.",
+      "text": "The Ferryman nods.  You return the telegrams to the desk and continue on your way.",
       "name": "p:Alright.  Let's go find the rest of Vera's diary entries.",
       "pid": "11",
       "position": {
         "x": "737",
-        "y": "1513.5"
+        "y": "1513"
       }
     }
   ],

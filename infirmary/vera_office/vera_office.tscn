@@ -25,6 +25,8 @@ scene_down = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.ts
 
 [node name="ClickToSearch" parent="." instance=ExtResource( 3 )]
 next_scene = "vera_diary_convo_1"
+alt_next_scene = "vera_diary_convo_1_return"
+alt_req_prog_flag = "vera_office_convo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
 position = Vector2( 1381.93, 1384.02 )

@@ -3,6 +3,8 @@ extends Area2D
 var char_path_dict = {
 	"Wiggly" : "res://conversation_pov/char_profiles/wiggly/wiggly_sad.png",
 	"Amelie" : "res://conversation_pov/char_profiles/amelie/amelie_neutral.png",
+	"Julia" : "res://conversation_pov/char_profiles/julia/julia_placeholder.png",
+	"Jasper" : "res://conversation_pov/char_profiles/jasper/jasper_headshot_feathered.png",
 }
 var in_clickable_area = false
 var popup_done = false
@@ -108,6 +110,7 @@ func _check_in_party():
 		# can safely assume Amelie always in party, so she doesn't appear in global party list
 		if character != "Amelie":
 			in_party = in_party and character in Global.party
+	print("all in party: ", in_party)
 	return in_party
 
 

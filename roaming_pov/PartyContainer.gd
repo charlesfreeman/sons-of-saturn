@@ -1,7 +1,8 @@
 extends HBoxContainer
 
 var character_dict = {
-	"Wiggly" : "res://conversation_pov/char_profiles/wiggly/wiggly_sad.png",
+	"Wiggly" : "res://conversation_pov/char_profiles/wiggly/wiggly_feathered_closedin.png",
+	"Julia" : "res://conversation_pov/char_profiles/julia/julia_placeholder.png"
 }
 
 

@@ -39,7 +39,6 @@ onready var area = $ClickToEnter
 onready var bg = self.texture
 
 var default_bg = true
-var new_scene_played = false
 
 signal move_pov_up
 signal move_pov_down
@@ -51,8 +50,17 @@ signal enable_buttons
 signal swap_bg
 
 func _ready():
-	if prog_flag != "None":
+	# currently all convos that start with entering a room are one-offs. here we load the convo 
+	# only if the prog flag for this PoV has not yet been flipped.  If it has it isn't loaded. 
+	if new_scene_on_ready and not Global.get_prog_flag(prog_flag):
 		Global.flip_prog_flag(prog_flag)
+		yield(get_tree().create_timer(1.0), "timeout")
+		var options = SceneManager.create_options()
+		var general_options = SceneManager.create_general_options()
+		SceneManager.change_scene(new_scene, options, options, general_options)
+	elif prog_flag != "None":
+		Global.flip_prog_flag(prog_flag)
+		
 	# TODO change this to rely instead on signals
 	# get_parent().set_pos(position)
 	
@@ -65,19 +73,6 @@ func _ready():
 		node.connect("enable_buttons", self, "_enable_buttons")
 		node.connect("swap_bg", self, "_swap_bg")
 
-	if new_scene_on_ready and not new_scene_played:
-		new_scene_played = true
-#		var t = Timer.new()
-#		t.set_wait_time(1.0)
-#		t.set_one_shot(true)
-#		self.add_child(t)
-#		t.start()
-#		yield(t, "timeout")
-#		t.queue_free()
-		yield(get_tree().create_timer(1.0), "timeout")
-		var options = SceneManager.create_options()
-		var general_options = SceneManager.create_general_options()
-		SceneManager.change_scene(new_scene, options, options, general_options)
 	# TODO add logic to disable clickable area if path not available
 
 func swap_bg():

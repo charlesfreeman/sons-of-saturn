@@ -8,8 +8,8 @@ var pov_instance
 var options = SceneManager.create_options()
 var general_options = SceneManager.create_general_options()
 
-onready var camera = $VBoxContainer/ViewportContainer/Viewport/TextureRect/Camera2D
-onready var char_rect = $VBoxContainer/ViewportContainer/Viewport/TextureRect/CharRect
+onready var camera = $VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect/Camera2D
+onready var char_rect = $VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect/CharRect
 onready var up_button = $VBoxContainer/HBoxContainer/GridContainer/UpButton
 onready var right_button = $VBoxContainer/HBoxContainer/GridContainer/RightButton
 onready var down_button = $VBoxContainer/HBoxContainer/GridContainer/DownButton

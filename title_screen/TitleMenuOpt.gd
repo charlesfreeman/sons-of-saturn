@@ -14,11 +14,13 @@ func change_color(color: Color):
 
 
 func _on_TitleMenuOpt_focus_entered():
-	label.add_color_override("font_color", Color(1,1,0,1))
+	if not self.disabled:
+		change_color(Color(1,1,0,1))
 
 
 func _on_TitleMenuOpt_focus_exited():
-	change_color(Color(1, 1, 1, 1))
+	if not self.disabled:
+		change_color(Color(1, 1, 1, 1))
 
 
 func _on_TitleMenuOpt_mouse_entered():
@@ -33,4 +35,3 @@ func _on_NewGame_pressed():
 	var options = SceneManager.create_options()
 	var general_options = SceneManager.create_general_options()
 	SceneManager.change_scene("Quote", options, options, general_options)
-

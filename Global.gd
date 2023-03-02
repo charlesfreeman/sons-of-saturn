@@ -1,26 +1,37 @@
 extends Node
 
-var location = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.tscn"
+var location = "res://infirmary/isolation_stairwell_1f/isolation_stairwell_1f.tscn"
 # Amelie always assumed to be in party, never reason to check
 var party = ["Wiggly"]
 var active_popup = false
+var song = "None"
+var soundscape = "None"
+var songs = []
+var soundscapes = []
+var dbrightness = 0.6
+
 var prog_flags = {
 	"overgrowth_pink_hallway" : false,
 	"vera_office_convo" : false,
 	"tann_office_convo" : false,
 	"trash_chute_convo" : false,
 	"cell_grate_convo" : false,
+	"isolation_cells" : false,
 	"door_open_popup" : false,
+	"washing_machine_trio" : false,
 	"julia_first_convo" : false,
 	"medicine_cabinet_inspection" : false,
+	"crib_overlook_convo" : false,
+	"front_desk" : false,
+	"inspection_hallway" : false,
 	"wiggly_reunite" : false,
 	"None" : true,
 	"False" : false,
 }
-var song = "None"
-var soundscape = "None"
-var songs = []
-var soundscapes = []
+
+# keep track of what inventory player has globally, local scripts in charge of 
+# loading and displaying the corresponding textures
+var inventory = ["Jasper"]
 
 func _ready():
 	for c in Mdm.get_children():
@@ -78,29 +89,48 @@ func remove_from_party(char_name: String):
 	else:
 		print("Warning: cannot remove %s from party", char_name)
 
+func add_to_inv(item_name: String):
+	if not item_name in inventory:
+		party.append(item_name)
+	else:
+		print("Warning: %s already in party", item_name)
+
+func remove_from_inv(item_name: String):
+	if item_name in party:
+		party.erase(item_name)
+	else:
+		print("Warning: cannot remove %s from party", item_name)
+
 func produce_save_dict():
 	var save_dict = {
 		"location" : location,
-		"party" : party
+		"party" : party,
+		"prog_flags" : prog_flags,
 	}
 	return save_dict
 	
 func save_game():
-	var save_game = File.new()
-	save_game.open("user://savegame.save", File.WRITE)
+	var sgame = File.new()
+	sgame.open("user://savegame.save", File.WRITE)
 	var save_data = produce_save_dict()
-	save_game.store_line(to_json(save_data))
-	save_game.close()
+	sgame.store_line(to_json(save_data))
+	sgame.close()
 	
 func load_game():
-	var save_game = File.new()
-	if not save_game.file_exists("user://savegame.save"):
+	var sgame = File.new()
+	if not sgame.file_exists("user://savegame.save"):
 		return # Error! We don't have a save to load.
-	save_game.open("user://savegame.save", File.READ)
-	var save_data = parse_json(save_game.get_line())
+	sgame.open("user://savegame.save", File.READ)
+	var save_data = parse_json(sgame.get_line())
 	print(save_data.keys())
 	location = save_data["location"]
 	party = save_data["party"]
+	prog_flags = save_data["prog_flags"]
 	var options = SceneManager.create_options()
 	var general_options = SceneManager.create_general_options()
 	SceneManager.change_scene("roaming_pov", options, options, general_options)
+	
+func check_save_exists():
+	var sgame = File.new()
+	return sgame.file_exists("user://savegame.save")
+	

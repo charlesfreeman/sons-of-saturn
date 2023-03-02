@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://intro/intro_convo/DynamicBGScript.gd" type="Script" id=1]
+[ext_resource path="res://images/GSL/SubParis_4.jpg" type="Texture" id=2]
+[ext_resource path="res://sounds/switch_flip_fast.wav" type="AudioStream" id=3]
+[ext_resource path="res://sounds/switch_flip_slow.wav" type="AudioStream" id=4]
+
+[node name="DynamicBG" type="TextureRect" groups=["CharacterRects", "DynamicBGs"]]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -6.0
+margin_right = 2310.0
+margin_bottom = 2178.0
+mouse_filter = 2
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TweenTotalDarken" type="Tween" parent="."]
+
+[node name="TweenTotalBrighten" type="Tween" parent="."]
+
+[node name="TweenWaitDark" type="Tween" parent="."]
+
+[node name="TweenMostlyDarkToBright" type="Tween" parent="."]
+
+[node name="SwitchFlipSlow" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -15.0
+
+[node name="SwitchFlipFast" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -15.0
+
+[connection signal="tween_completed" from="TweenTotalDarken" to="." method="_on_TweenTotalDarken_tween_completed"]
+[connection signal="tween_completed" from="TweenWaitDark" to="." method="_on_TweenDark_tween_completed"]

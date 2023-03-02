@@ -1,7 +1,21 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
 [ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=2]
+[ext_resource path="res://intro/intro_convo/stage_bright_bg_2300x2160.png" type="Texture" id=3]
+[ext_resource path="res://intro/intro_convo/amelie_string_looking_down.png" type="Texture" id=4]
+[ext_resource path="res://intro/intro_convo/DynamicBG.tscn" type="PackedScene" id=5]
+[ext_resource path="res://intro/intro_convo/all_black_2300x2160_2.png" type="Texture" id=6]
+[ext_resource path="res://intro/intro_convo/amelie_string_looking_up.png" type="Texture" id=7]
+[ext_resource path="res://intro/intro_convo/jasper_suspend.png" type="Texture" id=8]
+[ext_resource path="res://intro/intro_convo/wiggly_a_pose.png" type="Texture" id=9]
+[ext_resource path="res://images/GSL/Berlin_Unterwelt_3.jpg" type="Texture" id=10]
+[ext_resource path="res://images/GSL/Illusion_Caves_3.jpg" type="Texture" id=11]
+[ext_resource path="res://images/GSL/Crystalline_Caverns_3.jpg" type="Texture" id=12]
+[ext_resource path="res://images/GSL/Opener_Cave.jpg" type="Texture" id=13]
+[ext_resource path="res://intro/intro_convo/looking_up_well_bg.png" type="Texture" id=14]
+[ext_resource path="res://sounds/switch_flip_fast.wav" type="AudioStream" id=15]
+[ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=16]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -10,21 +24,131 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 2300.0
+margin_bottom = 2160.0
+texture = ExtResource( 6 )
+
+[node name="BGCradle" parent="." instance=ExtResource( 5 )]
+margin_left = 417.0
+margin_top = 196.0
+margin_right = 2074.0
+margin_bottom = 1600.0
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 5
+new_bg_tag = "bg_cradle"
+
+[node name="BGTrestle" parent="." instance=ExtResource( 5 )]
+margin_left = 360.0
+margin_top = 96.0
+margin_right = 1847.0
+margin_bottom = 1564.0
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 5
+new_bg_tag = "bg_trestle"
+
+[node name="BGSewer" parent="." instance=ExtResource( 5 )]
+margin_left = 138.0
+margin_top = 50.0
+margin_right = 2195.0
+margin_bottom = 2032.0
+texture = ExtResource( 14 )
+expand = true
+stretch_mode = 5
+new_bg_tag = "bg_sewer"
+
+[node name="BGOutbound" parent="." instance=ExtResource( 5 )]
+margin_left = 341.163
+margin_top = -207.103
+margin_right = 2612.16
+margin_bottom = 2375.9
+texture = ExtResource( 13 )
+expand = true
+stretch_mode = 5
+new_bg_tag = "bg_outbound_lines"
+
+[node name="BGPioneers" parent="." instance=ExtResource( 5 )]
+margin_left = 355.0
+margin_top = 346.0
+margin_right = 2046.0
+margin_bottom = 1566.0
+texture = ExtResource( 11 )
+expand = true
+stretch_mode = 5
+new_bg_tag = "bg_pioneers"
+
+[node name="DynamicBG" parent="." instance=ExtResource( 5 )]
+modulate = Color( 0.392157, 0.392157, 0.392157, 1 )
+margin_left = 0.0
+margin_right = 2300.0
+margin_bottom = 2160.0
+texture = ExtResource( 3 )
+is_visible = true
+
 [node name="Convo" parent="." instance=ExtResource( 1 )]
+subject = "Amelie"
 scriptPath = "res://intro/intro_convo/intro_convo.json"
-backgroundPath = "res://intro/intro_convo/ia_dark_amelie_drooped_2300x2160.png"
+backgroundPath = "res://intro/intro_convo/stage_dark_no_bg_2300x2160.png"
 sliverPath = "res://intro/intro_convo/intro_auditorium_sliver.png"
 nextLocation = "res://sewer/just_stood_up/just_stood_up.tscn"
 fade_tag_dict = {
 "lookingup": "res://sewer/convo_looking_up_well/looking_up_well_crop_2300x2160.png",
-"rise": "res://intro/intro_convo/just_stood_up_2300x2160.png",
-"wakeup": "res://intro/intro_convo/ia_amelie_bright_headup_2300x2160.png"
+"rise": "res://intro/intro_convo/just_stood_up_2300x2160.png"
 }
 fade_tag_dict_sliver = {
 "lookingup": "res://sewer/convo_looking_up_well/looking_up_well_sliver.png",
-"rise": "res://intro/intro_convo/just_stood_up_sliver.png",
-"wakeup": "res://intro/intro_convo/intro_auditorium_sliver.png"
+"rise": "res://intro/intro_convo/just_stood_up_sliver.png"
 }
 
-[node name="CharacterRect" parent="." instance=ExtResource( 2 )]
-expand = true
+[node name="AmelieHeadDown" parent="." instance=ExtResource( 2 )]
+margin_left = 861.0
+margin_top = 613.0
+margin_right = 1561.0
+margin_bottom = 1450.0
+texture = ExtResource( 4 )
+dark_on_start = true
+appear_tag = ""
+disappear_tag = "wakeup"
+
+[node name="AmelieLookingUp" parent="." instance=ExtResource( 2 )]
+margin_left = 834.052
+margin_top = 570.781
+margin_right = 1508.05
+margin_bottom = 1569.78
+texture = ExtResource( 7 )
+appear_tag = "wakeup"
+disappear_tag = "lookingup"
+
+[node name="Jasper" parent="." instance=ExtResource( 2 )]
+margin_left = 1361.0
+margin_top = 1072.0
+margin_right = 1884.0
+margin_bottom = 1562.0
+texture = ExtResource( 8 )
+appear_tag = ""
+disappear_tag = "lookingup"
+brighten_tag = "lightup_jasper"
+appear_dark_tag = "jasper_dark"
+
+[node name="Wiggly" parent="." instance=ExtResource( 2 )]
+appear_tag = ""
+appear_dark_tag = "ferryman_overhead_dark"
+
+[node name="WigglySuspend" parent="." instance=ExtResource( 2 )]
+margin_left = 502.0
+margin_top = 937.509
+margin_right = 934.0
+margin_bottom = 1584.51
+texture = ExtResource( 9 )
+appear_tag = ""
+disappear_tag = "lookingup"
+brighten_tag = "ferryman_lightup"
+appear_dark_tag = "ferryman_dark"
+
+[node name="ConvoSoundEffect" parent="." instance=ExtResource( 16 )]
+stream = ExtResource( 15 )
+volume_db = -15.0
+tag_to_play = "wakeup"
+play_once = true

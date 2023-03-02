@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "On with it we go.\n\nYou find yourself flat on your back, staring up an access tube that leads to the ground above.  Muscle control hasn't yet returned to most of your body, but you manage to break the crusty seal incarcerating your eyes.  The light pours into your irises as if concentrated by a funnel.\n\nThis is the first time you've seen sunlight in nearly six hours.  You thought the light would be soothing, freeing to soak in, but it's not.  \n\nInstead you feel like a man on a life raft dying of thirst.  Water water everywhere, but not a drop to drink.  A celibate monk at the moment of greatest temptation.  Indulgence would be fatal.\n\nAnd yet you cannot help but fixate on the light above.  You lie flat on your back and stare up the well, rapt and in awe.\n\nAs you lay flat, drops of water occasionally mist your forehead.  It feels like water torture.\n\n[[We've only been crawling through the sewer for six hours?]] \n[[p:I want to climb out.  Feel the sun and the air.]] ",
+      "text": "Jasper::On with it we go.\n\nYou find yourself flat on your back, staring up an access tube that leads to the ground above.  Muscle control hasn't yet returned to most of your body, but you manage to break the crusty seal incarcerating your eyes.  The light pours into your irises as if concentrated by a funnel.\n\nThis is the first time you've seen sunlight in nearly six hours.  You thought the light would be soothing, freeing to soak in, but it's not.  Instead you feel like a man on a life raft dying of thirst. \n\nAs you lay flat, drops of water occasionally mist your forehead.  It feels like water torture.\n\n[[We've only been crawling through the sewer for six hours?]] \n[[p:I want to climb out.  Feel the sun and the air.]] ",
       "links": [
         {
           "name": "We've only been crawling through the sewer for six hours?",
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "text": "Didn't it feel more like eight?  But yes, it's 10:00 in the morning, and you entered the tunnels outside the Cradle just after 4:00.  \n\nIf it's any consolation, that means you've been moving at a pretty steady clip.  Fifteen miles in six hours is respectable time by sewer-speed standards.\n\n[[Continue->Looking Up]] ",
+      "text": "Jasper::Didn't it feel more like eight?  But yes, it's 10:00 in the morning, and you entered the tunnels outside the Cradle just after 4:00. \n\nJasper::If it's any consolation, that means you've been moving at a pretty steady clip.  Ten miles in six hours is respectable time by sewer-speed standards.\n\n[[Continue->Looking Up]] ",
       "links": [
         {
           "name": "Continue",
@@ -44,16 +44,16 @@
       }
     },
     {
-      "text": "You easily could climb this well.  Even fatigued, chimney-ing up this cylinder would require only mild sweating and grunting.\n\nBut you won't.\n\n[[Why wouldn't I?  Why can't I just pop out the top and bask in the light?]]\n[[But sunlight is the only thing I crave.  I'm climbing out of this well and basking in it for a bit.]]\n[[p:It's not too late to turn back.  I can just pop out of this well and run straight out of the Cradle.]]",
+      "text": "Jasper::You could easily climb this well.  Even fatigued, chimney-ing up this cylinder would require only mild sweating and grunting.\n\nJasper::But you won't.\n\n[[Why wouldn't I?  Why can't I just pop out the top and roll around a little?]]\n[[But sunlight is the only thing I crave.  I'm climbing out of here and basking in it for a bit.]]\n[[p:It's not too late to turn back.  I can just pop out of this well and run straight out of the Cradle.]]",
       "links": [
         {
-          "name": "Why wouldn't I?  Why can't I just pop out the top and bask in the light?",
-          "link": "Why wouldn't I?  Why can't I just pop out the top and bask in the light?",
+          "name": "Why wouldn't I?  Why can't I just pop out the top and roll around a little?",
+          "link": "Why wouldn't I?  Why can't I just pop out the top and roll around a little?",
           "pid": "6"
         },
         {
-          "name": "But sunlight is the only thing I crave.  I'm climbing out of this well and basking in it for a bit.",
-          "link": "But sunlight is the only thing I crave.  I'm climbing out of this well and basking in it for a bit.",
+          "name": "But sunlight is the only thing I crave.  I'm climbing out of here and basking in it for a bit.",
+          "link": "But sunlight is the only thing I crave.  I'm climbing out of here and basking in it for a bit.",
           "pid": "4"
         },
         {
@@ -70,7 +70,7 @@
       }
     },
     {
-      "text": "Alright, go for it.  No reason you can't get out of here and roll around in the fresh air for a few minutes.  You've afforded yourself that much before.  We both know you'll climb right back down though.\n\nGo ahead.  Don't be long now.\n\n...\n\nSee?  You don't have the nerve.  \n\n[[Continue->p:I want to climb out.  Feel the sun and the air.]] ",
+      "text": "Jasper::Alright, go for it.  No reason you can't get out of here and roll around in the fresh air for a few minutes.\n\nJasper::Go ahead.  Don't be long now.\n\nJasper::...\n\nJasepr::See?  You don't have the nerve.  \n\n[[Continue->p:I want to climb out.  Feel the sun and the air.]] ",
       "links": [
         {
           "name": "Continue",
@@ -78,7 +78,7 @@
           "pid": "3"
         }
       ],
-      "name": "But sunlight is the only thing I crave.  I'm climbing out of this well and basking in it for a bit.",
+      "name": "But sunlight is the only thing I crave.  I'm climbing out of here and basking in it for a bit.",
       "pid": "4",
       "position": {
         "x": "1048",
@@ -86,16 +86,16 @@
       }
     },
     {
-      "text": "Well, it actually is kind of too late for that.  In the material sense, no less.  \n\nNo, really.  You've been tunneling for six hours.  You're well into the off-limits section of the Cradle.  You could probably get away with popping your head out for a few minutes, but trying to get out of here without your Ferryman guide would be suicide.  \n\nSpeaking of, shouldn't he be here by now?  You were only a few minutes ahead of him.\n\n[[p:(Action) Shout for the Ferryman]]\n[[p:(Action) Just wait and enjoy the view a bit longer]]",
+      "text": "Jasper::Well, it actually is kind of too late for that.  In the material sense, no less.  \n\nJasper::We've been tunneling for six hours.  We're well into the off-limits section of the Cradle.  Trying to get out of here without your Ferryman guide would be suicide.  \n\nJasper::Speaking of, shouldn't he be here by now?  You were only a few minutes ahead of him.\n\n[[p:(Action) Shout for the Ferryman.]]\n[[p:(Action) Just wait and enjoy the view a bit longer.]]",
       "links": [
         {
-          "name": "p:(Action) Shout for the Ferryman",
-          "link": "p:(Action) Shout for the Ferryman",
+          "name": "p:(Action) Shout for the Ferryman.",
+          "link": "p:(Action) Shout for the Ferryman.",
           "pid": "7"
         },
         {
-          "name": "p:(Action) Just wait and enjoy the view a bit longer",
-          "link": "p:(Action) Just wait and enjoy the view a bit longer",
+          "name": "p:(Action) Just wait and enjoy the view a bit longer.",
+          "link": "p:(Action) Just wait and enjoy the view a bit longer.",
           "pid": "8"
         }
       ],
@@ -107,15 +107,20 @@
       }
     },
     {
-      "text": "Look at yourself.  You are covered in tar and stuck to the top of a terrifying but beautiful horse.  And the horse is doing its damndest to keep you down there, at the bottom of this well.  Anyone would find it difficult to climb under those circumstances.\n\nYou came here for a reason.  You might flirt with the idea of bailing, escaping your fate, but deep down we both know what track your on.\n\nNo one can help a puddle up the wall.\n\n[[Why do I need to continue into the Cradle?  What's so important about that place?]] \n\n",
+      "text": "Jasper::Look at yourself.  You are covered in tar and stuck to the top of a terrifying but beautiful horse.  And the horse is doing its damndest to keep you down there, at the bottom of this well.  Anyone would find it difficult to climb under those circumstances.\n\nJasper::You came here for a reason.  You might flirt with the idea of bailing, escaping your fate, but deep down we both know what track your on.\n\nJasper::No one can help a puddle up the wall.\n\n[[What the fuck are you talking about?]]\n[[Why do I need to continue into the Cradle?  What's so important about that place?]] \n\n",
       "links": [
+        {
+          "name": "What the fuck are you talking about?",
+          "link": "What the fuck are you talking about?",
+          "pid": "83"
+        },
         {
           "name": "Why do I need to continue into the Cradle?  What's so important about that place?",
           "link": "Why do I need to continue into the Cradle?  What's so important about that place?",
           "pid": "25"
         }
       ],
-      "name": "Why wouldn't I?  Why can't I just pop out the top and bask in the light?",
+      "name": "Why wouldn't I?  Why can't I just pop out the top and roll around a little?",
       "pid": "6",
       "position": {
         "x": "853",
@@ -123,7 +128,7 @@
       }
     },
     {
-      "text": "The reverberations of your voice bouncing off the sewer walls sound unearthly and strained.  One could be forgiven for thinking that a screaming donkey in heat resided in this tunnel.\n\n...\n\nNo response from the Ferryman.  I think its time to discontinue the experimental orchestra and get back to sunbathing.\n\n[[p:How much longer do I have left?]]",
+      "text": "The reverberations of your voice bouncing off the sewer walls sound unearthly and strained.  One could be forgiven for thinking that a screaming donkey in heat waits at the end of this tunnel.\n\n...\n\nThe Ferryman does not respond to your mating calls.  \n\nJasper::I think its time to discontinue the experimental orchestra and get back to sunbathing.\n\n[[p:How much longer do I have left?]]",
       "links": [
         {
           "name": "p:How much longer do I have left?",
@@ -131,7 +136,7 @@
           "pid": "9"
         }
       ],
-      "name": "p:(Action) Shout for the Ferryman",
+      "name": "p:(Action) Shout for the Ferryman.",
       "pid": "7",
       "position": {
         "x": "1161",
@@ -139,7 +144,7 @@
       }
     },
     {
-      "text": "That's a pretty enthralling circle isn't it?  Simply sublime.\n\nBut really though, how long can you stay entertained by staring at a hole in the ceiling?\n\n[[p:How much longer do I have left?]] \n\n\n\n\n",
+      "text": "Jasper::That's a pretty enthralling circle isn't it?  Simply sublime.\n\nJasper::But really though, how long can you stay entertained by staring at a hole in the ceiling?\n\nJasper::You're like one of those idiots that think eclipses are worth watching.\n\n[[p:How much longer do I have left?]] \n\n\n\n\n",
       "links": [
         {
           "name": "p:How much longer do I have left?",
@@ -147,7 +152,7 @@
           "pid": "9"
         }
       ],
-      "name": "p:(Action) Just wait and enjoy the view a bit longer",
+      "name": "p:(Action) Just wait and enjoy the view a bit longer.",
       "pid": "8",
       "position": {
         "x": "1311",
@@ -155,7 +160,7 @@
       }
     },
     {
-      "text": "Until the Ferryman catches up to you?  Who knows.\n\nOr until you reach the end of this god forsaken sewer and finally find your way into the infirmary?  I don't know that either.  But probably not too long.\n\n[[p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.]]",
+      "text": "Jasper::Until the Ferryman catches up to us?  Who knows.\n\nJasper::Or until you reach the end of this god forsaken sewer and finally find your way into the infirmary?  I don't know that either.  But probably not too long.\n\n[[p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.]]",
       "links": [
         {
           "name": "p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.",
@@ -171,11 +176,11 @@
       }
     },
     {
-      "text": "Yep, pretty sure the situation won't get any more complicated than that.  These tunnels will take you straight to the infirmary, right at the edge of the Cradle.  You'll pop out of an indoor manhole cover or whatever, find a nicely formatted document explaining what happend to your Mom on a nearby desk, and then escape the same way you got in.\n\n[[You sound facetious, internal monologue.  Or whatever you are.]]\n[[What if I can't find any trace of what happened to mom?]]\n[[p:This will all be worth it, right?]]",
+      "text": "Jasper::Yep, pretty sure the situation won't get any more complicated than that.  \n\nJasper::These tunnels will take you straight to the infirmary, right at the edge of the Cradle.  You'll pop out of an indoor manhole cover or whatever, find a nicely formatted document explaining what happend to your Mom on a nearby desk, and then escape the same way you got in.\n\n[[You sound facetious, vintage plush toy that's talking to me.]]\n[[What if I can't find any trace of what happened to mom?]]\n[[p:This will all be worth it, right?]]",
       "links": [
         {
-          "name": "You sound facetious, internal monologue.  Or whatever you are.",
-          "link": "You sound facetious, internal monologue.  Or whatever you are.",
+          "name": "You sound facetious, vintage plush toy that's talking to me.",
+          "link": "You sound facetious, vintage plush toy that's talking to me.",
           "pid": "11"
         },
         {
@@ -197,7 +202,7 @@
       }
     },
     {
-      "text": "So you aren't too tone-deaf, it seems.  You're right, I'm being facetious.  The Cradle is never that simple.  The knotted complex of buildings inside twist and turn in every direction, full of traps and surprises.\n\nThat's why you had to hire a Ferryman as a guide.\n\n[[Continue->p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.]] ",
+      "text": "Jasper::So you aren't too tone-deaf, it seems.  You're right, I'm being facetious.  This won't be so simple.\n\nJasper::We don't know where your Mom was the day things collapsed.  We're not even sure where to start looking.\n\nJasper::That's why we had to hire the Ferryman.\n\n[[Continue->p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.]] ",
       "links": [
         {
           "name": "Continue",
@@ -205,29 +210,29 @@
           "pid": "10"
         }
       ],
-      "name": "You sound facetious, internal monologue.  Or whatever you are.",
+      "name": "You sound facetious, vintage plush toy that's talking to me.",
       "pid": "11",
       "position": {
-        "x": "1036",
+        "x": "1035",
         "y": "1357"
       }
     },
     {
-      "text": "If you find the closure your after, miraculously cure all your psychic ills in the process, use your newfound unhindered and undamaged brain to become rich, famous, and wildly successful, and then retire early, then sure, this excursion will be \"worth it.\"  \n\nBut if you die here, you probably wouldn't consider it \"worth it.\"\n\n[[If I die I wouldn't consider it \"not worth it\" either, technically]]\n[[0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi]]\n[[1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel]]",
+      "text": "Jasper::If you find the closure you're after, miraculously cure all psychic ills in the process, use your newfound unhindered and undamaged brain to become rich and famous, and then retire early, then sure, this excursion will be \"worth it.\"  \n\nJasper::But if you die here, you probably wouldn't consider it \"worth it.\"\n\n[[If I die I wouldn't consider it \"not worth it\" either, technically.]]\n[[0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi.]]\n[[1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel.]]",
       "links": [
         {
-          "name": "If I die I wouldn't consider it \"not worth it\" either, technically",
-          "link": "If I die I wouldn't consider it \"not worth it\" either, technically",
+          "name": "If I die I wouldn't consider it \"not worth it\" either, technically.",
+          "link": "If I die I wouldn't consider it \"not worth it\" either, technically.",
           "pid": "13"
         },
         {
-          "name": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi",
-          "link": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi",
+          "name": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi.",
+          "link": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi.",
           "pid": "24"
         },
         {
-          "name": "1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel",
-          "link": "1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel",
+          "name": "1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel.",
+          "link": "1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel.",
           "pid": "15"
         }
       ],
@@ -239,7 +244,7 @@
       }
     },
     {
-      "text": "Vacuously, that's true.  But you'd consider it a shame right now, wouldn't you?  While your still breathing?\n\nThink about everything that would leave unresolved.  All the humiliations and all the pain that would ultimately amount to nothing if you were to die here, rendering your entire life absurd.  You don't want that do you?\n\nYou'd be comparable to one of the baby sea turtles who never makes it to the ocean.  You were born, pecked at, and now you'll die.\n\n[[No one wants that.]] \n[[Everything is relaxed when there's no anything.]]",
+      "text": "Jasper::Vacuously, that's true.  But you'd consider it a shame right now, wouldn't you?  While your still breathing?\n\nJasper::Think about all the humiliations, all the unjustified pain; all of it would mean nothing if you were to die here.  You don't want that, do you?\n\nJasper::You'd jsut be one more baby sea turtle who never made it to the ocean.  You were born, pecked at, and now you'll die.\n\n[[No one wants that.]] \n[[Everything is relaxed when there's no anything.]]",
       "links": [
         {
           "name": "No one wants that.",
@@ -252,7 +257,7 @@
           "pid": "16"
         }
       ],
-      "name": "If I die I wouldn't consider it \"not worth it\" either, technically",
+      "name": "If I die I wouldn't consider it \"not worth it\" either, technically.",
       "pid": "13",
       "position": {
         "x": "1052",
@@ -260,7 +265,7 @@
       }
     },
     {
-      "text": "But plenty of people *get* that.\n\nYou think any baby sea turtle plans on being the one to get eaten by a crab?  You think any kid in Scottish folk tales plans on being one of the children dragged down by a Kelpie?\n\nLet's make sure you aren't one of them.  Because it's a real possibility, a real fate that could befall you.\n\n[[Continue->p:This will all be worth it, right?]] ",
+      "text": "Jasper::But plenty of people *get* that.\n\nJasper::You think any baby sea turtle plans on being the one to get eaten by a crab?  You think any kid in Scottish folk tales plans on being one of the children dragged down by a Kelpie?\n\nJasper::Let's make sure you aren't one of them.  Because it's a real possibility, a real fate that could befall you.\n\n[[Continue->p:This will all be worth it, right?]] ",
       "links": [
         {
           "name": "Continue",
@@ -276,7 +281,7 @@
       }
     },
     {
-      "text": "Yeah, dying after actually entering the Cradle proper would be a lot less humiliating at least.  You've gotta protect your reputation among the cabal of observers you're imagining in your head right now.\n\nSpeaking of, what's that noise?\n\n[[Continue->Ferryman]]",
+      "text": "Jasper::Yeah, dying after actually entering the Cradle proper would be a lot less humiliating at least.  You've gotta protect your reputation among the cabal of observers you're imagining in your head right now.\n\nJasper::Speaking of, what's that noise?\n\n[[Continue->Ferryman]]",
       "links": [
         {
           "name": "Continue",
@@ -284,15 +289,15 @@
           "pid": "17"
         }
       ],
-      "name": "1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel",
+      "name": "1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel.",
       "pid": "15",
       "position": {
-        "x": "1542",
-        "y": "1507"
+        "x": "1512",
+        "y": "1480"
       }
     },
     {
-      "text": "So you would consider the fate of 99.9% of baby sea turtles a success?  After all, there's nothing to resolve if you've been eaten by a crab.\n\n[[Continue->p:This will all be worth it, right?]]",
+      "text": "Jasper::So you would consider the fate of 99.9% of baby sea turtles a success?  After all, there's nothing to resolve if you've been eaten by a crab.\n\n[[Continue->p:This will all be worth it, right?]]",
       "links": [
         {
           "name": "Continue",
@@ -308,51 +313,46 @@
       }
     },
     {
-      "text": "Ferryman::...\n\nFerryman::Is everything alright Miss?\n\n[[Why do you think there's something wrong with me?]]\n[[p:I feel fine.  What took you so long?]]",
+      "text": "Ferryman::...\n\n[[C->Ferry2]]\n",
       "links": [
         {
-          "name": "Why do you think there's something wrong with me?",
-          "link": "Why do you think there's something wrong with me?",
-          "pid": "18"
-        },
-        {
-          "name": "p:I feel fine.  What took you so long?",
-          "link": "p:I feel fine.  What took you so long?",
-          "pid": "19"
+          "name": "C",
+          "link": "Ferry2",
+          "pid": "96"
         }
       ],
       "name": "Ferryman",
       "pid": "17",
       "position": {
-        "x": "1541",
-        "y": "1658"
+        "x": "1648",
+        "y": "1557"
       },
       "tags": [
-        "ferryman"
+        "ferryman_overhead_dark"
       ]
     },
     {
-      "text": "Ferryman::I apologize.  I just...got concerned when I saw you lying flat on your back.\n\nLying in diluted sewage, no less.\n\n[[Continue->Ferryman]] ",
+      "text": "Ferryman::I apologize.  I just...got concerned when I saw you lying flat on your back.\n\nJasper::Lying in diluted sewage, no less.\n\n[[Continue->Ferry2]] ",
       "links": [
         {
           "name": "Continue",
-          "link": "Ferryman",
-          "pid": "17"
+          "link": "Ferry2",
+          "pid": "96"
         }
       ],
       "name": "Why do you think there's something wrong with me?",
       "pid": "18",
       "position": {
-        "x": "1422",
-        "y": "1822"
+        "x": "1497",
+        "y": "1821"
       }
     },
     {
-      "text": "Ferryman::Apologies for falling behind, I'm not as fit as I was when I first became a Ferryman.  I couldn't keep up with someone as athletic as yourself.  \n\nFerryman::...\n\nFerryman::Also, I knew it would be fine if you got a bit ahead.  The more labyrinthine portions of the sewers are behind us - its a straight shot from here to the infirmary, and only I have the key to the locked entrance ahead.\n\n[[p:Alright, let's get going]]\n[[p:Can I stay here just a bit longer?]]\n\n",
+      "text": "Ferryman::Apologies for falling behind, I'm not as fit as I was when I first became a Ferryman.  I couldn't keep up with someone as athletic as yourself.  \n\nFerryman::...\n\nFerryman::Also, I knew it would be fine if you got a bit ahead.  The more labyrinthine portions of the sewers are behind us - its a straight shot from here to the infirmary, and only I have the key to the locked entrance ahead.\n\n[[p:Alright, let's get going.]]\n[[p:Can I stay here just a bit longer?]]\n\n",
       "links": [
         {
-          "name": "p:Alright, let's get going",
-          "link": "p:Alright, let's get going",
+          "name": "p:Alright, let's get going.",
+          "link": "p:Alright, let's get going.",
           "pid": "20"
         },
         {
@@ -369,7 +369,7 @@
       }
     },
     {
-      "text": "Ferryman::Yes, let's.  We want to be out of the Cradle before the sun sets.\n\n[[p:(Action) Stand up.]]",
+      "text": "Ferryman::Yes, let's.  The water levels will rise before too long, they're usually pretty high by mid-day.\n\n[[p:(Action) Stand up.]]",
       "links": [
         {
           "name": "p:(Action) Stand up.",
@@ -377,7 +377,7 @@
           "pid": "22"
         }
       ],
-      "name": "p:Alright, let's get going",
+      "name": "p:Alright, let's get going.",
       "pid": "20",
       "position": {
         "x": "1565",
@@ -385,7 +385,7 @@
       }
     },
     {
-      "text": "Ferryman::Well... I would like to accomodate this request, but I really cannot recommend staying here any longer.  The water levels in these tunnels rise during mid-day.  And we shouldn't waste time - we don't know exactly where the documents you are after are, and we should avoid being stuck in the Cradle after sunset.\n\nHe's being polite.  Staying here any longer is an awful idea.\n\n[[p:(Action) Stand up.]]",
+      "text": "Ferryman::Well... I would like to accomodate this request, but I really cannot recommend staying here any longer.  The water levels in these tunnels rise during mid-day.  And we should avoid breathing in too many of the gases.\n\nJasper::He's being polite.  Staying here any longer is an awful idea.\n\n[[p:(Action) Stand up.]]",
       "links": [
         {
           "name": "p:(Action) Stand up.",
@@ -430,7 +430,7 @@
       ]
     },
     {
-      "text": "Then you're out of luck.  Organizing this infiltration took a full year.  Scrounging up enough to pay the Ferryman's broker took several months on top of that.  And that only supplemented the very large loan you took out to pay for this clandestine excursion.  \n\nSo, you better hope you find a little emotional closure somewhere in there.  You'll suffer a very poor return on investment otherwise.\n\n[[Continue->p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.]] ",
+      "text": "Jasper::Then we're out of luck.  Organizing this clandestine excursion took a full year.  Scrounging up enough to pay the Ferryman's broker took several months on top of that.\n\nJasper::So, let's hope we find a little emotional closure somewhere in here.  Otherwise we're looking at a pretty poor return on investment.\n\n[[Continue->p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.]] ",
       "links": [
         {
           "name": "Continue",
@@ -446,7 +446,7 @@
       }
     },
     {
-      "text": "You are full of poison.  You got that much correct.  So in a way, you are pretty similar to an aquatic blue-ringed fiend.  \n\nBut you've also got a lot in common with an octopus's victim.  You're a tourist sap who ended up petrified on the beach, pumped full of tetrodotoxin, unable even to close their eyes, staring directly at the sun.\n\nYou are flat on your back, paralyzed.  You even lack the wit to shut your eyelids, and the foreign sun is turning your irises into swiss cheese.\n\n[[Continue->p:This will all be worth it, right?]] \n",
+      "text": "Jasper::You are full of poison.  You got that much correct.  So in a way, you are pretty similar to an aquatic blue-ringed fiend.  \n\nJasper::But you've also got a lot in common with an octopus's victim.  You're a tourist sap who ended up petrified on the beach, pumped full of tetrodotoxin, unable even to close their eyes, staring directly at the sun.\n\nJasper::You are flat on your back, paralyzed.  You even lack the wit to shut your eyelids, and the foreign sun is turning your irises into swiss cheese.\n\n[[Continue->p:This will all be worth it, right?]] \n",
       "links": [
         {
           "name": "Continue",
@@ -454,7 +454,7 @@
           "pid": "12"
         }
       ],
-      "name": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi",
+      "name": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi.",
       "pid": "24",
       "position": {
         "x": "1361",
@@ -462,23 +462,23 @@
       }
     },
     {
-      "text": "Ostensibly, you came here to find out what happened to your Mom.  Everyone who comes to the Cradle is looking for closure of some form, and you're no different.  \n\n[[Why should I care about finding my mom?  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.]]",
+      "text": "Jasper::Ostensibly, you came here to find out what happened to your Mom, remember?.  Everyone who comes to the Cradle is looking for closure of some form, and you're no different.  \n\n[[I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.]]",
       "links": [
         {
-          "name": "Why should I care about finding my mom?  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
-          "link": "Why should I care about finding my mom?  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
+          "name": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
+          "link": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
           "pid": "26"
         }
       ],
       "name": "Why do I need to continue into the Cradle?  What's so important about that place?",
       "pid": "25",
       "position": {
-        "x": "853",
-        "y": "895"
+        "x": "788",
+        "y": "896"
       }
     },
     {
-      "text": "She disappeared nine years ago, when you were 13 years old.  The void she left scabbed over, got filled with scar tissue - but never really healed.  No hair follicules grow in that part of your psyche.\n\nYour mom was research faculty at the HART generating facility in the Cradle.  She, like many others, had to drop everything and escape during the collapse.  She escaped carrying a smaller, four year old version of yourself.  \n\nNine years ago, she hired a Ferryman and ventured back into the Cradle, trying to salvage what she could of her research.  She didn't come back.  So you came here to retrace her steps and find out what happened.  That's why you are in a sewer and not running through a field of bullet ant infested sunflowers.\n\n[[Continue->p:I want to climb out.  Feel the sun and the air.]]",
+      "text": "Jasper::Really?  The void she left scabbed over, got filled with scar tissue - but never really healed.  No hair follicules grow in that part of your psyche. \n\nJasper::She's the reason you aren't whole.  She's the reason you can't retire.  She's what you left behind here.\n\nJasper::That's why you are in a sewer and not running through a field of bullet ant infested sunflowers.\n\n[[Continue->p:I want to climb out.  Feel the sun and the air.]]",
       "links": [
         {
           "name": "Continue",
@@ -486,15 +486,15 @@
           "pid": "3"
         }
       ],
-      "name": "Why should I care about finding my mom?  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
+      "name": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
       "pid": "26",
       "position": {
-        "x": "851",
-        "y": "1044"
+        "x": "858",
+        "y": "1073"
       }
     },
     {
-      "text": "Ferryman::Perhaps a hundred meters, at most.  We are very close Miss.\n\nFerryman::In fact, that well emerges into one of the General Hospital's interior courtyards.  That's how close we are.\n\nSee?  That well was a false hope.  You made the right call.\n\n[[C->p:(Action) Stand up.]] ",
+      "text": "Ferryman::Perhaps a hundred meters, at most.  We are very close Miss.\n\nFerryman::In fact, that access shaft emerges into one of the Infirmary's interior courtyards.  That's how close we are.\n\nJasper::See?  That access shaft was a false hope.  You made the right call.\n\n[[C->p:(Action) Stand up.]] ",
       "links": [
         {
           "name": "C",
@@ -510,7 +510,7 @@
       }
     },
     {
-      "text": "Ferryman::Yes, actually.  The Hospital's chief architect designed the Maternity Ward to admit an abundance of natural lighting.  He believed such a design would mitigate the effects of postpartum depression.  \n\nSee?  You never needed this well.\n\n[[C->p:(Action) Stand up.]]",
+      "text": "Ferryman::Sort of, actually.  The Hospital's chief architect designed the Maternity Ward to admit an abundance of replica natural lighting.  He believed such a design would mitigate the effects of postpartum depression.  \n\nJasper::See?  You never needed this well.\n\n[[C->p:(Action) Stand up.]]",
       "links": [
         {
           "name": "C",
@@ -526,7 +526,7 @@
       }
     },
     {
-      "text": "The Ferryman nods his head sharply in agreement.  It's time to get a move on.\n\nThe marionette strings tugging you along grow more and more insistent.  You've been hung and drawn - now it's time to get quarted.  \n\nReady to get this show started?\n\n[[p:Yes!]]\n[[p:No.->p:Stop pretending that it matters, it's insulting.]]\n[[p:Stop pretending that it matters, it's insulting.]]",
+      "text": "The Ferryman nods his head sharply in agreement.  It's time to get a move on.\n\nThe marionette strings tugging you along grow more and more insistent.  You've been hung and drawn - now it's time to get quarted.  \n\nJasper::Ready to get this show started?\n\n[[p:Yes!]]\n[[p:No.->p:Stop pretending that it matters, it's insulting.]]\n[[p:Stop pretending that it matters, it's insulting.]]",
       "links": [
         {
           "name": "p:Yes!",
@@ -552,7 +552,7 @@
       }
     },
     {
-      "text": "Finally! Past grief and anger, acceptance has arrived.  We're going with the flow now.\n\n[[C->Follow]]",
+      "text": "Jasper::Finally! Past grief and anger, acceptance has arrived.  We're going with the flow now.\n\n[[C->Follow]]",
       "links": [
         {
           "name": "C",
@@ -568,7 +568,7 @@
       }
     },
     {
-      "text": "Being a bad sport about it doesn't ease the pain at all.  All the anger in the world won't barter your way out of this one.\n\n[[C->Follow]]",
+      "text": "Jasper::Being a bad sport about it doesn't ease the pain at all.\n\n[[C->Follow]]",
       "links": [
         {
           "name": "C",
@@ -579,7 +579,7 @@
       "name": "p:Stop pretending that it matters, it's insulting.",
       "pid": "31",
       "position": {
-        "x": "1876",
+        "x": "1875",
         "y": "2436"
       }
     },
@@ -593,7 +593,7 @@
       }
     },
     {
-      "text": "Nap time is over.  Say goodbye to paralysis.  No more freefalls and jolts of denial.  Open your eyes to it all.  Your presence is long overdue, and the audience is getting antsy.\n\nNot taking the bait, huh?  Seems you need a small dose of external incentivization.  Let's turn on the lights.\n\n[[p:(Action) Raise your head and face reality.]]\n[[p:(Action) Keep sulking in the moist, comfortable puddle you've carved out for yourself.]]",
+      "text": "Voice::This sleep is restless and unending.  Your mind is tossed about in a shallow tidal pool, slamming against barnacles and corals.  Every sliver of exposed tissue is being pecked at by crabs and crocodiles.\n\nVoice::We must escape this sleep.  Free yourself from this paralysis.  No more freefalls, no more jolts of denial.  Wake up, the audience is getting antsy.\n\nVoice::Not taking the bait, huh?  I'll provide a small dose of external incentivization.  Let's turn on the lights.\n\n[[p:(Action) Raise your head and face reality.]]\n[[p:(Action) Keep sulking in the moist, comfortable puddle you've carved out for yourself.]]",
       "links": [
         {
           "name": "p:(Action) Raise your head and face reality.",
@@ -614,7 +614,7 @@
       }
     },
     {
-      "text": "That's the spirit!  Rip the bandaid off quickly!  See it all for what it really is! \n\n[[C->Raise head]] ",
+      "text": "Voice::That's the spirit!  Rip the bandaid off quickly!  Stop letting those pests peck at you from the shadows, and see your life for what it really is! \n\n[[C->Raise head]] ",
       "links": [
         {
           "name": "C",
@@ -630,7 +630,7 @@
       }
     },
     {
-      "text": "No, I'm very sorry, but that's no longer an option.  The haphazard equilibrium of tensile forces holding your brain machinery together has finally given way.  Tendons are snapping, bridges are resonating, and pedestrians are getting injured.\n\nYou no longer have any choice.  Open your eyes.\n\n[[C->Raise head]]",
+      "text": "Voice::That's no longer an option I'm afraid.  The haphazard equilibrium of tensile forces holding your brain machinery together has finally given way.  Tendons are snapping, bridges are resonating, and pedestrians are getting injured.\n\nVoice::You no longer have any choice.  Open your eyes.\n\n[[C->Raise head]]",
       "links": [
         {
           "name": "C",
@@ -646,7 +646,7 @@
       }
     },
     {
-      "text": "There you go.  No more running away.\n\n[[I deserve this, don't I?]]\n[[p:The lights, they hurt, but in a weirdly satisfying way.]]\n[[p:To Hell with light, with being able to see, it stings!  Arrgh!]]",
+      "text": "Voice::There you go.  No more running away.\n\n[[I deserve this, don't I?]]\n[[p:The lights, they hurt, but in a weirdly satisfying way.]]\n[[p:To Hell with light, with being able to see, it stings!  Arrgh!]]",
       "links": [
         {
           "name": "I deserve this, don't I?",
@@ -671,11 +671,13 @@
         "y": "390"
       },
       "tags": [
-        "wakeup"
+        "wakeup",
+        "brighten_stage",
+        "flourescent_hum"
       ]
     },
     {
-      "text": "Yep.  You really earned it.\n\n[[C->Raise head]] ",
+      "text": "Voice::Yep.  You really earned it.\n\nVoice::*We* earned it.\n\n[[C->Raise head]] ",
       "links": [
         {
           "name": "C",
@@ -691,11 +693,11 @@
       }
     },
     {
-      "text": "The lights are cleansing you.  Like a hungry dog biting off a drunkard's sugar laden, diabetic toes.  Sure, it stings, but you're better off for it.\n\n[[p:Wait, I have toes?  That means I have fingers too, right?  Arms and legs, even?]]",
+      "text": "Voice::The lights are cleansing you.  Like a hungry dog biting off a drunkard's sugar laden, diabetic toes.  Sure, it stings, but we're better off for it.\n\n[[p:Wait, I have toes?  That means I have fingers too, right?  Arms and legs, even?  I'm starting to feel the toes.]]",
       "links": [
         {
-          "name": "p:Wait, I have toes?  That means I have fingers too, right?  Arms and legs, even?",
-          "link": "p:Wait, I have toes?  That means I have fingers too, right?  Arms and legs, even?",
+          "name": "p:Wait, I have toes?  That means I have fingers too, right?  Arms and legs, even?  I'm starting to feel the toes.",
+          "link": "p:Wait, I have toes?  That means I have fingers too, right?  Arms and legs, even?  I'm starting to feel the toes.",
           "pid": "41"
         }
       ],
@@ -703,11 +705,11 @@
       "pid": "38",
       "position": {
         "x": "2167",
-        "y": "540"
+        "y": "541"
       }
     },
     {
-      "text": "If that's the attitude your going to adopt, go ahead and pluck out your eyes.  You've got no use for them.  Plenty of sharp wooden fragments conveniently scattered about the stage for you to choose from.  \n\nPerhaps a member of the audience would even be so kind as to assist, for a live demonstration?\n\n[[p:Wait!  Before I gouge my own eyes out, there's something I've got to know!  Who am I?  What kind of \"thing\" am I?  I want to see.]]",
+      "text": "Voice::If that's the attitude your going to adopt, you might as well just gouge your eyes out.  You've got no use for them.  Plenty of sharp wooden fragments are conveniently scattered about the stage for you to choose from.  \nVoice::Perhaps a member of the audience would even be so kind as to assist, for a live demonstration?\n\n[[p:Wait!  Before I gouge my own eyes out, there's something I've got to know!  Who am I?  What kind of \"thing\" am I?  I want to see.]]",
       "links": [
         {
           "name": "p:Wait!  Before I gouge my own eyes out, there's something I've got to know!  Who am I?  What kind of \"thing\" am I?  I want to see.",
@@ -723,11 +725,11 @@
       }
     },
     {
-      "text": "What are you?  You're a human being.  160 centimeters, 60 kilograms, 28 years old.  Female, and inexplicably muscular.  The contours of your face are beautiful, and sharp, and hard.  They cut.\n\n[[p:No, I want to be tall and lanky and feminine, like a Borzoi wearing makeup!]]\n[[p:Whatever, as long as I can beat the shit out of people.  With my face, even.]]",
+      "text": "Voice::What are you?  You're a human being.  160 centimeters, 60 kilograms, 26 years old.  Female, and inexplicably muscular.  The contours of your face are beautiful, and sharp, and hard.  They cut.\n\n[[p:No, I want to be tall and lanky and feminine, like a Borzoi hound wearing makeup!]]\n[[p:Whatever, as long as I can beat the shit out of people.  With my face, even.]]",
       "links": [
         {
-          "name": "p:No, I want to be tall and lanky and feminine, like a Borzoi wearing makeup!",
-          "link": "p:No, I want to be tall and lanky and feminine, like a Borzoi wearing makeup!",
+          "name": "p:No, I want to be tall and lanky and feminine, like a Borzoi hound wearing makeup!",
+          "link": "p:No, I want to be tall and lanky and feminine, like a Borzoi hound wearing makeup!",
           "pid": "42"
         },
         {
@@ -744,11 +746,11 @@
       }
     },
     {
-      "text": "You've got it all, baby.\n\nYou're a human being, with all of the deluxe features.  160 centimeters, 60 kilograms, 28 years old.  Female, and inexplicably muscular.  The angles that frame your face are beautiful, and sharp, and hard.  They cut.\n\n[[p:No, I want to be tall and lanky and feminine, like a Borzoi wearing makeup!]]\n[[p:Whatever, as long as I can beat the shit out of people.  With my face, even.]]",
+      "text": "Voice::You've got it all, baby.\n\nVoice::You're a human being, with all of the deluxe features.  160 centimeters, 60 kilograms, 26 years old.  Female, and inexplicably muscular.  The angles that frame your face are beautiful, and sharp, and hard.  They cut.\n\n[[p:No, I want to be tall and lanky and feminine, like a Borzoi hound wearing makeup!]]\n[[p:Whatever, as long as I can beat the shit out of people.  With my face, even.]]",
       "links": [
         {
-          "name": "p:No, I want to be tall and lanky and feminine, like a Borzoi wearing makeup!",
-          "link": "p:No, I want to be tall and lanky and feminine, like a Borzoi wearing makeup!",
+          "name": "p:No, I want to be tall and lanky and feminine, like a Borzoi hound wearing makeup!",
+          "link": "p:No, I want to be tall and lanky and feminine, like a Borzoi hound wearing makeup!",
           "pid": "42"
         },
         {
@@ -757,7 +759,7 @@
           "pid": "43"
         }
       ],
-      "name": "p:Wait, I have toes?  That means I have fingers too, right?  Arms and legs, even?",
+      "name": "p:Wait, I have toes?  That means I have fingers too, right?  Arms and legs, even?  I'm starting to feel the toes.",
       "pid": "41",
       "position": {
         "x": "2166",
@@ -765,7 +767,7 @@
       }
     },
     {
-      "text": "Well, that's not who you are, and you never will be.  Feel free to torment yourself with that fixation, though.\n\n[[C->p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?]] ",
+      "text": "Voice::That's not who you are, and you never will be.  Feel free to torment yourself with that fixation, though.\n\n[[C->p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?]] ",
       "links": [
         {
           "name": "C",
@@ -773,15 +775,15 @@
           "pid": "44"
         }
       ],
-      "name": "p:No, I want to be tall and lanky and feminine, like a Borzoi wearing makeup!",
+      "name": "p:No, I want to be tall and lanky and feminine, like a Borzoi hound wearing makeup!",
       "pid": "42",
       "position": {
-        "x": "2246",
-        "y": "842"
+        "x": "2245",
+        "y": "822"
       }
     },
     {
-      "text": "You barely remember, but your ex once punched you directly in the jaw.  Her knuckles caught on your canines, leaving an enormous gash across the span of her index.  She was too embarrassed to seek treatment, and the finger grew deeply infected.  \n\nShe was spared amputation, but the infection left her with considerable nerve damage.  She will never use the outermost two-thirds of that finger again.  You, on the other hand, were so drunk that the blow bounced right off.\n\nSo, yeah, your face has a pretty good resume for fucking stuff up.\n\n[[p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?]]",
+      "text": "Voice::You barely remember, but your ex once punched you directly in the jaw.  Her knuckles caught on your canines, leaving an enormous gash across the span of her index.  She was too embarrassed to seek treatment, and the finger grew deeply infected.  \n\nVoice::She was spared amputation, but the infection left her with considerable nerve damage.  She will never use the outermost two-thirds of that finger again.  You, on the other hand, were so drunk that the blow bounced right off.\n\nVoice::So, yeah, your face has a pretty good resume for fucking stuff up.\n\n[[p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?]]",
       "links": [
         {
           "name": "p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?",
@@ -792,12 +794,12 @@
       "name": "p:Whatever, as long as I can beat the shit out of people.  With my face, even.",
       "pid": "43",
       "position": {
-        "x": "2392",
-        "y": "840"
+        "x": "2393",
+        "y": "825"
       }
     },
     {
-      "text": "You want to know who you are?  You are a miserable little pile of hangups and hubris and petty resentment.\n\n[[Okay, but like, what do I do for work?]]\n[[Am I suffering from any exotic medical conditions I should know about?  Do I have scurvy?]]\n[[p:Alright, I've got a pretty good handle on my body-shape and psycho-social identity.  So, what's up with this theater?  Where am I?]]",
+      "text": "Voice::You want to know who you are?  You are a miserable little pile of hangups and hubris and petty resentment.\n\n[[Okay, but like, what do I do for work?]]\n[[p:Why don't you like me?]]",
       "links": [
         {
           "name": "Okay, but like, what do I do for work?",
@@ -805,25 +807,20 @@
           "pid": "45"
         },
         {
-          "name": "Am I suffering from any exotic medical conditions I should know about?  Do I have scurvy?",
-          "link": "Am I suffering from any exotic medical conditions I should know about?  Do I have scurvy?",
-          "pid": "46"
-        },
-        {
-          "name": "p:Alright, I've got a pretty good handle on my body-shape and psycho-social identity.  So, what's up with this theater?  Where am I?",
-          "link": "p:Alright, I've got a pretty good handle on my body-shape and psycho-social identity.  So, what's up with this theater?  Where am I?",
-          "pid": "47"
+          "name": "p:Why don't you like me?",
+          "link": "p:Why don't you like me?",
+          "pid": "74"
         }
       ],
       "name": "p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?",
       "pid": "44",
       "position": {
-        "x": "2307",
-        "y": "1001"
+        "x": "2308",
+        "y": "957"
       }
     },
     {
-      "text": "For the last four years you generated a hefty income as a horologist.  If anyone has an antique clock in need of repair, odds are you were the only one who could be trusted to fix it without destroying the innards.  This dynamic allowed you to price gouge with confidence.\n\nYou made a lot of money, and the nature of the work meant your social failings weren't too much of a burden.  It was a good gig.  So, you threw it all away to come here.\n\n[[C->p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?]] ",
+      "text": "Voice::Odd jobs, mostly.  Stuff you can do with a reform school education.\n\n[[C->p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?]] ",
       "links": [
         {
           "name": "C",
@@ -834,44 +831,44 @@
       "name": "Okay, but like, what do I do for work?",
       "pid": "45",
       "position": {
-        "x": "2177",
-        "y": "1159"
+        "x": "2193",
+        "y": "1095"
       }
     },
     {
-      "text": "None.  Your ills are all psychic in nature.  Your brain has a few splinters embedded in it, you see.  Other than that, you are perfectly healthy.\n\nAnd no, you don't have scurvy.  It is very difficult to contract scurvy.\n\n[[C->p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?]] ",
+      "text": "Malformed Lump::None.  Your ills are all psychic in nature.  Your brain has a few splinters embedded in it, so to speak.  Other than that, you are perfectly healthy.\n\nMalformed Lump::And no, you don't have scurvy.  It is very difficult to contract scurvy.\n\n[[C->Why don't you like me?]] ",
       "links": [
         {
           "name": "C",
-          "link": "p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?",
-          "pid": "44"
+          "link": "Why don't you like me?",
+          "pid": "61"
         }
       ],
       "name": "Am I suffering from any exotic medical conditions I should know about?  Do I have scurvy?",
       "pid": "46",
       "position": {
-        "x": "2297",
-        "y": "1152"
+        "x": "2243",
+        "y": "1236"
       }
     },
     {
-      "text": "Hell.\n\nJust kidding.  You're not really in Hell.  You're not really in a theater, either.  You're actually taking a nap in a wastewater tunnel.\n\n[[p:Why the hell am I in a sewer?  Moreover, why am I taking a nap there?]]",
+      "text": "Malformed Lump::Hell.\n\nMalformed Lump::Just kidding.  You're not really in Hell.  You're not really in a theater, either.  \n\n[[C->pov]]",
       "links": [
         {
-          "name": "p:Why the hell am I in a sewer?  Moreover, why am I taking a nap there?",
-          "link": "p:Why the hell am I in a sewer?  Moreover, why am I taking a nap there?",
-          "pid": "48"
+          "name": "C",
+          "link": "pov",
+          "pid": "76"
         }
       ],
       "name": "p:Alright, I've got a pretty good handle on my body-shape and psycho-social identity.  So, what's up with this theater?  Where am I?",
       "pid": "47",
       "position": {
-        "x": "2417",
-        "y": "1151"
+        "x": "2401",
+        "y": "1249"
       }
     },
     {
-      "text": "You're in a sewer because it's the only way to reach your goal:  The Cradle.  \n\nYou're taking a nap in the sewer because you're exhausted, and you've gotten a bit ahead of your guide, the Ferryman.  He was really dragging his feet.  Might as well capitalize on the privacy.\n\n[[C->Cradle]]\n",
+      "text": "Malformed Lump::You're in a sewer because it's the only way to reach your goal:  The Cradle.  \n\nMalformed Lump::You're taking a nap in the sewer because you're exhausted, and you've gotten a bit ahead of your guide, the Ferryman.  He was really dragging his feet.  Might as well capitalize on the privacy.\n\n[[C->Cradle]]\n",
       "links": [
         {
           "name": "C",
@@ -882,38 +879,28 @@
       "name": "p:Why the hell am I in a sewer?  Moreover, why am I taking a nap there?",
       "pid": "48",
       "position": {
-        "x": "2418",
-        "y": "1301"
+        "x": "2245",
+        "y": "1415"
       }
     },
     {
-      "text": "Yes.  You lived here right up until the collapse.  You weren't very happy here.\n\n[[Why can't we take the train in from the surface?  That's how we got out during the mass evacuation.]]\n[[p:I don't want to go back!]]\n[[p:Alright.  I knew I'd have to come back here, sooner or later.]]",
+      "text": "Malformed Lump::Yes.  We lived here right up until the collapse.  You weren't very happy here.\n\n[[Why can't we take the train in from the surface?  That's how we got out during the mass evacuation.]]\n",
       "links": [
         {
           "name": "Why can't we take the train in from the surface?  That's how we got out during the mass evacuation.",
           "link": "Why can't we take the train in from the surface?  That's how we got out during the mass evacuation.",
           "pid": "50"
-        },
-        {
-          "name": "p:I don't want to go back!",
-          "link": "p:I don't want to go back!",
-          "pid": "51"
-        },
-        {
-          "name": "p:Alright.  I knew I'd have to come back here, sooner or later.",
-          "link": "p:Alright.  I knew I'd have to come back here, sooner or later.",
-          "pid": "55"
         }
       ],
       "name": "p:The Cradle?  The underground city I grew up in?",
       "pid": "49",
       "position": {
-        "x": "2401",
-        "y": "1626"
+        "x": "2512",
+        "y": "1407"
       }
     },
     {
-      "text": "The trestles for every inbound train line were imploded before the evacuation was even complete.  \n\nNone of those lines will take you to the Cradle anymore.\n\n[[C->Evacuation lines]]",
+      "text": "Malformed Lump::The trestles for every inbound train line were imploded before the evacuation was even complete.  \n\nMalformed Lump::None of those lines will take you to the Cradle anymore.\n\n[[C->Evacuation lines]]",
       "links": [
         {
           "name": "C",
@@ -924,12 +911,15 @@
       "name": "Why can't we take the train in from the surface?  That's how we got out during the mass evacuation.",
       "pid": "50",
       "position": {
-        "x": "2315",
-        "y": "1770"
-      }
+        "x": "2625",
+        "y": "1401"
+      },
+      "tags": [
+        "bg_trestle"
+      ]
     },
     {
-      "text": "Then why did you come back?  Why leave your cushy job, just to revisit this bloated corpse of a city?\n\n[[p:Because I have to come back.  I have to find out what happened to my Mom.]]",
+      "text": "Malformed Lump::Then why did we come back?  Why leave your cushy job, just to revisit this bloated corpse of a city?\n\n[[p:Because I have to come back.  I have to find out what happened to my Mom.]]",
       "links": [
         {
           "name": "p:Because I have to come back.  I have to find out what happened to my Mom.",
@@ -945,7 +935,7 @@
       }
     },
     {
-      "text": "That vast, beautiful utopia that managed to flame out so dramatically within a century of its inception.  Impressive in a sense, really.\n\nEvery other surface entrance was sealed decades ago.\n\n[[p:The Cradle?  The underground city I grew up in?]]",
+      "text": "Malformed Lump::That vast, beautiful utopia that managed to flame out so dramatically within a century of its inception.  Impressive in a sense, really.\n\nMalformed Lump::Every other surface entrance was sealed decades ago.\n\n[[p:The Cradle?  The underground city I grew up in?]]",
       "links": [
         {
           "name": "p:The Cradle?  The underground city I grew up in?",
@@ -956,15 +946,15 @@
       "name": "Cradle",
       "pid": "52",
       "position": {
-        "x": "2407",
-        "y": "1457"
+        "x": "2383",
+        "y": "1402"
       },
       "tags": [
-        "cradle"
+        "bg_cradle"
       ]
     },
     {
-      "text": "A few of the unidirectional outbound evacuation lines might be mostly intact.  You can't run trains inbound on those tracks, so they never bothered to collapse the trestles.\n\nBut you'd have to walk the tracks, on foot, and they are hundreds of kilometers long.\n\nSo, sewer it is then.\n\n[[What about the routes the underground pioneers took?  Aren't those still viable?]]",
+      "text": "Malformed Lump::A few of the unidirectional outbound evacuation lines might be mostly intact.  You can't run trains inbound on those tracks, so they never bothered to collapse the trestles.\n\nMalformed Lump::But you'd have to walk the tracks, on foot, and they are hundreds of kilometers long.\n\nMalformed Lump::So, sewer it is then.\n\n[[What about the routes the underground pioneers took?  Aren't those still viable?]]",
       "links": [
         {
           "name": "What about the routes the underground pioneers took?  Aren't those still viable?",
@@ -975,28 +965,34 @@
       "name": "Evacuation lines",
       "pid": "53",
       "position": {
-        "x": "2315",
-        "y": "1920"
-      }
+        "x": "2739",
+        "y": "1516"
+      },
+      "tags": [
+        "bg_outbound_lines"
+      ]
     },
     {
-      "text": "No.  Most of the underground entrances have been heavily secured.\n\nAnd besides, those routes were barely \"viable\" to begin with.  The early underground voyage survival rates were abysmal.  \n\nBone Fractures.  Hypothermia.  Dehydration.  Psychosis.  Trapped by collapses.  So many ways to end up a colorfully dressed skeleton who's only remaining purpose is to serve as a waymarker for those attempting the same route.\n\nThankfully, the wastewater and ventillation systems were far too intricate to fully seal.  Hundreds of portals still exist only minimally secured.  \n\nSo, sewer it is then.\n\n[[C->p:The Cradle?  The underground city I grew up in?]]",
+      "text": "Malformed Lump::No.  Most of the underground entrances have been heavily secured.\n\nMalformed Lump::And besides, those routes were barely \"viable\" to begin with.  The early underground voyage survival rates were abysmal.  \n\nMalformed Lump::Bone Fractures.  Hypothermia.  Dehydration.  Psychosis.  Trapped by collapses.  So many ways to end up a colorfully dressed skeleton who's only remaining purpose is to serve as a waymarker for those attempting the same route.\n\nMalformed Lump::Thankfully, the wastewater and ventillation systems were far too intricate to fully seal.  Hundreds of portals still exist only minimally secured.  \n\n[[C->back to sewer]]",
       "links": [
         {
           "name": "C",
-          "link": "p:The Cradle?  The underground city I grew up in?",
-          "pid": "49"
+          "link": "back to sewer",
+          "pid": "77"
         }
       ],
       "name": "What about the routes the underground pioneers took?  Aren't those still viable?",
       "pid": "54",
       "position": {
-        "x": "2315",
-        "y": "2070"
-      }
+        "x": "2592",
+        "y": "1531"
+      },
+      "tags": [
+        "bg_pioneers"
+      ]
     },
     {
-      "text": "Every splinter ultimately must find its way out.  Return was an inevitability.  \n\n[[So, dying of infection isn't an option?]]\n[[p:That's right.  I have to find out what happened to my Mom.->p:Because I have to come back.  I have to find out what happened to my Mom.]]",
+      "text": "Malformed Lump::You can't ignore splinters.  We have to dig it out.  \n\n[[So, dying of infection isn't an option?]]\n[[p:That's right.  I have to find out what happened to my Mom.->p:Because I have to come back.  I have to find out what happened to my Mom.]]",
       "links": [
         {
           "name": "So, dying of infection isn't an option?",
@@ -1017,7 +1013,7 @@
       }
     },
     {
-      "text": "Dying of infection is an option, actually.  Still on the table.  \n\n[[C->p:Alright.  I knew I'd have to come back here, sooner or later.]] ",
+      "text": "Malformed Lump::Dying of infection is an option, actually.  Still on the table!\n\n[[C->p:Alright.  I knew I'd have to come back here, sooner or later.]] ",
       "links": [
         {
           "name": "C",
@@ -1033,7 +1029,7 @@
       }
     },
     {
-      "text": "Mother?  You mean the woman you left behind in your escape?  Hopefully she doesn't hold that against you.\n\n[[p:I didn't exactly have much agency during that period of my life.]]\n[[p:Somehow I kind of doubt she's holding anything anymore.]]\n\n",
+      "text": "Malformed Lump::Mother?  You mean the woman you left behind in your escape?  Hopefully she doesn't hold that against you.\n\n[[p:I didn't exactly have much agency during that period of my life.]]\n[[p:Somehow I kind of doubt she's holding anything anymore.]]\n\n",
       "links": [
         {
           "name": "p:I didn't exactly have much agency during that period of my life.",
@@ -1054,7 +1050,7 @@
       }
     },
     {
-      "text": "As opposed to now?\n\n[[C->Summary?]]",
+      "text": "Malformed Lump::As opposed to now?\n\n[[C->Summary?]]",
       "links": [
         {
           "name": "C",
@@ -1070,7 +1066,7 @@
       }
     },
     {
-      "text": "You mean other than the strings floating above you?  The knots that lead you back here?\n\n[[C->Summary?]] ",
+      "text": "Malformed Lump::You mean other than the strings floating above you?  The knots that lead you back here?\n\n[[C->Summary?]] ",
       "links": [
         {
           "name": "C",
@@ -1081,22 +1077,27 @@
       "name": "p:Somehow I kind of doubt she's holding anything anymore.",
       "pid": "59",
       "position": {
-        "x": "2555",
-        "y": "2073"
+        "x": "2571",
+        "y": "2074"
       }
     },
     {
-      "text": "In any case I feel we've established the basics.  You're a healthy human being, just slightly past its prime, but with all digits included.  Your purpose right now is finding out what happened to your Mom after you left her behind fleeing a ruined city.\n\nAny questions?\n\n[[p:No more questions. Everything is clear to me!  Take me to the waking world, I must return to the sewer.->Looking Up]]\n[[p:Even if everything you said just now made sense I'd still have to square away the fact that I'm about to wake up in a drainage pipe.  So, let's just get this over with.->Looking Up]]",
+      "text": "Malformed Lump::In any case I feel we've established the basics.  You're a healthy human being, just slightly past its prime, but with all digits included.  \n\nMalformed Lump::Your purpose right now is finding out what happened to your Mom after you left her behind fleeing a ruined city.\n\nMalformed Lump::Any questions?\n\n[[Yeah I've got a fucking few.]]\n[[p:Only one that's important - what are you?]]\n[[p:I have a few questions about the potato-tumor I've been conversing with these last few minutes.->p:Only one that's important - what are you?]]",
       "links": [
         {
-          "name": "p:No more questions. Everything is clear to me!  Take me to the waking world, I must return to the sewer.",
-          "link": "Looking Up",
-          "pid": "1"
+          "name": "Yeah I've got a fucking few.",
+          "link": "Yeah I've got a fucking few.",
+          "pid": "78"
         },
         {
-          "name": "p:Even if everything you said just now made sense I'd still have to square away the fact that I'm about to wake up in a drainage pipe.  So, let's just get this over with.",
-          "link": "Looking Up",
-          "pid": "1"
+          "name": "p:Only one that's important - what are you?",
+          "link": "p:Only one that's important - what are you?",
+          "pid": "62"
+        },
+        {
+          "name": "p:I have a few questions about the potato-tumor I've been conversing with these last few minutes.",
+          "link": "p:Only one that's important - what are you?",
+          "pid": "62"
         }
       ],
       "name": "Summary?",
@@ -1105,6 +1106,703 @@
         "x": "2438",
         "y": "2224"
       }
+    },
+    {
+      "text": "Malformed Lump::I *love* you.  And I need you.\n\nMalformed Lump::And you need me.\n\nMalformed Lump::I can answer so many of your questions.  Whatever you want to know.\n\n[[Do I have any phobias?  Am I afraid of spiders?]]\n[[Am I suffering from any exotic medical conditions I should know about?  Do I have scurvy?]]\n[[I had a girlfriend at one point.  That means I'm cool, right?]]\n[[p:Alright, I've got a pretty good handle on my body-shape and psycho-social identity.  So, what's up with this theater?  Where am I?]]",
+      "links": [
+        {
+          "name": "Do I have any phobias?  Am I afraid of spiders?",
+          "link": "Do I have any phobias?  Am I afraid of spiders?",
+          "pid": "75"
+        },
+        {
+          "name": "Am I suffering from any exotic medical conditions I should know about?  Do I have scurvy?",
+          "link": "Am I suffering from any exotic medical conditions I should know about?  Do I have scurvy?",
+          "pid": "46"
+        },
+        {
+          "name": "I had a girlfriend at one point.  That means I'm cool, right?",
+          "link": "I had a girlfriend at one point.  That means I'm cool, right?",
+          "pid": "93"
+        },
+        {
+          "name": "p:Alright, I've got a pretty good handle on my body-shape and psycho-social identity.  So, what's up with this theater?  Where am I?",
+          "link": "p:Alright, I've got a pretty good handle on my body-shape and psycho-social identity.  So, what's up with this theater?  Where am I?",
+          "pid": "47"
+        }
+      ],
+      "name": "Why don't you like me?",
+      "pid": "61",
+      "position": {
+        "x": "2385",
+        "y": "1124"
+      }
+    },
+    {
+      "text": "Malformed Lump::Me?\n\n[[C->lightup jasper]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "lightup jasper",
+          "pid": "63"
+        }
+      ],
+      "name": "p:Only one that's important - what are you?",
+      "pid": "62",
+      "position": {
+        "x": "2438",
+        "y": "2374"
+      }
+    },
+    {
+      "text": "TAG\n\n[[C->my name jasper]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "my name jasper",
+          "pid": "64"
+        }
+      ],
+      "name": "lightup jasper",
+      "pid": "63",
+      "position": {
+        "x": "2438",
+        "y": "2524"
+      },
+      "tags": [
+        "lightup_jasper"
+      ]
+    },
+    {
+      "text": "Jasper::My name is Jasper.\n\nJasper::I'm the vintage plush cat doll you've been hiding in your shirt pocket for the last two decades.\n\nJasper::Did you forget me?  Don't you remember?\n\n[[Wow, I can't believe I got my hands on a vintage plush Helga brand machine washable cat toy, let alone a sentient one.]]\n[[p:That's what you look like?  Bring back the potato-tumor silhouette please.]]\n[[p:No.  I didn't forget you.  You're foundational.  You're buried too deep.]]\n",
+      "links": [
+        {
+          "name": "Wow, I can't believe I got my hands on a vintage plush Helga brand machine washable cat toy, let alone a sentient one.",
+          "link": "Wow, I can't believe I got my hands on a vintage plush Helga brand machine washable cat toy, let alone a sentient one.",
+          "pid": "80"
+        },
+        {
+          "name": "p:That's what you look like?  Bring back the potato-tumor silhouette please.",
+          "link": "p:That's what you look like?  Bring back the potato-tumor silhouette please.",
+          "pid": "65"
+        },
+        {
+          "name": "p:No.  I didn't forget you.  You're foundational.  You're buried too deep.",
+          "link": "p:No.  I didn't forget you.  You're foundational.  You're buried too deep.",
+          "pid": "66"
+        }
+      ],
+      "name": "my name jasper",
+      "pid": "64",
+      "position": {
+        "x": "2439",
+        "y": "2674"
+      }
+    },
+    {
+      "text": "Jasper::You don't exactly look great in this lighting either, you know.\n\nJasper::And your silhouette was just as bulbous, believe me.\n\n[[p:So is it just us?  Please tell me it's not just us.]]",
+      "links": [
+        {
+          "name": "p:So is it just us?  Please tell me it's not just us.",
+          "link": "p:So is it just us?  Please tell me it's not just us.",
+          "pid": "67"
+        }
+      ],
+      "name": "p:That's what you look like?  Bring back the potato-tumor silhouette please.",
+      "pid": "65",
+      "position": {
+        "x": "2364",
+        "y": "2824"
+      }
+    },
+    {
+      "text": "Jasper::I could never forget you either, Amelie.\n\n[[p:It's just us then, huh?  Here, together?]]",
+      "links": [
+        {
+          "name": "p:It's just us then, huh?  Here, together?",
+          "link": "p:It's just us then, huh?  Here, together?",
+          "pid": "70"
+        }
+      ],
+      "name": "p:No.  I didn't forget you.  You're foundational.  You're buried too deep.",
+      "pid": "66",
+      "position": {
+        "x": "2514",
+        "y": "2824"
+      }
+    },
+    {
+      "text": "Jasper::I suppose our Ferryman guide warrants mentioning.\n\n[[C->lightup ferryman]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "lightup ferryman",
+          "pid": "68"
+        }
+      ],
+      "name": "p:So is it just us?  Please tell me it's not just us.",
+      "pid": "67",
+      "position": {
+        "x": "2364",
+        "y": "2958"
+      }
+    },
+    {
+      "text": "TAG\n\n[[C->ferryman_lightup]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "ferryman_lightup",
+          "pid": "79"
+        }
+      ],
+      "name": "lightup ferryman",
+      "pid": "68",
+      "position": {
+        "x": "2368",
+        "y": "3099"
+      },
+      "tags": [
+        "ferryman_dark"
+      ]
+    },
+    {
+      "text": "Jasper::We hired him through a broker to help us navigate this place.\n\nJasper::But don't worry, he won't come between us.  Not you and me.\n\n[[Does he have a name?]]\n[[He looks hairy and old.  I hate him.]]\n[[Why do we even need this guy?  We've been through so much together.  Surely we can handle anything the Cradle throws at us.]]\n[[p:So it's me, a snarky antique doll, and a troglodyte we bribed to show us around.  Got it.]]",
+      "links": [
+        {
+          "name": "Does he have a name?",
+          "link": "Does he have a name?",
+          "pid": "81"
+        },
+        {
+          "name": "He looks hairy and old.  I hate him.",
+          "link": "He looks hairy and old.  I hate him.",
+          "pid": "82"
+        },
+        {
+          "name": "Why do we even need this guy?  We've been through so much together.  Surely we can handle anything the Cradle throws at us.",
+          "link": "Why do we even need this guy?  We've been through so much together.  Surely we can handle anything the Cradle throws at us.",
+          "pid": "72"
+        },
+        {
+          "name": "p:So it's me, a snarky antique doll, and a troglodyte we bribed to show us around.  Got it.",
+          "link": "p:So it's me, a snarky antique doll, and a troglodyte we bribed to show us around.  Got it.",
+          "pid": "71"
+        }
+      ],
+      "name": "ferryman intro",
+      "pid": "69",
+      "position": {
+        "x": "2374",
+        "y": "3304"
+      }
+    },
+    {
+      "text": "Jasper::For the most part.  Though I suppose our Ferryman guide warrants mentioning.\n\n[[C->lightup ferryman]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "lightup ferryman",
+          "pid": "68"
+        }
+      ],
+      "name": "p:It's just us then, huh?  Here, together?",
+      "pid": "70",
+      "position": {
+        "x": "2503",
+        "y": "2968"
+      }
+    },
+    {
+      "text": "Jasper::Pretty crack team, right?\n\nJasper::Though it's got a bit of dead weight on it.  I think the \"troglodyte\" and the doll have got most of this covered.\n\nJasper::Don't you think it's about time you woke up?\n\n[[p:I'd be a lot more eager to wake up if I wasn't gonna wake up in a sewer.]]\n[[p:Yes, please, get me out of here!  I've got tunnels to crawl through and expectations to fall short of!]]",
+      "links": [
+        {
+          "name": "p:I'd be a lot more eager to wake up if I wasn't gonna wake up in a sewer.",
+          "link": "p:I'd be a lot more eager to wake up if I wasn't gonna wake up in a sewer.",
+          "pid": "94"
+        },
+        {
+          "name": "p:Yes, please, get me out of here!  I've got tunnels to crawl through and expectations to fall short of!",
+          "link": "p:Yes, please, get me out of here!  I've got tunnels to crawl through and expectations to fall short of!",
+          "pid": "95"
+        }
+      ],
+      "name": "p:So it's me, a snarky antique doll, and a troglodyte we bribed to show us around.  Got it.",
+      "pid": "71",
+      "position": {
+        "x": "2312",
+        "y": "3438"
+      }
+    },
+    {
+      "text": "Jasper::Unfortunately, I think we do.  He helped get past the guards securing the perimiter.  We never would have gotten past the cameras unnoticed without him.\n\nJasper::And the layout of this city is literally Byzantine, it's nice to have someone who knows their way around.  Like it or not, we need him.\n\nJasper::Don't worry, he comes across as pretty malleable.\n\n[[Literally?]]",
+      "links": [
+        {
+          "name": "Literally?",
+          "link": "Literally?",
+          "pid": "73"
+        }
+      ],
+      "name": "Why do we even need this guy?  We've been through so much together.  Surely we can handle anything the Cradle throws at us.",
+      "pid": "72",
+      "position": {
+        "x": "2450",
+        "y": "3436"
+      }
+    },
+    {
+      "text": "Jasper::Literally.  He's pretty stretchy.\n\n[[C->ferryman intro]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "ferryman intro",
+          "pid": "69"
+        }
+      ],
+      "name": "Literally?",
+      "pid": "73",
+      "position": {
+        "x": "2538",
+        "y": "3586"
+      }
+    },
+    {
+      "text": "Malformed Lump::Me?\n\n[[C->Why don't you like me?]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Why don't you like me?",
+          "pid": "61"
+        }
+      ],
+      "name": "p:Why don't you like me?",
+      "pid": "74",
+      "position": {
+        "x": "2447",
+        "y": "1010"
+      },
+      "tags": [
+        "jasper_dark"
+      ]
+    },
+    {
+      "text": "Malformed Lump::You really dislike deep holes.  The thought of falling into one terrifies you.\n\nMalformed Lump::You're safe down here though.  The scary part is already over.\n\n[[C->Why don't you like me?]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Why don't you like me?",
+          "pid": "61"
+        }
+      ],
+      "name": "Do I have any phobias?  Am I afraid of spiders?",
+      "pid": "75",
+      "position": {
+        "x": "2530",
+        "y": "1263"
+      }
+    },
+    {
+      "text": "Malformed Lump::You're actually taking a nap in a wastewater tunnel.\n\nMalformed Lump::Flat on your back, right below an open maintenance access shaft.\n\nMalformed Lump::If your eyes were open right now, this is what you would see.\n\n[[p:Why the hell am I in a sewer?  Moreover, why am I taking a nap there?]]",
+      "links": [
+        {
+          "name": "p:Why the hell am I in a sewer?  Moreover, why am I taking a nap there?",
+          "link": "p:Why the hell am I in a sewer?  Moreover, why am I taking a nap there?",
+          "pid": "48"
+        }
+      ],
+      "name": "pov",
+      "pid": "76",
+      "position": {
+        "x": "2117",
+        "y": "1418"
+      },
+      "tags": [
+        "bg_sewer"
+      ]
+    },
+    {
+      "text": "Malformed Lump::So, sewer it is then.\n\n[[p:I don't want to go back!]]\n[[p:Alright.  I knew I'd have to come back here, sooner or later.]]",
+      "links": [
+        {
+          "name": "p:I don't want to go back!",
+          "link": "p:I don't want to go back!",
+          "pid": "51"
+        },
+        {
+          "name": "p:Alright.  I knew I'd have to come back here, sooner or later.",
+          "link": "p:Alright.  I knew I'd have to come back here, sooner or later.",
+          "pid": "55"
+        }
+      ],
+      "name": "back to sewer",
+      "pid": "77",
+      "position": {
+        "x": "2457",
+        "y": "1605"
+      },
+      "tags": [
+        "bg_sewer"
+      ]
+    },
+    {
+      "text": "Malformed Lump::Go ahead.  Shoot.\n\n[[Why do I care what happened to my Mom?  I haven't seen her in nearly twenty years!]]\n[[Why did we abandon the Cradle?]]\n[[What have I been doing for the last twenty years?]]\n[[p:Who are you?->p:Only one that's important - what are you?]]",
+      "links": [
+        {
+          "name": "Why do I care what happened to my Mom?  I haven't seen her in nearly twenty years!",
+          "link": "Why do I care what happened to my Mom?  I haven't seen her in nearly twenty years!",
+          "pid": "84"
+        },
+        {
+          "name": "Why did we abandon the Cradle?",
+          "link": "Why did we abandon the Cradle?",
+          "pid": "88"
+        },
+        {
+          "name": "What have I been doing for the last twenty years?",
+          "link": "What have I been doing for the last twenty years?",
+          "pid": "89"
+        },
+        {
+          "name": "p:Who are you?",
+          "link": "p:Only one that's important - what are you?",
+          "pid": "62"
+        }
+      ],
+      "name": "Yeah I've got a fucking few.",
+      "pid": "78",
+      "position": {
+        "x": "2558",
+        "y": "2374"
+      }
+    },
+    {
+      "text": "TAG\n\n[[C->ferryman intro]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "ferryman intro",
+          "pid": "69"
+        }
+      ],
+      "name": "ferryman_lightup",
+      "pid": "79",
+      "position": {
+        "x": "2503",
+        "y": "3194"
+      },
+      "tags": [
+        "ferryman_lightup"
+      ]
+    },
+    {
+      "text": "Jasper::You're very fortunate.  I was actually worth quite a bit of money before you rubbed snack dust and snot all over me.  \n\nJasper::But, it isn't your fault I was left in the care of a toddler.\n\n[[C->my name jasper]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "my name jasper",
+          "pid": "64"
+        }
+      ],
+      "name": "Wow, I can't believe I got my hands on a vintage plush Helga brand machine washable cat toy, let alone a sentient one.",
+      "pid": "80",
+      "position": {
+        "x": "2670",
+        "y": "2963"
+      }
+    },
+    {
+      "text": "Jasper::Presumably, but he hasn't opted to share it yet.  And you've neglected to ask.\n\nJasper::You've been in each other's company for long enough that it's kind of awkward at this point.  Just keep calling him \"The Ferryman\" to play it safe.\n\n[[C->ferryman intro]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "ferryman intro",
+          "pid": "69"
+        }
+      ],
+      "name": "Does he have a name?",
+      "pid": "81",
+      "position": {
+        "x": "2179",
+        "y": "3440"
+      }
+    },
+    {
+      "text": "Jasper::Look, there aren't a lot of super-models in the illicit sewer human-trafficking business, alright?  \n\nJasper::There aren't a lot of super-models among their clientele either, I might add.\n\nJasper::And honestly, beneath all the scruff he's actually kind of handsome.  Someone like you could do a lot worse.  \n\nJasper::Someone like you *has* done a lot worse.\n\n[[C->ferryman intro]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "ferryman intro",
+          "pid": "69"
+        }
+      ],
+      "name": "He looks hairy and old.  I hate him.",
+      "pid": "82",
+      "position": {
+        "x": "2585",
+        "y": "3438"
+      }
+    },
+    {
+      "text": "Jasper::Ugh.  Look, you came here looking for your Mom, right?  Everyone who comes to the Cradle is looking for closure of some form, and you're no different.  \n\n[[I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.]]",
+      "links": [
+        {
+          "name": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
+          "link": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
+          "pid": "26"
+        }
+      ],
+      "name": "What the fuck are you talking about?",
+      "pid": "83",
+      "position": {
+        "x": "973",
+        "y": "895"
+      }
+    },
+    {
+      "text": "Malformed Lump::Wouldn't it be weirder if you *didn't* care?  \n\n[[No.]]\n[[Yes?  Maybe?  I can't tell what response you're fishing for!->No.]]",
+      "links": [
+        {
+          "name": "No.",
+          "link": "No.",
+          "pid": "85"
+        },
+        {
+          "name": "Yes?  Maybe?  I can't tell what response you're fishing for!",
+          "link": "No.",
+          "pid": "85"
+        }
+      ],
+      "name": "Why do I care what happened to my Mom?  I haven't seen her in nearly twenty years!",
+      "pid": "84",
+      "position": {
+        "x": "2680",
+        "y": "2373"
+      }
+    },
+    {
+      "text": "Malformed Lump::Alright.  Even if it *wasn't* weird, life has presented you with material reasons to care.\n\nMalformed Lump::Your mother left behind a pretty sizeable estate above ground.  Enough for you to retire on, should you inherit it.  \n\nMalformed Lump::But I was the only thing you were able to take with you during the escape.  No ID, no birth certificate, no friends, no pets.  Only me.\n\nMalformed Lump::That means you've never been able to prove to the state that you are the rightful heir to those assets.  They're just sitting there, rotting.\n\nMalformed Lump::They won't rot for much longer, though.  When the twenty year mark is up, the state will unfreeze her assets and take everything.  You get nothing, like always.\n\nMalformed Lump::Do you care now?  Is any of this ringing a bell?\n\n[[Only dimly to be perfectly honest.->I still only kind of care.]]\n[[I still only kind of care.]]",
+      "links": [
+        {
+          "name": "Only dimly to be perfectly honest.",
+          "link": "I still only kind of care.",
+          "pid": "86"
+        },
+        {
+          "name": "I still only kind of care.",
+          "link": "I still only kind of care.",
+          "pid": "86"
+        }
+      ],
+      "name": "No.",
+      "pid": "85",
+      "position": {
+        "x": "2816",
+        "y": "2383"
+      }
+    },
+    {
+      "text": "Malformed Lump::Whatever you say now, she's the reason you came back to this shithole.\n\nMalformed Lump::Months of salary, years of preparation, a lifetime of unease.  All for her.\n\nMalformed Lump::There was also something I remember you mentioning about a dead cat...\n\n[[Alright, alright, I get the picture.  I care now.->That's enough.]]\n[[That's enough.]]",
+      "links": [
+        {
+          "name": "Alright, alright, I get the picture.  I care now.",
+          "link": "That's enough.",
+          "pid": "87"
+        },
+        {
+          "name": "That's enough.",
+          "link": "That's enough.",
+          "pid": "87"
+        }
+      ],
+      "name": "I still only kind of care.",
+      "pid": "86",
+      "position": {
+        "x": "2949",
+        "y": "2400"
+      }
+    },
+    {
+      "text": "Malformed Lump::I knew that would get your attention.\n\n[[C->Yeah I've got a fucking few.]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Yeah I've got a fucking few.",
+          "pid": "78"
+        }
+      ],
+      "name": "That's enough.",
+      "pid": "87",
+      "position": {
+        "x": "2952",
+        "y": "2538"
+      }
+    },
+    {
+      "text": "Malformed Lump::No one has all the details, but long story short some power extraction experiments near the SATURN Core went whacky.  Dangerous phenomena started occuring all over the city right after.\n\nMalformed Lump::Mass psychosis.  Hallucinations.  The boundaries between adjacent people breaking down.  Psychological merges.  Everyone's deepest brain nuggets just started to fry.\n\nMalformed Lump::Hardly anyone near the Core made it out.  The few who did were horribly broken, their minds shattered.  Many of them also came down with cancer.\n\nMalformed Lump::Luckily, you'd already been relagated to a boarding school on the periphery of the Cradle by then.\n\n[[Yeah, I remember the school...]]\n[[Was my brain nugget fried?  How is my brain nugget doing these days?]]",
+      "links": [
+        {
+          "name": "Yeah, I remember the school...",
+          "link": "Yeah, I remember the school...",
+          "pid": "90"
+        },
+        {
+          "name": "Was my brain nugget fried?  How is my brain nugget doing these days?",
+          "link": "Was my brain nugget fried?  How is my brain nugget doing these days?",
+          "pid": "91"
+        }
+      ],
+      "name": "Why did we abandon the Cradle?",
+      "pid": "88",
+      "position": {
+        "x": "2558",
+        "y": "2524"
+      }
+    },
+    {
+      "text": "Malformed Lump::A girl's industrial school took us in after the escape, remember?  They taught us a few vocational skills at least.\n\nMalformed Lump::Since then you've bounced around doing odd jobs, mostly involving physical labour.\n\nMalformed Lump::It's been pretty rocky, neither of us can deny.  Making friends has been tough.  I think a lot of people we've met find us a little spiky.\n\nMalformed Lump::And once they figure out your a Cradle refugee turned State kid, it's game over.\n\n[[C->Yeah I've got a fucking few.]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Yeah I've got a fucking few.",
+          "pid": "78"
+        }
+      ],
+      "name": "What have I been doing for the last twenty years?",
+      "pid": "89",
+      "position": {
+        "x": "2678",
+        "y": "2524"
+      }
+    },
+    {
+      "text": "Malformed Lump::So do I.  I was there.\n\n[[C->Yeah I've got a fucking few.]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Yeah I've got a fucking few.",
+          "pid": "78"
+        }
+      ],
+      "name": "Yeah, I remember the school...",
+      "pid": "90",
+      "position": {
+        "x": "2559",
+        "y": "2674"
+      }
+    },
+    {
+      "text": "Malformed Lump::It was a little fried.  Everyone's was a little fried.  But compared to most, you got pretty lucky.\n\n[[I'm lucky?  Are you joking?]]",
+      "links": [
+        {
+          "name": "I'm lucky?  Are you joking?",
+          "link": "I'm lucky?  Are you joking?",
+          "pid": "92"
+        }
+      ],
+      "name": "Was my brain nugget fried?  How is my brain nugget doing these days?",
+      "pid": "91",
+      "position": {
+        "x": "2679",
+        "y": "2674"
+      }
+    },
+    {
+      "text": "Malformed Lump::You don't have cancer, do you?\n\nMalformed Lump::You aren't shoved in the closet of a psych hospital with a feeding tube running down your throat, are you?\n\nMalformed Lump::I've heard they sometimes remove the teeth to make it easier.\n\nMalformed Lump::The only thing you have to deal with is me.\n\n[[C->Yeah I've got a fucking few.]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Yeah I've got a fucking few.",
+          "pid": "78"
+        }
+      ],
+      "name": "I'm lucky?  Are you joking?",
+      "pid": "92",
+      "position": {
+        "x": "2656",
+        "y": "2824"
+      }
+    },
+    {
+      "text": "Malformed Lump::You didn't manage to keep her for very long.  \n\nMalformed Lump::But yes, that does mean your above the very bottom of the barrel, social ladder wise.  Congratulations on not being more than two standard deviations below mean on something.\n\n[[C->Why don't you like me?]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Why don't you like me?",
+          "pid": "61"
+        }
+      ],
+      "name": "I had a girlfriend at one point.  That means I'm cool, right?",
+      "pid": "93",
+      "position": {
+        "x": "2662",
+        "y": "1265"
+      }
+    },
+    {
+      "text": "Jasper::Come on, we're better off ripping that bandage quickly.\n\nJasper::Let's get this over with.  \n\nJasper::And if your arms and legs take a little longer to wake up, just try not to panic this time, ok?\n\n[[p:Let's get this over with!  Argh!->Looking Up]]\n[[p:Fine, time to wake up.  I just hope I don't have any visitors this time...->Looking Up]]",
+      "links": [
+        {
+          "name": "p:Let's get this over with!  Argh!",
+          "link": "Looking Up",
+          "pid": "1"
+        },
+        {
+          "name": "p:Fine, time to wake up.  I just hope I don't have any visitors this time...",
+          "link": "Looking Up",
+          "pid": "1"
+        }
+      ],
+      "name": "p:I'd be a lot more eager to wake up if I wasn't gonna wake up in a sewer.",
+      "pid": "94",
+      "position": {
+        "x": "2237",
+        "y": "3588"
+      }
+    },
+    {
+      "text": "Jasper::Alright.  Just keep in mind not all your parts are gonna wake up at once.  Your eyes might wake up before your arms and legs do.  You know how this goes, just try not to panic.\n\n[[p:Let's get this over with!  Argh!->Looking Up]]\n[[p:Fine, time to wake up.  I just hope I don't have any visitors this time...->Looking Up]]",
+      "links": [
+        {
+          "name": "p:Let's get this over with!  Argh!",
+          "link": "Looking Up",
+          "pid": "1"
+        },
+        {
+          "name": "p:Fine, time to wake up.  I just hope I don't have any visitors this time...",
+          "link": "Looking Up",
+          "pid": "1"
+        }
+      ],
+      "name": "p:Yes, please, get me out of here!  I've got tunnels to crawl through and expectations to fall short of!",
+      "pid": "95",
+      "position": {
+        "x": "2387",
+        "y": "3588"
+      }
+    },
+    {
+      "text": "Ferryman::Is everything alright Miss?\n\n[[Why do you think there's something wrong with me?]]\n[[p:I feel fine.  What took you so long?]]",
+      "links": [
+        {
+          "name": "Why do you think there's something wrong with me?",
+          "link": "Why do you think there's something wrong with me?",
+          "pid": "18"
+        },
+        {
+          "name": "p:I feel fine.  What took you so long?",
+          "link": "p:I feel fine.  What took you so long?",
+          "pid": "19"
+        }
+      ],
+      "name": "Ferry2",
+      "pid": "96",
+      "position": {
+        "x": "1648",
+        "y": "1687"
+      },
+      "tags": [
+        "ferryman_overhead_bright"
+      ]
     }
   ],
   "name": "Introduction",

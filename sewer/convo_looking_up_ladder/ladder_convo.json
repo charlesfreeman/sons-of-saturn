@@ -19,7 +19,7 @@
       }
     },
     {
-      "text": "That's what you want to say.  But it *isn't* what you say.  Instead you stand petrified, like a gormless gollum, and don't say a word.  \n\n[[Why won't you let me say what I want?  Why can't I run away from all this?]]",
+      "text": "Jasper::That's what you want to say.  But you *can't* say that. \n\n[[Why won't you let me say what I want?  Why can't I run away from all this?]]",
       "links": [
         {
           "name": "Why won't you let me say what I want?  Why can't I run away from all this?",
@@ -51,7 +51,7 @@
       }
     },
     {
-      "text": "I'm not to blame here.  *You're* the one who won't let you say what you want.  Or rather, what you've decided you \"want.\"  The conclusions you've drawn using more cerebral approaches don't matter.  Deep in your bones you've decided the only way out of here is forward.  \n\nI mean, I'm not going to stop you if you decide to bail.  I *can't* stop you; I'm just some voice in your head of suspicious, possibly bicameral evolutionary origin.  Run wild.  Turn around and run right back to the entrance of these tunnels.  You're pretty in shape right?\n\n...Well?  I'm waiting.\n\nSee?  You aren't going anywhere but forward.  Go ahead.  Tell the Ferryman you're ready.  You kind of left him hanging, after all.\n\n[[This isn't fair.  I shouldn't have to do this.]]",
+      "text": "Jasper::I'm not to blame here.  *You're* the one who won't let you say what you want.  Or rather, what you've decided you \"want.\"  \n\nJasper::Deep in your bones you know the only way out of here is forward.  \nJasper::I'm not going to stop you if you decide to bail.  I *can't* stop you; I'm just some voice in your head of suspicious, possibly bicameral origin.  \n\nJasper::Run wild.  Turn around and run right back to the entrance of these tunnels.  You're pretty in shape right?\n\nJasper::...Well?  I'm waiting.\n\nJasper::See?  You aren't going anywhere but forward.  Go ahead.  Tell the Ferryman you're ready.  You kind of left him hanging, after all.\n\n[[This isn't fair.  I shouldn't have to do this.]]",
       "links": [
         {
           "name": "This isn't fair.  I shouldn't have to do this.",
@@ -67,7 +67,7 @@
       }
     },
     {
-      "text": "Fine, then.  Go die like a baby sea turtle.  That won't be fair either, but life will still pan out that way.\n\n[[Continue->keys]] ",
+      "text": "Jasper::Fine, then.  Go die like a baby sea turtle.  That won't be fair either, but life will still pan out that way.\n\n[[Continue->keys]] ",
       "links": [
         {
           "name": "Continue",
@@ -79,7 +79,7 @@
       "pid": "5",
       "position": {
         "x": "784",
-        "y": "876"
+        "y": "877"
       }
     },
     {

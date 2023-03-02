@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://addons/mixing-desk/music/containers/core_cont.gd" type="Script" id=1]
 [ext_resource path="res://addons/mixing-desk/music/song.gd" type="Script" id=2]
@@ -7,6 +7,10 @@
 [ext_resource path="res://sounds/running_water.wav" type="AudioStream" id=5]
 [ext_resource path="res://sounds/saturnsounds.wav" type="AudioStream" id=6]
 [ext_resource path="res://sounds/Fresh Air.wav" type="AudioStream" id=7]
+[ext_resource path="res://sounds/B Side 100 BPM.wav" type="AudioStream" id=8]
+[ext_resource path="res://sounds/irritating-flourescent-light-hum.wav" type="AudioStream" id=9]
+[ext_resource path="res://sounds/Injection Loopable 1.wav" type="AudioStream" id=10]
+[ext_resource path="res://sounds/Injection Loopable 2.mp3" type="AudioStream" id=11]
 
 [node name="MDM" type="Node"]
 script = ExtResource( 3 )
@@ -92,6 +96,7 @@ script = ExtResource( 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="saturn/CoreContainer"]
 stream = ExtResource( 6 )
+volume_db = -10.0
 
 [node name="fresh_air" type="Node" parent="."]
 script = ExtResource( 2 )
@@ -106,3 +111,62 @@ script = ExtResource( 1 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="fresh_air/CoreContainer"]
 stream = ExtResource( 7 )
 volume_db = -40.0
+
+[node name="intro_music" type="Node" parent="."]
+script = ExtResource( 2 )
+tempo = 100
+bars = 25
+beats_in_bar = 4
+transition_beats = 1.0
+transition_type = "Beat"
+
+[node name="CoreContainer" type="Node" parent="intro_music"]
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="intro_music/CoreContainer"]
+stream = ExtResource( 8 )
+volume_db = -20.0
+
+[node name="flourescent_hum" type="Node" parent="."]
+script = ExtResource( 2 )
+tempo = 100
+bars = 25
+beats_in_bar = 4
+transition_beats = 1.0
+transition_type = "Beat"
+
+[node name="CoreContainer" type="Node" parent="flourescent_hum"]
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="flourescent_hum/CoreContainer"]
+stream = ExtResource( 9 )
+volume_db = -15.0
+
+[node name="loop_injectable_1" type="Node" parent="."]
+script = ExtResource( 2 )
+tempo = 100
+bars = 25
+beats_in_bar = 4
+transition_beats = 1.0
+transition_type = "Beat"
+
+[node name="CoreContainer" type="Node" parent="loop_injectable_1"]
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="loop_injectable_1/CoreContainer"]
+stream = ExtResource( 10 )
+
+[node name="loop_injectable_2" type="Node" parent="."]
+script = ExtResource( 2 )
+tempo = 100
+bars = 25
+beats_in_bar = 4
+transition_beats = 4.0
+transition_type = "Beat"
+
+[node name="CoreContainer" type="Node" parent="loop_injectable_2"]
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="loop_injectable_2/CoreContainer"]
+stream = ExtResource( 11 )
+volume_db = -20.0

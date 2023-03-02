@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "Wiggly::Yes.  You repeatedly muttered a few phrases, along the lines of \"I've ruined everything for all eternity\", or \"nothing can ever fix this\", or \"none of this is my fault!\"  \n\nWiggly::You also said something about finding a time machine somewhere in the Cradle, fixing it up, and using it to undo everything unacceptable.  \n\nWiggly::You said something along those lines, in different ways, three or four times actually.\n\n[[That's not what I remember dreaming.]]",
+      "text": "Wiggly::Yes.  You repeatedly muttered a few phrases, along the lines of \"I've ruined everything for all eternity\", or \"nothing can ever fix this\", or \"none of this is my fault!\"  \n\nWiggly::You also said something about finding a time machine somewhere in the Cradle and fixing it up.  \n\nWiggly::You said something along those lines, in different ways, three or four times actually.\n\n[[That's not what I remember dreaming.]]",
       "links": [
         {
           "name": "That's not what I remember dreaming.",
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "text": "The look of concern dissipates from his face, leaving only hints of exhasperation.\n\nWiggly::Thank goodness miss.  You really had me worried.\n\nWiggly::You weren't responding - I was worried I might have lost another client.\n\n[[Why is my hair wet?]]\n[[How long was I out for?]]\n[[Did I say anything while I was out?]]\n[[p:How did you know I needed to be rescued from that room?]]",
+      "text": "Wiggly::Thank goodness miss.  You really had me worried.\n\nWiggly::You weren't responding - I was worried I might have lost another client.\n\n[[Why is my hair wet?]]\n[[How long was I out for?]]\n[[Did I say anything while I was out?]]\n[[p:How did you know I needed to be rescued from that room?]]",
       "links": [
         {
           "name": "Why is my hair wet?",
@@ -122,7 +122,7 @@
       }
     },
     {
-      "text": "For a brief moment, Wiggly's face looks perplexed.  This quickly gives way to a look of intense, focused concern.\n\nWiggly::Miss.  There wasn't anyone else with you.\n\nWiggly::Not in the hallway, and not in the room.\n\nHow could he have missed her?  She was right there.  He must have not been paying attention.\n\n[[p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.]]\n[[p:I must have taken a big blow to the head.  I remember a woman, who said her name was Julia, leading me to that room.->p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.]]",
+      "text": "Wiggly::...\n\nWiggly::Miss.  There wasn't anyone else with you.\n\nWiggly::Not in the hallway, and not in the room.\n\nJasper::How could he have missed her?  She was right there.  He must have not been paying attention.\n\n[[p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.]]\n[[p:I must have taken a big blow to the head.  I remember a woman, who said her name was Julia, leading me to that room.->p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.]]",
       "links": [
         {
           "name": "p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.",
@@ -143,16 +143,16 @@
       }
     },
     {
-      "text": "Wiggly's grave look of concern grows deeper, more pronounced.\n\nWiggly::I...see.  This is very bad, miss.  Very serious.\n\nWiggly::This \"Julia\" who's been following you - she's not like you or me.  She's a part of the Cradle.  And for whatever reason, she's attached to you.\n\n[[How can someone be \"part of the Cradle\"?]]\n[[Who is \"Julia,\" exactly?->How can someone be \"part of the Cradle\"?]]",
+      "text": "Wiggly::...\n\nWiggly::I...see.  This is very bad, miss.  Very serious.\n\nWiggly::This \"Julia\" who's been following you - she's not like you or me.  She's a part of the Cradle.  And for whatever reason, she's attached to you.\n\n[[p:How can someone be \"part of the Cradle\"?]]\n[[p:Who is \"Julia,\" exactly?->p:How can someone be \"part of the Cradle\"?]]",
       "links": [
         {
-          "name": "How can someone be \"part of the Cradle\"?",
-          "link": "How can someone be \"part of the Cradle\"?",
+          "name": "p:How can someone be \"part of the Cradle\"?",
+          "link": "p:How can someone be \"part of the Cradle\"?",
           "pid": "9"
         },
         {
-          "name": "Who is \"Julia,\" exactly?",
-          "link": "How can someone be \"part of the Cradle\"?",
+          "name": "p:Who is \"Julia,\" exactly?",
+          "link": "p:How can someone be \"part of the Cradle\"?",
           "pid": "9"
         }
       ],
@@ -172,7 +172,7 @@
           "pid": "10"
         }
       ],
-      "name": "How can someone be \"part of the Cradle\"?",
+      "name": "p:How can someone be \"part of the Cradle\"?",
       "pid": "9",
       "position": {
         "x": "1252",
@@ -180,7 +180,7 @@
       }
     },
     {
-      "text": "Wiggly::Neither do we.  No one does.  \n\nWiggly::But nonetheless I've seen this before.  So have the other Ferrymen.  \n\nWiggly::A client, most often someone with connections here, enters the Cradle.  And then, usually somewhere near the SATURN Core, they start having delusions of a third party.\n\nWiggly::Their presence might be innocuous enough at first - helpful, even.  But soon the client gets sick, and has trouble walking.  Start having hallucinations.\n\nWiggly::No matter how many times I see it happen, it never fails to shake me to my core - seeing a client, incapacited, writhing in terror at someone in the room I cannot even see.\n\nWiggly::If we hadn't been separated I might have noticed the signs earlier.  Not that it would have helped much.\n\nHe's being uncharacteristically blunt, isn't he?  \n\nYou're fucked.\n\n[[You've gone through this before - that means you know what to do?]]",
+      "text": "Wiggly::Neither do we.  No one does.  \n\nWiggly::But nonetheless I've seen this before.  So have the other Ferrymen.  \n\nWiggly::A client, most often someone with connections here, enters the Cradle.  And then, usually somewhere near the SATURN Core, they start having delusions of a third party.\n\nWiggly::Their presence might be innocuous enough at first - helpful, even.  But soon the client gets sick, and has trouble walking.  Start having hallucinations.\n\nWiggly::No matter how many times I see it happen, it never fails to shake me to my core - seeing a client, incapacited, writhing in terror at someone in the room I cannot even see.\n\nWiggly::If we hadn't been separated I might have noticed the signs earlier.  Not that it would have helped much.\n\nJasper::He's being uncharacteristically blunt, isn't he?  \n\nJasper::You're fucked.\n\n[[You've gone through this before - that means you know what to do?]]",
       "links": [
         {
           "name": "You've gone through this before - that means you know what to do?",
@@ -196,7 +196,7 @@
       }
     },
     {
-      "text": "He is quiet for a moment, confirming your worst fears.\n\nWiggly::Well, we are not completely bereft of options miss.  But there is no way to run away from this.  Julia is attached to you.  You'll need to find a way to shake her off.\n\n[[Your other clients - how did they get through it?]]\n[[Give me the details, how do I shake her off?->Your other clients - how did they get through it?]]",
+      "text": "Wiggly::Hmmmm...\n\nWiggly::Well, we are not completely bereft of options miss.  But there is no way to run away from this.  Julia is attached to you.  You'll need to find a way to shake her off.\n\n[[Your other clients - how did they get through it?]]\n[[Give me the details, how do I shake her off?->Your other clients - how did they get through it?]]",
       "links": [
         {
           "name": "Your other clients - how did they get through it?",
@@ -254,7 +254,7 @@
       }
     },
     {
-      "text": "Wiggly::The client who got through found some old family photo belonging to her attachment.  I couldn't see exactly what happened, but she reported that showing the family photo to the entity haunting her allowed her to break free.\n\nWiggly::We should hunt for some sort of personal artifact that means something to Julia.  I think that's your best chance.\n\nWiggly::What can you tell me about Julia?  Any leads that might point us towards personal artifacts of hers?]]\n\n[[\"Client\"?  As in, singular?]]\n[[p:She's a nurse who works in the maternity ward.  She acted like the visitation she was bringing me in for was extremely discreet, and was very cagey about what it was actually for.  She had some sort of emotional reaction to the auditorium.  That's really all I know.]]",
+      "text": "Wiggly::The client who got through found some old family photo belonging to her attachment.  I couldn't see exactly what happened, but she reported that showing the family photo to the entity haunting her allowed her to break free.\n\nWiggly::We should hunt for some sort of personal artifact that means something to Julia.  I think that's your best chance.\n\nWiggly::What can you tell me about Julia?  Any leads that might point us towards personal artifacts of hers?\n\n[[\"Client\"?  As in, singular?]]\n[[p:She's a nurse who works in the maternity ward.  She acted like the visitation she was bringing me in for was extremely discreet, and was very cagey about what it was actually for.  She had some sort of emotional reaction to the auditorium.  That's really all I know.]]",
       "links": [
         {
           "name": "\"Client\"?  As in, singular?",
@@ -275,7 +275,7 @@
       }
     },
     {
-      "text": "Wiggly::Yes.  I'm not going to lie to you, miss.  I've only had one client make it through something like this.  The rest either expired or disappeared.\n\n\"Expired\" and \"disappeared\" sound like transparent euphemisms for \"died\" and \"had something even worse happen to them,\" respectively.\n\n[[Good to know.->Your other clients - how did they get through it?]]",
+      "text": "Wiggly::Yes.  I'm not going to lie to you, miss.  I've only had one client make it through something like this.  The rest either expired or disappeared.\n\nJasper::\"Expired\" and \"disappeared\" sound like transparent euphemisms for \"died\" and \"had something even worse happen to them,\" respectively.\n\n[[Good to know.->Your other clients - how did they get through it?]]",
       "links": [
         {
           "name": "Good to know.",
@@ -307,7 +307,7 @@
       }
     },
     {
-      "text": "Wiggly::I see.  That door shouldn't have been locked.  Kind of suspicious...\n\nWiggly::In any case, that's not a lot to work with, but it's a start.  It'll be high risk, but we should scour the maternity ward for anything we can find pertaining to Julia.  I doubt we'll find the personal artifacts we're looking for, but we might find a few clues as to her identity and exact role.\n\n[[p:Alright.  I don't see any point in wasting time.]]\n[[p:Seems like a long shot, but I don't have much other choice.]]",
+      "text": "Wiggly::I see.  That door shouldn't have been locked.  Kind of suspicious...\n\nWiggly::In any case, that's not a lot to work with, but it's a start.  It'll be high risk, but we should scour the maternity ward for anything we can find pertaining to Julia.  \n\nWiggly::I doubt we'll find the personal artifacts we're looking for, but we might find a few clues as to her identity and exact role.\n\n[[p:Alright.  I don't see any point in wasting time.]]\n[[p:Seems like a long shot, but I don't have much other choice.]]",
       "links": [
         {
           "name": "p:Alright.  I don't see any point in wasting time.",
@@ -349,7 +349,7 @@
       }
     },
     {
-      "text": "Correct.  No other choice.\n\n[[C->p:Alright.  I don't see any point in wasting time.]]",
+      "text": "Jasper::Correct.  No other choice.\n\n[[C->p:Alright.  I don't see any point in wasting time.]]",
       "links": [
         {
           "name": "C",
@@ -360,7 +360,7 @@
       "name": "p:Seems like a long shot, but I don't have much other choice.",
       "pid": "19",
       "position": {
-        "x": "1384",
+        "x": "1385",
         "y": "2104"
       }
     },
@@ -381,7 +381,7 @@
       }
     },
     {
-      "text": "Wiggly rises from his kneeling position and moves behind your chair, perhaps to help you stand if he feels it necessary.\n\nWiggly::I'll be following you, miss.\n\nReady when you are.",
+      "text": "Wiggly rises from his kneeling position and moves behind your chair, perhaps to help you stand if he feels it necessary.\n\nWiggly::I'll be following you, miss.\n\nJasper::Ready when you are.",
       "name": "Rises",
       "pid": "21",
       "position": {

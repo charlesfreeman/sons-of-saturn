@@ -18,6 +18,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://tunnels/asbestos_tunnel/asbestos_tunnel.tscn"
+song = "sewer_light_flow"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true

@@ -72,5 +72,6 @@ ui_down={
 
 [rendering]
 
+quality/driver/fallback_to_gles2=true
 environment/default_clear_color=Color( 0.117647, 0.113725, 0.152941, 0 )
 environment/default_environment="res://default_env.tres"

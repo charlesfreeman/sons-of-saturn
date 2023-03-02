@@ -75,16 +75,12 @@ func _ready():
 func init_song(track):
 	if playing:
 		get_child(current_song_num).playing = false
-	print("clearing tracks")
 	playing_tracks.clear()
 	volumes.clear()
 	playing_tracks = []
 	
-	print("track: ", track)
 	track = _songname_to_int(track)
-	print("track: ", track)
 	var song = songs[track]
-	print("song: ", song)
 	var root = song._get_core()
 	current_song_num = track
 	current_song = songs[track]._get_core()
@@ -93,7 +89,6 @@ func init_song(track):
 		if song.fading_out:
 			i.get_child(0).stop(i)
 			song.fading_out = false
-		print("vol_db: ", i.volume_db)
 		volumes.append(i.volume_db)
 		# i.set_volume_db(default_vol)
 	if song.muted_tracks.size() > 0:

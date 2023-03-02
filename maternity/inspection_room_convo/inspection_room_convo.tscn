@@ -22,3 +22,4 @@ fade_tag_dict_sliver = {
 "enter": "res://maternity/inspection_room_convo/inspection_room_sliver.png",
 "ongurney": "res://maternity/inspection_room_convo/mold_ceiling_sliver.png"
 }
+mem_to_remove = "Julia"

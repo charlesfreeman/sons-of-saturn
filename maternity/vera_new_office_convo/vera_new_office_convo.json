@@ -20,7 +20,7 @@
       "pid": "1",
       "position": {
         "x": "782",
-        "y": "518.5"
+        "y": "518"
       },
       "tags": [
         "page1"
@@ -43,8 +43,8 @@
       "name": "Page 2",
       "pid": "2",
       "position": {
-        "x": "792",
-        "y": "830.5"
+        "x": "793",
+        "y": "830"
       },
       "tags": [
         "page2"
@@ -73,7 +73,7 @@
       "pid": "3",
       "position": {
         "x": "784",
-        "y": "223.5"
+        "y": "223"
       }
     },
     {
@@ -89,11 +89,11 @@
       "pid": "4",
       "position": {
         "x": "500",
-        "y": "382.5"
+        "y": "382"
       }
     },
     {
-      "text": "You wretch open the cabinet drawer.  The interior emits a vaguely leathery odor.\n\n[[C->Page 1]] ",
+      "text": "You wretch open the cabinet drawer.  The interior emits a vaguely leathery odor.\n\nSeveral more diary pages lie inside, neatly stacked.  You pick them up.\n\n[[C->Page 1]] ",
       "links": [
         {
           "name": "C",
@@ -105,7 +105,7 @@
       "pid": "5",
       "position": {
         "x": "780",
-        "y": "376.5"
+        "y": "376"
       }
     },
     {
@@ -121,7 +121,7 @@
       "pid": "6",
       "position": {
         "x": "675",
-        "y": "668.5"
+        "y": "668"
       }
     },
     {
@@ -137,7 +137,7 @@
       "pid": "7",
       "position": {
         "x": "915",
-        "y": "668.5"
+        "y": "668"
       }
     },
     {
@@ -153,7 +153,7 @@
       "pid": "8",
       "position": {
         "x": "667",
-        "y": "980.5"
+        "y": "980"
       }
     },
     {
@@ -169,7 +169,7 @@
       "pid": "9",
       "position": {
         "x": "907",
-        "y": "980.5"
+        "y": "980"
       }
     },
     {
@@ -190,11 +190,11 @@
       "pid": "10",
       "position": {
         "x": "792",
-        "y": "1132.5"
+        "y": "1132"
       }
     },
     {
-      "text": "Wiggly::What do you mean?  Those are some of the nicest tunnels in the Cradle.  So spacious, you barely have to duck, and the water is less than knee deep the entire way.\n\nThere isn't even a hint of facetiousness in his voice.  He loves those tunnels.\n\n[[C->p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.]] ",
+      "text": "Wiggly::What do you mean?  Those are some of the nicest tunnels in the Cradle.  So spacious, you barely have to duck, and the water is less than knee deep the entire way.\n\nJasper::There isn't even a hint of facetiousness in his voice.  He loves those tunnels.\n\n[[C->p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.]] ",
       "links": [
         {
           "name": "C",
@@ -206,7 +206,7 @@
       "pid": "11",
       "position": {
         "x": "724",
-        "y": "1282.5"
+        "y": "1282"
       }
     },
     {
@@ -222,7 +222,7 @@
       "pid": "12",
       "position": {
         "x": "912",
-        "y": "1282.5"
+        "y": "1282"
       }
     },
     {
@@ -231,11 +231,11 @@
       "pid": "13",
       "position": {
         "x": "912",
-        "y": "1432.5"
+        "y": "1432"
       }
     },
     {
-      "text": "Wiggly::Really, you think so?  I think it feels cozy.\n\nHe seems to find the cramped quarters and thick layer of dust comforting, soothing.\n\n[[C->start]] ",
+      "text": "Wiggly::Really, you think so?  I think it feels cozy.\n\nJasper::He seems to find the cramped quarters and thick layer of dust comforting, soothing.\n\n[[C->start]] ",
       "links": [
         {
           "name": "C",
@@ -247,7 +247,7 @@
       "pid": "14",
       "position": {
         "x": "645",
-        "y": "386.5"
+        "y": "386"
       }
     }
   ],

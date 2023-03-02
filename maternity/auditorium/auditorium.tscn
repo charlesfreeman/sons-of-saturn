@@ -24,6 +24,7 @@ __meta__ = {
 scene_down = "res://maternity/right_curved_hallway/right_curved_hallway.tscn"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
 position = Vector2( 1507.11, 2010.01 )

@@ -48,7 +48,7 @@
       }
     },
     {
-      "text": "No, you don't.\n\nJulia::No, you don't.  We need to perform at least cursory inspections before we can admit you into operations. \n\nJulia::I'm sorry, miss, but we can't accept the risk of performing operations without making sure our patients are healthy enough to go through with it.\n\n[[p:Alright.  I have to make it to operations.  So let's get this over with.->p:Fine, let's get this over with.]]",
+      "text": "Jasper::No, you don't.\n\nJulia::No, you don't.  We need to perform at least cursory inspections before we can admit you into operations. \n\nJulia::I'm sorry, miss, but we can't accept the risk of performing operations without making sure our patients are healthy enough to go through with it.\n\n[[p:Alright.  I have to make it to operations.  So let's get this over with.->p:Fine, let's get this over with.]]",
       "links": [
         {
           "name": "p:Alright.  I have to make it to operations.  So let's get this over with.",
@@ -80,12 +80,12 @@
       "name": "p:Will this require anything invasive?  I like my envelopes unbreached and intact.",
       "pid": "4",
       "position": {
-        "x": "1264",
-        "y": "564"
+        "x": "1261",
+        "y": "567"
       }
     },
     {
-      "text": "Julia::I'm a professional, miss.  So are my colleagues.  Do you think so little of us that you would suggest we are using unsanitized equipment?  \n\nJulia::We are a little short staffed right now, true, but all of the important equipment has been thoroughly sterilized.\n\nYour protests seem to have made Julia defensive, and a little angry.  Just cut the bullshit, you don't care.\n\nYou waded through a sewer just to get here, stop pretending to be anything other than vile and lay down on the asbestos-caked gurney.\n\n[[C->Start]] ",
+      "text": "Julia::I'm a professional, miss.  So are my colleagues.  Do you think so little of us that you would suggest we are using unsanitized equipment?  \n\nJulia::We are a little short staffed right now, true, but all of the important equipment has been thoroughly sterilized.\n\nYour protests seem to have made Julia defensive, and a little angry.  \n\nJasper::Just cut the bullshit, you don't care.\n\nJasper::You waded through a sewer on the way here, stop pretending to be anything other than vile and lay down on the asbestos-caked gurney.\n\n[[C->Start]] ",
       "links": [
         {
           "name": "C",
@@ -101,7 +101,7 @@
       }
     },
     {
-      "text": "You lay flat on your back atop the dust covered gurney.  A pair of more modern surgical lights are wheeled in over you, though they are not yet turned on.  \n\nYou feel like a museum piece.\n\nJulia::Let's start by taking your blood pressure.\n\n[[p:Alright.]]\n[[p:It's probably pretty high right now.->p:Alright.]]",
+      "text": "You lay flat on your back atop the dust covered gurney.  \n\nThe ceiling above is decorated by an intricate mold pattern, the product of decades of water damage.  It is beautiful.\n\nA pair of more modern surgical lights are wheeled in over you, though they are not yet turned on.  \n\nJasper::I feel like a museum piece.\n\nJulia::Let's start by taking your blood pressure.\n\n[[p:Alright.]]\n[[p:It's probably pretty high right now.->p:Alright.]]",
       "links": [
         {
           "name": "p:Alright.",
@@ -239,7 +239,7 @@
       }
     },
     {
-      "text": "After the band is put in place, she gently lifts her fingers and turns to one of the machines.  You hear a slight whir.  Pressure begins accumulating on your bicep.\n\nJulia::Hmm.  How old are you, miss?\n\n[[How old are *you*?]]\n[[p:I'm 28.]]\n[[p:(Lie) I'm 23.->p:I'm 28.]]",
+      "text": "After the band is put in place, she gently lifts her fingers and turns to one of the machines.  You hear a slight whir.  Pressure begins accumulating on your bicep.\n\nJulia::Hmm.  How old are you, miss?\n\n[[How old are *you*?]]\n[[p:I'm 26.]]\n[[p:(Lie) I'm 21.->p:I'm 26.]]",
       "links": [
         {
           "name": "How old are *you*?",
@@ -247,13 +247,13 @@
           "pid": "14"
         },
         {
-          "name": "p:I'm 28.",
-          "link": "p:I'm 28.",
+          "name": "p:I'm 26.",
+          "link": "p:I'm 26.",
           "pid": "15"
         },
         {
-          "name": "p:(Lie) I'm 23.",
-          "link": "p:I'm 28.",
+          "name": "p:(Lie) I'm 21.",
+          "link": "p:I'm 26.",
           "pid": "15"
         }
       ],
@@ -265,7 +265,7 @@
       }
     },
     {
-      "text": "Julia::I'm only 32 myself, miss.\n\nShe looks a bit older to you.  But not much.\n\n[[C->Pressure]] ",
+      "text": "Julia::I'm only 35 myself, miss.\n\nJasper::She looks a bit older to me.  But not much.\n\n[[C->Pressure]] ",
       "links": [
         {
           "name": "C",
@@ -281,7 +281,7 @@
       }
     },
     {
-      "text": "Julia::Hmm.  Your blood pressure is a little bit higher than it should be at your age.  Still within tolerances though, I suppose.\n\nYou spent too much time drinking and smoking in your early twenties.  Your body is already a shambles.  This is why you have dreams about your teeth falling out.\n\n[[p:Good to know.]]\n[[p:I'm sure my freakish, horse-like heart rate will make up for it.->p:Good to know.]]",
+      "text": "Julia::Hmm.  Your blood pressure is a little bit higher than it should be at your age.  Still within tolerances though, I suppose.\n\nJasper::You spent too much time drinking and smoking in your early twenties.  Your body is already a shambles.  \n\nJasper::This is why we have dreams about your teeth falling out.\n\n[[p:Good to know.]]\n[[p:I'm sure my freakish, horse-like heart rate will make up for it.->p:Good to know.]]",
       "links": [
         {
           "name": "p:Good to know.",
@@ -294,7 +294,7 @@
           "pid": "16"
         }
       ],
-      "name": "p:I'm 28.",
+      "name": "p:I'm 26.",
       "pid": "15",
       "position": {
         "x": "1295",
@@ -318,7 +318,7 @@
       }
     },
     {
-      "text": "Julia grabs a stethoscope from underneath the adjacent table and equips the headset.  She presses the diaphragm to your left collarbone and slowly slides it down your chest.  The touch is icy but intimate.\n\nJulia::Your heart rate is a little bit lower than average - are you an athlete?\n\nYou are no athlete.  You're just presently deprived of your beloved uppers and your heart is slacking off in their administrative absense.\n\n[[p:I try to keep myself in shape, yes.]]\n[[p:No, my heart is just lazy.  And ugly.]]",
+      "text": "Julia grabs a stethoscope from underneath the adjacent table and equips the headset.  She presses the diaphragm to your left collarbone and slowly slides it down your chest.  The touch is icy but intimate.\n\nJulia::Your heart rate is a little bit lower than average - are you an athlete?\n\nJasper::You aren't an athlete.  You're just presently deprived of your beloved uppers.  Your heart is slacking off in their administrative absense.\n\n[[p:I try to keep myself in shape, yes.]]\n[[p:No, my heart is just lazy.  And ugly.]]",
       "links": [
         {
           "name": "p:I try to keep myself in shape, yes.",
@@ -566,7 +566,7 @@
       }
     },
     {
-      "text": "Julia::This way Miss.  We need to perform a quick inspection before proceeding.\n\nShe motions to the doorway on the right.\n\n[[p:Since when do I need an inspection?  You said all I had to do was sign in.]]\n[[p:Which of my body parts needs inspecting?  I just checked and they are all working fine.]]",
+      "text": "Julia::This way Miss.  We need to perform a quick inspection before proceeding.\n\nJulia motions to the doorway on the right.\n\n[[p:Since when do I need an inspection?  You said all I had to do was sign in.]]\n[[p:Which of my body parts needs inspecting?  I just checked and they are all working fine.]]",
       "links": [
         {
           "name": "p:Since when do I need an inspection?  You said all I had to do was sign in.",
@@ -583,11 +583,11 @@
       "pid": "32",
       "position": {
         "x": "1279",
-        "y": "46.5"
+        "y": "46"
       }
     },
     {
-      "text": "Julia::I apologize for failing to mention this, but we also need to put you through a brief preliminary screening.\n\nJulia::Just a few quick scans to make sure you don't have any underlying health problems.  We want to avoid any complications during the operation, you see.\n\nJulia::Now, right this way.\n\n[[C->Start]]",
+      "text": "Julia::I apologize for failing to mention this, but we also need to put you through a brief preliminary screening.\n\nJulia::Just a few quick scans to make sure you don't have any underlying health problems.  We want to avoid any complications during the operation, you see.\n\nJasper::She thinks you look sickly.  It's the flab on your torso.  She can smell it.\n\nJulia::Now, right this way.\n\n[[C->Start]]",
       "links": [
         {
           "name": "C",
@@ -599,11 +599,11 @@
       "pid": "33",
       "position": {
         "x": "1194",
-        "y": "187.5"
+        "y": "187"
       }
     },
     {
-      "text": "Julia::I can't just take your word for that Miss.  I need to confirm for myself.\n\nJulia::Just a few quick scans to make sure you don't have any underlying health problems.  We want to avoid any complications during the operation, you see.\n\nJulia::Now, right this way.\n\n[[C->Start]]",
+      "text": "Julia::I can't just take your word for that Miss.  I need to confirm for myself.\n\nJasper::She doesn't trust you.\n\nJulia::Just a few quick scans to make sure you don't have any underlying health problems.  We want to avoid any complications during the operation, you see.\n\nJulia::Now, right this way.\n\n[[C->Start]]",
       "links": [
         {
           "name": "C",
@@ -614,8 +614,8 @@
       "name": "p:Which of my body parts needs inspecting?  I just checked and they are all working fine.",
       "pid": "34",
       "position": {
-        "x": "1352",
-        "y": "185.5"
+        "x": "1354",
+        "y": "191"
       }
     }
   ],

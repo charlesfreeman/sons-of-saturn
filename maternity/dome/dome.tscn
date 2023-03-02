@@ -25,12 +25,14 @@ scene_right = "res://maternity/right_curved_hallway/right_curved_hallway.tscn"
 scene_down = "res://maternity/breezeway/breezeway.tscn"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+right_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
 position = Vector2( 2655.53, 1542.4 )
 shape = SubResource( 1 )
 
 [node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
 position = Vector2( 1415.96, 1968.3 )
@@ -38,5 +40,5 @@ shape = SubResource( 2 )
 
 [node name="PopUp" parent="." instance=ExtResource( 3 )]
 popup_on_entry = true
-popup_text = [ "Amelie::Woah!  What's up with this dome?", "Amelie::Oh, this is just the foyer. ", "Amelie::Patients enter through here.  Someone comes to greet them and show them to the front desk.", "Amelie::At least, that's what they are supposed to do." ]
+popup_text = [ "Amelie::Woah!  What's up with this dome?", "Julia::Oh, this is just the foyer. ", "Julia::Patients enter through here.  Someone comes to greet them and show them to the front desk.", "Julia::At least, that's what they are supposed to do." ]
 single_use = true

@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "Before you lies a small stage.  A rotten piano, imploded in on itself, sits atop, resting beneath a shattered engraving of women waving torches.\n\nPresumably this served as some sort of auditorium, or music hall, for the patients and staff.\n\n[[p:What's the deal with this auditorium?  Seems a little out of place in an infirmary.]] ",
+      "text": "Before you lies a small stage.  A rotten piano, imploded in on itself, sits atop, resting beneath a shattered engraving of women waving torches.\n\n[[p:What's the deal with this auditorium?  Seems a little out of place in an infirmary.]] ",
       "links": [
         {
           "name": "p:What's the deal with this auditorium?  Seems a little out of place in an infirmary.",
@@ -19,12 +19,17 @@
       }
     },
     {
-      "text": "Julia::...\n\nJulia doesn't hear you.\n\n[[Continue->Jane Longing]]",
+      "text": "Julia::...\n\nJasper::She's not listening.\n\n[[p:Hello?  You there?]]\n[[p:Come here often?]]",
       "links": [
         {
-          "name": "Continue",
-          "link": "Jane Longing",
+          "name": "p:Hello?  You there?",
+          "link": "p:Hello?  You there?",
           "pid": "3"
+        },
+        {
+          "name": "p:Come here often?",
+          "link": "p:Come here often?",
+          "pid": "4"
         }
       ],
       "name": "p:What's the deal with this auditorium?  Seems a little out of place in an infirmary.",
@@ -35,81 +40,44 @@
       }
     },
     {
-      "text": "Julia is unreachable, staring at the stage.  Beneath her rapt expression you sense deep longing, and loss.\n\n[[p:Hello?  You there?]]\n[[p:Come here often?]]",
-      "links": [
-        {
-          "name": "p:Hello?  You there?",
-          "link": "p:Hello?  You there?",
-          "pid": "4"
-        },
-        {
-          "name": "p:Come here often?",
-          "link": "p:Come here often?",
-          "pid": "5"
-        }
-      ],
-      "name": "Jane Longing",
-      "pid": "3",
-      "position": {
-        "x": "1179",
-        "y": "906"
-      }
-    },
-    {
-      "text": "She jerks her head, dispelling whatever trance she lost herself in.\n\nJulia::Yes, sorry.  What's the matter?\n\n[[p:I'm guessing you visit this auditorium often?]]",
+      "text": "Julia::I...\n\nJulia::Yes, sorry.  What's the matter?\n\n[[p:I'm guessing you visit this auditorium often?->Get Going]]",
       "links": [
         {
           "name": "p:I'm guessing you visit this auditorium often?",
-          "link": "p:I'm guessing you visit this auditorium often?",
-          "pid": "6"
+          "link": "Get Going",
+          "pid": "5"
         }
       ],
       "name": "p:Hello?  You there?",
-      "pid": "4",
+      "pid": "3",
       "position": {
         "x": "1104",
         "y": "1056"
       }
     },
     {
-      "text": "Julia::I...\n\nShe hesitates.\n\n[[Continue->Get Going]]",
+      "text": "Julia::I...\n\n[[Continue->Get Going]]",
       "links": [
         {
           "name": "Continue",
           "link": "Get Going",
-          "pid": "7"
+          "pid": "5"
         }
       ],
       "name": "p:Come here often?",
-      "pid": "5",
+      "pid": "4",
       "position": {
         "x": "1254",
         "y": "1056"
       }
     },
     {
-      "text": "Again, she hesitates.  \n\n[[Continue->Get Going]] ",
-      "links": [
-        {
-          "name": "Continue",
-          "link": "Get Going",
-          "pid": "7"
-        }
-      ],
-      "name": "p:I'm guessing you visit this auditorium often?",
-      "pid": "6",
-      "position": {
-        "x": "1105",
-        "y": "1206"
-      }
-    },
-    {
-      "text": "Julia::No, I don't.\n\nJulia::We should keep moving.  We still need to sign you in at the front desk.",
+      "text": "Julia::No, I don't.\n\nJasper::Liar.\n\nJulia::We should keep moving.  We still need to sign you in at the front desk.",
       "name": "Get Going",
-      "pid": "7",
+      "pid": "5",
       "position": {
-        "x": "1184",
-        "y": "1364"
+        "x": "1176",
+        "y": "1241"
       }
     }
   ],

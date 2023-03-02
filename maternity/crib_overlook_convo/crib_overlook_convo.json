@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "\n\nJulia::Ugh, please Miss, let's not linger here.  I hate this room.\n\n[[p:Can we hang out here for just a bit?  This is the first time I've gotten fresh air since I made it here.]]\n[[p:You'd rather go back to the moldy, claustrophobic hallways?  Because to be honest that sounds preferable to me as well.]]",
+      "text": "You approach a small overlook.  A fresh breeze pours through the open windows.\n\nJulia::Please, Miss, let's not linger here.  I hate this room.\n\n[[p:Can we hang out here for just a bit?  This is the first time I've gotten fresh air since I made it here.]]\n[[p:You'd rather go back to the moldy, claustrophobic hallways?  Because to be honest that sounds preferable to me as well.]]",
       "links": [
         {
           "name": "p:Can we hang out here for just a bit?  This is the first time I've gotten fresh air since I made it here.",
@@ -20,7 +20,7 @@
       "pid": "1",
       "position": {
         "x": "1179",
-        "y": "593.5"
+        "y": "593"
       }
     },
     {
@@ -35,8 +35,8 @@
       "name": "p:Can we hang out here for just a bit?  This is the first time I've gotten fresh air since I made it here.",
       "pid": "2",
       "position": {
-        "x": "1104",
-        "y": "743.5"
+        "x": "1103",
+        "y": "743"
       }
     },
     {
@@ -52,11 +52,11 @@
       "pid": "3",
       "position": {
         "x": "1254",
-        "y": "743.5"
+        "y": "743"
       }
     },
     {
-      "text": "Don't be coy, you recognize this smell.  It's the fruity smell of rot.\n\nJulia glances down in surrender.\n\nJulia::You're going to make me say it, aren't you?\n\nJulia::Sick babies, ones we've exhausted treatment for.  This is where we leave them.  \n\nJulia::Right here, in this crib.\n\nJulia::We tell the parents that there's nothing else we can do, but they still have a chance if they get some sunlight and fresh air.\n\nJulia::One of those claims is true.\n\nJulia::We know it's not gonna work.  I think the mom and dad usually know, too.  But we keep bringing babies here all the same.\n\nJulia::*I* keep bringing babies here.  They always make me do it.\n\n[[p:That's...genuinely horrific.]]\n[[p:I guess that explains the smell.]]",
+      "text": "Jasper::Don't be coy, you recognize this smell.  It's the fruity smell of rot.\n\nJulia glances down in surrender.\n\nJulia::You're going to make me say it, aren't you?\n\nJulia::Sick babies, ones we've exhausted treatment for.  This is where we leave them.  \n\nJulia::Right here, in this crib.\n\nJulia::We tell the parents that there's nothing else we can do, but they still have a chance if they get some sunlight and fresh air.\n\nJulia::One of those claims is true.\n\nJulia::We know it's not gonna work.  I think the mom and dad usually know, too.  But we keep bringing babies here all the same.\n\nJulia::*I* keep bringing babies here.  They always make me do it.\n\n[[p:That's...genuinely horrific.]]\n[[p:I guess that explains the smell.]]",
       "links": [
         {
           "name": "p:That's...genuinely horrific.",
@@ -73,7 +73,7 @@
       "pid": "4",
       "position": {
         "x": "1103",
-        "y": "913.5"
+        "y": "913"
       }
     },
     {
@@ -99,7 +99,7 @@
       "pid": "5",
       "position": {
         "x": "1028",
-        "y": "1063.5"
+        "y": "1063"
       }
     },
     {
@@ -115,7 +115,7 @@
       "pid": "6",
       "position": {
         "x": "1178",
-        "y": "1063.5"
+        "y": "1063"
       }
     },
     {
@@ -131,11 +131,11 @@
       "pid": "7",
       "position": {
         "x": "823",
-        "y": "1214.5"
+        "y": "1214"
       }
     },
     {
-      "text": "Julia::It didn't always.  They used to just make the newest nurse take on this responsibility.  \n\nJulia::But I...\n\nShe trails off.\n\nJulia::I don't want to go into it, but I'm very indebted to some of the higher up staff here.\n\nJulia::So a lot of the tougher work is falling on me for a while.\n\n[[That isn't fair.  You shouldn't have to do all of this alone.]]",
+      "text": "Julia::It didn't always.  They used to just make the newest nurse take on this responsibility.  \n\nJulia::But I...\n\nJulia::I don't want to go into it, but I'm very indebted to some of the higher up staff here.\n\nJulia::So a lot of the tougher work is falling on me for a while.\n\n[[That isn't fair.  You shouldn't have to do all of this alone.]]",
       "links": [
         {
           "name": "That isn't fair.  You shouldn't have to do all of this alone.",
@@ -147,7 +147,7 @@
       "pid": "8",
       "position": {
         "x": "1113",
-        "y": "1213.5"
+        "y": "1213"
       }
     },
     {
@@ -156,7 +156,7 @@
       "pid": "9",
       "position": {
         "x": "1119",
-        "y": "1363.5"
+        "y": "1363"
       }
     },
     {
@@ -172,7 +172,7 @@
       "pid": "10",
       "position": {
         "x": "983",
-        "y": "1213.5"
+        "y": "1213"
       }
     }
   ],

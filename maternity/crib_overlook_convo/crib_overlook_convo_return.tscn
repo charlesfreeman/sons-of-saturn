@@ -10,8 +10,7 @@ __meta__ = {
 }
 
 [node name="Convo" parent="." instance=ExtResource( 1 )]
-scriptPath = "res://maternity/crib_overlook_convo/crib_overlook_convo.json"
+scriptPath = "res://maternity/crib_overlook_convo/crib_overlook_convo_return.json"
 backgroundPath = "res://maternity/crib_overlook_convo/crib_closeup_2300x2160.png"
 sliverPath = "res://maternity/crib_overlook_convo/crib_closeup_sliver.png"
 nextLocation = "res://maternity/crib_overlook/crib_overlook.tscn"
-prog_flag = "crib_overlook_convo"

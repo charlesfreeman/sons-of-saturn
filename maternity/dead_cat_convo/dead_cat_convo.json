@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "Dead Cat::Hey there.  Been a while.\n\nWhat is he doing here.  Get him out of here.\n\n[[No it hasn't.  It hasn't been long at all.  You never leave me alone!]]\n[[Now is really not the best time.]]\n[[Wait, am I stuck in a spectrograph?]]\n[[p:I can go back, I can correct for it, I can fix it all!]]",
+      "text": "Dead Cat::Hey there.  Been a while.\n\nJasper::What is he doing here?  Get him out of here!\n\n[[No it hasn't.  It hasn't been long at all.  You never leave me alone!]]\n[[Now is really not the best time.]]\n[[Wait, am I stuck in a spectrograph?]]\n[[p:I can go back, I can correct for it, I can fix it all!]]",
       "links": [
         {
           "name": "No it hasn't.  It hasn't been long at all.  You never leave me alone!",
@@ -53,7 +53,7 @@
       }
     },
     {
-      "text": "Dead Cat::\"I need more time!\"\n\nDead Cat::That's all you ever do: try to buy yourself a little more time.  \"I'll do this for you, I'll make it happen, I just need a few more moments to get back up on my feet.\"  Yet you never get it together, do you?\n\nDead Cat::Let's face it, you were never going to be prepared for this.  So we should just jump in and get this over with.\n\nThat scraggly rat is lying.  You were seconds away from getting your shit together.  \n\n[[C->Untitled Passage]] ",
+      "text": "Dead Cat::\"I need more time!\"\n\nDead Cat::That's all you ever do: try to buy yourself a little more time.  \"I'll do this for you, I'll make it happen, I just need a few more moments to get back up on my feet.\"  Yet you never get it together, do you?\n\nDead Cat::Let's face it, you were never going to be prepared for this.  So we should just jump in and get this over with.\n\nJasper::That scraggly rat is lying!  You were seconds away from getting your shit together.  \n\n[[C->Untitled Passage]] ",
       "links": [
         {
           "name": "C",
@@ -64,12 +64,12 @@
       "name": "Now is really not the best time.",
       "pid": "3",
       "position": {
-        "x": "1065",
+        "x": "1066",
         "y": "776"
       }
     },
     {
-      "text": "Dead Cat::Trust me, anyone would have gotten that message loud and clear.  After what you did...\n\nStop!  Stop!  Get her out of here!\n\nDead Cat::Ignore me. Grope me with a thousand hands and eyes.  Either way I'll keep on slinking through your inner recesses.\n\nNo, don't buy it, she can be excised.  Like a bullet lodged within the brain.  Standard foreign body removal.\n\nDead Cat::Removing me will be a traumatic procedure.  Prepare yourself for a lot of psychic self-mutilation - I'm lodged pretty deep.\n\nFine then, nothing beneath the cerebral cortex has been doing much for us lately anyway.  And right amygdala ablations are all the rage right now.\n\nLosing a little grey matter is a small price to pay for ridding your brain of vermin.\n\nSo many parts of your brain are redundant.  Even that guy who took a rod through the skull eventually made a full recovery.  Cut her out!\n\nDead Cat::Huh, that voice really doesn't like me, does it?\n\nThat's just because I'm looking out for you. Your whole life is an ongoing tapestry of permanent, uncorrectable injustices - and this little furball is the root.  \n\nAnd you aren't fated for any Athenian intervention; that tapestry just keeps on rolling.\n\n[[C->p:Will you forgive me?]] ",
+      "text": "Dead Cat::Trust me, anyone would have gotten that message loud and clear.  After what you did...\n\nJasper::Stop!  Stop!  Get her out of here!\n\nDead Cat::Ignore me. Grope me with a thousand hands and eyes.  Either way I'll keep on slinking through your inner recesses.\n\nJasper::No, don't buy it, she can be excised.  Like a bullet lodged within the brain.  Standard foreign body removal.\n\nDead Cat::Removing me will be a traumatic procedure.  Prepare yourself for a lot of psychic self-mutilation - I'm lodged pretty deep.\n\nJasper::Fine then, nothing beneath the cerebral cortex has been doing much for us lately anyway.  The lower stem just made us fucking walk manually, we don't need them.\n\nJasper::And right amygdala ablations are all the rage right now.\n\nJasper::Losing a little grey matter is a small price to pay for ridding your brain of vermin.\n\nJasper::So many parts of your brain are redundant.  Even that guy who took a rod through the skull eventually made a full recovery.  Cut her out!\n\nDead Cat::Huh, Jasper really doesn't like me, do they?\n\nJasper::That's just because I'm looking out for you. Your whole life is an ongoing tapestry of permanent, uncorrectable injustices - and this little furball is the root.  \n\n[[C->p:Will you forgive me?]] ",
       "links": [
         {
           "name": "C",
@@ -169,7 +169,7 @@
       }
     },
     {
-      "text": "Dead Cat::Better than the one where you're naked in public, right?\n\nHe's right, this is a lot more tolerable than that nightmare.  Better than the ones where your teeth start falling out too.\n\n[[C->Untitled Passage]] ",
+      "text": "Dead Cat::Better than the one where you're naked in public, right?\n\nJasper::I hate to admit it but she's right, this is a lot more tolerable than that nightmare.  Better than the ones where your teeth start falling out too.\n\n[[C->Untitled Passage]] ",
       "links": [
         {
           "name": "C",
@@ -185,7 +185,7 @@
       }
     },
     {
-      "text": "Yes, that's the best course of action right now.  The only course of action, really.\n\nDead Cat::I must admit, that's awfully spirited thrashing\n\n[[C->Light splash]]",
+      "text": "Jasper::Yes, yes! That's the best course of action right now.  The only course of action, really.\n\nDead Cat::I must admit, that's awfully spirited thrashing\n\n[[C->Light splash]]",
       "links": [
         {
           "name": "C",
@@ -217,7 +217,7 @@
       }
     },
     {
-      "text": "You feel a light splash hit your face.\n\nAnd then another.\n\n...\n\nAnd then another.  Water torture?  If so, fitting.\n\nDead Cat::Looks like our time is once again coming to a close.\n\n[[p:I'll figure this all out, make everything right.  Undo what was done.  I promise I'll succeed.]]",
+      "text": "You feel a light splash hit your face.\n\nAnd then another.\n\n...\n\nAnd then another.  \n\nJasper::Water torture?  If so, fitting.\n\nDead Cat::Looks like our time is once again coming to a close.\n\n[[p:I'll figure this all out, make everything right.  Undo what was done.  I promise I'll succeed.]]",
       "links": [
         {
           "name": "p:I'll figure this all out, make everything right.  Undo what was done.  I promise I'll succeed.",
@@ -236,7 +236,7 @@
       ]
     },
     {
-      "text": "Dead Cat::Hahahaha.\n\nHer laugh is withering.\n\nDead Cat::You just don't get it, do you?\n\nDead Cat::You returned here.  You've already failed.",
+      "text": "Dead Cat::Hahahaha.\n\nJasper::Ugh, her laugh, it hurts.\n\nDead Cat::You just don't get it, do you?\n\nDead Cat::You returned here.  You've already failed.",
       "name": "p:I'll figure this all out, make everything right.  Undo what was done.  I promise I'll succeed.",
       "pid": "13",
       "position": {

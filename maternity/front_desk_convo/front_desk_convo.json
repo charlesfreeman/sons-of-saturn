@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "Julia::This is the front desk.  This is where you should have gone as soon as you got here.  Remember that in the future.\n\nJulia approaches the octagonal station before you and gazes directly into the cavity behind the central pane.  Her eyes light up as she begins to converse with someone.\n\nJulia::This young lady is in need of secondary services.\n\nJulia::...\n\nJulia::Just let me fill out her forms for her, we're in something of a hurry.\n\nJulia::...\n\nJulia::Yes, I know she'll need to provide the closing signature, but I can perform the rest.\n\nThis hospital hasn't been operational in over a decade.  Who is she talking to?\n\nJulia::Oh, I forgot to ask - what is your name miss?\n\n[[p:Amelie]]\n[[p:Am...ber]]",
+      "text": "Julia::This is the front desk.  This is where you should have gone as soon as you got here.  Remember that in the future.\n\nJulia approaches the octagonal station before you and gazes directly into the cavity behind the central pane.  Her eyes light up as she begins to converse with someone.\n\nJulia::This young lady is in need of secondary services.\n\nJulia::...\n\nJulia::Just let me fill out her forms for her, we're in something of a hurry.\n\nJulia::...\n\nJulia::Yes, I know she'll need to provide the closing signature, but I can perform the rest.\n\nJasper::This hospital hasn't been operational in over a decade.  Who is she talking to?\n\nJulia::Oh, I forgot to ask - what is your name miss?\n\n[[p:Amelie]]\n[[p:Am...ber]]",
       "links": [
         {
           "name": "p:Amelie",
@@ -19,8 +19,8 @@
       "name": "Untitled Passage",
       "pid": "1",
       "position": {
-        "x": "1179",
-        "y": "606"
+        "x": "1180",
+        "y": "607"
       }
     },
     {
@@ -56,7 +56,7 @@
       }
     },
     {
-      "text": "Julia::No, she isn't really here for any non-secondary procedures.  Jot her down for something...non-invansive.  Ingrown toe removal, go with that as the official malady.\n\nIt seems you need an \"official\" reason to be here, and whatever Julia has planned for you isn't suitable.  So she's taken to slandering the virility of your healthy, perfectly formed toes.  Just so she can have an \"official\" reason to sign you in.\n\n[[p:My toes are immaculate.]]\n[[p:(Action) Remain silent and take the blow to your ego.]]",
+      "text": "Julia::No, she isn't really here for any non-secondary procedures.  Jot her down for something... non-invansive.  Ingrown toe removal, go with that as the official malady.\n\nJasper::It seems you need an \"official\" reason to be here, and whatever Julia has planned for you isn't suitable.  \n\nJasper::So she's taken to slandering the virility of your healthy, perfectly formed toes.  Just so she can have an \"official\" reason to sign you in.\n\n[[p:My toes are immaculate.]]\n[[p:(Action) Remain silent and take the blow to your ego.]]",
       "links": [
         {
           "name": "p:My toes are immaculate.",
@@ -77,7 +77,7 @@
       }
     },
     {
-      "text": "Julia glares at you cuttingly.\n\nJulia::No.  I\"m quite certain I saw an infected lip on the left side of your left toe.  Are we on the same page?\n\nShe wants you to drop it.  Now.\n\n[[Continue->Sign the page]] ",
+      "text": "Julia glares at you cuttingly.\n\nJulia::No.  I\"m quite certain I saw an infected lip on the left side of your left toe.  Are we on the same page?\n\nJasper::She wants you to drop it.  Now.\n\n[[Continue->Sign the page]] ",
       "links": [
         {
           "name": "Continue",
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "text": "No one is behind the counter.\n\nNothing fills the cavity but a vacuum, along with an ether of dust and insulative particulate circulating about the air.  \n\nThis ward has been shuttered for decades.  There was never anyone at the front desk.  Julia imagined the entire encounter.  \n\n[[Continue->Looming]]",
+      "text": "No one is behind the counter.\n\nNothing fills the cavity but a vacuum, along with an ether of dust and insulative particulate circulating about the air.  \n\nJasper::This ward has been shuttered for decades.  There was never anyone at the front desk.  Julia imagined the entire encounter.  \n\n[[Continue->Looming]]",
       "links": [
         {
           "name": "Continue",
@@ -228,7 +228,7 @@
       ]
     },
     {
-      "text": "You shakily sign your name.  We'll go along with this for now - we don't have much choice.\n\n[[Continue->pushes file]]",
+      "text": "You shakily sign your name.  \n\nJasper::Let's just go along with this for now - we don't have much choice.\n\n[[Continue->pushes file]]",
       "links": [
         {
           "name": "Continue",
@@ -244,7 +244,7 @@
       }
     },
     {
-      "text": "She again glances nervously at the pane - you are embarrassing her.\n\nJulia::Because Valery has been kind enough to pull a few levers and get you in to see us, despite a few...\"administrative roadblocks.\"\n\nValery is the person she thinks is behind the pane.  Apparently they are doing us a favor.\n\n[[Continue->p:Alright what the hell is going on?]] ",
+      "text": "She again glances nervously at the pane.\n\nJulia::Because Valery has been kind enough to pull a few levers and get you in to see us, despite a few...\"administrative roadblocks.\"\n\nJasper::Valery is the person she thinks is behind the pane.  Apparently they are doing us a favor.\n\nJasper::You are embarrassing her.\n\n[[Continue->p:Alright what the hell is going on?]] ",
       "links": [
         {
           "name": "Continue",
@@ -295,7 +295,7 @@
       ]
     },
     {
-      "text": "Julia::Then you aren't getting your operation.  Only Valery can grant access to the second floor of this facility, the operations ward.  \n\nShe's serious.  If you don't officiate this occasion before the invisible clerk before you then there will be no further progression.  \n\nYou won't find your Mom.  All the effort poured into organizing and funding this infiltration will have been in vain.\n\n[[p:I'm not signing it, even if it means I don't get to go forward.]]",
+      "text": "Julia::Then you aren't getting your operation.  Only Valery can grant access to the Maternity Ward.  \n\nJasper::She's serious.  If you don't officiate this occasion before the invisible clerk before you then there will be no further progression.  \n\nJasper::You won't find your Mom.  All the effort poured into organizing and funding this infiltration will have been in vain.\n\n[[p:I'm not signing it, even if it means I don't get to go forward.]]",
       "links": [
         {
           "name": "p:I'm not signing it, even if it means I don't get to go forward.",
@@ -322,12 +322,12 @@
       "name": "If I sign this, you'll open up the door ahead?",
       "pid": "17",
       "position": {
-        "x": "1282",
+        "x": "1281",
         "y": "2002"
       }
     },
     {
-      "text": "You really don't have any choice in the matter.\n\nYou *are* going to sign the document.  We are moving forward.  We don't have any other choice.\n\nYou can feel your hand rising towards the pen.\n\n[[p:This isn't fair.  I shouldn't have to do this!]]",
+      "text": "Jasper::You really don't have any choice in the matter.\n\nJasper::You *are* going to sign the document.  We are moving forward.  We don't have any other choice.\n\nYou can feel your hand rising towards the pen.\n\n[[p:This isn't fair.  I shouldn't have to do this!]]",
       "links": [
         {
           "name": "p:This isn't fair.  I shouldn't have to do this!",
@@ -343,7 +343,7 @@
       }
     },
     {
-      "text": "You of all people should know this place doesn't play fair.  You ought to have soaked that in by now.\n\n[[p:(Action) Sign the document.->p:(Action) Make no comment and sign the document.]] ",
+      "text": "Jasper::You of all people should know this place doesn't play fair.  You ought to have soaked that in by now.\n\n[[p:(Action) Sign the document.->p:(Action) Make no comment and sign the document.]] ",
       "links": [
         {
           "name": "p:(Action) Sign the document.",
@@ -359,7 +359,7 @@
       }
     },
     {
-      "text": "Julia pushes the signed document forward, towards \"Valery.\"\n\nJulia::Thank you for cooperating.  I know this procedure probably seems excessively elaborate, but we've got to take the proper precautions and document your visit.  \n\nWe're subject to very intense scrutiny by a number of HART accountants, as I'm sure you are aware.\n\nJulia makes a quick gesture to the vacuous entity behind the glass and pivots to the right.  She expects you to follow her lead and start heading down the hall.",
+      "text": "Julia pushes the signed document forward, towards \"Valery.\"\n\nJulia::Thank you for cooperating.  I know this procedure probably seems excessively elaborate, but we've got to take the proper precautions and document your visit.  \n\nJulia::We're subject to very intense scrutiny by a number of HART accountants, as I'm sure you are aware.\n\nJulia makes a quick gesture to the vacuous entity behind the glass and pivots to the right.  She expects you to follow her lead and start heading down the hall.",
       "name": "pushes file",
       "pid": "20",
       "position": {

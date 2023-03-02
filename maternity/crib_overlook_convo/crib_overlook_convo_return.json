@@ -1,0 +1,51 @@
+
+
+{
+  "passages": [
+    {
+      "text": "You return to the open air overlook.  The air surrounding the crib has somehow grown even more fetid.\n\nJulia::Please, Miss.  I don't want to be here...\n\nJasper::Lingering here is painful and cancerous.\n\nJasper::But you need it; the psychic equivalent of cutting.\n\nJasper::Soak it in for just a bit.\n\n[[p:Yeah, let's get out of here...]]\n[[p:Ugh, alright.]]",
+      "links": [
+        {
+          "name": "p:Yeah, let's get out of here...",
+          "link": "p:Yeah, let's get out of here...",
+          "pid": "2"
+        },
+        {
+          "name": "p:Ugh, alright.",
+          "link": "p:Ugh, alright.",
+          "pid": "3"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "739",
+        "y": "729.5"
+      }
+    },
+    {
+      "text": "",
+      "name": "p:Yeah, let's get out of here...",
+      "pid": "2",
+      "position": {
+        "x": "664",
+        "y": "879.5"
+      }
+    },
+    {
+      "text": "",
+      "name": "p:Ugh, alright.",
+      "pid": "3",
+      "position": {
+        "x": "814",
+        "y": "879.5"
+      }
+    }
+  ],
+  "name": "Open Air Cradle Return",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "BAE44B3D-D4B8-4576-8081-F57D3BEA0B7D"
+}
+

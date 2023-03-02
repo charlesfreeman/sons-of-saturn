@@ -43,6 +43,8 @@ shape = SubResource( 2 )
 
 [node name="ClickToSearch" parent="." instance=ExtResource( 3 )]
 next_scene = "crib_overlook_convo"
+alt_next_scene = "crib_overlook_convo_return"
+alt_req_prog_flag = "crib_overlook_convo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
 position = Vector2( 1533.97, 1203.72 )

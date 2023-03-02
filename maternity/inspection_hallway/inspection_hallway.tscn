@@ -18,6 +18,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_down = "res://maternity/front_desk/front_desk.tscn"
+prog_flag = "inspection_hallway"
 new_scene_on_ready = true
 new_scene = "inspection_room_convo"
 

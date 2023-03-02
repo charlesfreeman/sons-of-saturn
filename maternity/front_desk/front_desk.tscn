@@ -22,6 +22,7 @@ __meta__ = {
 }
 scene_up = "res://maternity/bed_overlook/bed_overlook.tscn"
 scene_down = "res://maternity/crib_overlook/crib_overlook.tscn"
+prog_flag = "front_desk"
 new_scene_on_ready = true
 new_scene = "front_desk_convo"
 

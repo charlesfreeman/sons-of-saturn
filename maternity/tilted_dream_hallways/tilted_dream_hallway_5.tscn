@@ -18,6 +18,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://maternity/tilted_dream_hallways/tilted_dream_hallway_6.tscn"
+song = "sewer_light_flow"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 2 )]
 up_path = true

@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://maternity/dream_inspection_hallway/dream_inspection_hallway.png" type="Texture" id=2]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 322.49, 402 )
@@ -18,6 +19,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://maternity/dream_surgical_overlook/dream_surgical_overlook.tscn"
+song = "sewer_light_flow"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true
@@ -25,3 +27,8 @@ up_path = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
 position = Vector2( 1440.51, 1092 )
 shape = SubResource( 1 )
+
+[node name="PopUp" parent="." instance=ExtResource( 4 )]
+popup_on_entry = true
+popup_text = [ "Amelie::I...I'm not feeling great...", "Jasper::Just, try to move forward, ok?" ]
+single_use = true

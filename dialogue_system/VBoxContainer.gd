@@ -145,7 +145,6 @@ func _load_paragraph(paragraph):
 	var text
 	if "::" in paragraph:
 		if current_char == "Narrator":
-			print("cutting off narrator")
 			emit_signal("brighten")
 		para_array = paragraph.split("::")
 		char_name = para_array[0]
@@ -160,11 +159,12 @@ func _load_paragraph(paragraph):
 	text.trim_suffix(" ")
 	text.trim_suffix(" ")
 		
+	# dim all previous lines
+	get_tree().call_group("SpokenLines", "make_grey")
 	if current_char != char_name:
 		if char_name == "Narrator":
 			emit_signal("darken")
 			current_char = char_name
-			print("introducing narrator")
 			var linebreak = spokenLineNochar.instance()
 			linebreak.set_text("  ------- ------- ------- ------- ------- ")
 			spoken_lines_container.add_child(linebreak)
@@ -175,10 +175,6 @@ func _load_paragraph(paragraph):
 		else:
 			var spoken_line = spokenLine.instance()
 			current_char = char_name
-			# if prepended with neither (Action) or (Progression) these operators
-			# do nothing, as desired
-			# text = text.trim_prefix("(Action) ")
-			# text = text.trim_prefix("(Progression) ")
 			
 			spoken_line.set_speaker_name(char_name)
 			spoken_line.set_dialogue_line(text)
@@ -197,6 +193,9 @@ func _load_paragraph(paragraph):
 
 
 func _add_buttons():
+	# emit signal to change char to Amelie if more than one button
+	if len(self.link_names) > 1:
+		emit_signal("change_char", "You")
 	for i in range(len(self.link_names)):
 		var button_text = self.link_names[i]
 		var display_button = true

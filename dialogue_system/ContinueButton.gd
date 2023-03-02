@@ -36,5 +36,4 @@ func _on_ContinueButton_mouse_entered():
 
 
 func _on_ContinueButton_pressed():
-	print("clicked continue")
 	emit_signal("play_click")

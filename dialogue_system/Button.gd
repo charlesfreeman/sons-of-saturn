@@ -60,7 +60,7 @@ func extract_text_and_modifiers(text: String):
 	if self.progression_button:
 		change_color(Color(1, 0.5, 0, 1))
 	elif self.clicked:
-		change_color(Color(0.75, 0.75, 0.75, 1))
+		change_color(Color(Global.dbrightness, Global.dbrightness, Global.dbrightness, 1))
 
 
 func _insert_newlines(text: String) -> String:
@@ -73,8 +73,6 @@ func _insert_newlines(text: String) -> String:
 			index += 1
 			text = text.insert(index, "\n")
 			index += 1
-			print("index:")
-			print(text[index])
 			index += 1
 			index += line_length
 	return text
@@ -82,6 +80,7 @@ func _insert_newlines(text: String) -> String:
 
 func set_label_text(text: String):
 	if text == "Continue" or text == "C":
+		print("setting button to continue mode")
 		self.button_text = "\u00AC Continue"
 		self.continue_mode = true
 		$HBoxContainer.set("custom_constants/separation", 50)
@@ -115,7 +114,6 @@ func set_as_progression():
 
 # sets the text to load the next block with
 func set_next_passage(text: String):
-	print("setting next passage: ", text)
 	self.next_passage = text
 
 

@@ -1,4 +1,4 @@
-extends Label
+extends HBoxContainer
 
 
 func _ready():
@@ -6,4 +6,8 @@ func _ready():
 
 
 func set_text(line_text: String):
-	self.text = line_text
+	$TextLine.text = line_text
+	
+
+func make_grey():
+	self.modulate = Color(Global.dbrightness, Global.dbrightness, Global.dbrightness, 1)

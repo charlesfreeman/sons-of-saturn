@@ -1,7 +1,7 @@
 extends VBoxContainer
 
 onready var speaker_name = $SpeakerName
-onready var dialogue_line = $DialogueLine
+onready var dialogue_line = $TextLine/DialogueLine
 
 # for associating the char with the right color
 # TODO remove "Wigley"
@@ -14,7 +14,9 @@ var char_colors = {"Wigley": "aqua",
 	"Vera": "green",
 	"Frail Woman": "purple",
 	"Julia": "purple",
-	"Voice": "aqua",
+	"Voice": "green",
+	"Malformed Lump": "green",
+	"Jasper": "green",
 	"Dead Cat": "grey"
 }
 
@@ -33,4 +35,8 @@ func set_speaker_name(char_name):
 	
 	
 func set_dialogue_line(text):
-	$DialogueLine.text = text
+	$TextLine/DialogueLine.text = text
+
+
+func make_grey():
+	self.modulate = Color(Global.dbrightness, Global.dbrightness, Global.dbrightness, 1)

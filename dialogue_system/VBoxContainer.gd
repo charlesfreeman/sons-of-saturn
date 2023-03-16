@@ -33,7 +33,33 @@ var continue_button
 var new_party_mem = ""
 var mem_to_remove = ""
 
-signal change_char(character)
+# multiple aliases used for same character in some cases
+# need this dict to compress them
+var char_aliases = {
+	"Amelie" : "Amelie",
+	"You" : "Amelie",
+	"Wiggly" : "Wiggly",
+	"Ferryman" : "Wiggly",
+	"Julia" : "Julia",
+	"Frail Woman" : "Julia",
+	"Jasper" : "Jasper",
+	"Malformed Lump" : "Malformed Lump",
+	"Voice" : "Voice",
+	"Narrator" : "Narrator",
+}
+
+# for tracking the state of the char emotions
+var emotions = {
+	"Amelie" : "neutral",
+	"Wiggly" : "neutral",
+	"Jasper" : "neutral", 
+	"Malformed Lump" : "neutral",
+	"Voice" : "neutral",
+	"Julia" : "neutral",
+	"Narrator" : "None",
+}
+
+signal change_char(character, emotion)
 signal tag(tags)
 signal darken
 signal brighten
@@ -141,14 +167,23 @@ func _split_block(block):
 # child to the spoken_lines_container
 func _load_paragraph(paragraph):
 	var para_array
+	var char_name_array
 	var char_name
 	var text
+	var emotion = "None"
 	if "::" in paragraph:
+		# switching from narrator to character speaking, so we brighten the avatar
 		if current_char == "Narrator":
 			emit_signal("brighten")
 		para_array = paragraph.split("::")
 		char_name = para_array[0]
 		text = para_array[1]
+		
+		# extract emotion and emit signal for face swap
+		if "," in char_name:
+			char_name_array = char_name.split(",")
+			char_name = char_name_array[0]
+			emotion = char_name_array[1]
 		
 	else:
 		char_name = "Narrator"
@@ -179,9 +214,12 @@ func _load_paragraph(paragraph):
 			spoken_line.set_speaker_name(char_name)
 			spoken_line.set_dialogue_line(text)
 			spoken_lines_container.add_child(spoken_line)
-		emit_signal("change_char", current_char)
-		
+		emit_signal("change_char", char_aliases[current_char], emotions[char_aliases[current_char]])
+
 	else:
+		if emotion != emotions[char_aliases[current_char]] and emotion != "None":
+			emotions[char_aliases[current_char]] = emotion
+			emit_signal("change_char", char_aliases[current_char], emotion)
 		if current_char == "Narrator":
 			var spoken_line = spokenLineNarrator.instance()
 			spoken_line.set_text(text)
@@ -195,7 +233,7 @@ func _load_paragraph(paragraph):
 func _add_buttons():
 	# emit signal to change char to Amelie if more than one button
 	if len(self.link_names) > 1:
-		emit_signal("change_char", "You")
+		emit_signal("change_char", "Amelie", "neutral")
 	for i in range(len(self.link_names)):
 		var button_text = self.link_names[i]
 		var display_button = true

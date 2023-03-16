@@ -27,55 +27,55 @@ onready var background = $View
 onready var bg_sliver = $RightSideBG
 onready var dialogue_sys = $HBoxContainer/Dialogue
 onready var current_bg_path = backgroundPath
-var amelie = "aneutral"
-var wiggly = "wneutral"
-var julia = "jneutral"
-var jasper = "jasneutral"
-var voice = "voice"
-var malformed_lump = "malformed_lump"
-var current_char = "You"
 
 
 # need var to store tag so we can communicate between _on_Dialogue_tag and 
 # _on_TransitionScreen_transitioned methods
 var fade_tag
 
+# var to store Amelie's current emotion, since this is handled differently
+var amelie_emotion = "neutral"
+
 # array to keep track of which tags already been emitted, so we might avoid
 # playing the same effects repeatedly
 var bg_tags_emitted = []
 
-# for mapping speaking char to variable names
-var char_textures = {
-	# not sure these two are needed anymore
-	"None": amelie,
-	"You": amelie, 
-	"Wiggly": wiggly, 
-	"Ferryman": wiggly,
-	"Julia": julia,
-	"Frail Woman": julia,
-	"Jasper": jasper,
-	"Malformed Lump": malformed_lump,
-	"Voice": voice,
+
+var amelie_profiles = {
+	"disgust" : "res://conversation_pov/char_profiles/amelie/amelie_disgusted.png",
+	"fuming" : "res://conversation_pov/char_profiles/amelie/amelie_fuming.png",
+	"guilty" : "res://conversation_pov/char_profiles/amelie/amelie_guilty.png",
+	"neutral" : "res://conversation_pov/char_profiles/amelie/amelie_headshot_feathered.png",
+	"questioning" : "res://conversation_pov/char_profiles/amelie/amelie_questioning.png",
+	"sad" : "res://conversation_pov/char_profiles/amelie/amelie_sad.png",
+	"takenaback" : "res://conversation_pov/char_profiles/amelie/amelie_taken_aback.png",
+	"uncertain" : "res://conversation_pov/char_profiles/amelie/amelie_uncertain.png",
 }
 
-var char_profiles = {
-	"adisgust" : "res://conversation_pov/char_profiles/amelie/amelie_disgusted.png",
-	"afuming" : "res://conversation_pov/char_profiles/amelie/amelie_fuming.png",
-	"aguilty" : "res://conversation_pov/char_profiles/amelie/amelie_guilty.png",
-	"aneutral" : "res://conversation_pov/char_profiles/amelie/amelie_headshot_feathered.png",
-	"aquestioning" : "res://conversation_pov/char_profiles/amelie/amelie_questioning.png",
-	"asad" : "res://conversation_pov/char_profiles/amelie/amelie_sad.png",
-	"atakenaback" : "res://conversation_pov/char_profiles/amelie/amelie_taken_aback.png",
-	"auncertain" : "res://conversation_pov/char_profiles/amelie/amelie_uncertain.png",
-	"whalfsmile" : "res://conversation_pov/char_profiles/wiggly/wiggly_half_smiling.png",
-	"wlaugh" : "res://conversation_pov/char_profiles/wiggly/wiggly_laughing.png",
-	"wsad" : "res://conversation_pov/char_profiles/wiggly/wiggly_sad.png",
-	"wskeptic" : "res://conversation_pov/char_profiles/wiggly/wiggly_skeptical.png",
-	"wsurprise" : "res://conversation_pov/char_profiles/wiggly/wiggly_surprised.png",
-	"wwincing" : "res://conversation_pov/char_profiles/wiggly/wiggly_wincing.png",
-	"wneutral" : "res://conversation_pov/char_profiles/wiggly/wiggly_feathered_closedin.png",
-	"jneutral" : "res://conversation_pov/char_profiles/julia/julia_placeholder.png",
-	"jasneutral" : "res://conversation_pov/char_profiles/jasper/jasper_headshot_feathered.png",
+var wiggly_profiles = {
+	"halfsmile" : "res://conversation_pov/char_profiles/wiggly/wiggly_half_smiling.png",
+	"laugh" : "res://conversation_pov/char_profiles/wiggly/wiggly_laughing.png",
+	"sad" : "res://conversation_pov/char_profiles/wiggly/wiggly_sad.png",
+	"skeptic" : "res://conversation_pov/char_profiles/wiggly/wiggly_skeptical.png",
+	"surprise" : "res://conversation_pov/char_profiles/wiggly/wiggly_surprised.png",
+	"wincing" : "res://conversation_pov/char_profiles/wiggly/wiggly_wincing.png",
+	"neutral" : "res://conversation_pov/char_profiles/wiggly/wiggly_feathered_closedin.png",
+}
+
+var julia_profiles = {
+	"neutral" : "res://images/julia_neutral.png",
+	"amused" : "res://images/julia_amused.png",
+	"concerned" : "res://images/julia_concerned.png",
+	"lost_in_thought" : "res://images/julia_lost_in_thought.png",
+	"reminiscing" : "res://images/julia_reminiscing.png",
+	"sly" : "res://images/julia_sly.png",
+	"suspiscious" : "res://images/julia_suspiscious.png",
+	"thinking" : "res://images/julia_thinking.png",
+	"worried" : "res://images/julia_worried.png",
+}
+
+var jasper_profiles = {
+	"neutral" : "res://conversation_pov/char_profiles/jasper/jasper_headshot_feathered.png",
 	"voice" : "res://conversation_pov/char_profiles/jasper/voice_headshot.png",
 	"malformed_lump" : "res://conversation_pov/char_profiles/jasper/malformed_lump_headshot.png",
 }
@@ -94,15 +94,28 @@ func _ready():
 	Global.add_to_party(new_party_mem)
 	Global.remove_from_party(mem_to_remove)
 	dialogue_sys.init()
-	avatar.texture = load(char_profiles[amelie])
 	change_background(backgroundPath)
 	change_background_sliver(sliverPath)
 
 
-func _on_Control_change_char(character):
+# assume this is called every time either character or emotion changes
+# dialogue sys does labor of tracking state
+func _on_Control_change_char(character, emotion):
 	print("Attempting to change char to ", character)
-	if character != "Narrator" and character != subject and character in char_textures.keys():
-		avatar.texture = load(char_profiles[char_textures[character]])
+	if character != "Narrator" and character != subject:
+		match character:
+			"Amelie":
+				avatar.texture = load(amelie_profiles[amelie_emotion])
+			"Wiggly":
+				avatar.texture = load(wiggly_profiles[emotion])
+			"Jasper":
+				avatar.texture = load(jasper_profiles[emotion])
+			"Malformed Lump":
+				avatar.texture = load(jasper_profiles["malformed_lump"])
+			"Voice":
+				avatar.texture = load(jasper_profiles["voice"])
+			"Julia":
+				avatar.texture = load(julia_profiles[emotion])
 
 
 func _remove_subject():
@@ -141,26 +154,19 @@ func _on_Dialogue_tag(tags):
 					$TransitionScreen.transition()
 #					if not tag.ends_with("_repeat"):
 #						bg_tags_emitted.append(tag)
+
+			# store amelie's emotion in a local variable since it isn't to be
+			# used immediately
+			elif tag in amelie_profiles.keys():
+				amelie_emotion = tag
 				
-			elif tag in char_profiles.keys():
-				# might need more formal approach to distinguishing which 
-				# var to load into if we have more than three characters
-				if tag.begins_with("w"):
-					wiggly = tag
-					if current_char == "Wiggly" or current_char == "Ferryman": 
-						avatar.texture = load(char_profiles[wiggly])
-				elif tag.begins_with("a"):
-					amelie = tag
-					if current_char == "You":
-						avatar.texture = load(char_profiles[amelie])
-						
 			elif tag == "add_wiggly":
 				self._add_subject("Wiggly")
 			elif tag == "add_julia":
 				self._add_subject("Julia")
 			elif tag == "remove_subject":
 				self._remove_subject()
-				
+
 			elif tag in Global.songs:
 				Global.change_song(tag)
 			elif tag == "stop_song":

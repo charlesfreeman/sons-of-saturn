@@ -44,7 +44,6 @@ func appear_disappear(tag):
 		disappear_tag:
 			$TweenOut.start()
 		brighten_tag:
-			print("brighteningz")
 			$TweenBrighten.start()
 		darken_tag:
 			$TweenDarken.start()

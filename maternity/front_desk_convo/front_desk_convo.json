@@ -3,40 +3,35 @@
 {
   "passages": [
     {
-      "text": "Julia::This is the front desk.  This is where you should have gone as soon as you got here.  Remember that in the future.\n\nJulia approaches the octagonal station before you and gazes directly into the cavity behind the central pane.  Her eyes light up as she begins to converse with someone.\n\nJulia::This young lady is in need of secondary services.\n\nJulia::...\n\nJulia::Just let me fill out her forms for her, we're in something of a hurry.\n\nJulia::...\n\nJulia::Yes, I know she'll need to provide the closing signature, but I can perform the rest.\n\nJasper::This hospital hasn't been operational in over a decade.  Who is she talking to?\n\nJulia::Oh, I forgot to ask - what is your name miss?\n\n[[p:Amelie]]\n[[p:Am...ber]]",
+      "text": "Julia::This is the front desk.  This is where you should have gone as soon as you got here.  Remember that in the future.\n\n[[C->looking forward]]",
       "links": [
         {
-          "name": "p:Amelie",
-          "link": "p:Amelie",
-          "pid": "2"
-        },
-        {
-          "name": "p:Am...ber",
-          "link": "p:Am...ber",
-          "pid": "3"
+          "name": "C",
+          "link": "looking forward",
+          "pid": "21"
         }
       ],
       "name": "Untitled Passage",
       "pid": "1",
       "position": {
-        "x": "1180",
-        "y": "607"
+        "x": "1177",
+        "y": "346"
       }
     },
     {
-      "text": "Julia::Got it. \n\nShe jots your name in.\n\n[[Continue->Scribbling]]",
+      "text": "Julia::Got it. \n\n[[C->returns forward]]",
       "links": [
         {
-          "name": "Continue",
-          "link": "Scribbling",
-          "pid": "4"
+          "name": "C",
+          "link": "returns forward",
+          "pid": "23"
         }
       ],
       "name": "p:Amelie",
       "pid": "2",
       "position": {
-        "x": "1106",
-        "y": "755"
+        "x": "1040",
+        "y": "713"
       }
     },
     {
@@ -51,8 +46,8 @@
       "name": "p:Am...ber",
       "pid": "3",
       "position": {
-        "x": "1254",
-        "y": "756"
+        "x": "1270",
+        "y": "786"
       }
     },
     {
@@ -74,7 +69,10 @@
       "position": {
         "x": "1163",
         "y": "939"
-      }
+      },
+      "tags": [
+        "looking_forward_2"
+      ]
     },
     {
       "text": "Julia glares at you cuttingly.\n\nJulia::No.  I\"m quite certain I saw an infected lip on the left side of your left toe.  Are we on the same page?\n\nJasper::She wants you to drop it.  Now.\n\n[[Continue->Sign the page]] ",
@@ -90,7 +88,10 @@
       "position": {
         "x": "1088",
         "y": "1089"
-      }
+      },
+      "tags": [
+        "looking_left_2"
+      ]
     },
     {
       "text": "Julia seems to appreciate your cooperation.  But your toes wail in vain, narcisistic agony.\n\n[[Continue->Sign the page]]",
@@ -122,10 +123,13 @@
       "position": {
         "x": "1164",
         "y": "1242"
-      }
+      },
+      "tags": [
+        "looking_left_2"
+      ]
     },
     {
-      "text": "As you approach, you keep your focus fixed on the document prostrated out on the counter.  \n\nAs you scan the document for suspicious clauses you start feeling something off, something amiss.\n\nYou sense something in your periphery.  You glance up.\n\n[[Continue->Look Up]]",
+      "text": "You approach, keeping your focus fixed on the document prostrated out on the counter.  \n\nAs you scan the document for suspicious clauses you start feeling something off, something amiss.\n\nYou sense something in your periphery.  You glance up.\n\n[[Continue->Look Up]]",
       "links": [
         {
           "name": "Continue",
@@ -140,6 +144,7 @@
         "y": "1398"
       },
       "tags": [
+        "remove_subject",
         "approach"
       ]
     },
@@ -366,6 +371,69 @@
         "x": "1640",
         "y": "2149"
       }
+    },
+    {
+      "text": "Julia approaches the octagonal station before you and gazes directly into the cavity behind the central pane.  Her eyes light up as she begins to converse with someone.\n\nJulia::This young lady is in need of secondary services.\n\nJulia::...\n\nJulia::Just let me fill out her forms for her, we're in something of a hurry.\n\nJulia::...\n\nJulia::Yes, I know she'll need to provide the closing signature, but I can perform the rest.\n\nJasper::This hospital hasn't been operational in over a decade.  Who is she talking to?\n\n[[C->looking left]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "looking left",
+          "pid": "22"
+        }
+      ],
+      "name": "looking forward",
+      "pid": "21",
+      "position": {
+        "x": "1185",
+        "y": "479"
+      },
+      "tags": [
+        "add_julia",
+        "looking_forward"
+      ]
+    },
+    {
+      "text": "Julia::Oh, I forgot to ask - what is your name miss?\n\n[[p:Amelie]]\n[[p:Am...ber]]",
+      "links": [
+        {
+          "name": "p:Amelie",
+          "link": "p:Amelie",
+          "pid": "2"
+        },
+        {
+          "name": "p:Am...ber",
+          "link": "p:Am...ber",
+          "pid": "3"
+        }
+      ],
+      "name": "looking left",
+      "pid": "22",
+      "position": {
+        "x": "1185",
+        "y": "629"
+      },
+      "tags": [
+        "looking_left"
+      ]
+    },
+    {
+      "text": "She jots your name in.\n\n[[Continue->Scribbling]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "Scribbling",
+          "pid": "4"
+        }
+      ],
+      "name": "returns forward",
+      "pid": "23",
+      "position": {
+        "x": "1033",
+        "y": "855"
+      },
+      "tags": [
+        "looking_forward_2"
+      ]
     }
   ],
   "name": "Getting Signed In",

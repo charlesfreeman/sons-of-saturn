@@ -40,6 +40,9 @@ var amelie_emotion = "neutral"
 # playing the same effects repeatedly
 var bg_tags_emitted = []
 
+# for keeping track of if we need to swap av when subject removed
+var subject_speaking = false
+
 
 var amelie_profiles = {
 	"disgust" : "res://conversation_pov/char_profiles/amelie/amelie_disgusted.png",
@@ -80,6 +83,10 @@ var jasper_profiles = {
 	"malformed_lump" : "res://conversation_pov/char_profiles/jasper/malformed_lump_headshot.png",
 }
 
+# need to track state of subjects for changing profiles mid convo
+var current_av = "Amelie"
+var previous_av = "Amelie"
+
 signal tag(tag)
 
 
@@ -101,24 +108,40 @@ func _ready():
 # assume this is called every time either character or emotion changes
 # dialogue sys does labor of tracking state
 func _on_Control_change_char(character, emotion):
-	if character != "Narrator" and character != subject:
-		match character:
-			"Amelie":
-				avatar.texture = load(amelie_profiles[amelie_emotion])
-			"Wiggly":
-				avatar.texture = load(wiggly_profiles[emotion])
-			"Jasper":
-				avatar.texture = load(jasper_profiles[emotion])
-			"Julia":
-				avatar.texture = load(julia_profiles[emotion])
+	if character != "Narrator":
+		if character != subject:
+			load_texture(character, emotion)
+			subject_speaking = false
+		else:
+			subject_speaking = true
 
 
+func load_texture(character, emotion):
+	match character:
+		"Amelie":
+			avatar.texture = load(amelie_profiles[amelie_emotion])
+		"Wiggly":
+			avatar.texture = load(wiggly_profiles[emotion])
+		"Jasper":
+			avatar.texture = load(jasper_profiles[emotion])
+		"Julia":
+			avatar.texture = load(julia_profiles[emotion])
+	previous_av = current_av
+	current_av = character
+			
+			
 func _remove_subject():
+	if subject_speaking:
+		load_texture(subject, "neutral")
+		subject_speaking = false
 	subject = ""
-	
+
 
 func _add_subject(sub: String):
 	subject = sub
+	# if new subject currently displayed, load the previous av in neutral
+	if sub == current_av:
+		load_texture(previous_av, "neutral")
 
 
 func change_background(res_path):

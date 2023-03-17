@@ -101,7 +101,6 @@ func _ready():
 # assume this is called every time either character or emotion changes
 # dialogue sys does labor of tracking state
 func _on_Control_change_char(character, emotion):
-	print("Attempting to change char to ", character)
 	if character != "Narrator" and character != subject:
 		match character:
 			"Amelie":
@@ -110,10 +109,6 @@ func _on_Control_change_char(character, emotion):
 				avatar.texture = load(wiggly_profiles[emotion])
 			"Jasper":
 				avatar.texture = load(jasper_profiles[emotion])
-			"Malformed Lump":
-				avatar.texture = load(jasper_profiles["malformed_lump"])
-			"Voice":
-				avatar.texture = load(jasper_profiles["voice"])
 			"Julia":
 				avatar.texture = load(julia_profiles[emotion])
 

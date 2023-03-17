@@ -32,6 +32,8 @@ var continue_button
 # following a convo
 var new_party_mem = ""
 var mem_to_remove = ""
+# for tracking if current_char or emotion state has changed
+var state_changed = false
 
 # multiple aliases used for same character in some cases
 # need this dict to compress them
@@ -43,8 +45,8 @@ var char_aliases = {
 	"Julia" : "Julia",
 	"Frail Woman" : "Julia",
 	"Jasper" : "Jasper",
-	"Malformed Lump" : "Malformed Lump",
-	"Voice" : "Voice",
+	"Malformed Lump" : "Jasper",
+	"Voice" : "Jasper",
 	"Narrator" : "Narrator",
 }
 
@@ -53,8 +55,6 @@ var emotions = {
 	"Amelie" : "neutral",
 	"Wiggly" : "neutral",
 	"Jasper" : "neutral", 
-	"Malformed Lump" : "neutral",
-	"Voice" : "neutral",
 	"Julia" : "neutral",
 	"Narrator" : "None",
 }
@@ -129,13 +129,11 @@ func _load_next_block(name):
 			self._load_paragraph(self.paragraph_array[0])
 		
 		if num_paragraphs == 1:
-			print("only one paragraph, adding buttons")
 			if len(self.link_names) == 0:
 				self._make_continue_end()
 			else:
 				self._add_buttons()
 		else:
-			print("more than one paragraph, instancing continue")
 			self.continue_button = continueButton.instance()
 			button_container.add_child(self.continue_button)
 			self.continue_button.connect("pressed", self, "_on_ContinueButton_pressed")
@@ -184,6 +182,7 @@ func _load_paragraph(paragraph):
 			char_name_array = char_name.split(",")
 			char_name = char_name_array[0]
 			emotion = char_name_array[1]
+			print("emotion: ", emotion)
 		
 	else:
 		char_name = "Narrator"
@@ -196,10 +195,12 @@ func _load_paragraph(paragraph):
 		
 	# dim all previous lines
 	get_tree().call_group("SpokenLines", "make_grey")
+	
 	if current_char != char_name:
+		current_char = char_name
+		state_changed = true
 		if char_name == "Narrator":
 			emit_signal("darken")
-			current_char = char_name
 			var linebreak = spokenLineNochar.instance()
 			linebreak.set_text("  ------- ------- ------- ------- ------- ")
 			spoken_lines_container.add_child(linebreak)
@@ -209,17 +210,12 @@ func _load_paragraph(paragraph):
 			spoken_lines_container.add_child(spoken_line)
 		else:
 			var spoken_line = spokenLine.instance()
-			current_char = char_name
 			
 			spoken_line.set_speaker_name(char_name)
 			spoken_line.set_dialogue_line(text)
 			spoken_lines_container.add_child(spoken_line)
-		emit_signal("change_char", char_aliases[current_char], emotions[char_aliases[current_char]])
 
 	else:
-		if emotion != emotions[char_aliases[current_char]] and emotion != "None":
-			emotions[char_aliases[current_char]] = emotion
-			emit_signal("change_char", char_aliases[current_char], emotion)
 		if current_char == "Narrator":
 			var spoken_line = spokenLineNarrator.instance()
 			spoken_line.set_text(text)
@@ -228,6 +224,15 @@ func _load_paragraph(paragraph):
 			var spoken_line = spokenLineNochar.instance()
 			spoken_line.set_text(text)
 			spoken_lines_container.add_child(spoken_line)
+			
+	if emotion != emotions[char_aliases[current_char]] and emotion != "None":
+		emotions[char_aliases[current_char]] = emotion
+		state_changed = true
+		
+	# emit signal if state of char or emotion updated, then reset variable
+	if state_changed:
+		emit_signal("change_char", char_aliases[current_char], emotions[char_aliases[current_char]])
+		state_changed = false
 
 
 func _add_buttons():

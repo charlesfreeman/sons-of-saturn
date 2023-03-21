@@ -131,8 +131,13 @@ func _load_next_block(name):
 		if num_paragraphs == 1:
 			if len(self.link_names) == 0:
 				self._make_continue_end()
-			else:
+			elif len(self.link_names) == 1:
 				self._add_buttons()
+			else:
+				self.continue_button = continueButton.instance()
+				button_container.add_child(self.continue_button)
+				self.continue_button.connect("pressed", self, "_final_continue")
+				self.continue_button.grab_focus()
 		else:
 			self.continue_button = continueButton.instance()
 			button_container.add_child(self.continue_button)
@@ -323,6 +328,7 @@ func _make_continue_end():
 	button_container.add_child(self.continue_button)
 	self.continue_button.connect("pressed", self, "_load_next_scene")
 	self.continue_button.grab_focus()
+
 
 func _final_continue():
 	typewriter.play()

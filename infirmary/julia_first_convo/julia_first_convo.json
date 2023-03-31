@@ -3,29 +3,19 @@
 {
   "passages": [
     {
-      "text": "You enter and encounter a frail, frizzy haired woman doggedly scrubbing her hands.  Her eyes appear slightly sunken, an obvious tell of her intense fatigue. \n\nShe glares at you, intensely.  Her expression reveals her view of you, painfully clearly: You are an intrusion, a foriegn body.\n\nJasper::Who is this?  There shouldn't be anyone else here...\n\nJasper::Let's carefully introduce ourselves.  Be prepared to run if you sense a threat.\n\nThe woman rises from the pail to address you.\n\nFrail Woman::Excuse me, miss.  You shouldn't be here.\n\nFrail Woman::You should have checked in at the front desk, every patient should before being allowed past the foyer.\n\nFrail Woman::I know some of our services are more discreet in nature, but we still need to go through the proper channels and have you signed in.\n\nFrail Woman::How did you even get here?  You shouldn't have made it past the front desk without security being alerted.\n\n[[p:I came in through the sewer.]]\n[[p:(Lie) I did come in past the front desk.]]\n[[p:How did *you* get through the front desk, huh?]]",
+      "text": "You enter and encounter a frail, frizzy haired woman doggedly scrubbing her hands.  Her eyes appear slightly sunken, an obvious tell of her intense fatigue. \n\n[[C->Glares]]",
       "links": [
         {
-          "name": "p:I came in through the sewer.",
-          "link": "p:I came in through the sewer.",
-          "pid": "2"
-        },
-        {
-          "name": "p:(Lie) I did come in past the front desk.",
-          "link": "p:(Lie) I did come in past the front desk.",
-          "pid": "10"
-        },
-        {
-          "name": "p:How did *you* get through the front desk, huh?",
-          "link": "p:How did *you* get through the front desk, huh?",
-          "pid": "3"
+          "name": "C",
+          "link": "Glares",
+          "pid": "18"
         }
       ],
       "name": "Untitled Passage",
       "pid": "1",
       "position": {
-        "x": "1182",
-        "y": "606"
+        "x": "1183",
+        "y": "378"
       }
     },
     {
@@ -295,6 +285,54 @@
         "x": "1364",
         "y": "1522"
       }
+    },
+    {
+      "text": "The woman rises from the pail to address you.\n\nFrail Woman::Excuse me, miss.  You shouldn't be here.\n\nFrail Woman::You should have checked in at the front desk, every patient should before being allowed past the foyer.\n\nFrail Woman::I know some of our services are more discreet in nature, but we still need to go through the proper channels and have you signed in.\n\nFrail Woman::How did you even get here?  You shouldn't have made it past the front desk without security being alerted.\n\n[[p:I came in through the sewer.]]\n[[p:(Lie) I did come in past the front desk.]]\n[[p:How did *you* get through the front desk, huh?]]",
+      "links": [
+        {
+          "name": "p:I came in through the sewer.",
+          "link": "p:I came in through the sewer.",
+          "pid": "2"
+        },
+        {
+          "name": "p:(Lie) I did come in past the front desk.",
+          "link": "p:(Lie) I did come in past the front desk.",
+          "pid": "10"
+        },
+        {
+          "name": "p:How did *you* get through the front desk, huh?",
+          "link": "p:How did *you* get through the front desk, huh?",
+          "pid": "3"
+        }
+      ],
+      "name": "Rises",
+      "pid": "17",
+      "position": {
+        "x": "1182",
+        "y": "641"
+      },
+      "tags": [
+        "stands"
+      ]
+    },
+    {
+      "text": "She glares at you, intensely.  Her expression reveals her view of you, painfully clearly: You are an intrusion, a foriegn body.\n\nJasper::Who is this?  There shouldn't be anyone else here.\n\nJasper::Let's carefully introduce ourselves.  Be prepared to run if you sense a threat.\n\n[[C->Rises]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Rises",
+          "pid": "17"
+        }
+      ],
+      "name": "Glares",
+      "pid": "18",
+      "position": {
+        "x": "1179",
+        "y": "507"
+      },
+      "tags": [
+        "left"
+      ]
     }
   ],
   "name": "Julia Introduction",

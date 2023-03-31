@@ -43,8 +43,8 @@
       "name": "p:Fine, let's get this over with.",
       "pid": "2",
       "position": {
-        "x": "1225",
-        "y": "923"
+        "x": "1245",
+        "y": "838"
       }
     },
     {
@@ -59,8 +59,8 @@
       "name": "p:Do I really have no other choice?",
       "pid": "3",
       "position": {
-        "x": "1329",
-        "y": "756"
+        "x": "1338",
+        "y": "697"
       }
     },
     {
@@ -82,10 +82,13 @@
       "position": {
         "x": "1261",
         "y": "567"
-      }
+      },
+      "tags": [
+        "injected"
+      ]
     },
     {
-      "text": "Julia::I'm a professional, miss.  So are my colleagues.  Do you think so little of us that you would suggest we are using unsanitized equipment?  \n\nJulia::We are a little short staffed right now, true, but all of the important equipment has been thoroughly sterilized.\n\nYour protests seem to have made Julia defensive, and a little angry.  \n\nJasper::Just cut the bullshit, you don't care.\n\nJasper::You waded through a sewer on the way here, stop pretending to be anything other than vile and lay down on the asbestos-caked gurney.\n\n[[C->Start]] ",
+      "text": "Julia::I'm a professional, miss.  So are my colleagues.  Do you think so little of us that you would suggest we are using unsanitized equipment?  \n\nJulia::We are a little short staffed right now, true, but all of the important equipment has been thoroughly sterilized.  \n\nJasper::Just cut the bullshit, you don't care.\n\nJasper::You waded through a sewer on the way here, stop pretending to be anything other than vile and lay down on the asbestos-caked gurney.\n\n[[C->Start]] ",
       "links": [
         {
           "name": "C",
@@ -101,31 +104,27 @@
       }
     },
     {
-      "text": "You lay flat on your back atop the dust covered gurney.  \n\nThe ceiling above is decorated by an intricate mold pattern, the product of decades of water damage.  It is beautiful.\n\nA pair of more modern surgical lights are wheeled in over you, though they are not yet turned on.  \n\nJasper::I feel like a museum piece.\n\nJulia::Let's start by taking your blood pressure.\n\n[[p:Alright.]]\n[[p:It's probably pretty high right now.->p:Alright.]]",
+      "text": "You lay flat on your back atop the dust covered gurney.  \n\nThe ceiling above is decorated by an intricate mold pattern, the product of decades of water damage.  It is beautiful.\n\nA set of surgical lights illuminate your features from the left side.  You feel like a museum piece.  \n\n[[C->Julia appear]]\n",
       "links": [
         {
-          "name": "p:Alright.",
-          "link": "p:Alright.",
-          "pid": "12"
-        },
-        {
-          "name": "p:It's probably pretty high right now.",
-          "link": "p:Alright.",
-          "pid": "12"
+          "name": "C",
+          "link": "Julia appear",
+          "pid": "35"
         }
       ],
       "name": "p:(Action) Lay down on the bed, relaxed.",
       "pid": "6",
       "position": {
-        "x": "1207",
-        "y": "1091"
+        "x": "1225",
+        "y": "987"
       },
       "tags": [
-        "ongurney"
+        "ongurney",
+        "add_julia"
       ]
     },
     {
-      "text": "Awck!  A sharp stinging pain rings throughout your left arm.  \n\nSharp, piercing, hot.  A needle jab.  \n\n[[p:Hey!  Did you just jab me?]]\n[[p:What the fuck!  We agreed you wouldn't stick anything into me!->p:Hey!  Did you just jab me?]]",
+      "text": "Awck!  A sharp stinging pain rings throughout your left arm.  \n\nSharp, piercing, hot.  A needle jab.  \n\n[[p:Hey!  Did you just jab me?]]\n[[p:What the fuck!  You said wouldn't stick anything into me!->p:Hey!  Did you just jab me?]]",
       "links": [
         {
           "name": "p:Hey!  Did you just jab me?",
@@ -133,7 +132,7 @@
           "pid": "8"
         },
         {
-          "name": "p:What the fuck!  We agreed you wouldn't stick anything into me!",
+          "name": "p:What the fuck!  You said wouldn't stick anything into me!",
           "link": "p:Hey!  Did you just jab me?",
           "pid": "8"
         }
@@ -143,7 +142,10 @@
       "position": {
         "x": "1298",
         "y": "3650"
-      }
+      },
+      "tags": [
+        "red_bg_darken"
+      ]
     },
     {
       "text": "Julia::Please, miss, relax.  It was just a pinprick.\n\n[[p:You said that you wouldn't jab me with anything!  What did you just put in me?]]\n[[p:Cut the shit, what was I just injected with?->p:You said that you wouldn't jab me with anything!  What did you just put in me?]]",
@@ -219,7 +221,8 @@
         "y": "4267"
       },
       "tags": [
-        "enter"
+        "enter",
+        "julia_disappear"
       ]
     },
     {
@@ -235,8 +238,11 @@
       "pid": "12",
       "position": {
         "x": "1207",
-        "y": "1241"
-      }
+        "y": "1248"
+      },
+      "tags": [
+        "red_bg_appear"
+      ]
     },
     {
       "text": "After the band is put in place, she gently lifts her fingers and turns to one of the machines.  You hear a slight whir.  Pressure begins accumulating on your bicep.\n\nJulia::Hmm.  How old are you, miss?\n\n[[How old are *you*?]]\n[[p:I'm 26.]]\n[[p:(Lie) I'm 21.->p:I'm 26.]]",
@@ -262,7 +268,10 @@
       "position": {
         "x": "1205",
         "y": "1391"
-      }
+      },
+      "tags": [
+        "redbg_native"
+      ]
     },
     {
       "text": "Julia::I'm only 35 myself, miss.\n\nJasper::She looks a bit older to me.  But not much.\n\n[[C->Pressure]] ",
@@ -318,7 +327,7 @@
       }
     },
     {
-      "text": "Julia grabs a stethoscope from underneath the adjacent table and equips the headset.  She presses the diaphragm to your left collarbone and slowly slides it down your chest.  The touch is icy but intimate.\n\nJulia::Your heart rate is a little bit lower than average - are you an athlete?\n\nJasper::You aren't an athlete.  You're just presently deprived of your beloved uppers.  Your heart is slacking off in their administrative absense.\n\n[[p:I try to keep myself in shape, yes.]]\n[[p:No, my heart is just lazy.  And ugly.]]",
+      "text": "Julia guides the stethescope chest-piece to your left collarbone and slowly slides it down your chest.  The touch is icy but intimate.\n\nJulia::Your heart rate is a little bit lower than average - are you an athlete?\n\nJasper::You aren't an athlete.  You're just presently deprived of your beloved uppers.  Your heart is slacking off in their administrative absense.\n\n[[p:I try to keep myself in shape, yes.]]\n[[p:No, my heart is just lazy.  And ugly.]]",
       "links": [
         {
           "name": "p:I try to keep myself in shape, yes.",
@@ -334,9 +343,12 @@
       "name": "Stethescope",
       "pid": "17",
       "position": {
-        "x": "1295",
+        "x": "1296",
         "y": "1846"
-      }
+      },
+      "tags": [
+        "julia_stethescope"
+      ]
     },
     {
       "text": "Julia::Heheh, I can tell.\n\n[[C->Dragging]]",
@@ -403,8 +415,8 @@
       "name": "p:Part of the inspection?",
       "pid": "21",
       "position": {
-        "x": "1188",
-        "y": "2296"
+        "x": "1186",
+        "y": "2264"
       }
     },
     {
@@ -420,24 +432,27 @@
       "pid": "22",
       "position": {
         "x": "1411",
-        "y": "2297"
+        "y": "2265"
       }
     },
     {
-      "text": "Julia pulls back both the diaphragm and her right hand.\n\nJulia::Alright, your heart rate is healthy.  Now we just need to check that your breathing is normal.\n\nJulia::Try to take a few deep breaths for me, ok?\n\nJulia puts her ear down directly over your mouth.  You resist intrusive thoughts about gently nibbling it.\n\nShe's close enough that you can smell her.  She smells lightly of peppermint.\n\n[[p:(Action) Breath Deeply.->Breath]]",
+      "text": "Julia::Alright, your heart rate is healthy.  Now we just need to check that your breathing is normal.\n\nJulia::Try to take a few deep breaths for me, ok?\n\n[[C->standing closer]]\n",
       "links": [
         {
-          "name": "p:(Action) Breath Deeply.",
-          "link": "Breath",
-          "pid": "24"
+          "name": "C",
+          "link": "standing closer",
+          "pid": "36"
         }
       ],
       "name": "Removes",
       "pid": "23",
       "position": {
-        "x": "1295",
-        "y": "2446"
-      }
+        "x": "1301",
+        "y": "2386"
+      },
+      "tags": [
+        "julia_behind_2"
+      ]
     },
     {
       "text": "You breath deeply, slowly, in and out, for two or three cycles.\n\n[[Continue->Rises]]",
@@ -451,8 +466,8 @@
       "name": "Breath",
       "pid": "24",
       "position": {
-        "x": "1295",
-        "y": "2596"
+        "x": "1297",
+        "y": "2640"
       }
     },
     {
@@ -467,8 +482,8 @@
       "name": "Rises",
       "pid": "25",
       "position": {
-        "x": "1295",
-        "y": "2746"
+        "x": "1298",
+        "y": "2772"
       }
     },
     {
@@ -582,7 +597,7 @@
       "name": "Untitled Passage",
       "pid": "32",
       "position": {
-        "x": "1279",
+        "x": "1276",
         "y": "46"
       }
     },
@@ -617,6 +632,49 @@
         "x": "1354",
         "y": "191"
       }
+    },
+    {
+      "text": "Julia::Let's start by taking your blood pressure.\n\n[[p:Alright.]]\n[[p:It's probably pretty high right now.->p:Alright.]]",
+      "links": [
+        {
+          "name": "p:Alright.",
+          "link": "p:Alright.",
+          "pid": "12"
+        },
+        {
+          "name": "p:It's probably pretty high right now.",
+          "link": "p:Alright.",
+          "pid": "12"
+        }
+      ],
+      "name": "Julia appear",
+      "pid": "35",
+      "position": {
+        "x": "1207",
+        "y": "1128"
+      },
+      "tags": [
+        "julia_standing_behind"
+      ]
+    },
+    {
+      "text": "Julia puts her ear down directly over your mouth.  You resist intrusive thoughts about gently nibbling it.\n\nShe's close enough that you can smell her.  She smells lightly of peppermint.\n\n[[p:(Action) Breath Deeply.->Breath]]",
+      "links": [
+        {
+          "name": "p:(Action) Breath Deeply.",
+          "link": "Breath",
+          "pid": "24"
+        }
+      ],
+      "name": "standing closer",
+      "pid": "36",
+      "position": {
+        "x": "1301",
+        "y": "2508"
+      },
+      "tags": [
+        "julia_closer"
+      ]
     }
   ],
   "name": "Needled",

@@ -1,6 +1,16 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
+[ext_resource path="res://maternity/inspection_room_convo/ThornBG.gd" type="Script" id=2]
+[ext_resource path="res://sounds/switch_flip_fast.wav" type="AudioStream" id=3]
+[ext_resource path="res://images/ring_of_spikes.png" type="Texture" id=4]
+[ext_resource path="res://sounds/switch_flip_slow.wav" type="AudioStream" id=5]
+[ext_resource path="res://maternity/inspection_room_convo/RedBG.gd" type="Script" id=6]
+[ext_resource path="res://maternity/inspection_room_convo/mold_ceiling_2300x2160.png" type="Texture" id=7]
+[ext_resource path="res://maternity/inspection_room_convo/mold_ceiling_sliver.png" type="Texture" id=8]
+[ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=9]
+[ext_resource path="res://images/julia_standing_behind_table.png" type="Texture" id=10]
+[ext_resource path="res://images/julia_stethescope.png" type="Texture" id=11]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -14,6 +24,12 @@ scriptPath = "res://maternity/inspection_room_convo/inspection_room_convo.json"
 backgroundPath = "res://maternity/inspection_room_convo/inspection_hallway_2300x2160.png"
 sliverPath = "res://maternity/inspection_room_convo/inspection_hallway_sliver.png"
 nextLocation = "res://maternity/dream_inspection_hallway/dream_inspection_hallway.tscn"
+tag_dict = {
+"redbg_native": "res://images/mold_red.png"
+}
+tag_dict_sliver = {
+"redbg_native": "res://images/mold_red_sliver.png"
+}
 fade_tag_dict = {
 "enter": "res://maternity/inspection_room_convo/inspection_room_2300x2160.png",
 "ongurney": "res://maternity/inspection_room_convo/mold_ceiling_2300x2160.png"
@@ -23,3 +39,128 @@ fade_tag_dict_sliver = {
 "ongurney": "res://maternity/inspection_room_convo/mold_ceiling_sliver.png"
 }
 mem_to_remove = "Julia"
+
+[node name="RedBG" type="TextureRect" parent="." groups=["CharacterRects", "DynamicBGs"]]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 2300.0
+margin_bottom = 2160.0
+mouse_filter = 2
+texture = ExtResource( 7 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TweenAppear" type="Tween" parent="RedBG"]
+
+[node name="TweenDisappear" type="Tween" parent="RedBG"]
+
+[node name="TweenDarken" type="Tween" parent="RedBG"]
+
+[node name="TweenPartial" type="Tween" parent="RedBG"]
+
+[node name="SwitchFlipSlow" type="AudioStreamPlayer" parent="RedBG"]
+stream = ExtResource( 5 )
+volume_db = -15.0
+
+[node name="SwitchFlipFast" type="AudioStreamPlayer" parent="RedBG"]
+stream = ExtResource( 3 )
+volume_db = -15.0
+
+[node name="RedBGSliver" type="TextureRect" parent="." groups=["CharacterRects", "DynamicBGs"]]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 3740.0
+margin_right = 3840.0
+margin_bottom = 2160.0
+mouse_filter = 2
+texture = ExtResource( 8 )
+expand = true
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TweenAppear" type="Tween" parent="RedBGSliver"]
+
+[node name="TweenDisappear" type="Tween" parent="RedBGSliver"]
+
+[node name="TweenDarken" type="Tween" parent="RedBGSliver"]
+
+[node name="TweenPartial" type="Tween" parent="RedBGSliver"]
+
+[node name="SwitchFlipSlow" type="AudioStreamPlayer" parent="RedBGSliver"]
+stream = ExtResource( 5 )
+volume_db = -15.0
+
+[node name="SwitchFlipFast" type="AudioStreamPlayer" parent="RedBGSliver"]
+stream = ExtResource( 3 )
+volume_db = -15.0
+
+[node name="ThornBG" type="TextureRect" parent="." groups=["CharacterRects", "DynamicBGs"]]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -6.0
+margin_right = 2310.0
+margin_bottom = 2178.0
+mouse_filter = 2
+texture = ExtResource( 4 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TweenAppear" type="Tween" parent="ThornBG"]
+
+[node name="TweenDisappear" type="Tween" parent="ThornBG"]
+
+[node name="SwitchFlipSlow" type="AudioStreamPlayer" parent="ThornBG"]
+stream = ExtResource( 5 )
+volume_db = -15.0
+
+[node name="SwitchFlipFast" type="AudioStreamPlayer" parent="ThornBG"]
+stream = ExtResource( 3 )
+volume_db = -15.0
+
+[node name="JuliaStandingBehind" parent="." instance=ExtResource( 9 )]
+margin_left = 191.476
+margin_top = -139.849
+margin_right = 2103.48
+margin_bottom = 824.151
+texture = ExtResource( 10 )
+appear_tag = "julia_standing_behind"
+disappear_tag = "julia_stethescope"
+
+[node name="JuliaStethescope" parent="." instance=ExtResource( 9 )]
+margin_left = 17.8541
+margin_top = -76.0
+margin_right = 2391.85
+margin_bottom = 2415.0
+texture = ExtResource( 11 )
+appear_tag = "julia_stethescope"
+disappear_tag = "julia_behind_2"
+
+[node name="JuliaBehind2" parent="." instance=ExtResource( 9 )]
+margin_left = 191.476
+margin_top = -139.849
+margin_right = 2103.48
+margin_bottom = 824.151
+texture = ExtResource( 10 )
+appear_tag = "julia_behind_2"
+disappear_tag = "julia_closer"
+
+[node name="JuliaStandingCloser" parent="." instance=ExtResource( 9 )]
+margin_left = 191.476
+margin_top = -139.849
+margin_right = 2103.48
+margin_bottom = 824.151
+texture = ExtResource( 10 )
+appear_tag = "julia_closer"
+disappear_tag = "julia_disappear"
+
+[connection signal="tag" from="Convo" to="RedBG" method="_on_Convo_tag"]
+[connection signal="tag" from="Convo" to="RedBGSliver" method="_on_Convo_tag"]
+[connection signal="tag" from="Convo" to="ThornBG" method="_on_Convo_tag"]
+[connection signal="tween_completed" from="RedBG/TweenDarken" to="RedBG" method="_on_TweenDarken_tween_completed"]
+[connection signal="tween_completed" from="RedBG/TweenPartial" to="RedBG" method="_on_TweenPartial_tween_completed"]
+[connection signal="tween_completed" from="RedBGSliver/TweenDarken" to="RedBGSliver" method="_on_TweenDarken_tween_completed"]
+[connection signal="tween_completed" from="RedBGSliver/TweenPartial" to="RedBGSliver" method="_on_TweenPartial_tween_completed"]
+[connection signal="tween_completed" from="ThornBG/TweenAppear" to="ThornBG" method="_on_TweenAppear_tween_completed"]

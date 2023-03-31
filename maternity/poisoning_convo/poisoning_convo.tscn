@@ -1,9 +1,15 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
 [ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=2]
 [ext_resource path="res://maternity/poisoning_convo/crash.wav" type="AudioStream" id=3]
 [ext_resource path="res://sounds/thunk.wav" type="AudioStream" id=4]
+[ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=5]
+[ext_resource path="res://maternity/poisoning_convo/julia_leg_headdown.png" type="Texture" id=6]
+[ext_resource path="res://images/julia_onground_dream.png" type="Texture" id=7]
+[ext_resource path="res://maternity/poisoning_convo/julia_head_kiss.png" type="Texture" id=8]
+[ext_resource path="res://maternity/poisoning_convo/julia_leg_noeyes.png" type="Texture" id=9]
+[ext_resource path="res://maternity/poisoning_convo/julia_corner_dream.png" type="Texture" id=10]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -25,6 +31,10 @@ fade_tag_dict = {
 "corner": "res://maternity/poisoning_convo/dream_corner_2300x2160.png",
 "door": "res://maternity/poisoning_convo/door_abor_dream_2300x2160.png",
 "fall": "res://maternity/poisoning_convo/ampoules_dream.png",
+"hole": "res://maternity/poisoning_convo/wiggly_peering_dream.png",
+"kiss": "res://maternity/poisoning_convo/dream_corner_kiss.png",
+"onground": "res://maternity/poisoning_convo/wall_dream.png",
+"tugging": "res://maternity/poisoning_convo/floor_looking_down.png",
 "window": "res://maternity/poisoning_convo/dream_window_2300x2160.png"
 }
 fade_tag_dict_sliver = {
@@ -34,8 +44,13 @@ fade_tag_dict_sliver = {
 "corner": "res://maternity/poisoning_convo/dream_corner_sliver.png",
 "door": "res://maternity/poisoning_convo/door_abor_dream_sliver.png",
 "fall": "res://maternity/poisoning_convo/ampoules_dream_sliver.png",
+"hole": "res://maternity/poisoning_convo/wiggly_peering_dream_sliver.png",
+"kiss": "res://maternity/poisoning_convo/dream_corner_sliver.png",
+"onground": "res://maternity/poisoning_convo/wall_dream_sliver.png",
+"tugging": "res://maternity/poisoning_convo/floor_looking_down_sliver.png",
 "window": "res://maternity/poisoning_convo/dream_window_sliver.png"
 }
+mem_to_remove = "Julia"
 song = "loop_injectable_2"
 
 [node name="ConvoSoundEffect" parent="." instance=ExtResource( 2 )]
@@ -46,3 +61,57 @@ tag_to_play = "fall"
 [node name="ConvoSoundEffect2" parent="." instance=ExtResource( 2 )]
 stream = ExtResource( 4 )
 tag_to_play = "thunk"
+
+[node name="JuliaCorner" parent="." instance=ExtResource( 5 )]
+margin_left = 1180.39
+margin_top = 1208.09
+margin_right = 2137.39
+margin_bottom = 2165.09
+texture = ExtResource( 10 )
+appear_tag = "corner"
+disappear_tag = "door"
+
+[node name="JuliaCorner2" parent="." instance=ExtResource( 5 )]
+margin_left = 1180.39
+margin_top = 1208.09
+margin_right = 2137.39
+margin_bottom = 2165.09
+texture = ExtResource( 10 )
+appear_tag = "corner2"
+disappear_tag = "tugging"
+
+[node name="JuliaNoEyes" parent="." instance=ExtResource( 5 )]
+margin_left = 391.476
+margin_top = 444.476
+margin_right = 1827.48
+margin_bottom = 2889.48
+texture = ExtResource( 9 )
+appear_tag = "noeyes"
+disappear_tag = "floor_remove"
+
+[node name="JuliaLegHeaddown" parent="." instance=ExtResource( 5 )]
+margin_left = 654.903
+margin_top = 51.2378
+margin_right = 1993.9
+margin_bottom = 2241.24
+texture = ExtResource( 6 )
+appear_tag = "tugging"
+disappear_tag = "noeyes"
+
+[node name="JuliaOnGround" parent="." instance=ExtResource( 5 )]
+margin_left = 392.0
+margin_top = 1305.0
+margin_right = 1613.0
+margin_bottom = 2372.0
+texture = ExtResource( 7 )
+appear_tag = "onground"
+disappear_tag = "ceiling"
+
+[node name="JuliaKiss" parent="." instance=ExtResource( 5 )]
+margin_left = -960.097
+margin_top = 203.524
+margin_right = 1467.9
+margin_bottom = 2614.52
+texture = ExtResource( 8 )
+appear_tag = "kiss"
+disappear_tag = "onground"

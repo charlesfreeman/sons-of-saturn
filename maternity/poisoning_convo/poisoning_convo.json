@@ -135,7 +135,7 @@
       }
     },
     {
-      "text": "You sieze the needle and violently strike Julia's right thigh.  You penetrate her envelope, breaking her epidermis, causing an electric shock to shiver down your spine.  You shake off the intrusions.\n\nJulia doesn't react to the invasion in any way.  She isn't even trying to prevent a second strike.  She finds it familiar.\n\nThe room begins to reek of organic solvents.  Your shoulder blades and left wrist start to rot.\n\n[[Continue->p:Hey!  Let me go!]] ",
+      "text": "You sieze the needle and violently strike Julia's right thigh.  You penetrate her envelope, breaking her epidermis.\n\nAn electric shock shivers down your spine.  You shake off the intrusions.\n\nJulia doesn't react to the invasion.  She isn't even trying to prevent a second strike.  She finds it familiar.\n\nThe room begins to reek of organic solvents.  Your shoulder blades and left wrist start to burn.\n\n[[Continue->p:Hey!  Let me go!]] ",
       "links": [
         {
           "name": "Continue",
@@ -186,7 +186,7 @@
       ]
     },
     {
-      "text": "Jasper::You aren't, but you've got more pressing concerns.  Rot takes 40 years to kill you these days.\n\n[[Continue->p:Hey!  Let me go!]] ",
+      "text": "Jasper::Rot takes 40 years to kill you these days!  Just do it!\n\n[[Continue->p:Hey!  Let me go!]] ",
       "links": [
         {
           "name": "Continue",
@@ -197,7 +197,7 @@
       "name": "1;:I thought you weren't supposed to share needles.",
       "pid": "10",
       "position": {
-        "x": "1263",
+        "x": "1264",
         "y": "1546"
       }
     },
@@ -249,7 +249,8 @@
         "y": "1953"
       },
       "tags": [
-        "window"
+        "window",
+        "add_julia"
       ]
     },
     {
@@ -451,18 +452,19 @@
           "pid": "27"
         }
       ],
-      "name": "p:(Action) Approach Julia.",
+      "name": "p:(Action) Confront Julia.",
       "pid": "25",
       "position": {
         "x": "1535",
         "y": "2322"
       },
       "tags": [
+        "corner2",
         "corner"
       ]
     },
     {
-      "text": "Julia doesn't respond.  Instead, she falls forward, onto your feet.\n\nThen, she begins to climb your leg.  Her fingers delve through your cloth, into your skin.\n\n[[C->Julia looks up]]",
+      "text": "Julia doesn't respond.  Instead, she scurries forward and tightly grips your calf.\n\n[[C->Julia looks up]]",
       "links": [
         {
           "name": "C",
@@ -475,7 +477,10 @@
       "position": {
         "x": "1432",
         "y": "2475"
-      }
+      },
+      "tags": [
+        "tugging"
+      ]
     },
     {
       "text": "You swing your right leg into Julia, but she intercepts the blow.  \n\nShe latches onto your leg.  Her fingers delve through your cloth, into your skin.\n\n[[C->Julia looks up]]",
@@ -491,10 +496,13 @@
       "position": {
         "x": "1602",
         "y": "2473"
-      }
+      },
+      "tags": [
+        "tugging"
+      ]
     },
     {
-      "text": "DEMO NOTE:  Julia looks up at you with gouged out eyes at this point.  Felt I should mention this for the sake of clarity. - Charles\n\nJulia::Help me out of this.  Give me the sedatives, Miss.  You should be so grateful I gave them to you.\n\nJulia::Please, Miss, I am in pain.  You don't know what this feels like.\n\n[[p:(Action) Try to tug away.]]\n[[p:(Action) Strike Julia.]]",
+      "text": "Julia::Help me out of this.  Give me the sedatives, Miss.  You should be so grateful I gave them to you.\n\nJulia::Please, Miss, I am in pain.  You don't know what this feels like.\n\n[[p:(Action) Try to tug away.]]\n[[p:(Action) Strike Julia.]]",
       "links": [
         {
           "name": "p:(Action) Try to tug away.",
@@ -512,7 +520,10 @@
       "position": {
         "x": "1516",
         "y": "2607"
-      }
+      },
+      "tags": [
+        "noeyes"
+      ]
     },
     {
       "text": "Julia::Miss, no, please don't leave me like this.  Please not here, not in this room!\n\nJulia::Leave me alone, anywhere else!\n\nHer fingers sink deeper.  Your calf begins to sear.\n\n[[p:(Action) Try to break free.]]\n[[p:(Action) Kiss Julia.]]",
@@ -557,10 +568,10 @@
       }
     },
     {
-      "text": "You put your hands around Julia's neck and squeeze.  Violently you push her away.\n\nJulia sheepishly shrinks back into the corner.  She begins shaking again.\n\n[[->Hands]]",
+      "text": "You violently kick julia to the ground.  She again begins to shake\n\n[[C->Hands]]",
       "links": [
         {
-          "name": "",
+          "name": "C",
           "link": "Hands",
           "pid": "33"
         }
@@ -570,15 +581,19 @@
       "position": {
         "x": "1577",
         "y": "2918"
-      }
+      },
+      "tags": [
+        "onground",
+        "floor_remove"
+      ]
     },
     {
-      "text": "You cave to the intrusions.  You bend down and press your lips against Julia's.  You move your right hand down her chest.\n\nYou feel a pleasant shock, ringing through your jaw.  Sensations you've never felt, never knew to desire.\n\nFor a moment, the contact feels radiant, and beautiful.\n\nBut the radiance soon gives way to heat.  Burning, painful heat.\n\nYour lips inflame.  Your hand recoils.  Bullet ants begin swarming your body.\n\nYou can't tell if it's fire or frostbite.\n\n[[C->Recoil]]",
+      "text": "You cave to the intrusions.  You bend down and press your lips against Julia's.  You move your right hand down her chest.\n\nYou feel a pleasant shock, ringing through your jaw.\n\nFor a moment, the contact feels radiant, and beautiful.\n\nBut the radiance soon gives way to heat.  Burning, painful heat.\n\nYour lips inflame.  Bullet ants begin swarming your body.\n\n[[C->p:(Action) Try to break free.]] ",
       "links": [
         {
           "name": "C",
-          "link": "Recoil",
-          "pid": "34"
+          "link": "p:(Action) Try to break free.",
+          "pid": "31"
         }
       ],
       "name": "p:(Action) Kiss Julia.",
@@ -586,10 +601,14 @@
       "position": {
         "x": "1415",
         "y": "2912"
-      }
+      },
+      "tags": [
+        "kiss",
+        "floor_remove"
+      ]
     },
     {
-      "text": "She raises her hands to her face.\n\nJulia::Why?  Why do I still see these?\n\nYour own hands begin to burn.  Violently.\n\nThe sensation spreads.  Bullet ants begin swarming your body.\n\nThe pain is so far along the horseshoe, you aren't sure if it's fire or frostbite.\n\n[[C->Recoil]]",
+      "text": "She stares down at her hands.\n\nJulia::Why?  Why do I still see these?\n\nYour own hands begin to burn.  Violently.\n\nThe sensation spreads.  Bullet ants begin swarming your body.\n\nYour legs are invaded.  They begin to fail and revolt.\n\n[[C->Recoil]]",
       "links": [
         {
           "name": "C",
@@ -605,7 +624,7 @@
       }
     },
     {
-      "text": "You recoil, lose balance, and land flat on your back.\n\nThe ceiling is trying to suck you in.  It's succeeding.\n\nYour legs and arms extend, retract, taking on bizarre proportions.  \n\nYou feel like a triangle with paradoxical edge lengths.  You shouldn't exist.\n\nJasper::Why do I keep finding you like this?\n\n[[p:(Action) Soak in the sights and just vibe.]]\n[[p:(Action) Try to regain composure.]]",
+      "text": "You fall to the ground, paralyzed.\n\nThe ceiling is trying to suck you in.  It's succeeding.\n\nYour legs and arms extend and retract, taking on bizarre proportions.  \n\nYou feel like a severed toe.\n\nJasper::Why do I keep finding you like this?\n\n[[p:(Action) Soak in the sights and just vibe.]]\n[[p:(Action) Fight to regain composure.]]",
       "links": [
         {
           "name": "p:(Action) Soak in the sights and just vibe.",
@@ -613,8 +632,8 @@
           "pid": "35"
         },
         {
-          "name": "p:(Action) Try to regain composure.",
-          "link": "p:(Action) Try to regain composure.",
+          "name": "p:(Action) Fight to regain composure.",
+          "link": "p:(Action) Fight to regain composure.",
           "pid": "36"
         }
       ],
@@ -629,7 +648,7 @@
       ]
     },
     {
-      "text": "Jasper::This maneuver has never, ever worked for you in the past.  But sure, let's try again.\n\nJasper::Let's just assess how this ceiling, and this body, feel.\n\nJasper::...\n\nJasper::Well.\n\nJasper::The sights are horrific and the vibes are rancid.  This isn't going well.\n\n[[C->Noise]]",
+      "text": "Jasper::This maneuver has never, ever worked for you in the past.\n\nJasper::Just look at the situation.\n\nJasper::The sights are horrific and the vibes are rancid.  This isn't going well.\n\n[[C->Noise]]",
       "links": [
         {
           "name": "C",
@@ -640,9 +659,12 @@
       "name": "p:(Action) Soak in the sights and just vibe.",
       "pid": "35",
       "position": {
-        "x": "1329",
-        "y": "3186"
-      }
+        "x": "1325",
+        "y": "3193"
+      },
+      "tags": [
+        "remove_subject"
+      ]
     },
     {
       "text": "Jasper::Yes, gaslight yourself.  Your legs and arms ARE the same length.  Proprioceptive senses lie.\n\nJasper::The ceiling is just a normal ceiling, adorned with a cool pattern.  You can just see it more clearly now.\n\nJasper::The nerve endings fraying along your appendages are merely toxins leaving the body.  You will come out of this healthy.\n\n[[C->Noise]] ",
@@ -653,15 +675,18 @@
           "pid": "37"
         }
       ],
-      "name": "p:(Action) Try to regain composure.",
+      "name": "p:(Action) Fight to regain composure.",
       "pid": "36",
       "position": {
-        "x": "1490",
-        "y": "3182"
-      }
+        "x": "1481",
+        "y": "3194"
+      },
+      "tags": [
+        "remove_subject"
+      ]
     },
     {
-      "text": "Your fog is interuppted by an intrusive, grating sound.  The sound of a hatch opening?\n\n[[C->Wiggly Arrives]]",
+      "text": "The fog is interuppted by an intrusive, grating sound - the sound of a hatch opening.\n\n[[C->Wiggly Arrives]]",
       "links": [
         {
           "name": "C",
@@ -672,9 +697,13 @@
       "name": "Noise",
       "pid": "37",
       "position": {
-        "x": "1412",
-        "y": "3316"
-      }
+        "x": "1417",
+        "y": "3328"
+      },
+      "tags": [
+        "hatch_opening",
+        "add_wiggly"
+      ]
     },
     {
       "text": "Wiggly::Miss?  Miss!?!\n\nJasper::He's opened the grate leading to the ducts for you.  \n\nJasper::Dive for it!\n\n[[p:(Action) Dive into the aperature.]]",
@@ -744,11 +773,11 @@
         "y": "2404"
       },
       "tags": [
-        "corner"
+        "tugging"
       ]
     },
     {
-      "text": "Jasper::She shut the door when she entered.  Will it open?\n\n[[p:(Action) Open the door.]]\n[[p:(Action) Approach Julia.]]",
+      "text": "Jasper::She shut the door when she entered.  Will it open?\n\n[[p:(Action) Open the door.]]\n[[p:(Action) Confront Julia.]]",
       "links": [
         {
           "name": "p:(Action) Open the door.",
@@ -756,8 +785,8 @@
           "pid": "24"
         },
         {
-          "name": "p:(Action) Approach Julia.",
-          "link": "p:(Action) Approach Julia.",
+          "name": "p:(Action) Confront Julia.",
+          "link": "p:(Action) Confront Julia.",
           "pid": "25"
         }
       ],

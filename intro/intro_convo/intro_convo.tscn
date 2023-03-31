@@ -70,6 +70,7 @@ stretch_mode = 5
 new_bg_tag = "bg_outbound_lines"
 
 [node name="BGPioneers" parent="." instance=ExtResource( 5 )]
+modulate = Color( 1, 0.266667, 0.345098, 1 )
 margin_left = 355.0
 margin_top = 346.0
 margin_right = 2046.0

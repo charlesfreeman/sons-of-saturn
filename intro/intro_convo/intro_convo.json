@@ -24,7 +24,8 @@
       },
       "tags": [
         "lookingup",
-        "alien_drips"
+        "alien_drips",
+        "remove_subject"
       ]
     },
     {
@@ -65,7 +66,7 @@
       "name": "p:I want to climb out.  Feel the sun and the air.",
       "pid": "3",
       "position": {
-        "x": "1054",
+        "x": "1055",
         "y": "576"
       }
     },
@@ -112,12 +113,12 @@
         {
           "name": "What the fuck are you talking about?",
           "link": "What the fuck are you talking about?",
-          "pid": "83"
+          "pid": "82"
         },
         {
           "name": "Why do I need to continue into the Cradle?  What's so important about that place?",
           "link": "Why do I need to continue into the Cradle?  What's so important about that place?",
-          "pid": "25"
+          "pid": "24"
         }
       ],
       "name": "Why wouldn't I?  Why can't I just pop out the top and roll around a little?",
@@ -176,17 +177,12 @@
       }
     },
     {
-      "text": "Jasper::Yep, pretty sure the situation won't get any more complicated than that.  \n\nJasper::These tunnels will take you straight to the infirmary, right at the edge of the Cradle.  You'll pop out of an indoor manhole cover or whatever, find a nicely formatted document explaining what happend to your Mom on a nearby desk, and then escape the same way you got in.\n\n[[You sound facetious, vintage plush toy that's talking to me.]]\n[[What if I can't find any trace of what happened to mom?]]\n[[p:This will all be worth it, right?]]",
+      "text": "Jasper::Yep, pretty sure the situation won't get any more complicated than that.  \n\nJasper::These tunnels will take you straight to the infirmary, right at the edge of the Cradle.  You'll pop out of an indoor manhole cover or whatever, find a nicely formatted document explaining what happend to your Mom on a nearby desk, and then escape the same way you got in.\n\n[[You sound facetious, vintage plush toy that's talking to me.]]\n[[p:This will all be worth it, right?]]",
       "links": [
         {
           "name": "You sound facetious, vintage plush toy that's talking to me.",
           "link": "You sound facetious, vintage plush toy that's talking to me.",
           "pid": "11"
-        },
-        {
-          "name": "What if I can't find any trace of what happened to mom?",
-          "link": "What if I can't find any trace of what happened to mom?",
-          "pid": "23"
         },
         {
           "name": "p:This will all be worth it, right?",
@@ -202,7 +198,7 @@
       }
     },
     {
-      "text": "Jasper::So you aren't too tone-deaf, it seems.  You're right, I'm being facetious.  This won't be so simple.\n\nJasper::We don't know where your Mom was the day things collapsed.  We're not even sure where to start looking.\n\nJasper::That's why we had to hire the Ferryman.\n\n[[Continue->p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.]] ",
+      "text": "Jasper::You're right, I am being facetious.  This won't be so simple.\n\nJasper::We don't know where your Mom was the day things collapsed.  We're not even sure where to start looking.\n\nJasper::That's why we had to spend a year's worth of salary to hire the Ferryman.\n\n[[Continue->p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.]] ",
       "links": [
         {
           "name": "Continue",
@@ -213,8 +209,8 @@
       "name": "You sound facetious, vintage plush toy that's talking to me.",
       "pid": "11",
       "position": {
-        "x": "1035",
-        "y": "1357"
+        "x": "1095",
+        "y": "1354"
       }
     },
     {
@@ -228,7 +224,7 @@
         {
           "name": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi.",
           "link": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi.",
-          "pid": "24"
+          "pid": "23"
         },
         {
           "name": "1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel.",
@@ -244,7 +240,7 @@
       }
     },
     {
-      "text": "Jasper::Vacuously, that's true.  But you'd consider it a shame right now, wouldn't you?  While your still breathing?\n\nJasper::Think about all the humiliations, all the unjustified pain; all of it would mean nothing if you were to die here.  You don't want that, do you?\n\nJasper::You'd jsut be one more baby sea turtle who never made it to the ocean.  You were born, pecked at, and now you'll die.\n\n[[No one wants that.]] \n[[Everything is relaxed when there's no anything.]]",
+      "text": "Jasper::But you'd consider it a shame right now, wouldn't you?  While your still breathing?\n\nJasper::Think about all the humiliation and unjustified pain; all of it would mean nothing if you were to die here.  You don't want that, do you?\n\nJasper::You'd just be one more baby sea turtle who never made it to the ocean.  You were born, pecked at, and now you'll die.\n\n[[No one wants that.]] \n[[Those dead baby sea turtles are stress free.  There's nothing to worry about after you've been eaten by a crab.]]",
       "links": [
         {
           "name": "No one wants that.",
@@ -252,8 +248,8 @@
           "pid": "14"
         },
         {
-          "name": "Everything is relaxed when there's no anything.",
-          "link": "Everything is relaxed when there's no anything.",
+          "name": "Those dead baby sea turtles are stress free.  There's nothing to worry about after you've been eaten by a crab.",
+          "link": "Those dead baby sea turtles are stress free.  There's nothing to worry about after you've been eaten by a crab.",
           "pid": "16"
         }
       ],
@@ -265,7 +261,7 @@
       }
     },
     {
-      "text": "Jasper::But plenty of people *get* that.\n\nJasper::You think any baby sea turtle plans on being the one to get eaten by a crab?  You think any kid in Scottish folk tales plans on being one of the children dragged down by a Kelpie?\n\nJasper::Let's make sure you aren't one of them.  Because it's a real possibility, a real fate that could befall you.\n\n[[Continue->p:This will all be worth it, right?]] ",
+      "text": "Jasper::But plenty of people *get* that.\n\nJasper::You think any baby sea turtle plans on being the one to get eaten by a crab?  You think any kid in Scottish folk tales plans on being one of the children dragged down by a Kelpie?\n\n[[Continue->p:This will all be worth it, right?]] ",
       "links": [
         {
           "name": "Continue",
@@ -294,10 +290,13 @@
       "position": {
         "x": "1512",
         "y": "1480"
-      }
+      },
+      "tags": [
+        "add_wiggly"
+      ]
     },
     {
-      "text": "Jasper::So you would consider the fate of 99.9% of baby sea turtles a success?  After all, there's nothing to resolve if you've been eaten by a crab.\n\n[[Continue->p:This will all be worth it, right?]]",
+      "text": "Jasper::So you would consider the fate of 99.9% of baby sea turtles a success?\n\n[[Continue->p:This will all be worth it, right?]]",
       "links": [
         {
           "name": "Continue",
@@ -305,7 +304,7 @@
           "pid": "12"
         }
       ],
-      "name": "Everything is relaxed when there's no anything.",
+      "name": "Those dead baby sea turtles are stress free.  There's nothing to worry about after you've been eaten by a crab.",
       "pid": "16",
       "position": {
         "x": "1137",
@@ -318,7 +317,7 @@
         {
           "name": "C",
           "link": "Ferry2",
-          "pid": "96"
+          "pid": "95"
         }
       ],
       "name": "Ferryman",
@@ -337,7 +336,7 @@
         {
           "name": "Continue",
           "link": "Ferry2",
-          "pid": "96"
+          "pid": "95"
         }
       ],
       "name": "Why do you think there's something wrong with me?",
@@ -348,7 +347,7 @@
       }
     },
     {
-      "text": "Ferryman::Apologies for falling behind, I'm not as fit as I was when I first became a Ferryman.  I couldn't keep up with someone as athletic as yourself.  \n\nFerryman::...\n\nFerryman::Also, I knew it would be fine if you got a bit ahead.  The more labyrinthine portions of the sewers are behind us - its a straight shot from here to the infirmary, and only I have the key to the locked entrance ahead.\n\n[[p:Alright, let's get going.]]\n[[p:Can I stay here just a bit longer?]]\n\n",
+      "text": "Ferryman::Apologies for falling behind, I'm not as fit as I was when I first became a Ferryman.  I couldn't keep up with someone as athletic as yourself.  \n\nFerryman::...\n\nFerryman::Also, I knew it would be fine if you got a bit ahead.  The maze is behind us - its a straight shot from here to the infirmary.\n\n[[p:Alright, let's get going.]]\n[[p:Can I stay here just a bit longer?]]\n\n",
       "links": [
         {
           "name": "p:Alright, let's get going.",
@@ -401,22 +400,22 @@
       }
     },
     {
-      "text": "You rise to your feet a little too quickly, leaving you slightly disoriented.  You can still make out the words of your Ferryman guide echoing down the drain.\n\nFerryman::The entrance to the Maternity Ward is just a bit further ahead.\n\n[[How much further?]]\n[[Will there be more sunlight up ahead?]]\n[[p:Let's get going then.]]",
+      "text": "You rise to your feet a little too quickly, leaving you slightly disoriented.  Black dots have colonized your visual field.  \n\nYou can still make out the words of your Ferryman guide echoing down the drain.\n\nFerryman::The entrance to the Maternity Ward is just a bit further ahead.\n\n[[How much further?]]\n[[Will there be more sunlight up ahead?]]\n[[p:Let's get going then.]]",
       "links": [
         {
           "name": "How much further?",
           "link": "How much further?",
-          "pid": "27"
+          "pid": "26"
         },
         {
           "name": "Will there be more sunlight up ahead?",
           "link": "Will there be more sunlight up ahead?",
-          "pid": "28"
+          "pid": "27"
         },
         {
           "name": "p:Let's get going then.",
           "link": "p:Let's get going then.",
-          "pid": "29"
+          "pid": "28"
         }
       ],
       "name": "p:(Action) Stand up.",
@@ -430,23 +429,7 @@
       ]
     },
     {
-      "text": "Jasper::Then we're out of luck.  Organizing this clandestine excursion took a full year.  Scrounging up enough to pay the Ferryman's broker took several months on top of that.\n\nJasper::So, let's hope we find a little emotional closure somewhere in here.  Otherwise we're looking at a pretty poor return on investment.\n\n[[Continue->p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.]] ",
-      "links": [
-        {
-          "name": "Continue",
-          "link": "p:I just need to get in, find out what happened to Mom, and get out.  It'll be a breeze.",
-          "pid": "10"
-        }
-      ],
-      "name": "What if I can't find any trace of what happened to mom?",
-      "pid": "23",
-      "position": {
-        "x": "1178",
-        "y": "1357"
-      }
-    },
-    {
-      "text": "Jasper::You are full of poison.  You got that much correct.  So in a way, you are pretty similar to an aquatic blue-ringed fiend.  \n\nJasper::But you've also got a lot in common with an octopus's victim.  You're a tourist sap who ended up petrified on the beach, pumped full of tetrodotoxin, unable even to close their eyes, staring directly at the sun.\n\nJasper::You are flat on your back, paralyzed.  You even lack the wit to shut your eyelids, and the foreign sun is turning your irises into swiss cheese.\n\n[[Continue->p:This will all be worth it, right?]] \n",
+      "text": "Jasper::Right now you've got more in common with an octopus's victim.  \n\nJasper::You're a tourist sap pumped full of tetrodotoxin.\n\nJasper::You are flat on your back, paralyzed.  You even lack the wit to shut your eyelids, and the foreign sun is turning your irises into swiss cheese.\n\n[[Continue->p:This will all be worth it, right?]] \n",
       "links": [
         {
           "name": "Continue",
@@ -455,7 +438,7 @@
         }
       ],
       "name": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi.",
-      "pid": "24",
+      "pid": "23",
       "position": {
         "x": "1361",
         "y": "1509"
@@ -467,11 +450,11 @@
         {
           "name": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
           "link": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
-          "pid": "26"
+          "pid": "25"
         }
       ],
       "name": "Why do I need to continue into the Cradle?  What's so important about that place?",
-      "pid": "25",
+      "pid": "24",
       "position": {
         "x": "788",
         "y": "896"
@@ -487,7 +470,7 @@
         }
       ],
       "name": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
-      "pid": "26",
+      "pid": "25",
       "position": {
         "x": "858",
         "y": "1073"
@@ -503,7 +486,7 @@
         }
       ],
       "name": "How much further?",
-      "pid": "27",
+      "pid": "26",
       "position": {
         "x": "1484",
         "y": "2289"
@@ -519,7 +502,7 @@
         }
       ],
       "name": "Will there be more sunlight up ahead?",
-      "pid": "28",
+      "pid": "27",
       "position": {
         "x": "1649",
         "y": "2287"
@@ -531,21 +514,21 @@
         {
           "name": "p:Yes!",
           "link": "p:Yes!",
-          "pid": "30"
+          "pid": "29"
         },
         {
           "name": "p:No.",
           "link": "p:Stop pretending that it matters, it's insulting.",
-          "pid": "31"
+          "pid": "30"
         },
         {
           "name": "p:Stop pretending that it matters, it's insulting.",
           "link": "p:Stop pretending that it matters, it's insulting.",
-          "pid": "31"
+          "pid": "30"
         }
       ],
       "name": "p:Let's get going then.",
-      "pid": "29",
+      "pid": "28",
       "position": {
         "x": "1801",
         "y": "2286"
@@ -557,11 +540,11 @@
         {
           "name": "C",
           "link": "Follow",
-          "pid": "32"
+          "pid": "31"
         }
       ],
       "name": "p:Yes!",
-      "pid": "30",
+      "pid": "29",
       "position": {
         "x": "1726",
         "y": "2436"
@@ -573,11 +556,11 @@
         {
           "name": "C",
           "link": "Follow",
-          "pid": "32"
+          "pid": "31"
         }
       ],
       "name": "p:Stop pretending that it matters, it's insulting.",
-      "pid": "31",
+      "pid": "30",
       "position": {
         "x": "1875",
         "y": "2436"
@@ -586,28 +569,28 @@
     {
       "text": "The Ferryman does a quick turn and begins to slip further down the cavern.\n\nRelunctantly, mechanically, senselessly, you begin to follow. ",
       "name": "Follow",
-      "pid": "32",
+      "pid": "31",
       "position": {
         "x": "1805",
         "y": "2590"
       }
     },
     {
-      "text": "Voice::This sleep is restless and unending.  Your mind is tossed about in a shallow tidal pool, slamming against barnacles and corals.  Every sliver of exposed tissue is being pecked at by crabs and crocodiles.\n\nVoice::We must escape this sleep.  Free yourself from this paralysis.  No more freefalls, no more jolts of denial.  Wake up, the audience is getting antsy.\n\nVoice::Not taking the bait, huh?  I'll provide a small dose of external incentivization.  Let's turn on the lights.\n\n[[p:(Action) Raise your head and face reality.]]\n[[p:(Action) Keep sulking in the moist, comfortable puddle you've carved out for yourself.]]",
+      "text": "Voice,voice::This sleep is restless and unending.  Your mind is tossed about in a shallow tidal pool, slamming against barnacles and corals.  Every sliver of exposed tissue is being pecked at by crabs and crocodiles.\n\nVoice::We must escape this sleep.  Free yourself from this paralysis.  No more freefalls, no more jolts of denial.  Wake up, the audience is getting antsy.\n\nVoice::Not taking the bait, huh?  I'll provide a small dose of external incentivization.  Let's turn on the lights.\n\n[[p:(Action) Raise your head and face reality.]]\n[[p:(Action) Keep sulking in the moist, comfortable puddle you've carved out for yourself.]]",
       "links": [
         {
           "name": "p:(Action) Raise your head and face reality.",
           "link": "p:(Action) Raise your head and face reality.",
-          "pid": "34"
+          "pid": "33"
         },
         {
           "name": "p:(Action) Keep sulking in the moist, comfortable puddle you've carved out for yourself.",
           "link": "p:(Action) Keep sulking in the moist, comfortable puddle you've carved out for yourself.",
-          "pid": "35"
+          "pid": "34"
         }
       ],
       "name": "Open Eye",
-      "pid": "33",
+      "pid": "32",
       "position": {
         "x": "2146",
         "y": "89"
@@ -619,11 +602,11 @@
         {
           "name": "C",
           "link": "Raise head",
-          "pid": "36"
+          "pid": "35"
         }
       ],
       "name": "p:(Action) Raise your head and face reality.",
-      "pid": "34",
+      "pid": "33",
       "position": {
         "x": "2071",
         "y": "239"
@@ -635,11 +618,11 @@
         {
           "name": "C",
           "link": "Raise head",
-          "pid": "36"
+          "pid": "35"
         }
       ],
       "name": "p:(Action) Keep sulking in the moist, comfortable puddle you've carved out for yourself.",
-      "pid": "35",
+      "pid": "34",
       "position": {
         "x": "2221",
         "y": "239"
@@ -651,21 +634,21 @@
         {
           "name": "I deserve this, don't I?",
           "link": "I deserve this, don't I?",
-          "pid": "37"
+          "pid": "36"
         },
         {
           "name": "p:The lights, they hurt, but in a weirdly satisfying way.",
           "link": "p:The lights, they hurt, but in a weirdly satisfying way.",
-          "pid": "38"
+          "pid": "37"
         },
         {
           "name": "p:To Hell with light, with being able to see, it stings!  Arrgh!",
           "link": "p:To Hell with light, with being able to see, it stings!  Arrgh!",
-          "pid": "39"
+          "pid": "38"
         }
       ],
       "name": "Raise head",
-      "pid": "36",
+      "pid": "35",
       "position": {
         "x": "2167",
         "y": "390"
@@ -682,11 +665,11 @@
         {
           "name": "C",
           "link": "Raise head",
-          "pid": "36"
+          "pid": "35"
         }
       ],
       "name": "I deserve this, don't I?",
-      "pid": "37",
+      "pid": "36",
       "position": {
         "x": "2013",
         "y": "542"
@@ -698,11 +681,11 @@
         {
           "name": "p:Wait, I have toes?  That means I have fingers too, right?  Arms and legs, even?  I'm starting to feel the toes.",
           "link": "p:Wait, I have toes?  That means I have fingers too, right?  Arms and legs, even?  I'm starting to feel the toes.",
-          "pid": "41"
+          "pid": "40"
         }
       ],
       "name": "p:The lights, they hurt, but in a weirdly satisfying way.",
-      "pid": "38",
+      "pid": "37",
       "position": {
         "x": "2167",
         "y": "541"
@@ -714,11 +697,11 @@
         {
           "name": "p:Wait!  Before I gouge my own eyes out, there's something I've got to know!  Who am I?  What kind of \"thing\" am I?  I want to see.",
           "link": "p:Wait!  Before I gouge my own eyes out, there's something I've got to know!  Who am I?  What kind of \"thing\" am I?  I want to see.",
-          "pid": "40"
+          "pid": "39"
         }
       ],
       "name": "p:To Hell with light, with being able to see, it stings!  Arrgh!",
-      "pid": "39",
+      "pid": "38",
       "position": {
         "x": "2317",
         "y": "540"
@@ -730,16 +713,16 @@
         {
           "name": "p:No, I want to be tall and lanky and feminine, like a Borzoi hound wearing makeup!",
           "link": "p:No, I want to be tall and lanky and feminine, like a Borzoi hound wearing makeup!",
-          "pid": "42"
+          "pid": "41"
         },
         {
           "name": "p:Whatever, as long as I can beat the shit out of people.  With my face, even.",
           "link": "p:Whatever, as long as I can beat the shit out of people.  With my face, even.",
-          "pid": "43"
+          "pid": "42"
         }
       ],
       "name": "p:Wait!  Before I gouge my own eyes out, there's something I've got to know!  Who am I?  What kind of \"thing\" am I?  I want to see.",
-      "pid": "40",
+      "pid": "39",
       "position": {
         "x": "2317",
         "y": "690"
@@ -751,16 +734,16 @@
         {
           "name": "p:No, I want to be tall and lanky and feminine, like a Borzoi hound wearing makeup!",
           "link": "p:No, I want to be tall and lanky and feminine, like a Borzoi hound wearing makeup!",
-          "pid": "42"
+          "pid": "41"
         },
         {
           "name": "p:Whatever, as long as I can beat the shit out of people.  With my face, even.",
           "link": "p:Whatever, as long as I can beat the shit out of people.  With my face, even.",
-          "pid": "43"
+          "pid": "42"
         }
       ],
       "name": "p:Wait, I have toes?  That means I have fingers too, right?  Arms and legs, even?  I'm starting to feel the toes.",
-      "pid": "41",
+      "pid": "40",
       "position": {
         "x": "2166",
         "y": "690"
@@ -772,11 +755,11 @@
         {
           "name": "C",
           "link": "p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?",
-          "pid": "44"
+          "pid": "43"
         }
       ],
       "name": "p:No, I want to be tall and lanky and feminine, like a Borzoi hound wearing makeup!",
-      "pid": "42",
+      "pid": "41",
       "position": {
         "x": "2245",
         "y": "822"
@@ -788,11 +771,11 @@
         {
           "name": "p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?",
           "link": "p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?",
-          "pid": "44"
+          "pid": "43"
         }
       ],
       "name": "p:Whatever, as long as I can beat the shit out of people.  With my face, even.",
-      "pid": "43",
+      "pid": "42",
       "position": {
         "x": "2393",
         "y": "825"
@@ -804,16 +787,16 @@
         {
           "name": "Okay, but like, what do I do for work?",
           "link": "Okay, but like, what do I do for work?",
-          "pid": "45"
+          "pid": "44"
         },
         {
           "name": "p:Why don't you like me?",
           "link": "p:Why don't you like me?",
-          "pid": "74"
+          "pid": "73"
         }
       ],
       "name": "p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?",
-      "pid": "44",
+      "pid": "43",
       "position": {
         "x": "2308",
         "y": "957"
@@ -825,11 +808,11 @@
         {
           "name": "C",
           "link": "p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?",
-          "pid": "44"
+          "pid": "43"
         }
       ],
       "name": "Okay, but like, what do I do for work?",
-      "pid": "45",
+      "pid": "44",
       "position": {
         "x": "2193",
         "y": "1095"
@@ -841,11 +824,11 @@
         {
           "name": "C",
           "link": "Why don't you like me?",
-          "pid": "61"
+          "pid": "60"
         }
       ],
       "name": "Am I suffering from any exotic medical conditions I should know about?  Do I have scurvy?",
-      "pid": "46",
+      "pid": "45",
       "position": {
         "x": "2243",
         "y": "1236"
@@ -857,11 +840,11 @@
         {
           "name": "C",
           "link": "pov",
-          "pid": "76"
+          "pid": "75"
         }
       ],
       "name": "p:Alright, I've got a pretty good handle on my body-shape and psycho-social identity.  So, what's up with this theater?  Where am I?",
-      "pid": "47",
+      "pid": "46",
       "position": {
         "x": "2401",
         "y": "1249"
@@ -873,11 +856,11 @@
         {
           "name": "C",
           "link": "Cradle",
-          "pid": "52"
+          "pid": "51"
         }
       ],
       "name": "p:Why the hell am I in a sewer?  Moreover, why am I taking a nap there?",
-      "pid": "48",
+      "pid": "47",
       "position": {
         "x": "2245",
         "y": "1415"
@@ -889,11 +872,11 @@
         {
           "name": "Why can't we take the train in from the surface?  That's how we got out during the mass evacuation.",
           "link": "Why can't we take the train in from the surface?  That's how we got out during the mass evacuation.",
-          "pid": "50"
+          "pid": "49"
         }
       ],
       "name": "p:The Cradle?  The underground city I grew up in?",
-      "pid": "49",
+      "pid": "48",
       "position": {
         "x": "2512",
         "y": "1407"
@@ -905,11 +888,11 @@
         {
           "name": "C",
           "link": "Evacuation lines",
-          "pid": "53"
+          "pid": "52"
         }
       ],
       "name": "Why can't we take the train in from the surface?  That's how we got out during the mass evacuation.",
-      "pid": "50",
+      "pid": "49",
       "position": {
         "x": "2625",
         "y": "1401"
@@ -919,16 +902,21 @@
       ]
     },
     {
-      "text": "Malformed Lump::Then why did we come back?  Why leave your cushy job, just to revisit this bloated corpse of a city?\n\n[[p:Because I have to come back.  I have to find out what happened to my Mom.]]",
+      "text": "Malformed Lump::Then why did we come back?  Why would anyone return to this bloated corpse of a city?\n\n[[p:Because I have to come back.  I have to find out what happened to my Mom.]]\n[[p:I wasn't exactly leaving a whole lot behind.]]",
       "links": [
         {
           "name": "p:Because I have to come back.  I have to find out what happened to my Mom.",
           "link": "p:Because I have to come back.  I have to find out what happened to my Mom.",
-          "pid": "57"
+          "pid": "56"
+        },
+        {
+          "name": "p:I wasn't exactly leaving a whole lot behind.",
+          "link": "p:I wasn't exactly leaving a whole lot behind.",
+          "pid": "96"
         }
       ],
       "name": "p:I don't want to go back!",
-      "pid": "51",
+      "pid": "50",
       "position": {
         "x": "2434",
         "y": "1773"
@@ -940,11 +928,11 @@
         {
           "name": "p:The Cradle?  The underground city I grew up in?",
           "link": "p:The Cradle?  The underground city I grew up in?",
-          "pid": "49"
+          "pid": "48"
         }
       ],
       "name": "Cradle",
-      "pid": "52",
+      "pid": "51",
       "position": {
         "x": "2383",
         "y": "1402"
@@ -959,11 +947,11 @@
         {
           "name": "What about the routes the underground pioneers took?  Aren't those still viable?",
           "link": "What about the routes the underground pioneers took?  Aren't those still viable?",
-          "pid": "54"
+          "pid": "53"
         }
       ],
       "name": "Evacuation lines",
-      "pid": "53",
+      "pid": "52",
       "position": {
         "x": "2739",
         "y": "1516"
@@ -978,11 +966,11 @@
         {
           "name": "C",
           "link": "back to sewer",
-          "pid": "77"
+          "pid": "76"
         }
       ],
       "name": "What about the routes the underground pioneers took?  Aren't those still viable?",
-      "pid": "54",
+      "pid": "53",
       "position": {
         "x": "2592",
         "y": "1531"
@@ -997,16 +985,16 @@
         {
           "name": "So, dying of infection isn't an option?",
           "link": "So, dying of infection isn't an option?",
-          "pid": "56"
+          "pid": "55"
         },
         {
           "name": "p:That's right.  I have to find out what happened to my Mom.",
           "link": "p:Because I have to come back.  I have to find out what happened to my Mom.",
-          "pid": "57"
+          "pid": "56"
         }
       ],
       "name": "p:Alright.  I knew I'd have to come back here, sooner or later.",
-      "pid": "55",
+      "pid": "54",
       "position": {
         "x": "2554",
         "y": "1772"
@@ -1018,11 +1006,11 @@
         {
           "name": "C",
           "link": "p:Alright.  I knew I'd have to come back here, sooner or later.",
-          "pid": "55"
+          "pid": "54"
         }
       ],
       "name": "So, dying of infection isn't an option?",
-      "pid": "56",
+      "pid": "55",
       "position": {
         "x": "2595",
         "y": "1923"
@@ -1034,16 +1022,16 @@
         {
           "name": "p:I didn't exactly have much agency during that period of my life.",
           "link": "p:I didn't exactly have much agency during that period of my life.",
-          "pid": "58"
+          "pid": "57"
         },
         {
           "name": "p:Somehow I kind of doubt she's holding anything anymore.",
           "link": "p:Somehow I kind of doubt she's holding anything anymore.",
-          "pid": "59"
+          "pid": "58"
         }
       ],
       "name": "p:Because I have to come back.  I have to find out what happened to my Mom.",
-      "pid": "57",
+      "pid": "56",
       "position": {
         "x": "2434",
         "y": "1923"
@@ -1055,11 +1043,11 @@
         {
           "name": "C",
           "link": "Summary?",
-          "pid": "60"
+          "pid": "59"
         }
       ],
       "name": "p:I didn't exactly have much agency during that period of my life.",
-      "pid": "58",
+      "pid": "57",
       "position": {
         "x": "2438",
         "y": "2074"
@@ -1071,11 +1059,11 @@
         {
           "name": "C",
           "link": "Summary?",
-          "pid": "60"
+          "pid": "59"
         }
       ],
       "name": "p:Somehow I kind of doubt she's holding anything anymore.",
-      "pid": "59",
+      "pid": "58",
       "position": {
         "x": "2571",
         "y": "2074"
@@ -1087,21 +1075,21 @@
         {
           "name": "Yeah I've got a fucking few.",
           "link": "Yeah I've got a fucking few.",
-          "pid": "78"
+          "pid": "77"
         },
         {
           "name": "p:Only one that's important - what are you?",
           "link": "p:Only one that's important - what are you?",
-          "pid": "62"
+          "pid": "61"
         },
         {
           "name": "p:I have a few questions about the potato-tumor I've been conversing with these last few minutes.",
           "link": "p:Only one that's important - what are you?",
-          "pid": "62"
+          "pid": "61"
         }
       ],
       "name": "Summary?",
-      "pid": "60",
+      "pid": "59",
       "position": {
         "x": "2438",
         "y": "2224"
@@ -1113,26 +1101,26 @@
         {
           "name": "Do I have any phobias?  Am I afraid of spiders?",
           "link": "Do I have any phobias?  Am I afraid of spiders?",
-          "pid": "75"
+          "pid": "74"
         },
         {
           "name": "Am I suffering from any exotic medical conditions I should know about?  Do I have scurvy?",
           "link": "Am I suffering from any exotic medical conditions I should know about?  Do I have scurvy?",
-          "pid": "46"
+          "pid": "45"
         },
         {
           "name": "I had a girlfriend at one point.  That means I'm cool, right?",
           "link": "I had a girlfriend at one point.  That means I'm cool, right?",
-          "pid": "93"
+          "pid": "92"
         },
         {
           "name": "p:Alright, I've got a pretty good handle on my body-shape and psycho-social identity.  So, what's up with this theater?  Where am I?",
           "link": "p:Alright, I've got a pretty good handle on my body-shape and psycho-social identity.  So, what's up with this theater?  Where am I?",
-          "pid": "47"
+          "pid": "46"
         }
       ],
       "name": "Why don't you like me?",
-      "pid": "61",
+      "pid": "60",
       "position": {
         "x": "2385",
         "y": "1124"
@@ -1144,11 +1132,11 @@
         {
           "name": "C",
           "link": "lightup jasper",
-          "pid": "63"
+          "pid": "62"
         }
       ],
       "name": "p:Only one that's important - what are you?",
-      "pid": "62",
+      "pid": "61",
       "position": {
         "x": "2438",
         "y": "2374"
@@ -1160,11 +1148,11 @@
         {
           "name": "C",
           "link": "my name jasper",
-          "pid": "64"
+          "pid": "63"
         }
       ],
       "name": "lightup jasper",
-      "pid": "63",
+      "pid": "62",
       "position": {
         "x": "2438",
         "y": "2524"
@@ -1179,21 +1167,21 @@
         {
           "name": "Wow, I can't believe I got my hands on a vintage plush Helga brand machine washable cat toy, let alone a sentient one.",
           "link": "Wow, I can't believe I got my hands on a vintage plush Helga brand machine washable cat toy, let alone a sentient one.",
-          "pid": "80"
+          "pid": "79"
         },
         {
           "name": "p:That's what you look like?  Bring back the potato-tumor silhouette please.",
           "link": "p:That's what you look like?  Bring back the potato-tumor silhouette please.",
-          "pid": "65"
+          "pid": "64"
         },
         {
           "name": "p:No.  I didn't forget you.  You're foundational.  You're buried too deep.",
           "link": "p:No.  I didn't forget you.  You're foundational.  You're buried too deep.",
-          "pid": "66"
+          "pid": "65"
         }
       ],
       "name": "my name jasper",
-      "pid": "64",
+      "pid": "63",
       "position": {
         "x": "2439",
         "y": "2674"
@@ -1205,11 +1193,11 @@
         {
           "name": "p:So is it just us?  Please tell me it's not just us.",
           "link": "p:So is it just us?  Please tell me it's not just us.",
-          "pid": "67"
+          "pid": "66"
         }
       ],
       "name": "p:That's what you look like?  Bring back the potato-tumor silhouette please.",
-      "pid": "65",
+      "pid": "64",
       "position": {
         "x": "2364",
         "y": "2824"
@@ -1221,11 +1209,11 @@
         {
           "name": "p:It's just us then, huh?  Here, together?",
           "link": "p:It's just us then, huh?  Here, together?",
-          "pid": "70"
+          "pid": "69"
         }
       ],
       "name": "p:No.  I didn't forget you.  You're foundational.  You're buried too deep.",
-      "pid": "66",
+      "pid": "65",
       "position": {
         "x": "2514",
         "y": "2824"
@@ -1237,11 +1225,11 @@
         {
           "name": "C",
           "link": "lightup ferryman",
-          "pid": "68"
+          "pid": "67"
         }
       ],
       "name": "p:So is it just us?  Please tell me it's not just us.",
-      "pid": "67",
+      "pid": "66",
       "position": {
         "x": "2364",
         "y": "2958"
@@ -1253,11 +1241,11 @@
         {
           "name": "C",
           "link": "ferryman_lightup",
-          "pid": "79"
+          "pid": "78"
         }
       ],
       "name": "lightup ferryman",
-      "pid": "68",
+      "pid": "67",
       "position": {
         "x": "2368",
         "y": "3099"
@@ -1272,26 +1260,26 @@
         {
           "name": "Does he have a name?",
           "link": "Does he have a name?",
-          "pid": "81"
+          "pid": "80"
         },
         {
           "name": "He looks hairy and old.  I hate him.",
           "link": "He looks hairy and old.  I hate him.",
-          "pid": "82"
+          "pid": "81"
         },
         {
           "name": "Why do we even need this guy?  We've been through so much together.  Surely we can handle anything the Cradle throws at us.",
           "link": "Why do we even need this guy?  We've been through so much together.  Surely we can handle anything the Cradle throws at us.",
-          "pid": "72"
+          "pid": "71"
         },
         {
           "name": "p:So it's me, a snarky antique doll, and a troglodyte we bribed to show us around.  Got it.",
           "link": "p:So it's me, a snarky antique doll, and a troglodyte we bribed to show us around.  Got it.",
-          "pid": "71"
+          "pid": "70"
         }
       ],
       "name": "ferryman intro",
-      "pid": "69",
+      "pid": "68",
       "position": {
         "x": "2374",
         "y": "3304"
@@ -1303,11 +1291,11 @@
         {
           "name": "C",
           "link": "lightup ferryman",
-          "pid": "68"
+          "pid": "67"
         }
       ],
       "name": "p:It's just us then, huh?  Here, together?",
-      "pid": "70",
+      "pid": "69",
       "position": {
         "x": "2503",
         "y": "2968"
@@ -1319,16 +1307,16 @@
         {
           "name": "p:I'd be a lot more eager to wake up if I wasn't gonna wake up in a sewer.",
           "link": "p:I'd be a lot more eager to wake up if I wasn't gonna wake up in a sewer.",
-          "pid": "94"
+          "pid": "93"
         },
         {
           "name": "p:Yes, please, get me out of here!  I've got tunnels to crawl through and expectations to fall short of!",
           "link": "p:Yes, please, get me out of here!  I've got tunnels to crawl through and expectations to fall short of!",
-          "pid": "95"
+          "pid": "94"
         }
       ],
       "name": "p:So it's me, a snarky antique doll, and a troglodyte we bribed to show us around.  Got it.",
-      "pid": "71",
+      "pid": "70",
       "position": {
         "x": "2312",
         "y": "3438"
@@ -1340,11 +1328,11 @@
         {
           "name": "Literally?",
           "link": "Literally?",
-          "pid": "73"
+          "pid": "72"
         }
       ],
       "name": "Why do we even need this guy?  We've been through so much together.  Surely we can handle anything the Cradle throws at us.",
-      "pid": "72",
+      "pid": "71",
       "position": {
         "x": "2450",
         "y": "3436"
@@ -1356,27 +1344,27 @@
         {
           "name": "C",
           "link": "ferryman intro",
-          "pid": "69"
+          "pid": "68"
         }
       ],
       "name": "Literally?",
-      "pid": "73",
+      "pid": "72",
       "position": {
         "x": "2538",
         "y": "3586"
       }
     },
     {
-      "text": "Malformed Lump::Me?\n\n[[C->Why don't you like me?]]",
+      "text": "Malformed Lump,malformed_lump::Me?\n\n[[C->Why don't you like me?]]",
       "links": [
         {
           "name": "C",
           "link": "Why don't you like me?",
-          "pid": "61"
+          "pid": "60"
         }
       ],
       "name": "p:Why don't you like me?",
-      "pid": "74",
+      "pid": "73",
       "position": {
         "x": "2447",
         "y": "1010"
@@ -1391,11 +1379,11 @@
         {
           "name": "C",
           "link": "Why don't you like me?",
-          "pid": "61"
+          "pid": "60"
         }
       ],
       "name": "Do I have any phobias?  Am I afraid of spiders?",
-      "pid": "75",
+      "pid": "74",
       "position": {
         "x": "2530",
         "y": "1263"
@@ -1407,11 +1395,11 @@
         {
           "name": "p:Why the hell am I in a sewer?  Moreover, why am I taking a nap there?",
           "link": "p:Why the hell am I in a sewer?  Moreover, why am I taking a nap there?",
-          "pid": "48"
+          "pid": "47"
         }
       ],
       "name": "pov",
-      "pid": "76",
+      "pid": "75",
       "position": {
         "x": "2117",
         "y": "1418"
@@ -1426,16 +1414,16 @@
         {
           "name": "p:I don't want to go back!",
           "link": "p:I don't want to go back!",
-          "pid": "51"
+          "pid": "50"
         },
         {
           "name": "p:Alright.  I knew I'd have to come back here, sooner or later.",
           "link": "p:Alright.  I knew I'd have to come back here, sooner or later.",
-          "pid": "55"
+          "pid": "54"
         }
       ],
       "name": "back to sewer",
-      "pid": "77",
+      "pid": "76",
       "position": {
         "x": "2457",
         "y": "1605"
@@ -1450,26 +1438,26 @@
         {
           "name": "Why do I care what happened to my Mom?  I haven't seen her in nearly twenty years!",
           "link": "Why do I care what happened to my Mom?  I haven't seen her in nearly twenty years!",
-          "pid": "84"
+          "pid": "83"
         },
         {
           "name": "Why did we abandon the Cradle?",
           "link": "Why did we abandon the Cradle?",
-          "pid": "88"
+          "pid": "87"
         },
         {
           "name": "What have I been doing for the last twenty years?",
           "link": "What have I been doing for the last twenty years?",
-          "pid": "89"
+          "pid": "88"
         },
         {
           "name": "p:Who are you?",
           "link": "p:Only one that's important - what are you?",
-          "pid": "62"
+          "pid": "61"
         }
       ],
       "name": "Yeah I've got a fucking few.",
-      "pid": "78",
+      "pid": "77",
       "position": {
         "x": "2558",
         "y": "2374"
@@ -1481,11 +1469,11 @@
         {
           "name": "C",
           "link": "ferryman intro",
-          "pid": "69"
+          "pid": "68"
         }
       ],
       "name": "ferryman_lightup",
-      "pid": "79",
+      "pid": "78",
       "position": {
         "x": "2503",
         "y": "3194"
@@ -1500,11 +1488,11 @@
         {
           "name": "C",
           "link": "my name jasper",
-          "pid": "64"
+          "pid": "63"
         }
       ],
       "name": "Wow, I can't believe I got my hands on a vintage plush Helga brand machine washable cat toy, let alone a sentient one.",
-      "pid": "80",
+      "pid": "79",
       "position": {
         "x": "2670",
         "y": "2963"
@@ -1516,11 +1504,11 @@
         {
           "name": "C",
           "link": "ferryman intro",
-          "pid": "69"
+          "pid": "68"
         }
       ],
       "name": "Does he have a name?",
-      "pid": "81",
+      "pid": "80",
       "position": {
         "x": "2179",
         "y": "3440"
@@ -1532,11 +1520,11 @@
         {
           "name": "C",
           "link": "ferryman intro",
-          "pid": "69"
+          "pid": "68"
         }
       ],
       "name": "He looks hairy and old.  I hate him.",
-      "pid": "82",
+      "pid": "81",
       "position": {
         "x": "2585",
         "y": "3438"
@@ -1548,11 +1536,11 @@
         {
           "name": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
           "link": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
-          "pid": "26"
+          "pid": "25"
         }
       ],
       "name": "What the fuck are you talking about?",
-      "pid": "83",
+      "pid": "82",
       "position": {
         "x": "973",
         "y": "895"
@@ -1564,37 +1552,37 @@
         {
           "name": "No.",
           "link": "No.",
-          "pid": "85"
+          "pid": "84"
         },
         {
           "name": "Yes?  Maybe?  I can't tell what response you're fishing for!",
           "link": "No.",
-          "pid": "85"
+          "pid": "84"
         }
       ],
       "name": "Why do I care what happened to my Mom?  I haven't seen her in nearly twenty years!",
-      "pid": "84",
+      "pid": "83",
       "position": {
         "x": "2680",
         "y": "2373"
       }
     },
     {
-      "text": "Malformed Lump::Alright.  Even if it *wasn't* weird, life has presented you with material reasons to care.\n\nMalformed Lump::Your mother left behind a pretty sizeable estate above ground.  Enough for you to retire on, should you inherit it.  \n\nMalformed Lump::But I was the only thing you were able to take with you during the escape.  No ID, no birth certificate, no friends, no pets.  Only me.\n\nMalformed Lump::That means you've never been able to prove to the state that you are the rightful heir to those assets.  They're just sitting there, rotting.\n\nMalformed Lump::They won't rot for much longer, though.  When the twenty year mark is up, the state will unfreeze her assets and take everything.  You get nothing, like always.\n\nMalformed Lump::Do you care now?  Is any of this ringing a bell?\n\n[[Only dimly to be perfectly honest.->I still only kind of care.]]\n[[I still only kind of care.]]",
+      "text": "Malformed Lump::Alright.  Even if it *wasn't* weird, life has presented you with material reasons to care.\n\nMalformed Lump::Your mother left behind a pretty sizeable estate above ground.  Enough for you to retire on, should you inherit it.  \n\nMalformed Lump::But I was the only thing you were able to take with you during the escape.  No ID, no birth certificate, no friends, no pets.  Only me.\n\nMalformed Lump::You've never been able to prove to the state that you are the rightful heir to those assets.  They're just sitting there, rotting.\n\nMalformed Lump::They won't rot for much longer, though.  When the twenty year mark is up, the state will unfreeze her assets and take everything.  You get nothing, like always.\n\nMalformed Lump::Do you care now?  Is any of this ringing a bell?\n\n[[Only dimly to be perfectly honest.->I still only kind of care.]]\n[[I still only kind of care.]]",
       "links": [
         {
           "name": "Only dimly to be perfectly honest.",
           "link": "I still only kind of care.",
-          "pid": "86"
+          "pid": "85"
         },
         {
           "name": "I still only kind of care.",
           "link": "I still only kind of care.",
-          "pid": "86"
+          "pid": "85"
         }
       ],
       "name": "No.",
-      "pid": "85",
+      "pid": "84",
       "position": {
         "x": "2816",
         "y": "2383"
@@ -1606,16 +1594,16 @@
         {
           "name": "Alright, alright, I get the picture.  I care now.",
           "link": "That's enough.",
-          "pid": "87"
+          "pid": "86"
         },
         {
           "name": "That's enough.",
           "link": "That's enough.",
-          "pid": "87"
+          "pid": "86"
         }
       ],
       "name": "I still only kind of care.",
-      "pid": "86",
+      "pid": "85",
       "position": {
         "x": "2949",
         "y": "2400"
@@ -1627,32 +1615,32 @@
         {
           "name": "C",
           "link": "Yeah I've got a fucking few.",
-          "pid": "78"
+          "pid": "77"
         }
       ],
       "name": "That's enough.",
-      "pid": "87",
+      "pid": "86",
       "position": {
         "x": "2952",
         "y": "2538"
       }
     },
     {
-      "text": "Malformed Lump::No one has all the details, but long story short some power extraction experiments near the SATURN Core went whacky.  Dangerous phenomena started occuring all over the city right after.\n\nMalformed Lump::Mass psychosis.  Hallucinations.  The boundaries between adjacent people breaking down.  Psychological merges.  Everyone's deepest brain nuggets just started to fry.\n\nMalformed Lump::Hardly anyone near the Core made it out.  The few who did were horribly broken, their minds shattered.  Many of them also came down with cancer.\n\nMalformed Lump::Luckily, you'd already been relagated to a boarding school on the periphery of the Cradle by then.\n\n[[Yeah, I remember the school...]]\n[[Was my brain nugget fried?  How is my brain nugget doing these days?]]",
+      "text": "Malformed Lump::No one has all the details, but long story short some power extraction experiments near the SATURN Core went whacky.  Dangerous phenomena started occuring all over the city right after.\n\nMalformed Lump::Mass psychosis.  Hallucinations.  The boundaries between adjacent people breaking down.  Psychological merges.  Everyone's deepest brain nuggets just started to fry.\n\nMalformed Lump::Hardly anyone near the Core made it out.  The few who did were horribly broken, their minds shattered.  Many of them also came down with cancer.\n\nMalformed Lump::Luckily, you'd already been relagated to a boarding school on the periphery of the Cradle by then.\n\n[[Yeah, I remember the school...]]\n[[Was my brain nugget fried?  It's feeling kind of crunchy.]]",
       "links": [
         {
           "name": "Yeah, I remember the school...",
           "link": "Yeah, I remember the school...",
-          "pid": "90"
+          "pid": "89"
         },
         {
-          "name": "Was my brain nugget fried?  How is my brain nugget doing these days?",
-          "link": "Was my brain nugget fried?  How is my brain nugget doing these days?",
-          "pid": "91"
+          "name": "Was my brain nugget fried?  It's feeling kind of crunchy.",
+          "link": "Was my brain nugget fried?  It's feeling kind of crunchy.",
+          "pid": "90"
         }
       ],
       "name": "Why did we abandon the Cradle?",
-      "pid": "88",
+      "pid": "87",
       "position": {
         "x": "2558",
         "y": "2524"
@@ -1664,11 +1652,11 @@
         {
           "name": "C",
           "link": "Yeah I've got a fucking few.",
-          "pid": "78"
+          "pid": "77"
         }
       ],
       "name": "What have I been doing for the last twenty years?",
-      "pid": "89",
+      "pid": "88",
       "position": {
         "x": "2678",
         "y": "2524"
@@ -1680,11 +1668,11 @@
         {
           "name": "C",
           "link": "Yeah I've got a fucking few.",
-          "pid": "78"
+          "pid": "77"
         }
       ],
       "name": "Yeah, I remember the school...",
-      "pid": "90",
+      "pid": "89",
       "position": {
         "x": "2559",
         "y": "2674"
@@ -1696,11 +1684,11 @@
         {
           "name": "I'm lucky?  Are you joking?",
           "link": "I'm lucky?  Are you joking?",
-          "pid": "92"
+          "pid": "91"
         }
       ],
-      "name": "Was my brain nugget fried?  How is my brain nugget doing these days?",
-      "pid": "91",
+      "name": "Was my brain nugget fried?  It's feeling kind of crunchy.",
+      "pid": "90",
       "position": {
         "x": "2679",
         "y": "2674"
@@ -1712,11 +1700,11 @@
         {
           "name": "C",
           "link": "Yeah I've got a fucking few.",
-          "pid": "78"
+          "pid": "77"
         }
       ],
       "name": "I'm lucky?  Are you joking?",
-      "pid": "92",
+      "pid": "91",
       "position": {
         "x": "2656",
         "y": "2824"
@@ -1728,11 +1716,11 @@
         {
           "name": "C",
           "link": "Why don't you like me?",
-          "pid": "61"
+          "pid": "60"
         }
       ],
       "name": "I had a girlfriend at one point.  That means I'm cool, right?",
-      "pid": "93",
+      "pid": "92",
       "position": {
         "x": "2662",
         "y": "1265"
@@ -1753,7 +1741,7 @@
         }
       ],
       "name": "p:I'd be a lot more eager to wake up if I wasn't gonna wake up in a sewer.",
-      "pid": "94",
+      "pid": "93",
       "position": {
         "x": "2237",
         "y": "3588"
@@ -1774,7 +1762,7 @@
         }
       ],
       "name": "p:Yes, please, get me out of here!  I've got tunnels to crawl through and expectations to fall short of!",
-      "pid": "95",
+      "pid": "94",
       "position": {
         "x": "2387",
         "y": "3588"
@@ -1795,7 +1783,7 @@
         }
       ],
       "name": "Ferry2",
-      "pid": "96",
+      "pid": "95",
       "position": {
         "x": "1648",
         "y": "1687"
@@ -1803,10 +1791,26 @@
       "tags": [
         "ferryman_overhead_bright"
       ]
+    },
+    {
+      "text": "Malformed Lump::An apartment, a few steady streams of income, and a lack of brain cancer are blessings some indigents would kill for.\n\n[[C->Summary?]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Summary?",
+          "pid": "59"
+        }
+      ],
+      "name": "p:I wasn't exactly leaving a whole lot behind.",
+      "pid": "96",
+      "position": {
+        "x": "2303",
+        "y": "1918"
+      }
     }
   ],
   "name": "Introduction",
-  "startnode": "33",
+  "startnode": "32",
   "creator": "Twine",
   "creator-version": "2.3.14",
   "ifid": "A6A99B78-AEB2-430F-8A0A-EA01B5A56687"

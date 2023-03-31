@@ -27,8 +27,9 @@ func appear_disappear(tag):
 	if tag.begins_with("bg") and is_visible:
 		global_tag = tag
 		print("darkening bg")
-		# tween for going fully visible to totally dark and transparent
+		# play sound effect
 		$SwitchFlipSlow.play()
+		# tween for going fully visible to totally dark and transparent
 		$TweenTotalDarken.interpolate_property(self, "modulate", 
 		self.modulate, Color(0, 0, 0, 0), 0.75, 
 		Tween.TRANS_EXPO, Tween.EASE_OUT)
@@ -42,8 +43,9 @@ func new_bg(tag):
 	if tag == new_bg_tag:
 		print("brightening bg")
 		is_visible = true
-		# tween for going totally dark to fully visible
+		# play sound effect
 		$SwitchFlipFast.play()
+		# tween for going totally dark to fully visible
 		$TweenTotalBrighten.interpolate_property(self, "modulate", 
 		  self.modulate, Color(1, 1, 1, 1), 0.4, 
 		  Tween.TRANS_EXPO, Tween.EASE_OUT)

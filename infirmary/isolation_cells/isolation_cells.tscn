@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://infirmary/isolation_cells/isolation_cells.png" type="Texture" id=2]
@@ -14,6 +14,9 @@ extents = Vector2( 325.198, 716.197 )
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 371.232, 709.847 )
 
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 334.722, 342.879 )
+
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
 margin_bottom = 2160.0
@@ -24,6 +27,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_up = "res://infirmary/basement_surgical/basement_surgical.tscn"
 scene_down = "res://infirmary/isolation_stairwell_base/isolation_stairwell_base.tscn"
 scene_left = "res://infirmary/medicine_cabinet/medicine_cabinet.tscn"
 req_flag_right = "door_open_popup"
@@ -52,3 +56,10 @@ prog_flag = "door_open_popup"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
 position = Vector2( 2243.89, 1071.3 )
 shape = SubResource( 3 )
+
+[node name="ClickToEnter3" parent="." instance=ExtResource( 3 )]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter3"]
+position = Vector2( 1397.81, 1111.26 )
+shape = SubResource( 4 )

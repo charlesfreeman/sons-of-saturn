@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://infirmary/conduits_hallway/conduit_hallway.png" type="Texture" id=1]
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=2]
@@ -14,6 +14,9 @@ extents = Vector2( 406.375, 460.625 )
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 831.799, 216.165 )
 
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 306.885, 544.473 )
+
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
 margin_bottom = 2160.0
@@ -27,6 +30,7 @@ __meta__ = {
 scene_up = "res://infirmary/bright_arched_hallway/bright_arched_hallway.tscn"
 scene_right = "res://infirmary/tann_office/tann_office.tscn"
 scene_down = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.tscn"
+scene_left = "res://infirmary/admin_porch/admin_porch.tscn"
 req_flag_up = "tann_office_convo"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
@@ -50,6 +54,12 @@ down_path = true
 position = Vector2( 1443.62, 1926.91 )
 shape = SubResource( 3 )
 
+[node name="ClickToEnter4" parent="." instance=ExtResource( 3 )]
+left_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter4"]
+position = Vector2( 628.675, 1115.31 )
+shape = SubResource( 4 )
+
 [node name="PopUp" parent="." instance=ExtResource( 4 )]
 popup_text = [ "Wiggly::The rooms on the left and right are administrator offices, miss.  I strongly suggest looking through them before moving on." ]
-nav_popup = true

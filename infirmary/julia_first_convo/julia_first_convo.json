@@ -16,10 +16,13 @@
       "position": {
         "x": "1183",
         "y": "378"
-      }
+      },
+      "tags": [
+        "transient_phoebe"
+      ]
     },
     {
-      "text": "Frail Woman::...\n\nFrail Woman::Oh, you must mean The Keep.  It's hard to keep up with all the new colloquialisms floating around the Cradle.  \n\nJasper::Why does she care which entrance we came through?  This place has been abandoned for twenty years.\n\n[[Continue->Signed In]]",
+      "text": "Frail Woman::...\n\nFrail Woman::Oh, you must mean the Western Residential Distric.  It's hard to keep up with the slang these days.  \n\n[[Continue->Signed In]]",
       "links": [
         {
           "name": "Continue",
@@ -35,7 +38,7 @@
       }
     },
     {
-      "text": "Frail Woman::Miss, I have a key.  All infirmary employees do.  \n\nFrail Woman::And you should have had to sign in before you were allowed here, so I'm a little alarmed you slipped through without anyone noticing.  \n\nFrail Woman::I'll have to have a few words with whoever is on shift about this oversight.\n\nJasper::\"On shift?\"  This place has been abandoned for twenty years.\n\n[[Continue->Signed In]] ",
+      "text": "Frail Woman::Miss, I have a key.  All infirmary employees do.  \n\nFrail Woman::And you should have had to sign in before you were allowed here, so I'm a little alarmed you slipped through without anyone noticing.  \n\nFrail Woman::I'll have to have a few words with whoever is on shift about this oversight.\n\nJasper::\"On shift?\"  No one has worked here in decades...\n\n[[Continue->Signed In]] ",
       "links": [
         {
           "name": "Continue",
@@ -88,7 +91,7 @@
       }
     },
     {
-      "text": "Julia::My name is Julia.  I've been a midwife at this infirmary for nine years.  You are in good hands.\n\nJulia's presence is strange and unnatural.  Her cadence and gestures seem disconnected from the present scene.  \n\nThe sub-lingual signals she's sending you via gesticulations and body language are distorted and inscrutable, as if transmitted through a television set overcome with static.\n\n[[Have you taken a look around recently?  This infirmary clearly hasn't been operational for a long time.]]\n[[What kind of operation am I signing up for?]]\n[[What do you do here?]]\n[[p:If we go get \"signed in,\" will you take me to the Maternity Ward?]]",
+      "text": "Frail Woman::My name is Julia.  I've been a midwife at this infirmary for nine years.  You are in good hands.\n\nJulia's presence is strange and unnatural.  Her cadence and gestures seem disconnected from the present scene.  \n\nThe sub-lingual signals she's sending you via gesticulations and body language are distorted and inscrutable, as if transmitted through a television set overcome with static.\n\n[[Have you taken a look around recently?  This infirmary clearly hasn't been operational for a long time.]]\n[[What kind of operation am I signing up for?]]\n[[What do you do here?]]\n[[p:If we go get \"signed in,\" will you take me to the Maternity Ward?]]",
       "links": [
         {
           "name": "Have you taken a look around recently?  This infirmary clearly hasn't been operational for a long time.",
@@ -183,7 +186,7 @@
       }
     },
     {
-      "text": "Julia::I *have* to take you to the Maternity Ward, Miss.  That's where you were supposed to sign in.\n\nJulia::Why did you come through the administrative wing?  You shouldn't be here at all.\n\n[[p:I need to find proof that I was born here.]]\n[[p:This hospital has secrets.  I aim to figure them out, serial adventure boy detective style.]]\n[[p:It's a personal matter.]]",
+      "text": "Julia::I *have* to take you to the Maternity Ward, Miss.  That's where you were supposed to sign in.\n\nJulia::Why did you come through the administrative wing?  You shouldn't be here at all.\n\n[[p:I need to find proof that I was born here.]]\n[[p:This hospital has secrets, about my past.  I aim to figure them out, serial adventure boy detective style.]]\n[[p:It's a personal matter.]]",
       "links": [
         {
           "name": "p:I need to find proof that I was born here.",
@@ -191,8 +194,8 @@
           "pid": "12"
         },
         {
-          "name": "p:This hospital has secrets.  I aim to figure them out, serial adventure boy detective style.",
-          "link": "p:This hospital has secrets.  I aim to figure them out, serial adventure boy detective style.",
+          "name": "p:This hospital has secrets, about my past.  I aim to figure them out, serial adventure boy detective style.",
+          "link": "p:This hospital has secrets, about my past.  I aim to figure them out, serial adventure boy detective style.",
           "pid": "13"
         },
         {
@@ -209,7 +212,7 @@
       }
     },
     {
-      "text": "Julia::That's absurd.  This place has only been operational for 19 years.  I'm sorry miss, but you look a little over that peak to me.\n\nJasper::See?  You look old.\n\nJasper::I keep telling you to wear more sunblock and smoke less but you won't listen.\n\nJasper::She probably thinks you're ugly too.\n\n[[p:Cut it out!]]\n[[p:I'm not ugly, you're ugly!->p:Cut it out!]]\n",
+      "text": "Julia::That's absurd.  The Maternity ward has only been in operation for 19 years.  You look a little older than that to me.\n\nJasper::See?  You look old.\n\nJasper::I keep telling you to wear more sunblock and smoke less but you won't listen.\n\nJasper::She probably thinks you're ugly too.\n\n[[p:Cut it out!]]\n[[p:I'm not ugly, you're ugly!->p:Cut it out!]]\n",
       "links": [
         {
           "name": "p:Cut it out!",
@@ -238,7 +241,7 @@
           "pid": "15"
         }
       ],
-      "name": "p:This hospital has secrets.  I aim to figure them out, serial adventure boy detective style.",
+      "name": "p:This hospital has secrets, about my past.  I aim to figure them out, serial adventure boy detective style.",
       "pid": "13",
       "position": {
         "x": "1514",
@@ -262,7 +265,7 @@
       }
     },
     {
-      "text": "Jasper::Look, something is obviously wrong with Julia.  She seems to think this hospital is still operational.  \n\nJasper::But if you just go along with her for now, maybe she'll actually get us to the Maternity Ward.  She acts like she knows her way around at least. \n\nJulia drops the rag she was holding and wrings the last drops of water off of her hands.  She subtly turns to face the doorframe, motioning for you to follow her.",
+      "text": "Jasper::Look, something is obviously wrong with Julia.  She seems to think this hospital is still operational.  \n\nJasper::But if you just go along with her for now, maybe she'll actually get us to the Maternity Ward.  She acts like she knows her way around at least. \n\nJulia wrings the last drops of water off of her hands.  She subtly turns to face the doorframe, motioning for you to follow her.",
       "name": "This will get me closer",
       "pid": "15",
       "position": {
@@ -287,7 +290,7 @@
       }
     },
     {
-      "text": "The woman rises from the pail to address you.\n\nFrail Woman::Excuse me, miss.  You shouldn't be here.\n\nFrail Woman::You should have checked in at the front desk, every patient should before being allowed past the foyer.\n\nFrail Woman::I know some of our services are more discreet in nature, but we still need to go through the proper channels and have you signed in.\n\nFrail Woman::How did you even get here?  You shouldn't have made it past the front desk without security being alerted.\n\n[[p:I came in through the sewer.]]\n[[p:(Lie) I did come in past the front desk.]]\n[[p:How did *you* get through the front desk, huh?]]",
+      "text": "The woman rises from the pail to address you.\n\nFrail Woman::Excuse me, miss.  You shouldn't be here.\n\nFrail Woman::You should have checked in at the front desk, every patient should before being allowed past the foyer.\n\nFrail Woman::I know some of our services are more discreet in nature, but we still need to go through the proper channels and have you signed in.\n\nFrail Woman::How did you even get here?  You shouldn't have made it past the front desk without security being alerted.\n\nJasper::Why does she care which entrance we came through?  This place has been abandoned for twenty years.\n\nFrail Woman::Well?  Miss, I really need to know.\n\n[[p:I came in through the sewer.]]\n[[p:(Lie) I did come in past the front desk.]]\n[[p:How did *you* get through the front desk, huh?]]",
       "links": [
         {
           "name": "p:I came in through the sewer.",
@@ -309,10 +312,11 @@
       "pid": "17",
       "position": {
         "x": "1182",
-        "y": "641"
+        "y": "642"
       },
       "tags": [
-        "stands"
+        "stands",
+        "looping_phoebe"
       ]
     },
     {

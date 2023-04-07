@@ -47,6 +47,9 @@ var char_aliases = {
 	"Jasper" : "Jasper",
 	"Malformed Lump" : "Jasper",
 	"Voice" : "Jasper",
+	"Tann" : "Tann",
+	"Ansel" : "Ansel",
+	"Vera" : "Vera",
 	"Narrator" : "Narrator",
 }
 
@@ -56,6 +59,9 @@ var emotions = {
 	"Wiggly" : "neutral",
 	"Jasper" : "neutral", 
 	"Julia" : "neutral",
+	"Tann" : "Tann",
+	"Ansel" : "Ansel",
+	"Vera" : "Vera",
 	"Narrator" : "None",
 }
 

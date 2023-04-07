@@ -20,8 +20,6 @@ var char_colors = {"Wigley": "aqua",
 	"Dead Cat": "grey"
 }
 
-signal change_char(character)
-
 
 func _ready():
 	pass

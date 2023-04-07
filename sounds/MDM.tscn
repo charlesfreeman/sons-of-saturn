@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://addons/mixing-desk/music/containers/core_cont.gd" type="Script" id=1]
 [ext_resource path="res://addons/mixing-desk/music/song.gd" type="Script" id=2]
@@ -11,6 +11,11 @@
 [ext_resource path="res://sounds/irritating-flourescent-light-hum.wav" type="AudioStream" id=9]
 [ext_resource path="res://sounds/Injection Loopable 1.wav" type="AudioStream" id=10]
 [ext_resource path="res://sounds/Injection Loopable 2.mp3" type="AudioStream" id=11]
+[ext_resource path="res://sounds/looping_phoebe.mp3" type="AudioStream" id=12]
+[ext_resource path="res://sounds/transient_phoebe.mp3" type="AudioStream" id=13]
+[ext_resource path="res://sounds/heartbeat_fast.mp3" type="AudioStream" id=14]
+[ext_resource path="res://sounds/heartbeats_medium.mp3" type="AudioStream" id=15]
+[ext_resource path="res://sounds/heartbeats_slow.mp3" type="AudioStream" id=16]
 
 [node name="MDM" type="Node"]
 script = ExtResource( 3 )
@@ -170,3 +175,78 @@ script = ExtResource( 1 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="loop_injectable_2/CoreContainer"]
 stream = ExtResource( 11 )
 volume_db = -20.0
+
+[node name="looping_phoebe" type="Node" parent="."]
+script = ExtResource( 2 )
+tempo = 100
+bars = 25
+beats_in_bar = 4
+transition_beats = 4.0
+transition_type = "Beat"
+
+[node name="CoreContainer" type="Node" parent="looping_phoebe"]
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="looping_phoebe/CoreContainer"]
+stream = ExtResource( 12 )
+volume_db = -25.0
+
+[node name="transient_phoebe" type="Node" parent="."]
+script = ExtResource( 2 )
+tempo = 100
+bars = 25
+beats_in_bar = 4
+transition_beats = 4.0
+transition_type = "Beat"
+
+[node name="CoreContainer" type="Node" parent="transient_phoebe"]
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="transient_phoebe/CoreContainer"]
+stream = ExtResource( 13 )
+volume_db = -25.0
+
+[node name="heartbeats_slow" type="Node" parent="."]
+script = ExtResource( 2 )
+tempo = 100
+bars = 25
+beats_in_bar = 4
+transition_beats = 4.0
+transition_type = "Beat"
+
+[node name="CoreContainer" type="Node" parent="heartbeats_slow"]
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="heartbeats_slow/CoreContainer"]
+stream = ExtResource( 16 )
+volume_db = -25.0
+
+[node name="heartbeats_med" type="Node" parent="."]
+script = ExtResource( 2 )
+tempo = 100
+bars = 25
+beats_in_bar = 4
+transition_beats = 4.0
+transition_type = "Beat"
+
+[node name="CoreContainer" type="Node" parent="heartbeats_med"]
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="heartbeats_med/CoreContainer"]
+stream = ExtResource( 15 )
+volume_db = -25.0
+
+[node name="heartbeats_fast" type="Node" parent="."]
+script = ExtResource( 2 )
+tempo = 100
+bars = 25
+beats_in_bar = 4
+transition_beats = 4.0
+transition_type = "Beat"
+
+[node name="CoreContainer" type="Node" parent="heartbeats_fast"]
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="heartbeats_fast/CoreContainer"]
+stream = ExtResource( 14 )
+volume_db = -25.0

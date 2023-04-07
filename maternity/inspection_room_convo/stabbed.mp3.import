@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/stabbed.mp3-77f737068f743455f3ec3f90131f9640.mp3str"
+
+[deps]
+
+source_file="res://maternity/inspection_room_convo/stabbed.mp3"
+dest_files=[ "res://.import/stabbed.mp3-77f737068f743455f3ec3f90131f9640.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

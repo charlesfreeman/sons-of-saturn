@@ -7,8 +7,6 @@ func _ready():
 
 func _on_Convo_tag(tag):
 	if tag == "red_bg_appear":
-		# play sound effect
-		$SwitchFlipSlow.play()
 		# tween for going fully visible to totally dark and transparent
 		$TweenAppear.interpolate_property(self, "modulate", 
 		self.modulate, Color(1, 1, 1, 1), 0.5, 

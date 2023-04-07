@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
 [ext_resource path="res://maternity/inspection_room_convo/ThornBG.gd" type="Script" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=9]
 [ext_resource path="res://images/julia_standing_behind_table.png" type="Texture" id=10]
 [ext_resource path="res://images/julia_stethescope.png" type="Texture" id=11]
+[ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=12]
+[ext_resource path="res://maternity/inspection_room_convo/stabbed.wav" type="AudioStream" id=13]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -88,14 +90,6 @@ __meta__ = {
 
 [node name="TweenPartial" type="Tween" parent="RedBGSliver"]
 
-[node name="SwitchFlipSlow" type="AudioStreamPlayer" parent="RedBGSliver"]
-stream = ExtResource( 5 )
-volume_db = -15.0
-
-[node name="SwitchFlipFast" type="AudioStreamPlayer" parent="RedBGSliver"]
-stream = ExtResource( 3 )
-volume_db = -15.0
-
 [node name="ThornBG" type="TextureRect" parent="." groups=["CharacterRects", "DynamicBGs"]]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = -6.0
@@ -155,6 +149,11 @@ margin_bottom = 824.151
 texture = ExtResource( 10 )
 appear_tag = "julia_closer"
 disappear_tag = "julia_disappear"
+
+[node name="ConvoSoundEffect" parent="." instance=ExtResource( 12 )]
+stream = ExtResource( 13 )
+volume_db = -21.928
+tag_to_play = "stabbed"
 
 [connection signal="tag" from="Convo" to="RedBG" method="_on_Convo_tag"]
 [connection signal="tag" from="Convo" to="RedBGSliver" method="_on_Convo_tag"]

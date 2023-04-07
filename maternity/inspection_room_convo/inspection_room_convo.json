@@ -120,7 +120,8 @@
       },
       "tags": [
         "ongurney",
-        "add_julia"
+        "add_julia",
+        "heartbeats_med"
       ]
     },
     {
@@ -141,10 +142,12 @@
       "pid": "7",
       "position": {
         "x": "1298",
-        "y": "3650"
+        "y": "3649"
       },
       "tags": [
-        "red_bg_darken"
+        "red_bg_darken",
+        "stabbed",
+        "heartbeats_fast"
       ]
     },
     {
@@ -222,7 +225,8 @@
       },
       "tags": [
         "enter",
-        "julia_disappear"
+        "julia_disappear",
+        "None"
       ]
     },
     {
@@ -241,7 +245,8 @@
         "y": "1248"
       },
       "tags": [
-        "red_bg_appear"
+        "red_bg_appear",
+        "heartbeats_slow"
       ]
     },
     {
@@ -347,7 +352,8 @@
         "y": "1846"
       },
       "tags": [
-        "julia_stethescope"
+        "julia_stethescope",
+        "heartbeats_med"
       ]
     },
     {
@@ -498,8 +504,8 @@
       "name": "p:(Action) Keep it together and continue to breath.",
       "pid": "26",
       "position": {
-        "x": "1297",
-        "y": "2896"
+        "x": "1299",
+        "y": "2910"
       }
     },
     {
@@ -521,7 +527,10 @@
       "position": {
         "x": "1295",
         "y": "3046"
-      }
+      },
+      "tags": [
+        "heartbeats_slow"
+      ]
     },
     {
       "text": "You hear the slightest amount of shuffling.\n\n[[p:Five.]]",
@@ -673,7 +682,8 @@
         "y": "2508"
       },
       "tags": [
-        "julia_closer"
+        "julia_closer",
+        "heartbeats_fast"
       ]
     }
   ],

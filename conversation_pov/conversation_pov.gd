@@ -83,6 +83,12 @@ var jasper_profiles = {
 	"malformed_lump" : "res://conversation_pov/char_profiles/jasper/malformed_lump_headshot.png",
 }
 
+var misc_profiles = {
+	"Tann" : "res://conversation_pov/char_profiles/misc/tann_profile.png",
+	"Ansel" : "res://conversation_pov/char_profiles/misc/ansel_profile.png",
+	"Vera" : "res://conversation_pov/char_profiles/misc/vera_profile.png",
+}
+
 # need to track state of subjects for changing profiles mid convo
 var current_av = "Amelie"
 var previous_av = "Amelie"
@@ -126,6 +132,8 @@ func load_texture(character, emotion):
 			avatar.texture = load(jasper_profiles[emotion])
 		"Julia":
 			avatar.texture = load(julia_profiles[emotion])
+		_:
+			avatar.texture = load(misc_profiles[character])
 	previous_av = current_av
 	current_av = character
 			

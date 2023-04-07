@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://infirmary/basement_surgical/basement_surgical.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1188.96, 196.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 297, 247.5 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_down = "res://infirmary/isolation_cells/isolation_cells.tscn"
+popup_background = "res://infirmary/basement_surgical/basement_poster.png"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1483.31, 1941.5 )
+shape = SubResource( 1 )
+
+[node name="PopUp" parent="." instance=ExtResource( 5 )]
+popup_text = [ "Amelie::Looks like a poster for some weird old Ballet?", "Amelie::The main actress's head looks weird.  Like it was plastered on.", "Amelie::Odd place to advertise this stuff.  I guess they put on musicals for the patients." ]
+diff_background = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
+position = Vector2( 2253.73, 1075.5 )
+shape = SubResource( 2 )

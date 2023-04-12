@@ -67,8 +67,7 @@ var emotions = {
 
 signal change_char(character, emotion)
 signal tag(tags)
-signal darken
-signal brighten
+
 
 func init():
 	Twison.parse_file(script_path)
@@ -181,9 +180,6 @@ func _load_paragraph(paragraph):
 	var text
 	var emotion = "None"
 	if "::" in paragraph:
-		# switching from narrator to character speaking, so we brighten the avatar
-		if current_char == "Narrator":
-			emit_signal("brighten")
 		para_array = paragraph.split("::")
 		char_name = para_array[0]
 		text = para_array[1]
@@ -209,9 +205,11 @@ func _load_paragraph(paragraph):
 	
 	if current_char != char_name:
 		current_char = char_name
-		state_changed = true
+		# if Amelie the current char, then the state of the current_char isn't really changing,
+		# because the updates to the avatar have already been made by the tag system.
+		if current_char != "You":
+			state_changed = true
 		if char_name == "Narrator":
-			emit_signal("darken")
 			var linebreak = spokenLineNochar.instance()
 			linebreak.set_text("  ------- ------- ------- ------- ------- ")
 			spoken_lines_container.add_child(linebreak)
@@ -225,7 +223,6 @@ func _load_paragraph(paragraph):
 			spoken_line.set_speaker_name(char_name)
 			spoken_line.set_dialogue_line(text)
 			spoken_lines_container.add_child(spoken_line)
-
 	else:
 		if current_char == "Narrator":
 			var spoken_line = spokenLineNarrator.instance()

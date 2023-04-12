@@ -116,10 +116,14 @@ func _ready():
 func _on_Control_change_char(character, emotion):
 	if character != "Narrator":
 		if character != subject:
-			load_texture(character, emotion)
 			subject_speaking = false
+			load_texture(character, emotion)
+			avatar.brighten()
 		else:
 			subject_speaking = true
+			avatar.darken()
+	else:
+		avatar.darken()
 
 
 func load_texture(character, emotion):
@@ -209,13 +213,3 @@ func _on_TransitionScreen_transitioned():
 	change_background(fade_tag_dict[fade_tag])
 	change_background_sliver(fade_tag_dict_sliver[fade_tag])
 	current_bg_path = fade_tag_dict[fade_tag]
-
-
-func _on_Dialogue_brighten():
-	print("brighten")
-	avatar.brighten()
-
-
-func _on_Dialogue_darken():
-	print("darken")
-	avatar.darken()

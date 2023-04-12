@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/trash_squish_2.wav-bd739408d3b04670573b18366c410f32.sample"
+
+[deps]
+
+source_file="res://infirmary/vera_diary_convo_2/trash_squish_2.wav"
+dest_files=[ "res://.import/trash_squish_2.wav-bd739408d3b04670573b18366c410f32.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

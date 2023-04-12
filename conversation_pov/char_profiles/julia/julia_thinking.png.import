@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/julia_placeholder.png-f1e1565fc014660f814ae9c3be31f19d.stex"
+path="res://.import/julia_thinking.png-63f150bc851376e2ac847c1c7ad0f29f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://conversation_pov/char_profiles/julia/julia_placeholder.png"
-dest_files=[ "res://.import/julia_placeholder.png-f1e1565fc014660f814ae9c3be31f19d.stex" ]
+source_file="res://conversation_pov/char_profiles/julia/julia_thinking.png"
+dest_files=[ "res://.import/julia_thinking.png-63f150bc851376e2ac847c1c7ad0f29f.stex" ]
 
 [params]
 

@@ -12,12 +12,12 @@ func _ready():
 
 
 func _on_Convo_tag(tag):
-	# I think this assumes we never use numbers in tags elsewhere
-	# Kind of hacky, consider making more robust
-	var index = int(tag)
-	if index in indexes:
-		# indices start at 1 instead of zero because the int function returns
-		# zero if no match is found, want to avoid this leading to the popup
-		# of a document.  
-		self.texture = load(docs[index-1])
-		$PageFlip.play()
+	#NOTE: must stick to custom of never using "page" in tags elsewhere
+	if tag.begins_with("page"):
+		var index = int(tag)
+		if index in indexes:
+			# indices start at 1 instead of zero because the int function returns
+			# zero if no match is found, want to avoid this leading to the popup
+			# of a document.  
+			self.texture = load(docs[index-1])
+			$PageFlip.play()

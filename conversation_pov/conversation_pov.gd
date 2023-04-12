@@ -66,15 +66,15 @@ var wiggly_profiles = {
 }
 
 var julia_profiles = {
-	"neutral" : "res://images/julia_neutral.png",
-	"amused" : "res://images/julia_amused.png",
-	"concerned" : "res://images/julia_concerned.png",
-	"lost_in_thought" : "res://images/julia_lost_in_thought.png",
-	"reminiscing" : "res://images/julia_reminiscing.png",
-	"sly" : "res://images/julia_sly.png",
-	"suspiscious" : "res://images/julia_suspiscious.png",
-	"thinking" : "res://images/julia_thinking.png",
-	"worried" : "res://images/julia_worried.png",
+	"neutral" : "res://conversation_pov/char_profiles/julia/julia_neutral.png",
+	"amused" : "res://conversation_pov/char_profiles/julia/julia_amused.png",
+	"concerned" : "res://conversation_pov/char_profiles/julia/julia_concerned.png",
+	"lost_in_thought" : "res://conversation_pov/char_profiles/julia/julia_lost_in_thought.png",
+	"reminiscing" : "res://conversation_pov/char_profiles/julia/julia_reminiscing.png",
+	"sly" : "res://conversation_pov/char_profiles/julia/julia_sly.png",
+	"suspiscious" : "res://conversation_pov/char_profiles/julia/julia_suspiscious.png",
+	"thinking" : "res://conversation_pov/char_profiles/julia/julia_thinking.png",
+	"worried" : "res://conversation_pov/char_profiles/julia/julia_worried.png",
 }
 
 var jasper_profiles = {

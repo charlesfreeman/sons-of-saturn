@@ -111,8 +111,6 @@ expand = true
 
 [node name="TransitionScreen" parent="." instance=ExtResource( 5 )]
 
-[connection signal="brighten" from="HBoxContainer/Dialogue" to="." method="_on_Dialogue_brighten"]
 [connection signal="change_char" from="HBoxContainer/Dialogue" to="." method="_on_Control_change_char"]
-[connection signal="darken" from="HBoxContainer/Dialogue" to="." method="_on_Dialogue_darken"]
 [connection signal="tag" from="HBoxContainer/Dialogue" to="." method="_on_Dialogue_tag"]
 [connection signal="transitioned" from="TransitionScreen" to="." method="_on_TransitionScreen_transitioned"]

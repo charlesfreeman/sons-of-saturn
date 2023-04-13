@@ -4,7 +4,6 @@ export var subject = ""
 export(String, FILE, "*.json") var scriptPath = "res://dialogue_system/conversations/test_scene.json"
 export(String, FILE, "*.png") var backgroundPath = "res://images/looking_up_well_square.png"
 export(String, FILE, "*.png") var sliverPath = "res://infirmary/morgue_convo/autopsy_table_sliver.png"
-export(String, FILE) var soundscapePath = "res://sounds/545664__nox-sound__ambiance-stream-sewer-reverb-small-loop-stereo-dr05.wav"
 export(String) var nextScenePath = "roaming_pov"
 export(String, FILE, "*.tscn") var nextLocation = "res://infirmary/post_office/PostOfficeMural.tscn"
 export var tag_dict = {}

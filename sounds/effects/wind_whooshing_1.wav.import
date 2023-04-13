@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/wind_whooshing_1.wav-ee624b58e6bd0d10b2c46745a6edac77.sample"
+
+[deps]
+
+source_file="res://sounds/effects/wind_whooshing_1.wav"
+dest_files=[ "res://.import/wind_whooshing_1.wav-ee624b58e6bd0d10b2c46745a6edac77.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

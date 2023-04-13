@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Injection Loopable 2.mp3-e09f487dddf1d26b107cc2e772f7aed9.mp3str"
+
+[deps]
+
+source_file="res://sounds/tracks/Injection Loopable 2.mp3"
+dest_files=[ "res://.import/Injection Loopable 2.mp3-e09f487dddf1d26b107cc2e772f7aed9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

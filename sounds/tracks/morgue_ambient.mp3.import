@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/morgue_ambient.mp3-0cc6dfc72dc45d4d4a53cc4fa9b1356a.mp3str"
+
+[deps]
+
+source_file="res://sounds/tracks/morgue_ambient.mp3"
+dest_files=[ "res://.import/morgue_ambient.mp3-0cc6dfc72dc45d4d4a53cc4fa9b1356a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

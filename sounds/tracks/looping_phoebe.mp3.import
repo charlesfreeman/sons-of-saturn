@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/looping_phoebe.mp3-da5fbc024fad56d9fef88bd52ee4f480.mp3str"
+
+[deps]
+
+source_file="res://sounds/tracks/looping_phoebe.mp3"
+dest_files=[ "res://.import/looping_phoebe.mp3-da5fbc024fad56d9fef88bd52ee4f480.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

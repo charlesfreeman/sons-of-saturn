@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/paper_flip.wav-7e14ed7b495c4d76bdf863800fae3111.sample"
+
+[deps]
+
+source_file="res://sounds/effects/paper_flip.wav"
+dest_files=[ "res://.import/paper_flip.wav-7e14ed7b495c4d76bdf863800fae3111.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

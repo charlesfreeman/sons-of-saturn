@@ -14,7 +14,7 @@
 [ext_resource path="res://images/GSL/Crystalline_Caverns_3.jpg" type="Texture" id=12]
 [ext_resource path="res://images/GSL/Opener_Cave.jpg" type="Texture" id=13]
 [ext_resource path="res://intro/intro_convo/looking_up_well_bg.png" type="Texture" id=14]
-[ext_resource path="res://sounds/switch_flip_fast.wav" type="AudioStream" id=15]
+[ext_resource path="res://sounds/effects/switch_flip_fast.wav" type="AudioStream" id=15]
 [ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=16]
 
 [node name="Control" type="Control"]

@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://infirmary/dayroom_empty/dayroom_empty.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 876.246, 206.641 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 207.73, 752.707 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 336.529, 303.194 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_down = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.tscn"
+scene_left = "res://infirmary/conduits_hallway/conduits_hallway.tscn"
+popup_background = "res://infirmary/dayroom_empty/door_to_nowhere.png"
+req_flag_up = "vera_office_convo"
+prog_flag = "overgrowth_pink_hallway"
+position = Vector2( 1685, 1278 )
+rotation = 90
+map = "infirmary_1f"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1573.79, 1942.78 )
+shape = SubResource( 1 )
+
+[node name="ClickToEnter2" parent="." instance=ExtResource( 3 )]
+left_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2( 254.876, 1034.79 )
+shape = SubResource( 2 )
+
+[node name="PopUp" parent="." instance=ExtResource( 5 )]
+popup_text = [ "Amelie::Why's this door bricked off?  I bet there's something good on the other side.", "Wiggly::Actually, I don't think there's anything at all on the other side.  Look out the window.  It doesn't lead anywhere.", "Amelie::Huh.  So this place just has random doors to nowhere?", "Wiggly::I think this used to lead \"somewhere,\" but this building was partially demolished and appended to dozens of times.  Weird little artifacts like this are the result." ]
+diff_background = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
+position = Vector2( 1637.28, 1046.18 )
+shape = SubResource( 3 )

@@ -22,6 +22,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_down = "res://infirmary/bright_arched_hallway/bright_arched_hallway.tscn"
+position = Vector2( 1475, 580 )
 
 [node name="ClickToSearch" parent="." instance=ExtResource( 3 )]
 next_scene = "vera_diary_convo_2"

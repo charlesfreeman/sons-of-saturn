@@ -19,7 +19,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://maternity/dream_surgical_overlook/dream_surgical_overlook.tscn"
+position = Vector2( 2330, 1000 )
 song = "sewer_light_flow"
+map = "dream"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true

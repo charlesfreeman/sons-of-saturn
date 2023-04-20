@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=1]
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=2]
 [ext_resource path="res://sewer/just_stood_up/wiggly_far_down_tunnel.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 225.411, 371.452 )
 
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
@@ -15,12 +18,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://sewer/mason_drain_corner/mason_drain_corner.tscn"
-position = Vector2( 2008, 1300 )
+position = Vector2( 1662, 1200 )
 song = "sewer_light_flow"
+map = "sewer"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 1 )]
 up_path = true
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ClickToEnter"]
-position = Vector2( -5.03955, -211.667 )
-polygon = PoolVector2Array( 1209.08, 1640.78, 1657.62, 1645.82, 1662.66, 1036.01, 1521.54, 864.663, 1309.88, 864.663, 1229.24, 985.616 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1426.23, 1077.62 )
+shape = SubResource( 1 )

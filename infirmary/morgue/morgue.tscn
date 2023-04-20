@@ -22,6 +22,9 @@ __meta__ = {
 }
 scene_down = "res://infirmary/morgue_stairwell_base/morgue_stairwell_base.tscn"
 scene_left = "res://infirmary/autopsy_table/autospy_table.tscn"
+position = Vector2( 1340, 920 )
+rotation = 305
+map = "morgue"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 left_path = true

@@ -8,6 +8,17 @@ var pov_instance
 var options = SceneManager.create_options()
 var general_options = SceneManager.create_general_options()
 
+var map_paths = {
+	"sewer" : "res://roaming_pov/maps/sewer_map.png",
+	"morgue" : "res://roaming_pov/maps/morgue_map.png",
+	"infirmary_1f" : "res://roaming_pov/maps/infirmary_1f_map.png",
+	"infirmary_2f" : "res://roaming_pov/maps/infirmary_2f_map.png",
+	"iso_cells" : "res://roaming_pov/maps/iso_cells_map.png",
+	"maternity_1f" : "res://roaming_pov/maps/maternity_1f_map.png",
+	"dream" : "res://roaming_pov/maps/dream_map.png"
+}
+
+onready var map = $VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect
 onready var camera = $VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect/Camera2D
 onready var char_rect = $VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect/CharRect
 onready var up_button = $VBoxContainer/HBoxContainer/GridContainer/UpButton
@@ -18,6 +29,7 @@ onready var tile_footsteps = $RanSoundContainer
 
 
 func _ready():
+	char_rect.rect_pivot_offset = char_rect.rect_size / 2
 	global_scene_path = Global.location
 	_load_PoV_instance()
 	
@@ -99,6 +111,9 @@ func swap_texture():
 func _load_PoV_instance():
 	pov_scene = load(global_scene_path)
 	pov_instance = pov_scene.instance()
+	if pov_instance.map != "None":
+		print("loading new map")
+		map.texture = load(map_paths[pov_instance.map])
 	add_child(pov_instance)
 	move_child(pov_instance, 0)
 	_update_buttons()
@@ -153,9 +168,9 @@ func _enable_buttons():
 	
 	
 func set_pos_rot(pos, rot):
-	char_rect.rect_position.x = pos.x - 65
-	char_rect.rect_position.y = pos.y - 60
+	char_rect.rect_position.x = pos.x
+	char_rect.rect_position.y = pos.y
 	char_rect.rect_rotation = rot
-	camera.position.x = pos.x
-	camera.position.y = pos.y
+	camera.position.x = pos.x + (char_rect.rect_size.x / 2)
+	camera.position.y = pos.y + (char_rect.rect_size.y / 2)
 

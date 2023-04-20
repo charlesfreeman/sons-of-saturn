@@ -16,7 +16,7 @@
 [ext_resource path="res://roaming_pov/images/arrow_blue_up.png" type="Texture" id=14]
 [ext_resource path="res://roaming_pov/images/arrow_blue_right.png" type="Texture" id=15]
 [ext_resource path="res://roaming_pov/TransitionScreen.tscn" type="PackedScene" id=16]
-[ext_resource path="res://roaming_pov/images/sewer_map.png" type="Texture" id=17]
+[ext_resource path="res://roaming_pov/maps/sewer_map.png" type="Texture" id=17]
 [ext_resource path="res://roaming_pov/PartyMember.tscn" type="PackedScene" id=18]
 [ext_resource path="res://sound_streams/AudioStreamPlayer.tscn" type="PackedScene" id=19]
 [ext_resource path="res://addons/mixing-desk/sound/nonspatial/ran_cont.gd" type="Script" id=20]
@@ -103,20 +103,23 @@ mouse_filter = 2
 texture = ExtResource( 17 )
 
 [node name="CharRect" type="TextureRect" parent="VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect"]
-margin_left = -65.0
-margin_top = -60.0
-margin_right = 65.0
-margin_bottom = 80.0
-rect_pivot_offset = Vector2( 65, 70 )
+margin_left = 1295.0
+margin_top = 580.0
+margin_right = 1360.0
+margin_bottom = 650.0
+rect_rotation = 180.0
+rect_pivot_offset = Vector2( 32.5, 35 )
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 5
 
 [node name="Camera2D" type="Camera2D" parent="VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect"]
-position = Vector2( 2030, 1300 )
+position = Vector2( 1300, 600 )
 rotation = 0.698132
 current = true
+zoom = Vector2( 0.75, 0.75 )
 smoothing_enabled = true
+smoothing_speed = 7.0
 
 [node name="Control2" type="Control" parent="VBoxContainer/MapHBox"]
 margin_left = 941.0

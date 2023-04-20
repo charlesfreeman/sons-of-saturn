@@ -18,6 +18,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://maternity/dome/dome.tscn"
+position = Vector2( 962, 1600 )
+map = "maternity_1f"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true

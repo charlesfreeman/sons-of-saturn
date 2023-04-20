@@ -27,11 +27,12 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_up = "res://infirmary/bright_arched_hallway/bright_arched_hallway.tscn"
+scene_up = "res://infirmary/dayroom_chairs/dayroom_chairs.tscn"
 scene_right = "res://infirmary/tann_office/tann_office.tscn"
-scene_down = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.tscn"
+scene_down = "res://infirmary/dayroom_empty/dayroom_empty.tscn"
 scene_left = "res://infirmary/admin_porch/admin_porch.tscn"
 req_flag_up = "tann_office_convo"
+position = Vector2( 1730, 1170 )
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 right_path = true

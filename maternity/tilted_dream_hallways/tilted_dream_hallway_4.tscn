@@ -18,6 +18,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://maternity/tilted_dream_hallways/tilted_dream_hallway_5.tscn"
+position = Vector2( 685, 900 )
+rotation = -8
 song = "sewer_light_flow"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 2 )]

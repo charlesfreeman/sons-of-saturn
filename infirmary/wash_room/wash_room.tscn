@@ -26,6 +26,8 @@ __meta__ = {
 }
 scene_up = "res://infirmary/washing_machine_trio/washing_machine_trio.tscn"
 scene_down = "res://infirmary/top_floor_middle_hallway/top_floor_middle_hallway.tscn"
+position = Vector2( 1785, 775 )
+rotation = 146
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
 up_path = true

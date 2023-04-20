@@ -19,6 +19,8 @@ __meta__ = {
 }
 scene_down = "res://infirmary/wash_room/wash_room.tscn"
 prog_flag = "washing_machine_trio"
+position = Vector2( 1950, 1115 )
+rotation = 90
 new_scene_on_ready = true
 new_scene = "julia_first_convo"
 

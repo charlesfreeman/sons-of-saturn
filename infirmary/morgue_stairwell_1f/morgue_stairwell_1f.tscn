@@ -27,6 +27,9 @@ __meta__ = {
 scene_right = "res://infirmary/morgue_stairwell_base/morgue_stairwell_base.tscn"
 scene_down = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.tscn"
 req_flag_left = "False"
+position = Vector2( 1265, 1278 )
+rotation = 270
+map = "infirmary_1f"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 right_path = true

@@ -3,28 +3,31 @@
 {
   "passages": [
     {
-      "text": "You emerge from the hatch into the basement of the infirmary.  Before you is some sort of medical table.\n\nFerryman::Careful, stand clear.\n\n[[Continue->Appears]]",
+      "text": "Ferryman::Careful, stand clear.\n\n[[Continue->Appears]]",
       "links": [
         {
           "name": "Continue",
           "link": "Appears",
-          "pid": "8"
+          "pid": "7"
         }
       ],
       "name": "Entering Morgue",
       "pid": "1",
       "position": {
-        "x": "869",
+        "x": "868",
         "y": "122"
-      }
+      },
+      "tags": [
+        "morgue_ambient"
+      ]
     },
     {
-      "text": "Ferryman::Operations, yes, but on cadavers, not living people.  This is an autopsy table.\n\nFerryman::We are in the hospital's mortuary.  If you take a peak through the doorframe to your left you'll see the morgue\n\n[[(Action) Take a peak.]]",
+      "text": "Ferryman::Operations, yes, but on cadavers, not living people.  This is an autopsy table.\n\nFerryman::We are in the hospital's mortuary.  If you take a peak through the doorframe to your left you'll see the coolers.\n\n[[(Action) Take a peak.]]",
       "links": [
         {
           "name": "(Action) Take a peak.",
           "link": "(Action) Take a peak.",
-          "pid": "6"
+          "pid": "5"
         }
       ],
       "name": "Was this table used to perform operations?",
@@ -35,69 +38,53 @@
       }
     },
     {
-      "text": "Ferryman::Back when the Maternity Ward was active, death during childbirth was pretty common.  \n\nFerryman::The medical professionals here were top of the line, certainly, but they were still constrained by the limited medical knowledge available to them.\n\n[[I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?]]",
+      "text": "Ferryman::Most of the deaths came from the Maternity Ward.\n\nFerryman::Back when the Maternity Ward was active, death during childbirth was pretty common.  \n\nFerryman::Cradle medics were top of the line, certainly, but they were still constrained by the limited medical knowledge available to them.\n\n[[I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?]]",
       "links": [
         {
           "name": "I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?",
           "link": "I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?",
-          "pid": "7"
+          "pid": "6"
         }
       ],
-      "name": "0;:Why do they have a morgue?  I thought this was an infirmary.",
+      "name": "0;:Why did they need an eighteen body cooler?  That seems excessive.",
       "pid": "3",
       "position": {
-        "x": "786",
-        "y": "577"
+        "x": "841",
+        "y": "583"
       }
     },
     {
-      "text": "Ferryman::This infirmary was a large facility, so a correspondingly large morgue was needed.  We could probably find accounting records pertaining to patient population and deaths somewhere in the infirmary complex, if you are truly curious.\n\n[[Continue->rises]] ",
-      "links": [
-        {
-          "name": "Continue",
-          "link": "rises",
-          "pid": "14"
-        }
-      ],
-      "name": "0;:Was an 18 body morgue really necessary?  That seems excessive.",
-      "pid": "4",
-      "position": {
-        "x": "935",
-        "y": "576"
-      }
-    },
-    {
-      "text": "Ferryman::That's for you to decide, actually.  The Cradle usually responds more mercifully when the client takes the lead.  I'm honestly less of a \"guide\", and more of a \"sherpa.\" \n\nFerryman::That said...I do have a few suggestions.  You're here looking for your Mom, correct?  Well, we're right below the administrative section of the infirmary.  There's a flight of stairs right outside the door behind you - they'll take you right up.\n\n[[Shouldn't you be the one leading the way, given that you know this place like the back of your hand?]]\n[[p:You really think we'll find out what happened to Mom by searching this building?]]",
+      "text": "Ferryman::That's for you to decide, actually.  The Cradle usually responds more mercifully when the client takes the lead.  I'm honestly less of a \"guide\", and more of a \"sherpa.\" \n\nFerryman::That said...I do have a few suggestions.  You're here looking for your Mom, correct?  Well, we're in the basement of the Administrative Ward.  There are lots of offices full of scattered documents, it might be worth pouring through them.\n\nFerryman::There's a flight of stairs right outside the door behind you - they'll take you right up.\n\n[[Shouldn't you be the one leading the way, given that you know this place like the back of your hand?]]\n[[p:You really think we'll find out what happened to Mom by searching this building?]]",
       "links": [
         {
           "name": "Shouldn't you be the one leading the way, given that you know this place like the back of your hand?",
           "link": "Shouldn't you be the one leading the way, given that you know this place like the back of your hand?",
-          "pid": "9"
+          "pid": "8"
         },
         {
           "name": "p:You really think we'll find out what happened to Mom by searching this building?",
           "link": "p:You really think we'll find out what happened to Mom by searching this building?",
-          "pid": "10"
+          "pid": "9"
         }
       ],
       "name": "0;p:Where do we go from here?",
-      "pid": "5",
+      "pid": "4",
       "position": {
         "x": "1083",
         "y": "576"
       }
     },
     {
-      "text": "You peak around the corner and are greeted by an enormous, 18 body morgue.  The apparatus appears mostly intact, though a few of the doors have been wrestled from their hinges.  \n\nEven though this facility was shuttered years ago, you can perceive a faint whiff of Formaldehyde that continues to cling to the air.\n\n[[Continue->rises]] ",
+      "text": "You peak around the corner and are greeted by an enormous, 18 body morgue.  The apparatus appears mostly intact, though a few of the doors have been wrestled from their hinges.  A faint whiff of Formaldehyde still clings to the air.\n\n[[Continue->rises]] ",
       "links": [
         {
           "name": "Continue",
           "link": "rises",
-          "pid": "14"
+          "pid": "13"
         }
       ],
       "name": "(Action) Take a peak.",
-      "pid": "6",
+      "pid": "5",
       "position": {
         "x": "637",
         "y": "764"
@@ -113,27 +100,27 @@
         {
           "name": "Continue",
           "link": "rises",
-          "pid": "14"
+          "pid": "13"
         }
       ],
       "name": "I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?",
-      "pid": "7",
+      "pid": "6",
       "position": {
-        "x": "792",
+        "x": "838",
         "y": "764"
       }
     },
     {
-      "text": "He lets down the hatch in the corner very deliberately, as though to avoid making much noise.\n\n[[C->rises]]",
+      "text": "He lets down the hatch from which you emerged very deliberately, as though to avoid making much noise.\n\n[[C->rises]]",
       "links": [
         {
           "name": "C",
           "link": "rises",
-          "pid": "14"
+          "pid": "13"
         }
       ],
       "name": "Appears",
-      "pid": "8",
+      "pid": "7",
       "position": {
         "x": "854",
         "y": "275"
@@ -144,16 +131,16 @@
       ]
     },
     {
-      "text": "Ferryman::I'll provide suggestions and let you know where we should search, but ultimately you should take the reigns.  Things will go more smoothly that way, trust me.\n\nFerryman::Also...I don't actually know my way around the maternity ward all that well, at least compared to the underground networks.  I know the layout perfectly well and can guide people through, but I haven't spent that much time pouring over documents here or going through every single room, accounting for everything left behind.\n\nFerryman::The maternity ward is a transitional area in most excursions, just a place most clients need to pass through to reach the residential districts.  Rarely do I spend much time here.\n\n[[Continue->0;p:Where do we go from here?]] ",
+      "text": "Ferryman::I'll provide suggestions and let you know where we should search, but ultimately you should take the reigns.  Things will go more smoothly that way, trust me.\n\nFerryman::Also...I don't actually know my way around the maternity ward all that well, at least compared to the underground networks.  I've memorized the layout and know how to navigate, but I usually don't spend much time here.\n\nFerryman::The maternity ward is a transitional area in most excursions, just a place most clients need to pass through to reach the residential districts.  It's not a place I typically linger.\n\n[[Continue->0;p:Where do we go from here?]] ",
       "links": [
         {
           "name": "Continue",
           "link": "0;p:Where do we go from here?",
-          "pid": "5"
+          "pid": "4"
         }
       ],
       "name": "Shouldn't you be the one leading the way, given that you know this place like the back of your hand?",
-      "pid": "9",
+      "pid": "8",
       "position": {
         "x": "1053",
         "y": "729"
@@ -165,11 +152,11 @@
         {
           "name": "p:Yes, she came here for work often.  I don't have any clue why though, she wouldn't tell me.",
           "link": "p:Yes, she came here for work often.  I don't have any clue why though, she wouldn't tell me.",
-          "pid": "11"
+          "pid": "10"
         }
       ],
       "name": "p:You really think we'll find out what happened to Mom by searching this building?",
-      "pid": "10",
+      "pid": "9",
       "position": {
         "x": "1205",
         "y": "726"
@@ -181,27 +168,27 @@
         {
           "name": "p:No, nothing.  We just, had that kind of relationship.",
           "link": "p:No, nothing.  We just, had that kind of relationship.",
-          "pid": "12"
+          "pid": "11"
         }
       ],
       "name": "p:Yes, she came here for work often.  I don't have any clue why though, she wouldn't tell me.",
-      "pid": "11",
+      "pid": "10",
       "position": {
         "x": "1204",
         "y": "876"
       }
     },
     {
-      "text": "Jasper::That kind of lack of relationship?\n\nFerryman::Alright, well, this hospital is huge and we'll never be able to canvas the entirety of it - let's focus our efforts on searching the administration building and maternity ward.\n\n[[p:Alright, let's start looking.]]",
+      "text": "Jasper::That kind of lack of relationship?\n\nFerryman::Alright, well, this hospital is huge and we'll never be able to canvas the entirety of it - let's focus our efforts on searching the Administrative Ward.  That's where we're mostly likely to find clues.\n\n[[p:Alright, let's start looking.]]",
       "links": [
         {
           "name": "p:Alright, let's start looking.",
           "link": "p:Alright, let's start looking.",
-          "pid": "13"
+          "pid": "12"
         }
       ],
       "name": "p:No, nothing.  We just, had that kind of relationship.",
-      "pid": "12",
+      "pid": "11",
       "position": {
         "x": "1204",
         "y": "1026"
@@ -210,14 +197,14 @@
     {
       "text": "",
       "name": "p:Alright, let's start looking.",
-      "pid": "13",
+      "pid": "12",
       "position": {
         "x": "1204",
         "y": "1176"
       }
     },
     {
-      "text": "TAG\n\n[[Was this table used to perform operations?]]\n[[0;:Why do they have a morgue?  I thought this was an infirmary.]]\n[[0;:Was an 18 body morgue really necessary?  That seems excessive.]]\n[[0;p:Where do we go from here?]]",
+      "text": "TAG\n\n[[Was this table used to perform operations?]]\n[[0;:Why did they need an eighteen body cooler?  That seems excessive.]]\n[[0;p:Where do we go from here?]]",
       "links": [
         {
           "name": "Was this table used to perform operations?",
@@ -225,23 +212,18 @@
           "pid": "2"
         },
         {
-          "name": "0;:Why do they have a morgue?  I thought this was an infirmary.",
-          "link": "0;:Why do they have a morgue?  I thought this was an infirmary.",
+          "name": "0;:Why did they need an eighteen body cooler?  That seems excessive.",
+          "link": "0;:Why did they need an eighteen body cooler?  That seems excessive.",
           "pid": "3"
-        },
-        {
-          "name": "0;:Was an 18 body morgue really necessary?  That seems excessive.",
-          "link": "0;:Was an 18 body morgue really necessary?  That seems excessive.",
-          "pid": "4"
         },
         {
           "name": "0;p:Where do we go from here?",
           "link": "0;p:Where do we go from here?",
-          "pid": "5"
+          "pid": "4"
         }
       ],
       "name": "rises",
-      "pid": "14",
+      "pid": "13",
       "position": {
         "x": "855",
         "y": "429"

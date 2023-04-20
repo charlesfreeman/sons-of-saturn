@@ -24,6 +24,7 @@ __meta__ = {
 scene_up = "res://maternity/breezeway/breezeway.tscn"
 scene_down = "res://infirmary/top_floor_middle_hallway/top_floor_middle_hallway.tscn"
 req_flag_up = "julia_first_convo"
+position = Vector2( 1506, 600 )
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
 up_path = true

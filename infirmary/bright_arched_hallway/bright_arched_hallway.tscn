@@ -26,8 +26,10 @@ __meta__ = {
 }
 scene_up = "res://infirmary/isolation_stairwell_1f/isolation_stairwell_1f.tscn"
 scene_right = "res://infirmary/trash_chute/trash_chute.tscn"
-scene_down = "res://infirmary/conduits_hallway/conduits_hallway.tscn"
+scene_down = "res://infirmary/dayroom_chairs/dayroom_chairs.tscn"
 req_flag_up = "trash_chute_convo"
+position = Vector2( 1600, 660 )
+rotation = 270
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 right_path = true

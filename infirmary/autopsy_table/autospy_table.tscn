@@ -18,6 +18,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_down = "res://infirmary/morgue/morgue.tscn"
+position = Vector2( 1340, 1010 )
+rotation = 200
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 down_path = true

@@ -19,6 +19,8 @@ __meta__ = {
 }
 scene_down = "res://maternity/front_desk/front_desk.tscn"
 prog_flag = "inspection_hallway"
+position = Vector2( 1850, 473 )
+rotation = 270
 new_scene_on_ready = true
 new_scene = "inspection_room_convo"
 

@@ -30,6 +30,9 @@ export var rotation = 0
 export var song = "None"
 export var soundscape = "None"
 
+# set this to something if new mini-map needed when entering this area
+export var map = "None"
+
 # functionality to moving to new scene instead of new PoV already exists but sometimes more natural
 # to transition after having entered new PoV
 export var new_scene_on_ready = false

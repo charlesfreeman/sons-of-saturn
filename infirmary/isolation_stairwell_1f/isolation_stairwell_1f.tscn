@@ -28,6 +28,9 @@ scene_right = "res://infirmary/isolation_wing_top_floor/isolation_wing_top_floor
 scene_down = "res://infirmary/bright_arched_hallway/bright_arched_hallway.tscn"
 scene_left = "res://infirmary/isolation_cells/isolation_cells.tscn"
 req_flag_right = "cell_grate_convo"
+position = Vector2( 1265, 660 )
+rotation = 270
+map = "infirmary_1f"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 left_path = true

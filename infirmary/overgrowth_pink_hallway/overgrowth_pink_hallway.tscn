@@ -28,12 +28,15 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_up = "res://infirmary/conduits_hallway/conduits_hallway.tscn"
+scene_up = "res://infirmary/dayroom_empty/dayroom_empty.tscn"
 scene_right = "res://infirmary/vera_office/vera_office.tscn"
 scene_down = "res://infirmary/morgue_stairwell_1f/morgue_stairwell_1f.tscn"
 popup_background = "res://infirmary/overgrowth_pink_hallway/seaside_exterior_colorful.png"
 req_flag_up = "vera_office_convo"
 prog_flag = "overgrowth_pink_hallway"
+position = Vector2( 1360, 1278 )
+rotation = 90
+map = "infirmary_1f"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 right_path = true

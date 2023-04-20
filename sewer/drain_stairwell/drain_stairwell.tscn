@@ -19,8 +19,8 @@ __meta__ = {
 }
 scene_up = "ladder_convo"
 non_roam_scene_up = true
-position = Vector2( 1320, 660 )
-rotation = -180
+position = Vector2( 1295, 580 )
+rotation = 180
 song = "sewer_high_flow"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]

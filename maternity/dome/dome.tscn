@@ -23,6 +23,7 @@ __meta__ = {
 }
 scene_right = "res://maternity/right_curved_hallway/right_curved_hallway.tscn"
 scene_down = "res://maternity/breezeway/breezeway.tscn"
+position = Vector2( 962, 1300 )
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
 right_path = true

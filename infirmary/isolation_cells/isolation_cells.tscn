@@ -32,6 +32,9 @@ scene_down = "res://infirmary/isolation_stairwell_base/isolation_stairwell_base.
 scene_left = "res://infirmary/medicine_cabinet/medicine_cabinet.tscn"
 req_flag_right = "door_open_popup"
 prog_flag = "isolation_cells"
+position = Vector2( 1450, 968 )
+rotation = 90
+map = "iso_cells"
 new_scene_on_ready = true
 new_scene = "cell_grate_convo"
 

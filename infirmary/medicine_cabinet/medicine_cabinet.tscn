@@ -23,6 +23,7 @@ __meta__ = {
 }
 scene_down = "res://infirmary/isolation_cells/isolation_cells.tscn"
 popup_background = "res://infirmary/medicine_cabinet/medicine_cabinet_sideview.png"
+position = Vector2( 1504, 880 )
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
 down_path = true

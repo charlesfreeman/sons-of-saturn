@@ -22,6 +22,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_down = "res://infirmary/conduits_hallway/conduits_hallway.tscn"
+position = Vector2( 1532, 1100 )
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 down_path = true

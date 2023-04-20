@@ -22,6 +22,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_down = "res://maternity/right_curved_hallway/right_curved_hallway.tscn"
+position = Vector2( 1330, 1070 )
+rotation = 5
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
 down_path = true

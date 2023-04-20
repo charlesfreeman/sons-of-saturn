@@ -24,6 +24,9 @@ __meta__ = {
 scene_up = "res://infirmary/isolation_stairwell_1f/isolation_stairwell_1f.tscn"
 scene_down = "res://infirmary/isolation_cells/isolation_cells.tscn"
 req_flag_up = "medicine_cabinet_inspection"
+position = Vector2( 1280, 968 )
+rotation = 270
+map = "iso_cells"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true

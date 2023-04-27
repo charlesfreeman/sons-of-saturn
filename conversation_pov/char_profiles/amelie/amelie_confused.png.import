@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jasper_headshot_feathered.png-6598835c4c80376980f8f80da7f2cebb.stex"
+path="res://.import/amelie_confused.png-ef32cb9c40b4468ad6003de6b635245d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://conversation_pov/char_profiles/jasper/jasper_headshot_feathered.png"
-dest_files=[ "res://.import/jasper_headshot_feathered.png-6598835c4c80376980f8f80da7f2cebb.stex" ]
+source_file="res://conversation_pov/char_profiles/amelie/amelie_confused.png"
+dest_files=[ "res://.import/amelie_confused.png-ef32cb9c40b4468ad6003de6b635245d.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wiggly_half_smiling.png-eec1b4dabd807c190315e57260a91ade.stex"
+path="res://.import/wiggly_thinking.png-ac50ac3d75d155b7cee345778a012802.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://conversation_pov/char_profiles/wiggly/wiggly_half_smiling.png"
-dest_files=[ "res://.import/wiggly_half_smiling.png-eec1b4dabd807c190315e57260a91ade.stex" ]
+source_file="res://conversation_pov/char_profiles/wiggly/wiggly_thinking.png"
+dest_files=[ "res://.import/wiggly_thinking.png-ac50ac3d75d155b7cee345778a012802.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/amelie_taken_aback.png-cc6af404b9d14944c27373c20bae4d2d.stex"
+path="res://.import/jasper_looking_forward.png-38002ef4df1d9037597faf6b0665963f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://conversation_pov/char_profiles/amelie/amelie_taken_aback.png"
-dest_files=[ "res://.import/amelie_taken_aback.png-cc6af404b9d14944c27373c20bae4d2d.stex" ]
+source_file="res://conversation_pov/char_profiles/jasper/jasper_looking_forward.png"
+dest_files=[ "res://.import/jasper_looking_forward.png-38002ef4df1d9037597faf6b0665963f.stex" ]
 
 [params]
 

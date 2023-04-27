@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 1430.73, 1068.51 )
 
-[node name="DescPopUp" type="Area2D" groups=["popups"]]
+[node name="DescPopUp" type="Area2D" groups=["desc_popups", "popups"]]
 z_index = 1
 script = ExtResource( 3 )
 popup_text = [ "Example Text" ]

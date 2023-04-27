@@ -92,15 +92,15 @@ func remove_from_party(char_name: String):
 
 func add_to_inv(item_name: String):
 	if not item_name in inventory:
-		party.append(item_name)
+		inventory.append(item_name)
 	else:
-		print("Warning: %s already in party", item_name)
+		print("Warning: %s already in inventory", item_name)
 
 func remove_from_inv(item_name: String):
-	if item_name in party:
-		party.erase(item_name)
+	if item_name in inventory:
+		inventory.erase(item_name)
 	else:
-		print("Warning: cannot remove %s from party", item_name)
+		print("Warning: cannot remove %s from inventory", item_name)
 
 func get_region():
 	return self.region

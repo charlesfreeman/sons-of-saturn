@@ -55,6 +55,7 @@ signal move_pov_right
 signal disable_buttons
 signal enable_buttons
 signal swap_bg
+signal new_item(item)
 
 func _ready():
 	# currently all convos that start with entering a room are one-offs. here we load the convo 
@@ -79,8 +80,9 @@ func _ready():
 		node.connect("disable_buttons", self, "_disable_buttons")
 		node.connect("enable_buttons", self, "_enable_buttons")
 		node.connect("swap_bg", self, "_swap_bg")
+	for node in get_tree().get_nodes_in_group("desc_popups"):
+		node.connect("new_item", self, "_new_item")
 
-	# TODO add logic to disable clickable area if path not available
 
 func swap_bg():
 	print("swapping bg")
@@ -111,3 +113,6 @@ func _enable_buttons():
 	
 func _swap_bg():
 	emit_signal("swap_bg")
+	
+func _new_item(item):
+	emit_signal("new_item", item)

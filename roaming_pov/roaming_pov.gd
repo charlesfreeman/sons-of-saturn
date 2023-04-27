@@ -29,6 +29,7 @@ onready var up_button = $VBoxContainer/HBoxContainer/GridContainer/UpButton
 onready var right_button = $VBoxContainer/HBoxContainer/GridContainer/RightButton
 onready var down_button = $VBoxContainer/HBoxContainer/GridContainer/DownButton
 onready var left_button = $VBoxContainer/HBoxContainer/GridContainer/LeftButton
+onready var inventory = $VBoxContainer/MarginContainer/HBoxContainer/Inventory
 onready var tile_footsteps = $TileFootsteps
 onready var wet_footsteps = $WetFootsteps
 onready var footstep_types = {
@@ -139,6 +140,7 @@ func _load_PoV_instance():
 	pov_instance.connect("disable_buttons", self, "_disable_buttons")
 	pov_instance.connect("enable_buttons", self, "_enable_buttons")
 	pov_instance.connect("swap_bg", self, "swap_texture")
+	pov_instance.connect("new_item", self, "_new_item")
 	set_pos_rot(pov_instance.position, pov_instance.rotation)
 
 
@@ -180,6 +182,10 @@ func _disable_buttons():
 
 func _enable_buttons():
 	_update_buttons()
+	
+	
+func _new_item(item):
+	inventory.add_item(item)
 	
 	
 func set_pos_rot(pos, rot):

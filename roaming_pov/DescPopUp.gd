@@ -20,10 +20,12 @@ export var nav_popup = false
 # we can remember if they've been invoked.
 export var single_use = false
 export var prog_flag = "None"
+export var new_item = "None"
 
 signal disable_buttons
 signal enable_buttons
 signal swap_bg
+signal new_item(item)
 
 
 func _ready():
@@ -58,6 +60,8 @@ func _on_FullRect_input_event(_viewport, event, _shape_idx):
 			emit_signal("enable_buttons")
 			if diff_background:
 				emit_signal("swap_bg")
+			if new_item != "None":
+				emit_signal("new_item", new_item)
 		elif (self.in_clickable_area and self.enabled and not self.perm_disabled) or self.index != 0:
 			init_popup()
 

@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "Jasper::This is it, the room at the end of the wing - where Wiggly was supposed to meet us.\n\nJulia::Miss?  Miss!\n\nJasper::Julia is behind us.  She followed us all the way down the hall.\n\nJulia::Miss, slow down!  You're medicated, you shouldn't be walking without assistance!\n\n[[Continue->Not Alright]]",
+      "text": "Jasper,twisted::This is it, the room at the end of the wing - where Wiggly was supposed to meet us.\n\nJulia,worried::Miss?  Miss!\n\nJasper,looking_forward::Julia is behind us.  She followed us all the way down the hall.\n\nJulia,concerned::Miss, slow down!  You're medicated, you shouldn't be walking without assistance!\n\n[[Continue->Not Alright]]",
       "links": [
         {
           "name": "Continue",
@@ -19,7 +19,7 @@
       }
     },
     {
-      "text": "Jasper::Do not stop, do not wait for her.  Where is Wiggly?  Try to find Wiggly.  He should be here.  You are not alright.\n\n[[Why am I having these visions?]]\n[[Am I standing right?  My head is pointed in the sky direction, yeah?]]\n[[p:(Action) Find something to grab and regain balance.]]\n",
+      "text": "Jasper,looking_forward::Do not stop, do not wait for her.  Where is Wiggly?  Try to find Wiggly.  He should be here.  You are not alright.\n\n[[Why am I having these visions?]]\n[[Am I standing right?  My head is pointed in the sky direction, yeah?]]\n[[p:(Action) Find something to grab and regain balance.]]\n",
       "links": [
         {
           "name": "Why am I having these visions?",
@@ -44,7 +44,8 @@
         "y": "763"
       },
       "tags": [
-        "closer"
+        "closer",
+        "ashocked"
       ]
     },
     {
@@ -101,10 +102,13 @@
       "position": {
         "x": "1177",
         "y": "1213"
-      }
+      },
+      "tags": [
+        "afuming"
+      ]
     },
     {
-      "text": "Julia::The patient is behaving violently, initiating restrainment procedures.\n\nJulia is shouting down the hall.  She pretends not to hear you.\n\nYou struggle, but Julia has a stranglehold on your left wrist, and her knee on your back.  \n\nYour legs remain pinned by the medical cabinet, though you can tell it isn't too heavy.  \n\nJasper::Your right hand is free!  Use it!\n\n[[(Action) Grab a syringe-tipped ampoule and stab Julia.]]\n[[(Action) Look at the needle.]]\n[[1;:I thought you weren't supposed to share needles.]]\n[[1;p:(Action) Stab yourself with the hypodermic needle.]] ",
+      "text": "Julia,suspiscious::The patient is behaving violently, initiating restrainment procedures.\n\nJulia is shouting down the hall.  She pretends not to hear you.\n\nYou struggle, but Julia has a stranglehold on your left wrist, and her knee on your back.  \n\nYour legs remain pinned by the medical cabinet, though you can tell it isn't too heavy.  \n\nJasper,looking_forward::Your right hand is free!  Use it!\n\n[[(Action) Grab a syringe-tipped ampoule and stab Julia.]]\n[[(Action) Look at the needle.]]\n[[1;:I thought you weren't supposed to share needles.]]\n[[1;p:(Action) Stab yourself with the hypodermic needle.]] ",
       "links": [
         {
           "name": "(Action) Grab a syringe-tipped ampoule and stab Julia.",
@@ -132,7 +136,10 @@
       "position": {
         "x": "1178",
         "y": "1364"
-      }
+      },
+      "tags": [
+        "ashocked"
+      ]
     },
     {
       "text": "You sieze the needle and violently strike Julia's right thigh.  You penetrate her envelope, breaking her epidermis.\n\nAn electric shock shivers down your spine.  You shake off the intrusions.\n\nJulia doesn't react to the invasion.  She isn't even trying to prevent a second strike.  She finds it familiar.\n\nThe room begins to reek of organic solvents.  Your shoulder blades and left wrist start to burn.\n\n[[Continue->p:Hey!  Let me go!]] ",
@@ -151,7 +158,7 @@
       }
     },
     {
-      "text": "You drag the vial into your field of view.  You can make out the label now.  The needle contains a dose of norepinephrine.\n\nJasper::Inject it!  Straight into the mainline.  This should still be intuitive for you.\n\nJasper::Use the boost to wrestle out of Julia's grip.\n\n[[Continue->p:Hey!  Let me go!]] ",
+      "text": "You drag the vial into your field of view.  You can make out the label now.  The needle contains a dose of norepinephrine.\n\nJasper,surprised::Inject it!  Straight into the mainline.  This should still be intuitive for you.\n\nJasper::Use the boost to wrestle out of Julia's grip.\n\n[[Continue->p:Hey!  Let me go!]] ",
       "links": [
         {
           "name": "Continue",
@@ -167,7 +174,7 @@
       }
     },
     {
-      "text": "You haphazardly plunge the needle into the outer side of your right thigh, midway between your hip and knee.  The sting of violent self-penetration reverberates through your leg.\n\nJulia::...Aaahg!...\n\nJulia releases her grip and throws herself back.  You failed to navigate the norepinephrine to a viable vein, but stabbing yourself has thrown Julia off balance.  \n\n[[p:(Action) Free yourself.]]",
+      "text": "You haphazardly plunge the needle into the outer side of your right thigh, midway between your hip and knee.  The sting of violent self-penetration reverberates through your leg.\n\nJulia,concerned::...Aaahg!...\n\nJulia releases her grip and throws herself back.  You failed to navigate the norepinephrine to a viable vein, but stabbing yourself has thrown Julia off balance.  \n\n[[p:(Action) Free yourself.]]",
       "links": [
         {
           "name": "p:(Action) Free yourself.",
@@ -186,7 +193,7 @@
       ]
     },
     {
-      "text": "Jasper::Rot takes 40 years to kill you these days!  Just do it!\n\n[[Continue->p:Hey!  Let me go!]] ",
+      "text": "Jasper,surprised::Rot takes 40 years to kill you these days!  Just do it!\n\n[[Continue->p:Hey!  Let me go!]] ",
       "links": [
         {
           "name": "Continue",
@@ -202,7 +209,7 @@
       }
     },
     {
-      "text": "Jasper::Get up!  We need to make a run for it!\n\nYou pull your legs out from under the cabinet, and coil yourself into a pouncing position.\n\nYou notice your left hand is covered in blood.\n\n[[p:(Action) Stand up, turn around, and run for it.]]",
+      "text": "Jasper,looking_forward::Get up!  We need to make a run for it!\n\nYou pull your legs out from under the cabinet, and coil yourself into a pouncing position.\n\nYou notice your left hand is covered in blood.\n\n[[p:(Action) Stand up, turn around, and run for it.]]",
       "links": [
         {
           "name": "p:(Action) Stand up, turn around, and run for it.",
@@ -234,7 +241,7 @@
       }
     },
     {
-      "text": "Your balance fades slightly as your right leg nears full extension.  You slam your left leg firmly into the liquid floor, stabilizing yourself.\n\nBoth legs are fully extended now.  \n\nJasper::You're doing it.  You're standing.\n\n[[p:Turn around.]]",
+      "text": "Your balance fades slightly as your right leg nears full extension.  You slam your left leg firmly into the liquid floor, stabilizing yourself.\n\nBoth legs are fully extended now.  \n\nJasper,twisted::You're doing it.  You're standing.\n\n[[p:Turn around.]]",
       "links": [
         {
           "name": "p:Turn around.",
@@ -423,7 +430,7 @@
       }
     },
     {
-      "text": "The door is locked now.  You violently shake the handle.  It's as if the door is glued into its frame.\n\nJasper::It's just like the isolation cell door that seperated you from Wiggly.\n\nJasper::The Cradle wants us here.\n\nYou feel an icy tug on your right leg.\n\n[[C->Look down]]",
+      "text": "The door is locked now.  You violently shake the handle.  It's as if the door is glued into its frame.\n\nJasper,thinking::It's just like the isolation cell door that seperated you from Wiggly.\n\nJasper,sad::The Cradle wants us here.\n\nYou feel an icy tug on your right leg.\n\n[[C->Look down]]",
       "links": [
         {
           "name": "C",
@@ -439,7 +446,7 @@
       }
     },
     {
-      "text": "Julia is huddled in the corner, whimpering.  Her body is lightly convulsing, as if she were being electrocuted.\n\nJasper::She is pathetic.\n\n[[p:What did you inject me with?  Why did you pin me to the ground?]]\n[[p:(Action) Kick Julia.]]",
+      "text": "Julia is huddled in the corner, whimpering.  Her body is lightly convulsing, as if she were being electrocuted.\n\nJasper,twisted::She is pathetic.\n\n[[p:What did you inject me with?  Why did you pin me to the ground?]]\n[[p:(Action) Kick Julia.]]",
       "links": [
         {
           "name": "p:What did you inject me with?  Why did you pin me to the ground?",
@@ -460,7 +467,8 @@
       },
       "tags": [
         "corner2",
-        "corner"
+        "corner",
+        "afuming"
       ]
     },
     {
@@ -522,7 +530,8 @@
         "y": "2607"
       },
       "tags": [
-        "noeyes"
+        "noeyes",
+        "ashocked"
       ]
     },
     {
@@ -544,7 +553,10 @@
       "position": {
         "x": "1437",
         "y": "2753"
-      }
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
       "text": "Her contorted body is like a bag of ice.  Every blow is absorbed and ignored.\n\nJulia::Please, Miss, just help me.  Help me out of it.\n\nHer fingers sink deeper.  Your calf begins to sear.\n\n[[p:(Action) Try to break free.]]\n[[p:(Action) Kiss Julia.]]",
@@ -565,7 +577,10 @@
       "position": {
         "x": "1587",
         "y": "2753"
-      }
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
       "text": "You violently kick julia to the ground.  She again begins to shake\n\n[[C->Hands]]",
@@ -644,11 +659,12 @@
         "y": "3062"
       },
       "tags": [
-        "ceiling"
+        "ceiling",
+        "adisgusted"
       ]
     },
     {
-      "text": "Jasper::This maneuver has never, ever worked for you in the past.\n\nJasper::Just look at the situation.\n\nJasper::The sights are horrific and the vibes are rancid.  This isn't going well.\n\n[[C->Noise]]",
+      "text": "Jasper,head_tilted::This maneuver has never, ever worked for you in the past.\n\nJasper::Just look at the situation.\n\nJasper,thinking::The sights are horrific and the vibes are rancid.  This isn't going well.\n\n[[C->Noise]]",
       "links": [
         {
           "name": "C",
@@ -667,7 +683,7 @@
       ]
     },
     {
-      "text": "Jasper::Yes, gaslight yourself.  Your legs and arms ARE the same length.  Proprioceptive senses lie.\n\nJasper::The ceiling is just a normal ceiling, adorned with a cool pattern.  You can just see it more clearly now.\n\nJasper::The nerve endings fraying along your appendages are merely toxins leaving the body.  You will come out of this healthy.\n\n[[C->Noise]] ",
+      "text": "Jasper,twisted::Yes, gaslight yourself.  Your legs and arms ARE the same length.  Proprioceptive senses lie.\n\nJasper,thinking::The ceiling is just a normal ceiling, adorned with a cool pattern.  You can just see it more clearly now.\n\nJasper,head_tilted::The nerve endings fraying along your appendages are merely toxins leaving the body.  You will come out of this healthy.\n\n[[C->Noise]] ",
       "links": [
         {
           "name": "C",
@@ -706,7 +722,7 @@
       ]
     },
     {
-      "text": "Wiggly::Miss?  Miss!?!\n\nJasper::He's opened the grate leading to the ducts for you.  \n\nJasper::Dive for it!\n\n[[p:(Action) Dive into the aperature.]]",
+      "text": "Wiggly::Miss?  Miss!?!\n\nJasper,surprised::He's opened the grate leading to the ducts for you.  \n\nJasper::Dive for it!\n\n[[p:(Action) Dive into the aperature.]]",
       "links": [
         {
           "name": "p:(Action) Dive into the aperature.",
@@ -753,7 +769,7 @@
       ]
     },
     {
-      "text": "You look down.  Julia is tugging at you.\n\nHer body is lightly convulsing, as if she were being electrocuted.\n\nJasper::She is pathetic!\n\n[[p:What did you inject me with?  Why did you pin me to the ground?]]\n[[p:(Action) Kick Julia.]]",
+      "text": "You look down.  Julia is tugging at you.\n\nHer body is lightly convulsing, as if she were being electrocuted.\n\nJasper,twisted::She is pathetic!\n\n[[p:What did you inject me with?  Why did you pin me to the ground?]]\n[[p:(Action) Kick Julia.]]",
       "links": [
         {
           "name": "p:What did you inject me with?  Why did you pin me to the ground?",
@@ -773,11 +789,12 @@
         "y": "2404"
       },
       "tags": [
-        "tugging"
+        "tugging",
+        "afuming"
       ]
     },
     {
-      "text": "Jasper::She shut the door when she entered.  Will it open?\n\n[[p:(Action) Open the door.]]\n[[p:(Action) Confront Julia.]]",
+      "text": "Jasper,thinking::She shut the door when she entered.  Will it open?\n\n[[p:(Action) Open the door.]]\n[[p:(Action) Confront Julia.]]",
       "links": [
         {
           "name": "p:(Action) Open the door.",
@@ -797,11 +814,12 @@
         "y": "2220"
       },
       "tags": [
-        "door"
+        "door",
+        "auncertain"
       ]
     },
     {
-      "text": "Jasper::The energy meant to feed your eyes, meant to keep them running, has been sucked into your jaw.  \n\nJasper::The tension in your teeth is terrible, and a metallic tinge is blistering your tongue.\n\nJasper::Your eyes are running at half capacity.  The results are Hildegardian.\n\n[[C->Not Alright]] ",
+      "text": "Jasper,thinking::The energy meant to feed your eyes, meant to keep them running, has been sucked into your jaw.  \n\nJasper,head_tilted::The tension in your teeth is terrible, and a metallic tinge is blistering your tongue.\n\nJasper::Your eyes are running at half capacity.  The results are Hildegardian.\n\n[[C->Not Alright]] ",
       "links": [
         {
           "name": "C",
@@ -817,7 +835,7 @@
       }
     },
     {
-      "text": "Jasper::Close enough, but that's changing fast.  Our proprioceptive competencies are a fucking shambles.  \n\nJasper::We're losing balance, quickly.  Find something to grab onto!\n\n[[C->Not Alright]] ",
+      "text": "Jasper,head_tilted::Close enough, but that's changing fast.  Our proprioceptive competencies are a fucking shambles.  \n\nJasper,looking_forward::We're losing balance, quickly.  Find something to grab onto!\n\n[[C->Not Alright]] ",
       "links": [
         {
           "name": "C",

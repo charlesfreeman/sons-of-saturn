@@ -23,12 +23,11 @@
         "y": "593"
       },
       "tags": [
-        "uncertain",
         "crib_wind"
       ]
     },
     {
-      "text": "Julia,worried::Miss, there is nothing fresh about the air here.\n\nJasper::Now that she's mentioned it, there is a bit of rot in the air.\n\n[[p:Yeah, what's up with that smell?]]",
+      "text": "Julia,worried::Miss, there is nothing fresh about the air here.\n\nJasper,thinking::Now that she's mentioned it, there is a bit of rot in the air.\n\n[[p:Yeah, what's up with that smell?]]",
       "links": [
         {
           "name": "p:Yeah, what's up with that smell?",
@@ -44,7 +43,7 @@
       }
     },
     {
-      "text": "Julia,worried::Yes, I really would.  I hate this overlook.\n\nJulia::Hate the view.  Hate the crib.  More than anything, I hate the smell.\n\n[[p:Yeah, what's up with that smell?]]",
+      "text": "Julia,worried::Yes, I really would.  I hate this overlook.\n\nJulia,lost_in_thought::Hate the view.  Hate the crib.  More than anything, I hate the smell.\n\nJasper,thinking::Now that she's mentioned it, there is a bit of rot in the air.\n\n[[p:Yeah, what's up with that smell?]]",
       "links": [
         {
           "name": "p:Yeah, what's up with that smell?",
@@ -60,7 +59,7 @@
       }
     },
     {
-      "text": "Jasper::I think you recognize this smell.  It's the fruity smell of rot.\n\nJulia,suspiscious::You're going to make me say it, aren't you?\n\nJulia::Sick babies, ones we've exhausted treatment for.  This is where we leave them.  \n\nJulia::Right here, in this crib.\n\nJulia,worried::We tell the parents that there's nothing else we can do, but they still have a chance if they get some sunlight and fresh air.\n\nJulia::We know it's not gonna work.  I think the mom and dad usually know, too.  But we keep bringing babies here all the same.\n\nJulia,lost_in_thought::*I* keep bringing babies here.  They always make me do it.\n\n[[p:That's...genuinely horrific.]]\n[[p:I guess that explains the smell.]]",
+      "text": "Julia,concerned::You're going to make me say it, aren't you?\n\nJulia,lost_in_thought::Sick babies, ones we've exhausted treatment for.  This is where we leave them.  \n\nJulia::Right here, in this crib.\n\nJulia,worried::We tell the parents that there's nothing else we can do, but they still have a chance if they get some sunlight and fresh air.\n\nJulia::We know it's not gonna work.  I think the mom and dad usually know, too.  But we keep bringing babies here all the same.\n\nJulia,lost_in_thought::*I* keep bringing babies here.  They always make me do it.\n\n[[p:That's...genuinely horrific.]]\n[[p:I guess that explains the smell.]]",
       "links": [
         {
           "name": "p:That's...genuinely horrific.",
@@ -80,7 +79,7 @@
         "y": "913"
       },
       "tags": [
-        "disgust"
+        "asad"
       ]
     },
     {
@@ -109,11 +108,11 @@
         "y": "1063"
       },
       "tags": [
-        "questioning"
+        "aguilty"
       ]
     },
     {
-      "text": "Julia::We don't even bother cleaning the crib after collection.  Of course it reeks.\n\n[[C->p:That's...genuinely horrific.]] ",
+      "text": "Julia,suspiscious::We don't even bother cleaning the crib after collection.  Of course it reeks.\n\n[[C->p:That's...genuinely horrific.]] ",
       "links": [
         {
           "name": "C",
@@ -129,7 +128,7 @@
       }
     },
     {
-      "text": "Julia::Only a handful.  Babies that have a real chance don't end up here.\n\n[[Sounds like at least a few of them had a real chance.]] ",
+      "text": "Julia,lost_in_thought::Only a handful.  Babies that have a real chance don't end up here.\n\n[[Sounds like at least a few of them had a real chance.]] ",
       "links": [
         {
           "name": "Sounds like at least a few of them had a real chance.",
@@ -145,7 +144,7 @@
       }
     },
     {
-      "text": "Julia,concerned::It didn't always.  They used to just make the newest nurse take on this responsibility.  \n\nJulia::But I...\n\nJulia::I don't want to go into it, but I'm very indebted to some of the higher up staff here.\n\nJulia::So a lot of the tougher work is falling on me for a while.\n\n[[p:That isn't fair.  You shouldn't have to do all of this alone.]]",
+      "text": "Julia,concerned::It didn't always.  They used to just make the newest nurse take on this responsibility.  \n\nJulia,lost_in_thought::But I...\n\nJulia,worried::I don't want to go into it, but I'm very indebted to some of the higher up staff here.\n\nJulia::So a lot of the tougher work is falling on me for a while.\n\n[[p:That isn't fair.  You shouldn't have to do all of this alone.]]",
       "links": [
         {
           "name": "p:That isn't fair.  You shouldn't have to do all of this alone.",
@@ -170,7 +169,7 @@
       }
     },
     {
-      "text": "Julia,worried::Before our budget was reduced?  Too many.\n\nJulia::After the slash?  Way, way too many.  Usually of respiratory distress.\n\n[[C->p:That's...genuinely horrific.]] ",
+      "text": "Julia,worried::Before our budget was reduced?  Too many.\n\nJulia,lost_in_thought::After the slash?  Way, way too many.  Usually of respiratory distress.\n\n[[C->p:That's...genuinely horrific.]] ",
       "links": [
         {
           "name": "C",
@@ -186,7 +185,7 @@
       }
     },
     {
-      "text": "Julia,worried::...\n\n[[C->p:That's...genuinely horrific.]]",
+      "text": "Julia::...\n\n[[C->p:That's...genuinely horrific.]]",
       "links": [
         {
           "name": "C",

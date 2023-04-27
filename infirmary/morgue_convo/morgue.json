@@ -38,7 +38,7 @@
       }
     },
     {
-      "text": "Ferryman::Most of the deaths came from the Maternity Ward.\n\nFerryman::Back when the Maternity Ward was active, death during childbirth was pretty common.  \n\nFerryman::Cradle medics were top of the line, certainly, but they were still constrained by the limited medical knowledge available to them.\n\n[[I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?]]",
+      "text": "Ferryman::Most of the deaths came from the Maternity Ward.\n\nFerryman,sad::Back when the Maternity Ward was active, death during childbirth was pretty common.  \n\nFerryman::Cradle medics were top of the line, certainly, but they were still constrained by the limited medical knowledge available to them.\n\n[[I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?]]",
       "links": [
         {
           "name": "I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?",
@@ -54,7 +54,7 @@
       }
     },
     {
-      "text": "Ferryman::That's for you to decide, actually.  The Cradle usually responds more mercifully when the client takes the lead.  I'm honestly less of a \"guide\", and more of a \"sherpa.\" \n\nFerryman::That said...I do have a few suggestions.  You're here looking for your Mom, correct?  Well, we're in the basement of the Administrative Ward.  There are lots of offices full of scattered documents, it might be worth pouring through them.\n\nFerryman::There's a flight of stairs right outside the door behind you - they'll take you right up.\n\n[[Shouldn't you be the one leading the way, given that you know this place like the back of your hand?]]\n[[p:You really think we'll find out what happened to Mom by searching this building?]]",
+      "text": "Ferryman::That's for you to decide, actually.  The Cradle usually responds more mercifully when the client takes the lead.  I'm honestly less of a \"guide\", and more of a \"sherpa.\" \n\nFerryman,looking_to_side::That said...I do have a few suggestions.  You're here looking for your Mom, correct?  Well, we're in the basement of the Administrative Ward.  There are lots of offices full of scattered documents, it might be worth pouring through them.\n\nFerryman::There's a flight of stairs right outside the door behind you - they'll take you right up.\n\n[[Shouldn't you be the one leading the way, given that you know this place like the back of your hand?]]\n[[p:You really think we'll find out what happened to Mom by searching this building?]]",
       "links": [
         {
           "name": "Shouldn't you be the one leading the way, given that you know this place like the back of your hand?",
@@ -72,7 +72,10 @@
       "position": {
         "x": "1083",
         "y": "576"
-      }
+      },
+      "tags": [
+        "aconfused"
+      ]
     },
     {
       "text": "You peak around the corner and are greeted by an enormous, 18 body morgue.  The apparatus appears mostly intact, though a few of the doors have been wrestled from their hinges.  A faint whiff of Formaldehyde still clings to the air.\n\n[[Continue->rises]] ",
@@ -95,7 +98,7 @@
       ]
     },
     {
-      "text": "Ferryman::Well, I suppose so.  Medical science has come a long way in the last half century.\n\n[[Continue->rises]] ",
+      "text": "Ferryman,skeptical::Well, I suppose so.  Medical science has come a long way in the last half century.\n\n[[Continue->rises]] ",
       "links": [
         {
           "name": "Continue",
@@ -127,11 +130,12 @@
       },
       "tags": [
         "thud",
-        "kneeling"
+        "kneeling",
+        "add_wiggly"
       ]
     },
     {
-      "text": "Ferryman::I'll provide suggestions and let you know where we should search, but ultimately you should take the reigns.  Things will go more smoothly that way, trust me.\n\nFerryman::Also...I don't actually know my way around the maternity ward all that well, at least compared to the underground networks.  I've memorized the layout and know how to navigate, but I usually don't spend much time here.\n\nFerryman::The maternity ward is a transitional area in most excursions, just a place most clients need to pass through to reach the residential districts.  It's not a place I typically linger.\n\n[[Continue->0;p:Where do we go from here?]] ",
+      "text": "Ferryman::I'll provide suggestions and let you know where we should search, but ultimately you should take the reigns.  Things will go more smoothly that way, trust me.\n\nFerryman,half_smile::Also...I don't actually know my way around the maternity ward all that well, at least compared to the underground networks.  I've memorized the layout and know how to navigate, but I usually don't spend much time here.\n\nFerryman::The maternity ward is a transitional area in most excursions, just a place most clients need to pass through to reach the residential districts.  It's not a place I typically linger.\n\n[[Continue->0;p:Where do we go from here?]] ",
       "links": [
         {
           "name": "Continue",
@@ -147,7 +151,7 @@
       }
     },
     {
-      "text": "Ferryman::To be honest, we aren't likely to find exactly what you are looking for here.  We're probably going to need to pay a visit to operations ward or perhaps the chronic ward to find exactly what you are looking for.\n\nFerryman::But we'll probably find enough info here to better narrow down our search.  Hopefully after we're done here, we'll know which section of the Cradle to focus our efforts on reaching.  We won't be able to canvas the whole region, of course.\n\nFerryman::You mentioned that your Mom, Rosalind, often made professional visits to this hospital, correct?\n\n[[p:Yes, she came here for work often.  I don't have any clue why though, she wouldn't tell me.]]",
+      "text": "Ferryman,skeptical::To be honest, we aren't likely to find exactly what you are looking for here.  We're probably going to need to pay a visit to operations ward or perhaps the chronic ward to find exactly what you are looking for.\n\nFerryman::But we'll probably find enough info here to better narrow down our search.  Hopefully after we're done here, we'll know which section of the Cradle to focus our efforts on reaching.  We won't be able to canvas the whole region, of course.\n\nFerryman,surprised::You mentioned that your Mom, Rosalind, often made professional visits to this hospital, correct?\n\n[[p:Yes, she came here for work often.  I don't have any clue why though, she wouldn't tell me.]]",
       "links": [
         {
           "name": "p:Yes, she came here for work often.  I don't have any clue why though, she wouldn't tell me.",
@@ -163,7 +167,7 @@
       }
     },
     {
-      "text": "Ferryman::Hmm.  This might go a lot more smoothly if we had any idea where she spent most of her time, or who she interacted with, while she was here.  She really communicated nothing about her visits?\n\n[[p:No, nothing.  We just, had that kind of relationship.]]",
+      "text": "Ferryman,skeptical::Hmm.  This might go a lot more smoothly if we had any idea where she spent most of her time, or who she interacted with, while she was here.  She really communicated nothing about her visits?\n\n[[p:No, nothing.  We just, had that kind of relationship.]]",
       "links": [
         {
           "name": "p:No, nothing.  We just, had that kind of relationship.",
@@ -179,7 +183,7 @@
       }
     },
     {
-      "text": "Jasper::That kind of lack of relationship?\n\nFerryman::Alright, well, this hospital is huge and we'll never be able to canvas the entirety of it - let's focus our efforts on searching the Administrative Ward.  That's where we're mostly likely to find clues.\n\n[[p:Alright, let's start looking.]]",
+      "text": "Jasper,twisted::That kind of lack of relationship?\n\nFerryman,neutral::Alright, well, this hospital is huge and we'll never be able to canvas the entirety of it - let's focus our efforts on searching the Administrative Ward.  That's where we're mostly likely to find clues.\n\n[[p:Alright, let's start looking.]]",
       "links": [
         {
           "name": "p:Alright, let's start looking.",
@@ -229,7 +233,8 @@
         "y": "429"
       },
       "tags": [
-        "rises"
+        "rises",
+        "auncertain"
       ]
     }
   ],

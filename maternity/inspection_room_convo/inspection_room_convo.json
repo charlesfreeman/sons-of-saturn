@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "You enter a small, poorly lit room.  In the center is a small gurney flanked by antiquated medical eqipment, all of it covered in a thick layer of grime.\n\nJulia::Please, mam, lie down on the table.  We just need to get a few physical readings from you.\n\n[[This entire setup looks a little...insufficiently sterilized.]]\n[[p:Will this require anything invasive?  I like my envelopes unbreached and intact.]]",
+      "text": "You enter a small, poorly lit room.  In the center is a small gurney flanked by antiquated medical eqipment, all of it covered in a thick layer of grime.\n\nJulia,amused::Please, Miss, lie down on the table.  We just need to get a few physical readings - preliminary scans.\n\n[[This entire setup looks a little...insufficiently sterilized.]]\n[[p:Will this require anything invasive?  I like my envelopes unbreached and intact.]]",
       "links": [
         {
           "name": "This entire setup looks a little...insufficiently sterilized.",
@@ -23,7 +23,8 @@
         "y": "414"
       },
       "tags": [
-        "enter"
+        "enter",
+        "adisgused"
       ]
     },
     {
@@ -45,10 +46,13 @@
       "position": {
         "x": "1245",
         "y": "838"
-      }
+      },
+      "tags": [
+        "asad"
+      ]
     },
     {
-      "text": "Jasper::No, you don't.\n\nJulia::No, you don't.  We need to perform at least cursory inspections before we can admit you into operations. \n\nJulia::I'm sorry, miss, but we can't accept the risk of performing operations without making sure our patients are healthy enough to go through with it.\n\n[[p:Alright.  I have to make it to operations.  So let's get this over with.->p:Fine, let's get this over with.]]",
+      "text": "Jasper,surprised::No, you don't.\n\nJulia,worried::No, you don't.  We need to perform at least cursory inspections before we can admit you into operations. \n\nJulia,concerned::I'm sorry, miss, but we can't accept the risk of performing operations without making sure our patients are healthy enough to go through with it.\n\n[[p:Alright.  I have to make it to operations.  So let's get this over with.->p:Fine, let's get this over with.]]",
       "links": [
         {
           "name": "p:Alright.  I have to make it to operations.  So let's get this over with.",
@@ -64,7 +68,7 @@
       }
     },
     {
-      "text": "Julia::No, miss, this won't require anything invasive.  I just need to perform a few quick inspections to ensure that you don't have any underlying health issues before we move forward.\n\n[[p:Fine, let's get this over with.]]\n[[p:Do I really have no other choice?]]",
+      "text": "Julia,neutral::No, miss, this won't require anything invasive.  I just need to perform a few quick inspections to ensure that you don't have any underlying health issues before we move forward.\n\n[[p:Fine, let's get this over with.]]\n[[p:Do I really have no other choice?]]",
       "links": [
         {
           "name": "p:Fine, let's get this over with.",
@@ -84,11 +88,12 @@
         "y": "567"
       },
       "tags": [
-        "injected"
+        "injected",
+        "aguilty"
       ]
     },
     {
-      "text": "Julia::I'm a professional, miss.  So are my colleagues.  Do you think so little of us that you would suggest we are using unsanitized equipment?  \n\nJulia::We are a little short staffed right now, true, but all of the important equipment has been thoroughly sterilized.  \n\nJasper::Just cut the bullshit, you don't care.\n\nJasper::You waded through a sewer on the way here, stop pretending to be anything other than vile and lay down on the asbestos-caked gurney.\n\n[[C->Start]] ",
+      "text": "Julia,worried::I'm a professional, miss.  So are my colleagues.  Do you think so little of us that you would suggest we are using unsanitized equipment?  \n\nJulia,suspiscious::We are a little short staffed right now, true, but all of the important equipment has been thoroughly sterilized.  \n\nJasper,twisted::Just cut the bullshit, you don't care.\n\nJasper,looking_forward::You waded through a sewer on the way here, stop pretending to be anything other than vile and lay down on the asbestos-caked gurney.\n\n[[C->Start]] ",
       "links": [
         {
           "name": "C",
@@ -125,7 +130,7 @@
       ]
     },
     {
-      "text": "Awck!  A sharp stinging pain rings throughout your left arm.  \n\nSharp, piercing, hot.  A needle jab.  \n\n[[p:Hey!  Did you just jab me?]]\n[[p:What the fuck!  You said wouldn't stick anything into me!->p:Hey!  Did you just jab me?]]",
+      "text": "!!!!!!!!!!!!!!!  \n\nA sharp stinging pain rings throughout your left arm.  \n\nSharp, piercing, hot.  A needle jab.  \n\n[[p:Hey!  Did you just jab me?]]\n[[p:What the fuck!  You said wouldn't stick anything into me!->p:Hey!  Did you just jab me?]]",
       "links": [
         {
           "name": "p:Hey!  Did you just jab me?",
@@ -147,7 +152,8 @@
       "tags": [
         "red_bg_darken",
         "stabbed",
-        "heartbeats_fast"
+        "heartbeats_fast",
+        "ashocked"
       ]
     },
     {
@@ -169,7 +175,10 @@
       "position": {
         "x": "1292",
         "y": "3802"
-      }
+      },
+      "tags": [
+        "afuming"
+      ]
     },
     {
       "text": "Julia::Please, miss, there's no need to make a scene.  I only provided a small dose of anti-anxiolytics and muscle relaxants, intramuscular, just to make the procedure a bit easier for you.\n\nJulia::And you aren't being charged anything for it either.  Really I'm doing you a pretty big favor.\n\nShe places her hands back on your collar bones.\n\nJulia::We're finished with the inspection, miss.  We can go on to operations.\n\n[[p:Who cares!  You said this physical would be non-invasive!]]",
@@ -206,7 +215,10 @@
       "position": {
         "x": "1282",
         "y": "4109"
-      }
+      },
+      "tags": [
+        "afuming"
+      ]
     },
     {
       "text": "You lurch forward, off of the gurney, and dust yourself off.\n\n[[p:Take me to the maternity ward.  Now.]]",
@@ -226,7 +238,8 @@
       "tags": [
         "enter",
         "julia_disappear",
-        "None"
+        "None",
+        "remove_subject"
       ]
     },
     {
@@ -275,11 +288,12 @@
         "y": "1391"
       },
       "tags": [
-        "redbg_native"
+        "redbg_native",
+        "aguilty"
       ]
     },
     {
-      "text": "Julia::I'm only 35 myself, miss.\n\nJasper::She looks a bit older to me.  But not much.\n\n[[C->Pressure]] ",
+      "text": "Julia::I'm only 35 myself, miss.\n\nJasper,thinking::She looks a bit older to me.  But not much.\n\n[[C->Pressure]] ",
       "links": [
         {
           "name": "C",
@@ -295,7 +309,7 @@
       }
     },
     {
-      "text": "Julia::Hmm.  Your blood pressure is a little bit higher than it should be at your age.  Still within tolerances though, I suppose.\n\nJasper::You spent too much time drinking and smoking in your early twenties.  Your body is already a shambles.  \n\nJasper::This is why we have dreams about your teeth falling out.\n\n[[p:Good to know.]]\n[[p:I'm sure my freakish, horse-like heart rate will make up for it.->p:Good to know.]]",
+      "text": "Julia::Hmm.  Your blood pressure is a little bit higher than it should be at your age.  Still within tolerances though, I suppose.\n\nJasper,twisted::You spent too much time drinking and smoking in your early twenties.  Your body is already a shambles.  \n\nJasper,sad::This is why we have dreams about your teeth falling out.\n\n[[p:Good to know.]]\n[[p:I'm sure my freakish, horse-like heart rate will make up for it.->p:Good to know.]]",
       "links": [
         {
           "name": "p:Good to know.",
@@ -332,7 +346,7 @@
       }
     },
     {
-      "text": "Julia guides the stethescope chest-piece to your left collarbone and slowly slides it down your chest.  The touch is icy but intimate.\n\nJulia::Your heart rate is a little bit lower than average - are you an athlete?\n\nJasper::You aren't an athlete.  You're just presently deprived of your beloved uppers.  Your heart is slacking off in their administrative absense.\n\n[[p:I try to keep myself in shape, yes.]]\n[[p:No, my heart is just lazy.  And ugly.]]",
+      "text": "Julia guides the stethescope chest-piece to your left collarbone and slowly slides it down your chest.  The touch is icy but intimate.\n\nJulia::Your heart rate is a little bit lower than average - are you an athlete?\n\nJasper,head_tilted::You aren't an athlete.  You're just presently deprived of your beloved uppers.  Your heart is slacking off in their administrative absense.\n\n[[p:I try to keep myself in shape, yes.]]\n[[p:No, my heart is just lazy.  And ugly.]]",
       "links": [
         {
           "name": "p:I try to keep myself in shape, yes.",
@@ -353,7 +367,8 @@
       },
       "tags": [
         "julia_stethescope",
-        "heartbeats_med"
+        "heartbeats_med",
+        "aneutral"
       ]
     },
     {
@@ -407,7 +422,10 @@
       "position": {
         "x": "1296",
         "y": "2149"
-      }
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
       "text": "Julia::Oh, no, I apologize.  You just have an impressive physique.\n\n[[C->Removes]] ",
@@ -529,7 +547,8 @@
         "y": "3046"
       },
       "tags": [
-        "heartbeats_slow"
+        "heartbeats_slow",
+        "aneutral"
       ]
     },
     {
@@ -581,13 +600,16 @@
       }
     },
     {
-      "text": "Julia finally starts to look a little cross with you.\n\nJulia::Fine.  Maternity is back out and just down the hall.  If you're so eager, you lead the way.",
+      "text": "Julia finally starts to look a little cross with you.\n\nJulia,worried::Fine.  Maternity is back out and just down the hall.  If you're so eager, you lead the way.",
       "name": "p:Take me to the maternity ward.  Now.",
       "pid": "31",
       "position": {
         "x": "1401",
         "y": "4417"
-      }
+      },
+      "tags": [
+        "remove_subject"
+      ]
     },
     {
       "text": "Julia::This way Miss.  We need to perform a quick inspection before proceeding.\n\nJulia motions to the doorway on the right.\n\n[[p:Since when do I need an inspection?  You said all I had to do was sign in.]]\n[[p:Which of my body parts needs inspecting?  I just checked and they are all working fine.]]",
@@ -608,10 +630,13 @@
       "position": {
         "x": "1276",
         "y": "46"
-      }
+      },
+      "tags": [
+        "aconfused"
+      ]
     },
     {
-      "text": "Julia::I apologize for failing to mention this, but we also need to put you through a brief preliminary screening.\n\nJulia::Just a few quick scans to make sure you don't have any underlying health problems.  We want to avoid any complications during the operation, you see.\n\nJasper::She thinks you look sickly.  It's the flab on your torso.  She can smell it.\n\nJulia::Now, right this way.\n\n[[C->Start]]",
+      "text": "Julia::I apologize for failing to mention this, but we also need to put you through a brief preliminary screening.\n\nJulia,amused::Just a few quick scans to make sure you don't have any underlying health problems.  We want to avoid any complications during the operation, you see.\n\nJasper,head_tilted::She thinks you look sickly.  It's the flab on your torso.  She can smell it.\n\nJulia,sly::Now, right this way.\n\n[[C->Start]]",
       "links": [
         {
           "name": "C",
@@ -627,7 +652,7 @@
       }
     },
     {
-      "text": "Julia::I can't just take your word for that Miss.  I need to confirm for myself.\n\nJasper::She doesn't trust you.\n\nJulia::Just a few quick scans to make sure you don't have any underlying health problems.  We want to avoid any complications during the operation, you see.\n\nJulia::Now, right this way.\n\n[[C->Start]]",
+      "text": "Julia::I can't just take your word for that Miss.  I need to confirm for myself.\n\nJasper,head_tilted::She doesn't trust you.\n\nJulia,amused::Just a few quick scans to make sure you don't have any underlying health problems.  We want to avoid any complications during the operation, you see.\n\nJulia,sly::Now, right this way.\n\n[[C->Start]]",
       "links": [
         {
           "name": "C",

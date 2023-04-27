@@ -30,7 +30,7 @@
       "name": "That's not what I remember dreaming.",
       "pid": "2",
       "position": {
-        "x": "1179",
+        "x": "1178",
         "y": "906"
       }
     },
@@ -71,7 +71,9 @@
         "y": "350"
       },
       "tags": [
-        "alien_drips"
+        "alien_drips",
+        "add_wiggly",
+        "asad"
       ]
     },
     {
@@ -103,7 +105,10 @@
       "position": {
         "x": "1175",
         "y": "530"
-      }
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
       "text": "Wiggly::I didn't, miss.  But the way you were behaving, well, I could tell something unusual was going on.\n\nWiggly::I was in the overhead ventillation system in the hallway outside of that room, so I tried yelling through the vents, but you couldn't hear me.  You were only a few feet away.\n\nWiggly::I saw you enter that room, so I decided to follow the ventillation shafts there.  And when I opened that grate, you dived in.  \n\nWiggly::You acted like you were trying to get away from something, so I closed up the grate and dragged you this basement.\n\n[[p:What about the woman who drugged me, Julia?  What happened to her?]]",
@@ -159,8 +164,8 @@
       "name": "p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.",
       "pid": "8",
       "position": {
-        "x": "1316",
-        "y": "1052"
+        "x": "1304",
+        "y": "1047"
       }
     },
     {
@@ -180,7 +185,7 @@
       }
     },
     {
-      "text": "Wiggly::Neither do we.  No one does.  \n\nWiggly::But nonetheless I've seen this before.  So have the other Ferrymen.  \n\nWiggly::A client, most often someone with connections here, enters the Cradle.  And then, usually somewhere near the SATURN Core, they start having delusions of a third party.\n\nWiggly::Their presence might be innocuous enough at first - helpful, even.  But soon the client gets sick, and has trouble walking.  Start having hallucinations.\n\nWiggly::No matter how many times I see it happen, it never fails to shake me to my core - seeing a client, incapacited, writhing in terror at someone in the room I cannot even see.\n\nWiggly::If we hadn't been separated I might have noticed the signs earlier.  Not that it would have helped much.\n\nJasper::He's being uncharacteristically blunt, isn't he?  \n\nJasper::You're fucked.\n\n[[You've gone through this before - that means you know what to do?]]",
+      "text": "Wiggly::Neither do we.  No one does.  \n\nWiggly::But nonetheless I've seen this before.  So have the other Ferrymen.  \n\nWiggly::A client, most often someone with connections here, enters the Cradle.  And then, usually somewhere near the SATURN Core, they start having delusions of a third party.\n\nWiggly::Their presence might be innocuous enough at first - helpful, even.  But soon the client gets sick, and has trouble walking.  Start having hallucinations.\n\nWiggly::No matter how many times I see it happen, it never fails to shake me to my core - seeing a client, incapacited, writhing in terror at someone in the room I cannot even see.\n\nWiggly::If we hadn't been separated I might have noticed the signs earlier.  Not that it would have helped much.\n\nJasper,thinking::He's being uncharacteristically blunt, isn't he?  \n\nJasper,sad::We're fucked.\n\n[[You've gone through this before - that means you know what to do?]]",
       "links": [
         {
           "name": "You've gone through this before - that means you know what to do?",
@@ -214,7 +219,10 @@
       "position": {
         "x": "1252",
         "y": "1509"
-      }
+      },
+      "tags": [
+        "aconfused"
+      ]
     },
     {
       "text": "Wiggly::Because I threw water on your face to wake you up.\n\n[[Thanks.  I deserved it.->p:Hey, hey, I hear you.]] \n[[Please never do that again.  Just let me die.->p:Hey, hey, I hear you.]] ",
@@ -272,10 +280,13 @@
       "position": {
         "x": "1248",
         "y": "1659"
-      }
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
-      "text": "Wiggly::Yes.  I'm not going to lie to you, miss.  I've only had one client make it through something like this.  The rest either expired or disappeared.\n\nJasper::\"Expired\" and \"disappeared\" sound like transparent euphemisms for \"died\" and \"had something even worse happen to them,\" respectively.\n\n[[Good to know.->Your other clients - how did they get through it?]]",
+      "text": "Wiggly::Yes.  I'm not going to lie to you, miss.  I've only had one client make it through something like this.  The rest either expired or disappeared.\n\nJasper,thinking::\"Expired\" and \"disappeared\" sound like transparent euphemisms for \"died\" and \"had something even worse happen to them,\" respectively.\n\n[[Good to know.->Your other clients - how did they get through it?]]",
       "links": [
         {
           "name": "Good to know.",
@@ -346,10 +357,13 @@
       "position": {
         "x": "1249",
         "y": "2232"
-      }
+      },
+      "tags": [
+        "asad"
+      ]
     },
     {
-      "text": "Jasper::Correct.  No other choice.\n\n[[C->p:Alright.  I don't see any point in wasting time.]]",
+      "text": "Jasper,looking_forward::Correct.  No other choice.\n\n[[C->p:Alright.  I don't see any point in wasting time.]]",
       "links": [
         {
           "name": "C",
@@ -381,7 +395,7 @@
       }
     },
     {
-      "text": "Wiggly rises from his kneeling position and moves behind your chair, perhaps to help you stand if he feels it necessary.\n\nWiggly::I'll be following you, miss.\n\nJasper::Ready when you are.",
+      "text": "Wiggly rises from his kneeling position and moves behind your chair, perhaps to help you stand if he feels it necessary.\n\nWiggly::I'll be following you, miss.\n\nJasper,head_tilted::Ready when you are.",
       "name": "Rises",
       "pid": "21",
       "position": {

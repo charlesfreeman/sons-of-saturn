@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "You look up to see your Ferryman guide quickly ascending the cistern ladder.  \n\nAt the top is a small hatch.  The hatch has a small aperature cut out on the left side, allowing both light and water to pour through.  \n\n[[C->keys]]",
+      "text": "You look up to see your Ferryman guide quickly ascending the cistern ladder.  \n\nAt the top is a small hatch.  The hatch has a small aperature cut out on the left side, allowing the pale fire of light to pour through.  \n\n[[C->keys]]",
       "links": [
         {
           "name": "C",
@@ -16,10 +16,14 @@
       "position": {
         "x": "866",
         "y": "323"
-      }
+      },
+      "tags": [
+        "add_wiggly",
+        "sly_sewer_intimate"
+      ]
     },
     {
-      "text": "Jasper::That's what you want to say.  But you *can't* say that. \n\n[[Why won't you let me say what I want?  Why can't I run away from all this?]]",
+      "text": "Jasper,head_tilted::You won't say that.  You *can't* say that. \n\n[[Why won't you let me say what I want?  Why can't I run away from all this?]]",
       "links": [
         {
           "name": "Why won't you let me say what I want?  Why can't I run away from all this?",
@@ -27,7 +31,7 @@
           "pid": "4"
         }
       ],
-      "name": "I've changed my mind, I don't want to go.",
+      "name": "I've changed my mind, I don't want to go!",
       "pid": "2",
       "position": {
         "x": "786",
@@ -35,7 +39,7 @@
       }
     },
     {
-      "text": "The words come out of you as if directed by a puppeteer.  Except you are both the marionette and the one pulling the strings.\n\n[[C->Open Hatch]]",
+      "text": "The words come out of you as if directed by a puppeteer.\n\n[[C->Open Hatch]]",
       "links": [
         {
           "name": "C",
@@ -46,12 +50,12 @@
       "name": "p:Alright, open the hatch.",
       "pid": "3",
       "position": {
-        "x": "942",
-        "y": "577"
+        "x": "946",
+        "y": "584"
       }
     },
     {
-      "text": "Jasper::I'm not to blame here.  *You're* the one who won't let you say what you want.  Or rather, what you've decided you \"want.\"  \n\nJasper::Deep in your bones you know the only way out of here is forward.  \nJasper::I'm not going to stop you if you decide to bail.  I *can't* stop you; I'm just some voice in your head of suspicious, possibly bicameral origin.  \n\nJasper::Run wild.  Turn around and run right back to the entrance of these tunnels.  You're pretty in shape right?\n\nJasper::...Well?  I'm waiting.\n\nJasper::See?  You aren't going anywhere but forward.  Go ahead.  Tell the Ferryman you're ready.  You kind of left him hanging, after all.\n\n[[This isn't fair.  I shouldn't have to do this.]]",
+      "text": "Jasper,looking_forward::I'm not to blame here.  *You're* the one who won't let you say what you want.  Or rather, what you've decided you \"want.\"  \n\nJasper::Deep in your bones you know the only way out of here is forward.  \nJasper::I'm not going to stop you if you decide to bail.  I *can't* stop you.  \n\nJasper::Run wild.  Turn around and run right back to the entrance of these tunnels.  You're pretty in shape right?\n\nJasper,head_tilted::...Well?  I'm waiting.\n\n[[This isn't fair.  I shouldn't have to do this.]]",
       "links": [
         {
           "name": "This isn't fair.  I shouldn't have to do this.",
@@ -67,7 +71,7 @@
       }
     },
     {
-      "text": "Jasper::Fine, then.  Go die like a baby sea turtle.  That won't be fair either, but life will still pan out that way.\n\n[[Continue->keys]] ",
+      "text": "Jasper,thinking::Fine, then.  Go die like a baby sea turtle.  That won't be fair either, but life will still pan out that way.\n\n[[Continue->keys]] ",
       "links": [
         {
           "name": "Continue",
@@ -87,7 +91,7 @@
       "name": "Open Hatch",
       "pid": "6",
       "position": {
-        "x": "942",
+        "x": "944",
         "y": "727"
       },
       "tags": [
@@ -95,11 +99,11 @@
       ]
     },
     {
-      "text": "You hear the faint sound of metal grating against metal - he's opening the lock securing the hatch at the top.  His voice reverberates as it echoes down the cylinder.\n\nFerryman::As soon as I open this hatch you'll need to clamber up the ladder as quickly as possible.  I won't be able to keep it open for long.  Ready?\n\n[[I've changed my mind, I don't want to go.]]\n[[p:Alright, open the hatch.]]",
+      "text": "You hear the faint sound of metal grating against metal - he's opening the lock securing the hatch at the top.  His voice reverberates as it echoes down the cylinder.\n\nFerryman::As soon as I open this hatch you'll need to clamber up the ladder as quickly as possible.  I won't be able to keep it open for long.  Ready?\n\n[[I've changed my mind, I don't want to go!]]\n[[p:Alright, open the hatch.]]",
       "links": [
         {
-          "name": "I've changed my mind, I don't want to go.",
-          "link": "I've changed my mind, I don't want to go.",
+          "name": "I've changed my mind, I don't want to go!",
+          "link": "I've changed my mind, I don't want to go!",
           "pid": "2"
         },
         {
@@ -111,7 +115,7 @@
       "name": "keys",
       "pid": "7",
       "position": {
-        "x": "863",
+        "x": "867",
         "y": "460"
       },
       "tags": [

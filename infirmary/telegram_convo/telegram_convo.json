@@ -79,7 +79,7 @@
       ]
     },
     {
-      "text": "Ansel::VERA EXTREMELY PRODUCTIVE JUDGED BY QUANTITATIVE METRICS AND FAMILY WELL CONNECTED WITH ADMIN STOP TERMINATION WOULD BE OPTICAL DISASTER FROM MANY ANGLES STOP ORDER CAME STRAIGHT FROM ROSALIND\n\nJasper::There it is again - that chill.\n\nFerryman::\"Rosalind\" - there it is again, that name.  Do you think they are referring to your Mom?\n\n[[p:Probably.  She was often tasked with overseeing the transfer of staff.  Let's keep going.->Page 5]]",
+      "text": "Ansel::VERA EXTREMELY PRODUCTIVE JUDGED BY QUANTITATIVE METRICS AND FAMILY WELL CONNECTED WITH ADMIN STOP TERMINATION WOULD BE OPTICAL DISASTER FROM MANY ANGLES STOP ORDER CAME STRAIGHT FROM ROSALIND\n\nJasper,head_tilted::There it is again - that chill.\n\nFerryman,surprised::\"Rosalind\" - there it is again, that name.  Do you think they are referring to your Mom?\n\n[[p:Probably.  She was often tasked with overseeing the transfer of staff.  Let's keep going.->Page 5]]",
       "links": [
         {
           "name": "p:Probably.  She was often tasked with overseeing the transfer of staff.  Let's keep going.",
@@ -117,7 +117,7 @@
       ]
     },
     {
-      "text": "Tann::YOU ARE USELESS\n\nYou've reached the end of the stack.\n\nFerryman::Interesting exchange, but it doesn't tell us much about your Mom, other than that she didn't want Vera hanging around the SATURN core.  We should probably keep looking for the rest of Vera's notes, they might prove more illuminating.\n\n[[p:Agreed.  But, I am curious why they were so terrified of Vera.  Makes you wonder what they were trying to hide.]]",
+      "text": "Tann::YOU ARE USELESS\n\nYou've reached the end of the stack.\n\nFerryman,looking_to_side::Interesting exchange, but it doesn't tell us much about your Mom, other than that she didn't want Vera hanging around the SATURN core.  \n\nFerryman,neutral::We should probably keep looking for the rest of Vera's notes, they might prove more illuminating.\n\n[[p:Agreed.  But, I am curious why they were so terrified of Vera.  Makes you wonder what they were trying to hide.]]",
       "links": [
         {
           "name": "p:Agreed.  But, I am curious why they were so terrified of Vera.  Makes you wonder what they were trying to hide.",
@@ -168,7 +168,7 @@
       }
     },
     {
-      "text": "Ferryman::Yeah, I don't know.  Couldn't be anything too nefarious if they were willing to just leave telegrams like this in unsecured office drawers - if it was something serious they'd be more cautious.\n\nJasper::He seems eager to move on from this train of thought.  I encourage indulging him.\n\n[[p:Alright.  Let's go find the rest of Vera's diary entries.]]",
+      "text": "Ferryman,looking_to_side::Yeah, I don't know.  Couldn't be anything too nefarious if they were willing to just leave telegrams like this in unsecured office drawers - if it was something serious they'd be more cautious.\n\nJasper,twisted::He seems eager to move on from this train of thought.  I encourage indulging him.\n\n[[p:Alright.  Let's go find the rest of Vera's diary entries.]]",
       "links": [
         {
           "name": "p:Alright.  Let's go find the rest of Vera's diary entries.",

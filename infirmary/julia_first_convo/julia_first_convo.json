@@ -38,7 +38,7 @@
       }
     },
     {
-      "text": "Frail Woman::Miss, I have a key.  All infirmary employees do.  \n\nFrail Woman::And you should have had to sign in before you were allowed here, so I'm a little alarmed you slipped through without anyone noticing.  \n\nFrail Woman::I'll have to have a few words with whoever is on shift about this oversight.\n\nJasper::\"On shift?\"  No one has worked here in decades...\n\n[[Continue->Signed In]] ",
+      "text": "Frail Woman::Miss, I have a key.  All infirmary employees do.  \n\nFrail Woman::And you should have had to sign in before you were allowed here, so I'm a little alarmed you slipped through without anyone noticing.  \n\nFrail Woman::I'll have to have a few words with whoever is on shift about this oversight.\n\nJasper,thinking::\"On shift?\"  No one has worked here in decades...\n\n[[Continue->Signed In]] ",
       "links": [
         {
           "name": "Continue",
@@ -54,7 +54,7 @@
       }
     },
     {
-      "text": "Frail Woman::In any case, we've really got to get you signed in.  You should have been primed on how to enter discretely.  Follow me to the nurses station, we'll quietly get you recorded and we can move into the operations ward.\n\n[[You want me to sign in?  Look at the state of this place!]]\n[[p:Hold on, who are you?]]",
+      "text": "Frail Woman::In any case, we've really got to get you signed in.  You should have been primed on how to enter discretely.  \n\nFrail Woman::Follow me to the nurses station, we'll quietly get you recorded and we can move into the operations ward.\n\n[[You want me to sign in?  Look at the state of this place!]]\n[[p:Hold on, who are you?]]",
       "links": [
         {
           "name": "You want me to sign in?  Look at the state of this place!",
@@ -72,10 +72,13 @@
       "position": {
         "x": "1178",
         "y": "915"
-      }
+      },
+      "tags": [
+        "aconfused"
+      ]
     },
     {
-      "text": "Frail Woman::You might have come in for an under the table operation, but we still need to go through the motions of signing you in and recording your visit.  \n\nFrail Woman::Wouldn't it be odd if countless unaccompanied women came in and out at all hours with no proper documentation of their visits?\n\nJasper::I get it now.  She thinks you're here for something seedy.  Something \"under the table.\"\n\nJasper::She's right about that, but she doesn't know why we're really here.  What does she think is going on?\n\n[[Continue->Signed In]] ",
+      "text": "Frail Woman::You might have come in for an under the table operation, but we still need to go through the motions of signing you in and recording your visit.  \n\nFrail Woman::Wouldn't it be odd if countless unaccompanied women came in and out at all hours with no proper documentation of their visits?\n\nJasper,thinking::I get it now.  She thinks you're here for something seedy.  Something \"under the table.\"\n\nJasper,sad::She's right about that, but she doesn't know why we're really here.  What does she think is going on?\n\n[[Continue->Signed In]] ",
       "links": [
         {
           "name": "Continue",
@@ -119,10 +122,13 @@
       "position": {
         "x": "1253",
         "y": "1065"
-      }
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
-      "text": "Julia::That's ridiculous.\n\nHer dismissal of the suggestion is visible.  She immediately twitches her head quickly to the left, physically signalling her rejection of the notion.\n\nJulia::Look, we're doing the best we can in light of the recent expansion.  Our budget wasn't inflated enough to keep up.  I assure you though, you will still receive top notch care, for both official and unofficial matters. \n\nJulia::Now let's go fill out your record.\n\nJasper::An excess of active patients doesn't seem to be the issue here.  But, she's eager to move on from this train of thought.\n\n[[Continue->p:Hold on, who are you?]] ",
+      "text": "Julia::That's ridiculous.\n\nHer dismissal of the suggestion is visible.  She immediately twitches her head quickly to the left, physically signalling her rejection of the notion.\n\nJulia::Look, we're doing the best we can in light of the recent expansion.  Our budget wasn't inflated enough to keep up.  I assure you though, you will still receive top notch care, for both official and unofficial matters. \n\nJulia::Now let's go fill out your record.\n\nJasper,twisted::An excess of active patients doesn't seem to be the issue here.\n\n[[Continue->p:Hold on, who are you?]] ",
       "links": [
         {
           "name": "Continue",
@@ -154,7 +160,7 @@
       }
     },
     {
-      "text": "Julia::Look, I expect you have some anxieties going into this, but we really cannot discuss them here.  We'll talk about it in private, later, after sign in.\n\nJasper::She expects us to know what she's talking about, so just go along with it for now.  \n\n[[Continue->p:Hold on, who are you?]] ",
+      "text": "Julia::Look, I expect you have some anxieties going into this, but we really cannot discuss them here.  We'll talk about it in private, later, after sign in.\n\nJasper,twisted::She expects us to know what she's talking about, so just go along with it for now.  \n\n[[Continue->p:Hold on, who are you?]] ",
       "links": [
         {
           "name": "Continue",
@@ -170,7 +176,7 @@
       }
     },
     {
-      "text": "Frail Woman::No, you didn't.  I would have gotten a few alert taps through the telegrammatic lines, and I would have prepared to meet you in the inspection room instead of here.  \n\nFrail Woman::I don't typically introduce myself to patients while washing stained rags.\n\nJasper::For what it's worth, those rags look pretty clean.  \n\n[[Continue->Signed In]] ",
+      "text": "Frail Woman::No, you didn't.  I would have gotten a few alert taps through the telegrammatic lines, and prepared to meet you in the inspection room instead of here.  \n\nFrail Woman::I don't typically introduce myself to patients while washing stained rags.\n\nJasper,surprised::For what it's worth, those rags look pretty clean.  \n\n[[Continue->Signed In]] ",
       "links": [
         {
           "name": "Continue",
@@ -209,10 +215,13 @@
       "position": {
         "x": "1514",
         "y": "1222"
-      }
+      },
+      "tags": [
+        "aneutral"
+      ]
     },
     {
-      "text": "Julia::That's absurd.  The Maternity ward has only been in operation for 19 years.  You look a little older than that to me.\n\nJasper::See?  You look old.\n\nJasper::I keep telling you to wear more sunblock and smoke less but you won't listen.\n\nJasper::She probably thinks you're ugly too.\n\n[[p:Cut it out!]]\n[[p:I'm not ugly, you're ugly!->p:Cut it out!]]\n",
+      "text": "Julia::That's absurd.  The Maternity ward has only been in operation for 19 years.  You look a little older than that to me.\n\nJasper,looking_forward::See?  You look old.\n\nJasper,thinking::I keep telling you to wear more sunblock and smoke less but you won't listen.\n\nJasper,sad::She probably thinks you're ugly too.\n\n[[p:Cut it out!]]\n[[p:I'm not ugly, you're ugly!->p:Cut it out!]]\n",
       "links": [
         {
           "name": "p:Cut it out!",
@@ -233,7 +242,7 @@
       }
     },
     {
-      "text": "Julia::...Let's get you signed in.  I'll need to check your patient record but I suspect you might need a few refills, in addition to our other services.\n\nJasper::\"Refills.\"  Medication refills.  She's making fun of you.\n\n[[Continue->This will get me closer]] ",
+      "text": "Julia::...Let's get you signed in.  I'll need to check your patient record but I suspect you might need a few refills, in addition to our other services.\n\nJasper,twisted::\"Refills.\"  Medication refills.  She's making fun of you.\n\n[[Continue->This will get me closer]] ",
       "links": [
         {
           "name": "Continue",
@@ -249,7 +258,7 @@
       }
     },
     {
-      "text": "Julia::I...understand.\n\nJulia::I'll...I'll get you into the Maternity Ward.  But we're going to have to go through the front desk, no way around it.\n\nJasper::I think she wants to help, but also wants to keep the rule bending to a minimum.  Though I'm not sure who enforces the \"rules\" these days.\n\n[[Continue->This will get me closer]] ",
+      "text": "Julia::I...understand.\n\nJulia::I'll...I'll get you into the Maternity Ward.  But we're going to have to go through the front desk, no way around it.\n\nJasper,head_tilted::I think she wants to help, but also wants to keep the rule bending to a minimum.  Though I'm not sure who enforces the \"rules\" these days.\n\n[[Continue->This will get me closer]] ",
       "links": [
         {
           "name": "Continue",
@@ -265,7 +274,7 @@
       }
     },
     {
-      "text": "Jasper::Look, something is obviously wrong with Julia.  She seems to think this hospital is still operational.  \n\nJasper::But if you just go along with her for now, maybe she'll actually get us to the Maternity Ward.  She acts like she knows her way around at least. \n\nJulia wrings the last drops of water off of her hands.  She subtly turns to face the doorframe, motioning for you to follow her.",
+      "text": "Jasper,thinking::Look, something is obviously wrong with Julia.  She seems to think this hospital is still operational.  \n\nJasper,looking_forward::But if you just go along with her for now, maybe she'll actually get us to the Maternity Ward.  She acts like she knows her way around at least. \n\nJulia wrings the last drops of water off of her hands.  She subtly turns to face the doorframe, motioning for you to follow her.",
       "name": "This will get me closer",
       "pid": "15",
       "position": {
@@ -274,7 +283,7 @@
       }
     },
     {
-      "text": "Julia::I'm sorry, miss? \n\nJasper::Zip it, we'll hash this out later.\n\n[[Continue->This will get me closer]]",
+      "text": "Julia::I'm sorry, miss? \n\nJasper,looking_forward::Zip it, we'll hash this out later.\n\n[[Continue->This will get me closer]]",
       "links": [
         {
           "name": "Continue",
@@ -290,7 +299,7 @@
       }
     },
     {
-      "text": "The woman rises from the pail to address you.\n\nFrail Woman::Excuse me, miss.  You shouldn't be here.\n\nFrail Woman::You should have checked in at the front desk, every patient should before being allowed past the foyer.\n\nFrail Woman::I know some of our services are more discreet in nature, but we still need to go through the proper channels and have you signed in.\n\nFrail Woman::How did you even get here?  You shouldn't have made it past the front desk without security being alerted.\n\nJasper::Why does she care which entrance we came through?  This place has been abandoned for twenty years.\n\nFrail Woman::Well?  Miss, I really need to know.\n\n[[p:I came in through the sewer.]]\n[[p:(Lie) I did come in past the front desk.]]\n[[p:How did *you* get through the front desk, huh?]]",
+      "text": "The woman rises from the pail to address you.\n\nFrail Woman::Excuse me, miss.  You shouldn't be here.\n\nFrail Woman::You should have checked in at the front desk, every patient should before being allowed past the foyer.\n\nFrail Woman::I know some of our services are more discreet in nature, but we still need to go through the proper channels and have you signed in.\n\nFrail Woman::How did you even get here?  You shouldn't have made it past the front desk without security being alerted.\n\nJasper,thinking::Why does she care which entrance we came through?  This place has been abandoned for twenty years.\n\nFrail Woman::Well?  Miss, I really need to know.\n\n[[p:I came in through the sewer.]]\n[[p:(Lie) I did come in past the front desk.]]\n[[p:How did *you* get through the front desk, huh?]]",
       "links": [
         {
           "name": "p:I came in through the sewer.",
@@ -316,11 +325,12 @@
       },
       "tags": [
         "stands",
-        "looping_phoebe"
+        "looping_phoebe",
+        "add_julia"
       ]
     },
     {
-      "text": "She glares at you, intensely.  Her expression reveals her view of you, painfully clearly: You are an intrusion, a foriegn body.\n\nJasper::Who is this?  There shouldn't be anyone else here.\n\nJasper::Let's carefully introduce ourselves.  Be prepared to run if you sense a threat.\n\n[[C->Rises]]",
+      "text": "She glares at you, intensely.  Her expression reveals her view of you, painfully clearly: You are an intrusion, a foriegn body.\n\nJasper,head_tilted::Who is this?  There shouldn't be anyone else here.\n\nJasper,looking_forward::Let's carefully introduce ourselves.  Be prepared to run if you sense a threat.\n\n[[C->Rises]]",
       "links": [
         {
           "name": "C",

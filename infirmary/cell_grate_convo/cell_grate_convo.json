@@ -8,7 +8,7 @@
         {
           "name": "Continue",
           "link": "incidents",
-          "pid": "34"
+          "pid": "32"
         }
       ],
       "name": "p:Why did you slam the door?",
@@ -24,7 +24,7 @@
         {
           "name": "Continue",
           "link": "incidents",
-          "pid": "34"
+          "pid": "32"
         }
       ],
       "name": "p:Did the door just slam on its own?",
@@ -46,16 +46,16 @@
       "name": "p:(Action) Kick the door.",
       "pid": "3",
       "position": {
-        "x": "624",
-        "y": "1203"
+        "x": "629",
+        "y": "1353"
       }
     },
     {
-      "text": "Ferryman::Yes, \"Oww.\"  The Cradle doesn't respond to blunt force trauma like that.\n\n[[p:That sucks.  Blunt force trauma is my specialty]]\n[[p:What will it respond to?]]",
+      "text": "Ferryman::Yes, \"Oww.\"  The Cradle doesn't respond to blunt force trauma like that.\n\n[[p:That sucks.  Blunt force trauma is my specialty.]]\n[[p:What will it respond to?]]",
       "links": [
         {
-          "name": "p:That sucks.  Blunt force trauma is my specialty",
-          "link": "p:That sucks.  Blunt force trauma is my specialty",
+          "name": "p:That sucks.  Blunt force trauma is my specialty.",
+          "link": "p:That sucks.  Blunt force trauma is my specialty.",
           "pid": "5"
         },
         {
@@ -69,10 +69,13 @@
       "position": {
         "x": "420",
         "y": "1359"
-      }
+      },
+      "tags": [
+        "afuming"
+      ]
     },
     {
-      "text": "Ferryman::Indeed, you appear to have an impressive physique.  I was strong like you, when I was younger.\n\nJasper::\"When I was younger?\"  He can't be much older than you.\n\nFerryman::But, that's besides the point.  A wrecking ball careening at full speed wouldn't so much as dent this door.\n\n[[Continue->Door won't move]]",
+      "text": "Ferryman::Indeed, you appear to have an impressive physique.  I was strong like you, when I was younger.\n\nJasper,thinking::\"When I was younger?\"  He can't be much older than you.\n\nFerryman::But, that's besides the point.  A wrecking ball careening at full speed wouldn't so much as dent this door.\n\n[[Continue->Door won't move]]",
       "links": [
         {
           "name": "Continue",
@@ -80,7 +83,7 @@
           "pid": "7"
         }
       ],
-      "name": "p:That sucks.  Blunt force trauma is my specialty",
+      "name": "p:That sucks.  Blunt force trauma is my specialty.",
       "pid": "5",
       "position": {
         "x": "343",
@@ -125,7 +128,7 @@
       }
     },
     {
-      "text": "You reassume your primordial stump-like form.  Once again your heel-cobra is unleashed upon the door, your boot landing with a shocking thud with tremendous reverberations arising from your strike.\n\nOther than the shock waves though, nothing happens.  \n\nThe Ferryman watches you with his characteristic infinite patience.  But he understands what you are doing is futile.\n\nFerryman::M'am, I'm very sure that isn't going to get us anywhere.  Of course, you are free to keep trying, but if I were you I would focus on preserving my energies.\n\nJasper::He's being polite.  This is idiotic.\n\n[[Continue->Door won't move]] ",
+      "text": "You reassume your primordial stump-like form.  Once again your heel-cobra is unleashed upon the door, your boot landing with a shocking thud with tremendous reverberations arising from your strike.\n\nOther than the shock waves though, nothing happens.  \n\nThe Ferryman watches you with his characteristic infinite patience.  But he understands what you are doing is futile.\n\nFerryman::M'am, I'm very sure that isn't going to get us anywhere.  Of course, you are free to keep trying, but if I were you I would focus on preserving my energies.\n\nJasper,head_tilted::He's being polite.  This is idiotic.\n\n[[Continue->Door won't move]] ",
       "links": [
         {
           "name": "Continue",
@@ -146,17 +149,17 @@
         {
           "name": "How are you planning to get into the utility tunnel network?  You're trapped in an isolation cell.",
           "link": "How are you planning to get into the utility tunnel network?  You're trapped in an isolation cell.",
-          "pid": "24"
+          "pid": "22"
         },
         {
           "name": "Were you one of the children tasked with maintaining the steam tunnels?",
           "link": "Were you one of the children tasked with maintaining the steam tunnels?",
-          "pid": "14"
+          "pid": "12"
         },
         {
           "name": "1:You spent your entire childhood crawling around steam and sewer pipes?",
           "link": "1:You spent your entire childhood crawling around steam and sewer pipes?",
-          "pid": "15"
+          "pid": "13"
         },
         {
           "name": "How am I supposed to navigate this place?",
@@ -171,7 +174,7 @@
         {
           "name": "p:Would you mind if I started calling you Wiggly?",
           "link": "p:Would you mind if I started calling you Wiggly?",
-          "pid": "20"
+          "pid": "18"
         }
       ],
       "name": "p:So what are we going to do?",
@@ -182,7 +185,7 @@
       }
     },
     {
-      "text": "Ferryman::Don't worry.  This is one of the safest parts of The Cradle.  Even if you do get lost you won't run into much trouble.\n\nFerryman::And you'll have to try pretty hard to get lost.  The infirmary has a pretty simple layout.  \n\nFerryman::It looks like a scorpion from the top of the dome.  Right now we're in one of the pincers.  Just try to find your way to the stinger, and I'll meet you there.\n\n[[Continue->p:So what are we going to do?]] \n",
+      "text": "Ferryman::Don't worry.  This is one of the safer parts of The Cradle.  You aren't likely to run into much serious trouble, so long as you stay out of the basement.\n\nFerryman::And you'll have to try pretty hard to get lost.  The infirmary has a pretty simple layout.  \n\nFerryman::It looks like a scorpion from the top of the dome.  Right now we're in one of the pincers.  Just try to find your way to the stinger, and I'll meet you there.\n\n[[Continue->p:So what are we going to do?]] \n",
       "links": [
         {
           "name": "Continue",
@@ -214,46 +217,6 @@
       }
     },
     {
-      "text": "The Ferryman approaches a door on the right side of the end of the hallway.\n\nFerryman::These are some of the old isolation cells.  They were used for document storage after falling into disuse, so we should check them as well.\n\nHe steps through the doorframe on the right.\n\n[[Continue->Door Slam]]",
-      "links": [
-        {
-          "name": "Continue",
-          "link": "Door Slam",
-          "pid": "13"
-        }
-      ],
-      "name": "Untitled Passage",
-      "pid": "12",
-      "position": {
-        "x": "531",
-        "y": "607"
-      }
-    },
-    {
-      "text": "As soon as the Ferryman enters the room, you hear the door slam shut behind him.  You hear him readjust his feet in response.\n\n[[p:Why did you slam the door?]]\n[[p:Did the door just slam on its own?]]",
-      "links": [
-        {
-          "name": "p:Why did you slam the door?",
-          "link": "p:Why did you slam the door?",
-          "pid": "1"
-        },
-        {
-          "name": "p:Did the door just slam on its own?",
-          "link": "p:Did the door just slam on its own?",
-          "pid": "2"
-        }
-      ],
-      "name": "Door Slam",
-      "pid": "13",
-      "position": {
-        "x": "526",
-        "y": "750"
-      },
-      "tags": [
-        "Slam"
-      ]
-    },
-    {
       "text": "Ferryman::Yes, along with the telegrammatic communication tunnels.  I also spent shifts in the sewer, drainage, and transit systems as well, though less frequently.\n\nFerryman::I love it down there.  Honestly, I don't really feel comfortable anywhere else.\n\n[[Continue->p:So what are we going to do?]] ",
       "links": [
         {
@@ -263,7 +226,7 @@
         }
       ],
       "name": "Were you one of the children tasked with maintaining the steam tunnels?",
-      "pid": "14",
+      "pid": "12",
       "position": {
         "x": "152",
         "y": "1979"
@@ -275,20 +238,23 @@
         {
           "name": "p:And that's not weird to you?",
           "link": "p:And that's not weird to you?",
-          "pid": "16"
+          "pid": "14"
         },
         {
           "name": "p:That's child labour.  Child abuse.",
           "link": "p:That's child labour.  Child abuse.",
-          "pid": "17"
+          "pid": "15"
         }
       ],
       "name": "1:You spent your entire childhood crawling around steam and sewer pipes?",
-      "pid": "15",
+      "pid": "13",
       "position": {
         "x": "555",
         "y": "1975"
-      }
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
       "text": "Ferryman::Nope.\n\nFerryman::Well...\n\nFerryman::I mean, this is all I've ever known, really.  That's why I like working with clients like you - outsiders.  \n\nFerryman::I enjoy hearing about the world outside of the Cradle.  Learning what other people's lives are like.\n\n[[p:You had to spend your entire childhood doing menial labour for this failed city.  You should be pissed!]]",
@@ -296,11 +262,11 @@
         {
           "name": "p:You had to spend your entire childhood doing menial labour for this failed city.  You should be pissed!",
           "link": "p:You had to spend your entire childhood doing menial labour for this failed city.  You should be pissed!",
-          "pid": "18"
+          "pid": "16"
         }
       ],
       "name": "p:And that's not weird to you?",
-      "pid": "16",
+      "pid": "14",
       "position": {
         "x": "472",
         "y": "2112"
@@ -312,11 +278,11 @@
         {
           "name": "That doesn't piss you off?",
           "link": "p:You had to spend your entire childhood doing menial labour for this failed city.  You should be pissed!",
-          "pid": "18"
+          "pid": "16"
         }
       ],
       "name": "p:That's child labour.  Child abuse.",
-      "pid": "17",
+      "pid": "15",
       "position": {
         "x": "622",
         "y": "2112"
@@ -328,11 +294,11 @@
         {
           "name": "p:There is so much you could have done with your life.  They denied you that.",
           "link": "p:There is so much you could have done with your life.  They denied you that.",
-          "pid": "19"
+          "pid": "17"
         }
       ],
       "name": "p:You had to spend your entire childhood doing menial labour for this failed city.  You should be pissed!",
-      "pid": "18",
+      "pid": "16",
       "position": {
         "x": "515",
         "y": "2262"
@@ -348,7 +314,7 @@
         }
       ],
       "name": "p:There is so much you could have done with your life.  They denied you that.",
-      "pid": "19",
+      "pid": "17",
       "position": {
         "x": "514",
         "y": "2412"
@@ -360,20 +326,23 @@
         {
           "name": "p:Paul is a pretty solid name.",
           "link": "p:Paul is a pretty solid name.",
-          "pid": "21"
+          "pid": "19"
         },
         {
           "name": "p:Wiggly is definitely more suiting.",
           "link": "p:Wiggly is definitely more suiting.",
-          "pid": "22"
+          "pid": "20"
         }
       ],
       "name": "p:Would you mind if I started calling you Wiggly?",
-      "pid": "20",
+      "pid": "18",
       "position": {
         "x": "852",
         "y": "1979"
-      }
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
       "text": "Wiggly::Too solid if you ask me.  Can't imagine someone named Paul writhing through a storm drain for fun can you?\n\n[[Continue->Get Going]]",
@@ -381,11 +350,11 @@
         {
           "name": "Continue",
           "link": "Get Going",
-          "pid": "23"
+          "pid": "21"
         }
       ],
       "name": "p:Paul is a pretty solid name.",
-      "pid": "21",
+      "pid": "19",
       "position": {
         "x": "780",
         "y": "2127"
@@ -397,11 +366,11 @@
         {
           "name": "Continue",
           "link": "Get Going",
-          "pid": "23"
+          "pid": "21"
         }
       ],
       "name": "p:Wiggly is definitely more suiting.",
-      "pid": "22",
+      "pid": "20",
       "position": {
         "x": "927",
         "y": "2129"
@@ -413,20 +382,23 @@
         {
           "name": "You know, seeing your face behind this grate makes you look like a prisoner in a jail cell.",
           "link": "You know, seeing your face behind this grate makes you look like a prisoner in a jail cell.",
-          "pid": "38"
+          "pid": "36"
         },
         {
           "name": "p:Alright, see you on the other side.",
           "link": "p:Alright, see you on the other side.",
-          "pid": "26"
+          "pid": "24"
         }
       ],
       "name": "Get Going",
-      "pid": "23",
+      "pid": "21",
       "position": {
         "x": "848",
         "y": "2279"
-      }
+      },
+      "tags": [
+        "auncertain"
+      ]
     },
     {
       "text": "Ferryman::See that waste chute in the corner?\n\nFerryman::I'll climb up that.  \n\n[[C->utility]]",
@@ -434,11 +406,11 @@
         {
           "name": "C",
           "link": "utility",
-          "pid": "41"
+          "pid": "39"
         }
       ],
       "name": "How are you planning to get into the utility tunnel network?  You're trapped in an isolation cell.",
-      "pid": "24",
+      "pid": "22",
       "position": {
         "x": "287",
         "y": "1973"
@@ -457,7 +429,7 @@
         }
       ],
       "name": "p:You mean to say you can fit into that?",
-      "pid": "25",
+      "pid": "23",
       "position": {
         "x": "244",
         "y": "2308"
@@ -469,7 +441,7 @@
     {
       "text": "Wiggly nods, does a heel turn, and disappears down the chute, sliding down it with a speed you'd never expect.  \n\nJasper::Did you see how fast he wiggled through there?  It's like he's covered in a layer of motor oil.\n\nJasper::Anyway, we're on our own now.  Let's head to the Maternity Ward.",
       "name": "p:Alright, see you on the other side.",
-      "pid": "26",
+      "pid": "24",
       "position": {
         "x": "925",
         "y": "2429"
@@ -484,14 +456,14 @@
         {
           "name": "p:Is someone in there?  It sounds like a woman crying.",
           "link": "p:Is someone in there?  It sounds like a woman crying.",
-          "pid": "28"
+          "pid": "26"
         }
       ],
       "name": "Untitled Passage 1",
-      "pid": "27",
+      "pid": "25",
       "position": {
-        "x": "921",
-        "y": "41"
+        "x": "528",
+        "y": "32"
       },
       "tags": [
         "WomanCrying"
@@ -503,14 +475,14 @@
         {
           "name": "C",
           "link": "Slink",
-          "pid": "29"
+          "pid": "27"
         }
       ],
       "name": "p:Is someone in there?  It sounds like a woman crying.",
-      "pid": "28",
+      "pid": "26",
       "position": {
-        "x": "918",
-        "y": "168"
+        "x": "529",
+        "y": "155"
       }
     },
     {
@@ -519,18 +491,19 @@
         {
           "name": "C",
           "link": "Peer",
-          "pid": "30"
+          "pid": "28"
         }
       ],
       "name": "Slink",
-      "pid": "29",
+      "pid": "27",
       "position": {
-        "x": "919",
-        "y": "301"
+        "x": "531",
+        "y": "288"
       },
       "tags": [
         "slink",
-        "aquestioning"
+        "aquestioning",
+        "add_wiggly"
       ]
     },
     {
@@ -539,43 +512,44 @@
         {
           "name": "C",
           "link": "Enter",
-          "pid": "31"
+          "pid": "29"
         }
       ],
       "name": "Peer",
-      "pid": "30",
+      "pid": "28",
       "position": {
-        "x": "923",
-        "y": "445"
+        "x": "534",
+        "y": "417"
       },
       "tags": [
         "peer"
       ]
     },
     {
-      "text": "After taking a look, the Ferryman rounds the corner and enters the room.\n\nSeveral moments pass in silence.\n\nJasper::Say something!\n\n[[p:See anything?->p:Hey champ.  Everything going alright in there?]]\n[[p:Hey champ.  Everything going alright in there?]]",
+      "text": "After taking a look, the Ferryman rounds the corner and enters the room.\n\nSeveral moments pass in silence.\n\nJasper,twisted::Say something!\n\n[[p:See anything?->p:Hey champ.  Everything going alright in there?]]\n[[p:Hey champ.  Everything going alright in there?]]",
       "links": [
         {
           "name": "p:See anything?",
           "link": "p:Hey champ.  Everything going alright in there?",
-          "pid": "32"
+          "pid": "30"
         },
         {
           "name": "p:Hey champ.  Everything going alright in there?",
           "link": "p:Hey champ.  Everything going alright in there?",
-          "pid": "32"
+          "pid": "30"
         }
       ],
       "name": "Enter",
-      "pid": "31",
+      "pid": "29",
       "position": {
-        "x": "921",
-        "y": "567"
+        "x": "534",
+        "y": "541"
       },
       "tags": [
         "enter",
         "auncertain",
-        "stop_soundscape"
+        "stop_soundscape",
+        "add_wiggly"
       ]
     },
     {
@@ -584,14 +558,14 @@
         {
           "name": "C",
           "link": "look",
-          "pid": "33"
+          "pid": "31"
         }
       ],
       "name": "p:Hey champ.  Everything going alright in there?",
-      "pid": "32",
+      "pid": "30",
       "position": {
-        "x": "912",
-        "y": "707"
+        "x": "530",
+        "y": "664"
       },
       "tags": [
         "slam"
@@ -612,13 +586,14 @@
         }
       ],
       "name": "look",
-      "pid": "33",
+      "pid": "31",
       "position": {
-        "x": "741",
-        "y": "772"
+        "x": "526",
+        "y": "790"
       },
       "tags": [
-        "look"
+        "look",
+        "aconfused"
       ]
     },
     {
@@ -627,11 +602,11 @@
         {
           "name": "p:Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who've been dead for twenty years...",
           "link": "p:Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who've been dead for twenty years...",
-          "pid": "35"
+          "pid": "33"
         }
       ],
       "name": "incidents",
-      "pid": "34",
+      "pid": "32",
       "position": {
         "x": "533",
         "y": "1037"
@@ -643,34 +618,34 @@
         {
           "name": "C",
           "link": "Shake",
-          "pid": "40"
+          "pid": "38"
         }
       ],
       "name": "p:Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who've been dead for twenty years...",
-      "pid": "35",
+      "pid": "33",
       "position": {
         "x": "688",
         "y": "1047"
       }
     },
     {
-      "text": "You grab the exterior handle and shake the door, but nothing gives.  The barrier refuses to move even a millimeter.  \n\nYou examine the locking mechanism.  The exposed keyhole moderates the extension and retraction of a bolt that restrains the right hand side of the door.  \n\nYou peer into the crevice separating the door from its frame.  The gap is wide enough for you to see: no bolts are extended.  The door is unlocked.\n\n[[p:This door isn't even locked.  Why won't it open?]]\n",
+      "text": "You grab the exterior handle and shake the door, but nothing gives.  The barrier refuses to move even a millimeter.  \n\nYou examine the locking mechanism.  The exposed keyhole moderates the extension and retraction of a bolt that restrains the right hand side of the door.  \n\nYou peer into the crevice separating the door from its frame.  The gap is wide enough for you to see: no bolts are extended.  The door is unlocked.\n\n[[p:This door isn't even locked!  Why won't it open?]]\n",
       "links": [
         {
-          "name": "p:This door isn't even locked.  Why won't it open?",
-          "link": "p:This door isn't even locked.  Why won't it open?",
-          "pid": "37"
+          "name": "p:This door isn't even locked!  Why won't it open?",
+          "link": "p:This door isn't even locked!  Why won't it open?",
+          "pid": "35"
         }
       ],
       "name": "p:(Action) try to open the door.",
-      "pid": "36",
+      "pid": "34",
       "position": {
         "x": "1046",
         "y": "1223"
       }
     },
     {
-      "text": "Ferryman::The door isn't \"locked\", it's completely sealed.  Parts of the Cradle sometimes come to life, confusing and disorienting those who breach its envelope.  \n\nFerryman::This isn't a simple locked door.  This is a trap, one I fell for.\n\nFerryman::Remember the crying woman?  That was bait, to lure one or both of us into this cell.  Look around - not a soul in sight.  Once I had slid in, the door sealed right behind me.\n\nFerryman::Really, I should have known better than to fall for a trick like this.  But I can't just bring myself to leave sounds like that uninvestigated.\n\nFerryman::Encountering resistance this early on is unusual, miss.  Do you have some history in the Cradle, or with this building, I should know about?.\n\nJasper::He's talking too much.  Do something.\n\n[[p:(Action) Kick the door.]]",
+      "text": "Ferryman::The door isn't \"locked,\" it's completely sealed.  Parts of the Cradle sometimes come to life, confusing and disorienting those who breach its envelope.  \n\nFerryman::This isn't a simple locked door.  This is a trap, one I fell for.\n\nFerryman::Remember the crying woman?  That was bait, to lure one or both of us into this cell.  Look around - not a soul in sight.  Once I had slid in, the door sealed right behind me.\n\nFerryman::Really, I should have known better than to fall for a trick like this.  But I can't just bring myself to leave sounds like that uninvestigated.\n\nFerryman::Encountering resistance this early on is unusual, miss.  Do you have some history in the Cradle, or with this building, I should know about?.\n\nJasper::He's talking too much.  Do something.\n\n[[p:(Action) Kick the door.]]",
       "links": [
         {
           "name": "p:(Action) Kick the door.",
@@ -678,11 +653,11 @@
           "pid": "3"
         }
       ],
-      "name": "p:This door isn't even locked.  Why won't it open?",
-      "pid": "37",
+      "name": "p:This door isn't even locked!  Why won't it open?",
+      "pid": "35",
       "position": {
-        "x": "806",
-        "y": "1432"
+        "x": "798",
+        "y": "1390"
       }
     },
     {
@@ -691,11 +666,11 @@
         {
           "name": "C",
           "link": "Get Going",
-          "pid": "23"
+          "pid": "21"
         }
       ],
       "name": "You know, seeing your face behind this grate makes you look like a prisoner in a jail cell.",
-      "pid": "38",
+      "pid": "36",
       "position": {
         "x": "722",
         "y": "2432"
@@ -707,11 +682,11 @@
         {
           "name": "I guess that explains the basement morgue as well.",
           "link": "Shake",
-          "pid": "40"
+          "pid": "38"
         }
       ],
       "name": "You said this was the administration building - Why are there isolation cells in the basement?",
-      "pid": "39",
+      "pid": "37",
       "position": {
         "x": "874",
         "y": "1221"
@@ -723,20 +698,23 @@
         {
           "name": "You said this was the administration building - Why are there isolation cells in the basement?",
           "link": "You said this was the administration building - Why are there isolation cells in the basement?",
-          "pid": "39"
+          "pid": "37"
         },
         {
           "name": "p:(Action) try to open the door.",
           "link": "p:(Action) try to open the door.",
-          "pid": "36"
+          "pid": "34"
         }
       ],
       "name": "Shake",
-      "pid": "40",
+      "pid": "38",
       "position": {
         "x": "831",
         "y": "1050"
-      }
+      },
+      "tags": [
+        "ashocked"
+      ]
     },
     {
       "text": "Ferryman::Through that, I'll find a connection to the steam transport layer, which runs through the operational sections of the infirmary.\n\nFerryman::There are several portals opening up into the Maternity Ward.  We can reconvene there, in the room at the end of all the hallways.\n\n[[p:You mean to say you can fit into that?]]",
@@ -744,11 +722,11 @@
         {
           "name": "p:You mean to say you can fit into that?",
           "link": "p:You mean to say you can fit into that?",
-          "pid": "25"
+          "pid": "23"
         }
       ],
       "name": "utility",
-      "pid": "41",
+      "pid": "39",
       "position": {
         "x": "282",
         "y": "2136"
@@ -759,7 +737,7 @@
     }
   ],
   "name": "Separated",
-  "startnode": "27",
+  "startnode": "25",
   "creator": "Twine",
   "creator-version": "2.3.14",
   "ifid": "5931245B-6C80-4CD5-B01F-382B3471635D"

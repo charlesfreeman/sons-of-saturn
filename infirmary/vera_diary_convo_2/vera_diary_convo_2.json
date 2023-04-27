@@ -14,8 +14,8 @@
       "name": "Page 3",
       "pid": "1",
       "position": {
-        "x": "546",
-        "y": "843"
+        "x": "545",
+        "y": "879"
       },
       "tags": [
         "page1"
@@ -38,15 +38,16 @@
       "name": "Page 4",
       "pid": "2",
       "position": {
-        "x": "546",
-        "y": "986"
+        "x": "543",
+        "y": "1008"
       },
       "tags": [
-        "page2"
+        "page2",
+        "auncertain"
       ]
     },
     {
-      "text": "Ferryman::The Cradle was the center of a lot of groundbreaking medical research prior to its abandonment.  As such a pretty wide variety of exotic medicinal chemicals were kept in stock - anyone with even slim medical credentials could get there hands on some pretty esoteric stuff without too many questions being asked.\n\nFerryman::In fact, a team working in this very hospital is credited with discovering that Ergot could be used to treat migraines.  As for Datura, I recall hearing they had some luck using it to treat dandruff.\n\n[[Personally I'd rather deal with dandruff than regularly ingest nightshade.->Page 4]]\n[[I guess a little bit of poison is worth it if it prevents your scalp from falling out.->Page 4]]",
+      "text": "Ferryman,neutral::The Cradle was the center of a lot of groundbreaking medical research prior to its abandonment.  \n\nFerryman::As such, a pretty wide variety of exotic medicinal chemicals were kept in stock - anyone with even slim medical credentials could get there hands on some pretty esoteric stuff without too many questions being asked.\n\nFerryman::In fact, a team working in this very hospital is credited with discovering that Ergot could be used to treat migraines.  As for Datura, I recall hearing they had some luck using it to treat dandruff.\n\n[[Personally I'd rather deal with dandruff than regularly ingest nightshade.->Page 4]]\n[[I guess a little bit of poison is worth it if it prevents your scalp from falling out.->Page 4]]",
       "links": [
         {
           "name": "Personally I'd rather deal with dandruff than regularly ingest nightshade.",
@@ -62,12 +63,15 @@
       "name": "This hospital had supplies of ergot and datura?",
       "pid": "3",
       "position": {
-        "x": "456",
+        "x": "455",
         "y": "1138"
-      }
+      },
+      "tags": [
+        "aneutral"
+      ]
     },
     {
-      "text": "Ferryman::True.  Finding the rest might still prove worthwhile, however.  From the sound of things, Vera was digging into something pretty shady going on around here.  Even if it doesn't pertain directly to Rosalind we might be better off figuring out what it is.\n\n[[I'm kind of surprised you don't know more about what is going on.  You seem like you know your way around pretty well.]]\n[[p:Alright, what do you think we should investigate next?]]",
+      "text": "Ferryman,looking_to_side::True.  Finding the rest might still prove worthwhile, however.\n\nFerryman,skeptical::From the sound of things, Vera was digging into something pretty shady going on around here.  Even if it doesn't pertain directly to Rosalind we might be better off figuring out what it is.\n\n[[I'm kind of surprised you don't know more about what is going on.  You seem like you know your way around pretty well.]]\n[[p:Alright, what do you think we should investigate next?]]",
       "links": [
         {
           "name": "I'm kind of surprised you don't know more about what is going on.  You seem like you know your way around pretty well.",
@@ -85,10 +89,13 @@
       "position": {
         "x": "607",
         "y": "1141"
-      }
+      },
+      "tags": [
+        "aneutral"
+      ]
     },
     {
-      "text": "Ferryman::Eh, this stuff, it's all adult stuff.  I've always tried not to worry about it too much.  And like I said, I don't spend too much time in the hospital, other than passing through.\n\nJasper::\"Adult stuff.\"  He's at least in his early thirties.\n\nFerryman::That said, it seems likely enough that whatever was going on here is connected to Rosalind somehow, given that she was in charge of some of the staff transfers.  I suggest we keep digging.\n\n[[C->p:Not much about Mom in this one.]]",
+      "text": "Ferryman,half_smile::Eh, this stuff, it's all adult stuff.  I've always tried not to worry about it too much.  And like I said, I don't spend too much time in the hospital, other than passing through.\n\nJasper,thinking::\"Adult stuff.\"  He's at least in his early thirties.\n\nFerryman,neutral::That said, it seems likely enough that whatever was going on here is connected to Rosalind somehow, given that she was in charge of some of the staff transfers.  I suggest we keep digging.\n\n[[C->p:Not much about Mom in this one.]]",
       "links": [
         {
           "name": "C",
@@ -104,54 +111,60 @@
       }
     },
     {
-      "text": "You peer into the cavity of the trash chute on the right side of the room.  Little light escapes from inside, and a layer of detritus strewn about the interior makes details difficult to distinguish.  Despite this, you notice a pair of loose leaf papers stuck to the back of the receptacle.\n\n[[p:(Action) Grab the papers.]]",
+      "text": "You peer into the cavity of the trash chute on the right side of the room.  Little light escapes from inside, and the aperature emits an unpleasant sulphuric odor.\n\nLayers of detritus and sludge strewn about the interior makes details difficult to distinguish.  Despite this, you notice a pair of loose leaf papers stuck to the back of the receptacle.\n\nJasper,looking_forward::Stick your hand in there.  Do it.\n\n[[p:But it's slimy, and smells horrible...]]\n[[p:(Action) Reach into the trash receptacle and grab the papers.]]",
       "links": [
         {
-          "name": "p:(Action) Grab the papers.",
-          "link": "p:(Action) Grab the papers.",
+          "name": "p:But it's slimy, and smells horrible...",
+          "link": "p:But it's slimy, and smells horrible...",
+          "pid": "11"
+        },
+        {
+          "name": "p:(Action) Reach into the trash receptacle and grab the papers.",
+          "link": "p:(Action) Reach into the trash receptacle and grab the papers.",
           "pid": "7"
         }
       ],
       "name": "Untitled Passage",
       "pid": "6",
       "position": {
-        "x": "541",
-        "y": "570"
-      }
+        "x": "546",
+        "y": "480"
+      },
+      "tags": [
+        "adisgusted"
+      ]
     },
     {
-      "text": "Jasper::These are the next two diary entries!  \n\n[[Look!  I found some of the remaining diary entries!]]\n[[p:(Action) Read the entries.->Page 3]] ",
+      "text": "You reach into the tube.  Your arm is quickly enveloped by an unknown mossy texture.  \n\nYou aimlessly grope through the sludge until you arrive at a relatively crunchy texture: two loose sheets of paper.\n\n[[C->Squish 2]]",
       "links": [
         {
-          "name": "Look!  I found some of the remaining diary entries!",
-          "link": "Look!  I found some of the remaining diary entries!",
-          "pid": "8"
-        },
-        {
-          "name": "p:(Action) Read the entries.",
-          "link": "Page 3",
-          "pid": "1"
+          "name": "C",
+          "link": "Squish 2",
+          "pid": "12"
         }
       ],
-      "name": "p:(Action) Grab the papers.",
+      "name": "p:(Action) Reach into the trash receptacle and grab the papers.",
       "pid": "7",
       "position": {
-        "x": "538",
-        "y": "699"
-      }
+        "x": "534",
+        "y": "623"
+      },
+      "tags": [
+        "squish"
+      ]
     },
     {
-      "text": "Ferryman::Huh, yeah, you did.  What are they doing here I wonder?  Why would Vera rip them out and throw them into a trash chute?\n\n[[I don't think Vera was the one to rip them out.->p:(Action) Grab the papers.]]\n[[Who cares, let's dig into them.->p:(Action) Grab the papers.]]",
+      "text": "Ferryman,half_smile::Huh, yeah, you did.  I was wondering why you stuck your hand in there.\n\nFerryman,thinking::What are they doing here I wonder?  Why would Vera rip them out and throw them into a trash chute?\n\n[[I don't think Vera was the one to rip them out.->Squish 2]]\n[[Who cares, let's dig into them.->Squish 2]]",
       "links": [
         {
           "name": "I don't think Vera was the one to rip them out.",
-          "link": "p:(Action) Grab the papers.",
-          "pid": "7"
+          "link": "Squish 2",
+          "pid": "12"
         },
         {
           "name": "Who cares, let's dig into them.",
-          "link": "p:(Action) Grab the papers.",
-          "pid": "7"
+          "link": "Squish 2",
+          "pid": "12"
         }
       ],
       "name": "Look!  I found some of the remaining diary entries!",
@@ -159,10 +172,13 @@
       "position": {
         "x": "400",
         "y": "843"
-      }
+      },
+      "tags": [
+        "aneutral"
+      ]
     },
     {
-      "text": "Ferryman::The medical supply closets referred to in the diary entries are right below us, in the sub basement.  Those are probably worth investigating.  We can get there by taking the stairwell at the end of the hall.\n\n[[p:Yeah, I kind of doubt we'll find much but the entries did mention some anomolous dips in medical supplies.  So we should probably go take a look.]]",
+      "text": "Ferryman,looking_to_side::The medical supply closets referred to in the diary entries are right below us, in the sub basement.  Those are probably worth investigating.  \n\nFerryman,neutral::We can get there by taking the stairwell at the end of the hall.\n\n[[p:Yeah, I kind of doubt we'll find much but the entries did mention some anomolous dips in medical supplies.  So we should probably go take a look.]]",
       "links": [
         {
           "name": "p:Yeah, I kind of doubt we'll find much but the entries did mention some anomolous dips in medical supplies.  So we should probably go take a look.",
@@ -178,13 +194,62 @@
       }
     },
     {
-      "text": "Ferryman::Yep.  Following you.",
+      "text": "Ferryman,surprised::Yep.  Following you.",
       "name": "p:Yeah, I kind of doubt we'll find much but the entries did mention some anomolous dips in medical supplies.  So we should probably go take a look.",
       "pid": "10",
       "position": {
         "x": "689",
         "y": "1450"
       }
+    },
+    {
+      "text": "Jasper,twisted::I'm slimy.  I smell horrible.  You still love me, don't you?\n\nJasper,head_tilted::Come on, you know you wanna stick your hand in there...\n\n[[p:Yeah, I guess I kind of do want to get in there...->p:(Action) Reach into the trash receptacle and grab the papers.]]\n[[p:I'll do it.  I have to.  But I'm not going to enjoy it.->p:(Action) Reach into the trash receptacle and grab the papers.]]",
+      "links": [
+        {
+          "name": "p:Yeah, I guess I kind of do want to get in there...",
+          "link": "p:(Action) Reach into the trash receptacle and grab the papers.",
+          "pid": "7"
+        },
+        {
+          "name": "p:I'll do it.  I have to.  But I'm not going to enjoy it.",
+          "link": "p:(Action) Reach into the trash receptacle and grab the papers.",
+          "pid": "7"
+        }
+      ],
+      "name": "p:But it's slimy, and smells horrible...",
+      "pid": "11",
+      "position": {
+        "x": "746",
+        "y": "692"
+      },
+      "tags": [
+        "asad"
+      ]
+    },
+    {
+      "text": "You free the papers from the slimy receptacle and remove your arm.\n\nJasper,surprised::These are the next two diary entries!  \n\n[[Look!  I found some of the remaining diary entries!]]\n[[p:(Action) Read the entries.->Page 3]] ",
+      "links": [
+        {
+          "name": "Look!  I found some of the remaining diary entries!",
+          "link": "Look!  I found some of the remaining diary entries!",
+          "pid": "8"
+        },
+        {
+          "name": "p:(Action) Read the entries.",
+          "link": "Page 3",
+          "pid": "1"
+        }
+      ],
+      "name": "Squish 2",
+      "pid": "12",
+      "position": {
+        "x": "545",
+        "y": "749"
+      },
+      "tags": [
+        "squish_2",
+        "ashocked"
+      ]
     }
   ],
   "name": "Vera Diary 2",

@@ -69,5 +69,5 @@ scale = Vector2( 0.929409, 0.890169 )
 shape = SubResource( 4 )
 
 [node name="PopUp" parent="." instance=ExtResource( 5 )]
-popup_text = [ "Wiggly::We should search the offices in this hall before moving forward.  Or rather, that is my recommendation." ]
+popup_text = [ "Wiggly,neutral::We should search the offices in this hall before moving forward.  Or rather, that is my recommendation." ]
 nav_popup_up = true

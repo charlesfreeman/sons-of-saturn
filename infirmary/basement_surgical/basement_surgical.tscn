@@ -34,7 +34,7 @@ position = Vector2( 1483.31, 1941.5 )
 shape = SubResource( 1 )
 
 [node name="PopUp" parent="." instance=ExtResource( 5 )]
-popup_text = [ "Amelie::Looks like a poster for some weird old Ballet?", "Amelie::The main actress's head looks weird.  Like it was plastered on.", "Amelie::Odd place to advertise this stuff.  I guess they put on musicals for the patients." ]
+popup_text = [ "Amelie,confused::Looks like a poster for some weird old Ballet?", "Amelie,disgusted::The main actress's head looks weird.  Like it was plastered on.", "Amelie,uncertain::Odd place to advertise this stuff.  I guess they put on musicals for the patients." ]
 diff_background = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]

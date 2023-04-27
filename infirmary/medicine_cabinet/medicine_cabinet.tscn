@@ -37,6 +37,7 @@ popup_text = [ "This supply closet was once stocked with a huge supply of exotic
 diff_background = true
 single_use = true
 prog_flag = "medicine_cabinet_inspection"
+new_item = "Stimulants"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DescPopUp"]
 position = Vector2( 2429.62, 1031.61 )

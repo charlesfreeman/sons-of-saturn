@@ -47,7 +47,7 @@ position = Vector2( 246.527, 1127.87 )
 shape = SubResource( 2 )
 
 [node name="PopUp" parent="." instance=ExtResource( 5 )]
-popup_text = [ "Amelie::Why are all these chairs lined up like this?  There's nothing else here.", "Wiggly::There used to be an entertainment table they all faced.  It went missing a few years ago.", "Amelie::An entertainment table?  For card games and such?  That sounds fun.  What happened to it?", "Wiggly::Honestly? Someone probably dragged it up to the roof so they could throw it off.", "Amelie::..." ]
+popup_text = [ "Amelie,confused::Why are all these chairs lined up like this?  There's nothing else here.", "Wiggly,looking_to_side::There used to be an entertainment table they all faced.  It went missing a few years ago.", "Amelie,shocked::An entertainment table?  For card games and such?  That sounds fun.  What happened to it?", "Wiggly,half_smile::Honestly? Someone probably dragged it up to the roof so they could throw it off.", "Amelie,guilty::..." ]
 diff_background = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]

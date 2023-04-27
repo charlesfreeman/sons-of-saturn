@@ -32,7 +32,7 @@ position = Vector2( 1483.31, 1941.5 )
 shape = SubResource( 1 )
 
 [node name="PopUp" parent="." instance=ExtResource( 5 )]
-popup_text = [ "Amelie::I like this porch.  It's nice and airy.", "Wiggly::Yes, it is nice.  Administrative staff used to come here to relax and smoke.", "Amelie::Did you ever hang out here?", "Wiggly::No, tunnel rats weren't allowed places like this.", "Amelie::..." ]
+popup_text = [ "Amelie,neutral::I like this porch.  It's nice and airy.", "Wiggly,looking_to_side::Yes, it is nice.  Administrative staff used to come here to relax and smoke.", "Amelie,uncertain::Did you ever hang out here?", "Wiggly,neutral::No, tunnel rats weren't allowed places like this.", "Amelie,guilty::..." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
 position = Vector2( 1459.61, 964.752 )

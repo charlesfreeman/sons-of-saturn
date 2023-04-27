@@ -43,5 +43,5 @@ position = Vector2( 1382.6, 1950.14 )
 shape = SubResource( 2 )
 
 [node name="PopUp" parent="." instance=ExtResource( 4 )]
-popup_text = [ "Amelie::Wiggly said I should search that medicine cabinet before heading upstairs." ]
+popup_text = [ "Amelie,neutral::Wiggly said I should search that medicine cabinet before heading upstairs." ]
 nav_popup_up = true

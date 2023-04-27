@@ -41,5 +41,5 @@ shape = SubResource( 2 )
 
 [node name="PopUp" parent="." instance=ExtResource( 3 )]
 popup_on_entry = true
-popup_text = [ "Amelie::Woah!  What's up with this dome?", "Julia::Oh, this is just the foyer. ", "Julia::Patients enter through here.  Someone comes to greet them and show them to the front desk.", "Julia::At least, that's what they are supposed to do." ]
+popup_text = [ "Amelie,shocked::Woah!  What's up with this dome?", "Julia,neutral::Oh, this is just the main lobby. ", "Julia,amused::Patients enter through here.  Someone comes to greet them and show them to the front desk.", "Julia,sly::At least, that's what they are supposed to do.", "Amelie,guilty::..." ]
 single_use = true

@@ -53,7 +53,7 @@ position = Vector2( 550.133, 1039.55 )
 shape = SubResource( 2 )
 
 [node name="PopUp" parent="." instance=ExtResource( 4 )]
-popup_text = [ "Amelie::What?  This door was sealed shut just a few seconds ago...", "Amelie::Figured it would only open once Wiggly was long gone." ]
+popup_text = [ "Amelie,confused::What?  This door was sealed shut just a few seconds ago...", "Amelie,guilty::Of course it only reopens now that my guide is long gone..." ]
 prog_flag = "door_open_popup"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]

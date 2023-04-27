@@ -63,4 +63,4 @@ position = Vector2( 628.675, 1115.31 )
 shape = SubResource( 4 )
 
 [node name="PopUp" parent="." instance=ExtResource( 4 )]
-popup_text = [ "Wiggly::The rooms on the left and right are administrator offices, miss.  I strongly suggest looking through them before moving on." ]
+popup_text = [ "Wiggly,looking_to_side::The rooms on the left and right are administrator offices, miss.  I strongly suggest looking through them before moving on." ]

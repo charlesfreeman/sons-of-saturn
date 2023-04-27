@@ -20,7 +20,8 @@ __meta__ = {
 scene_up = "res://sewer/big_leaking_tunnel/big_leaking_tunnel.tscn"
 popup_background = "res://sewer/curving_tunnel_empty/curving_tunnel_empty.png"
 position = Vector2( 1662, 700 )
-song = "sewer_light_flow"
+song = "sly_sewer_distant"
+footstep_type = "Wet"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true

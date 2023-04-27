@@ -21,7 +21,8 @@ scene_up = "ladder_convo"
 non_roam_scene_up = true
 position = Vector2( 1295, 580 )
 rotation = 180
-song = "sewer_high_flow"
+song = "drain_stairwell"
+footstep_type = "Wet"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true

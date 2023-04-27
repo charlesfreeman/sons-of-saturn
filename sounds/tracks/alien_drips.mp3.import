@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/alien_drips.mp3-65dd54c0650cf2c827607c567763d635.mp3str"
+
+[deps]
+
+source_file="res://sounds/tracks/alien_drips.mp3"
+dest_files=[ "res://.import/alien_drips.mp3-65dd54c0650cf2c827607c567763d635.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

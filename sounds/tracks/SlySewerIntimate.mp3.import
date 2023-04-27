@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SlySewerIntimate.mp3-d759c154fd90d9029162c275e5150295.mp3str"
+
+[deps]
+
+source_file="res://sounds/tracks/SlySewerIntimate.mp3"
+dest_files=[ "res://.import/SlySewerIntimate.mp3-d759c154fd90d9029162c275e5150295.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

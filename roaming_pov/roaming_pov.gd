@@ -29,7 +29,12 @@ onready var up_button = $VBoxContainer/HBoxContainer/GridContainer/UpButton
 onready var right_button = $VBoxContainer/HBoxContainer/GridContainer/RightButton
 onready var down_button = $VBoxContainer/HBoxContainer/GridContainer/DownButton
 onready var left_button = $VBoxContainer/HBoxContainer/GridContainer/LeftButton
-onready var tile_footsteps = $RanSoundContainer
+onready var tile_footsteps = $TileFootsteps
+onready var wet_footsteps = $WetFootsteps
+onready var footstep_types = {
+	"Tile" : tile_footsteps,
+	"Wet" : wet_footsteps,
+}
 
 
 func _ready():
@@ -101,7 +106,7 @@ func _on_LeftButton_pressed():
 
 
 func change_PoV(scene_path):
-	tile_footsteps.play()
+	footstep_types[pov_instance.footstep_type].play()
 	# load the next scene and unpack it into a node
 	if scene_path != "None":
 		global_scene_path = scene_path

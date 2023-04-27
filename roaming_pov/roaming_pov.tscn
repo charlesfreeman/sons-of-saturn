@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://roaming_pov/images/cone_of_vision.png" type="Texture" id=1]
 [ext_resource path="res://roaming_pov/roaming_pov.gd" type="Script" id=2]
@@ -29,6 +29,8 @@
 [ext_resource path="res://roaming_pov/InvSlot.tscn" type="PackedScene" id=27]
 [ext_resource path="res://roaming_pov/Inventory.gd" type="Script" id=28]
 [ext_resource path="res://images/map_boundary.png" type="Texture" id=29]
+[ext_resource path="res://roaming_pov/sounds/footsteps_wet_1.wav" type="AudioStream" id=30]
+[ext_resource path="res://roaming_pov/sounds/footsteps_wet_3.wav" type="AudioStream" id=31]
 
 [node name="HBoxContainer" type="HBoxContainer"]
 anchor_right = 1.0
@@ -103,18 +105,18 @@ mouse_filter = 2
 texture = ExtResource( 17 )
 
 [node name="CharRect" type="TextureRect" parent="VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect"]
-margin_left = 1295.0
-margin_top = 580.0
-margin_right = 1360.0
-margin_bottom = 650.0
-rect_rotation = 180.0
+margin_left = 1600.0
+margin_top = 926.0
+margin_right = 1665.0
+margin_bottom = 996.0
+rect_rotation = 90.0
 rect_pivot_offset = Vector2( 32.5, 35 )
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 5
 
 [node name="Camera2D" type="Camera2D" parent="VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect"]
-position = Vector2( 1300, 600 )
+position = Vector2( 1500, 600 )
 rotation = 0.698132
 current = true
 zoom = Vector2( 0.75, 0.75 )
@@ -289,27 +291,45 @@ margin_bottom = 2160.0
 [node name="TileFootstepsStream" parent="." instance=ExtResource( 19 )]
 sound_files = [ "res://roaming_pov/sounds/tile_footsteps_1.wav", "res://roaming_pov/sounds/tile_footsteps_2.wav", "res://roaming_pov/sounds/tile_footsteps_3.wav", "res://roaming_pov/sounds/tile_footsteps_4.wav" ]
 
-[node name="RanSoundContainer" type="Node" parent="."]
+[node name="TileFootsteps" type="Node" parent="."]
 script = ExtResource( 20 )
 volume_range = 10.0
 pitch_range = 0.3
 sound_number = 1
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="RanSoundContainer"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="TileFootsteps"]
 stream = ExtResource( 25 )
 volume_db = -20.0
 
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="RanSoundContainer"]
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="TileFootsteps"]
 stream = ExtResource( 24 )
 volume_db = -20.0
 
-[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="RanSoundContainer"]
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="TileFootsteps"]
 stream = ExtResource( 23 )
 volume_db = -20.0
 
-[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="RanSoundContainer"]
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="TileFootsteps"]
 stream = ExtResource( 26 )
 volume_db = -20.0
+
+[node name="WetFootsteps" type="Node" parent="."]
+script = ExtResource( 20 )
+volume_range = 10.0
+pitch_range = 0.3
+sound_number = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="WetFootsteps"]
+stream = ExtResource( 30 )
+volume_db = -17.0
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="WetFootsteps"]
+stream = ExtResource( 31 )
+volume_db = -17.0
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="WetFootsteps"]
+stream = ExtResource( 31 )
+volume_db = -17.0
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/GridContainer/UpButton" to="." method="_on_UpButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/GridContainer/LeftButton" to="." method="_on_LeftButton_pressed"]

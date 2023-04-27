@@ -5,6 +5,10 @@ var global_texture_path = "None"
 var pov_scene
 var pov_instance
 
+# needed for checking against global region variable to determine if reloading
+# the map is necessary when "None" encountered
+var region_local = "None"
+
 var options = SceneManager.create_options()
 var general_options = SceneManager.create_general_options()
 
@@ -112,8 +116,14 @@ func _load_PoV_instance():
 	pov_scene = load(global_scene_path)
 	pov_instance = pov_scene.instance()
 	if pov_instance.map != "None":
-		print("loading new map")
+		Global.set_region(pov_instance.map)
+		region_local = pov_instance.map
 		map.texture = load(map_paths[pov_instance.map])
+	else:
+		if region_local != Global.get_region():
+			map.texture = load(map_paths[Global.get_region()])
+			region_local = map_paths[Global.get_region()]
+			
 	add_child(pov_instance)
 	move_child(pov_instance, 0)
 	_update_buttons()

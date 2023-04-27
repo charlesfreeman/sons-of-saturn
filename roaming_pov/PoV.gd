@@ -30,6 +30,10 @@ export var rotation = 0
 export var song = "None"
 export var soundscape = "None"
 
+# change this to "Wet" to change to wet footsteps
+# will likely add more options later
+export var footstep_type = "Tile"
+
 # set this to something if new mini-map needed when entering this area
 export var map = "None"
 

@@ -1,15 +1,65 @@
 extends Area2D
 
-var char_path_dict = {
-	"Wiggly" : "res://conversation_pov/char_profiles/wiggly/wiggly_sad.png",
-	"Amelie" : "res://conversation_pov/char_profiles/amelie/amelie_neutral.png",
-	"Julia" : "res://conversation_pov/char_profiles/julia/julia_placeholder.png",
-	"Jasper" : "res://conversation_pov/char_profiles/jasper/jasper_headshot_feathered.png",
+
+var amelie_profiles = {
+	"confused" : "res://conversation_pov/char_profiles/amelie/amelie_confused.png",
+	"disgusted" : "res://conversation_pov/char_profiles/amelie/amelie_disgusted.png",
+	"fuming" : "res://conversation_pov/char_profiles/amelie/amelie_fuming.png",
+	"guilty" : "res://conversation_pov/char_profiles/amelie/amelie_guilty.png",
+	"neutral" : "res://conversation_pov/char_profiles/amelie/amelie_neutral.png",
+	"sad" : "res://conversation_pov/char_profiles/amelie/amelie_sad.png",
+	"shocked" : "res://conversation_pov/char_profiles/amelie/amelie_shocked.png",
+	"uncertain" : "res://conversation_pov/char_profiles/amelie/amelie_uncertain.png",
 }
+
+var wiggly_profiles = {
+	"half_smile" : "res://conversation_pov/char_profiles/wiggly/wiggly_half_smile.png",
+	"laughing" : "res://conversation_pov/char_profiles/wiggly/wiggly_laughing.png",
+	"looking_to_side" : "res://conversation_pov/char_profiles/wiggly/wiggly_looking_to_side.png",
+	"sad" : "res://conversation_pov/char_profiles/wiggly/wiggly_sad.png",
+	"skeptical" : "res://conversation_pov/char_profiles/wiggly/wiggly_skeptical.png",
+	"surprised" : "res://conversation_pov/char_profiles/wiggly/wiggly_surprised.png",
+	"wincing" : "res://conversation_pov/char_profiles/wiggly/wiggly_wincing.png",
+	"thinking" : "res://conversation_pov/char_profiles/wiggly/wiggly_thinking.png",
+	"neutral" : "res://conversation_pov/char_profiles/wiggly/wiggly_neutral.png",
+}
+
+var julia_profiles = {
+	"neutral" : "res://conversation_pov/char_profiles/julia/julia_neutral.png",
+	"amused" : "res://conversation_pov/char_profiles/julia/julia_amused.png",
+	"concerned" : "res://conversation_pov/char_profiles/julia/julia_concerned.png",
+	"lost_in_thought" : "res://conversation_pov/char_profiles/julia/julia_lost_in_thought.png",
+	"reminiscing" : "res://conversation_pov/char_profiles/julia/julia_reminiscing.png",
+	"sly" : "res://conversation_pov/char_profiles/julia/julia_sly.png",
+	"suspiscious" : "res://conversation_pov/char_profiles/julia/julia_suspiscious.png",
+	"thinking" : "res://conversation_pov/char_profiles/julia/julia_thinking.png",
+	"worried" : "res://conversation_pov/char_profiles/julia/julia_worried.png",
+}
+
+var jasper_profiles = {
+	"neutral" : "res://conversation_pov/char_profiles/jasper/jasper_neutral.png",
+	"head_tilted" : "res://conversation_pov/char_profiles/jasper/jasper_head_tilted.png",
+	"looking_forward" : "res://conversation_pov/char_profiles/jasper/jasper_looking_forward.png",
+	"surprised" : "res://conversation_pov/char_profiles/jasper/jasper_surprised.png",
+	"sad" : "res://conversation_pov/char_profiles/jasper/jasper_sad.png",
+	"turned_away" : "res://conversation_pov/char_profiles/jasper/jasper_turned_away.png",
+	"twisted" : "res://conversation_pov/char_profiles/jasper/jasper_twisted.png",
+	"thinking" : "res://conversation_pov/char_profiles/jasper/jasper_thinking.png",
+}
+
+
+var char_path_dict = {
+	"Amelie" : amelie_profiles,
+	"Wiggly" : wiggly_profiles,
+	"Julia" : julia_profiles,
+	"Jasper" : jasper_profiles,
+}
+
 var in_clickable_area = false
 var popup_done = false
 var index = 0
 var characters_array = []
+var emotions_array = []
 var text_array = []
 var all_in_party = true
 var enabled = true
@@ -18,8 +68,8 @@ var popup_visible = false
 
 export var popup_on_entry = false
 export var popup_text = [
-	"Amelie::Example Text",
-	"Wiggly::Wiggly Text"
+	"Amelie,neutral::Example Text",
+	"Wiggly,neutral::Wiggly Text"
 ]
 export var diff_background = false
 export var nav_popup_up = false
@@ -60,9 +110,12 @@ func _ready():
 	
 	for pair in popup_text:
 		var pair_array = pair.split("::")
-		var char_name = pair_array[0]
+		var char_array = pair_array[0].split(",")
+		var char_name = char_array[0]
+		var char_emotion = char_array[1]
 		var text = pair_array[1]
 		characters_array.append(char_name)
+		emotions_array.append(char_emotion)
 		text_array.append(text)
 
 	if not self.popup_on_entry:
@@ -110,13 +163,13 @@ func _check_in_party():
 		# can safely assume Amelie always in party, so she doesn't appear in global party list
 		if character != "Amelie":
 			in_party = in_party and character in Global.party
-	print("all in party: ", in_party)
 	return in_party
 
 
 func _show_next_text():
 	label.text = text_array[self.index]
-	texture.texture = load(char_path_dict[characters_array[self.index]])
+	var char_emotion_dict = char_path_dict[characters_array[self.index]]
+	texture.texture = load(char_emotion_dict[emotions_array[self.index]])
 	if not (self.diff_background and self.index == 0):
 		popup.show()
 	self.index += 1

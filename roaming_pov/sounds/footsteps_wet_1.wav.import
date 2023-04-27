@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/footsteps_wet_1.wav-00970138e84a8ce3649c6c7cd32d77e5.sample"
+
+[deps]
+
+source_file="res://roaming_pov/sounds/footsteps_wet_1.wav"
+dest_files=[ "res://.import/footsteps_wet_1.wav-00970138e84a8ce3649c6c7cd32d77e5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

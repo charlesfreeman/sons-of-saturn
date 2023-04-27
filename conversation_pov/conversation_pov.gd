@@ -33,7 +33,7 @@ onready var current_bg_path = backgroundPath
 var fade_tag
 
 # var to store Amelie's current emotion, since this is handled differently
-var amelie_emotion = "neutral"
+var amelie_emotion = "aneutral"
 
 # array to keep track of which tags already been emitted, so we might avoid
 # playing the same effects repeatedly
@@ -44,24 +44,26 @@ var subject_speaking = false
 
 
 var amelie_profiles = {
-	"disgust" : "res://conversation_pov/char_profiles/amelie/amelie_disgusted.png",
-	"fuming" : "res://conversation_pov/char_profiles/amelie/amelie_fuming.png",
-	"guilty" : "res://conversation_pov/char_profiles/amelie/amelie_guilty.png",
-	"neutral" : "res://conversation_pov/char_profiles/amelie/amelie_headshot_feathered.png",
-	"questioning" : "res://conversation_pov/char_profiles/amelie/amelie_questioning.png",
-	"sad" : "res://conversation_pov/char_profiles/amelie/amelie_sad.png",
-	"takenaback" : "res://conversation_pov/char_profiles/amelie/amelie_taken_aback.png",
-	"uncertain" : "res://conversation_pov/char_profiles/amelie/amelie_uncertain.png",
+	"aconfused" : "res://conversation_pov/char_profiles/amelie/amelie_confused.png",
+	"adisgusted" : "res://conversation_pov/char_profiles/amelie/amelie_disgusted.png",
+	"afuming" : "res://conversation_pov/char_profiles/amelie/amelie_fuming.png",
+	"aguilty" : "res://conversation_pov/char_profiles/amelie/amelie_guilty.png",
+	"aneutral" : "res://conversation_pov/char_profiles/amelie/amelie_neutral.png",
+	"asad" : "res://conversation_pov/char_profiles/amelie/amelie_sad.png",
+	"ashocked" : "res://conversation_pov/char_profiles/amelie/amelie_shocked.png",
+	"auncertain" : "res://conversation_pov/char_profiles/amelie/amelie_uncertain.png",
 }
 
 var wiggly_profiles = {
-	"halfsmile" : "res://conversation_pov/char_profiles/wiggly/wiggly_half_smiling.png",
-	"laugh" : "res://conversation_pov/char_profiles/wiggly/wiggly_laughing.png",
+	"half_smile" : "res://conversation_pov/char_profiles/wiggly/wiggly_half_smile.png",
+	"laughing" : "res://conversation_pov/char_profiles/wiggly/wiggly_laughing.png",
+	"looking_to_side" : "res://conversation_pov/char_profiles/wiggly/wiggly_looking_to_side.png",
 	"sad" : "res://conversation_pov/char_profiles/wiggly/wiggly_sad.png",
-	"skeptic" : "res://conversation_pov/char_profiles/wiggly/wiggly_skeptical.png",
-	"surprise" : "res://conversation_pov/char_profiles/wiggly/wiggly_surprised.png",
+	"skeptical" : "res://conversation_pov/char_profiles/wiggly/wiggly_skeptical.png",
+	"surprised" : "res://conversation_pov/char_profiles/wiggly/wiggly_surprised.png",
 	"wincing" : "res://conversation_pov/char_profiles/wiggly/wiggly_wincing.png",
-	"neutral" : "res://conversation_pov/char_profiles/wiggly/wiggly_feathered_closedin.png",
+	"thinking" : "res://conversation_pov/char_profiles/wiggly/wiggly_thinking.png",
+	"neutral" : "res://conversation_pov/char_profiles/wiggly/wiggly_neutral.png",
 }
 
 var julia_profiles = {
@@ -77,7 +79,14 @@ var julia_profiles = {
 }
 
 var jasper_profiles = {
-	"neutral" : "res://conversation_pov/char_profiles/jasper/jasper_headshot_feathered.png",
+	"neutral" : "res://conversation_pov/char_profiles/jasper/jasper_neutral.png",
+	"head_tilted" : "res://conversation_pov/char_profiles/jasper/jasper_head_tilted.png",
+	"looking_forward" : "res://conversation_pov/char_profiles/jasper/jasper_looking_forward.png",
+	"surprised" : "res://conversation_pov/char_profiles/jasper/jasper_surprised.png",
+	"sad" : "res://conversation_pov/char_profiles/jasper/jasper_sad.png",
+	"turned_away" : "res://conversation_pov/char_profiles/jasper/jasper_turned_away.png",
+	"twisted" : "res://conversation_pov/char_profiles/jasper/jasper_twisted.png",
+	"thinking" : "res://conversation_pov/char_profiles/jasper/jasper_thinking.png",
 	"voice" : "res://conversation_pov/char_profiles/jasper/voice_headshot.png",
 	"malformed_lump" : "res://conversation_pov/char_profiles/jasper/malformed_lump_headshot.png",
 }
@@ -193,6 +202,8 @@ func _on_Dialogue_tag(tags):
 				self._add_subject("Wiggly")
 			elif tag == "add_julia":
 				self._add_subject("Julia")
+			elif tag == "add_dead_cat":
+				self._add_subject("Dead Cat")
 			elif tag == "remove_subject":
 				self._remove_subject()
 

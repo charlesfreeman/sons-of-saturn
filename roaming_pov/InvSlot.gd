@@ -1,7 +1,7 @@
 extends TextureRect
 
 var item_texture_paths = {
-	"Jasper" : "res://conversation_pov/char_profiles/jasper/jasper_headshot_feathered.png",
+	"Jasper" : "res://conversation_pov/char_profiles/jasper/jasper_twisted.png",
 }
 
 onready var item = $Item

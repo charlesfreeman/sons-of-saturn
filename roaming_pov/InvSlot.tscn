@@ -24,6 +24,7 @@ margin_top = 35.0
 margin_right = -35.0
 margin_bottom = -35.0
 expand = true
+stretch_mode = 6
 __meta__ = {
 "_edit_use_anchors_": false
 }

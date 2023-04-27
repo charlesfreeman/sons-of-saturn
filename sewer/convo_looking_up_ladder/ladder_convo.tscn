@@ -16,9 +16,7 @@ __meta__ = {
 scriptPath = "res://sewer/convo_looking_up_ladder/ladder_convo.json"
 backgroundPath = "res://sewer/convo_looking_up_ladder/climbing_sewer_ladder.png"
 sliverPath = "res://sewer/convo_looking_up_ladder/climbing_ladder_sliver.png"
-soundscapePath = "res://sounds/alien_drips.wav"
 nextScenePath = "morgue_convo"
-song = "alien_drips"
 
 [node name="ConvoSoundEffect" parent="." instance=ExtResource( 2 )]
 stream = ExtResource( 3 )

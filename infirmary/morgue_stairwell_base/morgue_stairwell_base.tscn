@@ -24,8 +24,8 @@ scene_up = "res://infirmary/morgue_stairwell_1f/morgue_stairwell_1f.tscn"
 scene_down = "res://infirmary/morgue/morgue.tscn"
 alt_scene_up = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.tscn"
 req_flag_up = "overgrowth_pink_hallway"
-position = Vector2( 1280, 968 )
-rotation = 270
+position = Vector2( 1430, 926 )
+rotation = 90
 map = "morgue"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 2 )]

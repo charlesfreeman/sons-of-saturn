@@ -1,6 +1,7 @@
 extends Node
 
-var location = "res://infirmary/isolation_stairwell_1f/isolation_stairwell_1f.tscn"
+var location = "res://sewer/just_stood_up/just_stood_up.tscn"
+var region = "None"
 # Amelie always assumed to be in party, never reason to check
 var party = ["Wiggly"]
 var active_popup = false
@@ -101,9 +102,16 @@ func remove_from_inv(item_name: String):
 	else:
 		print("Warning: cannot remove %s from party", item_name)
 
+func get_region():
+	return self.region
+	
+func set_region(map: String):
+	self.region = map
+
 func produce_save_dict():
 	var save_dict = {
 		"location" : location,
+		"region" : region,
 		"party" : party,
 		"prog_flags" : prog_flags,
 	}
@@ -124,6 +132,7 @@ func load_game():
 	var save_data = parse_json(sgame.get_line())
 	print(save_data.keys())
 	location = save_data["location"]
+	region = save_data["region"]
 	party = save_data["party"]
 	prog_flags = save_data["prog_flags"]
 	var options = SceneManager.create_options()

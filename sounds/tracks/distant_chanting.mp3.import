@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/distant_chanting.mp3-fd2ed5986e63f7ad5119f85065674be6.mp3str"
+
+[deps]
+
+source_file="res://sounds/tracks/distant_chanting.mp3"
+dest_files=[ "res://.import/distant_chanting.mp3-fd2ed5986e63f7ad5119f85065674be6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

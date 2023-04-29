@@ -28,7 +28,7 @@
 [ext_resource path="res://roaming_pov/sounds/tile_footsteps_4.wav" type="AudioStream" id=26]
 [ext_resource path="res://roaming_pov/InvSlot.tscn" type="PackedScene" id=27]
 [ext_resource path="res://roaming_pov/Inventory.gd" type="Script" id=28]
-[ext_resource path="res://images/map_boundary.png" type="Texture" id=29]
+[ext_resource path="res://roaming_pov/images/map_boundary.png" type="Texture" id=29]
 [ext_resource path="res://roaming_pov/sounds/footsteps_wet_1.wav" type="AudioStream" id=30]
 [ext_resource path="res://roaming_pov/sounds/footsteps_wet_3.wav" type="AudioStream" id=31]
 

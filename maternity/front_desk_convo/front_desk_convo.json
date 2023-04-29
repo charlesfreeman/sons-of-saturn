@@ -16,7 +16,10 @@
       "position": {
         "x": "1177",
         "y": "346"
-      }
+      },
+      "tags": [
+        "front_desk_ambient"
+      ]
     },
     {
       "text": "Julia::Got it. \n\n[[C->returns forward]]",
@@ -165,7 +168,8 @@
         "y": "1545"
       },
       "tags": [
-        "lookup"
+        "lookup",
+        "distant_chanting"
       ]
     },
     {

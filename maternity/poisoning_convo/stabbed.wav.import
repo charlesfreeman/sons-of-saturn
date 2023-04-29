@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/stabbed.wav-4c8110fcbbf4ca3ab32d51643cac8e73.sample"
+
+[deps]
+
+source_file="res://maternity/poisoning_convo/stabbed.wav"
+dest_files=[ "res://.import/stabbed.wav-4c8110fcbbf4ca3ab32d51643cac8e73.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -153,9 +153,13 @@
       "name": "(Action) Grab a syringe-tipped ampoule and stab Julia.",
       "pid": "7",
       "position": {
-        "x": "923",
+        "x": "928",
         "y": "1542"
-      }
+      },
+      "tags": [
+        "stabbed",
+        "red_bg_darken"
+      ]
     },
     {
       "text": "You drag the vial into your field of view.  You can make out the label now.  The needle contains a dose of norepinephrine.\n\nJasper,surprised::Inject it!  Straight into the mainline.  This should still be intuitive for you.\n\nJasper::Use the boost to wrestle out of Julia's grip.\n\n[[Continue->p:Hey!  Let me go!]] ",
@@ -189,7 +193,9 @@
         "y": "1546"
       },
       "tags": [
-        "chair"
+        "chair",
+        "stabbed",
+        "red_bg_darken"
       ]
     },
     {
@@ -443,7 +449,10 @@
       "position": {
         "x": "1286",
         "y": "2283"
-      }
+      },
+      "tags": [
+        "door_locked"
+      ]
     },
     {
       "text": "Julia is huddled in the corner, whimpering.  Her body is lightly convulsing, as if she were being electrocuted.\n\nJasper,twisted::She is pathetic.\n\n[[p:What did you inject me with?  Why did you pin me to the ground?]]\n[[p:(Action) Kick Julia.]]",
@@ -506,7 +515,8 @@
         "y": "2473"
       },
       "tags": [
-        "tugging"
+        "tugging",
+        "kick"
       ]
     },
     {
@@ -579,7 +589,8 @@
         "y": "2753"
       },
       "tags": [
-        "aguilty"
+        "aguilty",
+        "kick"
       ]
     },
     {
@@ -599,7 +610,8 @@
       },
       "tags": [
         "onground",
-        "floor_remove"
+        "floor_remove",
+        "kick"
       ]
     },
     {
@@ -639,7 +651,7 @@
       }
     },
     {
-      "text": "You fall to the ground, paralyzed.\n\nThe ceiling is trying to suck you in.  It's succeeding.\n\nYour legs and arms extend and retract, taking on bizarre proportions.  \n\nYou feel like a severed toe.\n\nJasper::Why do I keep finding you like this?\n\n[[p:(Action) Soak in the sights and just vibe.]]\n[[p:(Action) Fight to regain composure.]]",
+      "text": "You fall to the ground, paralyzed.\n\nThe ceiling is trying to suck you in.  It's succeeding.\n\nYour legs and arms extend and retract, taking on bizarre proportions.  \n\nYou feel like a severed toe.\n\nJasper,thinking::Why do I keep finding you like this?\n\n[[p:(Action) Soak in the sights and just vibe.]]\n[[p:(Action) Fight to regain composure.]]",
       "links": [
         {
           "name": "p:(Action) Soak in the sights and just vibe.",
@@ -660,7 +672,8 @@
       },
       "tags": [
         "ceiling",
-        "adisgusted"
+        "adisgusted",
+        "body_fall"
       ]
     },
     {
@@ -741,7 +754,7 @@
       ]
     },
     {
-      "text": "You hurl yourself into a horrible configuration some would call \"upright.\"\n\nYou launch yourself into the hole.\n\n[[C->fadeout]]",
+      "text": "You hurl yourself into a horrible configuration some would call \"upright.\"\n\n[[C->fadeout]]",
       "links": [
         {
           "name": "C",
@@ -757,7 +770,7 @@
       }
     },
     {
-      "text": "...",
+      "text": "You launch yourself into the hole.\n\n...",
       "name": "fadeout",
       "pid": "40",
       "position": {
@@ -765,7 +778,8 @@
         "y": "3767"
       },
       "tags": [
-        "thunk"
+        "thunk",
+        "black"
       ]
     },
     {

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
 [ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=2]
@@ -10,6 +10,14 @@
 [ext_resource path="res://maternity/poisoning_convo/julia_head_kiss.png" type="Texture" id=8]
 [ext_resource path="res://maternity/poisoning_convo/julia_leg_noeyes.png" type="Texture" id=9]
 [ext_resource path="res://maternity/poisoning_convo/julia_corner_dream.png" type="Texture" id=10]
+[ext_resource path="res://maternity/inspection_room_convo/ThornBG.gd" type="Script" id=11]
+[ext_resource path="res://maternity/inspection_room_convo/ring_of_spikes.png" type="Texture" id=12]
+[ext_resource path="res://sounds/effects/switch_flip_slow.wav" type="AudioStream" id=13]
+[ext_resource path="res://maternity/poisoning_convo/stabbed.wav" type="AudioStream" id=14]
+[ext_resource path="res://sounds/effects/switch_flip_fast.wav" type="AudioStream" id=15]
+[ext_resource path="res://sounds/effects/locked_door.wav" type="AudioStream" id=16]
+[ext_resource path="res://sounds/effects/kick.wav" type="AudioStream" id=17]
+[ext_resource path="res://sounds/effects/body_fall.wav" type="AudioStream" id=18]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -25,6 +33,7 @@ sliverPath = "res://maternity/poisoning_convo/abor_room_sliver.png"
 nextScenePath = "dead_cat_convo"
 nextLocation = "res://infirmary/morgue/morgue.tscn"
 fade_tag_dict = {
+"black": "res://maternity/poisoning_convo/all_black_poisoning.png",
 "ceiling": "res://maternity/poisoning_convo/abor_ceiling_dream_2300x2160.png",
 "chair": "res://maternity/poisoning_convo/chair_legs_dream_2300x2160.png",
 "closer": "res://maternity/poisoning_convo/abor_room_dream_2.png",
@@ -38,6 +47,7 @@ fade_tag_dict = {
 "window": "res://maternity/poisoning_convo/dream_window_2300x2160.png"
 }
 fade_tag_dict_sliver = {
+"black": "res://maternity/poisoning_convo/all_black_sliver_poisoning.png",
 "ceiling": "res://maternity/poisoning_convo/abor_ceiling_dream_sliver.png",
 "chair": "res://maternity/poisoning_convo/chair_legs_dream_sliver.png",
 "closer": "res://maternity/poisoning_convo/abor_room_sliver.png",
@@ -61,6 +71,23 @@ tag_to_play = "fall"
 [node name="ConvoSoundEffect2" parent="." instance=ExtResource( 2 )]
 stream = ExtResource( 4 )
 tag_to_play = "thunk"
+
+[node name="StabbedSoundEffect" parent="." instance=ExtResource( 2 )]
+stream = ExtResource( 14 )
+volume_db = -18.967
+tag_to_play = "stabbed"
+
+[node name="LockedDoor" parent="." instance=ExtResource( 2 )]
+stream = ExtResource( 16 )
+tag_to_play = "door_locked"
+
+[node name="Kick" parent="." instance=ExtResource( 2 )]
+stream = ExtResource( 17 )
+tag_to_play = "kick"
+
+[node name="BodyFall" parent="." instance=ExtResource( 2 )]
+stream = ExtResource( 18 )
+tag_to_play = "body_fall"
 
 [node name="JuliaCorner" parent="." instance=ExtResource( 5 )]
 margin_left = 1180.39
@@ -115,3 +142,29 @@ margin_bottom = 2614.52
 texture = ExtResource( 8 )
 appear_tag = "kiss"
 disappear_tag = "onground"
+
+[node name="ThornBG" type="TextureRect" parent="." groups=["CharacterRects", "DynamicBGs"]]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -6.0
+margin_right = 2310.0
+margin_bottom = 2178.0
+mouse_filter = 2
+texture = ExtResource( 12 )
+script = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TweenAppear" type="Tween" parent="ThornBG"]
+
+[node name="TweenDisappear" type="Tween" parent="ThornBG"]
+
+[node name="SwitchFlipSlow" type="AudioStreamPlayer" parent="ThornBG"]
+stream = ExtResource( 13 )
+volume_db = -15.0
+
+[node name="SwitchFlipFast" type="AudioStreamPlayer" parent="ThornBG"]
+stream = ExtResource( 15 )
+volume_db = -15.0
+
+[connection signal="tween_completed" from="ThornBG/TweenAppear" to="ThornBG" method="_on_TweenAppear_tween_completed"]

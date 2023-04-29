@@ -35,19 +35,19 @@
       }
     },
     {
-      "text": "You plant your left foot with firm force.  It becomes tightly fixed in place, as if stuck in concrete.  Without thought, your left glute tightens and your core tenses up.  You raise your right foot and tuck it in, like a cobra ready to strike.\n\nThe moment of action arrives.  Your right foot springs forward like a head springing from a Jack in the Box.  \n\nFirst Contact is made.  A ripple shoots through your leg and into your pelvis, dissipating before making it to your torso and left thigh.  The force was completely reflected by the door.\n\nFerryman::M'am, that's not going to do anything.\n\n[[p:Oww!]]",
+      "text": "You plant your left foot with firm force.  It becomes tightly fixed in place, as if stuck in concrete.  Without thought, your left glute tightens and your core tenses up.  You raise your right foot and tuck it in, like a cobra ready to strike.\n\nThe moment of action arrives.  Your right foot springs forward like a head springing from a Jack in the Box.  \n\n[[C->whack]]\n",
       "links": [
         {
-          "name": "p:Oww!",
-          "link": "p:Oww!",
-          "pid": "4"
+          "name": "C",
+          "link": "whack",
+          "pid": "40"
         }
       ],
       "name": "p:(Action) Kick the door.",
       "pid": "3",
       "position": {
-        "x": "629",
-        "y": "1353"
+        "x": "665",
+        "y": "1324"
       }
     },
     {
@@ -141,7 +141,10 @@
       "position": {
         "x": "282",
         "y": "1809"
-      }
+      },
+      "tags": [
+        "door_shake"
+      ]
     },
     {
       "text": "Ferryman::Don't worry.  I have a plan for getting out of here.  \n\nFerryman::The shift managers used to call me \"Wiggly.\"  I didn't like it very much at first, but the nickname stuck for a reason.  I'm skinny, and flexible - even the tightest conduits and interstitial spaces aren't a challenge for me.\n\nFerryman::The utility tunnels that weave underneath the Cradle - they're too narrow and contorted for most people to fit through.  That's why they had to employ very young people, see?  \n\nFerryman::But I'm flexible, and skinny, and...Wiggly enough to get through them without much issue, even now.\n\nFerryman::I remember a path through the pipes that should spit me out at the back of the maternity wards.  We'll link back up there.\n\n[[How are you planning to get into the utility tunnel network?  You're trapped in an isolation cell.]]\n[[Were you one of the children tasked with maintaining the steam tunnels?]]\n[[1:You spent your entire childhood crawling around steam and sewer pipes?]]\n[[How am I supposed to navigate this place?]]\n[[What if I run into any more \"reverb\" type phenomena?]]\n[[p:Would you mind if I started calling you Wiggly?]]",
@@ -610,7 +613,10 @@
       "position": {
         "x": "533",
         "y": "1037"
-      }
+      },
+      "tags": [
+        "front_desk_ambient"
+      ]
     },
     {
       "text": "Ferryman::They are not hallucinations.\n\nFerryman::You just saw this door slam shut.  That was no trick - feel it!\n\n[[C->Shake]]",
@@ -713,7 +719,8 @@
         "y": "1050"
       },
       "tags": [
-        "ashocked"
+        "ashocked",
+        "door_shake"
       ]
     },
     {
@@ -733,6 +740,25 @@
       },
       "tags": [
         "utility"
+      ]
+    },
+    {
+      "text": "First Contact is made.  A ripple shoots through your leg and into your pelvis, dissipating before making it to your torso and left thigh.  The force was completely reflected by the door.\n\nFerryman::M'am, that's not going to do anything.\n\n[[p:Oww!]]",
+      "links": [
+        {
+          "name": "p:Oww!",
+          "link": "p:Oww!",
+          "pid": "4"
+        }
+      ],
+      "name": "whack",
+      "pid": "40",
+      "position": {
+        "x": "540",
+        "y": "1333"
+      },
+      "tags": [
+        "door_shake"
       ]
     }
   ],

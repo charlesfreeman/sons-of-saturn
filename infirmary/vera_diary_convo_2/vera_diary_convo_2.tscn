@@ -27,8 +27,10 @@ docs = [ "res://infirmary/vera_diary_convo_2/MoodDiary3Cropped.png", "res://infi
 stream = ExtResource( 3 )
 volume_db = -17.334
 tag_to_play = "squish"
+play_once = true
 
 [node name="TrashSquish2" parent="." instance=ExtResource( 4 )]
 stream = ExtResource( 5 )
 volume_db = -17.334
 tag_to_play = "squish_2"
+play_once = true

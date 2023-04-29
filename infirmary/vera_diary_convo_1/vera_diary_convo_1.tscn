@@ -16,6 +16,7 @@ backgroundPath = "res://infirmary/vera_diary_convo_1/vera_office_crop_2300x2160.
 sliverPath = "res://infirmary/vera_diary_convo_1/vera_office_sliver.png"
 nextLocation = "res://infirmary/vera_office/vera_office.tscn"
 prog_flag = "vera_office_convo"
+song = "soft_wind"
 
 [node name="Documents" parent="." instance=ExtResource( 2 )]
 docs = [ "res://infirmary/vera_diary_convo_1/MoodDiary1Cropped.png", "res://infirmary/vera_diary_convo_1/MoodDiary2Cropped.png" ]

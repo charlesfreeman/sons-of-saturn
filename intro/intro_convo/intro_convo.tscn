@@ -70,7 +70,6 @@ stretch_mode = 5
 new_bg_tag = "bg_outbound_lines"
 
 [node name="BGPioneers" parent="." instance=ExtResource( 5 )]
-modulate = Color( 1, 0.266667, 0.345098, 1 )
 margin_left = 355.0
 margin_top = 346.0
 margin_right = 2046.0
@@ -89,7 +88,6 @@ texture = ExtResource( 3 )
 is_visible = true
 
 [node name="Convo" parent="." instance=ExtResource( 1 )]
-subject = "Amelie"
 scriptPath = "res://intro/intro_convo/intro_convo.json"
 backgroundPath = "res://intro/intro_convo/stage_dark_no_bg_2300x2160.png"
 sliverPath = "res://intro/intro_convo/intro_auditorium_sliver.png"

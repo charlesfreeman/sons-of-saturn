@@ -160,8 +160,8 @@ func init_popup():
 func _check_in_party():
 	var in_party = true
 	for character in characters_array:
-		# can safely assume Amelie always in party, so she doesn't appear in global party list
-		if character != "Amelie":
+		# can safely assume Amelie and Jasper always in party
+		if character != "Amelie" and character != "Jasper":
 			in_party = in_party and character in Global.party
 	return in_party
 

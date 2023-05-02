@@ -411,7 +411,7 @@
       }
     },
     {
-      "text": "Voice::That's no longer an option I'm afraid.  The haphazard equilibrium of tensile forces holding your brain machinery together has finally given way.  Tendons are snapping, bridges are resonating, and pedestrians are getting injured.\n\nVoice::You no longer have any choice.  Open your eyes.\n\n[[C->Raise head]]",
+      "text": "Voice::That's no longer an option.  The haphazard equilibrium of tensile forces holding your brain together has finally given way.  Tendons are snapping, bridges are resonating, and pedestrians are getting injured.\n\nVoice::You no longer have any choice.  Open your eyes.\n\n[[C->Raise head]]",
       "links": [
         {
           "name": "C",
@@ -491,7 +491,7 @@
       }
     },
     {
-      "text": "Voice::If that's the attitude your going to adopt, you might as well just gouge your eyes out.  You've got no use for them.  Plenty of sharp wooden fragments are conveniently scattered about the stage for you to choose from.  \n\nVoice::Perhaps a member of the audience would even be so kind as to assist, for a live demonstration?\n\n[[p:Wait!  Before I gouge my own eyes out, there's something I've got to know!  Who am I?  What kind of \"thing\" am I?  I want to see.]]",
+      "text": "Voice::If that's the attitude your going to adopt, you might as well just gouge your eyes out.  You've got no use for them.  Plenty of sharp wooden fragments are scattered about the stage for you to choose from.  \n\nVoice::Perhaps a member of the audience would even be so kind as to assist, for a live demonstration?\n\n[[p:Wait!  Before I gouge my own eyes out, there's something I've got to know!  Who am I?  What kind of \"thing\" am I?  I want to see.]]",
       "links": [
         {
           "name": "p:Wait!  Before I gouge my own eyes out, there's something I've got to know!  Who am I?  What kind of \"thing\" am I?  I want to see.",
@@ -571,7 +571,7 @@
       }
     },
     {
-      "text": "Voice::Hazy memories return to you.  You feel your ex punching you in the jaw.  Her knuckles catch your right canine, deeply gashing her index.  She's too embarrassed to seek treatment, and the finger grows deeply infected.  \n\nVoice::She is spared amputation, but the infection consumes all nerves past the first link.  She will never use the outermost two-thirds of her index finger ever again.  \n\nVoice::You, on the other hand, are so drunk that the blow bounces right off.\n\n[[p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?]]",
+      "text": "Voice::Hazy memories return to you.  You feel your ex punching you in the jaw.  Her knuckles catch your right canine, deeply gashing her index finger.  She's too embarrassed to seek treatment, and the joint grows deeply infected.  \n\nVoice::She is spared amputation, but the infection consumes all nerves past the first link.  She will never use the outermost two-thirds of her index finger ever again.  \n\nVoice::You, on the other hand, are so drunk that the blow bounces right off.\n\n[[p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?]]",
       "links": [
         {
           "name": "p:Someone I dated nearly lost her finger after punching me?  What kind of fucked up life have I been living?",
@@ -1008,7 +1008,7 @@
       }
     },
     {
-      "text": "Jasper,looking_forwatd::You don't exactly look great in this lighting either, you know.\n\nJasper,thinking::And your silhouette was just as bulbous, believe me.\n\n[[p:So is it just us?  Please tell me it's not just us.]]",
+      "text": "Jasper,looking_forward::You don't exactly look great in this lighting either, you know.\n\nJasper,thinking::And your silhouette was just as bulbous, believe me.\n\n[[p:So is it just us?  Please tell me it's not just us.]]",
       "links": [
         {
           "name": "p:So is it just us?  Please tell me it's not just us.",

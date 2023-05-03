@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://infirmary/door_to_breezeway/door_to_breezeway.png" type="Texture" id=2]
 [ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=3]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sounds/effects/locked_door.wav" type="AudioStream" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 226.779, 311.131 )
@@ -43,3 +44,6 @@ shape = SubResource( 2 )
 [node name="PopUp" parent="." instance=ExtResource( 3 )]
 popup_text = [ "Amelie,uncertain::Door's locked.  Pretty sure this is the way to the Maternity ward.  I'll have to find another way through." ]
 nav_popup_up = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="PopUp"]
+stream = ExtResource( 5 )

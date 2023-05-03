@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.png" type="Texture" id=2]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
 [ext_resource path="res://roaming_pov/DescPopUp.tscn" type="PackedScene" id=4]
 [ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=5]
+[ext_resource path="res://sounds/effects/wind_whooshing_1.wav" type="AudioStream" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 365.103, 497.135 )
@@ -48,6 +49,10 @@ shape = SubResource( 1 )
 [node name="DescPopUp" parent="." instance=ExtResource( 4 )]
 popup_text = [ "Through the overgrown window, you can get a clear view of the hospital building's exterior.", "The portion visible to you is U-shaped.  The architecture is vaguely nautical, perhaps because the building faces a small river.  ", "The architecture seems to allow for copious natural light and airflow.  Perhaps it was first designed as a sanatorium?" ]
 diff_background = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="DescPopUp"]
+stream = ExtResource( 6 )
+volume_db = -20.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DescPopUp"]
 position = Vector2( 824.534, 1100.15 )

@@ -152,7 +152,10 @@ func init_popup():
 	get_tree().call_group("click_areas", "disable")
 	Input.set_custom_mouse_cursor(cont_sym)
 	if self.index == 0:
-		emit_signal("disable_buttons")
+		# if we have an audiostreamplayer as a child, invoke it
+		if has_node("./AudioStreamPlayer"):
+			get_node("./AudioStreamPlayer").play()
+			emit_signal("disable_buttons")
 		if diff_background:
 			emit_signal("swap_bg")
 	self._show_next_text()

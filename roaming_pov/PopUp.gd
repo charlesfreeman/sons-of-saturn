@@ -84,6 +84,7 @@ export var prog_flag = "None"
 onready var popup = $HBoxContainer
 onready var label = $HBoxContainer/VBoxContainer/LabelContainer/Label
 onready var texture = $HBoxContainer/MarginContainer/TextureRect
+onready var typewriter = $RanSoundContainer
 onready var mag_glass = load("res://roaming_pov/images/mag_glass.png")
 onready var cont_sym = load("res://roaming_pov/images/cont_arrow.png")
 
@@ -167,6 +168,7 @@ func _check_in_party():
 
 
 func _show_next_text():
+	self.typewriter.play()
 	label.text = text_array[self.index]
 	var char_emotion_dict = char_path_dict[characters_array[self.index]]
 	texture.texture = load(char_emotion_dict[emotions_array[self.index]])

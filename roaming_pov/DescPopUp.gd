@@ -9,6 +9,7 @@ var popup_visible = false
 
 onready var popup = $VBoxContainer
 onready var label = $VBoxContainer/LabelContainer/Label
+onready var typewriter = $RanSoundContainer
 onready var cont_sym = load("res://roaming_pov/images/cont_arrow.png")
 onready var mag_glass = load("res://roaming_pov/images/mag_glass.png")
 
@@ -77,6 +78,7 @@ func init_popup():
 
 
 func _show_next_text():
+	self.typewriter.play()
 	label.text = popup_text[self.index]
 	if not (self.diff_background and self.index == 0):
 		popup.show()

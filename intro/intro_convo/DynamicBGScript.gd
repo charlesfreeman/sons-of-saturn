@@ -52,7 +52,7 @@ func new_bg(tag):
 		$TweenTotalBrighten.start()
 
 
-func _on_TweenTotalDarken_tween_completed(object, key):
+func _on_TweenTotalDarken_tween_completed(_object, _key):
 	print("dark tween completed")
 	# hacky "wait around and do nothing" tween
 	$TweenWaitDark.interpolate_property(self, "modulate", 
@@ -61,5 +61,5 @@ func _on_TweenTotalDarken_tween_completed(object, key):
 	$TweenWaitDark.start()
 
 
-func _on_TweenDark_tween_completed(object, key):
+func _on_TweenDark_tween_completed(_object, _key):
 	get_tree().call_group("DynamicBGs", "new_bg", global_tag)

@@ -40,17 +40,17 @@ func _ready():
 	for c in Mds.get_children():
 		soundscapes.append(c.get_name())
 
-func change_song(song):
-	if song == "None":
+func change_song(new_song):
+	if new_song == "None":
 		if Global.song != "None":
 			self.stop_song()
 	else:
 		if Global.song == "None":
-			Mdm.init_song(song)
-			Mdm.play(song)
+			Mdm.init_song(new_song)
+			Mdm.play(new_song)
 		else:
-			Mdm.queue_beat_transition(song)
-		Global.song = song
+			Mdm.queue_beat_transition(new_song)
+		Global.song = new_song
 
 func stop_song():
 	Mdm.stop(Global.song)

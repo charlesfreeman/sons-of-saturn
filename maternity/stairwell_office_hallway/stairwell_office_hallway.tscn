@@ -67,5 +67,5 @@ popup_text = [ "Amelie,neutral::Locked.  Looks like it leads to a stairwell?" ]
 nav_popup_left = true
 
 [node name="PopUp2" parent="." instance=ExtResource( 4 )]
-popup_text = [ "Amelie,worried::Miss, you can't go in there.  That's someone's office." ]
+popup_text = [ "Julia,worried::Miss, you can't go in there.  That's someone's office." ]
 nav_popup_right = true

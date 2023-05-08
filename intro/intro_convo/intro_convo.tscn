@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
 [ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=2]
@@ -16,6 +16,10 @@
 [ext_resource path="res://intro/intro_convo/looking_up_well_bg.png" type="Texture" id=14]
 [ext_resource path="res://sounds/effects/switch_flip_fast.wav" type="AudioStream" id=15]
 [ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=16]
+[ext_resource path="res://images/DALLE/DALL·E 2023-05-02 12.15.00 - woman dancing in the style of zdzisław beksiński.png" type="Texture" id=17]
+[ext_resource path="res://images/DALLE/DALL·E 2023-05-02 14.55.20.png" type="Texture" id=18]
+[ext_resource path="res://images/DALLE/DALL·E 2023-05-02 15.56.57 - piles of eyes scattered about a theater backdrop in the style of zdzislaw beksinski.png" type="Texture" id=19]
+[ext_resource path="res://sounds/effects/devil_piano.wav" type="AudioStream" id=20]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -29,7 +33,7 @@ margin_right = 2300.0
 margin_bottom = 2160.0
 texture = ExtResource( 6 )
 
-[node name="BGCradle" parent="." instance=ExtResource( 5 )]
+[node name="BGPandora" parent="." instance=ExtResource( 5 )]
 margin_left = 417.0
 margin_top = 196.0
 margin_right = 2074.0
@@ -37,7 +41,7 @@ margin_bottom = 1600.0
 texture = ExtResource( 10 )
 expand = true
 stretch_mode = 5
-new_bg_tag = "bg_cradle"
+new_bg_tag = "bg_pandora"
 
 [node name="BGTrestle" parent="." instance=ExtResource( 5 )]
 margin_left = 360.0
@@ -78,6 +82,36 @@ texture = ExtResource( 11 )
 expand = true
 stretch_mode = 5
 new_bg_tag = "bg_pioneers"
+
+[node name="BGHell" parent="." instance=ExtResource( 5 )]
+margin_left = 412.0
+margin_top = 346.0
+margin_right = 2082.0
+margin_bottom = 1780.0
+texture = ExtResource( 18 )
+expand = true
+stretch_mode = 5
+new_bg_tag = "bg_hell"
+
+[node name="BGRedFigure" parent="." instance=ExtResource( 5 )]
+margin_left = 442.0
+margin_top = 318.0
+margin_right = 2232.0
+margin_bottom = 1915.0
+texture = ExtResource( 17 )
+expand = true
+stretch_mode = 5
+new_bg_tag = "bg_red_figure"
+
+[node name="BGEye" parent="." instance=ExtResource( 5 )]
+margin_left = 383.0
+margin_top = 296.0
+margin_right = 2018.0
+margin_bottom = 1823.0
+texture = ExtResource( 19 )
+expand = true
+stretch_mode = 5
+new_bg_tag = "bg_eyes"
 
 [node name="DynamicBG" parent="." instance=ExtResource( 5 )]
 modulate = Color( 0.392157, 0.392157, 0.392157, 1 )
@@ -132,6 +166,10 @@ brighten_tag = "lightup_jasper"
 appear_dark_tag = "jasper_dark"
 
 [node name="Wiggly" parent="." instance=ExtResource( 2 )]
+margin_left = 534.653
+margin_top = -420.035
+margin_right = 1893.65
+margin_bottom = 824.965
 appear_tag = ""
 appear_dark_tag = "ferryman_overhead_dark"
 
@@ -151,3 +189,7 @@ stream = ExtResource( 15 )
 volume_db = -15.0
 tag_to_play = "wakeup"
 play_once = true
+
+[node name="DevilPiano" parent="." instance=ExtResource( 16 )]
+stream = ExtResource( 20 )
+tag_to_play = "bg_hell"

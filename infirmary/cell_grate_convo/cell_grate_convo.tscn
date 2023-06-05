@@ -59,7 +59,7 @@ disappear_tag = "enter"
 
 [node name="DoorSlam" parent="." instance=ExtResource( 5 )]
 stream = ExtResource( 6 )
-volume_db = -5.0
+volume_db = -15.4
 tag_to_play = "slam"
 
 [node name="DoorShake" parent="." instance=ExtResource( 5 )]

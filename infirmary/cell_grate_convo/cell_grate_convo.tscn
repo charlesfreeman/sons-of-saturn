@@ -66,3 +66,9 @@ tag_to_play = "slam"
 stream = ExtResource( 7 )
 volume_db = -5.0
 tag_to_play = "door_shake"
+
+[node name="DoorShakeSingle" parent="." instance=ExtResource( 5 )]
+stream = ExtResource( 7 )
+volume_db = -5.0
+tag_to_play = "door_shake_single"
+play_once = true

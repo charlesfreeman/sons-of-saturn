@@ -26,6 +26,8 @@ __meta__ = {
 }
 scene_up = "res://infirmary/washing_machine_trio/washing_machine_trio.tscn"
 scene_down = "res://infirmary/top_floor_middle_hallway/top_floor_middle_hallway.tscn"
+alt_scene_up = "res://infirmary/washing_machine_trio_w_julia/washing_machine_trio_w_julia.tscn"
+req_flag_up = "julia_first_convo"
 position = Vector2( 1785, 775 )
 rotation = 146
 

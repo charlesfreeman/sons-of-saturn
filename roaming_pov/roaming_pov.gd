@@ -1,4 +1,4 @@
-extends HBoxContainer
+extends Control
 
 var global_scene_path = "None"
 var global_texture_path = "None"
@@ -22,16 +22,18 @@ var map_paths = {
 	"dream" : "res://roaming_pov/maps/dream_map.png"
 }
 
-onready var map = $VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect
-onready var camera = $VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect/Camera2D
-onready var char_rect = $VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect/CharRect
-onready var up_button = $VBoxContainer/HBoxContainer/GridContainer/UpButton
-onready var right_button = $VBoxContainer/HBoxContainer/GridContainer/RightButton
-onready var down_button = $VBoxContainer/HBoxContainer/GridContainer/DownButton
-onready var left_button = $VBoxContainer/HBoxContainer/GridContainer/LeftButton
-onready var inventory = $VBoxContainer/MarginContainer/HBoxContainer/Inventory
-onready var tile_footsteps = $TileFootsteps
-onready var wet_footsteps = $WetFootsteps
+onready var map = $HBoxContainer/VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect
+onready var camera = $HBoxContainer/VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect/Camera2D
+onready var char_rect = $HBoxContainer/VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect/CharRect
+onready var up_button = $HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/UpButton
+onready var right_button = $HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/RightButton
+onready var down_button = $HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/DownButton
+onready var left_button = $HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/LeftButton
+onready var inventory = $HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer/Inventory
+onready var transition_screen = $HBoxContainer/TransitionScreen
+onready var transition_screen_texture = $HBoxContainer/TransitionScreenTexture
+onready var tile_footsteps = $HBoxContainer/TileFootsteps
+onready var wet_footsteps = $HBoxContainer/WetFootsteps
 onready var footstep_types = {
 	"Tile" : tile_footsteps,
 	"Wet" : wet_footsteps,
@@ -111,11 +113,11 @@ func change_PoV(scene_path):
 	# load the next scene and unpack it into a node
 	if scene_path != "None":
 		global_scene_path = scene_path
-		$TransitionScreen.transition()
+		transition_screen.transition()
 
 
 func swap_texture():
-	$TransitionScreenTexture.transition()
+	transition_screen_texture.transition()
 
 
 func _load_PoV_instance():
@@ -194,4 +196,5 @@ func set_pos_rot(pos, rot):
 	char_rect.rect_rotation = rot
 	camera.position.x = pos.x + (char_rect.rect_size.x / 2)
 	camera.position.y = pos.y + (char_rect.rect_size.y / 2)
+
 

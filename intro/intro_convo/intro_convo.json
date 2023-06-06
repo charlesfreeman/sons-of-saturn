@@ -263,7 +263,7 @@
       }
     },
     {
-      "text": "You rise to your feet a little too quickly, allowing black dots to colonize your visual field.  \n\nYou can still make out the words of your Ferryman guide echoing down the drain.\n\nFerryman::The entrance to the Maternity Ward is just up ahead.  Follow me!\n\n[[Will there be more sunlight up ahead?]]\n[[p:Let's get going then.]]",
+      "text": "You rise to your feet a little too quickly, allowing black dots to colonize your visual field.  \n\nThe words of your Ferryman guide echo down the drain as light from his red headlamp stains the walls.\n\nFerryman::The entrance to the Maternity Ward is just up ahead.  Follow me!\n\n[[Will there be more sunlight up ahead?]]\n[[p:Let's get going then.]]",
       "links": [
         {
           "name": "Will there be more sunlight up ahead?",

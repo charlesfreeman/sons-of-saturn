@@ -14,3 +14,7 @@ func _ready():
 
 func set_item(item_name: String):
 	item.texture = load(item_texture_paths[item_name])
+
+
+func set_tooltip(name: String):
+	item.hint_tooltip = name

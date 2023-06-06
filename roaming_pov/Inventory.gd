@@ -8,6 +8,7 @@ onready var inv_slots = [$Inv1, $Inv2, $Inv3]
 func _ready():
 	for i in range(len(Global.inventory)):
 		inv_slots[i].set_item(Global.inventory[i])
+		inv_slots[i].set_tooltip(Global.inventory[i])
 		num_items += 1
 		
 func add_item(item):

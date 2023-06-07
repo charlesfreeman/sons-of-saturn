@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=37 format=2]
 
 [ext_resource path="res://roaming_pov/images/cone_of_vision.png" type="Texture" id=1]
 [ext_resource path="res://roaming_pov/roaming_pov.gd" type="Script" id=2]
@@ -33,6 +33,7 @@
 [ext_resource path="res://roaming_pov/sounds/footsteps_wet_3.wav" type="AudioStream" id=31]
 [ext_resource path="res://images/saving_icon.png" type="Texture" id=32]
 [ext_resource path="res://roaming_pov/Autosave.gd" type="Script" id=33]
+[ext_resource path="res://title_screen/TitleMenuOpt.tscn" type="PackedScene" id=34]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://fonts/PTSerif-Regular.ttf"
@@ -388,6 +389,65 @@ valign = 1
 
 [node name="TweenFadeOut" type="Tween" parent="Autosave"]
 
+[node name="Save" type="HBoxContainer" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 63.0
+margin_top = 1971.0
+margin_right = 458.0
+margin_bottom = 2101.0
+mouse_filter = 2
+script = ExtResource( 33 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Save"]
+margin_right = 195.0
+margin_bottom = 130.0
+size_flags_horizontal = 3
+texture = ExtResource( 32 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="Save"]
+margin_left = 199.0
+margin_right = 395.0
+margin_bottom = 130.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Saving"
+valign = 1
+
+[node name="TweenFadeIn" type="Tween" parent="Save"]
+
+[node name="TweenHold" type="Tween" parent="Save"]
+
+[node name="TweenFadeOut" type="Tween" parent="Save"]
+
+[node name="EscOpts" type="VBoxContainer" parent="."]
+margin_left = 458.0
+margin_top = 584.0
+margin_right = 1562.0
+margin_bottom = 1539.0
+
+[node name="Resume" parent="EscOpts" instance=ExtResource( 34 )]
+margin_right = 1104.0
+margin_bottom = 315.0
+label_text = "Resume"
+
+[node name="Save" parent="EscOpts" instance=ExtResource( 34 )]
+margin_top = 319.0
+margin_right = 1104.0
+margin_bottom = 635.0
+label_text = "Save Game"
+
+[node name="Exit" parent="EscOpts" instance=ExtResource( 34 )]
+margin_top = 639.0
+margin_right = 1104.0
+margin_bottom = 955.0
+label_text = "Exit to Title"
+
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/UpButton" to="." method="_on_UpButton_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/LeftButton" to="." method="_on_LeftButton_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/RightButton" to="." method="_on_RightButton_pressed"]
@@ -396,3 +456,8 @@ valign = 1
 [connection signal="transitioned" from="HBoxContainer/TransitionScreenTexture" to="." method="_on_TransitionScreenTexture_transitioned"]
 [connection signal="tween_completed" from="Autosave/TweenFadeIn" to="Autosave" method="_on_TweenFadeIn_tween_completed"]
 [connection signal="tween_completed" from="Autosave/TweenHold" to="Autosave" method="_on_TweenHold_tween_completed"]
+[connection signal="tween_completed" from="Save/TweenFadeIn" to="Save" method="_on_TweenFadeIn_tween_completed"]
+[connection signal="tween_completed" from="Save/TweenHold" to="Save" method="_on_TweenHold_tween_completed"]
+[connection signal="pressed" from="EscOpts/Resume" to="." method="_on_Resume_pressed"]
+[connection signal="pressed" from="EscOpts/Save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="EscOpts/Exit" to="." method="_on_Exit_pressed"]

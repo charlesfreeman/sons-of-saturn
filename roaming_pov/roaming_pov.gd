@@ -1,7 +1,5 @@
 extends Control
 
-var global_scene_path = "None"
-var global_texture_path = "None"
 var pov_scene
 var pov_instance
 
@@ -34,6 +32,10 @@ onready var transition_screen = $HBoxContainer/TransitionScreen
 onready var transition_screen_texture = $HBoxContainer/TransitionScreenTexture
 onready var tile_footsteps = $HBoxContainer/TileFootsteps
 onready var wet_footsteps = $HBoxContainer/WetFootsteps
+onready var esc_opts = $EscOpts
+onready var autosave = $Autosave
+onready var save = $Save
+onready var hbox = $HBoxContainer
 onready var footstep_types = {
 	"Tile" : tile_footsteps,
 	"Wet" : wet_footsteps,
@@ -42,10 +44,10 @@ onready var footstep_types = {
 
 func _ready():
 	char_rect.rect_pivot_offset = char_rect.rect_size / 2
-	global_scene_path = Global.location
 	_load_PoV_instance()
 	
 	Global.save_game()
+	autosave.save()
 	
 
 func _process(_delta):
@@ -57,17 +59,27 @@ func _process(_delta):
 		_on_DownButton_pressed()
 	elif Input.is_action_pressed("ui_left"):
 		_on_LeftButton_pressed()
-
+	elif Input.is_action_pressed("ui_cancel"):
+		if not esc_opts.visible:
+			hbox.modulate = Color(1, 1, 1, 0.6)
+			get_tree().call_group("click_areas", "disable")
+			self._disable_buttons()
+			esc_opts.visible = true
+		else:
+			hbox.modulate = Color(1, 1, 1, 1)
+			get_tree().call_group("click_areas", "enable")
+			self._enable_buttons()
+			esc_opts.visible = false
 
 
 func _on_UpButton_pressed():
 	if pov_instance.non_roam_scene_up:
 		SceneManager.change_scene(pov_instance.scene_up, options, options, general_options)
 	elif Global.get_prog_flag(pov_instance.req_flag_up):
-		change_PoV(pov_instance.scene_up)
+		_change_PoV(pov_instance.scene_up)
 	else:
 		if pov_instance.alt_scene_up != "None":
-			change_PoV(pov_instance.alt_scene_up)
+			_change_PoV(pov_instance.alt_scene_up)
 		else:
 			get_tree().call_group("nav_popups_up", "init_popup")
 
@@ -76,10 +88,10 @@ func _on_RightButton_pressed():
 	if pov_instance.non_roam_scene_right:
 		SceneManager.change_scene(pov_instance.scene_right, options, options, general_options)
 	elif Global.get_prog_flag(pov_instance.req_flag_right):
-		change_PoV(pov_instance.scene_right)
+		_change_PoV(pov_instance.scene_right)
 	else:
 		if pov_instance.alt_scene_right != "None":
-			change_PoV(pov_instance.alt_scene_right)
+			_change_PoV(pov_instance.alt_scene_right)
 		else:
 			get_tree().call_group("nav_popups_right", "init_popup")
 
@@ -88,10 +100,10 @@ func _on_DownButton_pressed():
 	if pov_instance.non_roam_scene_down:
 		SceneManager.change_scene(pov_instance.scene_down, options, options, general_options)
 	elif Global.get_prog_flag(pov_instance.req_flag_down):
-		change_PoV(pov_instance.scene_down)
+		_change_PoV(pov_instance.scene_down)
 	else:
 		if pov_instance.alt_scene_down != "None":
-			change_PoV(pov_instance.alt_scene_down)
+			_change_PoV(pov_instance.alt_scene_down)
 		else:
 			get_tree().call_group("nav_popups_down", "init_popup")
 
@@ -100,19 +112,19 @@ func _on_LeftButton_pressed():
 	if pov_instance.non_roam_scene_left:
 		SceneManager.change_scene(pov_instance.scene_left, options, options, general_options)
 	elif Global.get_prog_flag(pov_instance.req_flag_left):
-		change_PoV(pov_instance.scene_left)
+		_change_PoV(pov_instance.scene_left)
 	else:
 		if pov_instance.alt_scene_left != "None":
-			change_PoV(pov_instance.alt_scene_left)
+			_change_PoV(pov_instance.alt_scene_left)
 		else:
 			get_tree().call_group("nav_popups_left", "init_popup")
 
 
-func change_PoV(scene_path):
+func _change_PoV(scene_path):
 	footstep_types[pov_instance.footstep_type].play()
 	# load the next scene and unpack it into a node
 	if scene_path != "None":
-		global_scene_path = scene_path
+		Global.set_location(scene_path)
 		transition_screen.transition()
 
 
@@ -121,7 +133,7 @@ func swap_texture():
 
 
 func _load_PoV_instance():
-	pov_scene = load(global_scene_path)
+	pov_scene = load(Global.get_location())
 	pov_instance = pov_scene.instance()
 	if pov_instance.map != "None":
 		Global.set_region(pov_instance.map)
@@ -197,4 +209,18 @@ func set_pos_rot(pos, rot):
 	camera.position.x = pos.x + (char_rect.rect_size.x / 2)
 	camera.position.y = pos.y + (char_rect.rect_size.y / 2)
 
+func _on_Resume_pressed():
+	self.modulate = Color(1, 1, 1, 1)
+	get_tree().call_group("click_areas", "enable")
+	self._enable_buttons()
+	esc_opts.visible = false
+
+func _on_Save_pressed():
+	save.save()
+	Global.save_game()
+
+func _on_Exit_pressed():
+	var options = SceneManager.create_options()
+	var general_options = SceneManager.create_general_options()
+	SceneManager.change_scene("TitleScreen", options, options, general_options)
 

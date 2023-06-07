@@ -30,3 +30,4 @@ __meta__ = {
 [connection signal="focus_entered" from="." to="." method="_on_TitleMenuOpt_focus_entered"]
 [connection signal="focus_exited" from="." to="." method="_on_TitleMenuOpt_focus_exited"]
 [connection signal="mouse_entered" from="." to="." method="_on_TitleMenuOpt_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_TitleMenuOpt_mouse_exited"]

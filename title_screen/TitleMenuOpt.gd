@@ -27,6 +27,10 @@ func _on_TitleMenuOpt_mouse_entered():
 	self.grab_focus()
 
 
+func _on_TitleMenuOpt_mouse_exited():
+	self.release_focus()
+
+
 func _on_Continue_pressed():
 	Global.load_game()
 
@@ -35,3 +39,4 @@ func _on_NewGame_pressed():
 	var options = SceneManager.create_options()
 	var general_options = SceneManager.create_general_options()
 	SceneManager.change_scene("Quote", options, options, general_options)
+

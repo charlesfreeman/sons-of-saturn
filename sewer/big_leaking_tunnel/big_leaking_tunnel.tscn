@@ -21,7 +21,7 @@ scene_up = "res://sewer/drain_stairwell/drain_stairwell.tscn"
 position = Vector2( 1630, 460 )
 rotation = -74
 song = "big_leaking_tunnel"
-footstep_type = "Wet"
+footstep_type_up = "Wet"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true

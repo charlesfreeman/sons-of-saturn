@@ -20,7 +20,7 @@ __meta__ = {
 scene_up = "res://sewer/mason_drain_corner/mason_drain_corner.tscn"
 position = Vector2( 1662, 1200 )
 song = "sly_sewer_distant"
-footstep_type = "Wet"
+footstep_type_up = "Wet"
 map = "sewer"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 1 )]

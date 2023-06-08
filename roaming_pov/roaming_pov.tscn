@@ -426,10 +426,14 @@ valign = 1
 [node name="TweenFadeOut" type="Tween" parent="Save"]
 
 [node name="EscOpts" type="VBoxContainer" parent="."]
+visible = false
 margin_left = 458.0
 margin_top = 584.0
 margin_right = 1562.0
 margin_bottom = 1539.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Resume" parent="EscOpts" instance=ExtResource( 34 )]
 margin_right = 1104.0

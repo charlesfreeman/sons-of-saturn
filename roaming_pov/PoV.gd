@@ -32,7 +32,10 @@ export var soundscape = "None"
 
 # change this to "Wet" to change to wet footsteps
 # will likely add more options later
-export var footstep_type = "Tile"
+export var footstep_type_up = "Tile"
+export var footstep_type_right = "Tile"
+export var footstep_type_down = "Tile"
+export var footstep_type_left = "Tile"
 
 # set this to something if new mini-map needed when entering this area
 export var map = "None"

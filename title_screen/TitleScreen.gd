@@ -20,3 +20,7 @@ func _ready():
 	load_button.change_color(Color(Global.dbrightness, Global.dbrightness, Global.dbrightness, 1))
 	options_button.disabled = true
 	options_button.change_color(Color(Global.dbrightness, Global.dbrightness, Global.dbrightness, 1))
+
+
+func _on_Exit_pressed():
+	get_tree().quit()

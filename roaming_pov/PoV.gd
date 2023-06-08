@@ -76,7 +76,6 @@ func _ready():
 	Global.change_soundscape(soundscape)
 	
 	for node in get_tree().get_nodes_in_group("popups"):
-		print("connecting node")
 		node.connect("disable_buttons", self, "_disable_buttons")
 		node.connect("enable_buttons", self, "_enable_buttons")
 		node.connect("swap_bg", self, "_swap_bg")
@@ -85,7 +84,6 @@ func _ready():
 
 
 func swap_bg():
-	print("swapping bg")
 	if self.default_bg:
 		self.texture = load(popup_background)
 		self.default_bg = false

@@ -109,7 +109,7 @@ func _ready():
 		Global.flip_prog_flag(prog_flag)
 	Global.change_song(song)
 	Global.change_soundscape(soundscape)
-	Global.location = nextLocation
+	Global.set_location(nextLocation)
 	dialogue_sys.set_script_path(scriptPath)
 	dialogue_sys.set_next_scene_path(nextScenePath)
 	Global.add_to_party(new_party_mem)

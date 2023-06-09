@@ -107,6 +107,12 @@ func get_region():
 	
 func set_region(map: String):
 	self.region = map
+	
+func get_location():
+	return self.location
+	
+func set_location(loc: String):
+	self.location = loc
 
 func produce_save_dict():
 	var save_dict = {

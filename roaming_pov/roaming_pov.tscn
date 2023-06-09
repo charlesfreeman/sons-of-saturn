@@ -31,7 +31,7 @@
 [ext_resource path="res://roaming_pov/images/map_boundary.png" type="Texture" id=29]
 [ext_resource path="res://roaming_pov/sounds/footsteps_wet_1.wav" type="AudioStream" id=30]
 [ext_resource path="res://roaming_pov/sounds/footsteps_wet_3.wav" type="AudioStream" id=31]
-[ext_resource path="res://images/saving_icon.png" type="Texture" id=32]
+[ext_resource path="res://images/saving_icon_trimmed.png" type="Texture" id=32]
 [ext_resource path="res://roaming_pov/Autosave.gd" type="Script" id=33]
 [ext_resource path="res://title_screen/TitleMenuOpt.tscn" type="PackedScene" id=34]
 [ext_resource path="res://sounds/effects/door_unlock.wav" type="AudioStream" id=35]
@@ -40,8 +40,8 @@
 font_path = "res://fonts/PTSerif-Regular.ttf"
 
 [sub_resource type="DynamicFont" id=2]
-size = 64
-outline_size = 8
+size = 48
+outline_size = 6
 outline_color = Color( 0, 0, 0, 1 )
 use_mipmaps = true
 font_data = SubResource( 1 )
@@ -360,8 +360,8 @@ stream = ExtResource( 35 )
 [node name="Autosave" type="HBoxContainer" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 63.0
-margin_top = 1971.0
-margin_right = 552.0
+margin_top = 2037.0
+margin_right = 419.0
 margin_bottom = 2101.0
 mouse_filter = 2
 script = ExtResource( 33 )
@@ -370,21 +370,21 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="Autosave"]
-margin_right = 162.0
-margin_bottom = 130.0
+margin_right = 70.0
+margin_bottom = 64.0
 size_flags_horizontal = 3
 texture = ExtResource( 32 )
 expand = true
 stretch_mode = 5
 
 [node name="Label" type="Label" parent="Autosave"]
-margin_left = 166.0
-margin_right = 489.0
-margin_bottom = 130.0
+margin_left = 74.0
+margin_right = 356.0
+margin_bottom = 64.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "Autosaving"
+text = "Autosaving..."
 valign = 1
 
 [node name="TweenFadeIn" type="Tween" parent="Autosave"]
@@ -396,8 +396,8 @@ valign = 1
 [node name="Save" type="HBoxContainer" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 63.0
-margin_top = 1971.0
-margin_right = 458.0
+margin_top = 2037.0
+margin_right = 338.0
 margin_bottom = 2101.0
 mouse_filter = 2
 script = ExtResource( 33 )
@@ -406,21 +406,21 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="Save"]
-margin_right = 195.0
-margin_bottom = 130.0
+margin_right = 90.0
+margin_bottom = 64.0
 size_flags_horizontal = 3
 texture = ExtResource( 32 )
 expand = true
 stretch_mode = 5
 
 [node name="Label" type="Label" parent="Save"]
-margin_left = 199.0
-margin_right = 395.0
-margin_bottom = 130.0
+margin_left = 94.0
+margin_right = 275.0
+margin_bottom = 64.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
-text = "Saving"
+text = "Saving..."
 valign = 1
 
 [node name="TweenFadeIn" type="Tween" parent="Save"]

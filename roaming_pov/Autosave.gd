@@ -13,7 +13,7 @@ func save():
 	fadein.start()
 
 func _on_TweenFadeIn_tween_completed(_object, _key):
-	hold.interpolate_property(self, "modulate", self.modulate, self.modulate, 1.25, Tween.TRANS_QUAD, Tween.EASE_IN)
+	hold.interpolate_property(self, "modulate", self.modulate, self.modulate, 0.75, Tween.TRANS_QUAD, Tween.EASE_IN)
 	hold.start()
 
 

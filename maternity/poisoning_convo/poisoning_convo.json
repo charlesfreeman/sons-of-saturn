@@ -108,7 +108,7 @@
       ]
     },
     {
-      "text": "Julia,suspiscious::The patient is behaving violently, initiating restrainment procedures.\n\nJulia is shouting down the hall.  She pretends not to hear you.\n\nYou struggle, but Julia has a stranglehold on your left wrist, and her knee on your back.  \n\nYour legs remain pinned by the medical cabinet, though you can tell it isn't too heavy.  \n\nJasper,looking_forward::Your right hand is free!  Use it!\n\n[[(Action) Grab a syringe-tipped ampoule and stab Julia.]]\n[[(Action) Look at the needle.]]\n[[1;:I thought you weren't supposed to share needles.]]\n[[1;p:(Action) Stab yourself with the hypodermic needle.]] ",
+      "text": "Julia,suspicious::The patient is behaving violently, initiating restrainment procedures.\n\nJulia is shouting down the hall.  She pretends not to hear you.\n\nYou struggle, but Julia has a stranglehold on your left wrist, and her knee on your back.  \n\nYour legs remain pinned by the medical cabinet, though you can tell it isn't too heavy.  \n\nJasper,looking_forward::Your right hand is free!  Use it!\n\n[[(Action) Grab a syringe-tipped ampoule and stab Julia.]]\n[[(Action) Look at the needle.]]\n[[1;:I thought you weren't supposed to share needles.]]\n[[1;p:(Action) Stab yourself with the hypodermic needle.]] ",
       "links": [
         {
           "name": "(Action) Grab a syringe-tipped ampoule and stab Julia.",
@@ -142,7 +142,7 @@
       ]
     },
     {
-      "text": "You sieze the needle and violently strike Julia's right thigh.  You penetrate her envelope, breaking her epidermis.\n\nAn electric shock shivers down your spine.  You shake off the intrusions.\n\nJulia doesn't react to the invasion.  She isn't even trying to prevent a second strike.  She finds it familiar.\n\nThe room begins to reek of organic solvents.  Your shoulder blades and left wrist start to burn.\n\n[[Continue->p:Hey!  Let me go!]] ",
+      "text": "You seize the needle and violently strike Julia's right thigh.  You penetrate her envelope, breaking her epidermis.\n\nAn electric shock shivers down your spine.  You shake off the intrusions.\n\nJulia doesn't react to the invasion.  She isn't even trying to prevent a second strike.  She finds it familiar.\n\nThe room begins to reek of organic solvents.  Your shoulder blades and left wrist start to burn.\n\n[[Continue->p:Hey!  Let me go!]] ",
       "links": [
         {
           "name": "Continue",
@@ -267,7 +267,7 @@
       ]
     },
     {
-      "text": "Julia has retreated to the corner, hyperventillating.  \n\n[[C->Shut door]]",
+      "text": "Julia has retreated to the corner, hyperventilating.  \n\n[[C->Shut door]]",
       "links": [
         {
           "name": "C",
@@ -436,7 +436,7 @@
       }
     },
     {
-      "text": "The door is locked now.  You violently shake the handle.  It's as if the door is glued into its frame.\n\nJasper,thinking::It's just like the isolation cell door that seperated you from Wiggly.\n\nJasper,sad::The Cradle wants us here.\n\nYou feel an icy tug on your right leg.\n\n[[C->Look down]]",
+      "text": "The door is locked now.  You violently shake the handle.  It's as if the door is glued into its frame.\n\nJasper,thinking::It's just like the isolation cell door that separated you from Wiggly.\n\nJasper,sad::The Cradle wants us here.\n\nYou feel an icy tug on your right leg.\n\n[[C->Look down]]",
       "links": [
         {
           "name": "C",
@@ -715,7 +715,7 @@
       ]
     },
     {
-      "text": "The fog is interuppted by an intrusive, grating sound - the sound of a hatch opening.\n\n[[C->Wiggly Arrives]]",
+      "text": "The fog is interrupted by an intrusive, grating sound - the sound of a hatch opening.\n\n[[C->Wiggly Arrives]]",
       "links": [
         {
           "name": "C",
@@ -735,11 +735,11 @@
       ]
     },
     {
-      "text": "Wiggly::Miss?  Miss!?!\n\nJasper,surprised::He's opened the grate leading to the ducts for you.  \n\nJasper::Dive for it!\n\n[[p:(Action) Dive into the aperature.]]",
+      "text": "Wiggly::Miss?  Miss!?!\n\nJasper,surprised::He's opened the grate leading to the ducts for you.  \n\nJasper::Dive for it!\n\n[[p:(Action) Dive into the aperture.]]",
       "links": [
         {
-          "name": "p:(Action) Dive into the aperature.",
-          "link": "p:(Action) Dive into the aperature.",
+          "name": "p:(Action) Dive into the aperture.",
+          "link": "p:(Action) Dive into the aperture.",
           "pid": "39"
         }
       ],
@@ -762,7 +762,7 @@
           "pid": "40"
         }
       ],
-      "name": "p:(Action) Dive into the aperature.",
+      "name": "p:(Action) Dive into the aperture.",
       "pid": "39",
       "position": {
         "x": "1412",

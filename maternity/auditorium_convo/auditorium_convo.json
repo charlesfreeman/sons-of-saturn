@@ -19,7 +19,7 @@
       }
     },
     {
-      "text": "Julia::...\n\nJasper::She's not listening.\n\n[[p:Hello?  You there?]]\n[[p:Come here often?]]",
+      "text": "Julia::...\n\nJasper,twisted::She's not listening.\n\n[[p:Hello?  You there?]]\n[[p:Come here often?]]",
       "links": [
         {
           "name": "p:Hello?  You there?",
@@ -40,7 +40,7 @@
       }
     },
     {
-      "text": "Julia::I...\n\nJulia::Yes, sorry.  What's the matter?\n\n[[p:I'm guessing you visit this auditorium often?->Get Going]]",
+      "text": "Julia,lost_in_thought::I...\n\nJulia,concerned::Yes, sorry.  What's the matter?\n\n[[p:I'm guessing you visit this auditorium often?->Get Going]]",
       "links": [
         {
           "name": "p:I'm guessing you visit this auditorium often?",
@@ -56,7 +56,7 @@
       }
     },
     {
-      "text": "Julia::I...\n\n[[Continue->Get Going]]",
+      "text": "Julia,lost_in_thought::I...\n\n[[Continue->Get Going]]",
       "links": [
         {
           "name": "Continue",
@@ -72,7 +72,7 @@
       }
     },
     {
-      "text": "Julia::No, I don't.\n\nJasper::Liar.\n\nJulia::We should keep moving.  We still need to sign you in at the front desk.",
+      "text": "Julia,concerned::No, I don't.\n\nJasper,twisted::Liar.\n\nJulia,suspicious::We should keep moving.  We still need to sign you in at the front desk.",
       "name": "Get Going",
       "pid": "5",
       "position": {

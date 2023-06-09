@@ -107,7 +107,7 @@
       }
     },
     {
-      "text": "Jasper,looking_forward::Yep, pretty sure the situation won't get any more complicated than that.  \n\nJasper,head_tilted::These tunnels will take you straight to the infirmary, right at the edge of the Cradle.  You'll pop out of an indoor manhole cover or whatever, find a nicely formatted document explaining what happend to your Mom on a nearby desk, and then escape the same way you got in.\n\n[[p:You sound facetious, vintage plush toy that's talking to me.]]\n[[p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel.]]",
+      "text": "Jasper,looking_forward::Yep, pretty sure the situation won't get any more complicated than that.  \n\nJasper,head_tilted::These tunnels will take you straight to the infirmary, right at the edge of the Cradle.  You'll pop out of an indoor manhole cover or whatever, find a nicely formatted document explaining what happened to your Mom on a nearby desk, and then escape the same way you got in.\n\n[[p:You sound facetious, vintage plush toy that's talking to me.]]\n[[p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel.]]",
       "links": [
         {
           "name": "p:You sound facetious, vintage plush toy that's talking to me.",
@@ -247,7 +247,7 @@
       }
     },
     {
-      "text": "Ferryman::Well... I would like to accomodate this request, but I really cannot recommend staying here any longer.  The water levels in these tunnels rise during mid-day.  And we should avoid breathing in too many of the gases.\n\nJasper,thinking::He's being polite.  Staying here any longer is an awful idea.\n\n[[p:(Action) Stand up.]]",
+      "text": "Ferryman::Well... I would like to accommodate this request, but I really cannot recommend staying here any longer.  The water levels in these tunnels rise during mid-day.  And we should avoid breathing in too many of the gases.\n\nJasper,thinking::He's being polite.  Staying here any longer is an awful idea.\n\n[[p:(Action) Stand up.]]",
       "links": [
         {
           "name": "p:(Action) Stand up.",
@@ -729,7 +729,7 @@
       ]
     },
     {
-      "text": "Malformed Lump::No.  Most of the underground entrances have been heavily secured.\n\nMalformed Lump::And besides, those routes were barely \"viable\" to begin with.  The early underground voyage survival rates were abysmal.  \n\nMalformed Lump::Bone Fractures.  Hypothermia.  Dehydration.  Psychosis.  Trapped by collapses.  So many ways to end up a colorfully dressed skeleton who's only remaining purpose is to serve as a waymarker for those attempting the same route.\n\nMalformed Lump::Thankfully, the wastewater and ventillation systems were far too intricate to fully seal.  Hundreds of portals still exist only minimally secured.  \n\n[[C->back to sewer]]",
+      "text": "Malformed Lump::No.  Most of the underground entrances have been heavily secured.\n\nMalformed Lump::And besides, those routes were barely \"viable\" to begin with.  The early underground voyage survival rates were abysmal.  \n\nMalformed Lump::Bone Fractures.  Hypothermia.  Dehydration.  Psychosis.  Trapped by collapses.  So many ways to end up a colorfully dressed skeleton who's only remaining purpose is to serve as a waymarker for those attempting the same route.\n\nMalformed Lump::Thankfully, the wastewater and ventilation systems were far too intricate to fully seal.  Hundreds of portals still exist only minimally secured.  \n\n[[C->back to sewer]]",
       "links": [
         {
           "name": "C",
@@ -1100,7 +1100,7 @@
       }
     },
     {
-      "text": "Jasper,thinking::Unfortunately, I think we do.  He helped get past the guards securing the perimiter.  We never would have gotten past the cameras unnoticed without him.\n\nJasper,sad::And the layout of this city is literally Byzantine, it's nice to have someone who knows their way around.  Like it or not, we need him.\n\nJasper,twisted::Don't worry, he comes across as pretty malleable.\n\n[[Literally?]]",
+      "text": "Jasper,thinking::Unfortunately, I think we do.  He helped get past the guards securing the perimeter.  We never would have gotten past the cameras unnoticed without him.\n\nJasper,sad::And the layout of this city is literally Byzantine, it's nice to have someone who knows their way around.  Like it or not, we need him.\n\nJasper,twisted::Don't worry, he comes across as pretty malleable.\n\n[[Literally?]]",
       "links": [
         {
           "name": "Literally?",
@@ -1391,7 +1391,7 @@
       }
     },
     {
-      "text": "Malformed Lump::No one has all the details, but most suspect that some experiments near the SATURN Core went sideways.  Dangerous phenomena started occuring all over the city right after.\n\nMalformed Lump::Mass psychosis.  Hallucinations.  The boundaries between adjacent people breaking down.  Psychological merges.  Everyone's deepest brain nuggets started to fry.\n\nMalformed Lump::Hardly anyone near the Core made it out.  The few who did were horribly broken, their minds shattered.  Many of them also came down with cancer.\n\nMalformed Lump::They are the only ones who really know what happened, and they aren't speaking.\n\nMalformed Lump::Luckily, you'd already been relagated to a boarding school on the periphery of the city by then.\n\n[[Yeah, I remember the school...]]\n[[Was my brain nugget fried?  It's feeling pretty crunchy.]]",
+      "text": "Malformed Lump::No one has all the details, but most suspect that some experiments near the SATURN Core went sideways.  Dangerous phenomena started occurring all over the city.\n\nMalformed Lump::Mass psychosis.  Hallucinations.  The boundaries between adjacent people breaking down.  Psychological merges.  Everyone's deepest brain nuggets started to fry.\n\nMalformed Lump::Hardly anyone near the Core made it out.  The few who did were horribly broken, their minds shattered.  Many of them also came down with cancer.\n\nMalformed Lump::They are the only ones who really know what happened, and they aren't speaking.\n\nMalformed Lump::Luckily, you'd already been relegated to a boarding school on the periphery of the city by then.\n\n[[Yeah, I remember the school...]]\n[[Was my brain nugget fried?  It's feeling pretty crunchy.]]",
       "links": [
         {
           "name": "Yeah, I remember the school...",
@@ -1634,7 +1634,7 @@
       ]
     },
     {
-      "text": "Malformed Lump::Several other portals and passages used to exist, but they are now heavily guarded.  Only a select few personnel are allowed through.\n\nMalformed Lump::Thankfully, the wastewater and ventillation systems were far too intricate to fully seal.  Hundreds of outfalls still exist only minimally secured.  \n\n[[C->back to sewer]]",
+      "text": "Malformed Lump::Several other portals and passages used to exist, but they are now heavily guarded.  Only a select few personnel are allowed through.\n\nMalformed Lump::Thankfully, the wastewater and ventilation systems were far too intricate to fully seal.  Hundreds of outfalls still exist only minimally secured.  \n\n[[C->back to sewer]]",
       "links": [
         {
           "name": "C",

@@ -22,7 +22,7 @@
       ]
     },
     {
-      "text": "Vera::Mood diary.  Entry 4.  July 9th.\n\nVera::I noticed a pattern when looking at the nurses’ time sheets: stillbirth tends to occur only when one of four or five nurses are on shift.  Currently trying to sniff out any commonalities amongst those nurses.  Furthermore, I've noticed the clusters of infant stillbirths nearly always coincide with an anomalous drop in the amount of ergot and datura reported in the medicinal supply cabinet.  Medicinal stocks are only recorded weekly so the correlation is rather coarse and I cannot be sure, though it is an intriguing lead nonetheless.\n\nVera::I've requested my office be moved to the maternity ward, up on the second floor.  They probably think I'm nuts since the offices on that floor are so much smaller.  But I need my eyes and ears there if I'm to figure this out.\n\nFerryman::Looks like that's all that's here.  Maybe we'll find more entries if we can find her office in the maternity ward.\n\n[[This hospital had supplies of ergot and datura?]]\n[[p:Not much about Mom in this one.]]",
+      "text": "Vera::Mood diary.  Entry 4.  July 9th.\n\nVera::I noticed a pattern when looking at the nurses’ time sheets: stillbirth tends to occur only when one of four or five nurses are on shift.  Currently trying to sniff out any commonalities amongst those nurses.  \n\nVera::Furthermore, I've noticed the clusters of infant stillbirths nearly always coincide with an anomalous drop in the amount of ergot and datura reported in the medicinal supply cabinet.  Medicinal stocks are only recorded weekly so the correlation is rather coarse and I cannot be sure, though it is an intriguing lead nonetheless.\n\nVera::I've requested my office be moved to the maternity ward, up on the second floor.  They probably think I'm nuts since the offices on that floor are so much smaller.  But I need my eyes and ears there if I'm to figure this out.\n\nFerryman::Looks like that's all that's here.  Maybe we'll find more entries if we can find her office in the maternity ward.\n\n[[This hospital had supplies of ergot and datura?]]\n[[p:Not much about Mom in this one.]]",
       "links": [
         {
           "name": "This hospital had supplies of ergot and datura?",
@@ -111,7 +111,7 @@
       }
     },
     {
-      "text": "You peer into the cavity of the trash chute on the right side of the room.  Little light escapes from inside, and the aperature emits an unpleasant sulphuric odor.\n\nLayers of detritus and sludge strewn about the interior makes details difficult to distinguish.  Despite this, you notice a pair of loose leaf papers stuck to the back of the receptacle.\n\nJasper,looking_forward::Stick your hand in there.  Do it.\n\n[[p:But it's slimy, and smells horrible...]]\n[[p:(Action) Reach into the trash receptacle and grab the papers.]]",
+      "text": "You peer into the cavity of the trash chute on the right side of the room.  Little light escapes from inside, and the aperture emits an unpleasant sulphuric odor.\n\nLayers of detritus and sludge strewn about the interior makes details difficult to distinguish.  Despite this, you notice a pair of loose leaf papers stuck to the back of the receptacle.\n\nJasper,looking_forward::Stick your hand in there.  Do it.\n\n[[p:But it's slimy, and smells horrible...]]\n[[p:(Action) Reach into the trash receptacle and grab the papers.]]",
       "links": [
         {
           "name": "p:But it's slimy, and smells horrible...",
@@ -179,11 +179,11 @@
       ]
     },
     {
-      "text": "Ferryman,looking_to_side::The medical supply closets referred to in the diary entries are right below us, in the sub basement.  Those are probably worth investigating.  \n\nFerryman,neutral::We can get there by taking the stairwell at the end of the hall.\n\n[[p:Yeah, I kind of doubt we'll find much but the entries did mention some anomolous dips in medical supplies.  So we should probably go take a look.]]",
+      "text": "Ferryman,looking_to_side::The medical supply closets referred to in the diary entries are right below us, in the sub basement.  Those are probably worth investigating.  \n\nFerryman,neutral::We can get there by taking the stairwell at the end of the hall.\n\n[[p:Yeah, I kind of doubt we'll find much but the entries did mention some anomalous dips in medical supplies.  So we should probably go take a look.]]",
       "links": [
         {
-          "name": "p:Yeah, I kind of doubt we'll find much but the entries did mention some anomolous dips in medical supplies.  So we should probably go take a look.",
-          "link": "p:Yeah, I kind of doubt we'll find much but the entries did mention some anomolous dips in medical supplies.  So we should probably go take a look.",
+          "name": "p:Yeah, I kind of doubt we'll find much but the entries did mention some anomalous dips in medical supplies.  So we should probably go take a look.",
+          "link": "p:Yeah, I kind of doubt we'll find much but the entries did mention some anomalous dips in medical supplies.  So we should probably go take a look.",
           "pid": "10"
         }
       ],
@@ -196,7 +196,7 @@
     },
     {
       "text": "Ferryman,surprised::Yep.  Following you.",
-      "name": "p:Yeah, I kind of doubt we'll find much but the entries did mention some anomolous dips in medical supplies.  So we should probably go take a look.",
+      "name": "p:Yeah, I kind of doubt we'll find much but the entries did mention some anomalous dips in medical supplies.  So we should probably go take a look.",
       "pid": "10",
       "position": {
         "x": "689",

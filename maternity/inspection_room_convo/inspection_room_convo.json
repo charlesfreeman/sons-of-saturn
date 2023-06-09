@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "You enter a small, poorly lit room.  In the center is a small gurney flanked by antiquated medical eqipment, all of it covered in a thick layer of grime.\n\nJulia,amused::Please, Miss, lie down on the table.  We just need to get a few physical readings - preliminary scans.\n\n[[This entire setup looks a little...insufficiently sterilized.]]\n[[p:Will this require anything invasive?  I like my envelopes unbreached and intact.]]",
+      "text": "You enter a small, poorly lit room.  In the center is a small gurney flanked by antiquated medical equipment, all of it covered in a thick layer of grime.\n\nJulia,amused::Please, Miss, lie down on the table.  We just need to get a few physical readings - preliminary scans.\n\n[[This entire setup looks a little...insufficiently sterilized.]]\n[[p:Will this require anything invasive?  I like my envelopes unbreached and intact.]]",
       "links": [
         {
           "name": "This entire setup looks a little...insufficiently sterilized.",
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "text": "Julia,worried::I'm a professional, miss.  So are my colleagues.  Do you think so little of us that you would suggest we are using unsanitized equipment?  \n\nJulia,suspiscious::We are a little short staffed right now, true, but all of the important equipment has been thoroughly sterilized.  \n\nJasper,twisted::Just cut the bullshit, you don't care.\n\nJasper,looking_forward::You waded through a sewer on the way here, stop pretending to be anything other than vile and lay down on the asbestos-caked gurney.\n\n[[C->Start]] ",
+      "text": "Julia,worried::I'm a professional, miss.  So are my colleagues.  Do you think so little of us that you would suggest we are using unsanitized equipment?  \n\nJulia,suspicious::We are a little short staffed right now, true, but all of the important equipment has been thoroughly sterilized.  \n\nJasper,twisted::Just cut the bullshit, you don't care.\n\nJasper,looking_forward::You waded through a sewer on the way here, stop pretending to be anything other than vile and lay down on the asbestos-caked gurney.\n\n[[C->Start]] ",
       "links": [
         {
           "name": "C",
@@ -126,7 +126,7 @@
       "tags": [
         "ongurney",
         "add_julia",
-        "heartbeats_med"
+        "heartbeats_slow"
       ]
     },
     {
@@ -238,7 +238,6 @@
       "tags": [
         "enter",
         "julia_disappear",
-        "None",
         "remove_subject"
       ]
     },
@@ -259,7 +258,7 @@
       },
       "tags": [
         "red_bg_appear",
-        "heartbeats_slow"
+        "heartbeats_med"
       ]
     },
     {
@@ -293,7 +292,7 @@
       ]
     },
     {
-      "text": "Julia::I'm only 35 myself, miss.\n\nJasper,thinking::She looks a bit older to me.  But not much.\n\n[[C->Pressure]] ",
+      "text": "Julia::I'm only 31 myself, miss.\n\nJasper,thinking::She's in your range.  Barely, but we can work with it.\n\n[[C->Pressure]] ",
       "links": [
         {
           "name": "C",
@@ -330,11 +329,11 @@
       }
     },
     {
-      "text": "Julia::Now let's take a look at your heart rate.  \n\n[[C->Stethescope]]",
+      "text": "Julia::Now let's take a look at your heart rate.  \n\n[[C->Stethoscope]]",
       "links": [
         {
           "name": "C",
-          "link": "Stethescope",
+          "link": "Stethoscope",
           "pid": "17"
         }
       ],
@@ -346,7 +345,7 @@
       }
     },
     {
-      "text": "Julia guides the stethescope chest-piece to your left collarbone and slowly slides it down your chest.  The touch is icy but intimate.\n\nJulia::Your heart rate is a little bit lower than average - are you an athlete?\n\nJasper,head_tilted::You aren't an athlete.  You're just presently deprived of your beloved uppers.  Your heart is slacking off in their administrative absense.\n\n[[p:I try to keep myself in shape, yes.]]\n[[p:No, my heart is just lazy.  And ugly.]]",
+      "text": "Julia guides the stethoscope chest-piece to your left collarbone and slowly slides it down your chest.  The touch is icy but intimate.\n\nJulia::Your heart rate is a little bit lower than average - are you an athlete?\n\nJasper,head_tilted::You're not an athlete.  You're just presently deprived of your beloved uppers.  Your heart is slacking off in their administrative absence.\n\n[[p:I try to keep myself in shape, yes.]]\n[[p:No, my heart is just lazy.  And ugly.]]",
       "links": [
         {
           "name": "p:I try to keep myself in shape, yes.",
@@ -359,7 +358,7 @@
           "pid": "19"
         }
       ],
-      "name": "Stethescope",
+      "name": "Stethoscope",
       "pid": "17",
       "position": {
         "x": "1296",
@@ -367,8 +366,8 @@
       },
       "tags": [
         "julia_stethescope",
-        "heartbeats_med",
-        "aneutral"
+        "aneutral",
+        "heartbeats_fast"
       ]
     },
     {
@@ -547,8 +546,8 @@
         "y": "3046"
       },
       "tags": [
-        "heartbeats_slow",
-        "aneutral"
+        "aneutral",
+        "heartbeats_med"
       ]
     },
     {
@@ -707,8 +706,7 @@
         "y": "2508"
       },
       "tags": [
-        "julia_closer",
-        "heartbeats_fast"
+        "julia_closer"
       ]
     }
   ],

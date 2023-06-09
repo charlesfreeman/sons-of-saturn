@@ -87,7 +87,7 @@
       }
     },
     {
-      "text": "Dead Cat::No, you cannot.  Your past stands forever as an uneraseable monument to spite and stupidity and lust.  \n\nDead Cat::You squander your youth and beauty, writhing, wailing, vainly trying to chisel that ugly marble into something it just isn't.\n\n[[How can it be both too horrible to fathom and permanently uncorrectable?  That's not fair to me!]]\n[[p:Will you forgive me?]]\n[[p:Is it too late for me?->p:Will you forgive me?]]",
+      "text": "Dead Cat::No, you cannot.  Your past stands forever as an unerasable monument to spite and stupidity and lust.  \n\nDead Cat::You squander your youth and beauty, writhing, wailing, vainly trying to chisel that ugly marble into something it just isn't.\n\n[[How can it be both too horrible to fathom and permanently uncorrectable?  That's not fair to me!]]\n[[p:Will you forgive me?]]\n[[p:Is it too late for me?->p:Will you forgive me?]]",
       "links": [
         {
           "name": "How can it be both too horrible to fathom and permanently uncorrectable?  That's not fair to me!",

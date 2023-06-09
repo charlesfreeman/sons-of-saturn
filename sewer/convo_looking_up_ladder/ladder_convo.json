@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "You look up to see your Ferryman guide quickly ascending the cistern ladder.  \n\nAt the top is a small hatch.  The hatch has a small aperature cut out on the left side, allowing the pale fire of light to pour through.  \n\n[[C->keys]]",
+      "text": "You look up to see your Ferryman guide quickly ascending the cistern ladder.  \n\nAt the top is a small hatch.  The hatch has a small aperture cut out on the left side, allowing the pale fire of light to pour through.  \n\n[[C->keys]]",
       "links": [
         {
           "name": "C",

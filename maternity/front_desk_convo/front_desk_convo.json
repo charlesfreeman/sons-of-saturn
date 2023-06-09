@@ -54,7 +54,7 @@
       }
     },
     {
-      "text": "Julia::No, she isn't really here for any non-secondary procedures.  Jot her down for something... non-invansive.  Ingrown toe removal, go with that as the official malady.\n\nJasper,twisted::It seems you need an \"official\" reason to be here, and whatever Julia has planned for you isn't suitable.  \n\nJasper,thinking::So she's taken to slandering the virility of your healthy, perfectly formed toes.  Just so she can have an \"official\" reason to sign you in.\n\n[[p:My toes are immaculate.]]\n[[p:(Action) Remain silent and take the blow to your ego.]]",
+      "text": "Julia::No, she isn't really here for any non-secondary procedures.  Jot her down for something... non-invasive.  Ingrown toe removal, go with that as the official malady.\n\nJasper,twisted::It seems you need an \"official\" reason to be here, and whatever Julia has planned for you isn't suitable.  \n\nJasper,thinking::So she's taken to slandering the virility of your healthy, perfectly formed toes.  Just so she can have an \"official\" reason to sign you in.\n\n[[p:My toes are immaculate.]]\n[[p:(Action) Remain silent and take the blow to your ego.]]",
       "links": [
         {
           "name": "p:My toes are immaculate.",
@@ -153,7 +153,7 @@
       ]
     },
     {
-      "text": "No one is behind the counter.\n\nNothing fills the cavity but a vacuum, along with an ether of dust and insulative particulate circulating about the air.  \n\nJasper,twisted::This ward has been shuttered for decades.  There was never anyone at the front desk.  Julia imagined the entire encounter.  \n\n[[Continue->Looming]]",
+      "text": "No one is behind the counter.\n\nNothing fills the cavity but a vacuum, along with an ether of dust and insulative particulates circulating about the air.  \n\nJasper,twisted::This ward has been shuttered for decades.  There was never anyone at the front desk.  Julia imagined the entire encounter.  \n\n[[Continue->Looming]]",
       "links": [
         {
           "name": "Continue",

@@ -35,7 +35,7 @@
       }
     },
     {
-      "text": "Wiggly::Not long, maybe 30 minutes.  \n\nWiggly::You went out pretty much immediately after you flung yourself into the ventillation shaft - it all happened pretty fast, but I think you might have hit your head or something.\n\nWiggly::I wasn't sure what was going on, so I closed up the grate and pulled you a few dozen meters to get you out of the shaft and into this more spacious basement.  I've been looking over you since.\n\n[[I didn't hit my head.  I was drugged.]]",
+      "text": "Wiggly::Not long, maybe 30 minutes.  \n\nWiggly::You went out pretty much immediately after you flung yourself into the ventilation shaft - it all happened pretty fast, but I think you might have hit your head or something.\n\nWiggly::I wasn't sure what was going on, so I closed up the grate and pulled you a few dozen meters to get you out of the shaft and into this more spacious basement.  I've been looking over you since.\n\n[[I didn't hit my head.  I was drugged.]]",
       "links": [
         {
           "name": "I didn't hit my head.  I was drugged.",
@@ -110,7 +110,7 @@
       ]
     },
     {
-      "text": "Wiggly::I didn't, miss.  But the way you were behaving, well, I could tell something unusual was going on.\n\nWiggly::I was in the overhead ventillation system in the hallway outside of that room, so I tried yelling through the vents, but you couldn't hear me.  You were only a few feet away.\n\nWiggly::I saw you enter that room, so I decided to follow the ventillation shafts there.  And when I opened that grate, you dived in.  \n\nWiggly::You acted like you were trying to get away from something, so I closed up the grate and dragged you this basement.\n\n[[p:What about the woman who drugged me, Julia?  What happened to her?]]",
+      "text": "Wiggly::I didn't, miss.  But the way you were behaving, well, I could tell something unusual was going on.\n\nWiggly::I was in the overhead ventilation system in the hallway outside of that room, so I tried yelling through the vents, but you couldn't hear me.  You were only a few feet away.\n\nWiggly::I saw you enter that room, so I decided to follow the ventilation shafts there.  And when I opened that grate, you dived in.  \n\nWiggly::You acted like you were trying to get away from something, so I closed up the grate and dragged you this basement.\n\n[[p:What about the woman who drugged me, Julia?  What happened to her?]]",
       "links": [
         {
           "name": "p:What about the woman who drugged me, Julia?  What happened to her?",
@@ -184,7 +184,7 @@
       }
     },
     {
-      "text": "Wiggly::Neither do we.  No one does.  \n\nWiggly::But nonetheless I've seen this before.  So have the other Ferrymen.  \n\nWiggly::A client, most often someone with connections here, enters the Cradle.  And then, usually somewhere near the SATURN Core, they start having delusions of a third party.\n\nWiggly::Their presence might be innocuous enough at first - helpful, even.  But soon the client gets sick, and has trouble walking.  Start having hallucinations.\n\nWiggly::No matter how many times I see it happen, it never fails to shake me to my core - seeing a client, incapacited, writhing in terror at someone in the room I cannot even see.\n\nWiggly::If we hadn't been separated I might have noticed the signs earlier.  Not that it would have helped much.\n\nJasper,thinking::He's being uncharacteristically blunt, isn't he?  \n\nJasper,sad::We're fucked.\n\n[[You've gone through this before - that means you know what to do?]]",
+      "text": "Wiggly::Neither do we.  No one does.  \n\nWiggly::But nonetheless I've seen this before.  So have the other Ferrymen.  \n\nWiggly::A client, most often someone with connections here, enters the Cradle.  And then, usually somewhere near the SATURN Core, they start having delusions of a third party.\n\nWiggly::Their presence might be innocuous enough at first - helpful, even.  But soon the client gets sick, and has trouble walking.  Start having hallucinations.\n\nWiggly::No matter how many times I see it happen, it never fails to shake me to my core - seeing a client, incapacitated, writhing in terror at someone in the room I cannot even see.\n\nWiggly::If we hadn't been separated I might have noticed the signs earlier.  Not that it would have helped much.\n\nJasper,thinking::He's being uncharacteristically blunt, isn't he?  \n\nJasper,sad::We're fucked.\n\n[[You've gone through this before - that means you know what to do?]]",
       "links": [
         {
           "name": "You've gone through this before - that means you know what to do?",

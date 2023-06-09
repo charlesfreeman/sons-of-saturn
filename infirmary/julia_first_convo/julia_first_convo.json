@@ -94,7 +94,7 @@
       }
     },
     {
-      "text": "Frail Woman::My name is Julia.  I've been a midwife at this infirmary for nine years.  You are in good hands.\n\nJulia's presence is strange and unnatural.  Her cadence and gestures seem disconnected from the present scene.  \n\nThe sub-lingual signals she's sending you via gesticulations and body language are distorted and inscrutable, as if transmitted through a television set overcome with static.\n\n[[Have you taken a look around recently?  This infirmary clearly hasn't been operational for a long time.]]\n[[What kind of operation am I signing up for?]]\n[[What do you do here?]]\n[[p:If we go get \"signed in,\" will you take me to the Maternity Ward?]]",
+      "text": "Frail Woman::My name is Julia.  I've been a midwife at this infirmary for nine years.  You are in good hands.\n\nJulia's presence is strange and unnatural.  Her cadence and gestures seem disconnected from the present scene.  \n\nThe sublingual signals she's sending you via gesticulations and body language are distorted and inscrutable, as if transmitted through a television set overcome with static.\n\n[[Have you taken a look around recently?  This infirmary clearly hasn't been operational for a long time.]]\n[[What kind of operation am I signing up for?]]\n[[What do you do here?]]\n[[p:If we go get \"signed in,\" will you take me to the Maternity Ward?]]",
       "links": [
         {
           "name": "Have you taken a look around recently?  This infirmary clearly hasn't been operational for a long time.",
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "text": "Julia::That's ridiculous.\n\nHer dismissal of the suggestion is visible.  She immediately twitches her head quickly to the left, physically signalling her rejection of the notion.\n\nJulia::Look, we're doing the best we can in light of the recent expansion.  Our budget wasn't inflated enough to keep up.  I assure you though, you will still receive top notch care, for both official and unofficial matters. \n\nJulia::Now let's go fill out your record.\n\nJasper,twisted::An excess of active patients doesn't seem to be the issue here.\n\n[[Continue->p:Hold on, who are you?]] ",
+      "text": "Julia::That's ridiculous.\n\nHer dismissal of the suggestion is visible.  She immediately twitches her head quickly to the left, physically signaling her rejection of the notion.\n\nJulia::Look, we're doing the best we can in light of the recent expansion.  Our budget wasn't inflated enough to keep up.  I assure you though, you will still receive top notch care, for both official and unofficial matters. \n\nJulia::Now let's go fill out your record.\n\nJasper,twisted::An excess of active patients doesn't seem to be the issue here.\n\n[[Continue->p:Hold on, who are you?]] ",
       "links": [
         {
           "name": "Continue",
@@ -330,7 +330,7 @@
       ]
     },
     {
-      "text": "She glares at you, intensely.  Her expression reveals her view of you, painfully clearly: You are an intrusion, a foriegn body.\n\nJasper,head_tilted::Who is this?  There shouldn't be anyone else here.\n\nJasper,looking_forward::Let's carefully introduce ourselves.  Be prepared to run if you sense a threat.\n\n[[C->Rises]]",
+      "text": "She glares at you, intensely.  Her expression reveals her view of you, painfully clearly: You are an intrusion, a foreign body.\n\nJasper,head_tilted::Who is this?  There shouldn't be anyone else here.\n\nJasper,looking_forward::Let's carefully introduce ourselves.  Be prepared to run if you sense a threat.\n\n[[C->Rises]]",
       "links": [
         {
           "name": "C",

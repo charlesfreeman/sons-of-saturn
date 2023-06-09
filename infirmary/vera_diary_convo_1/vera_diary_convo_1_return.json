@@ -15,19 +15,19 @@
       "pid": "1",
       "position": {
         "x": "539",
-        "y": "606.5"
+        "y": "606"
       },
       "tags": [
         "page1"
       ]
     },
     {
-      "text": "Vera::Mood diary.  Entry 2.  July 3th.\n\nVera::Forgot to fill this in for the last few days but that's ok because they'd not look any different from the initial entry.  The accounting here is hellishly monotonous.  Do you have any clue how difficult it is to bore someone passionate about accounting? \n\nVera::Within the SATURN core I felt like I was actually making an impact at least.  I guess Rosalind was so \"thrilled\" I blew the whistle on the fraudulently produced safety test results that she decided I could make an even bigger impact here, making sure no screaming newborns double dip in the hospital account.\n\nVera::The only things of any import to keep track of are the medicine consumption tabulations and the infant sickness rates and correlations.  Sometimes more than one gets hepatitis, and there's a link.  Sometimes some fent fiend decides to dip into the medical supply closets.  Petty indiscrepancies.  It's not much but it's all I've got to work with.",
+      "text": "Vera::Mood diary.  Entry 2.  July 3th.\n\nVera::Forgot to fill this in for the last few days but that's ok because they'd not look any different from the initial entry.  The accounting here is hellishly monotonous.  Do you have any clue how difficult it is to bore someone passionate about accounting? \n\nVera::Within the SATURN core I felt like I was actually making an impact at least.  I guess Rosalind was so \"thrilled\" I blew the whistle on the fraudulently produced safety test results that she decided I could make an even bigger impact here, making sure no screaming newborns double dip in the hospital account.\n\nVera::The only things of any import to keep track of are the medicine consumption tabulations and the infant sickness rates and correlations.  Sometimes more than one gets hepatitis, and there's a link.  Sometimes some fent fiend decides to dip into the medical supply closets.  Petty discrepancies.  It's not much but it's all I've got to work with.",
       "name": "Page 2",
       "pid": "2",
       "position": {
         "x": "539",
-        "y": "756.5"
+        "y": "756"
       },
       "tags": [
         "page2"
@@ -51,7 +51,7 @@
       "pid": "3",
       "position": {
         "x": "540",
-        "y": "458.5"
+        "y": "458"
       }
     },
     {
@@ -60,7 +60,7 @@
       "pid": "4",
       "position": {
         "x": "659",
-        "y": "608.5"
+        "y": "608"
       }
     }
   ],

@@ -20,9 +20,10 @@ nextScenePath = "morgue_convo"
 
 [node name="ConvoSoundEffect" parent="." instance=ExtResource( 2 )]
 stream = ExtResource( 3 )
-volume_db = -20.0
+volume_db = -12.23
 tag_to_play = "open_hatch"
 
 [node name="ConvoSoundEffect2" parent="." instance=ExtResource( 2 )]
 stream = ExtResource( 4 )
+volume_db = -20.561
 tag_to_play = "keys"

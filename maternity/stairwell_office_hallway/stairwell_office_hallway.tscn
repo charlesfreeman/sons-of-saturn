@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://maternity/stairwell_office_hallway/ladys_hallway_left_right_forward.png" type="Texture" id=2]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
 [ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sounds/effects/locked_door.wav" type="AudioStream" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 300.019, 382.372 )
@@ -65,6 +66,9 @@ shape = SubResource( 4 )
 [node name="PopUp" parent="." instance=ExtResource( 4 )]
 popup_text = [ "Amelie,neutral::Locked.  Looks like it leads to a stairwell?" ]
 nav_popup_left = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="PopUp"]
+stream = ExtResource( 5 )
 
 [node name="PopUp2" parent="." instance=ExtResource( 4 )]
 popup_text = [ "Julia,worried::Miss, you can't go in there.  That's someone's office." ]

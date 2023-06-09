@@ -31,7 +31,7 @@ var julia_profiles = {
 	"lost_in_thought" : "res://conversation_pov/char_profiles/julia/julia_lost_in_thought.png",
 	"reminiscing" : "res://conversation_pov/char_profiles/julia/julia_reminiscing.png",
 	"sly" : "res://conversation_pov/char_profiles/julia/julia_sly.png",
-	"suspiscious" : "res://conversation_pov/char_profiles/julia/julia_suspiscious.png",
+	"suspicious" : "res://conversation_pov/char_profiles/julia/julia_suspiscious.png",
 	"thinking" : "res://conversation_pov/char_profiles/julia/julia_thinking.png",
 	"worried" : "res://conversation_pov/char_profiles/julia/julia_worried.png",
 }

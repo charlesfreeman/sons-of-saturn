@@ -151,7 +151,7 @@ func _stop_overlays():
 	for i in get_node("root").get_children():
 		i.get_node("Tween").interpolate_property(i, "volume_db", i.volume_db, -60, transition_beats, Tween.TRANS_LINEAR, Tween.EASE_IN)
 		i.get_node("Tween").start()
-		# i.get_node("Tween").connect("tween_completed", self, "_overlay_faded", [i])
+		i.get_node("Tween").connect("tween_completed", self, "_overlay_faded", [i])
 
 #delete overlay on fade
 func _overlay_faded(object, key, overlay):
@@ -165,7 +165,8 @@ func quickplay(song):
 
 #check if ref is string or int
 func _songname_to_int(ref):
-	if typeof(ref) == TYPE_STRING:		return get_node(ref).get_index()
+	if typeof(ref) == TYPE_STRING:
+		return get_node(ref).get_index()
 	else:
 		return ref
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PlacehollderTitleScreen.png-4ddde0ab67e578e8df842580fff61f1f.stex"
+path="res://.import/sons_of_saturn_title_screen.png-2c0b16308d51d7ddf88adf3c89553edb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://title_screen/PlacehollderTitleScreen.png"
-dest_files=[ "res://.import/PlacehollderTitleScreen.png-4ddde0ab67e578e8df842580fff61f1f.stex" ]
+source_file="res://title_screen/sons_of_saturn_title_screen.png"
+dest_files=[ "res://.import/sons_of_saturn_title_screen.png-2c0b16308d51d7ddf88adf3c89553edb.stex" ]
 
 [params]
 

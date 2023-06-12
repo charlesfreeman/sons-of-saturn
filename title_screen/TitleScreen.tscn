@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://title_screen/sons_of_saturn_title.png" type="Texture" id=1]
+[ext_resource path="res://title_screen/sons_of_saturn_title_screen.png" type="Texture" id=1]
 [ext_resource path="res://title_screen/TitleMenuOpt.tscn" type="PackedScene" id=2]
 [ext_resource path="res://title_screen/TitleScreen.gd" type="Script" id=3]
 

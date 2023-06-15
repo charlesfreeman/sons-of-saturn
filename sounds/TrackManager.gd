@@ -23,7 +23,6 @@ func play(song: String):
 	if song == current_song:
 		pass
 	elif check_for_song(song):
-		print("checking for song: ", song)
 		if current_song != "None":
 			self.get_node(current_song).fade_out()
 			self.get_node(song).fade_in()

@@ -46,7 +46,7 @@
       ]
     },
     {
-      "text": "You find an encrusted, tattered notebook lying in the bottom-right drawer of the corner desk.  The name \"Vera Silkwood\" is scribbled on the cover.\n\nFerryman,looking_to_side::Good find.  That notebook probably belonged to one of the accountants that worked here in the administration wing.  You might glean a few things about what went on around here by flipping through it.\n\n[[This appears to be someone's diary.  Wouldn't that be a little invasive?]]\n[[p:(Action) Open the diary.->Page 1]]",
+      "text": "You find an encrusted, tattered notebook lying in the bottom-right drawer of the corner desk.  The name \"Vera Silkwood\" is scribbled on the cover.\n\nFerryman,looking_to_side::Good find.  That notebook probably belonged to one of the accountants that worked here in the administration wing.  \n\nFerryman::You might glean a few things about what went on around here by flipping through it.\n\n[[This appears to be someone's diary.  Wouldn't that be a little invasive?]]\n[[p:(Action) Open the diary.->Page 1]]",
       "links": [
         {
           "name": "This appears to be someone's diary.  Wouldn't that be a little invasive?",

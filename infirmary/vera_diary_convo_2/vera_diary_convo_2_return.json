@@ -1,0 +1,73 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Vera::Mood diary.  Entry 3.  July 8th.\n\nVera::I actually found something fascinating today, the first break in the monotony since my transfer.  While looking through records pertaining to the hospital's infant mortality rate, I noticed that incidents of stillbirth in the maternity ward are almost never isolated.  \n\nVera::As in, there is never only one stillbirth on any given day.  Always there are two or three, sometimes more, then zero for weeks or months.  That's pretty strong evidence of malpractice by one or more employees.\n\nVera::I'm trying to isolate any obvious common denominators between the stillbirth cases; perhaps they can be tied to someone's shifts in the Maternity Ward.\n\nVera::Oh yeah, mood a little better.\n\n[[p:(Action) Flip the page.->Page 4]]",
+      "links": [
+        {
+          "name": "p:(Action) Flip the page.",
+          "link": "Page 4",
+          "pid": "2"
+        }
+      ],
+      "name": "Page 3",
+      "pid": "1",
+      "position": {
+        "x": "739",
+        "y": "398"
+      },
+      "tags": [
+        "page1"
+      ]
+    },
+    {
+      "text": "Vera::Mood diary.  Entry 4.  July 9th.\n\nVera::I noticed a pattern when looking at the nurses’ time sheets: stillbirth tends to occur only when one of four or five nurses are on shift.  Currently trying to sniff out any commonalities amongst those nurses.  Furthermore, I've noticed the clusters of infant stillbirths nearly always coincide with an anomalous drop in the amount of ergot and datura reported in the medicinal supply cabinet.  Medicinal stocks are only recorded weekly so the correlation is rather coarse and I cannot be sure, though it is an intriguing lead nonetheless.\n\nVera::I've requested my office be moved to the maternity ward, up on the second floor.  They probably think I'm nuts since the offices on that floor are so much smaller.  But I need my eyes and ears there if I'm to figure this out.\n\nThere are no more pages.",
+      "name": "Page 4",
+      "pid": "2",
+      "position": {
+        "x": "739",
+        "y": "548"
+      },
+      "tags": [
+        "page2"
+      ]
+    },
+    {
+      "text": "You return to the waste chute and fish Vera's diary entries back out.  The exercise makes you wonder why you returned them to the trash after reading them.\n\nJasper::Good idea.  I don't think your arm got dirty enough the first time you stuck it in there.\n\n[[p:(Action) Reread the third and fourth entries of Vera's diary.->Page 3]]\n[[p:(Action) Leave.]]",
+      "links": [
+        {
+          "name": "p:(Action) Reread the third and fourth entries of Vera's diary.",
+          "link": "Page 3",
+          "pid": "1"
+        },
+        {
+          "name": "p:(Action) Leave.",
+          "link": "p:(Action) Leave.",
+          "pid": "4"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "3",
+      "position": {
+        "x": "740",
+        "y": "246"
+      }
+    },
+    {
+      "text": "",
+      "name": "p:(Action) Leave.",
+      "pid": "4",
+      "position": {
+        "x": "859",
+        "y": "396"
+      }
+    }
+  ],
+  "name": "Vera Diary 2 Return",
+  "startnode": "3",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "588F4C08-B4FC-4F1F-94FC-43CFF63CF27B"
+}
+

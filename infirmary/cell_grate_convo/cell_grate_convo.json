@@ -51,7 +51,7 @@
       }
     },
     {
-      "text": "Ferryman::Yes, \"Oww.\"  The Cradle doesn't respond to blunt force trauma like that.\n\n[[p:That sucks.  Blunt force trauma is my specialty.]]\n[[p:What will it respond to?]]",
+      "text": "Ferryman::Yes, \"Oww.\"  Minerva doesn't respond to blunt force trauma like that.\n\n[[p:That sucks.  Blunt force trauma is my specialty.]]\n[[p:What will it respond to?]]",
       "links": [
         {
           "name": "p:That sucks.  Blunt force trauma is my specialty.",
@@ -91,7 +91,7 @@
       }
     },
     {
-      "text": "Ferryman::Probably nothing.  Sometimes there are ways to bargain with The Cradle, but I don't believe this is one of those cases.\n\n[[Continue->Door won't move]] ",
+      "text": "Ferryman::Probably nothing.  At times there are ways to bargain with Minerva, but I don't believe this is one of those cases.\n\n[[Continue->Door won't move]] ",
       "links": [
         {
           "name": "Continue",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "text": "Ferryman::Don't worry.  I have a plan for getting out of here.  \n\nFerryman::The shift managers used to call me \"Wiggly.\"  I didn't like it very much at first, but the nickname stuck for a reason.  I'm skinny, and flexible - even the tightest conduits and interstitial spaces aren't a challenge for me.\n\nFerryman::The utility tunnels that weave underneath the Cradle - they're too narrow and contorted for most people to fit through.  That's why they had to employ very young people, see?  \n\nFerryman::But I'm flexible, and skinny, and...Wiggly enough to get through them without much issue, even now.\n\nFerryman::I remember a path through the pipes that should spit me out at the back of the maternity wards.  We'll link back up there.\n\n[[How are you planning to get into the utility tunnel network?  You're trapped in an isolation cell.]]\n[[Were you one of the children tasked with maintaining the steam tunnels?]]\n[[1:You spent your entire childhood crawling around steam and sewer pipes?]]\n[[How am I supposed to navigate this place?]]\n[[What if I run into any more \"reverb\" type phenomena?]]\n[[p:Would you mind if I started calling you Wiggly?]]",
+      "text": "Ferryman::Don't worry.  I have a plan for getting out of here.  \n\nFerryman::The shift managers used to call me \"Wiggly.\"  I didn't like it very much at first, but the nickname stuck for a reason.  I'm skinny, and flexible - even the tightest conduits and interstitial spaces aren't a challenge for me.\n\nFerryman::The utility tunnels that weave underneath Minerva - they're too narrow and contorted for most people to fit through.  That's why they had to employ very young people, see?  \n\nFerryman::But I'm flexible, and skinny, and...Wiggly enough to get through them without much issue, even now.\n\nFerryman::I remember a path through the pipes that should spit me out at the back of the maternity wards.  We'll link back up there.\n\n[[How are you planning to get into the utility tunnel network?  You're trapped in an isolation cell.]]\n[[Were you one of the children tasked with maintaining the steam tunnels?]]\n[[1:You spent your entire childhood crawling around steam and sewer pipes?]]\n[[How am I supposed to navigate this place?]]\n[[What if I run into any more traps like this?]]\n[[p:Would you mind if I started calling you Wiggly?]]",
       "links": [
         {
           "name": "How are you planning to get into the utility tunnel network?  You're trapped in an isolation cell.",
@@ -170,8 +170,8 @@
           "pid": "10"
         },
         {
-          "name": "What if I run into any more \"reverb\" type phenomena?",
-          "link": "What if I run into any more \"reverb\" type phenomena?",
+          "name": "What if I run into any more traps like this?",
+          "link": "What if I run into any more traps like this?",
           "pid": "11"
         },
         {
@@ -188,7 +188,7 @@
       }
     },
     {
-      "text": "Ferryman::Don't worry.  This is one of the safer parts of The Cradle.  You aren't likely to run into much serious trouble, so long as you stay out of the basement.\n\nFerryman::And you'll have to try pretty hard to get lost.  The infirmary has a pretty simple layout.  \n\nFerryman::It looks like a scorpion from the top of the dome.  Right now we're in one of the pincers.  Just try to find your way to the stinger, and I'll meet you there.\n\n[[Continue->p:So what are we going to do?]] \n",
+      "text": "Ferryman::Don't worry.  This is one of the safer parts of Minerva, being near the periphery.  You aren't likely to run into much serious trouble, so long as you stay out of the basement.\n\nFerryman::And you'll have to try pretty hard to get lost.  The infirmary has a pretty simple layout.  \n\nFerryman::It looks like a scorpion from the top of the dome.  Right now we're in one of the pincers.  Just try to find your way to the stinger, and I'll meet you there.\n\n[[Continue->p:So what are we going to do?]] \n",
       "links": [
         {
           "name": "Continue",
@@ -200,11 +200,11 @@
       "pid": "10",
       "position": {
         "x": "419",
-        "y": "1974"
+        "y": "1975"
       }
     },
     {
-      "text": "Ferryman::You might have a few more doors slam into your face.  Other than that I wouldn't worry too much.  We're still on the southernmost periphery of the Cradle, far from the Core, so the reverb activity should still be weak.  \n\nFerryman::Though as I said, the fact we're seeing any phenomena at all at this stage is alarming.  So stay on your toes.\n\n[[Continue->p:So what are we going to do?]] ",
+      "text": "Ferryman::You might have a few more doors slam into your face.  Other than that I wouldn't worry too much.  \n\nFerryman::We're still on the southernmost periphery of the city, far from the SATURN Core, so the reverb activity should still be weak.  \n\nFerryman::Though as I said, the fact we're seeing any phenomena at all at this stage is alarming.  So stay on your toes.\n\n[[Continue->p:So what are we going to do?]] ",
       "links": [
         {
           "name": "Continue",
@@ -212,7 +212,7 @@
           "pid": "9"
         }
       ],
-      "name": "What if I run into any more \"reverb\" type phenomena?",
+      "name": "What if I run into any more traps like this?",
       "pid": "11",
       "position": {
         "x": "701",
@@ -260,7 +260,7 @@
       ]
     },
     {
-      "text": "Ferryman::Nope.\n\nFerryman::Well...\n\nFerryman::I mean, this is all I've ever known, really.  That's why I like working with clients like you - outsiders.  \n\nFerryman::I enjoy hearing about the world outside of the Cradle.  Learning what other people's lives are like.\n\n[[p:You had to spend your entire childhood doing menial labour for this failed city.  You should be pissed!]]",
+      "text": "Ferryman::Nope.\n\nFerryman::Well...\n\nFerryman::I mean, this is all I've ever known, really.  That's why I like working with clients like you - people who've lived outside.  \n\nFerryman::I enjoy hearing about the world outside of Minerva.  Learning what other people's lives are like.\n\n[[p:You had to spend your entire childhood doing menial labour for this failed city.  You should be pissed!]]",
       "links": [
         {
           "name": "p:You had to spend your entire childhood doing menial labour for this failed city.  You should be pissed!",
@@ -319,8 +319,8 @@
       "name": "p:There is so much you could have done with your life.  They denied you that.",
       "pid": "17",
       "position": {
-        "x": "514",
-        "y": "2412"
+        "x": "522",
+        "y": "2405"
       }
     },
     {
@@ -340,7 +340,7 @@
       "name": "p:Would you mind if I started calling you Wiggly?",
       "pid": "18",
       "position": {
-        "x": "852",
+        "x": "851",
         "y": "1979"
       },
       "tags": [
@@ -380,11 +380,11 @@
       }
     },
     {
-      "text": "Wiggly::Anyhow, we should get going.  I'll head into the tunnels - like I said, we'll reconvene in the Maternity Ward.\n\nWiggly::You'll have to navigate there on your own.  Just go up the stairs, down the hallway, and take a left.  You'll find an entrance there that should be unlocked.\n\nWiggly::There's an old operations room at the very end of the serial corridors that should be easy to find.  Just keep walking forward and straight when you get there, basically.\n\nWiggly::That room has a small vent that connects to the steam network.  I'll meet you there.\n\n[[You know, seeing your face behind this grate makes you look like a prisoner in a jail cell.]]\n[[p:Alright, see you on the other side.]]",
+      "text": "Wiggly::Anyhow, we should get going.  I'll head into the tunnels - like I said, we'll reconvene in the maternity ward.\n\nWiggly::You'll have to navigate there on your own.  Just go up the stairs, down the hallway, and take a left.  You'll find an entrance there that should be unlocked.\n\nWiggly::There's an old operations room at the very end of the serial corridors that should be easy to find.  Just keep walking forward and straight when you get there, basically.\n\nWiggly::That room has a small vent that connects to the steam network.  I'll meet you there.\n\n[[Seeing your face behind this grate makes you look like a prisoner in a jail cell.]]\n[[p:Alright, see you on the other side.]]",
       "links": [
         {
-          "name": "You know, seeing your face behind this grate makes you look like a prisoner in a jail cell.",
-          "link": "You know, seeing your face behind this grate makes you look like a prisoner in a jail cell.",
+          "name": "Seeing your face behind this grate makes you look like a prisoner in a jail cell.",
+          "link": "Seeing your face behind this grate makes you look like a prisoner in a jail cell.",
           "pid": "36"
         },
         {
@@ -442,7 +442,7 @@
       ]
     },
     {
-      "text": "Wiggly nods, does a heel turn, and disappears down the chute, sliding down it with a speed you'd never expect.  \n\nJasper::Did you see how fast he wiggled through there?  It's like he's covered in a layer of motor oil.\n\nJasper::Anyway, we're on our own now.  Let's head to the Maternity Ward.",
+      "text": "Wiggly nods, does a heel turn, and disappears down the chute, sliding down it with a speed you'd never expect.  \n\nJasper::Did you see how fast he wiggled through there?  It's like he's covered in a layer of motor oil.\n\nJasper::Anyway, we're on our own now.  Let's head to the maternity ward.",
       "name": "p:Alright, see you on the other side.",
       "pid": "24",
       "position": {
@@ -469,7 +469,7 @@
         "y": "32"
       },
       "tags": [
-        "WomanCrying"
+        "woman_crying"
       ]
     },
     {
@@ -551,8 +551,8 @@
       "tags": [
         "enter",
         "auncertain",
-        "stop_soundscape",
-        "add_wiggly"
+        "add_wiggly",
+        "stop_song"
       ]
     },
     {
@@ -600,11 +600,11 @@
       ]
     },
     {
-      "text": "Ferryman::Have you heard of the sorts of incidents infiltrators sometimes report near the SATURN Core?  \n\nFerryman::The Broker must have mentioned them in the introductory sermon he gives to all his clients, though he probably didn't go into much detail.  Every minute with him is metered.\n\n[[p:Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who've been dead for twenty years...]]",
+      "text": "Ferryman::Have you heard of the sorts of incidents infiltrators sometimes report near the SATURN Core?  \n\nFerryman::The Broker must have mentioned them in the introductory sermon he gives to all his clients, though he probably didn't go into much detail.  Every minute with him is metered.\n\n[[p:Of course.  Everyone knows what happened to people near the Core.  Hallucinations, time stretching, seeing people who've been dead for twenty years...]]",
       "links": [
         {
-          "name": "p:Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who've been dead for twenty years...",
-          "link": "p:Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who've been dead for twenty years...",
+          "name": "p:Of course.  Everyone knows what happened to people near the Core.  Hallucinations, time stretching, seeing people who've been dead for twenty years...",
+          "link": "p:Of course.  Everyone knows what happened to people near the Core.  Hallucinations, time stretching, seeing people who've been dead for twenty years...",
           "pid": "33"
         }
       ],
@@ -627,7 +627,7 @@
           "pid": "38"
         }
       ],
-      "name": "p:Of course.  The psychological effects of Core exposure are well known.  Auditory and visual hallucinations, time dilations, seeing people who've been dead for twenty years...",
+      "name": "p:Of course.  Everyone knows what happened to people near the Core.  Hallucinations, time stretching, seeing people who've been dead for twenty years...",
       "pid": "33",
       "position": {
         "x": "688",
@@ -651,7 +651,7 @@
       }
     },
     {
-      "text": "Ferryman::The door isn't \"locked,\" it's completely sealed.  Parts of the Cradle sometimes come to life, confusing and disorienting those who breach its envelope.  \n\nFerryman::This isn't a simple locked door.  This is a trap, one I fell for.\n\nFerryman::Remember the crying woman?  That was bait, to lure one or both of us into this cell.  Look around - not a soul in sight.  Once I had slid in, the door sealed right behind me.\n\nFerryman::Really, I should have known better than to fall for a trick like this.  But I can't just bring myself to leave sounds like that uninvestigated.\n\nFerryman::Encountering resistance this early on is unusual, miss.  Do you have some history in the Cradle, or with this building, I should know about?.\n\nJasper::He's talking too much.  Do something.\n\n[[p:(Action) Kick the door.]]",
+      "text": "Ferryman::The door isn't \"locked,\" it's completely sealed.  Parts of the city sometimes come to life, confusing and disorienting those who breach its envelope.  \n\nFerryman::This isn't a simple locked door.  This is a trap, one I fell for.\n\nFerryman::Remember the crying woman?  That was bait, to lure one or both of us into this cell.  Look around - not a soul in sight.  Once I had slid in, the door sealed right behind me.\n\nFerryman::Really, I should have known better than to fall for a trick like this.  But I can't just bring myself to leave sounds like that uninvestigated.\n\nFerryman::Encountering resistance this early on is unusual, miss.  Do you have some history here, or with this building, I should know about?.\n\nJasper::He's talking too much.  Do something.\n\n[[p:(Action) Kick the door.]]",
       "links": [
         {
           "name": "p:(Action) Kick the door.",
@@ -675,7 +675,7 @@
           "pid": "21"
         }
       ],
-      "name": "You know, seeing your face behind this grate makes you look like a prisoner in a jail cell.",
+      "name": "Seeing your face behind this grate makes you look like a prisoner in a jail cell.",
       "pid": "36",
       "position": {
         "x": "722",
@@ -699,7 +699,7 @@
       }
     },
     {
-      "text": "He grabs the door and gives it a good shake, as if encouraging you to do the same.  He is unusually forceful.\n\nFerryman::This room is an old isolation cell, so it should lock and unlock from the outside.  Yet I'm willing to bet you won't find any means of opening it.  The Cradle has decided it should remain shut.\n\n[[You said this was the administration building - Why are there isolation cells in the basement?]]\n[[p:(Action) try to open the door.]]",
+      "text": "He grabs the door and gives it a good shake, as if encouraging you to do the same.  He is unusually forceful.\n\nFerryman::This room is an old isolation cell, so it should lock and unlock from the outside.  Yet I'm willing to bet you won't find any means of opening it.  Minerva has decided it should remain shut.\n\n[[You said this was the administration building - Why are there isolation cells in the basement?]]\n[[p:(Action) try to open the door.]]",
       "links": [
         {
           "name": "You said this was the administration building - Why are there isolation cells in the basement?",
@@ -715,7 +715,7 @@
       "name": "Shake",
       "pid": "38",
       "position": {
-        "x": "831",
+        "x": "830",
         "y": "1050"
       },
       "tags": [
@@ -724,7 +724,7 @@
       ]
     },
     {
-      "text": "Ferryman::Through that, I'll find a connection to the steam transport layer, which runs through the operational sections of the infirmary.\n\nFerryman::There are several portals opening up into the Maternity Ward.  We can reconvene there, in the room at the end of all the hallways.\n\n[[p:You mean to say you can fit into that?]]",
+      "text": "Ferryman::Through that, I'll find a connection to the steam transport layer, which runs through the operational sections of the infirmary.\n\nFerryman::There are several portals opening up into the maternity ward.  We can reconvene there, in the room at the end of all the hallways.\n\n[[p:You mean to say you can fit into that?]]",
       "links": [
         {
           "name": "p:You mean to say you can fit into that?",

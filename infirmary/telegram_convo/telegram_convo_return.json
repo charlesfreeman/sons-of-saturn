@@ -60,10 +60,10 @@
       ]
     },
     {
-      "text": "Ansel::VERA EXTREMELY PRODUCTIVE JUDGED BY QUANTITATIVE METRICS AND FAMILY WELL CONNECTED WITH ADMIN STOP TERMINATION WOULD BE OPTICAL DISASTER FROM MANY ANGLES STOP ORDER CAME STRAIGHT FROM ROSALIND\n\n[[p:Probably.  She was often tasked with overseeing the transfer of staff.  Let's keep going.->Page 5]]",
+      "text": "Ansel::VERA EXTREMELY PRODUCTIVE JUDGED BY QUANTITATIVE METRICS AND FAMILY WELL CONNECTED WITH ADMIN STOP TERMINATION WOULD BE OPTICAL DISASTER FROM MANY ANGLES STOP ORDER CAME STRAIGHT FROM ROSALIND\n\n[[C->Page 5]]",
       "links": [
         {
-          "name": "p:Probably.  She was often tasked with overseeing the transfer of staff.  Let's keep going.",
+          "name": "C",
           "link": "Page 5",
           "pid": "5"
         }
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "text": "Ansel::TRANSFER NEEDED PLAUSIBLE EXPLANATION AS PROMOTION STOP VERA EXTREMELY COMPETENT UNFORTUNATELY STOP EVEN TRIED GIVING BAD ASSIGNMENTS TO JUSTIFY DEMOTION BEFORE RESTORTING TO PROMOTION STOP I AM SORRY\n\n[[C->Page 7]]",
+      "text": "Ansel::TRANSFER NEEDED PLAUSIBLE EXPLANATION AS PROMOTION STOP VERA EXTREMELY COMPETENT UNFORTUNATELY STOP EVEN TRIED GIVING BAD ASSIGNMENTS TO JUSTIFY DEMOTION BEFORE RESORTING TO PROMOTION STOP I AM SORRY\n\n[[C->Page 7]]",
       "links": [
         {
           "name": "C",
@@ -150,7 +150,7 @@
       }
     },
     {
-      "text": "Double-click this passage to edit it.",
+      "text": "",
       "name": "p:(Action) Leave.",
       "pid": "9",
       "position": {

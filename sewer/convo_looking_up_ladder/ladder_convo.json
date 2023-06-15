@@ -87,7 +87,7 @@
       }
     },
     {
-      "text": "Your Ferryman guide opens the hatch and climbs through.  You quickly clamber up after, pulling yourself through the portal at the top.",
+      "text": "Your Ferryman guide opens the hatch and climbs through.  \n\nYou quickly follow, pulling yourself through the portal at the top.",
       "name": "Open Hatch",
       "pid": "6",
       "position": {

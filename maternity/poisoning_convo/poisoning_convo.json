@@ -436,7 +436,7 @@
       }
     },
     {
-      "text": "The door is locked now.  You violently shake the handle.  It's as if the door is glued into its frame.\n\nJasper,thinking::It's just like the isolation cell door that separated you from Wiggly.\n\nJasper,sad::The Cradle wants us here.\n\nYou feel an icy tug on your right leg.\n\n[[C->Look down]]",
+      "text": "The door is locked now.  You violently shake the handle.  It's as if the door is glued into its frame.\n\nJasper,thinking::It's just like the isolation cell door that separated you from Wiggly.\n\nJasper,sad::Minerva wants us here.\n\nYou feel an icy tug on your right leg.\n\n[[C->Look down]]",
       "links": [
         {
           "name": "C",

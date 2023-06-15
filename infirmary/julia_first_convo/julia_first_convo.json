@@ -54,7 +54,7 @@
       }
     },
     {
-      "text": "Frail Woman::In any case, we've really got to get you signed in.  You should have been primed on how to enter discretely.  \n\nFrail Woman::Follow me to the nurses station, we'll quietly get you recorded and we can move into the operations ward.\n\n[[You want me to sign in?  Look at the state of this place!]]\n[[p:Hold on, who are you?]]",
+      "text": "Frail Woman::In any case, we've really got to get you signed in.  You should have been primed on how to enter discretely.  \n\nFrail Woman::Follow me to the front desk, we'll quietly get you recorded and we can move into the maternity ward.\n\n[[You want me to sign in?  Look at the state of this place!]]\n[[p:Hold on, who are you?]]",
       "links": [
         {
           "name": "You want me to sign in?  Look at the state of this place!",
@@ -94,7 +94,7 @@
       }
     },
     {
-      "text": "Frail Woman::My name is Julia.  I've been a midwife at this infirmary for nine years.  You are in good hands.\n\nJulia's presence is strange and unnatural.  Her cadence and gestures seem disconnected from the present scene.  \n\nThe sublingual signals she's sending you via gesticulations and body language are distorted and inscrutable, as if transmitted through a television set overcome with static.\n\n[[Have you taken a look around recently?  This infirmary clearly hasn't been operational for a long time.]]\n[[What kind of operation am I signing up for?]]\n[[What do you do here?]]\n[[p:If we go get \"signed in,\" will you take me to the Maternity Ward?]]",
+      "text": "Frail Woman::My name is Julia.  I've been a midwife at this infirmary for nine years.  You are in good hands.\n\nJulia's presence is strange and unnatural.  Her cadence and gestures seem disconnected from the present scene.  \n\nThe sublingual signals she's sending you via gesticulations and body language are distorted and inscrutable, as if transmitted through a television set overcome with static.\n\n[[Have you taken a look around recently?  This infirmary clearly hasn't been operational for a long time.]]\n[[What kind of operation am I signing up for?]]\n[[What do you do here?]]\n[[p:If we go get \"signed in,\" will you take me to the maternity ward?]]",
       "links": [
         {
           "name": "Have you taken a look around recently?  This infirmary clearly hasn't been operational for a long time.",
@@ -112,8 +112,8 @@
           "pid": "8"
         },
         {
-          "name": "p:If we go get \"signed in,\" will you take me to the Maternity Ward?",
-          "link": "p:If we go get \"signed in,\" will you take me to the Maternity Ward?",
+          "name": "p:If we go get \"signed in,\" will you take me to the maternity ward?",
+          "link": "p:If we go get \"signed in,\" will you take me to the maternity ward?",
           "pid": "11"
         }
       ],
@@ -192,7 +192,7 @@
       }
     },
     {
-      "text": "Julia::I *have* to take you to the Maternity Ward, Miss.  That's where you were supposed to sign in.\n\nJulia::Why did you come through the administrative wing?  You shouldn't be here at all.\n\n[[p:I need to find proof that I was born here.]]\n[[p:This hospital has secrets, about my past.  I aim to figure them out, serial adventure boy detective style.]]\n[[p:It's a personal matter.]]",
+      "text": "Julia::I *have* to take you to the maternity ward, Miss.  That's where you were supposed to sign in.\n\nJulia::Why did you come through the administrative wing?  You shouldn't be here at all.\n\n[[p:I need to find proof that I was born here.]]\n[[p:This hospital has secrets, about my past.  I aim to figure them out, serial adventure boy detective style.]]\n[[p:It's a personal matter.]]",
       "links": [
         {
           "name": "p:I need to find proof that I was born here.",
@@ -210,7 +210,7 @@
           "pid": "14"
         }
       ],
-      "name": "p:If we go get \"signed in,\" will you take me to the Maternity Ward?",
+      "name": "p:If we go get \"signed in,\" will you take me to the maternity ward?",
       "pid": "11",
       "position": {
         "x": "1514",
@@ -221,7 +221,7 @@
       ]
     },
     {
-      "text": "Julia::That's absurd.  The Maternity ward has only been in operation for 19 years.  You look a little older than that to me.\n\nJasper,looking_forward::See?  You look old.\n\nJasper,thinking::I keep telling you to wear more sunblock and smoke less but you won't listen.\n\nJasper,sad::She probably thinks you're ugly too.\n\n[[p:Cut it out!]]\n[[p:I'm not ugly, you're ugly!->p:Cut it out!]]\n",
+      "text": "Julia::That's absurd.  The maternity ward has only been in operation for 19 years.  You look a little older than that to me.\n\nJasper,looking_forward::See?  You look old.\n\nJasper,thinking::I keep telling you to wear more sunblock and smoke less but you won't listen.\n\nJasper,sad::She probably thinks you're ugly too.\n\n[[p:Cut it out!]]\n[[p:I'm not ugly, you're ugly!->p:Cut it out!]]\n",
       "links": [
         {
           "name": "p:Cut it out!",
@@ -258,7 +258,7 @@
       }
     },
     {
-      "text": "Julia::I...understand.\n\nJulia::I'll...I'll get you into the Maternity Ward.  But we're going to have to go through the front desk, no way around it.\n\nJasper,head_tilted::I think she wants to help, but also wants to keep the rule bending to a minimum.  Though I'm not sure who enforces the \"rules\" these days.\n\n[[Continue->This will get me closer]] ",
+      "text": "Julia::I...understand.\n\nJulia::I'll...I'll get you into the maternity ward.  But we're going to have to go through the front desk, no way around it.\n\nJasper,head_tilted::I think she wants to help, but also wants to keep the rule bending to a minimum.  Though I'm not sure who enforces the \"rules\" these days.\n\n[[Continue->This will get me closer]] ",
       "links": [
         {
           "name": "Continue",
@@ -274,7 +274,7 @@
       }
     },
     {
-      "text": "Jasper,thinking::Look, something is obviously wrong with Julia.  She seems to think this hospital is still operational.  \n\nJasper,looking_forward::But if you just go along with her for now, maybe she'll actually get us to the Maternity Ward.  She acts like she knows her way around at least. \n\nJulia wrings the last drops of water off of her hands.  She subtly turns to face the doorframe, motioning for you to follow her.",
+      "text": "Jasper,thinking::Look, something is obviously wrong with Julia.  She seems to think this hospital is still operational.  \n\nJasper,looking_forward::But if you just go along with her for now, maybe she'll actually get us to the maternity ward.  She acts like she knows her way around at least. \n\nJulia wrings the last drops of water off of her hands.  She subtly turns to face the doorframe, motioning for you to follow her.",
       "name": "This will get me closer",
       "pid": "15",
       "position": {

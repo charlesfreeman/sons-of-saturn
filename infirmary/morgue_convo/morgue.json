@@ -3,245 +3,356 @@
 {
   "passages": [
     {
-      "text": "Ferryman::Careful, stand clear.\n\n[[Continue->Appears]]",
+      "text": "You enter and encounter a frail, frizzy haired woman doggedly scrubbing her hands.  Her eyes appear slightly sunken, an obvious tell of her intense fatigue. \n\n[[C->Glares]]",
       "links": [
         {
-          "name": "Continue",
-          "link": "Appears",
-          "pid": "7"
+          "name": "C",
+          "link": "Glares",
+          "pid": "18"
         }
       ],
-      "name": "Entering Morgue",
+      "name": "Untitled Passage",
       "pid": "1",
       "position": {
-        "x": "868",
-        "y": "122"
+        "x": "1183",
+        "y": "378"
       },
       "tags": [
-        "morgue_ambient"
+        "transient_phoebe"
       ]
     },
     {
-      "text": "Ferryman::Operations, yes, but on cadavers, not living people.  This is an autopsy table.\n\nFerryman::We are in the hospital's mortuary.  If you take a peak through the doorframe to your left you'll see the coolers.\n\n[[(Action) Take a peak.]]",
+      "text": "Frail Woman::...\n\nFrail Woman::Oh, you must mean the Western Residential Distric.  It's hard to keep up with the slang these days.  \n\n[[Continue->Signed In]]",
       "links": [
         {
-          "name": "(Action) Take a peak.",
-          "link": "(Action) Take a peak.",
-          "pid": "5"
+          "name": "Continue",
+          "link": "Signed In",
+          "pid": "4"
         }
       ],
-      "name": "Was this table used to perform operations?",
+      "name": "p:I came in through the sewer.",
       "pid": "2",
       "position": {
-        "x": "634",
-        "y": "576"
+        "x": "996",
+        "y": "753"
       }
     },
     {
-      "text": "Ferryman::Most of the deaths came from the Maternity Ward.\n\nFerryman,sad::Back when the Maternity Ward was active, death during childbirth was pretty common.  \n\nFerryman::Cradle medics were top of the line, certainly, but they were still constrained by the limited medical knowledge available to them.\n\n[[I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?]]",
+      "text": "Frail Woman::Miss, I have a key.  All infirmary employees do.  \n\nFrail Woman::And you should have had to sign in before you were allowed here, so I'm a little alarmed you slipped through without anyone noticing.  \n\nFrail Woman::I'll have to have a few words with whoever is on shift about this oversight.\n\nJasper,thinking::\"On shift?\"  No one has worked here in decades...\n\n[[Continue->Signed In]] ",
       "links": [
         {
-          "name": "I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?",
-          "link": "I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?",
+          "name": "Continue",
+          "link": "Signed In",
+          "pid": "4"
+        }
+      ],
+      "name": "p:How did *you* get through the front desk, huh?",
+      "pid": "3",
+      "position": {
+        "x": "1330",
+        "y": "756"
+      }
+    },
+    {
+      "text": "Frail Woman::In any case, we've really got to get you signed in.  You should have been primed on how to enter discretely.  \n\nFrail Woman::Follow me to the front desk, we'll quietly get you recorded and we can move into the maternity ward.\n\n[[You want me to sign in?  Look at the state of this place!]]\n[[p:Hold on, who are you?]]",
+      "links": [
+        {
+          "name": "You want me to sign in?  Look at the state of this place!",
+          "link": "You want me to sign in?  Look at the state of this place!",
+          "pid": "5"
+        },
+        {
+          "name": "p:Hold on, who are you?",
+          "link": "p:Hold on, who are you?",
           "pid": "6"
         }
       ],
-      "name": "0;:Why did they need an eighteen body cooler?  That seems excessive.",
-      "pid": "3",
-      "position": {
-        "x": "841",
-        "y": "583"
-      }
-    },
-    {
-      "text": "Ferryman::That's for you to decide, actually.  The Cradle usually responds more mercifully when the client takes the lead.  I'm honestly less of a \"guide\", and more of a \"sherpa.\" \n\nFerryman,looking_to_side::That said...I do have a few suggestions.  You're here looking for your Mom, correct?  Well, we're in the basement of the Administrative Ward.  There are lots of offices full of scattered documents, it might be worth pouring through them.\n\nFerryman::There's a flight of stairs right outside the door behind you - they'll take you right up.\n\n[[Shouldn't you be the one leading the way, given that you know this place like the back of your hand?]]\n[[p:You really think we'll find out what happened to Mom by searching this building?]]",
-      "links": [
-        {
-          "name": "Shouldn't you be the one leading the way, given that you know this place like the back of your hand?",
-          "link": "Shouldn't you be the one leading the way, given that you know this place like the back of your hand?",
-          "pid": "8"
-        },
-        {
-          "name": "p:You really think we'll find out what happened to Mom by searching this building?",
-          "link": "p:You really think we'll find out what happened to Mom by searching this building?",
-          "pid": "9"
-        }
-      ],
-      "name": "0;p:Where do we go from here?",
+      "name": "Signed In",
       "pid": "4",
       "position": {
-        "x": "1083",
-        "y": "576"
+        "x": "1178",
+        "y": "915"
       },
       "tags": [
         "aconfused"
       ]
     },
     {
-      "text": "You peak around the corner and are greeted by an enormous, 18 body morgue.  The apparatus appears mostly intact, though a few of the doors have been wrestled from their hinges.  A faint whiff of Formaldehyde still clings to the air.\n\n[[Continue->rises]] ",
+      "text": "Frail Woman::You might have come in for an under the table operation, but we still need to go through the motions of signing you in and recording your visit.  \n\nFrail Woman::Wouldn't it be odd if countless unaccompanied women came in and out at all hours with no proper documentation of their visits?\n\nJasper,thinking::I get it now.  She thinks you're here for something seedy.  Something \"under the table.\"\n\nJasper,sad::She's right about that, but she doesn't know why we're really here.  What does she think is going on?\n\n[[Continue->Signed In]] ",
       "links": [
         {
           "name": "Continue",
-          "link": "rises",
-          "pid": "13"
-        }
-      ],
-      "name": "(Action) Take a peak.",
-      "pid": "5",
-      "position": {
-        "x": "637",
-        "y": "764"
-      },
-      "tags": [
-        "morgue",
-        "remove_subject"
-      ]
-    },
-    {
-      "text": "Ferryman,skeptical::Well, I suppose so.  Medical science has come a long way in the last half century.\n\n[[Continue->rises]] ",
-      "links": [
-        {
-          "name": "Continue",
-          "link": "rises",
-          "pid": "13"
-        }
-      ],
-      "name": "I thought the Cradle project started only 50 years ago?  Death during childbirth was still that common?",
-      "pid": "6",
-      "position": {
-        "x": "838",
-        "y": "764"
-      }
-    },
-    {
-      "text": "He lets down the hatch from which you emerged very deliberately, as though to avoid making much noise.\n\n[[C->rises]]",
-      "links": [
-        {
-          "name": "C",
-          "link": "rises",
-          "pid": "13"
-        }
-      ],
-      "name": "Appears",
-      "pid": "7",
-      "position": {
-        "x": "854",
-        "y": "275"
-      },
-      "tags": [
-        "thud",
-        "kneeling",
-        "add_wiggly"
-      ]
-    },
-    {
-      "text": "Ferryman::I'll provide suggestions and let you know where we should search, but ultimately you should take the reins.  Things will go more smoothly that way, trust me.\n\nFerryman,half_smile::Also...I don't actually know my way around the maternity ward all that well, at least compared to the underground networks.  I've memorized the layout and know how to navigate, but I usually don't spend much time here.\n\nFerryman::The maternity ward is a transitional area in most excursions, just a place most clients need to pass through to reach the residential districts.  It's not a place I typically linger.\n\n[[Continue->0;p:Where do we go from here?]] ",
-      "links": [
-        {
-          "name": "Continue",
-          "link": "0;p:Where do we go from here?",
+          "link": "Signed In",
           "pid": "4"
         }
       ],
-      "name": "Shouldn't you be the one leading the way, given that you know this place like the back of your hand?",
-      "pid": "8",
+      "name": "You want me to sign in?  Look at the state of this place!",
+      "pid": "5",
       "position": {
-        "x": "1053",
-        "y": "729"
+        "x": "1103",
+        "y": "1065"
       }
     },
     {
-      "text": "Ferryman,skeptical::To be honest, we aren't likely to find exactly what you are looking for here.  We're probably going to need to pay a visit to operations ward or perhaps the chronic ward to find exactly what you are looking for.\n\nFerryman::But we'll probably find enough info here to better narrow down our search.  Hopefully after we're done here, we'll know which section of the Cradle to focus our efforts on reaching.  We won't be able to canvas the whole region, of course.\n\nFerryman,surprised::You mentioned that your Mom, Rosalind, often made professional visits to this hospital, correct?\n\n[[p:Yes, she came here for work often.  I don't have any clue why though, she wouldn't tell me.]]",
+      "text": "Frail Woman::My name is Julia.  I've been a midwife at this infirmary for nine years.  You are in good hands.\n\nJulia's presence is strange and unnatural.  Her cadence and gestures seem disconnected from the present scene.  \n\nThe sublingual signals she's sending you via gesticulations and body language are distorted and inscrutable, as if transmitted through a television set overcome with static.\n\n[[Have you taken a look around recently?  This infirmary clearly hasn't been operational for a long time.]]\n[[What kind of operation am I signing up for?]]\n[[What do you do here?]]\n[[p:If we go get \"signed in,\" will you take me to the maternity ward?]]",
       "links": [
         {
-          "name": "p:Yes, she came here for work often.  I don't have any clue why though, she wouldn't tell me.",
-          "link": "p:Yes, she came here for work often.  I don't have any clue why though, she wouldn't tell me.",
-          "pid": "10"
-        }
-      ],
-      "name": "p:You really think we'll find out what happened to Mom by searching this building?",
-      "pid": "9",
-      "position": {
-        "x": "1205",
-        "y": "726"
-      }
-    },
-    {
-      "text": "Ferryman,skeptical::Hmm.  This might go a lot more smoothly if we had any idea where she spent most of her time, or who she interacted with, while she was here.  She really communicated nothing about her visits?\n\n[[p:No, nothing.  We just, had that kind of relationship.]]",
-      "links": [
+          "name": "Have you taken a look around recently?  This infirmary clearly hasn't been operational for a long time.",
+          "link": "Have you taken a look around recently?  This infirmary clearly hasn't been operational for a long time.",
+          "pid": "7"
+        },
         {
-          "name": "p:No, nothing.  We just, had that kind of relationship.",
-          "link": "p:No, nothing.  We just, had that kind of relationship.",
+          "name": "What kind of operation am I signing up for?",
+          "link": "What kind of operation am I signing up for?",
+          "pid": "9"
+        },
+        {
+          "name": "What do you do here?",
+          "link": "What do you do here?",
+          "pid": "8"
+        },
+        {
+          "name": "p:If we go get \"signed in,\" will you take me to the maternity ward?",
+          "link": "p:If we go get \"signed in,\" will you take me to the maternity ward?",
           "pid": "11"
         }
       ],
-      "name": "p:Yes, she came here for work often.  I don't have any clue why though, she wouldn't tell me.",
-      "pid": "10",
+      "name": "p:Hold on, who are you?",
+      "pid": "6",
       "position": {
-        "x": "1204",
-        "y": "876"
-      }
+        "x": "1253",
+        "y": "1065"
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
-      "text": "Jasper,twisted::That kind of lack of relationship?\n\nFerryman,neutral::Alright, well, this hospital is huge and we'll never be able to canvas the entirety of it - let's focus our efforts on searching the Administrative Ward.  That's where we're mostly likely to find clues.\n\n[[p:Alright, let's start looking.]]",
+      "text": "Julia::That's ridiculous.\n\nHer dismissal of the suggestion is visible.  She immediately twitches her head quickly to the left, physically signaling her rejection of the notion.\n\nJulia::Look, we're doing the best we can in light of the recent expansion.  Our budget wasn't inflated enough to keep up.  I assure you though, you will still receive top notch care, for both official and unofficial matters. \n\nJulia::Now let's go fill out your record.\n\nJasper,twisted::An excess of active patients doesn't seem to be the issue here.\n\n[[Continue->p:Hold on, who are you?]] ",
       "links": [
         {
-          "name": "p:Alright, let's start looking.",
-          "link": "p:Alright, let's start looking.",
-          "pid": "12"
+          "name": "Continue",
+          "link": "p:Hold on, who are you?",
+          "pid": "6"
         }
       ],
-      "name": "p:No, nothing.  We just, had that kind of relationship.",
-      "pid": "11",
+      "name": "Have you taken a look around recently?  This infirmary clearly hasn't been operational for a long time.",
+      "pid": "7",
       "position": {
-        "x": "1204",
-        "y": "1026"
+        "x": "1093",
+        "y": "1223"
       }
     },
     {
-      "text": "",
-      "name": "p:Alright, let's start looking.",
-      "pid": "12",
-      "position": {
-        "x": "1204",
-        "y": "1176"
-      }
-    },
-    {
-      "text": "TAG\n\n[[Was this table used to perform operations?]]\n[[0;:Why did they need an eighteen body cooler?  That seems excessive.]]\n[[0;p:Where do we go from here?]]",
+      "text": "Julia::I'm a midwife.  That's not exactly the technical title for my position, but that's what I am - I guide women through the pain of birth.\n\nJulia::But as you're aware, I've also taken on a number of other responsibilities.\n\n[[Continue->p:Hold on, who are you?]]",
       "links": [
         {
-          "name": "Was this table used to perform operations?",
-          "link": "Was this table used to perform operations?",
-          "pid": "2"
-        },
+          "name": "Continue",
+          "link": "p:Hold on, who are you?",
+          "pid": "6"
+        }
+      ],
+      "name": "What do you do here?",
+      "pid": "8",
+      "position": {
+        "x": "1371",
+        "y": "1221"
+      }
+    },
+    {
+      "text": "Julia::Look, I expect you have some anxieties going into this, but we really cannot discuss them here.  We'll talk about it in private, later, after sign in.\n\nJasper,twisted::She expects us to know what she's talking about, so just go along with it for now.  \n\n[[Continue->p:Hold on, who are you?]] ",
+      "links": [
         {
-          "name": "0;:Why did they need an eighteen body cooler?  That seems excessive.",
-          "link": "0;:Why did they need an eighteen body cooler?  That seems excessive.",
-          "pid": "3"
-        },
+          "name": "Continue",
+          "link": "p:Hold on, who are you?",
+          "pid": "6"
+        }
+      ],
+      "name": "What kind of operation am I signing up for?",
+      "pid": "9",
+      "position": {
+        "x": "1237",
+        "y": "1224"
+      }
+    },
+    {
+      "text": "Frail Woman::No, you didn't.  I would have gotten a few alert taps through the telegrammatic lines, and prepared to meet you in the inspection room instead of here.  \n\nFrail Woman::I don't typically introduce myself to patients while washing stained rags.\n\nJasper,surprised::For what it's worth, those rags look pretty clean.  \n\n[[Continue->Signed In]] ",
+      "links": [
         {
-          "name": "0;p:Where do we go from here?",
-          "link": "0;p:Where do we go from here?",
+          "name": "Continue",
+          "link": "Signed In",
           "pid": "4"
         }
       ],
-      "name": "rises",
-      "pid": "13",
+      "name": "p:(Lie) I did come in past the front desk.",
+      "pid": "10",
       "position": {
-        "x": "855",
-        "y": "429"
+        "x": "1176",
+        "y": "760"
+      }
+    },
+    {
+      "text": "Julia::I *have* to take you to the maternity ward, Miss.  That's where you were supposed to sign in.\n\nJulia::Why did you come through the administrative wing?  You shouldn't be here at all.\n\n[[p:I need to find proof that I was born here.]]\n[[p:This hospital has secrets, about my past.  I aim to figure them out, serial adventure boy detective style.]]\n[[p:It's a personal matter.]]",
+      "links": [
+        {
+          "name": "p:I need to find proof that I was born here.",
+          "link": "p:I need to find proof that I was born here.",
+          "pid": "12"
+        },
+        {
+          "name": "p:This hospital has secrets, about my past.  I aim to figure them out, serial adventure boy detective style.",
+          "link": "p:This hospital has secrets, about my past.  I aim to figure them out, serial adventure boy detective style.",
+          "pid": "13"
+        },
+        {
+          "name": "p:It's a personal matter.",
+          "link": "p:It's a personal matter.",
+          "pid": "14"
+        }
+      ],
+      "name": "p:If we go get \"signed in,\" will you take me to the maternity ward?",
+      "pid": "11",
+      "position": {
+        "x": "1514",
+        "y": "1222"
       },
       "tags": [
-        "rises",
-        "auncertain"
+        "aneutral"
+      ]
+    },
+    {
+      "text": "Julia::That's absurd.  The maternity ward has only been in operation for 19 years.  You look a little older than that to me.\n\nJasper,looking_forward::See?  You look old.\n\nJasper,thinking::I keep telling you to wear more sunblock and smoke less but you won't listen.\n\nJasper,sad::She probably thinks you're ugly too.\n\n[[p:Cut it out!]]\n[[p:I'm not ugly, you're ugly!->p:Cut it out!]]\n",
+      "links": [
+        {
+          "name": "p:Cut it out!",
+          "link": "p:Cut it out!",
+          "pid": "16"
+        },
+        {
+          "name": "p:I'm not ugly, you're ugly!",
+          "link": "p:Cut it out!",
+          "pid": "16"
+        }
+      ],
+      "name": "p:I need to find proof that I was born here.",
+      "pid": "12",
+      "position": {
+        "x": "1364",
+        "y": "1372"
+      }
+    },
+    {
+      "text": "Julia::...Let's get you signed in.  I'll need to check your patient record but I suspect you might need a few refills, in addition to our other services.\n\nJasper,twisted::\"Refills.\"  Medication refills.  She's making fun of you.\n\n[[Continue->This will get me closer]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "This will get me closer",
+          "pid": "15"
+        }
+      ],
+      "name": "p:This hospital has secrets, about my past.  I aim to figure them out, serial adventure boy detective style.",
+      "pid": "13",
+      "position": {
+        "x": "1514",
+        "y": "1372"
+      }
+    },
+    {
+      "text": "Julia::I...understand.\n\nJulia::I'll...I'll get you into the maternity ward.  But we're going to have to go through the front desk, no way around it.\n\nJasper,head_tilted::I think she wants to help, but also wants to keep the rule bending to a minimum.  Though I'm not sure who enforces the \"rules\" these days.\n\n[[Continue->This will get me closer]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "This will get me closer",
+          "pid": "15"
+        }
+      ],
+      "name": "p:It's a personal matter.",
+      "pid": "14",
+      "position": {
+        "x": "1664",
+        "y": "1372"
+      }
+    },
+    {
+      "text": "Jasper,thinking::Look, something is obviously wrong with Julia.  She seems to think this hospital is still operational.  \n\nJasper,looking_forward::But if you just go along with her for now, maybe she'll actually get us to the maternity ward.  She acts like she knows her way around at least. \n\nJulia wrings the last drops of water off of her hands.  She subtly turns to face the doorframe, motioning for you to follow her.",
+      "name": "This will get me closer",
+      "pid": "15",
+      "position": {
+        "x": "1511",
+        "y": "1576"
+      }
+    },
+    {
+      "text": "Julia::I'm sorry, miss? \n\nJasper,looking_forward::Zip it, we'll hash this out later.\n\n[[Continue->This will get me closer]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "This will get me closer",
+          "pid": "15"
+        }
+      ],
+      "name": "p:Cut it out!",
+      "pid": "16",
+      "position": {
+        "x": "1364",
+        "y": "1522"
+      }
+    },
+    {
+      "text": "The woman rises from the pail to address you.\n\nFrail Woman::Excuse me, miss.  You shouldn't be here.\n\nFrail Woman::You should have checked in at the front desk, every patient should before being allowed past the foyer.\n\nFrail Woman::I know some of our services are more discreet in nature, but we still need to go through the proper channels and have you signed in.\n\nFrail Woman::How did you even get here?  You shouldn't have made it past the front desk without security being alerted.\n\nJasper,thinking::Why does she care which entrance we came through?  This place has been abandoned for twenty years.\n\nFrail Woman::Well?  Miss, I really need to know.\n\n[[p:I came in through the sewer.]]\n[[p:(Lie) I did come in past the front desk.]]\n[[p:How did *you* get through the front desk, huh?]]",
+      "links": [
+        {
+          "name": "p:I came in through the sewer.",
+          "link": "p:I came in through the sewer.",
+          "pid": "2"
+        },
+        {
+          "name": "p:(Lie) I did come in past the front desk.",
+          "link": "p:(Lie) I did come in past the front desk.",
+          "pid": "10"
+        },
+        {
+          "name": "p:How did *you* get through the front desk, huh?",
+          "link": "p:How did *you* get through the front desk, huh?",
+          "pid": "3"
+        }
+      ],
+      "name": "Rises",
+      "pid": "17",
+      "position": {
+        "x": "1182",
+        "y": "642"
+      },
+      "tags": [
+        "stands",
+        "looping_phoebe",
+        "add_julia"
+      ]
+    },
+    {
+      "text": "She glares at you, intensely.  Her expression reveals her view of you, painfully clearly: You are an intrusion, a foreign body.\n\nJasper,head_tilted::Who is this?  There shouldn't be anyone else here.\n\nJasper,looking_forward::Let's carefully introduce ourselves.  Be prepared to run if you sense a threat.\n\n[[C->Rises]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Rises",
+          "pid": "17"
+        }
+      ],
+      "name": "Glares",
+      "pid": "18",
+      "position": {
+        "x": "1179",
+        "y": "507"
+      },
+      "tags": [
+        "left"
       ]
     }
   ],
-  "name": "Entering Morgue",
+  "name": "Julia Introduction",
   "startnode": "1",
   "creator": "Twine",
   "creator-version": "2.3.14",
-  "ifid": "C4B94694-B0D3-44B6-92AB-50C22D82A8B9"
+  "ifid": "7570EB3B-6BE0-4AE7-AC85-10B71A25019D"
 }
 

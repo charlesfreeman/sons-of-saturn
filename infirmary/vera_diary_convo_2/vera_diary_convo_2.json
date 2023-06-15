@@ -47,7 +47,7 @@
       ]
     },
     {
-      "text": "Ferryman,neutral::The Cradle was the center of a lot of groundbreaking medical research prior to its abandonment.  \n\nFerryman::As such, a pretty wide variety of exotic medicinal chemicals were kept in stock - anyone with even slim medical credentials could get there hands on some pretty esoteric stuff without too many questions being asked.\n\nFerryman::In fact, a team working in this very hospital is credited with discovering that Ergot could be used to treat migraines.  As for Datura, I recall hearing they had some luck using it to treat dandruff.\n\n[[Personally I'd rather deal with dandruff than regularly ingest nightshade.->Page 4]]\n[[I guess a little bit of poison is worth it if it prevents your scalp from falling out.->Page 4]]",
+      "text": "Ferryman,neutral::Pandora was the center of a lot of groundbreaking medical research prior to its abandonment.  \n\nFerryman::As such, a pretty wide variety of exotic medicinal chemicals were kept in stock - anyone with even slim medical credentials could get there hands on some pretty esoteric stuff without too many questions being asked.\n\nFerryman::In fact, a team working in this very hospital is credited with discovering that Ergot could be used to treat migraines.  As for Datura, I recall hearing they had some luck using it to treat dandruff.\n\n[[Personally I'd rather deal with dandruff than regularly ingest nightshade.->Page 4]]\n[[I guess a little bit of poison is worth it if it prevents your scalp from falling out.->Page 4]]",
       "links": [
         {
           "name": "Personally I'd rather deal with dandruff than regularly ingest nightshade.",
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "text": "Ferryman,looking_to_side::The medical supply closets referred to in the diary entries are right below us, in the sub basement.  Those are probably worth investigating.  \n\nFerryman,neutral::We can get there by taking the stairwell at the end of the hall.\n\n[[p:Yeah, I kind of doubt we'll find much but the entries did mention some anomalous dips in medical supplies.  So we should probably go take a look.]]",
+      "text": "Ferryman,looking_to_side::The medical supply closets referred to in the diary entries are right below us, in the sub-basement.  Those are probably worth investigating.  \n\nFerryman,neutral::We can get there by taking the stairwell at the end of the hall.\n\n[[p:Yeah, I kind of doubt we'll find much but the entries did mention some anomalous dips in medical supplies.  So we should probably go take a look.]]",
       "links": [
         {
           "name": "p:Yeah, I kind of doubt we'll find much but the entries did mention some anomalous dips in medical supplies.  So we should probably go take a look.",

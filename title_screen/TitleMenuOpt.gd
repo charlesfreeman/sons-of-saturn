@@ -36,7 +36,9 @@ func _on_Continue_pressed():
 
 
 func _on_NewGame_pressed():
+	Global.change_song("None")
+	Global.change_soundscape("FreshAir")
 	var options = SceneManager.create_options()
 	var general_options = SceneManager.create_general_options()
-	SceneManager.change_scene("Quote", options, options, general_options)
+	SceneManager.change_scene("Stage", options, options, general_options)
 

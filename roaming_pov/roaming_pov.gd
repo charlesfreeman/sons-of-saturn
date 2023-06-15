@@ -52,7 +52,7 @@ func _ready():
 	autosave.save()
 	
 
-func _process(_delta):
+func _input(event):
 	if Input.is_action_pressed("ui_up"):
 		_on_UpButton_pressed()
 	elif Input.is_action_pressed("ui_right"):
@@ -61,7 +61,7 @@ func _process(_delta):
 		_on_DownButton_pressed()
 	elif Input.is_action_pressed("ui_left"):
 		_on_LeftButton_pressed()
-	elif Input.is_action_pressed("ui_cancel"):
+	elif Input.is_action_pressed("ui_cancel") or Input.is_action_pressed("ui_select"):
 		if not esc_opts.visible:
 			hbox.modulate = Color(1, 1, 1, 0.6)
 			get_tree().call_group("click_areas", "disable")

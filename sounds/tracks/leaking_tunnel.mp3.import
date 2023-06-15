@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/leaking_tunnel.mp3-7cddd301d87272f7cbab93bd0c8a5e88.mp3str"
+
+[deps]
+
+source_file="res://sounds/tracks/leaking_tunnel.mp3"
+dest_files=[ "res://.import/leaking_tunnel.mp3-7cddd301d87272f7cbab93bd0c8a5e88.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

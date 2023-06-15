@@ -21,6 +21,7 @@ SceneManager="*res://addons/scene_manager/scene_manager.tscn"
 Scenes="*res://addons/scene_manager/scenes.gd"
 Mdm="*res://sounds/MDM.tscn"
 Mds="*res://sounds/MDS.tscn"
+TrackManager="*res://sounds/TrackManager.tscn"
 
 [display]
 

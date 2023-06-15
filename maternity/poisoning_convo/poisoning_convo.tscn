@@ -13,7 +13,7 @@
 [ext_resource path="res://maternity/inspection_room_convo/ThornBG.gd" type="Script" id=11]
 [ext_resource path="res://maternity/inspection_room_convo/ring_of_spikes.png" type="Texture" id=12]
 [ext_resource path="res://sounds/effects/switch_flip_slow.wav" type="AudioStream" id=13]
-[ext_resource path="res://maternity/poisoning_convo/stabbed.wav" type="AudioStream" id=14]
+[ext_resource path="res://sounds/effects/stabbed_watermelon.wav" type="AudioStream" id=14]
 [ext_resource path="res://sounds/effects/switch_flip_fast.wav" type="AudioStream" id=15]
 [ext_resource path="res://sounds/effects/locked_door.wav" type="AudioStream" id=16]
 [ext_resource path="res://sounds/effects/kick.wav" type="AudioStream" id=17]
@@ -74,7 +74,7 @@ tag_to_play = "thunk"
 
 [node name="StabbedSoundEffect" parent="." instance=ExtResource( 2 )]
 stream = ExtResource( 14 )
-volume_db = -18.967
+volume_db = -9.416
 tag_to_play = "stabbed"
 
 [node name="LockedDoor" parent="." instance=ExtResource( 2 )]

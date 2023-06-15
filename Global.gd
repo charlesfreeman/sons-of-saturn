@@ -5,7 +5,6 @@ var region = "None"
 # Amelie always assumed to be in party, never reason to check
 var party = ["Wiggly"]
 var active_popup = false
-var song = "None"
 var soundscape = "None"
 var songs = []
 var soundscapes = []
@@ -41,20 +40,10 @@ func _ready():
 		soundscapes.append(c.get_name())
 
 func change_song(new_song):
-	if new_song == "None":
-		if Global.song != "None":
-			self.stop_song()
-	else:
-		if Global.song == "None":
-			Mdm.init_song(new_song)
-			Mdm.play(new_song)
-		else:
-			Mdm.queue_beat_transition(new_song)
-		Global.song = new_song
+	TrackManager.play(new_song)
 
 func stop_song():
-	Mdm.stop(Global.song)
-	Global.song = "None"
+	TrackManager.stop()
 	
 func change_soundscape(scape_name):
 	if scape_name == "Stop":

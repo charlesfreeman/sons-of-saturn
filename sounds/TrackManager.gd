@@ -24,9 +24,7 @@ func play(song: String):
 		pass
 	elif check_for_song(song):
 		print("checking for song: ", song)
-		# fade out current song, fade in new one simultaneously
 		if current_song != "None":
-			print("transitioning")
 			self.get_node(current_song).fade_out()
 			self.get_node(song).fade_in()
 			current_song = song
@@ -36,9 +34,11 @@ func play(song: String):
 			current_song = song
 	# fade out song (no new song)
 	elif song == "None":
-		print("No song")
 		self.get_node(current_song).fade_out()
 		current_song = song
 	else:
 		print("Warning, song not in tracks list: ", song)
 
+func stop():
+	self.get_node(current_song).fade_out()
+	current_song = "None"

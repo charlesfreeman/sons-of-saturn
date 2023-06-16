@@ -20,7 +20,7 @@ __meta__ = {
 scene_up = "res://maternity/tilted_dream_hallways/tilted_dream_hallway_3.tscn"
 position = Vector2( 1850, 800 )
 rotation = -122
-song = "sewer_light_flow"
+song = "alien_w_heart_med"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 2 )]
 up_path = true

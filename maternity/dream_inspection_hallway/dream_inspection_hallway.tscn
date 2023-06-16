@@ -20,7 +20,7 @@ __meta__ = {
 }
 scene_up = "res://maternity/dream_surgical_overlook/dream_surgical_overlook.tscn"
 position = Vector2( 2330, 1000 )
-song = "sewer_light_flow"
+song = "alien_w_heart_med"
 map = "dream"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
@@ -32,5 +32,5 @@ shape = SubResource( 1 )
 
 [node name="PopUp" parent="." instance=ExtResource( 4 )]
 popup_on_entry = true
-popup_text = [ "Amelie,sad::I...I'm not feeling great...", "Jasper,head_tilted::Just, try to move forward, ok?" ]
+popup_text = [ "Amelie,sad::I...I'm not feeling great...", "Jasper,head_tilted::I'm aware.  Just try to keep moving.  ", "Jasper,twisted::Wiggly said he would meet us at the end of this hall.  Let's get away from Julia and find him." ]
 single_use = true

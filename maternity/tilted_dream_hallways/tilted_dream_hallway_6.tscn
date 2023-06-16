@@ -21,7 +21,7 @@ scene_up = "poisoning_convo"
 non_roam_scene_up = true
 position = Vector2( 800, 1500 )
 rotation = -210
-song = "sewer_light_flow"
+song = "alien_w_heart_fast"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 2 )]
 up_path = true

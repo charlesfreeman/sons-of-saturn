@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/alien_w_med_heart.mp3-ac1bfca3e35678d849d6a4deff33bcf8.mp3str"
+
+[deps]
+
+source_file="res://sounds/tracks/alien_w_med_heart.mp3"
+dest_files=[ "res://.import/alien_w_med_heart.mp3-ac1bfca3e35678d849d6a4deff33bcf8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

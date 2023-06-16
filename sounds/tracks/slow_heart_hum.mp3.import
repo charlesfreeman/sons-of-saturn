@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/slow_heart_hum.mp3-d53194b440e4d6d9a2cfcbac058c8487.mp3str"
+
+[deps]
+
+source_file="res://sounds/tracks/slow_heart_hum.mp3"
+dest_files=[ "res://.import/slow_heart_hum.mp3-d53194b440e4d6d9a2cfcbac058c8487.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

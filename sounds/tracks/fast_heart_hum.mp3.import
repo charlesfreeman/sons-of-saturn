@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/fast_heart_hum.mp3-18b7b1142527f905437c8e2f14f93635.mp3str"
+
+[deps]
+
+source_file="res://sounds/tracks/fast_heart_hum.mp3"
+dest_files=[ "res://.import/fast_heart_hum.mp3-18b7b1142527f905437c8e2f14f93635.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

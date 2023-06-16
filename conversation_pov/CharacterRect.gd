@@ -28,7 +28,7 @@ func _ready():
 	  Tween.TRANS_LINEAR, Tween.EASE_IN)
 	# tween for going transparent to mostly dark
 	$TweenAppearDark.interpolate_property(self, "modulate", 
-	  self.modulate, Color(0.35, 0.35, 0.35, 1), 0.8, 
+	  Color(0, 0, 0, 0), Color(0.35, 0.35, 0.35, 1), 0.8, 
 	  Tween.TRANS_LINEAR, Tween.EASE_IN)
 	# might want to add dark -> tranparent tween at some point but not yet needed
 	if on_start:

@@ -207,7 +207,7 @@ func _on_Dialogue_tag(tags):
 			elif tag == "remove_subject":
 				self._remove_subject()
 
-			elif tag in Global.songs:
+			elif tag in TrackManager.songs:
 				Global.change_song(tag)
 			elif tag == "stop_song":
 				Global.stop_song()

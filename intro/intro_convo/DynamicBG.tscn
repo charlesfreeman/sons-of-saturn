@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://intro/intro_convo/DynamicBGScript.gd" type="Script" id=1]
-[ext_resource path="res://images/GSL/SubParis_4.jpg" type="Texture" id=2]
+[ext_resource path="res://artwork/GSL/SubParis_4.jpg" type="Texture" id=2]
 [ext_resource path="res://sounds/effects/switch_flip_fast.wav" type="AudioStream" id=3]
 [ext_resource path="res://sounds/effects/switch_flip_slow.wav" type="AudioStream" id=4]
 

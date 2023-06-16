@@ -122,7 +122,7 @@ func _ready():
 	if not self.popup_on_entry:
 		popup.hide()
 	else:
-		self._show_next_text()
+		self.init_popup()
 	
 	all_in_party = _check_in_party()
 

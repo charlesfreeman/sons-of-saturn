@@ -232,8 +232,8 @@
       "name": "p:(Action) Get up from the gurney without speaking.",
       "pid": "11",
       "position": {
-        "x": "1401",
-        "y": "4267"
+        "x": "1425",
+        "y": "4243"
       },
       "tags": [
         "enter",
@@ -606,10 +606,7 @@
       "position": {
         "x": "1401",
         "y": "4417"
-      },
-      "tags": [
-        "remove_subject"
-      ]
+      }
     },
     {
       "text": "Julia::This way Miss.  We need to perform a quick inspection before proceeding.\n\nJulia motions to the doorway on the right.\n\n[[p:Since when do I need an inspection?  You said all I had to do was sign in.]]\n[[p:Which of my body parts needs inspecting?  I just checked and they are all working fine.]]",
@@ -706,10 +703,7 @@
       "position": {
         "x": "1301",
         "y": "2508"
-      },
-      "tags": [
-        "julia_closer"
-      ]
+      }
     }
   ],
   "name": "Needled",

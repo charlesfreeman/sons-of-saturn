@@ -142,18 +142,8 @@ margin_right = 2103.48
 margin_bottom = 824.151
 texture = ExtResource( 10 )
 appear_tag = ""
-disappear_tag = "julia_closer"
-appear_dark_tag = "julia_behind_2"
-
-[node name="JuliaStandingCloser" parent="." instance=ExtResource( 9 )]
-margin_left = 191.476
-margin_top = -139.849
-margin_right = 2103.48
-margin_bottom = 824.151
-texture = ExtResource( 10 )
-appear_tag = ""
 disappear_tag = "julia_disappear"
-appear_dark_tag = "julia_closer"
+appear_dark_tag = "julia_behind_2"
 
 [node name="ConvoSoundEffect" parent="." instance=ExtResource( 12 )]
 stream = ExtResource( 13 )

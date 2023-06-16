@@ -448,14 +448,14 @@
       "name": "Raise head",
       "pid": "24",
       "position": {
-        "x": "2167",
+        "x": "2170",
         "y": "390"
       },
       "tags": [
         "wakeup",
         "brighten_stage",
-        "flourescent_hum",
-        "ashocked"
+        "ashocked",
+        "weird_hum"
       ]
     },
     {

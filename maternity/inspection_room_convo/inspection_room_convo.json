@@ -258,7 +258,8 @@
       },
       "tags": [
         "red_bg_appear",
-        "heartbeats_med"
+        "heartbeats_med",
+        "arm_band"
       ]
     },
     {
@@ -631,7 +632,8 @@
         "y": "46"
       },
       "tags": [
-        "aconfused"
+        "aconfused",
+        "crib_wind"
       ]
     },
     {

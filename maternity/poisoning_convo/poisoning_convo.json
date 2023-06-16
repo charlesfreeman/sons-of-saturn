@@ -178,19 +178,19 @@
       }
     },
     {
-      "text": "You haphazardly plunge the needle into the outer side of your right thigh, midway between your hip and knee.  The sting of violent self-penetration reverberates through your leg.\n\nJulia,concerned::...Aaahg!...\n\nJulia releases her grip and throws herself back.  You failed to navigate the norepinephrine to a viable vein, but stabbing yourself has thrown Julia off balance.  \n\n[[p:(Action) Free yourself.]]",
+      "text": "You haphazardly plunge the needle into the outer side of your right thigh, midway between your hip and knee.  The sting of violent self-penetration reverberates through your leg.\n\n[[C->Recoil_SE]]",
       "links": [
         {
-          "name": "p:(Action) Free yourself.",
-          "link": "p:(Action) Free yourself.",
-          "pid": "11"
+          "name": "C",
+          "link": "Recoil_SE",
+          "pid": "45"
         }
       ],
       "name": "1;p:(Action) Stab yourself with the hypodermic needle.",
       "pid": "9",
       "position": {
-        "x": "1439",
-        "y": "1546"
+        "x": "1421",
+        "y": "1447"
       },
       "tags": [
         "chair",
@@ -863,6 +863,25 @@
         "x": "1297",
         "y": "913"
       }
+    },
+    {
+      "text": "Julia,concerned::...Aaahg!...\n\nJulia releases her grip and throws herself back.  You failed to navigate the norepinephrine to a viable vein, but stabbing yourself has thrown Julia off balance.  \n\n[[p:(Action) Free yourself.]]",
+      "links": [
+        {
+          "name": "p:(Action) Free yourself.",
+          "link": "p:(Action) Free yourself.",
+          "pid": "11"
+        }
+      ],
+      "name": "Recoil_SE",
+      "pid": "45",
+      "position": {
+        "x": "1432",
+        "y": "1576"
+      },
+      "tags": [
+        "recoil"
+      ]
     }
   ],
   "name": "Poisoning",

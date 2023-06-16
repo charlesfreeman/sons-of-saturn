@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
 [ext_resource path="res://maternity/inspection_room_convo/ThornBG.gd" type="Script" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://images/julia_stethescope.png" type="Texture" id=11]
 [ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=12]
 [ext_resource path="res://maternity/poisoning_convo/stabbed.wav" type="AudioStream" id=13]
+[ext_resource path="res://sounds/effects/arm_band.wav" type="AudioStream" id=14]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -120,8 +121,9 @@ margin_top = -139.849
 margin_right = 2103.48
 margin_bottom = 824.151
 texture = ExtResource( 10 )
-appear_tag = "julia_standing_behind"
+appear_tag = ""
 disappear_tag = "julia_stethescope"
+appear_dark_tag = "julia_standing_behind"
 
 [node name="JuliaStethescope" parent="." instance=ExtResource( 9 )]
 margin_left = 17.8541
@@ -129,8 +131,9 @@ margin_top = -76.0
 margin_right = 2391.85
 margin_bottom = 2415.0
 texture = ExtResource( 11 )
-appear_tag = "julia_stethescope"
+appear_tag = ""
 disappear_tag = "julia_behind_2"
+appear_dark_tag = "julia_stethescope"
 
 [node name="JuliaBehind2" parent="." instance=ExtResource( 9 )]
 margin_left = 191.476
@@ -138,8 +141,9 @@ margin_top = -139.849
 margin_right = 2103.48
 margin_bottom = 824.151
 texture = ExtResource( 10 )
-appear_tag = "julia_behind_2"
+appear_tag = ""
 disappear_tag = "julia_closer"
+appear_dark_tag = "julia_behind_2"
 
 [node name="JuliaStandingCloser" parent="." instance=ExtResource( 9 )]
 margin_left = 191.476
@@ -147,13 +151,19 @@ margin_top = -139.849
 margin_right = 2103.48
 margin_bottom = 824.151
 texture = ExtResource( 10 )
-appear_tag = "julia_closer"
+appear_tag = ""
 disappear_tag = "julia_disappear"
+appear_dark_tag = "julia_closer"
 
 [node name="ConvoSoundEffect" parent="." instance=ExtResource( 12 )]
 stream = ExtResource( 13 )
 volume_db = -21.928
 tag_to_play = "stabbed"
+
+[node name="ArmBand" parent="." instance=ExtResource( 12 )]
+stream = ExtResource( 14 )
+volume_db = 5.17
+tag_to_play = "arm_band"
 
 [connection signal="tag" from="Convo" to="RedBG" method="_on_Convo_tag"]
 [connection signal="tag" from="Convo" to="RedBGSliver" method="_on_Convo_tag"]

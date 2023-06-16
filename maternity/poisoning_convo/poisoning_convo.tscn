@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
 [ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=2]
@@ -16,8 +16,9 @@
 [ext_resource path="res://sounds/effects/stabbed_watermelon.wav" type="AudioStream" id=14]
 [ext_resource path="res://sounds/effects/switch_flip_fast.wav" type="AudioStream" id=15]
 [ext_resource path="res://sounds/effects/locked_door.wav" type="AudioStream" id=16]
-[ext_resource path="res://sounds/effects/kick.wav" type="AudioStream" id=17]
+[ext_resource path="res://sounds/effects/punch.wav" type="AudioStream" id=17]
 [ext_resource path="res://sounds/effects/body_fall.wav" type="AudioStream" id=18]
+[ext_resource path="res://sounds/effects/recoil.wav" type="AudioStream" id=19]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -88,6 +89,10 @@ tag_to_play = "kick"
 [node name="BodyFall" parent="." instance=ExtResource( 2 )]
 stream = ExtResource( 18 )
 tag_to_play = "body_fall"
+
+[node name="Recoil" parent="." instance=ExtResource( 2 )]
+stream = ExtResource( 19 )
+tag_to_play = "recoil"
 
 [node name="JuliaCorner" parent="." instance=ExtResource( 5 )]
 margin_left = 1180.39

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/saturnsounds.mp3-af4845ca35bfe621b370938999d70f84.mp3str"
+
+[deps]
+
+source_file="res://sounds/tracks/saturnsounds.mp3"
+dest_files=[ "res://.import/saturnsounds.mp3-af4845ca35bfe621b370938999d70f84.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

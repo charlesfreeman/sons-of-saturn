@@ -6,7 +6,6 @@ var region = "None"
 var party = ["Wiggly"]
 var active_popup = false
 var soundscape = "None"
-var songs = []
 var soundscapes = []
 var dbrightness = 0.6
 
@@ -34,8 +33,6 @@ var prog_flags = {
 var inventory = ["Jasper"]
 
 func _ready():
-	for c in Mdm.get_children():
-		songs.append(c.get_name())
 	for c in Mds.get_children():
 		soundscapes.append(c.get_name())
 

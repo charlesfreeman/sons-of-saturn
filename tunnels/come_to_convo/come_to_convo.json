@@ -261,7 +261,7 @@
       }
     },
     {
-      "text": "Wiggly::The client who got through found some old family photo belonging to her attachment.  I couldn't see exactly what happened, but she reported that showing the family photo to the entity haunting her allowed her to break free.\n\nWiggly::We should hunt for some sort of personal artifact that means something to Julia.  I think that's your best chance.\n\nWiggly::What can you tell me about Julia?  Any leads that might point us towards personal artifacts of hers?\n\n[[\"Client\"?  As in, singular?]]\n[[p:She's a nurse who works in the maternity ward.  She acted like the visitation she was bringing me in for was extremely discreet, and was very cagey about what it was actually for.  She had some sort of emotional reaction to the auditorium.  That's really all I know.]]",
+      "text": "Wiggly::The client who got through found some old family photo belonging to her attachment.  I couldn't see exactly what happened, but she reported that showing the family photo to the entity haunting her allowed her to break free.\n\nWiggly::We should hunt for some sort of personal artifact that means something to Julia.  I think that's your best chance.\n\nWiggly::What can you tell me about Julia?  Any leads that might point us towards personal artifacts of hers?\n\n[[\"Client\"?  As in, singular?]]\n[[p:She's a nurse who works in the maternity ward.  She acted like the visitation she was bringing me in for was extremely discreet, and was cagey about what it was actually for.  That's all I know.]]",
       "links": [
         {
           "name": "\"Client\"?  As in, singular?",
@@ -269,8 +269,8 @@
           "pid": "15"
         },
         {
-          "name": "p:She's a nurse who works in the maternity ward.  She acted like the visitation she was bringing me in for was extremely discreet, and was very cagey about what it was actually for.  She had some sort of emotional reaction to the auditorium.  That's really all I know.",
-          "link": "p:She's a nurse who works in the maternity ward.  She acted like the visitation she was bringing me in for was extremely discreet, and was very cagey about what it was actually for.  She had some sort of emotional reaction to the auditorium.  That's really all I know.",
+          "name": "p:She's a nurse who works in the maternity ward.  She acted like the visitation she was bringing me in for was extremely discreet, and was cagey about what it was actually for.  That's all I know.",
+          "link": "p:She's a nurse who works in the maternity ward.  She acted like the visitation she was bringing me in for was extremely discreet, and was cagey about what it was actually for.  That's all I know.",
           "pid": "16"
         }
       ],
@@ -301,15 +301,15 @@
       }
     },
     {
-      "text": "Wiggly::Visitation?  She saw you for a visitation?\n\n[[p:Yes.  She assumed that's what I was there for when I first encountered her.  I went along with it because the door to the maternity ward was locked, and she said she could bring me here.]]",
+      "text": "Wiggly::Visitation?  She saw you for a visitation?\n\n[[p:Yes.  She assumed that's what I was there for.  The door to the maternity ward was locked, and she said she could unlock it.]]",
       "links": [
         {
-          "name": "p:Yes.  She assumed that's what I was there for when I first encountered her.  I went along with it because the door to the maternity ward was locked, and she said she could bring me here.",
-          "link": "p:Yes.  She assumed that's what I was there for when I first encountered her.  I went along with it because the door to the maternity ward was locked, and she said she could bring me here.",
+          "name": "p:Yes.  She assumed that's what I was there for.  The door to the maternity ward was locked, and she said she could unlock it.",
+          "link": "p:Yes.  She assumed that's what I was there for.  The door to the maternity ward was locked, and she said she could unlock it.",
           "pid": "17"
         }
       ],
-      "name": "p:She's a nurse who works in the maternity ward.  She acted like the visitation she was bringing me in for was extremely discreet, and was very cagey about what it was actually for.  She had some sort of emotional reaction to the auditorium.  That's really all I know.",
+      "name": "p:She's a nurse who works in the maternity ward.  She acted like the visitation she was bringing me in for was extremely discreet, and was cagey about what it was actually for.  That's all I know.",
       "pid": "16",
       "position": {
         "x": "1309",
@@ -330,7 +330,7 @@
           "pid": "19"
         }
       ],
-      "name": "p:Yes.  She assumed that's what I was there for when I first encountered her.  I went along with it because the door to the maternity ward was locked, and she said she could bring me here.",
+      "name": "p:Yes.  She assumed that's what I was there for.  The door to the maternity ward was locked, and she said she could unlock it.",
       "pid": "17",
       "position": {
         "x": "1309",

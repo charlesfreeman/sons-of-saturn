@@ -263,7 +263,7 @@
       }
     },
     {
-      "text": "You rise to your feet a little too quickly, allowing black dots to colonize your visual field.  \n\nThe words of your Ferryman guide echo down the drain as light from his red headlamp stains the walls.\n\nFerryman::The entrance to the Maternity Ward is just up ahead.  Follow me!\n\n[[Will there be more sunlight up ahead?]]\n[[p:Let's get going then.]]",
+      "text": "You rise to your feet a little too quickly, allowing black dots to colonize your visual field.  \n\nThe words of your Ferryman guide echo down the drain as light from his red headlamp stains the walls.\n\nFerryman::The entrance to the administrative ward is just up ahead.  Follow me!\n\n[[Will there be more sunlight up ahead?]]\n[[p:Let's get going then.]]",
       "links": [
         {
           "name": "Will there be more sunlight up ahead?",
@@ -1032,7 +1032,7 @@
       ]
     },
     {
-      "text": "Jasper,twisted::We hired him through a broker to help us navigate this place.\n\nJasper::But don't worry, he won't come between us.  Not you and me.\n\n[[Does he have a name?]]\n[[He looks hairy and old.  I hate him.]]\n[[Why do we even need this guy?  We've been through so much together.  Surely we can handle anything the Cradle throws at us.]]\n[[p:So it's me, a snarky antique doll, and a troglodyte we bribed to show us around.  Got it.]]",
+      "text": "Jasper,twisted::We hired him through a broker to help us navigate this place.\n\nJasper::But don't worry, he won't come between us.  Not you and me.\n\n[[Does he have a name?]]\n[[He looks hairy and old.  I hate him.]]\n[[Why do we even need this guy?  We've been through so much together.  Surely we can handle anything that comes out way.]]\n[[p:So it's me, a snarky antique doll, and a troglodyte we bribed to show us around.  Got it.]]",
       "links": [
         {
           "name": "Does he have a name?",
@@ -1045,8 +1045,8 @@
           "pid": "67"
         },
         {
-          "name": "Why do we even need this guy?  We've been through so much together.  Surely we can handle anything the Cradle throws at us.",
-          "link": "Why do we even need this guy?  We've been through so much together.  Surely we can handle anything the Cradle throws at us.",
+          "name": "Why do we even need this guy?  We've been through so much together.  Surely we can handle anything that comes out way.",
+          "link": "Why do we even need this guy?  We've been through so much together.  Surely we can handle anything that comes out way.",
           "pid": "57"
         },
         {
@@ -1108,7 +1108,7 @@
           "pid": "58"
         }
       ],
-      "name": "Why do we even need this guy?  We've been through so much together.  Surely we can handle anything the Cradle throws at us.",
+      "name": "Why do we even need this guy?  We've been through so much together.  Surely we can handle anything that comes out way.",
       "pid": "57",
       "position": {
         "x": "2450",

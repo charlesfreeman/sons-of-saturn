@@ -117,11 +117,11 @@
       ]
     },
     {
-      "text": "Tann::YOU ARE USELESS\n\nYou've reached the end of the stack.\n\nFerryman,looking_to_side::Interesting exchange, but it doesn't tell us much about your Mom, other than that she didn't want Vera hanging around the SATURN core.  \n\nFerryman,neutral::We should probably keep looking for the rest of Vera's notes, they might prove more illuminating.\n\n[[p:Agreed.  But, I am curious why they were so terrified of Vera.  Makes you wonder what they were trying to hide.]]",
+      "text": "Tann::YOU ARE USELESS\n\nYou've reached the end of the stack.\n\nFerryman,looking_to_side::Interesting exchange, but it doesn't tell us much about your Mom, other than that she didn't want Vera hanging around the SATURN Core.  \n\nFerryman,neutral::We should probably keep looking for the rest of Vera's notes, they might prove more illuminating.\n\n[[p:But why were so terrified of Vera?  Makes you wonder what they were trying to hide.]]",
       "links": [
         {
-          "name": "p:Agreed.  But, I am curious why they were so terrified of Vera.  Makes you wonder what they were trying to hide.",
-          "link": "p:Agreed.  But, I am curious why they were so terrified of Vera.  Makes you wonder what they were trying to hide.",
+          "name": "p:But why were so terrified of Vera?  Makes you wonder what they were trying to hide.",
+          "link": "p:But why were so terrified of Vera?  Makes you wonder what they were trying to hide.",
           "pid": "10"
         }
       ],
@@ -176,7 +176,7 @@
           "pid": "11"
         }
       ],
-      "name": "p:Agreed.  But, I am curious why they were so terrified of Vera.  Makes you wonder what they were trying to hide.",
+      "name": "p:But why were so terrified of Vera?  Makes you wonder what they were trying to hide.",
       "pid": "10",
       "position": {
         "x": "741",

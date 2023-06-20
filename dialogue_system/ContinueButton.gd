@@ -9,6 +9,9 @@ signal play_click
 
 # Hide button by default
 func _ready():
+	# TODO: can still "scroll" the continue button.  Very, very minor issue
+	# but should probably fix eventually
+	text_label.get_v_scroll().modulate = Color(0, 0, 0, 0)
 	self.button_text = "\u00AC Continue"
 
 

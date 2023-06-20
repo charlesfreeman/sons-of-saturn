@@ -13,6 +13,7 @@ config_version=4
 config/name="Sons of Saturn"
 run/main_scene="res://title_screen/TitleScreen.tscn"
 config/icon="res://artwork/SoSHeader.png"
+config/windows_native_icon="res://images/SoSHeader.ico"
 
 [autoload]
 

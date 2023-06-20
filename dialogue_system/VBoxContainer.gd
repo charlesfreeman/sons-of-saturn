@@ -143,11 +143,13 @@ func _load_next_block(name):
 			else:
 				self.continue_button = continueButton.instance()
 				button_container.add_child(self.continue_button)
+				self.continue_button.rect_min_size.y = 68
 				self.continue_button.connect("pressed", self, "_final_continue")
 				self.continue_button.grab_focus()
 		else:
 			self.continue_button = continueButton.instance()
 			button_container.add_child(self.continue_button)
+			self.continue_button.rect_min_size.y = 68
 			self.continue_button.connect("pressed", self, "_on_ContinueButton_pressed")
 			self.continue_button.grab_focus()
 	# if chapter is in stack and multiple buttons, skip straight to displaying
@@ -331,6 +333,7 @@ func _on_ContinueButton_pressed():
 func _make_continue_end():
 	self.continue_button = continueButton.instance()
 	button_container.add_child(self.continue_button)
+	self.continue_button.rect_min_size.y = 68
 	self.continue_button.connect("pressed", self, "_load_next_scene")
 	self.continue_button.grab_focus()
 

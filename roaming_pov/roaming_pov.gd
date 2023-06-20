@@ -123,9 +123,9 @@ func _on_LeftButton_pressed():
 
 
 func _change_PoV(scene_path, foot_type):
-	footstep_types[foot_type].play()
 	# load the next scene and unpack it into a node
 	if scene_path != "None":
+		footstep_types[foot_type].play()
 		Global.set_location(scene_path)
 		transition_screen.transition()
 

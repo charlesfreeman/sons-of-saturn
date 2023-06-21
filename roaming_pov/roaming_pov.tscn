@@ -429,8 +429,12 @@ valign = 1
 
 [node name="TweenFadeOut" type="Tween" parent="Save"]
 
-[node name="EscOpts" type="VBoxContainer" parent="."]
+[node name="EscOpts" type="Control" parent="."]
 visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Buttons" type="VBoxContainer" parent="EscOpts"]
 margin_left = 458.0
 margin_top = 584.0
 margin_right = 1562.0
@@ -439,18 +443,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Resume" parent="EscOpts" instance=ExtResource( 34 )]
+[node name="Resume" parent="EscOpts/Buttons" instance=ExtResource( 34 )]
 margin_right = 1104.0
 margin_bottom = 315.0
 label_text = "Resume"
 
-[node name="Save" parent="EscOpts" instance=ExtResource( 34 )]
+[node name="Save" parent="EscOpts/Buttons" instance=ExtResource( 34 )]
 margin_top = 319.0
 margin_right = 1104.0
 margin_bottom = 635.0
 label_text = "Save Game"
 
-[node name="Exit" parent="EscOpts" instance=ExtResource( 34 )]
+[node name="Exit" parent="EscOpts/Buttons" instance=ExtResource( 34 )]
 margin_top = 639.0
 margin_right = 1104.0
 margin_bottom = 955.0
@@ -466,6 +470,6 @@ label_text = "Exit to Title"
 [connection signal="tween_completed" from="Autosave/TweenHold" to="Autosave" method="_on_TweenHold_tween_completed"]
 [connection signal="tween_completed" from="Save/TweenFadeIn" to="Save" method="_on_TweenFadeIn_tween_completed"]
 [connection signal="tween_completed" from="Save/TweenHold" to="Save" method="_on_TweenHold_tween_completed"]
-[connection signal="pressed" from="EscOpts/Resume" to="." method="_on_Resume_pressed"]
-[connection signal="pressed" from="EscOpts/Save" to="." method="_on_Save_pressed"]
-[connection signal="pressed" from="EscOpts/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="EscOpts/Buttons/Resume" to="." method="_on_Resume_pressed"]
+[connection signal="pressed" from="EscOpts/Buttons/Save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="EscOpts/Buttons/Exit" to="." method="_on_Exit_pressed"]

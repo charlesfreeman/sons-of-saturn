@@ -10,8 +10,6 @@ var popup_visible = false
 onready var popup = $VBoxContainer
 onready var label = $VBoxContainer/LabelContainer/Label
 onready var typewriter = $RanSoundContainer
-onready var cont_sym = load("res://roaming_pov/images/cont_arrow.png")
-onready var mag_glass = load("res://roaming_pov/images/mag_glass.png")
 
 export var popup_on_entry = false
 export var popup_text = ["example text for popup", "example 2"]
@@ -56,7 +54,7 @@ func _on_FullRect_input_event(_viewport, event, _shape_idx):
 					self.perm_disabled = true
 			popup.hide()
 			self.popup_done = false
-			Input.set_custom_mouse_cursor(null)
+			Global.set_cursor("null")
 			get_tree().call_group("click_areas", "enable")
 			emit_signal("enable_buttons")
 			if diff_background:
@@ -69,7 +67,7 @@ func _on_FullRect_input_event(_viewport, event, _shape_idx):
 
 func progress_popup():
 	get_tree().call_group("click_areas", "disable")
-	Input.set_custom_mouse_cursor(cont_sym)
+	Global.set_cursor("cont_sym")
 	if self.index == 0:
 		# if we have an audiostreamplayer as a child, invoke it
 		if has_node("./AudioStreamPlayer"):
@@ -102,13 +100,13 @@ func make_visible():
 func _on_OnClickPopUp_mouse_entered():
 	if self.enabled and not self.perm_disabled:
 		self.in_clickable_area = true
-		Input.set_custom_mouse_cursor(mag_glass)
+		Global.set_cursor("mag_glass")
 
 
 func _on_OnClickPopUp_mouse_exited():
 	self.in_clickable_area = false
 	if self.enabled and not self.perm_disabled:
-		Input.set_custom_mouse_cursor(null)
+		Global.set_cursor("null")
 		
 		
 func enable():

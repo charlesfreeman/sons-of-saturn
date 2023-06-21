@@ -1,6 +1,6 @@
 extends Node
 
-var location = "res://sewer/just_stood_up/just_stood_up.tscn"
+var location = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.tscn"
 var region = "None"
 # Amelie always assumed to be in party, never reason to check
 var party = ["Wiggly"]
@@ -8,6 +8,7 @@ var active_popup = false
 var soundscape = "None"
 var soundscapes = []
 var dbrightness = 0.6
+var cursor = "null"
 
 var prog_flags = {
 	"overgrowth_pink_hallway" : false,
@@ -32,9 +33,37 @@ var prog_flags = {
 # loading and displaying the corresponding textures
 var inventory = ["Jasper"]
 
+onready var mag_glass = load("res://roaming_pov/images/mag_glass.png")
+onready var cont_sym = load("res://roaming_pov/images/cont_arrow.png")
+onready var pointer_up = load("res://roaming_pov/images/arrow_up_cursor.png")
+onready var pointer_right = load("res://roaming_pov/images/arrow_right_cursor.png")
+onready var pointer_down = load("res://roaming_pov/images/arrow_down_cursor.png")
+onready var pointer_left = load("res://roaming_pov/images/arrow_left_cursor.png")
+
+onready var cursors = {
+	"null" : null,
+	"mag_glass" : mag_glass,
+	"cont_sym" : cont_sym,
+	"pointer_up" : pointer_up,
+	"pointer_right" : pointer_right,
+	"pointer_down" : pointer_down,
+	"pointer_left" : pointer_left,
+}
+
+
 func _ready():
 	for c in Mds.get_children():
 		soundscapes.append(c.get_name())
+
+func set_cursor(new_cursor):
+	Input.set_custom_mouse_cursor(cursors[new_cursor])
+	cursor = new_cursor
+	
+func pause_cursor():
+	Input.set_custom_mouse_cursor(null)
+	
+func unpause_cursor():
+	Input.set_custom_mouse_cursor(cursors[cursor])
 
 func change_song(new_song):
 	TrackManager.play(new_song)

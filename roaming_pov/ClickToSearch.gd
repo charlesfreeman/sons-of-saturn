@@ -4,19 +4,17 @@ export var next_scene = "None"
 export var alt_next_scene = "None"
 export var alt_req_prog_flag = "None"
 
-onready var mag_glass = load("res://roaming_pov/images/mag_glass.png")
-
 
 func _ready():
 	pass
 
 
 func _on_ClickToSearch_mouse_entered():
-	Input.set_custom_mouse_cursor(mag_glass)
+	Global.set_cursor("mag_glass")
 
 
 func _on_ClickToSearch_mouse_exited():
-	Input.set_custom_mouse_cursor(null)
+	Global.set_cursor("null")
 
 
 func _on_ClickToSearch_input_event(viewport, event, shape_idx):

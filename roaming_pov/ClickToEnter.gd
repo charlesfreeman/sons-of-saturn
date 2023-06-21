@@ -5,11 +5,6 @@ export var right_path = false
 export var down_path = false
 export var left_path = false
 
-var pointer_up = load("res://roaming_pov/images/arrow_up_cursor.png")
-var pointer_right = load("res://roaming_pov/images/arrow_right_cursor.png")
-var pointer_down = load("res://roaming_pov/images/arrow_down_cursor.png")
-var pointer_left = load("res://roaming_pov/images/arrow_left_cursor.png")
-
 var enabled = true
 
 signal up
@@ -30,18 +25,18 @@ func _ready():
 func _on_ClickToEnter_mouse_entered():
 	if self.enabled:
 		if up_path:
-			Input.set_custom_mouse_cursor(pointer_up)
+			Global.set_cursor("pointer_up")
 		elif right_path:
-			Input.set_custom_mouse_cursor(pointer_right)
+			Global.set_cursor("pointer_right")
 		elif down_path:
-			Input.set_custom_mouse_cursor(pointer_down)
+			Global.set_cursor("pointer_down")
 		elif left_path:
-			Input.set_custom_mouse_cursor(pointer_left)
+			Global.set_cursor("pointer_left")
 		
 
 func _on_ClickToEnter_mouse_exited():
 	if self.enabled:
-		Input.set_custom_mouse_cursor(null)
+		Global.set_cursor("null")
 
 
 func _on_ClickToEnter_input_event(viewport, event, shape_idx):

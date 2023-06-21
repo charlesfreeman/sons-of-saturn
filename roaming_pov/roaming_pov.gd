@@ -63,15 +63,9 @@ func _input(event):
 		_on_LeftButton_pressed()
 	elif Input.is_action_pressed("ui_cancel") or Input.is_action_pressed("ui_select"):
 		if not esc_opts.visible:
-			hbox.modulate = Color(1, 1, 1, 0.6)
-			get_tree().call_group("click_areas", "disable")
-			self._disable_buttons()
-			esc_opts.visible = true
+			self._pause_game()
 		else:
-			hbox.modulate = Color(1, 1, 1, 1)
-			get_tree().call_group("click_areas", "enable")
-			self._enable_buttons()
-			esc_opts.visible = false
+			self._unpause_game()
 
 
 func _on_UpButton_pressed():
@@ -198,6 +192,22 @@ func _disable_buttons():
 
 func _enable_buttons():
 	_update_buttons()
+
+
+func _pause_game():
+	hbox.modulate = Color(1, 1, 1, 0.6)
+	pov_instance.modulate = Color(1, 1, 1, 0.6)
+	self._disable_buttons()
+	Global.pause_cursor()
+	esc_opts.visible = true
+	
+	
+func _unpause_game():
+	hbox.modulate = Color(1, 1, 1, 1)
+	pov_instance.modulate = Color(1, 1, 1, 1)
+	self._enable_buttons()
+	Global.unpause_cursor()
+	esc_opts.visible = false
 	
 	
 func _new_item(item):
@@ -211,15 +221,15 @@ func set_pos_rot(pos, rot):
 	camera.position.x = pos.x + (char_rect.rect_size.x / 2)
 	camera.position.y = pos.y + (char_rect.rect_size.y / 2)
 
+
 func _on_Resume_pressed():
-	self.modulate = Color(1, 1, 1, 1)
-	get_tree().call_group("click_areas", "enable")
-	self._enable_buttons()
-	esc_opts.visible = false
+	self._unpause_game()
+	
 
 func _on_Save_pressed():
 	save.save()
 	Global.save_game()
+
 
 func _on_Exit_pressed():
 	var options = SceneManager.create_options()

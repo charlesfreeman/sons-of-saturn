@@ -13,7 +13,6 @@
 extents = Vector2( 1430.73, 1068.51 )
 
 [node name="PopUp" type="Area2D" groups=["popups"]]
-z_index = 1
 script = ExtResource( 2 )
 
 [node name="FullRect" type="Area2D" parent="."]

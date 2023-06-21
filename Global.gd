@@ -1,6 +1,6 @@
 extends Node
 
-var location = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.tscn"
+var location = "res://sewer/just_stood_up/just_stood_up.tscn"
 var region = "None"
 # Amelie always assumed to be in party, never reason to check
 var party = ["Wiggly"]
@@ -131,7 +131,6 @@ func set_location(loc: String):
 	self.location = loc
 	
 func set_scene_type(new_scene_type):
-	print("setting scene type: ", new_scene_type)
 	self.scene_type = new_scene_type
 
 func produce_save_dict():
@@ -170,4 +169,9 @@ func load_game():
 func check_save_exists():
 	var sgame = File.new()
 	return sgame.file_exists("user://savegame.save")
+	
+func reset_prog_flags():
+	for key in prog_flags.keys():
+		prog_flags[key] = false
+	prog_flags["None"] = true
 	

@@ -4,6 +4,7 @@ var location = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.
 var region = "None"
 # Amelie always assumed to be in party, never reason to check
 var party = ["Wiggly"]
+var scene_type = "TitleScreen"
 var active_popup = false
 var soundscape = "None"
 var soundscapes = []
@@ -128,6 +129,10 @@ func get_location():
 	
 func set_location(loc: String):
 	self.location = loc
+	
+func set_scene_type(new_scene_type):
+	print("setting scene type: ", new_scene_type)
+	self.scene_type = new_scene_type
 
 func produce_save_dict():
 	var save_dict = {
@@ -135,6 +140,7 @@ func produce_save_dict():
 		"region" : region,
 		"party" : party,
 		"prog_flags" : prog_flags,
+		"scene_type" : scene_type,
 	}
 	return save_dict
 	
@@ -156,9 +162,10 @@ func load_game():
 	region = save_data["region"]
 	party = save_data["party"]
 	prog_flags = save_data["prog_flags"]
+	scene_type = save_data["scene_type"]
 	var options = SceneManager.create_options()
 	var general_options = SceneManager.create_general_options()
-	SceneManager.change_scene("roaming_pov", options, options, general_options)
+	SceneManager.change_scene(scene_type, options, options, general_options)
 	
 func check_save_exists():
 	var sgame = File.new()

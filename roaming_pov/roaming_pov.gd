@@ -48,6 +48,7 @@ func _ready():
 	char_rect.rect_pivot_offset = char_rect.rect_size / 2
 	_load_PoV_instance()
 	
+	Global.set_scene_type("roaming_pov")
 	Global.save_game()
 	autosave.save()
 	
@@ -195,7 +196,7 @@ func _enable_buttons():
 
 
 func _pause_game():
-	hbox.modulate = Color(1, 1, 1, 0.6)
+	hbox.modulate = Color(0.6, 0.6, 0.6, 1)
 	pov_instance.modulate = Color(1, 1, 1, 0.6)
 	self._disable_buttons()
 	Global.pause_cursor()

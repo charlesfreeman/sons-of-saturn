@@ -32,6 +32,8 @@ var continue_button
 # following a convo
 var new_party_mem = ""
 var mem_to_remove = ""
+var next_location = ""
+var prog_flag = "None"
 # for tracking if current_char or emotion state has changed
 var state_changed = false
 
@@ -356,11 +358,22 @@ func set_mem_to_add(mem):
 
 func set_mem_to_remove(mem):
 	mem_to_remove = mem
+	
+	
+func set_next_location(new_loc):
+	next_location = new_loc
+	
+
+func set_prog_flag(new_prog_flag):
+	prog_flag = new_prog_flag
 
 
 func _load_next_scene():
 	Global.add_to_party(new_party_mem)
 	Global.remove_from_party(mem_to_remove)
+	Global.set_location(next_location)
+	if prog_flag != "None":
+		Global.flip_prog_flag(prog_flag)
 	var options = SceneManager.create_options()
 	var general_options = SceneManager.create_general_options()
 	SceneManager.change_scene(next_scene, options, options, general_options)

@@ -59,6 +59,7 @@ size_flags_vertical = 3
 margin_top = 2010.0
 margin_right = 3840.0
 margin_bottom = 2010.0
+custom_constants/separation = 15
 
 [node name="Control" type="Control" parent="."]
 margin_top = 2060.0

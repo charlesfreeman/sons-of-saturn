@@ -7,7 +7,7 @@
 [ext_resource path="res://infirmary/morgue_convo/heavy_thud.wav" type="AudioStream" id=6]
 [ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=7]
 
-[node name="MorgueConvo" type="Control"]
+[node name="morgue_convo" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {

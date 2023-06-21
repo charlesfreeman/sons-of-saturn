@@ -5,7 +5,7 @@
 [ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=3]
 [ext_resource path="res://maternity/front_desk_convo/julia_looking_left.png" type="Texture" id=4]
 
-[node name="Control" type="Control"]
+[node name="front_desk_convo" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {

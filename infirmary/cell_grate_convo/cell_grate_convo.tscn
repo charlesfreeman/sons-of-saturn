@@ -8,7 +8,7 @@
 [ext_resource path="res://infirmary/cell_grate_convo/heavy_door_slam.wav" type="AudioStream" id=6]
 [ext_resource path="res://sounds/effects/locked_door.wav" type="AudioStream" id=7]
 
-[node name="Control" type="Control"]
+[node name="cell_grate_convo" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {

@@ -22,7 +22,7 @@
 [ext_resource path="res://sounds/effects/devil_piano.wav" type="AudioStream" id=20]
 [ext_resource path="res://intro/intro_convo/wiggly_looking_down_dark.png" type="Texture" id=21]
 
-[node name="Control" type="Control"]
+[node name="intro_convo" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {

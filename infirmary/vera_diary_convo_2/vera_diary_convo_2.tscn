@@ -6,7 +6,7 @@
 [ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=4]
 [ext_resource path="res://infirmary/vera_diary_convo_2/trash_squish_2.wav" type="AudioStream" id=5]
 
-[node name="Control" type="Control"]
+[node name="vera_diary_convo_2" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {

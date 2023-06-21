@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.gd" type="Script" id=1]
 [ext_resource path="res://dialogue_system/Dialogue.tscn" type="PackedScene" id=2]
@@ -8,19 +8,26 @@
 [ext_resource path="res://infirmary/cell_grate_convo/isolation_cells_right_sliver.png" type="Texture" id=6]
 [ext_resource path="res://conversation_pov/rose_border_flipped.png" type="Texture" id=7]
 [ext_resource path="res://conversation_pov/Avatar.gd" type="Script" id=8]
+[ext_resource path="res://title_screen/TitleMenuOpt.tscn" type="PackedScene" id=9]
+[ext_resource path="res://roaming_pov/Save.tscn" type="PackedScene" id=10]
 
-[node name="Convo" type="HBoxContainer"]
+[node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_constants/separation = 0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scriptPath = "res://sewer/convo_looking_up_well/looking_up_well.json"
-backgroundPath = "res://sewer/convo_looking_up_well/looking_up_well_crop_2300x2160.png"
 
-[node name="View" type="TextureRect" parent="."]
+[node name="Convo" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="View" type="TextureRect" parent="Convo"]
 margin_right = 2300.0
 margin_bottom = 2160.0
 rect_min_size = Vector2( 2300, 0 )
@@ -28,10 +35,10 @@ size_flags_horizontal = 3
 texture = ExtResource( 3 )
 expand = true
 
-[node name="CanvasLayer" type="CanvasLayer" parent="View"]
+[node name="CanvasLayer" type="CanvasLayer" parent="Convo/View"]
 layer = 0
 
-[node name="Avatar" type="TextureRect" parent="View/CanvasLayer"]
+[node name="Avatar" type="TextureRect" parent="Convo/View/CanvasLayer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 1755.0
@@ -45,18 +52,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TweenDarken" type="Tween" parent="View/CanvasLayer/Avatar"]
+[node name="TweenDarken" type="Tween" parent="Convo/View/CanvasLayer/Avatar"]
 
-[node name="TweenBrighten" type="Tween" parent="View/CanvasLayer/Avatar"]
+[node name="TweenBrighten" type="Tween" parent="Convo/View/CanvasLayer/Avatar"]
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="Convo"]
 margin_left = 2300.0
 margin_right = 3740.0
 margin_bottom = 2160.0
 size_flags_horizontal = 3
 custom_constants/separation = 60
 
-[node name="ScrollTexture" type="TextureRect" parent="HBoxContainer"]
+[node name="ScrollTexture" type="TextureRect" parent="Convo/HBoxContainer"]
 margin_right = 70.0
 margin_bottom = 2160.0
 rect_min_size = Vector2( 55, 0 )
@@ -65,7 +72,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Dialogue" parent="HBoxContainer" instance=ExtResource( 2 )]
+[node name="Dialogue" parent="Convo/HBoxContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 130.0
@@ -75,7 +82,7 @@ rect_min_size = Vector2( 0, 0 )
 size_flags_horizontal = 3
 custom_constants/separation = 70
 
-[node name="ScrollTexture2" type="TextureRect" parent="HBoxContainer"]
+[node name="ScrollTexture2" type="TextureRect" parent="Convo/HBoxContainer"]
 margin_left = 1370.0
 margin_right = 1440.0
 margin_bottom = 2160.0
@@ -85,21 +92,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PlaceHolder" type="Control" parent="HBoxContainer"]
+[node name="PlaceHolder" type="Control" parent="Convo/HBoxContainer"]
 visible = false
 margin_left = 1490.0
 margin_right = 1540.0
 margin_bottom = 2160.0
 rect_min_size = Vector2( 50, 0 )
 
-[node name="PlaceHolder2" type="Control" parent="HBoxContainer"]
+[node name="PlaceHolder2" type="Control" parent="Convo/HBoxContainer"]
 visible = false
 margin_left = 1490.0
 margin_right = 1540.0
 margin_bottom = 2160.0
 rect_min_size = Vector2( 50, 0 )
 
-[node name="RightSideBG" type="TextureRect" parent="."]
+[node name="RightSideBG" type="TextureRect" parent="Convo"]
 margin_left = 3740.0
 margin_right = 3840.0
 margin_bottom = 2160.0
@@ -107,10 +114,52 @@ rect_min_size = Vector2( 100, 0 )
 texture = ExtResource( 6 )
 expand = true
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Convo"]
 
-[node name="TransitionScreen" parent="." instance=ExtResource( 5 )]
+[node name="TransitionScreen" parent="Convo" instance=ExtResource( 5 )]
 
-[connection signal="change_char" from="HBoxContainer/Dialogue" to="." method="_on_Control_change_char"]
-[connection signal="tag" from="HBoxContainer/Dialogue" to="." method="_on_Dialogue_tag"]
-[connection signal="transitioned" from="TransitionScreen" to="." method="_on_TransitionScreen_transitioned"]
+[node name="Save" parent="." instance=ExtResource( 10 )]
+
+[node name="EscOpts" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="EscOpts"]
+z_index = 1
+
+[node name="Buttons" type="VBoxContainer" parent="EscOpts/Node2D"]
+margin_left = 458.0
+margin_top = 584.0
+margin_right = 1562.0
+margin_bottom = 1539.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Resume" parent="EscOpts/Node2D/Buttons" instance=ExtResource( 9 )]
+margin_right = 1104.0
+margin_bottom = 315.0
+label_text = "Resume"
+
+[node name="Save" parent="EscOpts/Node2D/Buttons" instance=ExtResource( 9 )]
+margin_top = 319.0
+margin_right = 1104.0
+margin_bottom = 635.0
+label_text = "Save Game"
+
+[node name="Exit" parent="EscOpts/Node2D/Buttons" instance=ExtResource( 9 )]
+margin_top = 639.0
+margin_right = 1104.0
+margin_bottom = 955.0
+label_text = "Exit to Title"
+
+[connection signal="change_char" from="Convo/HBoxContainer/Dialogue" to="." method="_on_Control_change_char"]
+[connection signal="tag" from="Convo/HBoxContainer/Dialogue" to="." method="_on_Dialogue_tag"]
+[connection signal="transitioned" from="Convo/TransitionScreen" to="." method="_on_TransitionScreen_transitioned"]
+[connection signal="pressed" from="EscOpts/Node2D/Buttons/Resume" to="." method="_on_Resume_pressed"]
+[connection signal="pressed" from="EscOpts/Node2D/Buttons/Save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="EscOpts/Node2D/Buttons/Exit" to="." method="_on_Exit_pressed"]

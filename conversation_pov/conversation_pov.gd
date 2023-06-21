@@ -1,4 +1,4 @@
-extends HBoxContainer
+extends Control
 
 export var subject = ""
 export(String, FILE, "*.json") var scriptPath = "res://dialogue_system/conversations/test_scene.json"
@@ -21,10 +21,14 @@ export var soundscape = "None"
 # you must set prog_flag to some value to use this
 export var play_only_once = false
 
-onready var avatar = $View/CanvasLayer/Avatar
-onready var background = $View
-onready var bg_sliver = $RightSideBG
-onready var dialogue_sys = $HBoxContainer/Dialogue
+onready var avatar = $Convo/View/CanvasLayer/Avatar
+onready var background = $Convo/View
+onready var bg_sliver = $Convo/RightSideBG
+onready var dialogue_sys = $Convo/HBoxContainer/Dialogue
+onready var transition_screen = $Convo/TransitionScreen
+onready var convo = $Convo
+onready var esc_opts = $EscOpts
+onready var save = $Save
 onready var current_bg_path = backgroundPath
 
 
@@ -105,20 +109,38 @@ signal tag(tag)
 
 
 func _ready():	
-	if prog_flag != "None":
-		Global.flip_prog_flag(prog_flag)
 	Global.change_song(song)
 	Global.change_soundscape(soundscape)
-	Global.set_location(nextLocation)
+	Global.set_scene_type(get_tree().current_scene.name)
 	dialogue_sys.set_script_path(scriptPath)
 	dialogue_sys.set_next_scene_path(nextScenePath)
-	Global.add_to_party(new_party_mem)
-	Global.remove_from_party(mem_to_remove)
+	dialogue_sys.set_mem_to_add(new_party_mem)
+	dialogue_sys.set_mem_to_remove(mem_to_remove)
+	dialogue_sys.set_next_location(nextLocation)
+	dialogue_sys.set_prog_flag(prog_flag)
 	dialogue_sys.init()
 	change_background(backgroundPath)
 	change_background_sliver(sliverPath)
 
 
+func _input(event):
+	if Input.is_action_pressed("ui_cancel") or Input.is_action_pressed("ui_select"):
+		if not esc_opts.visible:
+			self._pause_game()
+		else:
+			self._unpause_game()
+
+
+func _pause_game():
+	convo.modulate = Color(0.6, 0.6, 0.6, 1)
+	esc_opts.visible = true
+	
+	
+func _unpause_game():
+	convo.modulate = Color(1, 1, 1, 1)
+	esc_opts.visible = false
+	
+	
 # assume this is called every time either character or emotion changes
 # dialogue sys does labor of tracking state
 func _on_Control_change_char(character, emotion):
@@ -189,7 +211,7 @@ func _on_Dialogue_tag(tags):
 			elif tag in fade_tag_dict.keys():
 				if fade_tag_dict[tag] != current_bg_path:
 					fade_tag = tag
-					$TransitionScreen.transition()
+					transition_screen.transition()
 #					if not tag.ends_with("_repeat"):
 #						bg_tags_emitted.append(tag)
 
@@ -223,3 +245,20 @@ func _on_TransitionScreen_transitioned():
 	change_background(fade_tag_dict[fade_tag])
 	change_background_sliver(fade_tag_dict_sliver[fade_tag])
 	current_bg_path = fade_tag_dict[fade_tag]
+
+
+func _on_Resume_pressed():
+	self._unpause_game()
+
+
+func _on_Save_pressed():
+	print("saving convo")
+	save.save()
+	Global.save_game()
+
+
+func _on_Exit_pressed():
+	var options = SceneManager.create_options()
+	var general_options = SceneManager.create_general_options()
+	SceneManager.change_scene("TitleScreen", options, options, general_options)
+

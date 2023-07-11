@@ -34,6 +34,7 @@ onready var tile_footsteps = $HBoxContainer/TileFootsteps
 onready var wet_footsteps = $HBoxContainer/WetFootsteps
 onready var door_unlock = $HBoxContainer/DoorUnlock
 onready var esc_opts = $EscOpts
+onready var esc_opts_resume = $EscOpts/Buttons/Resume
 onready var autosave = $Autosave
 onready var save = $Save
 onready var hbox = $HBoxContainer
@@ -62,7 +63,7 @@ func _input(event):
 		_on_DownButton_pressed()
 	elif Input.is_action_pressed("ui_left"):
 		_on_LeftButton_pressed()
-	elif Input.is_action_pressed("ui_cancel") or Input.is_action_pressed("ui_select"):
+	elif Input.is_action_pressed("ui_cancel"):
 		if not esc_opts.visible:
 			self._pause_game()
 		else:
@@ -201,6 +202,7 @@ func _pause_game():
 	self._disable_buttons()
 	Global.pause_cursor()
 	esc_opts.visible = true
+	esc_opts_resume.grab_focus()
 	
 	
 func _unpause_game():

@@ -28,6 +28,7 @@ onready var dialogue_sys = $Convo/HBoxContainer/Dialogue
 onready var transition_screen = $Convo/TransitionScreen
 onready var convo = $Convo
 onready var esc_opts = $EscOpts
+onready var esc_opts_resume = $EscOpts/Node2D/Buttons/Resume
 onready var save = $Save
 onready var current_bg_path = backgroundPath
 
@@ -124,7 +125,7 @@ func _ready():
 
 
 func _input(event):
-	if Input.is_action_pressed("ui_cancel") or Input.is_action_pressed("ui_select"):
+	if Input.is_action_pressed("ui_cancel"):
 		if not esc_opts.visible:
 			self._pause_game()
 		else:
@@ -134,6 +135,7 @@ func _input(event):
 func _pause_game():
 	convo.modulate = Color(0.6, 0.6, 0.6, 1)
 	esc_opts.visible = true
+	esc_opts_resume.grab_focus()
 	
 	
 func _unpause_game():

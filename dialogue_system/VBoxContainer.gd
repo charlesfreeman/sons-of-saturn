@@ -272,6 +272,9 @@ func _add_buttons():
 				dialogue_opt.set_as_clicked()
 			dialogue_opt.extract_text_and_modifiers(button_text)
 			dialogue_opt.set_opt_number(i+1)
+			# NOTE: Possible issue here where if the first option isn't 
+			# visible, no button will grab focus.  Twine conventions such that 
+			# this shouldn't ever occur but it's something to remember
 			if i == 0:
 				# TODO might need to release focus first but I'm not sure
 				dialogue_opt.grab_focus()

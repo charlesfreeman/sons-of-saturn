@@ -56,13 +56,17 @@ func _ready():
 
 func _input(event):
 	if Input.is_action_pressed("ui_up"):
-		_on_UpButton_pressed()
+		if not up_button.disabled:
+			_on_UpButton_pressed()
 	elif Input.is_action_pressed("ui_right"):
-		_on_RightButton_pressed()
+		if not right_button.disabled:
+			_on_RightButton_pressed()
 	elif Input.is_action_pressed("ui_down"):
-		_on_DownButton_pressed()
+		if not down_button.disabled:
+			_on_DownButton_pressed()
 	elif Input.is_action_pressed("ui_left"):
-		_on_LeftButton_pressed()
+		if not left_button.disabled:
+			_on_LeftButton_pressed()
 	elif Input.is_action_pressed("ui_cancel"):
 		if not esc_opts.visible:
 			self._pause_game()

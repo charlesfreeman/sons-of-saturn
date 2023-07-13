@@ -83,7 +83,7 @@ func _on_UpButton_pressed():
 		if pov_instance.alt_scene_up != "None":
 			_change_PoV(pov_instance.alt_scene_up, pov_instance.footstep_type_up)
 		else:
-			get_tree().call_group("nav_popups_up", "init_popup")
+			get_tree().call_group("nav_popups_up", "advance_popup")
 
 
 func _on_RightButton_pressed():

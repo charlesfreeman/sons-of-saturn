@@ -46,33 +46,42 @@ func _ready():
 func _on_FullRect_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton \
 	and event.button_index == BUTTON_LEFT \
-	and event.pressed:
-		if self.popup_done:
-			if prog_flag != "None":
-				Global.flip_prog_flag(prog_flag)
-				if single_use:
-					self.perm_disabled = true
-			popup.hide()
-			self.popup_done = false
-			Global.set_cursor("null")
-			get_tree().call_group("click_areas", "enable")
-			emit_signal("enable_buttons")
-			if diff_background:
-				emit_signal("swap_bg")
-			if new_item != "None":
-				emit_signal("new_item", new_item)
-		elif (self.in_clickable_area and self.enabled and not self.perm_disabled) or self.index != 0:
-			progress_popup()
+	and event.pressed or Input.is_action_pressed("ui_up"):
+		progress_popup()
+		
+
+func _input(event):
+	if Input.is_action_pressed("ui_accept"):
+		self.progress_popup()
 
 
 func progress_popup():
+	if self.popup_done:
+		if prog_flag != "None":
+			Global.flip_prog_flag(prog_flag)
+			if single_use:
+				self.perm_disabled = true
+		popup.hide()
+		self.popup_done = false
+		Global.set_cursor("null")
+		get_tree().call_group("click_areas", "enable")
+		emit_signal("enable_buttons")
+		if diff_background:
+			emit_signal("swap_bg")
+		if new_item != "None":
+			emit_signal("new_item", new_item)
+	elif (self.in_clickable_area and self.enabled and not self.perm_disabled) or self.index != 0:
+		advance_popup()
+
+
+func advance_popup():
 	get_tree().call_group("click_areas", "disable")
+	emit_signal("disable_buttons")
 	Global.set_cursor("cont_sym")
 	if self.index == 0:
 		# if we have an audiostreamplayer as a child, invoke it
 		if has_node("./AudioStreamPlayer"):
 			get_node("./AudioStreamPlayer").play()
-			emit_signal("disable_buttons")
 		if diff_background:
 			emit_signal("swap_bg")
 	self._show_next_text()

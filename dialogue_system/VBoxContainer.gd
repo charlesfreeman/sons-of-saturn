@@ -52,6 +52,8 @@ var char_aliases = {
 	"Tann" : "Tann",
 	"Ansel" : "Ansel",
 	"Vera" : "Vera",
+	"Robert" : "Robert",
+	"Leslie" : "Leslie",
 	"Dead Cat" : "Dead Cat",
 	"Narrator" : "Narrator",
 }
@@ -65,6 +67,8 @@ var emotions = {
 	"Tann" : "Tann",
 	"Ansel" : "Ansel",
 	"Vera" : "Vera",
+	"Robert" : "Robert",
+	"Leslie" : "Leslie",
 	"Dead Cat" : "Dead Cat",
 	"Narrator" : "None",
 }

@@ -100,6 +100,8 @@ var misc_profiles = {
 	"Tann" : "res://conversation_pov/char_profiles/misc/tann_profile.png",
 	"Ansel" : "res://conversation_pov/char_profiles/misc/ansel_profile.png",
 	"Vera" : "res://conversation_pov/char_profiles/misc/vera_profile.png",
+	"Leslie" : "res://conversation_pov/char_profiles/misc/leslie_in_mirror.png",
+	"Robert" : "res://conversation_pov/char_profiles/misc/robert_in_mirror.png",
 }
 
 # need to track state of subjects for changing profiles mid convo

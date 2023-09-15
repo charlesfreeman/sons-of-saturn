@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "Vera::Mood diary.  Entry 5.  July 14th\n\nVera::Missed a few days again, though this time only because I'm so wrapped up in my work.\n\nVera::I've discovered that instances of infant mortality and stillbirth are synchronized with the medical supply irregularities I documented.  Every cluster of stillbirths is preceeded by a suspicious reduction in the quantities of ergot and datura we have on hand.  \n\nVera::The implications of this are...chilling.  I think someone is using the ergot to induce stillbirths.  That would explain why the stillbirths tend to occur in clusters, and why the medical supplies always go missing at the same time.  I'm going to try and get my hands on more precise staff time sheets, ideally with hourly precision.  Maybe there's a pattern I didn't see before.\n\nVera::Oh, yeah, mood positive.  Driven.\n\n[[p:She thinks someone is swiping the ergot and using it to induce abortions?]]\n[[p:This lady is obsessive.  No wonder that administrator didn't want her around.]]",
+      "text": "Vera::Mood diary.  Entry 5.  July 14th\n\nVera::Missed a few days again, though this time only because I'm so wrapped up in my work.\n\nVera::I've discovered that instances of infant mortality and stillbirth are synchronized with the medical supply irregularities I documented.  Every cluster of stillbirths is preceded by a suspicious reduction in the quantities of ergot and datura we have on hand.  \n\nVera::The implications of this are...chilling.  I think someone is using the ergot to induce stillbirths.  That would explain why the stillbirths tend to occur in clusters, and why the medical supplies always go missing at the same time.  I'm going to try and get my hands on more precise staff time sheets, ideally with hourly precision.  Maybe there's a pattern I didn't see before.\n\nVera::Oh, yeah, mood positive.  Driven.\n\n[[p:She thinks someone is swiping the ergot and using it to induce abortions?]]\n[[p:This lady is obsessive.  No wonder that administrator didn't want her around.]]",
       "links": [
         {
           "name": "p:She thinks someone is swiping the ergot and using it to induce abortions?",
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "text": "Vera::Mood diary.  Entry 6.  July 16th\n\nVera::I managed to get my hands on the employee timesheets today.  It didn't take long for a pattern to emerge: Over 90% of the incidents of \"stillbirth\" occured either under the direct watch of Dr. Anthony Tann, or under the supervision of one of his nurses.  I suspect they are using ergot from the medical supply closet to induce miscarriage (though I'm uncertain of datura's utility).  Some of the medical equipment they need is only accessible intermittently, thus explaining the clustering.  \n\nVera::Dr. Tann's team has two women booked for visitation in series tomorrow morning, both for obviously frivolous afflictions.  I'm going to surveil one of their operations.  If they perform professionally, I'll probably just keep my mouth shut.  They're probably just a discretious team trying to provide a necessary service.  But I've got to see it with my own eyes - I want proof this isn't some shady mob-run outfit.\n\nVera::There's a ventillation grate in the room they are slated to use.  I can camp in the ducts and judge how they perform.\n\n[[p:So, Dr. Tann was running an underground abortion ring?]]\n[[p:No wonder Tann didn't want Vera here...]]",
+      "text": "Vera::Mood diary.  Entry 6.  July 16th\n\nVera::I managed to get my hands on the employee timesheets.  The pattern: over 90% of the incidents of \"stillbirth\" occurred under the direct watch of Dr. Tann or one of his nurses.  I suspect they are using ergot from the medical supply closet to induce miscarriage (though I'm uncertain of datura's utility).  Some of the necessary medical equipment is only accessible intermittently, thus explaining the clustering.  \n\nVera::Dr. Tann's team has two women booked for visitation tomorrow morning, both for obviously frivolous afflictions.  I'm going to surveil one of their operations.  If they perform professionally, I'll probably just keep my mouth shut.  They're probably just a discreet team providing a necessary service.\n\nVera::But I need proof.  There's a ventilation grate in the room they are slated to use.  I'll spy from the ducts and see how they perform.\n\n[[p:So, Dr. Tann was running an underground abortion ring?]]\n[[p:No wonder Tann didn't want Vera here...]]",
       "links": [
         {
           "name": "p:So, Dr. Tann was running an underground abortion ring?",
@@ -93,7 +93,7 @@
       }
     },
     {
-      "text": "You wretch open the cabinet drawer.  The interior emits a vaguely leathery odor.\n\nSeveral more diary pages lie inside, neatly stacked.  You pick them up.\n\n[[C->Page 1]] ",
+      "text": "You extract the cabinet from its drawer.  The interior emits a vaguely leathery odor.\n\nSeveral more diary pages lie inside, neatly stacked.  You pick them up.\n\n[[C->Page 1]] ",
       "links": [
         {
           "name": "C",
@@ -109,7 +109,7 @@
       }
     },
     {
-      "text": "Wiggly::She suspects as much, at least.\n\nWiggly::She might have been correct.  Under the table abortion rings were pretty common in the Cradle.  And the medical supply irregularities are...suggestive.\n\n[[p:Let's keep reading->Page 2]] ",
+      "text": "Wiggly::She suspects as much, at least.\n\nWiggly::She might have been correct.  Under the table abortion rings were pretty common in Minerva.  And the medical supply irregularities are...suggestive.\n\n[[p:Let's keep reading->Page 2]] ",
       "links": [
         {
           "name": "p:Let's keep reading",
@@ -125,7 +125,7 @@
       }
     },
     {
-      "text": "Wiggly::She is certainly much more passionate than any accountant I've ever interacted with.\n\n[[p:Let's keep reading->Page 2]] ",
+      "text": "Wiggly::She is certainly much more passionate than any accountant I ever interacted with.\n\n[[p:Let's keep reading->Page 2]] ",
       "links": [
         {
           "name": "p:Let's keep reading",
@@ -194,7 +194,7 @@
       }
     },
     {
-      "text": "Wiggly::What do you mean?  Those are some of the nicest tunnels in the Cradle.  So spacious, you barely have to duck, and the water is less than knee deep the entire way.\n\nJasper::There isn't even a hint of facetiousness in his voice.  He loves those tunnels.\n\n[[C->p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.]] ",
+      "text": "Wiggly::What do you mean?  Those are some of the nicest tunnels in the city.  So spacious, you barely have to duck, and the water is less than knee deep the entire way.\n\nJasper::There isn't even a hint of facetiousness in his voice.  He loves those tunnels.\n\n[[C->p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.]] ",
       "links": [
         {
           "name": "C",
@@ -210,7 +210,7 @@
       }
     },
     {
-      "text": "Wiggly::Something tells me it might.\n\nWiggly::Let's go search the top floor.  There are a few nurses quarters up there, maybe one of them belonged to Julia\n\nWiggly::There are also a few neonatal units up there, worth taking a look around.\n\nWiggly::The stairs up are just out the door, across the hall.\n\n[[p:Alright, let's go.]]",
+      "text": "Wiggly::Something tells me it might.\n\nWiggly::Let's go search the top floor.  There are a few nurses quarters up there, maybe one of them belonged to Julia.\n\nWiggly::There are also a few neonatal units up there, worth taking a look around.\n\nWiggly::The stairs up are just out the door, across the hall.\n\n[[p:Alright, let's go.]]",
       "links": [
         {
           "name": "p:Alright, let's go.",

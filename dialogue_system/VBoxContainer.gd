@@ -54,6 +54,7 @@ var char_aliases = {
 	"Vera" : "Vera",
 	"Robert" : "Robert",
 	"Leslie" : "Leslie",
+	"Note" : "Note",
 	"Dead Cat" : "Dead Cat",
 	"Narrator" : "Narrator",
 }
@@ -69,6 +70,7 @@ var emotions = {
 	"Vera" : "Vera",
 	"Robert" : "Robert",
 	"Leslie" : "Leslie",
+	"Note" : "None",
 	"Dead Cat" : "Dead Cat",
 	"Narrator" : "None",
 }

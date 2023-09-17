@@ -1,0 +1,163 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Note::Stop sending me requests for these.  You're way, way over the eight week mark.  If you want to get rid of your kid so bad, send it to Rosalind.\n\n[[p:You weren't allowed to use these after only eight weeks of pregnancy?  That's not even enough time to know if you're pregnant.]]",
+      "links": [
+        {
+          "name": "p:You weren't allowed to use these after only eight weeks of pregnancy?  That's not even enough time to know if you're pregnant.",
+          "link": "p:You weren't allowed to use these after only eight weeks of pregnancy?  That's not even enough time to know if you're pregnant.",
+          "pid": "7"
+        }
+      ],
+      "name": "page2",
+      "pid": "1",
+      "position": {
+        "x": "1208",
+        "y": "791"
+      },
+      "tags": [
+        "page2"
+      ]
+    },
+    {
+      "text": "You pick up the note.  It appears to be a leathery pharmaceutical request receipt, issued to Julia.  The harsh page feels as if it's soaked in decades of chemical runoff.\n\nShe appears to have requested a list of medicinal substances, shown on the ledger below her name.\n\nAll of her requests have been declined.\n\n[[Are the drugs she's requesting abortion drugs?]]\n[[p:I don't understand.  Why won't they just give them to her?]]",
+      "links": [
+        {
+          "name": "Are the drugs she's requesting abortion drugs?",
+          "link": "Are the drugs she's requesting abortion drugs?",
+          "pid": "4"
+        },
+        {
+          "name": "p:I don't understand.  Why won't they just give them to her?",
+          "link": "p:I don't understand.  Why won't they just give them to her?",
+          "pid": "5"
+        }
+      ],
+      "name": "page1",
+      "pid": "2",
+      "position": {
+        "x": "1177",
+        "y": "456"
+      },
+      "tags": [
+        "page1"
+      ]
+    },
+    {
+      "text": "An array of esoteric chemicals decorate the shelf before you.  Many of the bottles are adorned with Latin names: Petalostigma pubescens, Eucalyptus gamophylla, Erythrophleum chlorostachys.  You can't decipher any of them.\n\nWafts of chemical air emanate from the cracks and loose seals afflicting many of the medicinal bottles.  You catch wafts of alcohol, formaldehyde, and unknown organic solvents.\n\nWiggly, after glancing over a few of the bottles, becomes a bit apprehensive.  You sense that there is something he doesn't want share.\n\n[[C->loose note]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "loose note",
+          "pid": "9"
+        }
+      ],
+      "name": "Untitled Passage 2",
+      "pid": "3",
+      "position": {
+        "x": "1178",
+        "y": "162"
+      }
+    },
+    {
+      "text": "Wiggly::Yes, they are.  All of them.\n\nJasper::How does he know that?  I didn't think child laborers often had much in the way of pharmaceutical knowledge.\n\n[[How do you know?]]",
+      "links": [
+        {
+          "name": "How do you know?",
+          "link": "How do you know?",
+          "pid": "6"
+        }
+      ],
+      "name": "Are the drugs she's requesting abortion drugs?",
+      "pid": "4",
+      "position": {
+        "x": "1059",
+        "y": "606"
+      }
+    },
+    {
+      "text": "Wiggly::I don't know.  But it looks like there's something written on the back of that receipt.\n\n[[p:(Action) Flip the receipt.->page2]]",
+      "links": [
+        {
+          "name": "p:(Action) Flip the receipt.",
+          "link": "page2",
+          "pid": "1"
+        }
+      ],
+      "name": "p:I don't understand.  Why won't they just give them to her?",
+      "pid": "5",
+      "position": {
+        "x": "1299",
+        "y": "606"
+      }
+    },
+    {
+      "text": "Wiggly::Well, we utility kids relied a lot on uppers to get through our shifts, and most of those we had to scrounge for.\n\nWiggly::So, well, knowing how to tell amphetamines and laxatives apart was a pretty helpful skill to nurture.\n\n[[C->page1]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "page1",
+          "pid": "2"
+        }
+      ],
+      "name": "How do you know?",
+      "pid": "6",
+      "position": {
+        "x": "1059",
+        "y": "756"
+      }
+    },
+    {
+      "text": "Wiggly::Well, the legal cutoff kept changing over the years, I think.\n\nWiggly::First it was sixteen weeks.  Then twelve.  Then eight.\n\nWiggly::Then two...\n\nWiggly::I overheard a lot of conversations between Core officials, all talking about how they needed more kids, how they had to get the birthrate up, that sort of thing.\n\nWiggly::I never really understood why.\n\n[[p:This is all extremely fucked up but I don't have time to think about it right now.  Let's keep looking for more of Julia's stuff.]]",
+      "links": [
+        {
+          "name": "p:This is all extremely fucked up but I don't have time to think about it right now.  Let's keep looking for more of Julia's stuff.",
+          "link": "p:This is all extremely fucked up but I don't have time to think about it right now.  Let's keep looking for more of Julia's stuff.",
+          "pid": "8"
+        }
+      ],
+      "name": "p:You weren't allowed to use these after only eight weeks of pregnancy?  That's not even enough time to know if you're pregnant.",
+      "pid": "7",
+      "position": {
+        "x": "1208",
+        "y": "941"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "p:This is all extremely fucked up but I don't have time to think about it right now.  Let's keep looking for more of Julia's stuff.",
+      "pid": "8",
+      "position": {
+        "x": "1208",
+        "y": "1091"
+      }
+    },
+    {
+      "text": "A loose note, stuck in the drawer in the mid section of the cabinet, catches your eye.\n\n[[p:(Action) Investigate the note.->page1]]",
+      "links": [
+        {
+          "name": "p:(Action) Investigate the note.",
+          "link": "page1",
+          "pid": "2"
+        }
+      ],
+      "name": "loose note",
+      "pid": "9",
+      "position": {
+        "x": "1183",
+        "y": "306"
+      },
+      "tags": [
+        "loose_note"
+      ]
+    }
+  ],
+  "name": "Abortion Receipts",
+  "startnode": "3",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "0BB45EB6-C631-43F3-B311-58753390A1A7"
+}
+

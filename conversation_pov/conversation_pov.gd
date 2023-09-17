@@ -171,7 +171,8 @@ func load_texture(character, emotion):
 		"Julia":
 			avatar.texture = load(julia_profiles[emotion])
 		_:
-			avatar.texture = load(misc_profiles[character])
+			if character in misc_profiles.keys():
+				avatar.texture = load(misc_profiles[character])
 	previous_av = current_av
 	current_av = character
 			

@@ -1,7 +1,18 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://top_floor/cribs_looking_right/cribs_looking_right.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 396.85, 466.696 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 293.669, 692.107 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 926.823, 212.712 )
 
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
@@ -13,6 +24,34 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_up = "res://top_floor/cribs_cabinets/cribs_cabinets.tscn"
+scene_left = "res://top_floor/cribs_big_room/cribs_big_room.tscn"
 position = Vector2( 1800, 430 )
 rotation = -63
 song = "sewer_med_flow"
+
+[node name="PopUp" parent="." instance=ExtResource( 3 )]
+position = Vector2( -3.1748, -6.34961 )
+popup_on_entry = true
+popup_text = [ "Wiggly,neutral::This wing of the maternity ward where the babies were actually delivered.  That's what all these cradles are for.", "Amelie,guilty::I gathered as much.", "Wiggly,thinking::...", "Wiggly,skeptical::We should look around here.  Julia probably worked in this wing, at least occasionally." ]
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 2488.13, 1047.77 )
+shape = SubResource( 1 )
+
+[node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+left_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2( 299.104, 1085.86 )
+shape = SubResource( 2 )
+
+[node name="ClickToEnter3" parent="." instance=ExtResource( 4 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter3"]
+position = Vector2( 1577.18, 1946.24 )
+shape = SubResource( 3 )

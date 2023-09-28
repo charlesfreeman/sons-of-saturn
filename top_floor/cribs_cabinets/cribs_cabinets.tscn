@@ -1,11 +1,19 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=2]
 [ext_resource path="res://top_floor/cribs_cabinets/cabinets_near_cribs.png" type="Texture" id=3]
+[ext_resource path="res://roaming_pov/ClickToSearch.tscn" type="PackedScene" id=4]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 309.324, 647.938 )
+extents = Vector2( 433.361, 643.174 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 371.232, 620.953 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 855.39, 185.726 )
 
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
@@ -17,6 +25,8 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_down = "res://top_floor/cribs_looking_right/cribs_looking_right.tscn"
+popup_background = "res://top_floor/cribs_cabinets/cribs_glass_cabinet.png"
 position = Vector2( 1800, 430 )
 rotation = -63
 song = "sewer_med_flow"
@@ -25,5 +35,19 @@ song = "sewer_med_flow"
 diff_background = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
-position = Vector2( 2216.91, 1012.57 )
+position = Vector2( 683.255, 1115.75 )
 shape = SubResource( 1 )
+
+[node name="ClickToSearch" parent="." instance=ExtResource( 4 )]
+next_scene = "res://top_floor/abortion_convo/abortion_convo.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
+position = Vector2( 2164.52, 1052.25 )
+shape = SubResource( 2 )
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 5 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1581.94, 1963.7 )
+shape = SubResource( 3 )

@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://maternity/courtyard/courtyard_standing_in.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 804.355, 138.98 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_down = "res://maternity/stairs_down_to_greenery/stairs_down_to_greenery.tscn"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1439.36, 2013.42 )
+shape = SubResource( 1 )

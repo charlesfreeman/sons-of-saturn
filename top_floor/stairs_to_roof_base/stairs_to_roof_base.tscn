@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://top_floor/stairs_to_roof_base/green_basement_stairs.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 833.881, 233.389 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 665.375, 623.279 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_up = "res://top_floor/stairs_to_roof_looking_up/stairs_to_roof_looking_up.tscn"
+scene_down = "res://top_floor/end_of_hallway/end_of_hallway.tscn"
+position = Vector2( 1800, 430 )
+rotation = -63
+song = "sewer_med_flow"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1819.65, 1922.52 )
+shape = SubResource( 1 )
+
+[node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2( 655.375, 613.279 )
+shape = SubResource( 2 )

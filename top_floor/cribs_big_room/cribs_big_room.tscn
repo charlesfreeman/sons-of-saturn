@@ -1,11 +1,15 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://top_floor/cribs_big_room/big_cribroom_windowview.png" type="Texture" id=2]
 [ext_resource path="res://roaming_pov/DescPopUp.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1019.19, 300.775 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 1071.62, 170.703 )
 
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
@@ -17,14 +21,22 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_down = "res://top_floor/cribs_looking_right/cribs_looking_right.tscn"
 popup_background = "res://top_floor/cribs_big_room/big_cribroom_sideview.png"
 position = Vector2( 1800, 430 )
 rotation = -63
-song = "sewer_med_flow"
 
 [node name="DescPopUp" parent="." instance=ExtResource( 3 )]
+popup_text = [ "The room is lined with two rows of cribs.  They are all turned to face you.", "The empty cribs are accusing you of something.  You can feel their ire." ]
 diff_background = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DescPopUp"]
 position = Vector2( 1370.64, 1406.18 )
 shape = SubResource( 1 )
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1425.11, 1974.57 )
+shape = SubResource( 2 )

@@ -1,0 +1,500 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Giant Rat::No.  Even when your eyes are closed, you can still see blackness.\n\nGiant Rat::Want to know what being dead is like?  Close your right eye, but not the left.  Think about what you can see out of your right eye.\n\nGiant Rat::Absence.  ",
+      "name": "Is this what being dead is like?",
+      "pid": "1",
+      "position": {
+        "x": "764",
+        "y": "544"
+      }
+    },
+    {
+      "text": "TODO consider moving death parts of intro here",
+      "name": "Untitled Passage",
+      "pid": "2",
+      "position": {
+        "x": "884",
+        "y": "559"
+      }
+    },
+    {
+      "text": "Jasper::If you find the closure you're after, miraculously cure all psychic ills in the process, use your newfound unhindered and undamaged brain to become rich and famous, and then retire early, then sure, this excursion will be \"worth it.\"  \n\nJasper::But if you die here, you probably wouldn't consider it \"worth it.\"\n\n[[If I die I wouldn't consider it \"not worth it\" either, technically.]]\n[[0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi.]]\n[[1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel.]]",
+      "links": [
+        {
+          "name": "If I die I wouldn't consider it \"not worth it\" either, technically.",
+          "link": "If I die I wouldn't consider it \"not worth it\" either, technically.",
+          "pid": "4"
+        },
+        {
+          "name": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi.",
+          "link": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi.",
+          "pid": "5"
+        },
+        {
+          "name": "1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel.",
+          "link": "1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel.",
+          "pid": "6"
+        }
+      ],
+      "name": "p:This will all be worth it, right?",
+      "pid": "3",
+      "position": {
+        "x": "314",
+        "y": "182"
+      }
+    },
+    {
+      "text": "Jasper::But you'd consider it a shame right now, wouldn't you?  While your still breathing?\n\nJasper::Think about all the humiliation and unjustified pain; all of it would mean nothing if you were to die here.  You don't want that, do you?\n\nJasper::You'd just be one more baby sea turtle who never made it to the ocean.  You were born, pecked at, and now you'll die.\n\n[[No one wants that.]] \n[[Those dead baby sea turtles are stress free.  There's nothing to worry about after you've been eaten by a crab.]]",
+      "links": [
+        {
+          "name": "No one wants that.",
+          "link": "No one wants that.",
+          "pid": "7"
+        },
+        {
+          "name": "Those dead baby sea turtles are stress free.  There's nothing to worry about after you've been eaten by a crab.",
+          "link": "Those dead baby sea turtles are stress free.  There's nothing to worry about after you've been eaten by a crab.",
+          "pid": "8"
+        }
+      ],
+      "name": "If I die I wouldn't consider it \"not worth it\" either, technically.",
+      "pid": "4",
+      "position": {
+        "x": "169",
+        "y": "372"
+      }
+    },
+    {
+      "text": "Jasper::Right now you've got more in common with an octopus's victim.  \n\nJasper::You're a tourist sap pumped full of tetrodotoxin.\n\nJasper::You are flat on your back, paralyzed.  You even lack the wit to shut your eyelids, and the foreign sun is turning your irises into swiss cheese.\n\n[[Continue->p:This will all be worth it, right?]] \n",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:This will all be worth it, right?",
+          "pid": "3"
+        }
+      ],
+      "name": "0;:I'm not a sea turtle.  I'm more similar to one of those toxic octopi.",
+      "pid": "5",
+      "position": {
+        "x": "299",
+        "y": "429"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "1;p:Hopefully my Ferryman shows up soon, that way I can at least die closer to my goal and not in this shitty tunnel.",
+      "pid": "6",
+      "position": {
+        "x": "437",
+        "y": "381"
+      }
+    },
+    {
+      "text": "Jasper::But plenty of people *get* that.\n\nJasper::You think any baby sea turtle plans on being the one to get eaten by a crab?  You think any kid in Scottish folk tales plans on being one of the children dragged down by a Kelpie?\n\n[[Continue->p:This will all be worth it, right?]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:This will all be worth it, right?",
+          "pid": "3"
+        }
+      ],
+      "name": "No one wants that.",
+      "pid": "7",
+      "position": {
+        "x": "79",
+        "y": "570"
+      }
+    },
+    {
+      "text": "Jasper::So you would consider the fate of 99.9% of baby sea turtles a success?\n\n[[Continue->p:This will all be worth it, right?]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:This will all be worth it, right?",
+          "pid": "3"
+        }
+      ],
+      "name": "Those dead baby sea turtles are stress free.  There's nothing to worry about after you've been eaten by a crab.",
+      "pid": "8",
+      "position": {
+        "x": "244",
+        "y": "549"
+      }
+    },
+    {
+      "text": "Jasper::You could easily climb this well.  Even fatigued, chimney-ing up this cylinder would require only mild sweating and grunting.\n\nJasper::But you won't.\n\n[[Why wouldn't I?  Why can't I just pop out the top and roll around a little?]]\n[[But sunlight is the only thing I crave.  I'm climbing out of here and basking in it for a bit.]]\n[[p:It's not too late to turn back.  I can just pop out of this well and run straight out of the Cradle.]]",
+      "links": [
+        {
+          "name": "Why wouldn't I?  Why can't I just pop out the top and roll around a little?",
+          "link": "Why wouldn't I?  Why can't I just pop out the top and roll around a little?",
+          "pid": "10"
+        },
+        {
+          "name": "But sunlight is the only thing I crave.  I'm climbing out of here and basking in it for a bit.",
+          "link": "But sunlight is the only thing I crave.  I'm climbing out of here and basking in it for a bit.",
+          "pid": "11"
+        },
+        {
+          "name": "p:It's not too late to turn back.  I can just pop out of this well and run straight out of the Cradle.",
+          "link": "p:It's not too late to turn back.  I can just pop out of this well and run straight out of the Cradle.",
+          "pid": "12"
+        }
+      ],
+      "name": "p:I want to climb out.  Feel the sun and the air.",
+      "pid": "9",
+      "position": {
+        "x": "745",
+        "y": "180"
+      }
+    },
+    {
+      "text": "Jasper::Look at yourself.  You are covered in tar and stuck to the top of a terrifying but beautiful horse.  And the horse is doing its damndest to keep you down there, at the bottom of this well.  Anyone would find it difficult to climb under those circumstances.\n\nJasper::You came here for a reason.  You might flirt with the idea of bailing, escaping your fate, but deep down we both know what track your on.\n\nJasper::No one can help a puddle up the wall.\n\n[[What the fuck are you talking about?]]\n[[Why do I need to continue into the Cradle?  What's so important about that place?]] ",
+      "links": [
+        {
+          "name": "What the fuck are you talking about?",
+          "link": "What the fuck are you talking about?",
+          "pid": "13"
+        },
+        {
+          "name": "Why do I need to continue into the Cradle?  What's so important about that place?",
+          "link": "Why do I need to continue into the Cradle?  What's so important about that place?",
+          "pid": "14"
+        }
+      ],
+      "name": "Why wouldn't I?  Why can't I just pop out the top and roll around a little?",
+      "pid": "10",
+      "position": {
+        "x": "595",
+        "y": "330"
+      }
+    },
+    {
+      "text": "Jasper::Alright, go for it.  No reason you can't get out of here and roll around in the fresh air for a few minutes.\n\nJasper::Go ahead.  Don't be long now.\n\nJasper::...\n\nJasepr::See?  You don't have the nerve.  \n\n[[Continue->p:I want to climb out.  Feel the sun and the air.]] ",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:I want to climb out.  Feel the sun and the air.",
+          "pid": "9"
+        }
+      ],
+      "name": "But sunlight is the only thing I crave.  I'm climbing out of here and basking in it for a bit.",
+      "pid": "11",
+      "position": {
+        "x": "744",
+        "y": "330"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "p:It's not too late to turn back.  I can just pop out of this well and run straight out of the Cradle.",
+      "pid": "12",
+      "position": {
+        "x": "895",
+        "y": "330"
+      }
+    },
+    {
+      "text": "Jasper::Ugh.  Look, you came here looking for your Mom, right?  Everyone who comes to the Cradle is looking for closure of some form, and you're no different.  \n\n[[I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.]]",
+      "links": [
+        {
+          "name": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
+          "link": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
+          "pid": "15"
+        }
+      ],
+      "name": "What the fuck are you talking about?",
+      "pid": "13",
+      "position": {
+        "x": "521",
+        "y": "501"
+      }
+    },
+    {
+      "text": "Jasper::Ostensibly, you came here to find out what happened to your Mom, remember?.  Everyone who comes to the Cradle is looking for closure of some form, and you're no different.  \n\n[[I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.]]",
+      "links": [
+        {
+          "name": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
+          "link": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
+          "pid": "15"
+        }
+      ],
+      "name": "Why do I need to continue into the Cradle?  What's so important about that place?",
+      "pid": "14",
+      "position": {
+        "x": "640",
+        "y": "480"
+      }
+    },
+    {
+      "text": "Jasper::Really?  The void she left scabbed over, got filled with scar tissue - but never really healed.  No hair follicules grow in that part of your psyche. \n\nJasper::She's the reason you aren't whole.  She's the reason you can't retire.  She's what you left behind here.\n\nJasper::That's why you are in a sewer and not running through a field of bullet ant infested sunflowers.\n\n[[Continue->p:I want to climb out.  Feel the sun and the air.]]",
+      "links": [
+        {
+          "name": "Continue",
+          "link": "p:I want to climb out.  Feel the sun and the air.",
+          "pid": "9"
+        }
+      ],
+      "name": "I'm done caring about that.  I want to run around in a grassy field and get dehydrated and then get stung by a bunch of bees, or maybe a bullet ant.",
+      "pid": "15",
+      "position": {
+        "x": "612",
+        "y": "630"
+      }
+    },
+    {
+      "text": "You clamber down into the elevator.  The cabin is small, like a coffin.  The trim of the cabin is decorated by an array of ornate engravings.  They are beautiful, but not comforting.\n\nYou feel a squish beneath your left foot.  The smell of mild putrification invades your nostrils.  \n\n[[p:(Action) investigate the strange texture beneath your left foot.]]",
+      "links": [
+        {
+          "name": "p:(Action) investigate the strange texture beneath your left foot.",
+          "link": "p:(Action) investigate the strange texture beneath your left foot.",
+          "pid": "17"
+        }
+      ],
+      "name": "p:(Action) Step inside the elevator cabin.",
+      "pid": "16",
+      "position": {
+        "x": "1152",
+        "y": "303"
+      },
+      "tags": [
+        "interior"
+      ]
+    },
+    {
+      "text": "You look down and see an enormous dead rat laying on the floor of the cabin.  Its mass is superior to any rodent you've encountered.\n\nJasper::The size of this specimen...Incredible...\n\nJasper::We have to investigate this.  Pick it up so we can weigh it, and document its size.\n\n[[p:I don't want to pick it up, it's nasty.]]\n[[p:The giant rat is speaking to me; not with words, but more directly.  It's telling me not to pick it up.  \"Not yet,\" it says.->p:I don't want to pick it up, it's nasty.]]",
+      "links": [
+        {
+          "name": "p:I don't want to pick it up, it's nasty.",
+          "link": "p:I don't want to pick it up, it's nasty.",
+          "pid": "18"
+        },
+        {
+          "name": "p:The giant rat is speaking to me; not with words, but more directly.  It's telling me not to pick it up.  \"Not yet,\" it says.",
+          "link": "p:I don't want to pick it up, it's nasty.",
+          "pid": "18"
+        }
+      ],
+      "name": "p:(Action) investigate the strange texture beneath your left foot.",
+      "pid": "17",
+      "position": {
+        "x": "1152",
+        "y": "453"
+      }
+    },
+    {
+      "text": "Jasper::Alright, fine, you don't have to pick it up.  But you should at least put your hand next to it so we can see how big it is.\n\n[[p:(Action) Place your hand next to the enormous rodent.]]\n[[p:I'd rather not.]]",
+      "links": [
+        {
+          "name": "p:(Action) Place your hand next to the enormous rodent.",
+          "link": "p:(Action) Place your hand next to the enormous rodent.",
+          "pid": "19"
+        },
+        {
+          "name": "p:I'd rather not.",
+          "link": "p:I'd rather not.",
+          "pid": "20"
+        }
+      ],
+      "name": "p:I don't want to pick it up, it's nasty.",
+      "pid": "18",
+      "position": {
+        "x": "1148",
+        "y": "623"
+      }
+    },
+    {
+      "text": "You place your tiny hand next to the impressive carcass.  At once it's incredible girth becomes apparent.\n\nYou can feel your tiny hand cowering in its presence.\n\nJasper::Incredible.  I cannot imagine how it died.  Once you reach this size, you have no natural predators.\n\n[[p:Man, I wish that was me...]]\n[[p:Such mass.  Such a sculpted form.  The Vesuvian rat!->p:Man, I wish that was me...]]\n",
+      "links": [
+        {
+          "name": "p:Man, I wish that was me...",
+          "link": "p:Man, I wish that was me...",
+          "pid": "21"
+        },
+        {
+          "name": "p:Such mass.  Such a sculpted form.  The Vesuvian rat!",
+          "link": "p:Man, I wish that was me...",
+          "pid": "21"
+        }
+      ],
+      "name": "p:(Action) Place your hand next to the enormous rodent.",
+      "pid": "19",
+      "position": {
+        "x": "1073",
+        "y": "773"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "p:I'd rather not.",
+      "pid": "20",
+      "position": {
+        "x": "1223",
+        "y": "773"
+      }
+    },
+    {
+      "text": "Jasper::It really is incredible.  \n\nJasper::We need to keep moving though.\n\nJasper::Ready to give Wiggly the signal to drop us?  Remember, we just need to slap the roof of the cabin, and he'll release the lever.\n\n[[p:I'm ready as I'll ever be.]]\n[[p:I'm excited for this, honestly.->p:I'm ready as I'll ever be.]]",
+      "links": [
+        {
+          "name": "p:I'm ready as I'll ever be.",
+          "link": "p:I'm ready as I'll ever be.",
+          "pid": "22"
+        },
+        {
+          "name": "p:I'm excited for this, honestly.",
+          "link": "p:I'm ready as I'll ever be.",
+          "pid": "22"
+        }
+      ],
+      "name": "p:Man, I wish that was me...",
+      "pid": "21",
+      "position": {
+        "x": "1073",
+        "y": "923"
+      }
+    },
+    {
+      "text": "Jasper::Alright.  Brace yourself.  And shove me extra deep in your pocket, if you don't mind.\n\n[[(Action) Shove Jasper deeper into your pocket.]]\n[[p:(Action) Smack the roof of the cabin.]]",
+      "links": [
+        {
+          "name": "(Action) Shove Jasper deeper into your pocket.",
+          "link": "(Action) Shove Jasper deeper into your pocket.",
+          "pid": "26"
+        },
+        {
+          "name": "p:(Action) Smack the roof of the cabin.",
+          "link": "p:(Action) Smack the roof of the cabin.",
+          "pid": "23"
+        }
+      ],
+      "name": "p:I'm ready as I'll ever be.",
+      "pid": "22",
+      "position": {
+        "x": "1073",
+        "y": "1073"
+      }
+    },
+    {
+      "text": "Jasper::...\n\nJasper::.....\n\nJasper::..........\n\n[[p:......]]\n[[p:...........->p:......]]\n[[p:...!->p:......]]",
+      "links": [
+        {
+          "name": "p:......",
+          "link": "p:......",
+          "pid": "27"
+        },
+        {
+          "name": "p:...........",
+          "link": "p:......",
+          "pid": "27"
+        },
+        {
+          "name": "p:...!",
+          "link": "p:......",
+          "pid": "27"
+        }
+      ],
+      "name": "p:(Action) Smack the roof of the cabin.",
+      "pid": "23",
+      "position": {
+        "x": "1073",
+        "y": "1223"
+      }
+    },
+    {
+      "text": "You return to the elevator cabin on the floor below.  It is nestled awkwardly into the end corner of the hallway, likely a later addition to the original construction.\n\nThe elevator is idled out of phase with respect to the floor, leaving a gap of several feet between the top of the cabin and the doorframe.\n\nJasper::Whew.  Ok.  We've just gotta step in and smack the roof, remember?  Nothing to it.\n\n[[(Action) Look up the elevator shaft.]]\n[[p:(Action) Step inside the elevator cabin.]]",
+      "links": [
+        {
+          "name": "(Action) Look up the elevator shaft.",
+          "link": "(Action) Look up the elevator shaft.",
+          "pid": "25"
+        },
+        {
+          "name": "p:(Action) Step inside the elevator cabin.",
+          "link": "p:(Action) Step inside the elevator cabin.",
+          "pid": "16"
+        }
+      ],
+      "name": "start",
+      "pid": "24",
+      "position": {
+        "x": "1151",
+        "y": "114.5"
+      },
+      "tags": [
+        "back_to_outside"
+      ]
+    },
+    {
+      "text": "You lean your head in above the cabin and look up the shaft.  You can see the artificial light from the rooftop machine room pouring in from above.\n\nYou can also see the faint outlines of the rigging equipment that once kept the cabin suspended.  Supposedly, only the magnetic backups remain functional.\n\n[[C->start]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "start",
+          "pid": "24"
+        }
+      ],
+      "name": "(Action) Look up the elevator shaft.",
+      "pid": "25",
+      "position": {
+        "x": "1029",
+        "y": "301.5"
+      },
+      "tags": [
+        "shaft"
+      ]
+    },
+    {
+      "text": "Jasper::Thanks.  Now that I'm deeper in here, I can provide padding for the heart and surrounding organs.  This is good for both of us.\n\n[[C->p:I'm ready as I'll ever be.]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:I'm ready as I'll ever be.",
+          "pid": "22"
+        }
+      ],
+      "name": "(Action) Shove Jasper deeper into your pocket.",
+      "pid": "26",
+      "position": {
+        "x": "930",
+        "y": "1225"
+      }
+    },
+    {
+      "text": "Jasper::Do you think he heard us?\n\n[[C->fall]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "fall",
+          "pid": "28"
+        }
+      ],
+      "name": "p:......",
+      "pid": "27",
+      "position": {
+        "x": "1073",
+        "y": "1373"
+      }
+    },
+    {
+      "text": "Jasper::Maybe w---....___",
+      "name": "fall",
+      "pid": "28",
+      "position": {
+        "x": "1073",
+        "y": "1523"
+      },
+      "tags": [
+        "falling"
+      ]
+    }
+  ],
+  "name": "Elevator Interior",
+  "startnode": "24",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "0095AE42-972D-414F-A530-4E2A54AF520A"
+}
+

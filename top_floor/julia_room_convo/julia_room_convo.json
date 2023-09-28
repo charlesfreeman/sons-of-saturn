@@ -1,0 +1,439 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Note::Contact Name: Julia\n\nNote::Contact Relation: Biological Mother\n\nNote::Reason for Communication: Major Health Update\n\nNote::I hope this letter finds you well.  We are writing to inform you that one ANGELA MELNIK has fallen into a persistent vegetative state, likely as a result of encephalitis.\n\nNote::Based on our observations of the disease's progression in other children under our care, we do not expect her to recover.  However, we will continue to provide life support for as long as autonomic functions persist, and her participation in our neural research program will continue.\n\nNote::We apologize for any distress this may cause.  If you would like us to cease providing updates for Angela's condition, please contact the children's ward's clerk.\n\nNote::-Rosalind\n\nWiggly::...\n\n[[p:So Julia's kid got sick and fell into a coma after she gave her to my mom's program...  I guess I'm not surprised.]]\n[[p:Mom really couldn't walk two fucking flights of stairs to tell her this in person.  What a soulless bitch!]]",
+      "links": [
+        {
+          "name": "p:So Julia's kid got sick and fell into a coma after she gave her to my mom's program...  I guess I'm not surprised.",
+          "link": "p:So Julia's kid got sick and fell into a coma after she gave her to my mom's program...  I guess I'm not surprised.",
+          "pid": "15"
+        },
+        {
+          "name": "p:Mom really couldn't walk two fucking flights of stairs to tell her this in person.  What a soulless bitch!",
+          "link": "p:Mom really couldn't walk two fucking flights of stairs to tell her this in person.  What a soulless bitch!",
+          "pid": "2"
+        }
+      ],
+      "name": "Page 1",
+      "pid": "1",
+      "position": {
+        "x": "1179",
+        "y": "606"
+      },
+      "tags": [
+        "page1"
+      ]
+    },
+    {
+      "text": "Wiggly::The notes we've seen from Rosalind do paint her as a little...tactless.\n\n[[p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!]]",
+      "links": [
+        {
+          "name": "p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!",
+          "link": "p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!",
+          "pid": "16"
+        }
+      ],
+      "name": "p:Mom really couldn't walk two fucking flights of stairs to tell her this in person.  What a soulless bitch!",
+      "pid": "2",
+      "position": {
+        "x": "1179",
+        "y": "756"
+      }
+    },
+    {
+      "text": "Julia's room is cloaked in a layer of ferns.  You can sense their spores permeating the room.  A constant drizzle of water pours in from the ceiling.\n\nThe entire room is dense with foliage, though the greenery is thickest near the pot towards the foot of the further cot.\n\n[[p:(Action) Inspect the pot.]]",
+      "links": [
+        {
+          "name": "p:(Action) Inspect the pot.",
+          "link": "p:(Action) Inspect the pot.",
+          "pid": "4"
+        }
+      ],
+      "name": "Untitled Passage 1",
+      "pid": "3",
+      "position": {
+        "x": "739",
+        "y": "411"
+      }
+    },
+    {
+      "text": "A dense, mangled web of ferns is crawling out of the basket.  They appear to be suffocating a small piece of parchment stuck beneath their roots.\n\nThe basket itself appears charred, as though it hosted a small fire.  None of the basket's contents appear damaged by flame.\n\n[[p:(Action) Reach in and grab the parchment.]]\n",
+      "links": [
+        {
+          "name": "p:(Action) Reach in and grab the parchment.",
+          "link": "p:(Action) Reach in and grab the parchment.",
+          "pid": "5"
+        }
+      ],
+      "name": "p:(Action) Inspect the pot.",
+      "pid": "4",
+      "position": {
+        "x": "739",
+        "y": "561"
+      },
+      "tags": [
+        "fern_closeup"
+      ]
+    },
+    {
+      "text": "You sink your arm deep into the mesh of ferns before you and begin blindly groping for the object you sense.  \n\nYou feel the stems of the greenery enveloping your arm, depriving you of oxygen.  The tendrils wrap tightly around your forearm.\n\n[[p:(Action) Dig in deeper.]]",
+      "links": [
+        {
+          "name": "p:(Action) Dig in deeper.",
+          "link": "p:(Action) Dig in deeper.",
+          "pid": "6"
+        }
+      ],
+      "name": "p:(Action) Reach in and grab the parchment.",
+      "pid": "5",
+      "position": {
+        "x": "739",
+        "y": "711"
+      },
+      "tags": [
+        "head_in_ferns"
+      ]
+    },
+    {
+      "text": "You force your arm deeper into the mesh.  Your fingers sift through roots and ash.\n\nJust as the tips of your fingers begin to go numb, you feel it: the parchment begins grazing your palm.\n\nYou tighten your hand around the document.  You've got a solid grip.\n\n[[p:(Action) Yank out the document.]]\n\n",
+      "links": [
+        {
+          "name": "p:(Action) Yank out the document.",
+          "link": "p:(Action) Yank out the document.",
+          "pid": "7"
+        }
+      ],
+      "name": "p:(Action) Dig in deeper.",
+      "pid": "6",
+      "position": {
+        "x": "739",
+        "y": "861"
+      },
+      "tags": [
+        "deep_in_ferns"
+      ]
+    },
+    {
+      "text": "You try and wrestle the document from the ferns, but the plants resist your pull.\n\nYou yank again, more firmly.  The roots don't yield.  They won't let your arm go.\n\nYou writhe and twist, but the ferns have you ensnared.  Your arm only sinks deeper into the pit of greenery.\n\nYou begin to panic.\n\n[[p:Get the fuck off of me!]]\n[[p:(Action) Kick the ferns.->p:Get the fuck off of me!]]",
+      "links": [
+        {
+          "name": "p:Get the fuck off of me!",
+          "link": "p:Get the fuck off of me!",
+          "pid": "8"
+        },
+        {
+          "name": "p:(Action) Kick the ferns.",
+          "link": "p:Get the fuck off of me!",
+          "pid": "8"
+        }
+      ],
+      "name": "p:(Action) Yank out the document.",
+      "pid": "7",
+      "position": {
+        "x": "739",
+        "y": "1011"
+      }
+    },
+    {
+      "text": "The ferns do not respond to your agitations.  They have you in their teeth.\n\nJasper::You have to go on the aggressive.  Merely reacting never got you anywhere.\n\nJasper::Dive into the ferns and start biting, ripping, and tearing.  It's your only chance.\n\n[[p:(Action) Start biting the ferns.]]",
+      "links": [
+        {
+          "name": "p:(Action) Start biting the ferns.",
+          "link": "p:(Action) Start biting the ferns.",
+          "pid": "9"
+        }
+      ],
+      "name": "p:Get the fuck off of me!",
+      "pid": "8",
+      "position": {
+        "x": "739",
+        "y": "1161"
+      }
+    },
+    {
+      "text": "You dive into the pot and start ripping into the ferns with your teeth.  You can almost hear them squealing with pain.\n\nBut they do not relent.\n\nJasper::They still have your arm, and the document.  You have to go deeper!\n\n[[p:(Action) Dive in further and keep biting the ferns.]]",
+      "links": [
+        {
+          "name": "p:(Action) Dive in further and keep biting the ferns.",
+          "link": "p:(Action) Dive in further and keep biting the ferns.",
+          "pid": "10"
+        }
+      ],
+      "name": "p:(Action) Start biting the ferns.",
+      "pid": "9",
+      "position": {
+        "x": "731",
+        "y": "1307"
+      }
+    },
+    {
+      "text": "You dive headfirst towards the bottom of the basket, and bite the roots.  You taste the ash they've been feeding on.  Finally, you sense the ferns beginning to yield.\n\nThe grip on your arm begins to fade.  The stems that had begun to envelope the back of your head and neck retreat.  You might have a chance at yanking out the document now.\n\n[[p:(Action) Free your arm.]]",
+      "links": [
+        {
+          "name": "p:(Action) Free your arm.",
+          "link": "p:(Action) Free your arm.",
+          "pid": "11"
+        }
+      ],
+      "name": "p:(Action) Dive in further and keep biting the ferns.",
+      "pid": "10",
+      "position": {
+        "x": "731",
+        "y": "1457"
+      }
+    },
+    {
+      "text": "You manage to free yourself from the web of roots, and pulled the document out with you.\n\nJasper::Yes!  It worked!\n\nJasper::Hopefully this conditions you to follow my advice more readily in the future.\n\nWiggly::Uhm.  Should I ask what that was about, mam?\n\n[[p:No.]]\n[[p:The ferns tried to eat me.  You should have helped me, but it doesn't matter anymore.]]",
+      "links": [
+        {
+          "name": "p:No.",
+          "link": "p:No.",
+          "pid": "12"
+        },
+        {
+          "name": "p:The ferns tried to eat me.  You should have helped me, but it doesn't matter anymore.",
+          "link": "p:The ferns tried to eat me.  You should have helped me, but it doesn't matter anymore.",
+          "pid": "13"
+        }
+      ],
+      "name": "p:(Action) Free your arm.",
+      "pid": "11",
+      "position": {
+        "x": "731",
+        "y": "1607"
+      },
+      "tags": [
+        "back_to_room"
+      ]
+    },
+    {
+      "text": "Wiggly::Alright then, Miss.\n\nWiggly::What does the note say?\n\n[[p:(Action) Inspect the note.]]",
+      "links": [
+        {
+          "name": "p:(Action) Inspect the note.",
+          "link": "p:(Action) Inspect the note.",
+          "pid": "14"
+        }
+      ],
+      "name": "p:No.",
+      "pid": "12",
+      "position": {
+        "x": "656",
+        "y": "1757"
+      }
+    },
+    {
+      "text": "Wiggly::I'll...keep that in mind if you get caught in any ferns up ahead.\n\nWiggly::So, what does the note say?  You got it out right?\n\n[[p:(Action) Inspect the note.]]",
+      "links": [
+        {
+          "name": "p:(Action) Inspect the note.",
+          "link": "p:(Action) Inspect the note.",
+          "pid": "14"
+        }
+      ],
+      "name": "p:The ferns tried to eat me.  You should have helped me, but it doesn't matter anymore.",
+      "pid": "13",
+      "position": {
+        "x": "807",
+        "y": "1759"
+      }
+    },
+    {
+      "text": "You brush a thick layer of dirt off of the note.  Doing so reveals the faint odor of kerosene.\n\n[[C->Page 1]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Page 1",
+          "pid": "1"
+        }
+      ],
+      "name": "p:(Action) Inspect the note.",
+      "pid": "14",
+      "position": {
+        "x": "656",
+        "y": "1907"
+      }
+    },
+    {
+      "text": "Wiggly::That's indeed what it sounds like, miss.\n\nJasper::Pretty much makes perfect sense, doesn't it?  No one could survive in her care for long.\n\n[[p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!]]",
+      "links": [
+        {
+          "name": "p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!",
+          "link": "p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!",
+          "pid": "16"
+        }
+      ],
+      "name": "p:So Julia's kid got sick and fell into a coma after she gave her to my mom's program...  I guess I'm not surprised.",
+      "pid": "15",
+      "position": {
+        "x": "1299",
+        "y": "756"
+      }
+    },
+    {
+      "text": "Wiggly::I can see why you would find this note upsetting, miss.\n\nWiggly::But this document is the most informative lead we've gotten yet.  I think we know why Julia might be upset enough to stick around.\n\nWiggly::I really didn't want to go there, but I don't think we have any choice.\n\nWiggly::We need to pay a visit to the children's ward.\n\n[[The place Angelica got sent to?]]\n[[Why do we have to go there?]]\n[[p:How do we get there?]]",
+      "links": [
+        {
+          "name": "The place Angelica got sent to?",
+          "link": "The place Angelica got sent to?",
+          "pid": "17"
+        },
+        {
+          "name": "Why do we have to go there?",
+          "link": "Why do we have to go there?",
+          "pid": "18"
+        },
+        {
+          "name": "p:How do we get there?",
+          "link": "p:How do we get there?",
+          "pid": "19"
+        }
+      ],
+      "name": "p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!",
+      "pid": "16",
+      "position": {
+        "x": "1179",
+        "y": "906"
+      }
+    },
+    {
+      "text": "Wiggly::Yes.  Down in the basement, two stories beneath us.\n\nWiggly::I don't like it.  But I'm sure that's where we need to go.\n\n[[C->p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!",
+          "pid": "16"
+        }
+      ],
+      "name": "The place Angelica got sent to?",
+      "pid": "17",
+      "position": {
+        "x": "1029",
+        "y": "1056"
+      }
+    },
+    {
+      "text": "Wiggly::The city has presented us with a handful of documents on Julia, right?  All of them have to do with her kid, Angelica, who she sent down there.\n\nWiggly::It's a clear sign from Minerva.  We've gotta find out what happened down there.\n\n[[C->p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!",
+          "pid": "16"
+        }
+      ],
+      "name": "Why do we have to go there?",
+      "pid": "18",
+      "position": {
+        "x": "1179",
+        "y": "1056"
+      }
+    },
+    {
+      "text": "Wiggly::The only way to get there is to take the elevator back near the stairwell we came up on.  All of the other entrances have been sealed for decades.\n\n[[p:We can just take the elevator?  That sounds really easy.]]\n[[p:So what's the catch?->p:We can just take the elevator?  That sounds really easy.]]",
+      "links": [
+        {
+          "name": "p:We can just take the elevator?  That sounds really easy.",
+          "link": "p:We can just take the elevator?  That sounds really easy.",
+          "pid": "20"
+        },
+        {
+          "name": "p:So what's the catch?",
+          "link": "p:We can just take the elevator?  That sounds really easy.",
+          "pid": "20"
+        }
+      ],
+      "name": "p:How do we get there?",
+      "pid": "19",
+      "position": {
+        "x": "1329",
+        "y": "1056"
+      }
+    },
+    {
+      "text": "Wiggly::It's a little more involved than it sounds.  We'll need to go up to the elevator shed on the roof to turn the lifts on.\n\nWiggly::Before we turn on those machines, that elevator isn't going anywhere.\n\n[[p:Alright.  How do we get to the elevator shed?]]\n[[Can you go do it?  I can just wait in the elevator cabin.  It'll be faster that way.]]",
+      "links": [
+        {
+          "name": "p:Alright.  How do we get to the elevator shed?",
+          "link": "p:Alright.  How do we get to the elevator shed?",
+          "pid": "21"
+        },
+        {
+          "name": "Can you go do it?  I can just wait in the elevator cabin.  It'll be faster that way.",
+          "link": "Can you go do it?  I can just wait in the elevator cabin.  It'll be faster that way.",
+          "pid": "23"
+        }
+      ],
+      "name": "p:We can just take the elevator?  That sounds really easy.",
+      "pid": "20",
+      "position": {
+        "x": "1329",
+        "y": "1206"
+      }
+    },
+    {
+      "text": "Wiggly::There's a stairwell leading up at the end of the hall.  That will get us onto the roof.\n\nWiggly::We'll have to navigate the roof walks to get across to the elevator shed, but that shouldn't be too hard.\n\nWiggly::Once we get that going, we can come on back down and take the elevator to the children's ward.\n\n[[p:Alright then.  Let's head up the stairs and check out the roof.]]",
+      "links": [
+        {
+          "name": "p:Alright then.  Let's head up the stairs and check out the roof.",
+          "link": "p:Alright then.  Let's head up the stairs and check out the roof.",
+          "pid": "22"
+        }
+      ],
+      "name": "p:Alright.  How do we get to the elevator shed?",
+      "pid": "21",
+      "position": {
+        "x": "1329",
+        "y": "1356"
+      }
+    },
+    {
+      "text": "",
+      "name": "p:Alright then.  Let's head up the stairs and check out the roof.",
+      "pid": "22",
+      "position": {
+        "x": "1329",
+        "y": "1506"
+      }
+    },
+    {
+      "text": "Wiggly::I might need a little help getting some of the levers in position.  I'm a little frail these days.\n\nJasper::He does look very scrawny, underneath his impressive coat.\n\nWiggly::Besides, we'll need to go down together anyway.  It's a very dangerous area.\n\n[[Dangerous?  What kind of dangerous?]]",
+      "links": [
+        {
+          "name": "Dangerous?  What kind of dangerous?",
+          "link": "Dangerous?  What kind of dangerous?",
+          "pid": "24"
+        }
+      ],
+      "name": "Can you go do it?  I can just wait in the elevator cabin.  It'll be faster that way.",
+      "pid": "23",
+      "position": {
+        "x": "1187",
+        "y": "1358"
+      }
+    },
+    {
+      "text": "Wiggly::I'll explain more later, up on the roof.  I don't think we should linger in here with these fern spores too much longer.\n\n[[Fair enough.->p:We can just take the elevator?  That sounds really easy.]]",
+      "links": [
+        {
+          "name": "Fair enough.",
+          "link": "p:We can just take the elevator?  That sounds really easy.",
+          "pid": "20"
+        }
+      ],
+      "name": "Dangerous?  What kind of dangerous?",
+      "pid": "24",
+      "position": {
+        "x": "1187",
+        "y": "1508"
+      }
+    }
+  ],
+  "name": "Coma Note",
+  "startnode": "3",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "0020CD1A-55A1-42EC-A6F8-D5F37251EE44"
+}
+

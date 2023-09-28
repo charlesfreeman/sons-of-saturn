@@ -16,12 +16,14 @@ backgroundPath = "res://top_floor/custody_convo/suitcases.png"
 sliverPath = "res://top_floor/custody_convo/suitcases_sliver.png"
 nextLocation = "res://infirmary/tann_office/tann_office.tscn"
 fade_tag_dict = {
+"room_key": "res://top_floor/custody_convo/suitcase_key.png",
 "suitcases_closeup": "res://top_floor/custody_convo/suitcases_julia_closeup.png",
 "suitcases_julia": "res://top_floor/custody_convo/suitcases_julia.png",
 "suitcases_sideview": "res://top_floor/custody_convo/suitcases_sideview.png",
 "suitcases_straighton": "res://top_floor/custody_convo/suitcases_straighton.png"
 }
 fade_tag_dict_sliver = {
+"room_key": "res://top_floor/custody_convo/suitcase_key_sliver.png",
 "suitcases_closeup": "res://top_floor/custody_convo/suitcases_julia_closeup_sliver.png",
 "suitcases_julia": "res://top_floor/custody_convo/suitcases_julia_sliver.png",
 "suitcases_sideview": "res://top_floor/custody_convo/suitcases_sideview_sliver.png",

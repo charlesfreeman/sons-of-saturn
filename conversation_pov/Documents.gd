@@ -21,3 +21,6 @@ func _on_Convo_tag(tag):
 			# of a document.  
 			self.texture = load(docs[index-1])
 			$PageFlip.play()
+	# mechanism to hide documents if no longer needed in convo
+	elif tag == "end_documents":
+		self.visible = false

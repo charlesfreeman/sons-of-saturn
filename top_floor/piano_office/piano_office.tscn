@@ -21,6 +21,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_down = "res://top_floor/piano_near_door/piano_near_door.tscn"
 position = Vector2( 1800, 430 )
 rotation = -63
 song = "sewer_med_flow"
@@ -33,7 +34,9 @@ position = Vector2( 1183.55, 1922.52 )
 shape = SubResource( 1 )
 
 [node name="ClickToSearch" parent="." instance=ExtResource( 3 )]
-next_scene = ""
+next_scene = "res://top_floor/theater_convo/theater_convo.tscn"
+alt_next_scene = "res://top_floor/theater_convo_return/theater_convo_return.tscn"
+alt_req_prog_flag = "theater_convo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
 position = Vector2( 2576.15, 1440.03 )

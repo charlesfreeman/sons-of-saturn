@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://top_floor/elevator_door/elevator_door.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 987.013, 174.906 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 476.378, 512.299 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_down = "res://top_floor/blue_hallway/blue_hall.tscn"
+position = Vector2( 1800, 430 )
+rotation = -63
+song = "sewer_med_flow"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1448.78, 1969.86 )
+shape = SubResource( 1 )
+
+[node name="PopUp" parent="." instance=ExtResource( 3 )]
+popup_text = [ "Amelie,guilty::Does this elevator still work?  It looks like it's in decent shape.", "Wiggly,thinking::Yes, actually.  You have to throw a few switches up in the elevator machine room on the roof, but you can get this cabin moving.", "Wiggly,skeptical::But, it doesn't take you anywhere you'd want to go..." ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
+position = Vector2( 1367.82, 1124.56 )
+shape = SubResource( 2 )

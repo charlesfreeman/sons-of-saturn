@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://top_floor/nurses_quarters/central_nurses_quarters.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 258.36, 391.495 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 173.704, 292.214 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 342.867, 375.959 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_down = "res://top_floor/elevator_door/elevator_door.tscn"
+position = Vector2( 1800, 430 )
+rotation = -63
+song = "sewer_med_flow"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 406.689, 947.407 )
+shape = SubResource( 1 )
+
+[node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+right_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2( 1458.82, 987.107 )
+shape = SubResource( 2 )
+
+[node name="ClickToEnter4" parent="." instance=ExtResource( 4 )]
+left_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter4"]
+position = Vector2( 354.255, 1762.19 )
+shape = SubResource( 4 )

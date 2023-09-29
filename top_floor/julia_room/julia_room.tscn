@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://top_floor/julia_room/julia_room.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 943.486, 158.089 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_down = "res://top_floor/elevator_door/elevator_door.tscn"
+position = Vector2( 1800, 430 )
+rotation = -63
+song = "sewer_med_flow"
+new_scene_on_ready = true
+new_scene = "res://top_floor/julia_room_convo/julia_room_convo.tscn"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1395.16, 1996.76 )
+shape = SubResource( 1 )

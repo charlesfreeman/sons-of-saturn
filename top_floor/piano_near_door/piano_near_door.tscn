@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://top_floor/piano_near_door/piano_near_doorway.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/DescPopUp.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 249.769, 653.419 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 916.713, 179.599 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 597.667, 466.83 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_up = "res://top_floor/piano_office/piano_office.tscn"
+popup_background = "res://top_floor/piano_near_door/two_pianos_angled.png"
+position = Vector2( 1800, 430 )
+rotation = -63
+song = "sewer_med_flow"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 2365.2, 795.955 )
+shape = SubResource( 1 )
+
+[node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2( 1898.92, 1968.51 )
+shape = SubResource( 2 )
+
+[node name="DescPopUp" parent="." instance=ExtResource( 3 )]
+popup_text = [ "A collection of antique pianos populate the left half of the room.  Presumably they were stored here while not in use." ]
+diff_background = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DescPopUp"]
+position = Vector2( 630.43, 1261.5 )
+shape = SubResource( 3 )

@@ -21,8 +21,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_up = "res://top_floor/cribs_cabinets/cribs_cabinets.tscn"
-scene_left = "res://top_floor/cribs_big_room/cribs_big_room.tscn"
+scene_down = "res://top_floor/end_of_hallway/end_of_hallway.tscn"
 position = Vector2( 1800, 430 )
 rotation = -63
 song = "sewer_med_flow"

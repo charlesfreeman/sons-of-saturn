@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://rooftop/breezeway/atown_rooftop_over_breezeway.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 498.096, 384.151 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_up = "res://rooftop/far_from_elevator/far_from_elevator.tscn"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1459.59, 1097.1 )
+shape = SubResource( 1 )

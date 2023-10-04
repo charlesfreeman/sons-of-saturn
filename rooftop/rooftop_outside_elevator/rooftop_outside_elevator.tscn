@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://rooftop/rooftop_outside_elevator/roof_facing_elevator_room.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 563.633, 476.758 )
 
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
@@ -13,3 +17,10 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_up = "res://rooftop/rooftop_outside_elevator/rooftop_outside_elevator.tscn"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1485.89, 1286.01 )
+shape = SubResource( 1 )

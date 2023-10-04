@@ -21,6 +21,7 @@ nextLocation = "res://infirmary/morgue/morgue.tscn"
 fade_tag_dict = {
 "morgue": "res://infirmary/morgue_convo/morgue_cropped.png"
 }
+song = "flourescent_hum"
 
 [node name="HandsInPockets" parent="." instance=ExtResource( 2 )]
 margin_left = 565.0

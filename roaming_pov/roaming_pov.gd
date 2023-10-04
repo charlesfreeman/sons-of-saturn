@@ -95,7 +95,7 @@ func _on_RightButton_pressed():
 		if pov_instance.alt_scene_right != "None":
 			_change_PoV(pov_instance.alt_scene_right, pov_instance.footstep_type_right)
 		else:
-			get_tree().call_group("nav_popups_right", "init_popup")
+			get_tree().call_group("nav_popups_right", "advance_popup")
 
 
 func _on_DownButton_pressed():
@@ -107,7 +107,7 @@ func _on_DownButton_pressed():
 		if pov_instance.alt_scene_down != "None":
 			_change_PoV(pov_instance.alt_scene_down, pov_instance.footstep_type_down)
 		else:
-			get_tree().call_group("nav_popups_down", "init_popup")
+			get_tree().call_group("nav_popups_down", "advance_popup")
 
 
 func _on_LeftButton_pressed():
@@ -119,7 +119,7 @@ func _on_LeftButton_pressed():
 		if pov_instance.alt_scene_left != "None":
 			_change_PoV(pov_instance.alt_scene_left, pov_instance.footstep_type_left)
 		else:
-			get_tree().call_group("nav_popups_left", "init_popup")
+			get_tree().call_group("nav_popups_left", "advance_popup")
 
 
 func _change_PoV(scene_path, foot_type):

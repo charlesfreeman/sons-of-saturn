@@ -41,15 +41,15 @@ margin_top = 507.0
 margin_right = 2880.0
 margin_bottom = 635.0
 mouse_filter = 2
-custom_constants/separation = 150
+custom_constants/separation = 200
 
 [node name="Control" type="Control" parent="VBoxContainer/LabelContainer"]
 margin_bottom = 128.0
 mouse_filter = 2
 
 [node name="Label" type="Label" parent="VBoxContainer/LabelContainer"]
-margin_left = 150.0
-margin_right = 2730.0
+margin_left = 200.0
+margin_right = 2680.0
 margin_bottom = 128.0
 size_flags_horizontal = 3
 size_flags_vertical = 3

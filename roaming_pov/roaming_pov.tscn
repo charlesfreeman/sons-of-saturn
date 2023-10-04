@@ -6,15 +6,15 @@
 [ext_resource path="res://roaming_pov/images/arrow_purple_up.png" type="Texture" id=4]
 [ext_resource path="res://roaming_pov/images/arrow_grey_right.png" type="Texture" id=5]
 [ext_resource path="res://roaming_pov/images/arrow_purple_down.png" type="Texture" id=6]
-[ext_resource path="res://roaming_pov/images/arrow_blue_down.png" type="Texture" id=7]
+[ext_resource path="res://images/sg_arrow_pink_down.png" type="Texture" id=7]
 [ext_resource path="res://roaming_pov/images/arrow_purple_right.png" type="Texture" id=8]
 [ext_resource path="res://roaming_pov/images/arrow_purple_left.png" type="Texture" id=9]
-[ext_resource path="res://roaming_pov/images/arrow_blue_left.png" type="Texture" id=10]
-[ext_resource path="res://roaming_pov/images/crossroads.png" type="Texture" id=11]
+[ext_resource path="res://images/sg_arrow_pink_up.png" type="Texture" id=10]
+[ext_resource path="res://images/new_crossroad.png" type="Texture" id=11]
 [ext_resource path="res://roaming_pov/images/arrow_grey_down.png" type="Texture" id=12]
 [ext_resource path="res://roaming_pov/images/arrow_grey_up.png" type="Texture" id=13]
-[ext_resource path="res://roaming_pov/images/arrow_blue_up.png" type="Texture" id=14]
-[ext_resource path="res://roaming_pov/images/arrow_blue_right.png" type="Texture" id=15]
+[ext_resource path="res://images/sg_arrow_pink_right.png" type="Texture" id=14]
+[ext_resource path="res://images/sg_arrow_pink_left.png" type="Texture" id=15]
 [ext_resource path="res://roaming_pov/TransitionScreen.tscn" type="PackedScene" id=16]
 [ext_resource path="res://roaming_pov/maps/sewer_map.png" type="Texture" id=17]
 [ext_resource path="res://roaming_pov/PartyMember.tscn" type="PackedScene" id=18]
@@ -28,7 +28,7 @@
 [ext_resource path="res://roaming_pov/sounds/tile_footsteps_4.wav" type="AudioStream" id=26]
 [ext_resource path="res://roaming_pov/InvSlot.tscn" type="PackedScene" id=27]
 [ext_resource path="res://roaming_pov/Inventory.gd" type="Script" id=28]
-[ext_resource path="res://roaming_pov/images/map_boundary.png" type="Texture" id=29]
+[ext_resource path="res://images/new_map_border.png" type="Texture" id=29]
 [ext_resource path="res://roaming_pov/sounds/footsteps_wet_1.wav" type="AudioStream" id=30]
 [ext_resource path="res://roaming_pov/sounds/footsteps_wet_3.wav" type="AudioStream" id=31]
 [ext_resource path="res://roaming_pov/images/saving_icon_trimmed.png" type="Texture" id=32]
@@ -200,93 +200,93 @@ margin_bottom = 250.0
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
 margin_top = 1040.0
 margin_right = 941.0
-margin_bottom = 1863.0
+margin_bottom = 1806.0
 hint_tooltip = "Show on hover"
 size_flags_horizontal = 3
 size_flags_vertical = 0
 
 [node name="Placeholder" type="Control" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
-margin_right = 55.0
-margin_bottom = 823.0
+margin_right = 83.0
+margin_bottom = 766.0
 size_flags_horizontal = 3
 
 [node name="GridContainer" type="GridContainer" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
-margin_left = 59.0
-margin_right = 882.0
-margin_bottom = 823.0
+margin_left = 87.0
+margin_right = 854.0
+margin_bottom = 766.0
 columns = 3
 
 [node name="Placeholder" type="Control" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_right = 256.0
-margin_bottom = 256.0
+margin_right = 228.0
+margin_bottom = 228.0
 
 [node name="UpButton" type="TextureButton" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_left = 260.0
-margin_right = 563.0
-margin_bottom = 256.0
+margin_left = 232.0
+margin_right = 535.0
+margin_bottom = 228.0
 mouse_filter = 1
-texture_normal = ExtResource( 14 )
+texture_normal = ExtResource( 10 )
 texture_hover = ExtResource( 4 )
 texture_disabled = ExtResource( 13 )
 
 [node name="Placeholder2" type="Control" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_left = 567.0
-margin_right = 823.0
-margin_bottom = 256.0
+margin_left = 539.0
+margin_right = 767.0
+margin_bottom = 228.0
 
 [node name="LeftButton" type="TextureButton" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_top = 260.0
-margin_right = 256.0
-margin_bottom = 563.0
-texture_normal = ExtResource( 10 )
+margin_top = 232.0
+margin_right = 228.0
+margin_bottom = 535.0
+texture_normal = ExtResource( 15 )
 texture_hover = ExtResource( 9 )
 texture_disabled = ExtResource( 3 )
 
 [node name="Placeholder3" type="TextureRect" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_left = 260.0
-margin_top = 260.0
-margin_right = 563.0
-margin_bottom = 563.0
+margin_left = 232.0
+margin_top = 232.0
+margin_right = 535.0
+margin_bottom = 535.0
 texture = ExtResource( 11 )
 expand = true
 
 [node name="RightButton" type="TextureButton" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_left = 567.0
-margin_top = 260.0
-margin_right = 823.0
-margin_bottom = 563.0
-texture_normal = ExtResource( 15 )
+margin_left = 539.0
+margin_top = 232.0
+margin_right = 767.0
+margin_bottom = 535.0
+texture_normal = ExtResource( 14 )
 texture_hover = ExtResource( 8 )
 texture_disabled = ExtResource( 5 )
 
 [node name="Placeholder4" type="Control" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_top = 567.0
-margin_right = 256.0
-margin_bottom = 823.0
+margin_top = 539.0
+margin_right = 228.0
+margin_bottom = 766.0
 
 [node name="DownButton" type="TextureButton" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_left = 260.0
-margin_top = 567.0
-margin_right = 563.0
-margin_bottom = 823.0
+margin_left = 232.0
+margin_top = 539.0
+margin_right = 535.0
+margin_bottom = 766.0
 texture_normal = ExtResource( 7 )
 texture_hover = ExtResource( 6 )
 texture_disabled = ExtResource( 12 )
 
 [node name="Placeholder5" type="Control" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_left = 567.0
-margin_top = 567.0
-margin_right = 823.0
-margin_bottom = 823.0
+margin_left = 539.0
+margin_top = 539.0
+margin_right = 767.0
+margin_bottom = 766.0
 
 [node name="Placeholder2" type="Control" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
-margin_left = 886.0
+margin_left = 858.0
 margin_right = 941.0
-margin_bottom = 823.0
+margin_bottom = 766.0
 size_flags_horizontal = 3
 
 [node name="PartyContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
-margin_top = 1893.0
+margin_top = 1836.0
 margin_right = 941.0
 margin_bottom = 2130.0
 size_flags_horizontal = 3
@@ -295,12 +295,12 @@ custom_constants/separation = 120
 script = ExtResource( 21 )
 
 [node name="Control" type="Control" parent="HBoxContainer/VBoxContainer/PartyContainer"]
-margin_bottom = 237.0
+margin_bottom = 294.0
 
 [node name="Amelie" parent="HBoxContainer/VBoxContainer/PartyContainer" instance=ExtResource( 18 )]
 margin_left = 120.0
 margin_right = 450.0
-margin_bottom = 237.0
+margin_bottom = 294.0
 rect_min_size = Vector2( 330, 0 )
 
 [node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer"]

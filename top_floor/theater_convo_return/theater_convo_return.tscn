@@ -15,7 +15,7 @@ scriptPath = "res://top_floor/theater_convo_return/theater_exchange_return_convo
 backgroundPath = "res://top_floor/theater_convo/piano_office_2300x2160.png"
 sliverPath = "res://top_floor/theater_convo/piano_office_sliver.png"
 nextLocation = "res://infirmary/tann_office/tann_office.tscn"
-song = "soft_wind"
+song = "morgue_ambient"
 
 [node name="Documents" parent="." instance=ExtResource( 1 )]
 margin_left = 140.091

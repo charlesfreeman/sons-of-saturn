@@ -24,6 +24,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://top_floor/lobby/lobby.tscn"
+scene_right = "res://top_floor/colorful_bay_windows/colorful_bay_windows.tscn"
+scene_down = "res://top_floor/blue_hallway/blue_hall.tscn"
 position = Vector2( 1800, 430 )
 rotation = -63
 song = "sewer_med_flow"

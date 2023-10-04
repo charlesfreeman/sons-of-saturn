@@ -20,6 +20,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_up = "res://rooftop/looking_left/looking_left.tscn"
 scene_down = "res://top_floor/stairs_to_roof_base/stairs_to_roof_base.tscn"
 position = Vector2( 1800, 430 )
 rotation = -63

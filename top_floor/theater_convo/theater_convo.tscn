@@ -15,6 +15,7 @@ scriptPath = "res://top_floor/theater_convo/theater_exchange_convo.json"
 backgroundPath = "res://top_floor/theater_convo/piano_office_2300x2160.png"
 sliverPath = "res://top_floor/theater_convo/piano_office_sliver.png"
 nextLocation = "res://infirmary/tann_office/tann_office.tscn"
+prog_flag = "theater_convo"
 song = "morgue_ambient"
 
 [node name="Documents" parent="." instance=ExtResource( 2 )]

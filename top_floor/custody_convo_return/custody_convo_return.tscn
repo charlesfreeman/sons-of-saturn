@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
+[ext_resource path="res://conversation_pov/Documents.tscn" type="PackedScene" id=2]
+
+[node name="custody_convo_return" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Convo" parent="." instance=ExtResource( 1 )]
+scriptPath = "res://top_floor/custody_convo_return/custody_convo_return.json"
+backgroundPath = "res://top_floor/custody_convo/suitcases.png"
+sliverPath = "res://top_floor/custody_convo/suitcases_sliver.png"
+nextLocation = "res://top_floor/suitcases/suitcases.tscn"
+fade_tag_dict = {
+"room_key": "res://top_floor/custody_convo/suitcase_key.png",
+"suitcases_closeup": "res://top_floor/custody_convo/suitcases_julia_closeup.png",
+"suitcases_julia": "res://top_floor/custody_convo/suitcases_julia.png",
+"suitcases_sideview": "res://top_floor/custody_convo/suitcases_sideview.png",
+"suitcases_straighton": "res://top_floor/custody_convo/suitcases_straighton.png"
+}
+fade_tag_dict_sliver = {
+"room_key": "res://top_floor/custody_convo/suitcase_key_sliver.png",
+"suitcases_closeup": "res://top_floor/custody_convo/suitcases_julia_closeup_sliver.png",
+"suitcases_julia": "res://top_floor/custody_convo/suitcases_julia_sliver.png",
+"suitcases_sideview": "res://top_floor/custody_convo/suitcases_sideview_sliver.png",
+"suitcases_straighton": "res://top_floor/custody_convo/suitcases_straighton_sliver.png"
+}
+song = "crib_wind"
+
+[node name="Documents" parent="." instance=ExtResource( 2 )]
+margin_left = 140.091
+margin_top = -65.6375
+margin_right = 1776.09
+margin_bottom = 2209.36
+docs = [ "res://top_floor/custody_convo/custody_page_1.png", "res://top_floor/custody_convo/custody_page_2.png" ]

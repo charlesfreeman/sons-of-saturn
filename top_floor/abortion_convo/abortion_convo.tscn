@@ -21,7 +21,8 @@ fade_tag_dict = {
 fade_tag_dict_sliver = {
 "loose_note": "res://top_floor/abortion_convo/abortion_medicine_cabinet_note_sliver.png"
 }
-song = "soft_wind"
+prog_flag = "abortion_convo"
+song = "crib_wind"
 
 [node name="Documents" parent="." instance=ExtResource( 2 )]
 margin_left = 221.0

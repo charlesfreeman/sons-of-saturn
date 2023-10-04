@@ -23,7 +23,8 @@
         "y": "670"
       },
       "tags": [
-        "page1"
+        "page1",
+        "aconfused"
       ]
     },
     {
@@ -65,23 +66,31 @@
       ]
     },
     {
-      "text": "Wiggly::Not adoption, he was handed over the SATURN Interior Ministry.\n\nWiggly::They take in indigent children, teach them vocational skills, provide some employment.\n\nWiggly::Really kind of them, to look after kids in Angela's position.\n\n[[p:Just like they were \"kind\" to you, right?]]",
+      "text": "Wiggly,surprised::Not adoption, he was handed over the SATURN Interior Ministry.\n\nWiggly,looking_to_side::They take in indigent children, teach them vocational skills, provide some employment.\n\nWiggly,surprised::Really kind of them, to look after kids in Angela's position.\n\n[[p:Just like they were \"kind\" to you, right?]]\n[[p:Yes, very \"kind\" of them.]]",
       "links": [
         {
           "name": "p:Just like they were \"kind\" to you, right?",
           "link": "p:Just like they were \"kind\" to you, right?",
           "pid": "6"
+        },
+        {
+          "name": "p:Yes, very \"kind\" of them.",
+          "link": "p:Yes, very \"kind\" of them.",
+          "pid": "8"
         }
       ],
       "name": "p:So, Julia put Angela up for adoption?",
       "pid": "4",
       "position": {
-        "x": "662",
-        "y": "785"
-      }
+        "x": "629",
+        "y": "796"
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
-      "text": "Wiggly::I, uh, would like to think her feelings were more complicated.  But perhaps.\n\nWiggly::He would have been well off in the care of the SATURN Interior Ministry.\n\nWiggly::They take in indigent children, teach them vocational skills, provide some employment, eventually.\n\nWiggly::Really kind of them, to look after kids in Angela's position.\n\n[[p:Just like they were \"kind\" to you, right?]]\n[[p:Yes, very \"kind\" of them.]]",
+      "text": "Wiggly,sad::I, uh, would like to think her feelings were more complicated.  But perhaps.\n\nWiggly,skeptical::He would have been well off in the care of the SATURN Interior Ministry.\n\nWiggly::They take in indigent children, teach them vocational skills, provide some employment, eventually.\n\nWiggly,half_smile::Really kind of them, to look after kids in Angela's position.\n\n[[p:Just like they were \"kind\" to you, right?]]\n[[p:Yes, very \"kind\" of them.]]",
       "links": [
         {
           "name": "p:Just like they were \"kind\" to you, right?",
@@ -99,10 +108,13 @@
       "position": {
         "x": "812",
         "y": "785"
-      }
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
-      "text": "Wiggly::Yeah, exactly!  Such good people.\n\nWiggly::But I was in a totally different program than the one Thomas got put into.  He probably just got put in charge of telegrammatic upkeep or something, closer to the core.\n\nJasper::Wiggly really doesn't seem to see anything wrong with how he was treated.\n\nJasper::He's a grown man with the psychological profile of a puppy.\n\nWiggly::Hey, what's that on the back of the notice?  Looks like a note of some sort\n\n[[p:(Action) Check the back of the notice.->Page 2]]",
+      "text": "Wiggly,laughing::Yeah, exactly!  Such good people.\n\nWiggly,surprised::But I was in a totally different program than the one Thomas got put into.  He probably just got put in charge of telegrammatic upkeep or something, closer to the core.\n\nJasper,head_tilted::Wiggly really doesn't seem to see anything wrong with how he was treated.\n\nJasper,thinking::He's a grown man with the psychological profile of a puppy.\n\nWiggly,thinking::Hey, what's that on the back of the notice?  Looks like a note of some sort\n\n[[p:(Action) Check the back of the notice.->Page 2]]",
       "links": [
         {
           "name": "p:(Action) Check the back of the notice.",
@@ -118,7 +130,7 @@
       }
     },
     {
-      "text": "Note::Postscript:\n\nNote::I don't often include personal notes with these notices but these are unique circumstances.  Most women who put a child in our program don't live two floors above in the same building.  \n\nNote::Some of my colleagues have expressed concerns that living in such close proximity to your former child might cause psychological duress.  Be informed that while we permit visitation, we don't encourage it, and two days prior notice is required in all cases.\n\nNote::Rosalind, Program Director.\n\nJasper::There it is again.\n\nWiggly::That's your Mom again, right?  So I guess Angela wasn't sent to the Interior.\n\n[[p:No, he was sent downstairs.  To Mom.]]\n[[p:Angela ended up in Mom's program.  Do you think that's why Julia clung to me?]]  ",
+      "text": "Note::Postscript:\n\nNote::I don't often include personal notes with these notices but these are unique circumstances.  Most women who put a child in our program don't live two floors above in the same building.  \n\nNote::Some of my colleagues have expressed concerns that living in such close proximity to your former child might cause psychological duress.  Be informed that while we permit visitation, we don't encourage it, and two days prior notice is required in all cases.\n\nNote::Rosalind, Program Director.\n\nJasper,sad::There it is again.\n\nWiggly,surprised::That's your Mom again, right?  So I guess Angela wasn't sent to the Interior.\n\n[[p:No, he was sent downstairs.  To Mom.]]\n[[p:Angela ended up in Mom's program.  Do you think that's why Julia clung to me?]]  ",
       "links": [
         {
           "name": "p:No, he was sent downstairs.  To Mom.",
@@ -138,11 +150,12 @@
         "y": "1092"
       },
       "tags": [
-        "page2"
+        "page2",
+        "auncertain"
       ]
     },
     {
-      "text": "Wiggly nods in agreement.  He seems to have not picked up on the sarcastic intonations.\n\nJasper::He takes everything at face value, doesn't he?\n\nWiggly::Hey, what's that on the back of the notice?  Looks like a note of some sort.\n\n[[p:(Action) Check the back of the notice.->Page 2]]",
+      "text": "Wiggly nods in agreement.  He seems to have not picked up on the sarcastic intonations.\n\nJasper,head_tilted::He takes everything at face value, doesn't he?\n\nWiggly,thinking::Hey, what's that on the back of the notice?  Looks like a note of some sort.\n\n[[p:(Action) Check the back of the notice.->Page 2]]",
       "links": [
         {
           "name": "p:(Action) Check the back of the notice.",
@@ -158,7 +171,7 @@
       }
     },
     {
-      "text": "Wiggly::That's...pretty unusual, I think. \n\nWiggly glances into the suitcase and begins scanning the contents.  His eyes grow fixed upon something in the interior.\n\nWiggly::Hey, look, there appears to be an old room key in here.\n\n[[C->room key]]",
+      "text": "Wiggly,thinking::That's...pretty unusual, I think. \n\nWiggly glances into the suitcase and begins scanning the contents.  His eyes grow fixed upon something in the interior.\n\nWiggly,looking_to_side::Hey, look, there appears to be an old room key in here.\n\n[[C->room key]]",
       "links": [
         {
           "name": "C",
@@ -169,12 +182,12 @@
       "name": "p:No, he was sent downstairs.  To Mom.",
       "pid": "9",
       "position": {
-        "x": "653",
-        "y": "1254"
+        "x": "652",
+        "y": "1255"
       }
     },
     {
-      "text": "Wiggly::I'm...not sure.  But I don't think it's a coincidence.  \n\nWiggly glances into the suitcase and begins scanning the contents.  His eyes grow fixed upon something in the interior.\n\nWiggly::Hey, look, there appears to be an old room key in here.\n\n[[C->room key]]\n",
+      "text": "Wiggly,thinking::I'm...not sure.  But I don't think it's a coincidence.  \n\nWiggly glances into the suitcase and begins scanning the contents.  His eyes grow fixed upon something in the interior.\n\nWiggly,looking_to_side::Hey, look, there appears to be an old room key in here.\n\n[[C->room key]]\n",
       "links": [
         {
           "name": "C",
@@ -185,12 +198,12 @@
       "name": "p:Angela ended up in Mom's program.  Do you think that's why Julia clung to me?",
       "pid": "10",
       "position": {
-        "x": "803",
-        "y": "1254"
+        "x": "802",
+        "y": "1240"
       }
     },
     {
-      "text": "You enter a room lined with dozens of decrepit suitcases.  The air is stagnant and full of particulate - you feel as though you are the first to breathe this air in decades.\n\nThe suitcases look like they haven't been disturbed in a very long time.  You are worried even the slightest touch might cause them to disintegrate. \n\nWiggly::This room was a communal storage area for patients and nurses.  Hardly anyone had time to retrieve their belongings before evacuating, so all of their stuff is still here.\n\nWiggly::We should look through these suitcases.  There's a good chance one of them belonged to Julia.\n\n[[I feel like I should be doing this with gloves, and an archeologist's brush.]]\n[[p:(Action) Search through the suitcases.]]",
+      "text": "You enter a room lined with dozens of decrepit suitcases.  The air is stagnant and full of particulate - you feel as though you are the first to breathe this air in decades.\n\nThe suitcases look like they haven't been disturbed in a very long time.  You are worried even the slightest touch might cause them to disintegrate. \n\nWiggly::This room was a communal storage area for patients and nurses.  Hardly anyone had time to retrieve their belongings before evacuating, so all of their stuff is still here.\n\nWiggly,looking_to_side::We should look through these suitcases.  There's a good chance one of them belonged to Julia.\n\n[[I feel like I should be doing this with gloves, and an archeologist's brush.]]\n[[p:(Action) Search through the suitcases.]]",
       "links": [
         {
           "name": "I feel like I should be doing this with gloves, and an archeologist's brush.",
@@ -208,7 +221,10 @@
       "position": {
         "x": "724",
         "y": "56"
-      }
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
       "text": "Wiggly::It'll be alright.  Just be gentle handling them.  I sometimes get clients who only want to come back to retrieve artifacts from rooms like these.\n\n[[C->Start]]",
@@ -286,7 +302,8 @@
       },
       "tags": [
         "room_key",
-        "end_documents"
+        "end_documents",
+        "ashocked"
       ]
     },
     {
@@ -306,7 +323,7 @@
       }
     },
     {
-      "text": "Wiggly::It's gotta be.  I took a look at the lock plug on the door when we passed it earlier.  It's a perfect match for this key.\n\n[[You could tell that, from memory, with just a glance?]]\n[[p:I guess it's time to go check out Julia's room then.]]",
+      "text": "Wiggly,thinking::I don't know that for sure, but given that she had it buried in her suitcase, I think it's likely.\n\nWiggly::But here's something I do know for sure: this key opens the locked room we passed in the hallway back around the corner.  \n\nWiggly,surprised::I took a look at the lock plug on the door when we passed it earlier.  It's a perfect match for this key.  So there's a good chance that that's Julia's room.\n\n[[You could tell that, from memory, with just a glance?]]\n[[p:I guess it's time to go check out Julia's room then.]]",
       "links": [
         {
           "name": "You could tell that, from memory, with just a glance?",
@@ -327,7 +344,7 @@
       }
     },
     {
-      "text": "Wiggly::I spent fifteen years working with the most convoluted system of keys and locks on earth, Miss.\n\nJasper::At least he picked up a few cool tricks from his time here.\n\n[[C->p:You think this is the key to Julia's room?]]",
+      "text": "Wiggly::I spent fifteen years working with the most convoluted system of keys and locks on earth, Miss.\n\nJasper,sad::At least he picked up a few cool tricks from his time here.\n\n[[C->p:You think this is the key to Julia's room?]]",
       "links": [
         {
           "name": "C",
@@ -343,7 +360,7 @@
       }
     },
     {
-      "text": "Wiggly::I agree.  Let's take that key and see if we can get the door open.",
+      "text": "Wiggly::I agree.  Let's get that door open and take a look around.",
       "name": "p:I guess it's time to go check out Julia's room then.",
       "pid": "19",
       "position": {

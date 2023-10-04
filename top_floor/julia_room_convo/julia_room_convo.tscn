@@ -27,7 +27,8 @@ fade_tag_dict_sliver = {
 "fern_closeup": "res://top_floor/julia_room_convo/julia_room_fern_closeup_sliver.png",
 "head_in_ferns": "res://top_floor/julia_room_convo/julia_room_head_in_ferns_sliver.png"
 }
-song = "soft_wind"
+prog_flag = "julia_room_convo"
+song = "sly_sewer_intimate"
 
 [node name="Documents" parent="." instance=ExtResource( 2 )]
 margin_left = 140.091

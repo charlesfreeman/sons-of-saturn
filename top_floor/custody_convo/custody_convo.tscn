@@ -14,7 +14,7 @@ __meta__ = {
 scriptPath = "res://top_floor/custody_convo/custody_convo.json"
 backgroundPath = "res://top_floor/custody_convo/suitcases.png"
 sliverPath = "res://top_floor/custody_convo/suitcases_sliver.png"
-nextLocation = "res://infirmary/tann_office/tann_office.tscn"
+nextLocation = "res://top_floor/suitcases/suitcases.tscn"
 fade_tag_dict = {
 "room_key": "res://top_floor/custody_convo/suitcase_key.png",
 "suitcases_closeup": "res://top_floor/custody_convo/suitcases_julia_closeup.png",
@@ -29,7 +29,9 @@ fade_tag_dict_sliver = {
 "suitcases_sideview": "res://top_floor/custody_convo/suitcases_sideview_sliver.png",
 "suitcases_straighton": "res://top_floor/custody_convo/suitcases_straighton_sliver.png"
 }
-song = "soft_wind"
+prog_flag = "custody_convo"
+song = "crib_wind"
+new_item = "Key"
 
 [node name="Documents" parent="." instance=ExtResource( 2 )]
 margin_left = 140.091

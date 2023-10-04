@@ -24,7 +24,8 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_up = "res://top_floor/piano_office/piano_office.tscn"
+scene_down = "res://top_floor/door_to_lobby/door_to_lobby.tscn"
+scene_left = "res://top_floor/yellow_door_hallway/yellow_door_hallway.tscn"
 popup_background = "res://top_floor/piano_near_door/two_pianos_angled.png"
 position = Vector2( 1800, 430 )
 rotation = -63
@@ -45,10 +46,9 @@ position = Vector2( 1435.4, 1968.51 )
 shape = SubResource( 2 )
 
 [node name="DescPopUp" parent="." instance=ExtResource( 3 )]
-visible = false
-popup_text = [ "A collection of antique pianos populate the left half of the room.  Presumably they were stored here while not in use." ]
+popup_text = [ "This dayroom appears to have been set aside for storage at some point.  Documents and other worn notes are strewn about the floor.", "None of them appear to have anything to do with Julia, or your mom." ]
 diff_background = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DescPopUp"]
-position = Vector2( 2440.07, 1267.85 )
+position = Vector2( 1741.61, 1134.51 )
 shape = SubResource( 3 )

@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
+[ext_resource path="res://conversation_pov/Documents.tscn" type="PackedScene" id=2]
+
+[node name="abortion_convo_return" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Convo" parent="." instance=ExtResource( 1 )]
+scriptPath = "res://top_floor/abortion_convo_return/abortion_convo_return.json"
+backgroundPath = "res://top_floor/abortion_convo/abortion_medicine_cabinet.png"
+sliverPath = "res://top_floor/abortion_convo/abortion_medicine_cabinet_sliver.png"
+nextLocation = "res://infirmary/tann_office/tann_office.tscn"
+fade_tag_dict = {
+"loose_note": "res://top_floor/abortion_convo/abortion_medicine_cabinet_note.png"
+}
+fade_tag_dict_sliver = {
+"loose_note": "res://top_floor/abortion_convo/abortion_medicine_cabinet_note_sliver.png"
+}
+song = "crib_wind"
+
+[node name="Documents" parent="." instance=ExtResource( 2 )]
+margin_left = 221.0
+margin_top = 289.0
+margin_right = 2136.0
+margin_bottom = 1886.0
+docs = [ "res://top_floor/abortion_convo/abortion_receipt.png", "res://top_floor/abortion_convo/abortion_receipt_backside.png" ]

@@ -1,11 +1,16 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://top_floor/julia_door/julia_door.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=3]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sounds/effects/locked_door.wav" type="AudioStream" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 337.841, 687.773 )
+extents = Vector2( 351.013, 677.082 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 982.382, 169.852 )
 
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
@@ -17,14 +22,28 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_down = "res://top_floor/elevator_door/elevator_door.tscn"
-position = Vector2( 1800, 430 )
-rotation = -63
-song = "sewer_med_flow"
+scene_up = "res://top_floor/julia_room/julia_room.tscn"
+req_flag_up = "custody_convo"
+position = Vector2( 1506, 600 )
+footstep_type_up = "DoorUnlock"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1478.88, 1136.78 )
+position = Vector2( 1475.77, 1065.51 )
 shape = SubResource( 1 )
+
+[node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2( 1458.13, 1979.57 )
+shape = SubResource( 2 )
+
+[node name="PopUp" parent="." instance=ExtResource( 3 )]
+popup_text = [ "Amelie,confused::Huh.  Every other door in this hallway is wide open or has disintegrated.  But this one is locked.", "Wiggly,thinking::I don't think I remember there being any locked rooms on this floor.  It's possible I'm misremembering though...", "Jasper,twisted::We have to find a way in here.  You know there's some incredible stuff packed back there.", "Jasper,surprised::Goodies.  Dubloons.  Fun old medical stuff.  Recreational medications.  Juicy letters exchanged between forbidden lovers.", "Jasper,head_tilted::Let's keep our eyes out for keys moving forward." ]
+nav_popup_up = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="PopUp"]
+stream = ExtResource( 5 )

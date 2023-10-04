@@ -26,7 +26,10 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_down = "res://top_floor/elevator_door/elevator_door.tscn"
+scene_up = "res://top_floor/nurses_quarters/nurses_quarters.tscn"
+scene_right = "res://top_floor/julia_door/julia_door.tscn"
+scene_down = "res://top_floor/lobby_w_shelves/lobby_w_shelves.tscn"
+scene_left = "res://top_floor/blue_nurse_room/blue_nurse_room.tscn"
 position = Vector2( 1800, 430 )
 rotation = -63
 song = "sewer_med_flow"
@@ -35,14 +38,14 @@ song = "sewer_med_flow"
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 2081.13, 1016.28 )
+position = Vector2( 1462.23, 1029.73 )
 shape = SubResource( 1 )
 
 [node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
 right_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 2693.5, 1154.19 )
+position = Vector2( 2145.24, 1107.1 )
 shape = SubResource( 2 )
 
 [node name="ClickToEnter3" parent="." instance=ExtResource( 4 )]
@@ -56,5 +59,5 @@ shape = SubResource( 3 )
 left_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter4"]
-position = Vector2( 727.487, 1097.01 )
+position = Vector2( 539.126, 1144.1 )
 shape = SubResource( 4 )

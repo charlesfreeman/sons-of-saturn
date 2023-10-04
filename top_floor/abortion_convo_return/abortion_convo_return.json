@@ -1,0 +1,83 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Note::Stop sending me requests for these.  You're way, way over the eight week mark.  If you want to get rid of your kid so bad, send it to Rosalind.\n\n[[p:(Action) Leave.]]",
+      "links": [
+        {
+          "name": "p:(Action) Leave.",
+          "link": "p:(Action) Leave.",
+          "pid": "4"
+        }
+      ],
+      "name": "page2",
+      "pid": "1",
+      "position": {
+        "x": "1208",
+        "y": "791"
+      },
+      "tags": [
+        "page2"
+      ]
+    },
+    {
+      "text": "Once again, you pick up the note.  It appears to be a leathery pharmaceutical request receipt, issued to Julia.  The texture of the page is harsh on your fingertips, as if the paper has soaked in decades of chemical runoff.\n\nShe appears to have requested a list of medicinal substances, shown on the ledger below her name.\n\nAll of her requests have been declined.\n\n[[C->page2]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "page2",
+          "pid": "1"
+        }
+      ],
+      "name": "page1",
+      "pid": "2",
+      "position": {
+        "x": "1213",
+        "y": "625"
+      },
+      "tags": [
+        "page1"
+      ]
+    },
+    {
+      "text": "You return to the leathery note detailing Julia's failed attempt at securing drugs to induce an abortion.\n\n[[p:(Action) Reread the note.->page1]]\n[[p:(Action) Leave.]]",
+      "links": [
+        {
+          "name": "p:(Action) Reread the note.",
+          "link": "page1",
+          "pid": "2"
+        },
+        {
+          "name": "p:(Action) Leave.",
+          "link": "p:(Action) Leave.",
+          "pid": "4"
+        }
+      ],
+      "name": "loose note",
+      "pid": "3",
+      "position": {
+        "x": "1215",
+        "y": "469"
+      },
+      "tags": [
+        "aguilty"
+      ]
+    },
+    {
+      "text": "",
+      "name": "p:(Action) Leave.",
+      "pid": "4",
+      "position": {
+        "x": "1208",
+        "y": "941"
+      }
+    }
+  ],
+  "name": "Abortion Receipts Return",
+  "startnode": "3",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "1709E45E-DAC2-44E9-8DEC-34869D679372"
+}
+

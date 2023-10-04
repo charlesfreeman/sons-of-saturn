@@ -7,10 +7,10 @@
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 433.361, 643.174 )
+extents = Vector2( 358.753, 636.824 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 371.232, 620.953 )
+extents = Vector2( 434.729, 620.953 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 855.39, 185.726 )
@@ -35,14 +35,16 @@ song = "sewer_med_flow"
 diff_background = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
-position = Vector2( 683.255, 1115.75 )
+position = Vector2( 2157.95, 1017.33 )
 shape = SubResource( 1 )
 
 [node name="ClickToSearch" parent="." instance=ExtResource( 4 )]
 next_scene = "res://top_floor/abortion_convo/abortion_convo.tscn"
+alt_next_scene = "res://top_floor/abortion_convo_return/abortion_convo_return.tscn"
+alt_req_prog_flag = "abortion_convo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
-position = Vector2( 2164.52, 1052.25 )
+position = Vector2( 742.208, 1049.08 )
 shape = SubResource( 2 )
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 5 )]

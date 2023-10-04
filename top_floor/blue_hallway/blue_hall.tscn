@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://top_floor/blue_hallway/central_blue_hallway.png" type="Texture" id=2]
@@ -6,9 +6,6 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 337.841, 297.677 )
-
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 193.406, 694.58 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 1076.35, 144.634 )
@@ -26,7 +23,9 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_up = "res://top_floor/door_to_lobby/door_to_lobby.tscn"
 scene_down = "res://top_floor/elevator_door/elevator_door.tscn"
+scene_left = "res://top_floor/piano_near_door/piano_near_door.tscn"
 position = Vector2( 1800, 430 )
 rotation = -63
 song = "sewer_med_flow"
@@ -37,13 +36,6 @@ up_path = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
 position = Vector2( 2081.13, 1016.28 )
 shape = SubResource( 1 )
-
-[node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
-right_path = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 2693.5, 1154.19 )
-shape = SubResource( 2 )
 
 [node name="ClickToEnter3" parent="." instance=ExtResource( 4 )]
 down_path = true

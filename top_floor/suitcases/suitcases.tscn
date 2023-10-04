@@ -34,7 +34,9 @@ position = Vector2( 1933.69, 1922.52 )
 shape = SubResource( 1 )
 
 [node name="ClickToSearch" parent="." instance=ExtResource( 3 )]
-next_scene = "res://top_floor/custody_convo/custody_convo.tscn"
+next_scene = "custody_convo"
+alt_next_scene = "custody_convo_return"
+alt_req_prog_flag = "custody_convo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
 position = Vector2( 584.103, 1120.74 )

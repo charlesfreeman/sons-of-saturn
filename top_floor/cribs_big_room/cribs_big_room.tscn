@@ -21,7 +21,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_down = "res://top_floor/cribs_looking_right/cribs_looking_right.tscn"
+scene_down = "res://top_floor/cribs_straight_on/cribs_straight_on.tscn"
 popup_background = "res://top_floor/cribs_big_room/big_cribroom_sideview.png"
 position = Vector2( 1800, 430 )
 rotation = -63

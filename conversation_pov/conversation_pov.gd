@@ -17,6 +17,8 @@ export var mem_to_remove = ""
 export var prog_flag = "None"
 export var song = "None"
 export var soundscape = "None"
+export var new_item = "None"
+export var remove_item = "None"
 # if true, checks the value of prog_flag to see if played before.
 # you must set prog_flag to some value to use this
 export var play_only_once = false
@@ -124,6 +126,10 @@ func _ready():
 	dialogue_sys.init()
 	change_background(backgroundPath)
 	change_background_sliver(sliverPath)
+	if new_item != "None":
+		Global.add_to_inv(new_item)
+	if remove_item != "None":
+		Global.remove_from_inv(remove_item)
 
 
 func _input(event):

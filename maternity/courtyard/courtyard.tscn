@@ -1,11 +1,15 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://maternity/courtyard/courtyard_standing_in.png" type="Texture" id=2]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 804.355, 138.98 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 431.194, 390.213 )
 
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
@@ -17,7 +21,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_down = "res://maternity/stairs_down_to_greenery/stairs_down_to_greenery.tscn"
+scene_down = "res://maternity/stairs_to_top_floor/stairs_to_top_floor.tscn"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 down_path = true
@@ -25,3 +29,10 @@ down_path = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
 position = Vector2( 1439.36, 2013.42 )
 shape = SubResource( 1 )
+
+[node name="PopUp" parent="." instance=ExtResource( 4 )]
+popup_text = [ "Amelie,shocked::Woah!  This courtyard is beautiful!  I don't remember any part of the city having this many vines.", "Wiggly,neutral::This is definitely a very nice area.  They used to let the nurses smoke here while they weren't on shift.  I didn't get to see this place until after I became a Ferryman, though.", "Wiggly,looking_to_side::There are actually several courtyards like this nestled into the hospital complex.  You'll be able to see a few if you glance out the windows on the top floor.", "Amelie,uncertain::Can we stay here for a little while?  This is the first time I've felt relaxed since, well, ever. ", "Wiggly,skeptical::I cannot recommend we stay here long, Miss.  The better we resolve this situation with Julia, the better.", "Jasper,thinking::He just doesn't want us to have fun..." ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
+position = Vector2( 1409.84, 1245.47 )
+shape = SubResource( 2 )

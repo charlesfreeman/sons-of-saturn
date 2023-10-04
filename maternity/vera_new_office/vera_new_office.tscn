@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://maternity/vera_new_office/vera_new_office.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1134.99, 155.565 )
 
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
@@ -13,3 +17,12 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_down = "res://maternity/stairwell_office_hallway_return/stairwell_office_hallway_return.tscn"
+new_scene_on_ready = true
+new_scene = "res://maternity/vera_new_office_convo/vera_new_office_convo.tscn"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1556.33, 1993.86 )
+shape = SubResource( 1 )

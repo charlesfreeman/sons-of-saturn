@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=1]
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=2]
+[ext_resource path="res://maternity/stairwell_office_hallway/ladys_hallway_left_right_forward.png" type="Texture" id=3]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 300.019, 382.372 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 304.493, 621.144 )
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_left = "--- Debugging process started ---Godot Engine v3.4.2.stable.official.45eaa2daf - https://godotengine.orgOpenGL ES 3.0 Renderer: Mesa Intel(R) HD Graphics 4000 (IVB GT2)OpenGL ES Batching: ON Warning, song not in tracks list: sewer_med_flowemitting tag signal: [aguilty]--- Debugging process stopped ---Switch Scene TabSwitch Scene TabSwitch Scene TabSwitch Scene TabSwitch Scene TabSet nav_popup_rightSet nav_popup_upSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textSet popup_textRemove Node(s)Remove Node(s)Set scene_downSet scene_up"
+req_flag_right = "wiggly_reunite"
+req_flag_left = "wiggly_reunite"
+position = Vector2( 1535, 1218 )
+rotation = 90
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1432.37, 1008.27 )
+shape = SubResource( 1 )
+
+[node name="ClickToEnter3" parent="." instance=ExtResource( 4 )]
+left_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter3"]
+position = Vector2( 583.4, 1154.04 )
+shape = SubResource( 3 )
+
+[node name="PopUp2" parent="." instance=ExtResource( 1 )]
+popup_text = [ "Jasper,twisted::Julia's that way!  Probably!  What are you thinking?", "Wiggly,surprised::I recommend avoiding that area, Miss.  Let's go up the stairs on the left, quickly." ]
+nav_popup_up = true

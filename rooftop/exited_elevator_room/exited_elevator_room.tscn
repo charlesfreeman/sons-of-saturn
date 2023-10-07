@@ -1,9 +1,11 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://sounds/effects/falling_through_roof.wav" type="AudioStream" id=2]
 [ext_resource path="res://rooftop/exited_elevator_room/atown_left_elevator_room.png" type="Texture" id=3]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 597.036, 408.027 )
 
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
@@ -15,12 +17,11 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-prog_flag = "fallen_through_roof"
-new_scene_on_ready = true
-new_scene = "elevator_interior_convo"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 2 )
-autoplay = true
+scene_up = "res://rooftop/looking_at_audi/looking_at_audi.tscn"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2( 1899.69, 959.746 )
+shape = SubResource( 1 )

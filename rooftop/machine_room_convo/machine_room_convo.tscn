@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
 [ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=2]
 [ext_resource path="res://rooftop/machine_room_convo/wiggly_looking_down.png" type="Texture" id=3]
 [ext_resource path="res://rooftop/machine_room_convo/wiggly_pointing_to_fuse.png" type="Texture" id=4]
 [ext_resource path="res://rooftop/machine_room_convo/wiggly_hands_in_pockets.png" type="Texture" id=5]
+[ext_resource path="res://rooftop/machine_room_convo/wiggly_looking_at_panel.png" type="Texture" id=6]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -14,13 +15,15 @@ __meta__ = {
 }
 
 [node name="Convo" parent="." instance=ExtResource( 1 )]
+subject = "Wiggly"
 scriptPath = "res://rooftop/machine_room_convo/machine_room_convo.json"
 backgroundPath = "res://rooftop/machine_room_convo/elevator_machine_room_crop.png"
 sliverPath = "res://rooftop/machine_room_convo/elevator_room_sliver.png"
-nextLocation = "res://infirmary/morgue/morgue.tscn"
+nextLocation = "res://rooftop/exited_elevator_room/exited_elevator_room.tscn"
 fade_tag_dict = {
 "morgue": "res://infirmary/morgue_convo/morgue_cropped.png"
 }
+mem_to_remove = "Wiggly"
 song = "flourescent_hum"
 
 [node name="HandsInPockets" parent="." instance=ExtResource( 2 )]
@@ -29,7 +32,6 @@ margin_top = 671.0
 margin_right = 1188.0
 margin_bottom = 2187.0
 texture = ExtResource( 5 )
-on_start = true
 appear_tag = ""
 disappear_tag = "points"
 
@@ -59,3 +61,13 @@ margin_bottom = 2187.0
 texture = ExtResource( 3 )
 appear_tag = "resigned"
 disappear_tag = ""
+
+[node name="LookingAtPanel" parent="." instance=ExtResource( 2 )]
+margin_left = 682.163
+margin_top = 784.697
+margin_right = 1484.16
+margin_bottom = 2333.7
+texture = ExtResource( 6 )
+on_start = true
+appear_tag = ""
+disappear_tag = "points"

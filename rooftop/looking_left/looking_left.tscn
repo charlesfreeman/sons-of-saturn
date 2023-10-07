@@ -18,6 +18,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_right = "res://rooftop/breezeway/breezeway.tscn"
+song = "rooftop_wind"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 right_path = true

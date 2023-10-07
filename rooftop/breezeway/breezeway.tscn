@@ -20,6 +20,7 @@ __meta__ = {
 scene_up = "res://rooftop/far_from_elevator/far_from_elevator.tscn"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
 position = Vector2( 1459.59, 1097.1 )

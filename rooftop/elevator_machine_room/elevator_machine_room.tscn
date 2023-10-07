@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://rooftop/elevator_machine_room/elevator_machine_room.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://roaming_pov/ClickToSearch.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 679.131, 501 )
 
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
@@ -13,3 +18,13 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+song = "flourescent_hum"
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+
+[node name="ClickToSearch" parent="." instance=ExtResource( 4 )]
+next_scene = "machine_room_convo"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
+position = Vector2( 1239.13, 1411.89 )
+shape = SubResource( 1 )

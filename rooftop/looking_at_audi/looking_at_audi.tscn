@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource path="res://sounds/effects/falling_through_roof.wav" type="AudioStream" id=2]
+[ext_resource path="res://rooftop/looking_at_audi/atown_looking_at_audi.png" type="Texture" id=3]
+[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+
+[node name="PoV" type="TextureRect"]
+margin_right = 2880.0
+margin_bottom = 2160.0
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource( 3 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+prog_flag = "fallen_through_roof"
+new_scene_on_ready = true
+new_scene = "elevator_interior_convo"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+autoplay = true
+
+[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]

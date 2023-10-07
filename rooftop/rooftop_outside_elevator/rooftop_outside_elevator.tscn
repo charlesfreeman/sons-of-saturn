@@ -17,9 +17,11 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_up = "res://rooftop/rooftop_outside_elevator/rooftop_outside_elevator.tscn"
+scene_up = "res://rooftop/elevator_machine_room/elevator_machine_room.tscn"
+prog_flag = "machine_room"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
 position = Vector2( 1485.89, 1286.01 )

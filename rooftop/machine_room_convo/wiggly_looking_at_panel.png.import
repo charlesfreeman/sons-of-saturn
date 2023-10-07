@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/atown_looking_out_window.png-7c30f2a2534bf0088ed681f0a20151f5.stex"
+path="res://.import/wiggly_looking_at_panel.png-6a52a3a5c4a75eeb786b9d2a52b4b61b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rooftop/atown_looking_out_window.png"
-dest_files=[ "res://.import/atown_looking_out_window.png-7c30f2a2534bf0088ed681f0a20151f5.stex" ]
+source_file="res://rooftop/machine_room_convo/wiggly_looking_at_panel.png"
+dest_files=[ "res://.import/wiggly_looking_at_panel.png-6a52a3a5c4a75eeb786b9d2a52b4b61b.stex" ]
 
 [params]
 

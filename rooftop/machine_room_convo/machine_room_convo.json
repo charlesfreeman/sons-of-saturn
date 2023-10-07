@@ -39,22 +39,23 @@
         "y": "756"
       },
       "tags": [
-        "points"
+        "points",
+        "aconfused"
       ]
     },
     {
-      "text": "Wiggly::I...have no clue, on either count.\n\nWiggly::But somehow I am not shocked that the elevator has been disabled.  The Cradle has been reacting...antagonistically towards you.  More so than any other client I've ever guided through.  \n\n[[p:What are you suggesting?  Are you saying the Cradle itself stole the fuse?]]",
+      "text": "Wiggly::I...have no clue, on either count.\n\nWiggly::But somehow I am not shocked that the elevator has been disabled.  Minerva has been reacting...antagonistically towards you.  More so than any other client I've ever guided through.  \n\n[[p:So, the city itself magically stole the fuse?  Because it doesn't like me?]]",
       "links": [
         {
-          "name": "p:What are you suggesting?  Are you saying the Cradle itself stole the fuse?",
-          "link": "p:What are you suggesting?  Are you saying the Cradle itself stole the fuse?",
+          "name": "p:So, the city itself magically stole the fuse?  Because it doesn't like me?",
+          "link": "p:So, the city itself magically stole the fuse?  Because it doesn't like me?",
           "pid": "4"
         }
       ],
       "name": "p:The fuse is gone?  Why would anyone have taken it?  What good is it to anybody?",
       "pid": "3",
       "position": {
-        "x": "1179",
+        "x": "1180",
         "y": "906"
       },
       "tags": [
@@ -62,16 +63,16 @@
       ]
     },
     {
-      "text": "Wiggly::Not necessarily.  One of the other Ferryman might have decided to block access to the Children's Ward - at least one Ferryman has disappeared there.  \n\nWiggly::It's also possible some scrapper stole it for himself.  That ward is known to have a decent amount of valuable material left behind, so it's a common for looters to pay a visit.  Maybe one of them decided they didn't want any competition.\n\nWiggly::Somehow, though, I feel like the Cradle is giving you another sign.\n\n[[What happened to the Ferryman who disappeared there?]]\n[[Scrappers steal stuff from the Children's Ward?  I thought it was extremely dangerous.]]\n[[p:We need to find another route to the basement.]]\n",
+      "text": "Wiggly::Not necessarily.  One of the other ferrymen might have decided to block access to the children's ward - at least one ferryman has disappeared there.  \n\nWiggly::It's also possible some scrapper stole it for himself.  That ward is full of valuables, so looters sometimes pay a visit if they are extremely desperate.  Maybe one of them decided they didn't want any competition.\n\nWiggly::Somehow, though, I feel like Minerva is giving you another sign.\n\n[[What happened to the ferryman who disappeared there?]]\n[[Scrappers steal stuff from the children's ward?  I thought it was extremely dangerous.]]\n[[p:We need to find another route to the basement.]]\n",
       "links": [
         {
-          "name": "What happened to the Ferryman who disappeared there?",
-          "link": "What happened to the Ferryman who disappeared there?",
+          "name": "What happened to the ferryman who disappeared there?",
+          "link": "What happened to the ferryman who disappeared there?",
           "pid": "5"
         },
         {
-          "name": "Scrappers steal stuff from the Children's Ward?  I thought it was extremely dangerous.",
-          "link": "Scrappers steal stuff from the Children's Ward?  I thought it was extremely dangerous.",
+          "name": "Scrappers steal stuff from the children's ward?  I thought it was extremely dangerous.",
+          "link": "Scrappers steal stuff from the children's ward?  I thought it was extremely dangerous.",
           "pid": "6"
         },
         {
@@ -80,47 +81,50 @@
           "pid": "7"
         }
       ],
-      "name": "p:What are you suggesting?  Are you saying the Cradle itself stole the fuse?",
+      "name": "p:So, the city itself magically stole the fuse?  Because it doesn't like me?",
       "pid": "4",
       "position": {
         "x": "1179",
         "y": "1056"
-      }
+      },
+      "tags": [
+        "auncertain"
+      ]
     },
     {
-      "text": "Wiggly::Oh, yes.  That incident was quite a while ago, actually.  The Ferryman's name was Thompson, or something similar, I think.  He was an adoptee turned Ferryman, like me, though we didn't know each other very well.\n\nWiggly::The story I heard is that he had some sort of breakdown, and abandoned a client somewhere in the Maternity Ward.  Just told his client that he had business to attend to in the Children's Ward, and that he should try to get out the way they came.  Maybe they came across something that set him off?\n\nWiggly::The Ferryman wasn't heard from after that.  We can't even be sure he made it to the Children's Ward, though I'd say it was pretty likely.  He was reasonably experienced, like myself, and that's the only place in this part of the Cradle where he wouldn't be found.\n\nWiggly::The client, fortunately, did make it out.  Poor guy had to navigate the drains and sewers by himself, and apparently his lamp ran out of juice towards the end.  But ultimately he made it, and told the broker what I just told you.\n\n[[C->p:What are you suggesting?  Are you saying the Cradle itself stole the fuse?]] ",
+      "text": "Wiggly::Oh, yes.  That incident was quite a while ago, actually.  The Ferryman's name was Thompson, I think.  He was an adoptee turned ferryman, like me, though we didn't know each other very well.\n\nWiggly::The story I heard is that he had some sort of breakdown, and abandoned a client somewhere in the maternity ward.  Maybe they came across something that set him off?\n\nWiggly::He wasn't heard from after that.  We can't even be sure he made it to the children's ward, though I'd say it was pretty likely.  He was reasonably experienced, like myself, and that's the only place in this part of the city where he wouldn't be found.\n\nWiggly::The client, fortunately, did make it out.  Poor guy had to navigate the drains and sewers by himself, and apparently his lamp ran out of juice towards the end.  But ultimately he made it, and told the broker what I just told you.\n\n[[C->p:So, the city itself magically stole the fuse?  Because it doesn't like me?]] ",
       "links": [
         {
           "name": "C",
-          "link": "p:What are you suggesting?  Are you saying the Cradle itself stole the fuse?",
+          "link": "p:So, the city itself magically stole the fuse?  Because it doesn't like me?",
           "pid": "4"
         }
       ],
-      "name": "What happened to the Ferryman who disappeared there?",
+      "name": "What happened to the ferryman who disappeared there?",
       "pid": "5",
       "position": {
-        "x": "1013",
+        "x": "1018",
         "y": "1216"
       }
     },
     {
-      "text": "Wiggly::It is extremely dangerous.  Scrappers generally just don't care, or, cannot afford to care.  \n\nWiggly::Most of them are in pretty desperate positions, and because the Children's Ward is dangerous and difficult to access, lots of valuable stuff is still left behind.  Jewelry, antiques, electronics, medicine, drugs, collectable toys.  You name it.\n\n[[C->p:What are you suggesting?  Are you saying the Cradle itself stole the fuse?]] ",
+      "text": "Wiggly::It is extremely dangerous.  The scrappers that come here cannot afford to care.  \n\nWiggly::Most of them are in pretty desperate positions, and because the children's ward is dangerous and difficult to access, lots of valuable stuff is still left behind.  Jewelry, antiques, electronics, medicine, drugs, collectable toys, that sort of stuff.\n\nJasper,head_tilted::Collectable toys?  Hmmmm.\n\n[[C->p:So, the city itself magically stole the fuse?  Because it doesn't like me?]] ",
       "links": [
         {
           "name": "C",
-          "link": "p:What are you suggesting?  Are you saying the Cradle itself stole the fuse?",
+          "link": "p:So, the city itself magically stole the fuse?  Because it doesn't like me?",
           "pid": "4"
         }
       ],
-      "name": "Scrappers steal stuff from the Children's Ward?  I thought it was extremely dangerous.",
+      "name": "Scrappers steal stuff from the children's ward?  I thought it was extremely dangerous.",
       "pid": "6",
       "position": {
-        "x": "1176",
+        "x": "1177",
         "y": "1219"
       }
     },
     {
-      "text": "Wiggly::There are no other routes.  Every basement level door was welded shut before the Cradle was even abandoned.  Even the utility tunnel connections were blocked off.  \n\nWiggly::They only neglected to seal the basement elevator entrance because they had reprogrammed the elevator to never go there.  But, you can bypass those locks by swapping a few of these wires around.\n\nWiggly::Or rather, you could, before the fuse disappeared.\n\n[[They really wanted to keep people out, huh?]]\n[[(Action) Inspect the elevator equipment shed.]]\n[[1,:So if we remove the bolts attaching the cable to the elevator, and then pull this lever, the elevator will plummet to the bottom floor?]]\n[[2,p:I know what to do.  We'll detach the cables, then I'll go wait in the elevator.  Then, you'll pull the lever, and I'll drop down to the Children's Ward.]])",
+      "text": "Wiggly::There are no other routes.  Every basement level door was locked shut before the city was even abandoned.  Even the utility tunnel connections were blocked off.  \n\nWiggly::They only neglected to seal the basement elevator entrance because they had rewired the elevator to never go there.  But, you can bypass those locks by swapping a few of these cables around.\n\nWiggly::Or rather, you could, before the fuse disappeared.\n\n[[They really wanted to keep people out, huh?]]\n[[(Action) Inspect the elevator equipment shed.]]\n[[1,:So if we pull this lever, the elevator will plummet to the bottom floor?]]\n[[2,p:I know what to do.  I'll go wait in the elevator cabin.  Then, you'll pull the lever, and I'll drop down to the children's ward.]]",
       "links": [
         {
           "name": "They really wanted to keep people out, huh?",
@@ -133,25 +137,28 @@
           "pid": "9"
         },
         {
-          "name": "1,:So if we remove the bolts attaching the cable to the elevator, and then pull this lever, the elevator will plummet to the bottom floor?",
-          "link": "1,:So if we remove the bolts attaching the cable to the elevator, and then pull this lever, the elevator will plummet to the bottom floor?",
+          "name": "1,:So if we pull this lever, the elevator will plummet to the bottom floor?",
+          "link": "1,:So if we pull this lever, the elevator will plummet to the bottom floor?",
           "pid": "14"
         },
         {
-          "name": "2,p:I know what to do.  We'll detach the cables, then I'll go wait in the elevator.  Then, you'll pull the lever, and I'll drop down to the Children's Ward.",
-          "link": "2,p:I know what to do.  We'll detach the cables, then I'll go wait in the elevator.  Then, you'll pull the lever, and I'll drop down to the Children's Ward.",
+          "name": "2,p:I know what to do.  I'll go wait in the elevator cabin.  Then, you'll pull the lever, and I'll drop down to the children's ward.",
+          "link": "2,p:I know what to do.  I'll go wait in the elevator cabin.  Then, you'll pull the lever, and I'll drop down to the children's ward.",
           "pid": "15"
         }
       ],
       "name": "p:We need to find another route to the basement.",
       "pid": "7",
       "position": {
-        "x": "1337",
-        "y": "1220"
-      }
+        "x": "1342",
+        "y": "1222"
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
-      "text": "Wiggly::Yeah, they did.  Unusual phenomena started plaguing the Children's Ward before the rest of the Cradle even closed.\n\nWiggly::I don't like going there.  I almost never do.  I only suggested we investigate that ward out of desperation.\n\n[[C->p:We need to find another route to the basement.]] ",
+      "text": "Wiggly::Yeah, they did.  Unusual phenomena started plaguing the children's ward before Minerva was even abandoned.\n\nWiggly::I don't like going there.  I almost never do.  I only suggested we investigate that ward out of desperation.\n\n[[C->p:We need to find another route to the basement.]] ",
       "links": [
         {
           "name": "C",
@@ -167,7 +174,7 @@
       }
     },
     {
-      "text": "On the left side of the room, you see a large, metallic lever.  It looks like an antique prop from some old horror film.  The lever appears to be a circuit breaker switch for the elevator machinery.\n\n[[C->Don't touch that!]]",
+      "text": "On the left side of the room, you see a large, metallic lever, remniscent of an antique prop from an old horror film.  The lever appears to be a circuit breaker switch for the elevator machinery.\n\n[[C->Don't touch that!]]",
       "links": [
         {
           "name": "C",
@@ -183,7 +190,7 @@
       }
     },
     {
-      "text": "Wiggly::The hospital complex doesn't have power, but this elevator equipment does.  So do a few of the surgical rooms, and I think one or two of the emergency exit stairwells.\n\nWiggly::The main power distribution grid hasn't been functional since the Cradle closed, but most infrastructure that was deemed critical were also supplied with their own high density fuel sources as a backup.  So stuff like surgical suites, hospital stairwells and elevators, ventilators, and the like could still run during power outages.\n\n[[That room Julia took me to had working surgical lights.  I guess that's how.]]\n[[\"High density fuel sources?\"]]",
+      "text": "Wiggly::The hospital complex doesn't have power, but this elevator equipment does.  So do a few of the surgical rooms.\n\nWiggly::The central power grid hasn't been functional since the city collapsed, but hospitals and certain pieces of critical infrastracture were supplied with backup high density fuel cannisters.  \n\nWiggly::So stuff like surgical suites, elevators, ventilators, and the like could still run during power outages.\n\n[[That room Julia took me to had working surgical lights.  I guess that's how.]]\n[[\"High density fuel sources?\"]]",
       "links": [
         {
           "name": "That room Julia took me to had working surgical lights.  I guess that's how.",
@@ -201,7 +208,10 @@
       "position": {
         "x": "941",
         "y": "903"
-      }
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
       "text": "Wiggly::If the room she brought you to had working lights and equipment, then yes, I imagine so.\n\n[[C->Fuse Missing]] ",
@@ -215,12 +225,12 @@
       "name": "That room Julia took me to had working surgical lights.  I guess that's how.",
       "pid": "11",
       "position": {
-        "x": "829",
-        "y": "1060"
+        "x": "788",
+        "y": "1054"
       }
     },
     {
-      "text": "Wiggly::SATURN Core inventions - little cylinders you can plug into compatible circuits.  They make a weird screaming noise when you put your ear against them.  They last for decades but sometimes aren't particularly stable.\n\nWiggly::They're powering this elevator machinery just fine, though.  Hear that hum?\n\nWiggly::The lights in this room are also powered - the skylights are artificial.\n\n[[C->Fuse Missing]] ",
+      "text": "Wiggly::SATURN Core inventions - little cylinders you can plug into compatible circuits.  They make a weird screaming noise when you put your ear against them.  \n\nWiggly::They last for decades but sometimes aren't particularly stable.\n\nWiggly::They're powering this elevator machinery just fine, though.  Hear that hum?\n\nWiggly::The lights in this room are also powered - the skylights are artificial.\n\n[[C->Fuse Missing]] ",
       "links": [
         {
           "name": "C",
@@ -236,7 +246,7 @@
       }
     },
     {
-      "text": "Wiggly::Don't touch that!  That will cut the circuit for the elevator equipment, including the backup magnetic locks keeping the elevator from falling. \n\nWiggly::In principle, the cables should be strong enough to keep it in place, but I'd rather not test them.  You never trust rusty cables like these after you've seen them snap like twine.",
+      "text": "Wiggly::Don't touch that!  That will cut the circuit for the elevator equipment, including the backup magnetic locks keeping the elevator from falling. \n\nWiggly::The cables for this elevator are totally rotten.  The magnetic backups are the only thing keeping the cabin suspended.",
       "name": "Don't touch that!",
       "pid": "13",
       "position": {
@@ -253,7 +263,7 @@
           "pid": "16"
         }
       ],
-      "name": "1,:So if we remove the bolts attaching the cable to the elevator, and then pull this lever, the elevator will plummet to the bottom floor?",
+      "name": "1,:So if we pull this lever, the elevator will plummet to the bottom floor?",
       "pid": "14",
       "position": {
         "x": "1503",
@@ -261,7 +271,7 @@
       }
     },
     {
-      "text": "Wiggly looks almost a little flushed.\n\nWiggly::Miss.  Please.  That's ridiculous - bordering on suicidal, even.  Once this line is cut, and the break is released, nothing will serve to retard the elevator's free-fall.\n\nWiggly::The elevator is idling on the roof and would drop all the way down to the first floor.  That's nearly a ten meter drop.\n\nDon't let him talk you out of it, you know what you came here for.\n\n[[Do I?]]\n[[If I jump right before the elevator hits the ground, I'll float to the ground and be uninjured.]]\n[[I don't have any other choice.]]\n[[1,2;p:If you don't go along with it I'll pull the lever and just jump down the elevator shaft.]]",
+      "text": "Wiggly::Miss.  Please.  That's ridiculous - bordering on suicidal, even.  Once this line is cut, and the break is released, nothing will serve to retard the elevator's free-fall.\n\nWiggly::The elevator is idling on the roof and would drop all the way down to the sub-basement.  That's over a ten meter drop.\n\nJasper,head_tilted::Don't let him talk you out of it.  You know what you came here for.\n\n[[Do I?]]\n[[If I jump right before the elevator hits the ground, I'll float to the ground and be uninjured.]]\n[[1,;p:If you don't go along with it I'll pull the lever and just jump down the elevator shaft.]]",
       "links": [
         {
           "name": "Do I?",
@@ -271,27 +281,23 @@
         {
           "name": "If I jump right before the elevator hits the ground, I'll float to the ground and be uninjured.",
           "link": "If I jump right before the elevator hits the ground, I'll float to the ground and be uninjured.",
-          "pid": "19"
-        },
-        {
-          "name": "I don't have any other choice.",
-          "link": "I don't have any other choice.",
           "pid": "18"
         },
         {
-          "name": "1,2;p:If you don't go along with it I'll pull the lever and just jump down the elevator shaft.",
-          "link": "1,2;p:If you don't go along with it I'll pull the lever and just jump down the elevator shaft.",
-          "pid": "20"
+          "name": "1,;p:If you don't go along with it I'll pull the lever and just jump down the elevator shaft.",
+          "link": "1,;p:If you don't go along with it I'll pull the lever and just jump down the elevator shaft.",
+          "pid": "19"
         }
       ],
-      "name": "2,p:I know what to do.  We'll detach the cables, then I'll go wait in the elevator.  Then, you'll pull the lever, and I'll drop down to the Children's Ward.",
+      "name": "2,p:I know what to do.  I'll go wait in the elevator cabin.  Then, you'll pull the lever, and I'll drop down to the children's ward.",
       "pid": "15",
       "position": {
-        "x": "1857",
-        "y": "1324"
+        "x": "1859",
+        "y": "1325"
       },
       "tags": [
-        "concerned"
+        "concerned",
+        "afuming"
       ]
     },
     {
@@ -311,11 +317,11 @@
       }
     },
     {
-      "text": "Yeah.  You do.\n\nWiggly::What's that, miss?\n\n[[C->2,p:I know what to do.  We'll detach the cables, then I'll go wait in the elevator.  Then, you'll pull the lever, and I'll drop down to the Children's Ward.]] ",
+      "text": "Jasper,thinking::Yeah.  You do.\n\nWiggly::What's that, miss?\n\n[[C->2,p:I know what to do.  I'll go wait in the elevator cabin.  Then, you'll pull the lever, and I'll drop down to the children's ward.]] ",
       "links": [
         {
           "name": "C",
-          "link": "2,p:I know what to do.  We'll detach the cables, then I'll go wait in the elevator.  Then, you'll pull the lever, and I'll drop down to the Children's Ward.",
+          "link": "2,p:I know what to do.  I'll go wait in the elevator cabin.  Then, you'll pull the lever, and I'll drop down to the children's ward.",
           "pid": "15"
         }
       ],
@@ -327,69 +333,56 @@
       }
     },
     {
-      "text": "Wiggly::Miss, there is absolutely nothing preventing you from returning home.  This woman, Julia, that's stuck to you - she has power, but she can't follow you out of the Cradle.  \n\nWiggly::I know how important this expedition is to you, and how much you sacrificed to come here, but please do not feel as though you don't have the option to turn back.\n\nDismissed.  Moving on.\n\n[[C->2,p:I know what to do.  We'll detach the cables, then I'll go wait in the elevator.  Then, you'll pull the lever, and I'll drop down to the Children's Ward.]] ",
+      "text": "Wiggly::Miss, that is a common misconception.  If you are hurdling towards the ground at 20 meters per second, and jump up at a speed of 1 meter per second, well...\n\nWiggly::You'll hit the ground at 19 meters per second.\n\nJasper,thinking::Ugh.  We already knew that.  I was really hoping he didn't, though.\n\nJasper,twisted::We'll have to secure his compliance some other way.\n\n[[C->2,p:I know what to do.  I'll go wait in the elevator cabin.  Then, you'll pull the lever, and I'll drop down to the children's ward.]] ",
       "links": [
         {
           "name": "C",
-          "link": "2,p:I know what to do.  We'll detach the cables, then I'll go wait in the elevator.  Then, you'll pull the lever, and I'll drop down to the Children's Ward.",
-          "pid": "15"
-        }
-      ],
-      "name": "I don't have any other choice.",
-      "pid": "18",
-      "position": {
-        "x": "1986",
-        "y": "1514"
-      }
-    },
-    {
-      "text": "Wiggly::Miss, that is a common misconception.  If you are hurdling towards the ground at 20 meters per second, and jump up at a speed of 1 meter per second, well...\n\nWiggly::You'll hit the ground at 19 meters per second.\n\nYou knew all of that, but were hoping it might convince him to go along with this plan.  Smart move, but unfortunately he knew better.  You'll have to secure his compliance some other way.\n\n[[C->2,p:I know what to do.  We'll detach the cables, then I'll go wait in the elevator.  Then, you'll pull the lever, and I'll drop down to the Children's Ward.]] ",
-      "links": [
-        {
-          "name": "C",
-          "link": "2,p:I know what to do.  We'll detach the cables, then I'll go wait in the elevator.  Then, you'll pull the lever, and I'll drop down to the Children's Ward.",
+          "link": "2,p:I know what to do.  I'll go wait in the elevator cabin.  Then, you'll pull the lever, and I'll drop down to the children's ward.",
           "pid": "15"
         }
       ],
       "name": "If I jump right before the elevator hits the ground, I'll float to the ground and be uninjured.",
-      "pid": "19",
+      "pid": "18",
       "position": {
         "x": "1822",
         "y": "1510"
       }
     },
     {
-      "text": "Yeah, force his hand.  Good idea.  Now collaborating with the plan is the \"safe\" option for him.\n\nStill, he looks a bit taken aback.\n\nWiggly::Miss, I can't stop you from doing this.  But please, think hard about whether or not this is worth it.  \n\nHe's coming around to the plan.\n\nWiggly::You might break your legs in the fall, or your spine.  There would be nothing at all I could do to help you.  \n\nWiggly::Is that how you want this to end?  Starving to death at the bottom of an elevator shaft with two broken legs and no painkillers?\n\n[[Yes that's how I want to go out.]]\n[[That's not going to happen.  The elevator isn't likely to fall at free-fall speed, and it's not that far of a drop anyway.->Yes that's how I want to go out.]]",
+      "text": "Jasper,twisted::Yeah, force his hand.  Good idea.  Now collaborating with the plan is the \"safe\" option for him.\n\nJasper,head_tilted::Still, he looks pretty shaken.\n\nWiggly::Miss, I can't stop you from doing this.  But please, think hard about whether or not this is worth it.  \n\nJasper,surprised::He's coming around to the plan.\n\nWiggly::You might break your legs in the fall, or your spine.  There would be nothing at all I could do to help you.  \n\nWiggly::Is that how you want this to end?  Starving to death at the bottom of an elevator shaft with two broken legs and no painkillers?\n\n[[p:Yes that's how I want to go out.]]\n[[p:That's not going to happen.  The elevator isn't likely to fall at free-fall speed, and it's not that far of a drop anyway.->p:Yes that's how I want to go out.]]",
       "links": [
         {
-          "name": "Yes that's how I want to go out.",
-          "link": "Yes that's how I want to go out.",
-          "pid": "21"
+          "name": "p:Yes that's how I want to go out.",
+          "link": "p:Yes that's how I want to go out.",
+          "pid": "20"
         },
         {
-          "name": "That's not going to happen.  The elevator isn't likely to fall at free-fall speed, and it's not that far of a drop anyway.",
-          "link": "Yes that's how I want to go out.",
-          "pid": "21"
+          "name": "p:That's not going to happen.  The elevator isn't likely to fall at free-fall speed, and it's not that far of a drop anyway.",
+          "link": "p:Yes that's how I want to go out.",
+          "pid": "20"
         }
       ],
-      "name": "1,2;p:If you don't go along with it I'll pull the lever and just jump down the elevator shaft.",
-      "pid": "20",
+      "name": "1,;p:If you don't go along with it I'll pull the lever and just jump down the elevator shaft.",
+      "pid": "19",
       "position": {
         "x": "2151",
         "y": "1506"
-      }
+      },
+      "tags": [
+        "ashocked"
+      ]
     },
     {
-      "text": "Suddenly the ferryman adopts a rather resigned, acquiescent look.  He's beginning to accept that there is no talking you out of this.\n\nWiggly::You really are gonna go through with this, aren't you?  There's no talking you out of it.\n\nHe sounds almost disappointed in himself.  A better ferryman might have convinced you to drop this, he's thinking.\n\n[[C->Let's do this]]",
+      "text": "Wiggly::You really are gonna go through with this, aren't you?  There's no talking you out of it.\n\nJasper::He sounds almost disappointed in himself.  A better ferryman might have convinced you to drop this, he's thinking.\n\n[[C->Let's do this]]",
       "links": [
         {
           "name": "C",
           "link": "Let's do this",
-          "pid": "30"
+          "pid": "29"
         }
       ],
-      "name": "Yes that's how I want to go out.",
-      "pid": "21",
+      "name": "p:Yes that's how I want to go out.",
+      "pid": "20",
       "position": {
         "x": "2151",
         "y": "1633"
@@ -399,16 +392,16 @@
       ]
     },
     {
-      "text": "He does not return your thanks.  He looks sullen, hollow, even a little guilty.  He reaches into his pocket.  \n\n[[C->Cyanide]]",
+      "text": "He does not return your thanks.  He looks sullen, hollow, even a little guilty.  He reaches into his pocket.  \n\n[[C->Opium]]",
       "links": [
         {
           "name": "C",
-          "link": "Cyanide",
-          "pid": "23"
+          "link": "Opium",
+          "pid": "22"
         }
       ],
       "name": "p:Alright.  Thanks for helping with this.",
-      "pid": "22",
+      "pid": "21",
       "position": {
         "x": "2150",
         "y": "1877"
@@ -420,36 +413,39 @@
         {
           "name": "p:What's in this pill capsule?",
           "link": "p:What's in this pill capsule?",
-          "pid": "24"
+          "pid": "23"
         }
       ],
-      "name": "Cyanide",
-      "pid": "23",
+      "name": "Opium",
+      "pid": "22",
       "position": {
         "x": "2151",
         "y": "1997"
       }
     },
     {
-      "text": "Wiggly::It's cyanide, miss.  All ferrymen keep some on their person, in case of emergencies.  If you end up immobilized at the bottom of the shaft, well, this might be an appealing option.\n\n[[p:(Accept the cyanide) I hope I won't need it.  But, thanks.]]\n[[p:(Decline the cyanide) Thanks, but it won't come to that.  I'm certain.]] \n",
+      "text": "Wiggly::It's fentamide, miss - an opiate derivative.  All ferrymen keep some on their person, in case of emergencies.  If you end up immobilized at the bottom of the shaft, well, this might be an appealing option.\n\n[[p:...Just in case I get injured and need painkillers...right?]]\n[[p:How much of these do I need to take to die?]]",
       "links": [
         {
-          "name": "p:(Accept the cyanide) I hope I won't need it.  But, thanks.",
-          "link": "p:(Accept the cyanide) I hope I won't need it.  But, thanks.",
-          "pid": "25"
+          "name": "p:...Just in case I get injured and need painkillers...right?",
+          "link": "p:...Just in case I get injured and need painkillers...right?",
+          "pid": "30"
         },
         {
-          "name": "p:(Decline the cyanide) Thanks, but it won't come to that.  I'm certain.",
-          "link": "p:(Decline the cyanide) Thanks, but it won't come to that.  I'm certain.",
-          "pid": "26"
+          "name": "p:How much of these do I need to take to die?",
+          "link": "p:How much of these do I need to take to die?",
+          "pid": "31"
         }
       ],
       "name": "p:What's in this pill capsule?",
-      "pid": "24",
+      "pid": "23",
       "position": {
         "x": "2151",
         "y": "2127"
-      }
+      },
+      "tags": [
+        "adisgusted"
+      ]
     },
     {
       "text": "The ferryman nods, silently.\n\n[[C->You Ready]] ",
@@ -457,14 +453,14 @@
         {
           "name": "C",
           "link": "You Ready",
-          "pid": "27"
+          "pid": "26"
         }
       ],
-      "name": "p:(Accept the cyanide) I hope I won't need it.  But, thanks.",
-      "pid": "25",
+      "name": "p:(Accept the fentanyl) I hope I won't need it.  But, thanks.",
+      "pid": "24",
       "position": {
-        "x": "2076",
-        "y": "2256"
+        "x": "2002",
+        "y": "2445"
       }
     },
     {
@@ -473,14 +469,14 @@
         {
           "name": "C",
           "link": "You Ready",
-          "pid": "27"
+          "pid": "26"
         }
       ],
-      "name": "p:(Decline the cyanide) Thanks, but it won't come to that.  I'm certain.",
-      "pid": "26",
+      "name": "p:(Decline the fentanyl) Thanks, but it won't come to that.  I'm certain.",
+      "pid": "25",
       "position": {
-        "x": "2226",
-        "y": "2256"
+        "x": "2280",
+        "y": "2453"
       }
     },
     {
@@ -489,58 +485,106 @@
         {
           "name": "p:Thanks for helping with this.",
           "link": "p:Thanks for helping with this.",
-          "pid": "28"
+          "pid": "27"
         }
       ],
       "name": "You Ready",
-      "pid": "27",
+      "pid": "26",
       "position": {
-        "x": "2143",
-        "y": "2416"
+        "x": "2139",
+        "y": "2551"
       }
     },
     {
-      "text": "Wiggly::I'm pretty sure you shouldn't be thanking me.\n\n[[(Action) Head to the elevator.]]",
+      "text": "Wiggly::I'm pretty sure you shouldn't be thanking me.\n\n[[p:(Action) Exit the machine room and head back to the elevator.]]",
       "links": [
         {
-          "name": "(Action) Head to the elevator.",
-          "link": "(Action) Head to the elevator.",
-          "pid": "29"
+          "name": "p:(Action) Exit the machine room and head back to the elevator.",
+          "link": "p:(Action) Exit the machine room and head back to the elevator.",
+          "pid": "28"
         }
       ],
       "name": "p:Thanks for helping with this.",
+      "pid": "27",
+      "position": {
+        "x": "2135",
+        "y": "2694"
+      }
+    },
+    {
+      "text": "",
+      "name": "p:(Action) Exit the machine room and head back to the elevator.",
       "pid": "28",
       "position": {
-        "x": "2143",
-        "y": "2566"
+        "x": "2140",
+        "y": "2836"
       }
     },
     {
-      "text": "Double-click this passage to edit it.",
-      "name": "(Action) Head to the elevator.",
-      "pid": "29",
-      "position": {
-        "x": "2143",
-        "y": "2716"
-      }
-    },
-    {
-      "text": "Wiggly::Fuck, ok.  Let's do this.  Go get in the elevator.  Smack the roof a couple of times when you get there, so I know you're inside.  Then I'll disconnect the cable and pull the lever.\n\n[[p:Alright.  Thanks for helping with this.]]",
+      "text": "Wiggly::Ugh.  Fuck, ok.  \n\nWiggly::Go get in the elevator.  Smack the roof a couple of times when you get there, so I know you're inside.  Then I'll disconnect the cable and pull the lever.\n\n[[p:Alright.  Thanks for helping with this.]]",
       "links": [
         {
           "name": "p:Alright.  Thanks for helping with this.",
           "link": "p:Alright.  Thanks for helping with this.",
-          "pid": "22"
+          "pid": "21"
         }
       ],
       "name": "Let's do this",
-      "pid": "30",
+      "pid": "29",
       "position": {
         "x": "2150",
         "y": "1757"
       },
       "tags": [
         "looking_up"
+      ]
+    },
+    {
+      "text": "Wiggly::...\n\nWiggly::C'mon Miss, you know what they're for.\n\nWiggly::If you end up stuck at the bottom of that shaft with your legs broken, I won't be able to help you.  No one can.\n\n[[p:(Accept the fentanyl) I hope I won't need it.  But, thanks.]]\n[[p:(Decline the fentanyl) Thanks, but it won't come to that.  I'm certain.]]",
+      "links": [
+        {
+          "name": "p:(Accept the fentanyl) I hope I won't need it.  But, thanks.",
+          "link": "p:(Accept the fentanyl) I hope I won't need it.  But, thanks.",
+          "pid": "24"
+        },
+        {
+          "name": "p:(Decline the fentanyl) Thanks, but it won't come to that.  I'm certain.",
+          "link": "p:(Decline the fentanyl) Thanks, but it won't come to that.  I'm certain.",
+          "pid": "25"
+        }
+      ],
+      "name": "p:...Just in case I get injured and need painkillers...right?",
+      "pid": "30",
+      "position": {
+        "x": "2051",
+        "y": "2264"
+      },
+      "tags": [
+        "asad"
+      ]
+    },
+    {
+      "text": "Wiggly::Just take all of them.  I won't be asking for the leftovers.\n\n[[p:(Accept the fentanyl) I hope I won't need it.  But, thanks.]]\n[[p:(Decline the fentanyl) Thanks, but it won't come to that.  I'm certain.]]",
+      "links": [
+        {
+          "name": "p:(Accept the fentanyl) I hope I won't need it.  But, thanks.",
+          "link": "p:(Accept the fentanyl) I hope I won't need it.  But, thanks.",
+          "pid": "24"
+        },
+        {
+          "name": "p:(Decline the fentanyl) Thanks, but it won't come to that.  I'm certain.",
+          "link": "p:(Decline the fentanyl) Thanks, but it won't come to that.  I'm certain.",
+          "pid": "25"
+        }
+      ],
+      "name": "p:How much of these do I need to take to die?",
+      "pid": "31",
+      "position": {
+        "x": "2234",
+        "y": "2261"
+      },
+      "tags": [
+        "asad"
       ]
     }
   ],

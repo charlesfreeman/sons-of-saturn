@@ -18,10 +18,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_down = "res://maternity/stairwell_office_hallway_return/stairwell_office_hallway_return.tscn"
+prog_flag = "vera_new_office"
 new_scene_on_ready = true
-new_scene = "res://maternity/vera_new_office_convo/vera_new_office_convo.tscn"
+new_scene = "vera_new_office_convo"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
 position = Vector2( 1556.33, 1993.86 )

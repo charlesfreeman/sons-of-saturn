@@ -23,6 +23,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://top_floor/julia_room/julia_room.tscn"
+scene_down = "res://top_floor/colorful_nurses_hall/colorful_nurses_hall.tscn"
 req_flag_up = "custody_convo"
 position = Vector2( 1506, 600 )
 footstep_type_up = "DoorUnlock"

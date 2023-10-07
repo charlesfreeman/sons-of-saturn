@@ -34,6 +34,7 @@ position = Vector2( 1819.65, 1922.52 )
 shape = SubResource( 1 )
 
 [node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
 position = Vector2( 655.375, 613.279 )

@@ -22,7 +22,7 @@
       ]
     },
     {
-      "text": "You pick up the note.  It appears to be a leathery pharmaceutical request receipt, issued to Julia.  The harsh page feels as if it's soaked in decades of chemical runoff.\n\nShe appears to have requested a list of medicinal substances, shown on the ledger below her name.\n\nAll of her requests have been declined.\n\n[[Are the drugs she's requesting abortion drugs?]]\n[[p:I don't understand.  Why won't they just give them to her?]]",
+      "text": "You pick up the note.  It appears to be a leathery pharmaceutical request receipt, issued to Julia.  The texture of the page is harsh on your fingertips, as if the paper has soaked in decades of chemical runoff.\n\nShe appears to have requested a list of medicinal substances, shown on the ledger below her name.\n\nAll of her requests have been declined.\n\n[[Are the drugs she's requesting abortion drugs?]]\n[[p:I don't understand.  Why won't they just give them to her?]]",
       "links": [
         {
           "name": "Are the drugs she's requesting abortion drugs?",
@@ -42,7 +42,8 @@
         "y": "456"
       },
       "tags": [
-        "page1"
+        "page1",
+        "aconfused"
       ]
     },
     {
@@ -62,7 +63,7 @@
       }
     },
     {
-      "text": "Wiggly::Yes, they are.  All of them.\n\nJasper::How does he know that?  I didn't think child laborers often had much in the way of pharmaceutical knowledge.\n\n[[How do you know?]]",
+      "text": "Wiggly,looking_to_side::Yes, they are.  All of them.\n\nJasper,head_tilted::How does he know that?  I didn't think child laborers often had much in the way of pharmaceutical knowledge.\n\n[[How do you know?]]",
       "links": [
         {
           "name": "How do you know?",
@@ -78,7 +79,7 @@
       }
     },
     {
-      "text": "Wiggly::I don't know.  But it looks like there's something written on the back of that receipt.\n\n[[p:(Action) Flip the receipt.->page2]]",
+      "text": "Wiggly,thinking::I don't know.  But it looks like there's something written on the back of that receipt.\n\n[[p:(Action) Flip the receipt.->page2]]",
       "links": [
         {
           "name": "p:(Action) Flip the receipt.",
@@ -94,7 +95,7 @@
       }
     },
     {
-      "text": "Wiggly::Well, we utility kids relied a lot on uppers to get through our shifts, and most of those we had to scrounge for.\n\nWiggly::So, well, knowing how to tell amphetamines and laxatives apart was a pretty helpful skill to nurture.\n\n[[C->page1]]",
+      "text": "Wiggly,thinking::Well, we utility kids relied a lot on uppers to get through our shifts, and most of those we had to scrounge for.\n\nWiggly,surprised::So, well, knowing how to tell amphetamines and laxatives apart was a pretty helpful skill to nurture.\n\n[[C->page1]]",
       "links": [
         {
           "name": "C",
@@ -110,11 +111,11 @@
       }
     },
     {
-      "text": "Wiggly::Well, the legal cutoff kept changing over the years, I think.\n\nWiggly::First it was sixteen weeks.  Then twelve.  Then eight.\n\nWiggly::Then two...\n\nWiggly::I overheard a lot of conversations between Core officials, all talking about how they needed more kids, how they had to get the birthrate up, that sort of thing.\n\nWiggly::I never really understood why.\n\n[[p:This is all extremely fucked up but I don't have time to think about it right now.  Let's keep looking for more of Julia's stuff.]]",
+      "text": "Wiggly,surprised::Well, the legal cutoff kept changing over the years, I think.\n\nWiggly,skeptical::First it was sixteen weeks.  Then twelve.  Then eight.\n\nWiggly,sad::Then two...\n\nWiggly,looking_to_side::I overheard a lot of conversations between Core officials, all talking about how they needed more kids, how they had to get the birthrate up, that sort of thing.\n\nWiggly,thinking::I never really understood why.\n\n[[p:This is all extremely fucked up but I don't have time to think about it right now.  Let's keep looking around.]]",
       "links": [
         {
-          "name": "p:This is all extremely fucked up but I don't have time to think about it right now.  Let's keep looking for more of Julia's stuff.",
-          "link": "p:This is all extremely fucked up but I don't have time to think about it right now.  Let's keep looking for more of Julia's stuff.",
+          "name": "p:This is all extremely fucked up but I don't have time to think about it right now.  Let's keep looking around.",
+          "link": "p:This is all extremely fucked up but I don't have time to think about it right now.  Let's keep looking around.",
           "pid": "8"
         }
       ],
@@ -126,8 +127,8 @@
       }
     },
     {
-      "text": "Double-click this passage to edit it.",
-      "name": "p:This is all extremely fucked up but I don't have time to think about it right now.  Let's keep looking for more of Julia's stuff.",
+      "text": "Wiggly,looking_to_side::Yes.  We should keep digging around for more notes on Julia.",
+      "name": "p:This is all extremely fucked up but I don't have time to think about it right now.  Let's keep looking around.",
       "pid": "8",
       "position": {
         "x": "1208",

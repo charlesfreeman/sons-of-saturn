@@ -21,11 +21,10 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_down = "res://top_floor/blue_hallway/blue_hall.tscn"
-popup_background = "res://top_floor/colorful_bay_windows/provisio_hospital_courtyard.png"
+scene_down = "res://top_floor/door_to_lobby/door_to_lobby.tscn"
+popup_background = "res://top_floor/colorful_bay_windows/atown_looking_out_window.png"
 position = Vector2( 1800, 430 )
 rotation = -63
-song = "sewer_med_flow"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 down_path = true
@@ -35,7 +34,7 @@ position = Vector2( 1425.23, 1949.67 )
 shape = SubResource( 1 )
 
 [node name="DescPopUp" parent="." instance=ExtResource( 4 )]
-popup_text = [ "You can see a beautiful courtyard through the broken panes and scattered foliage.  It is beautiful, and overgrown with exotic vines.", "The architectural style doesn't match with the rest of the complex, and the geometry of halls flanking the garden doesn't match the layout you remember." ]
+popup_text = [ "You can see a bit more of the wing from this angle.  You were unable to get a good look from the first floor.", "The grass is clearly artificial.  Artificial, ambient light from the dome scatters overhead.  None of it feels natural." ]
 diff_background = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DescPopUp"]

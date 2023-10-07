@@ -14,7 +14,7 @@ __meta__ = {
 scriptPath = "res://top_floor/theater_convo_return/theater_exchange_return_convo.json"
 backgroundPath = "res://top_floor/theater_convo/piano_office_2300x2160.png"
 sliverPath = "res://top_floor/theater_convo/piano_office_sliver.png"
-nextLocation = "res://infirmary/tann_office/tann_office.tscn"
+nextLocation = "res://top_floor/piano_office/piano_office.tscn"
 song = "morgue_ambient"
 
 [node name="Documents" parent="." instance=ExtResource( 1 )]

@@ -29,9 +29,9 @@ scene_down = "res://top_floor/cribs_looking_right/cribs_looking_right.tscn"
 popup_background = "res://top_floor/cribs_cabinets/cribs_glass_cabinet.png"
 position = Vector2( 1800, 430 )
 rotation = -63
-song = "sewer_med_flow"
 
 [node name="PopUp" parent="." instance=ExtResource( 2 )]
+popup_text = [ "Jasper,twisted::Tons of old medicines are stocked here.  You could have hours of fun with the stuff on this shelf.", "Wiggly,sad::All of the best stuff has been picked clean from that cabinet, I'm afraid." ]
 diff_background = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
@@ -39,8 +39,8 @@ position = Vector2( 2157.95, 1017.33 )
 shape = SubResource( 1 )
 
 [node name="ClickToSearch" parent="." instance=ExtResource( 4 )]
-next_scene = "res://top_floor/abortion_convo/abortion_convo.tscn"
-alt_next_scene = "res://top_floor/abortion_convo_return/abortion_convo_return.tscn"
+next_scene = "abortion_convo"
+alt_next_scene = "abortion_convo_return"
 alt_req_prog_flag = "abortion_convo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]

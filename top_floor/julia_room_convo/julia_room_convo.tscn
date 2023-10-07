@@ -14,7 +14,7 @@ __meta__ = {
 scriptPath = "res://top_floor/julia_room_convo/julia_room_convo.json"
 backgroundPath = "res://top_floor/julia_room_convo/julia_room_2300x2160.png"
 sliverPath = "res://top_floor/julia_room_convo/julia_room_sliver.png"
-nextLocation = "res://infirmary/tann_office/tann_office.tscn"
+nextLocation = "res://top_floor/julia_room/julia_room.tscn"
 fade_tag_dict = {
 "back_to_room": "res://top_floor/julia_room_convo/julia_room_2300x2160.png",
 "deep_in_ferns": "res://top_floor/julia_room_convo/julia_room_deep_ferns.png",
@@ -29,6 +29,7 @@ fade_tag_dict_sliver = {
 }
 prog_flag = "julia_room_convo"
 song = "sly_sewer_intimate"
+remove_item = "Key"
 
 [node name="Documents" parent="." instance=ExtResource( 2 )]
 margin_left = 140.091

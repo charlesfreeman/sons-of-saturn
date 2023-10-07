@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "Note::Contact Name: Julia\n\nNote::Contact Relation: Biological Mother\n\nNote::Reason for Communication: Major Health Update\n\nNote::I hope this letter finds you well.  We are writing to inform you that one ANGELA MELNIK has fallen into a persistent vegetative state, likely as a result of encephalitis.\n\nNote::Based on our observations of the disease's progression in other children under our care, we do not expect her to recover.  However, we will continue to provide life support for as long as autonomic functions persist, and her participation in our neural research program will continue.\n\nNote::We apologize for any distress this may cause.  If you would like us to cease providing updates for Angela's condition, please contact the children's ward's clerk.\n\nNote::-Rosalind\n\nWiggly::...\n\n[[p:So Julia's kid got sick and fell into a coma after she gave her to my mom's program...  I guess I'm not surprised.]]\n[[p:Mom really couldn't walk two fucking flights of stairs to tell her this in person.  What a soulless bitch!]]",
+      "text": "Note::Contact Name: Julia\n\nNote::Contact Relation: Biological Mother\n\nNote::Reason for Communication: Major Health Update\n\nNote::I hope this letter finds you well.  We are writing to inform you that one ANGELA MELNIK has fallen into a persistent vegetative state, likely as a result of encephalitis.\n\nNote::Based on our observations of the disease's progression in other children under our care, we do not expect her to recover.  However, we will continue to provide life support for as long as autonomic functions persist, and her participation in our neural research program will continue.\n\nNote::We apologize for any distress this may cause.  If you would like us to cease providing updates for Angela's condition, please contact the children's ward's clerk.\n\nNote::-Rosalind\n\nWiggly,surprised::...\n\n[[p:So Julia's kid got sick and fell into a coma after she gave her to my mom's program...  I guess I'm not surprised.]]\n[[p:Mom really couldn't walk two fucking flights of stairs to tell her this in person.  What a soulless bitch!]]",
       "links": [
         {
           "name": "p:So Julia's kid got sick and fell into a coma after she gave her to my mom's program...  I guess I'm not surprised.",
@@ -23,11 +23,12 @@
         "y": "606"
       },
       "tags": [
-        "page1"
+        "page1",
+        "afuming"
       ]
     },
     {
-      "text": "Wiggly::The notes we've seen from Rosalind do paint her as a little...tactless.\n\n[[p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!]]",
+      "text": "Wiggly,thinking::The notes we've seen from Rosalind do paint her as a little...tactless.\n\n[[p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!]]",
       "links": [
         {
           "name": "p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!",
@@ -134,10 +135,13 @@
       "position": {
         "x": "739",
         "y": "1011"
-      }
+      },
+      "tags": [
+        "adisgusted"
+      ]
     },
     {
-      "text": "The ferns do not respond to your agitations.  They have you in their teeth.\n\nJasper::You have to go on the aggressive.  Merely reacting never got you anywhere.\n\nJasper::Dive into the ferns and start biting, ripping, and tearing.  It's your only chance.\n\n[[p:(Action) Start biting the ferns.]]",
+      "text": "The ferns do not respond to your agitations.  They have you in their teeth.\n\nJasper,twisted::You have to go on the aggressive.  Merely reacting never got you anywhere.\n\nJasper,head_tilted::Dive into the ferns and start biting, ripping, and tearing.  It's your only chance.\n\n[[p:(Action) Start biting the ferns.]]",
       "links": [
         {
           "name": "p:(Action) Start biting the ferns.",
@@ -153,7 +157,7 @@
       }
     },
     {
-      "text": "You dive into the pot and start ripping into the ferns with your teeth.  You can almost hear them squealing with pain.\n\nBut they do not relent.\n\nJasper::They still have your arm, and the document.  You have to go deeper!\n\n[[p:(Action) Dive in further and keep biting the ferns.]]",
+      "text": "You dive into the pot and start ripping into the ferns with your teeth.  You can almost hear them squealing with pain.\n\nBut they do not relent.\n\nJasper,surprised::They still have your arm, and the document.  You have to go deeper!\n\n[[p:(Action) Dive in further and keep biting the ferns.]]",
       "links": [
         {
           "name": "p:(Action) Dive in further and keep biting the ferns.",
@@ -185,7 +189,7 @@
       }
     },
     {
-      "text": "You manage to free yourself from the web of roots, and pulled the document out with you.\n\nJasper::Yes!  It worked!\n\nJasper::Hopefully this conditions you to follow my advice more readily in the future.\n\nWiggly::Uhm.  Should I ask what that was about, mam?\n\n[[p:No.]]\n[[p:The ferns tried to eat me.  You should have helped me, but it doesn't matter anymore.]]",
+      "text": "You manage to free yourself from the web of roots, and pulled the document out with you.\n\nJasper,twisted::Yes!  It worked!\n\nJasper,thinking::Hopefully this conditions you to follow my advice more readily in the future.\n\nWiggly,skeptical::Uhm.  Should I ask what that was about, mam?\n\n[[p:No.]]\n[[p:The ferns tried to eat me.  You should have helped me, but it doesn't matter anymore.]]",
       "links": [
         {
           "name": "p:No.",
@@ -205,11 +209,12 @@
         "y": "1607"
       },
       "tags": [
-        "back_to_room"
+        "back_to_room",
+        "afuming"
       ]
     },
     {
-      "text": "Wiggly::Alright then, Miss.\n\nWiggly::What does the note say?\n\n[[p:(Action) Inspect the note.]]",
+      "text": "Wiggly,half_smile::Alright then, Miss.\n\nWiggly,surprised::What does the note say?\n\n[[p:(Action) Inspect the note.]]",
       "links": [
         {
           "name": "p:(Action) Inspect the note.",
@@ -225,7 +230,7 @@
       }
     },
     {
-      "text": "Wiggly::I'll...keep that in mind if you get caught in any ferns up ahead.\n\nWiggly::So, what does the note say?  You got it out right?\n\n[[p:(Action) Inspect the note.]]",
+      "text": "Wiggly,skeptical::I'll...keep that in mind if you get caught in any ferns up ahead.\n\nWiggly,surprised::So, what does the note say?  You got it out right?\n\n[[p:(Action) Inspect the note.]]",
       "links": [
         {
           "name": "p:(Action) Inspect the note.",
@@ -257,7 +262,7 @@
       }
     },
     {
-      "text": "Wiggly::That's indeed what it sounds like, miss.\n\nJasper::Pretty much makes perfect sense, doesn't it?  No one could survive in her care for long.\n\n[[p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!]]",
+      "text": "Wiggly,thinking::That's indeed what it sounds like, Miss.\n\nJasper,sad::Pretty much makes perfect sense, doesn't it?  No one could survive in her care for long.\n\n[[p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!]]",
       "links": [
         {
           "name": "p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!",
@@ -273,7 +278,7 @@
       }
     },
     {
-      "text": "Wiggly::I can see why you would find this note upsetting, miss.\n\nWiggly::But this document is the most informative lead we've gotten yet.  I think we know why Julia might be upset enough to stick around.\n\nWiggly::I really didn't want to go there, but I don't think we have any choice.\n\nWiggly::We need to pay a visit to the children's ward.\n\n[[The place Angelica got sent to?]]\n[[Why do we have to go there?]]\n[[p:How do we get there?]]",
+      "text": "Wiggly,skeptical::I can see why you would find this note upsetting, miss.\n\nWiggly,surprised::But this document is the most informative lead we've gotten yet.  I think we know why Julia might be upset enough to stick around.\n\nWiggly,thinking::I really didn't want to go there, but I don't think we have any choice.\n\nWiggly,sad::We need to pay a visit to the children's ward.\n\n[[The place Angelica got sent to?]]\n[[Why do we have to go there?]]\n[[p:How do we get there?]]",
       "links": [
         {
           "name": "The place Angelica got sent to?",
@@ -296,10 +301,13 @@
       "position": {
         "x": "1179",
         "y": "906"
-      }
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
-      "text": "Wiggly::Yes.  Down in the basement, two stories beneath us.\n\nWiggly::I don't like it.  But I'm sure that's where we need to go.\n\n[[C->p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!]]",
+      "text": "Wiggly,neutral::Yes.  Down in the basement, two stories beneath us.\n\nWiggly,thinking::I don't like it.  But I'm sure that's where we need to go.\n\n[[C->p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!]]",
       "links": [
         {
           "name": "C",
@@ -315,7 +323,7 @@
       }
     },
     {
-      "text": "Wiggly::The city has presented us with a handful of documents on Julia, right?  All of them have to do with her kid, Angelica, who she sent down there.\n\nWiggly::It's a clear sign from Minerva.  We've gotta find out what happened down there.\n\n[[C->p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!]]",
+      "text": "Wiggly,surprised::The city has presented us with a handful of documents on Julia, right?  All of them have to do with her kid, Angelica, who she sent down there.\n\nWiggly,thinking::It's a clear sign from Minerva.  We've gotta find out what happened down there.\n\n[[C->p:She's a heartless bitch!  Who tells someone that their kid basically died under their own care without even saying sorry! Ugh!]]",
       "links": [
         {
           "name": "C",
@@ -331,7 +339,7 @@
       }
     },
     {
-      "text": "Wiggly::The only way to get there is to take the elevator back near the stairwell we came up on.  All of the other entrances have been sealed for decades.\n\n[[p:We can just take the elevator?  That sounds really easy.]]\n[[p:So what's the catch?->p:We can just take the elevator?  That sounds really easy.]]",
+      "text": "Wiggly,looking_to_side::The only way to get there is to take the elevator back near the stairwell we came up on.  All of the other entrances have been sealed for decades.\n\n[[p:We can just take the elevator?  That sounds really easy.]]\n[[p:So what's the catch?->p:We can just take the elevator?  That sounds really easy.]]",
       "links": [
         {
           "name": "p:We can just take the elevator?  That sounds really easy.",
@@ -352,17 +360,17 @@
       }
     },
     {
-      "text": "Wiggly::It's a little more involved than it sounds.  We'll need to go up to the elevator shed on the roof to turn the lifts on.\n\nWiggly::Before we turn on those machines, that elevator isn't going anywhere.\n\n[[p:Alright.  How do we get to the elevator shed?]]\n[[Can you go do it?  I can just wait in the elevator cabin.  It'll be faster that way.]]",
+      "text": "Wiggly,skeptical::It's a little more involved than it sounds.  We'll need to go up to the elevator shed on the roof to turn the lifts on.\n\nWiggly,sad::Before we turn on those machines, that elevator isn't going anywhere.\n\n[[Can you go do it?  I can just wait in the elevator cabin.  It'll be faster that way.]]\n[[p:Alright.  How do we get to the elevator shed?]]\n",
       "links": [
-        {
-          "name": "p:Alright.  How do we get to the elevator shed?",
-          "link": "p:Alright.  How do we get to the elevator shed?",
-          "pid": "21"
-        },
         {
           "name": "Can you go do it?  I can just wait in the elevator cabin.  It'll be faster that way.",
           "link": "Can you go do it?  I can just wait in the elevator cabin.  It'll be faster that way.",
           "pid": "23"
+        },
+        {
+          "name": "p:Alright.  How do we get to the elevator shed?",
+          "link": "p:Alright.  How do we get to the elevator shed?",
+          "pid": "21"
         }
       ],
       "name": "p:We can just take the elevator?  That sounds really easy.",
@@ -370,10 +378,13 @@
       "position": {
         "x": "1329",
         "y": "1206"
-      }
+      },
+      "tags": [
+        "aconfused"
+      ]
     },
     {
-      "text": "Wiggly::There's a stairwell leading up at the end of the hall.  That will get us onto the roof.\n\nWiggly::We'll have to navigate the roof walks to get across to the elevator shed, but that shouldn't be too hard.\n\nWiggly::Once we get that going, we can come on back down and take the elevator to the children's ward.\n\n[[p:Alright then.  Let's head up the stairs and check out the roof.]]",
+      "text": "Wiggly,looking_to_side::There's a stairwell leading up at the end of the hall.  That will get us onto the roof.\n\nWiggly,thinking::We'll have to navigate the roof walks to get across to the elevator shed, but that shouldn't be too hard.\n\nWiggly,surprised::Once we get that going, we can come on back down and take the elevator to the children's ward.\n\n[[p:Alright then.  Let's head up the stairs and check out the roof.]]",
       "links": [
         {
           "name": "p:Alright then.  Let's head up the stairs and check out the roof.",
@@ -398,7 +409,7 @@
       }
     },
     {
-      "text": "Wiggly::I might need a little help getting some of the levers in position.  I'm a little frail these days.\n\nJasper::He does look very scrawny, underneath his impressive coat.\n\nWiggly::Besides, we'll need to go down together anyway.  It's a very dangerous area.\n\n[[Dangerous?  What kind of dangerous?]]",
+      "text": "Wiggly,thinking::I might need a little help getting some of the levers in position.  I'm a little frail these days.\n\nJasper,head_tilted::He does look very scrawny, underneath his impressive coat.\n\nWiggly,surprised::Besides, we'll need to go down together anyway.  It's a very dangerous area.\n\n[[Dangerous?  What kind of dangerous?]]",
       "links": [
         {
           "name": "Dangerous?  What kind of dangerous?",
@@ -414,7 +425,7 @@
       }
     },
     {
-      "text": "Wiggly::I'll explain more later, up on the roof.  I don't think we should linger in here with these fern spores too much longer.\n\n[[Fair enough.->p:We can just take the elevator?  That sounds really easy.]]",
+      "text": "Wiggly,surprised::I'll explain more later, up on the roof.  I don't think we should linger in here with these fern spores too much longer.\n\n[[Fair enough.->p:We can just take the elevator?  That sounds really easy.]]",
       "links": [
         {
           "name": "Fair enough.",

@@ -17,12 +17,12 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_down = "res://top_floor/elevator_door/elevator_door.tscn"
+scene_down = "res://top_floor/colorful_nurses_hall/colorful_nurses_hall.tscn"
+prog_flag = "julia_room"
 position = Vector2( 1800, 430 )
 rotation = -63
-song = "sewer_med_flow"
 new_scene_on_ready = true
-new_scene = "res://top_floor/julia_room_convo/julia_room_convo.tscn"
+new_scene = "julia_room_convo"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
 down_path = true

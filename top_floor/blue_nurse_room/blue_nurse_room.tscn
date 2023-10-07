@@ -34,7 +34,7 @@ position = Vector2( 1425.23, 1949.67 )
 shape = SubResource( 1 )
 
 [node name="PopUp" parent="." instance=ExtResource( 4 )]
-popup_text = [ "Amelie,unertain::What's up with this room?  It's way less dilapidated than the others on this hall.", "Wiggly,neutral::All of the rooms on this hall are nurses quarters.", "Wiggly,thinking::I'm not sure why this one is so intact.  But my guess is that one of the other ferryman uses this room as a camping spot or something." ]
+popup_text = [ "Amelie,uncertain::What's up with this room?  It's way less dilapidated than the others on this hall.", "Wiggly,neutral::All of the rooms on this hall are nurses quarters.", "Wiggly,thinking::I'm not sure why this one is so intact.  But my guess is that one of the other ferryman uses this room as a camping spot or something." ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
 position = Vector2( 1423.75, 979.279 )

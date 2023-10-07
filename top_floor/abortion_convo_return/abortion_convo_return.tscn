@@ -14,7 +14,7 @@ __meta__ = {
 scriptPath = "res://top_floor/abortion_convo_return/abortion_convo_return.json"
 backgroundPath = "res://top_floor/abortion_convo/abortion_medicine_cabinet.png"
 sliverPath = "res://top_floor/abortion_convo/abortion_medicine_cabinet_sliver.png"
-nextLocation = "res://infirmary/tann_office/tann_office.tscn"
+nextLocation = "res://top_floor/cribs_cabinets/cribs_cabinets.tscn"
 fade_tag_dict = {
 "loose_note": "res://top_floor/abortion_convo/abortion_medicine_cabinet_note.png"
 }

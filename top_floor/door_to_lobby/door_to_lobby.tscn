@@ -24,8 +24,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://top_floor/lobby/lobby.tscn"
-scene_right = "res://top_floor/colorful_bay_windows/colorful_bay_windows.tscn"
 scene_down = "res://top_floor/blue_hallway/blue_hall.tscn"
+scene_left = "res://top_floor/colorful_bay_windows/colorful_bay_windows.tscn"
 position = Vector2( 1800, 430 )
 rotation = -63
 song = "sewer_med_flow"
@@ -38,10 +38,10 @@ position = Vector2( 1420.39, 1078.51 )
 shape = SubResource( 1 )
 
 [node name="ClickToEnter2" parent="." instance=ExtResource( 3 )]
-right_path = true
+left_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 2326.87, 1110.46 )
+position = Vector2( 547.535, 1063.37 )
 shape = SubResource( 2 )
 
 [node name="ClickToEnter3" parent="." instance=ExtResource( 3 )]

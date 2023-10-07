@@ -23,6 +23,8 @@ disappear_tag = "rise"
 
 [node name="TweenOut" type="Tween" parent="."]
 
+[node name="TweenOutSlow" type="Tween" parent="."]
+
 [node name="TweenBrighten" type="Tween" parent="."]
 
 [node name="TweenDarken" type="Tween" parent="."]

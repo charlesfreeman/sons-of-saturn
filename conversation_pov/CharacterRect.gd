@@ -4,6 +4,7 @@ export var on_start = false
 export var dark_on_start = false
 export var appear_tag = ""
 export var disappear_tag = ""
+export var disappear_slow_tag = ""
 export var brighten_tag = ""
 export var darken_tag = ""
 export var appear_dark_tag = ""
@@ -17,6 +18,10 @@ func _ready():
 	# tween for going visible to fully transparent
 	$TweenOut.interpolate_property(self, "modulate", 
 	  self.modulate, Color(1, 1, 1, 0), 0.2, 
+	  Tween.TRANS_LINEAR, Tween.EASE_IN)
+	# same thing but slower
+	$TweenOutSlow.interpolate_property(self, "modulate", 
+	  self.modulate, Color(1, 1, 1, 0), 1, 
 	  Tween.TRANS_LINEAR, Tween.EASE_IN)
 	# tween for going fully visible
 	$TweenBrighten.interpolate_property(self, "modulate", 
@@ -43,6 +48,8 @@ func appear_disappear(tag):
 			$TweenIn.start()
 		disappear_tag:
 			$TweenOut.start()
+		disappear_slow_tag:
+			$TweenOutSlow.start()
 		brighten_tag:
 			$TweenBrighten.start()
 		darken_tag:

@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sounds/effects/elevator_crash.wav" type="AudioStream" id=2]
 [ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=3]
+[ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=4]
+[ext_resource path="res://top_floor/elevator_interior_convo/rat_leg.png" type="Texture" id=5]
+[ext_resource path="res://top_floor/elevator_interior_convo/rat_arm.png" type="Texture" id=6]
 
 [node name="elevator_interior_convo" type="Control"]
 anchor_right = 1.0
@@ -13,8 +16,8 @@ __meta__ = {
 
 [node name="Convo" parent="." instance=ExtResource( 1 )]
 scriptPath = "res://top_floor/elevator_interior_convo/elevator_interior_convo.json"
-backgroundPath = "res://top_floor/elevator_interior_convo/elevator_door_2300x2160.png"
-sliverPath = "res://top_floor/elevator_interior_convo/elevator_door_sliver.png"
+backgroundPath = "res://top_floor/elevator_interior_convo/hole_in_roof.png"
+sliverPath = "res://top_floor/elevator_interior_convo/hole_in_roof_sliver.png"
 nextLocation = "res://infirmary/tann_office/tann_office.tscn"
 tag_dict = {
 "falling": "res://top_floor/elevator_interior_convo/elevator_interior_blurred.png"
@@ -24,11 +27,13 @@ tag_dict_sliver = {
 }
 fade_tag_dict = {
 "back_to_outside": "res://top_floor/elevator_interior_convo/elevator_door_2300x2160.png",
+"floor": "res://top_floor/elevator_interior_convo/elevator_floor_w_rat.png",
 "interior": "res://top_floor/elevator_interior_convo/elevator_interior_2300x2160.png",
 "shaft": "res://top_floor/elevator_interior_convo/elevator_shaft.png"
 }
 fade_tag_dict_sliver = {
 "back_to_outside": "res://top_floor/elevator_interior_convo/elevator_door_sliver.png",
+"floor": "res://top_floor/elevator_interior_convo/elevator_floor_sliver.png",
 "interior": "res://top_floor/elevator_interior_convo/elevator_interior_2300x2160.png",
 "shaft": "res://top_floor/elevator_interior_convo/elevator_shaft.png"
 }
@@ -37,3 +42,22 @@ song = "soft_wind"
 [node name="ConvoSoundEffect" parent="." instance=ExtResource( 3 )]
 stream = ExtResource( 2 )
 tag_to_play = "falling"
+
+[node name="CharacterRect" parent="." instance=ExtResource( 4 )]
+margin_left = 1022.0
+margin_top = 1193.94
+margin_right = 2008.0
+margin_bottom = 2183.94
+texture = ExtResource( 6 )
+appear_tag = "hand"
+disappear_tag = "remove_hand"
+
+[node name="CharacterRect2" parent="." instance=ExtResource( 4 )]
+margin_left = -163.287
+margin_top = 1019.0
+margin_right = 1252.71
+margin_bottom = 2323.0
+texture = ExtResource( 5 )
+appear_tag = "foot"
+disappear_tag = ""
+disappear_slow_tag = "remove_foot"

@@ -260,32 +260,33 @@
         "y": "303"
       },
       "tags": [
-        "interior"
+        "interior",
+        "morgue_ambient"
       ]
     },
     {
-      "text": "You look down and see an enormous dead rat laying on the floor of the cabin.  Its mass is superior to any rodent you've encountered.\n\nJasper::The size of this specimen...Incredible...\n\nJasper::We have to investigate this.  Pick it up so we can weigh it, and document its size.\n\n[[p:I don't want to pick it up, it's nasty.]]\n[[p:The giant rat is speaking to me; not with words, but more directly.  It's telling me not to pick it up.  \"Not yet,\" it says.->p:I don't want to pick it up, it's nasty.]]",
+      "text": "You look down and see an enormous dead rat underneath your foot.  Its mass is superior to any rodent you've encountered.\n\nJasper,surprised::The size of this specimen...Incredible...\n\n[[C->investigate]]",
       "links": [
         {
-          "name": "p:I don't want to pick it up, it's nasty.",
-          "link": "p:I don't want to pick it up, it's nasty.",
-          "pid": "18"
-        },
-        {
-          "name": "p:The giant rat is speaking to me; not with words, but more directly.  It's telling me not to pick it up.  \"Not yet,\" it says.",
-          "link": "p:I don't want to pick it up, it's nasty.",
-          "pid": "18"
+          "name": "C",
+          "link": "investigate",
+          "pid": "38"
         }
       ],
       "name": "p:(Action) investigate the strange texture beneath your left foot.",
       "pid": "17",
       "position": {
-        "x": "1152",
-        "y": "453"
-      }
+        "x": "1146",
+        "y": "410"
+      },
+      "tags": [
+        "aconfused",
+        "floor",
+        "foot"
+      ]
     },
     {
-      "text": "Jasper::Alright, fine, you don't have to pick it up.  But you should at least put your hand next to it so we can see how big it is.\n\n[[p:(Action) Place your hand next to the enormous rodent.]]\n[[p:I'd rather not.]]",
+      "text": "Jasper,sad::Alright, fine, you don't have to pick it up.  But you should at least put your hand next to it so we can see how big it is.\n\n[[p:(Action) Place your hand next to the enormous rodent.]]\n[[p:I'd rather not.]]",
       "links": [
         {
           "name": "p:(Action) Place your hand next to the enormous rodent.",
@@ -298,62 +299,72 @@
           "pid": "20"
         }
       ],
-      "name": "p:I don't want to pick it up, it's nasty.",
+      "name": "p:I don't want to pick it up, it's insides are putrified.",
       "pid": "18",
       "position": {
         "x": "1148",
-        "y": "623"
-      }
+        "y": "640"
+      },
+      "tags": [
+        "adisgusted"
+      ]
     },
     {
-      "text": "You place your tiny hand next to the impressive carcass.  At once it's incredible girth becomes apparent.\n\nYou can feel your tiny hand cowering in its presence.\n\nJasper::Incredible.  I cannot imagine how it died.  Once you reach this size, you have no natural predators.\n\n[[p:Man, I wish that was me...]]\n[[p:Such mass.  Such a sculpted form.  The Vesuvian rat!->p:Man, I wish that was me...]]\n",
+      "text": "You place your tiny, pathetic hand next to the impressive carcass.  At once it's incredible girth becomes apparent.\n\nYour tiny appendage cowers in its presence.\n\nJasper,thinking::Incredible.  It's easily over half a meter in length.  And it shows such obvious musculature on its back.\n\nJasper,head_tilted::I cannot imagine how it died.  Once you reach this size, you have no natural predators.\n\n[[p:I wish that was me...]]\n[[p:Such mass.  Such a sculpted, Vesuvian form.  What I would give to be that rat...->p:I wish that was me...]]\n",
       "links": [
         {
-          "name": "p:Man, I wish that was me...",
-          "link": "p:Man, I wish that was me...",
+          "name": "p:I wish that was me...",
+          "link": "p:I wish that was me...",
           "pid": "21"
         },
         {
-          "name": "p:Such mass.  Such a sculpted form.  The Vesuvian rat!",
-          "link": "p:Man, I wish that was me...",
+          "name": "p:Such mass.  Such a sculpted, Vesuvian form.  What I would give to be that rat...",
+          "link": "p:I wish that was me...",
           "pid": "21"
         }
       ],
       "name": "p:(Action) Place your hand next to the enormous rodent.",
       "pid": "19",
       "position": {
-        "x": "1073",
-        "y": "773"
-      }
+        "x": "1052",
+        "y": "743"
+      },
+      "tags": [
+        "aguilty",
+        "hand",
+        "remove_foot"
+      ]
     },
     {
-      "text": "Double-click this passage to edit it.",
+      "text": "Jasper,thinking::Alright, fine.  I guess we should get this drop underway.\n\n[[C->ready to drop]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "ready to drop",
+          "pid": "37"
+        }
+      ],
       "name": "p:I'd rather not.",
       "pid": "20",
       "position": {
-        "x": "1223",
-        "y": "773"
+        "x": "1274",
+        "y": "772"
       }
     },
     {
-      "text": "Jasper::It really is incredible.  \n\nJasper::We need to keep moving though.\n\nJasper::Ready to give Wiggly the signal to drop us?  Remember, we just need to slap the roof of the cabin, and he'll release the lever.\n\n[[p:I'm ready as I'll ever be.]]\n[[p:I'm excited for this, honestly.->p:I'm ready as I'll ever be.]]",
+      "text": "Jasper,sad::We all wish that were us.  We all wish we were such a dominant specimen.\n\nJasper,twisted::But we need to move on from this rat.  We can't let the siren call of impossible dreams stop us from getting what little we can out of life.\n\n[[C->ready to drop]] ",
       "links": [
         {
-          "name": "p:I'm ready as I'll ever be.",
-          "link": "p:I'm ready as I'll ever be.",
-          "pid": "22"
-        },
-        {
-          "name": "p:I'm excited for this, honestly.",
-          "link": "p:I'm ready as I'll ever be.",
-          "pid": "22"
+          "name": "C",
+          "link": "ready to drop",
+          "pid": "37"
         }
       ],
-      "name": "p:Man, I wish that was me...",
+      "name": "p:I wish that was me...",
       "pid": "21",
       "position": {
-        "x": "1073",
-        "y": "923"
+        "x": "1033",
+        "y": "855"
       }
     },
     {
@@ -370,7 +381,7 @@
           "pid": "23"
         }
       ],
-      "name": "p:I'm ready as I'll ever be.",
+      "name": "p:I'm ready for this.  I was born ready for this.",
       "pid": "22",
       "position": {
         "x": "1073",
@@ -401,10 +412,13 @@
       "position": {
         "x": "1073",
         "y": "1223"
-      }
+      },
+      "tags": [
+        "aconfused"
+      ]
     },
     {
-      "text": "You return to the elevator cabin on the floor below.  It is nestled awkwardly into the end corner of the hallway, likely a later addition to the original construction.\n\nThe elevator is idled out of phase with respect to the floor, leaving a gap of several feet between the top of the cabin and the doorframe.\n\nJasper::Whew.  Ok.  We've just gotta step in and smack the roof, remember?  Nothing to it.\n\n[[(Action) Look up the elevator shaft.]]\n[[p:(Action) Step inside the elevator cabin.]]",
+      "text": "You stand up with some difficulty and stumble towards the elevator cabin at the end of the hall.  It is nestled awkwardly into the end corner of the hallway, likely a later addition to the original construction.\n\nThe elevator is idled out of phase with respect to the floor, leaving a gap of several feet between the top of the cabin and the doorframe.\n\nJasper,thinking::Whew.  Ok.  We've just gotta step in and smack the roof, remember?  Nothing to it.\n\n[[(Action) Look up the elevator shaft.]]\n[[p:(Action) Step inside the elevator cabin.]]",
       "links": [
         {
           "name": "(Action) Look up the elevator shaft.",
@@ -417,22 +431,23 @@
           "pid": "16"
         }
       ],
-      "name": "start",
+      "name": "stand",
       "pid": "24",
       "position": {
         "x": "1151",
-        "y": "114.5"
+        "y": "114"
       },
       "tags": [
-        "back_to_outside"
+        "back_to_outside",
+        "aguilty"
       ]
     },
     {
-      "text": "You lean your head in above the cabin and look up the shaft.  You can see the artificial light from the rooftop machine room pouring in from above.\n\nYou can also see the faint outlines of the rigging equipment that once kept the cabin suspended.  Supposedly, only the magnetic backups remain functional.\n\n[[C->start]]",
+      "text": "You lean your head in above the cabin and look up the shaft.  You can see the artificial light from the rooftop machine room pouring in from above.\n\nYou can also see the faint outlines of the rigging equipment that once kept the cabin suspended.  Supposedly, only the magnetic backups remain functional.\n\n[[C->stand]]",
       "links": [
         {
           "name": "C",
-          "link": "start",
+          "link": "stand",
           "pid": "24"
         }
       ],
@@ -440,18 +455,18 @@
       "pid": "25",
       "position": {
         "x": "1029",
-        "y": "301.5"
+        "y": "301"
       },
       "tags": [
         "shaft"
       ]
     },
     {
-      "text": "Jasper::Thanks.  Now that I'm deeper in here, I can provide padding for the heart and surrounding organs.  This is good for both of us.\n\n[[C->p:I'm ready as I'll ever be.]]",
+      "text": "Jasper,twisted::Thanks.  Now that I'm deeper in here, I can provide padding for the heart and surrounding organs.  This is good for both of us.\n\n[[C->p:I'm ready for this.  I was born ready for this.]]",
       "links": [
         {
           "name": "C",
-          "link": "p:I'm ready as I'll ever be.",
+          "link": "p:I'm ready for this.  I was born ready for this.",
           "pid": "22"
         }
       ],
@@ -463,7 +478,7 @@
       }
     },
     {
-      "text": "Jasper::Do you think he heard us?\n\n[[C->fall]]",
+      "text": "Jasper,head_tilted::Do you think he heard us?\n\n[[C->fall]]",
       "links": [
         {
           "name": "C",
@@ -479,7 +494,7 @@
       }
     },
     {
-      "text": "Jasper::Maybe w---....___",
+      "text": "Jasper,surprised::Maybe w---....___",
       "name": "fall",
       "pid": "28",
       "position": {
@@ -489,10 +504,210 @@
       "tags": [
         "falling"
       ]
+    },
+    {
+      "text": "Jasper,thinking::I doubt he did.  The wind is pretty intense up there, and this building makes plenty of strange noises on its own.\n\nJasper,surprised::Julia might have heard it, though.  We should get moving.\n\n[[C->practice fall]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "practice fall",
+          "pid": "36"
+        }
+      ],
+      "name": "Did Wiggly not hear me crashing through the floor?",
+      "pid": "29",
+      "position": {
+        "x": "1363",
+        "y": "653"
+      }
+    },
+    {
+      "text": "Jasper,sad::We've never had any chance to look up.  We've been too focused scrounging around dingy offices and squalid filing cabinets.\n\n[[C->p:Where are we?]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:Where are we?",
+          "pid": "33"
+        }
+      ],
+      "name": "I never noticed how nice this ceiling was.",
+      "pid": "30",
+      "position": {
+        "x": "1474",
+        "y": "822"
+      }
+    },
+    {
+      "text": "Jasper,sad::Ugh.  What?  Where are we?  What just happened?\n\nJasper,thinking::I think we just fell through the roof?\n\n[[p:I'm flat on my back, and my tailbone hurts, and I'm looking up at a hole in the ceiling.  So, I think that's a safe bet.]]\n[[p:Let's not get ahead of ourselves.  There are other possibilities we need to rule out.]]",
+      "links": [
+        {
+          "name": "p:I'm flat on my back, and my tailbone hurts, and I'm looking up at a hole in the ceiling.  So, I think that's a safe bet.",
+          "link": "p:I'm flat on my back, and my tailbone hurts, and I'm looking up at a hole in the ceiling.  So, I think that's a safe bet.",
+          "pid": "32"
+        },
+        {
+          "name": "p:Let's not get ahead of ourselves.  There are other possibilities we need to rule out.",
+          "link": "p:Let's not get ahead of ourselves.  There are other possibilities we need to rule out.",
+          "pid": "35"
+        }
+      ],
+      "name": "Untitled Passage 2",
+      "pid": "31",
+      "position": {
+        "x": "1460",
+        "y": "237"
+      },
+      "tags": [
+        "auncertain"
+      ]
+    },
+    {
+      "text": "Jasper,head_tilted::No need to get snarky with it.\n\n[[C->practice fall]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "practice fall",
+          "pid": "36"
+        }
+      ],
+      "name": "p:I'm flat on my back, and my tailbone hurts, and I'm looking up at a hole in the ceiling.  So, I think that's a safe bet.",
+      "pid": "32",
+      "position": {
+        "x": "1444",
+        "y": "367"
+      }
+    },
+    {
+      "text": "Jasper,head_tilted::I think we're back near the stairwell we came up to the top floor on.\n\nJasper,twisted::We should be right next to the elevator cabin now, actually.  It should be over to the left.\n\nJasper,surprised::Can you move?\n\n[[I never noticed how nice this ceiling was.]]\n[[p:I'm good to crawl, at least.]]\n",
+      "links": [
+        {
+          "name": "I never noticed how nice this ceiling was.",
+          "link": "I never noticed how nice this ceiling was.",
+          "pid": "30"
+        },
+        {
+          "name": "p:I'm good to crawl, at least.",
+          "link": "p:I'm good to crawl, at least.",
+          "pid": "34"
+        }
+      ],
+      "name": "p:Where are we?",
+      "pid": "33",
+      "position": {
+        "x": "1545",
+        "y": "650"
+      },
+      "tags": [
+        "auncertain"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::Then let's slither into the cabin of the elevator so we can get down to the basement.\n\n[[C->stand]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "stand",
+          "pid": "24"
+        }
+      ],
+      "name": "p:I'm good to crawl, at least.",
+      "pid": "34",
+      "position": {
+        "x": "1640",
+        "y": "821"
+      }
+    },
+    {
+      "text": "Jasper,thinking::Yes, you are right.  Maybe we were drugged again.  Maybe this is all just a bad nightmare and we're going through a series of false awakenings.\n\nJasper,surprised::Actually, no.  We definitely just fell through the floor.  I can remember the free-fall now.\n\n[[C->practice fall]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "practice fall",
+          "pid": "36"
+        }
+      ],
+      "name": "p:Let's not get ahead of ourselves.  There are other possibilities we need to rule out.",
+      "pid": "35",
+      "position": {
+        "x": "1583",
+        "y": "369"
+      }
+    },
+    {
+      "text": "Jasper,head_tilted::I guess we can think of this as a practice fall.  We can handle a ten foot drop.  I think we're ready to take a thirty foot free-fall now.\n\n[[Did Wiggly not hear me crashing through the floor?]]\n[[p:Where are we?]]",
+      "links": [
+        {
+          "name": "Did Wiggly not hear me crashing through the floor?",
+          "link": "Did Wiggly not hear me crashing through the floor?",
+          "pid": "29"
+        },
+        {
+          "name": "p:Where are we?",
+          "link": "p:Where are we?",
+          "pid": "33"
+        }
+      ],
+      "name": "practice fall",
+      "pid": "36",
+      "position": {
+        "x": "1494",
+        "y": "511"
+      },
+      "tags": [
+        "aconfused"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::It's time to give Wiggly the signal to drop us.  Remember, we just need to slap the roof of the cabin, and he'll release the lever.\n\n[[p:I'm ready for this.  I was born ready for this.]]\n[[p:I'm excited for this, honestly.->p:I'm ready for this.  I was born ready for this.]]",
+      "links": [
+        {
+          "name": "p:I'm ready for this.  I was born ready for this.",
+          "link": "p:I'm ready for this.  I was born ready for this.",
+          "pid": "22"
+        },
+        {
+          "name": "p:I'm excited for this, honestly.",
+          "link": "p:I'm ready for this.  I was born ready for this.",
+          "pid": "22"
+        }
+      ],
+      "name": "ready to drop",
+      "pid": "37",
+      "position": {
+        "x": "1188",
+        "y": "957"
+      },
+      "tags": [
+        "interior",
+        "afuming",
+        "remove_foot",
+        "remove_hand"
+      ]
+    },
+    {
+      "text": "Jasper,thinking::We have to investigate this.  Pick it up so we can weigh it, and document its size.\n\n[[p:I don't want to pick it up, it's insides are putrified.]]\n[[p:The giant rat is speaking to me; not with words, but more directly.  It's telling me not to pick it up.  \"Not yet,\" it says.->p:I don't want to pick it up, it's insides are putrified.]]",
+      "links": [
+        {
+          "name": "p:I don't want to pick it up, it's insides are putrified.",
+          "link": "p:I don't want to pick it up, it's insides are putrified.",
+          "pid": "18"
+        },
+        {
+          "name": "p:The giant rat is speaking to me; not with words, but more directly.  It's telling me not to pick it up.  \"Not yet,\" it says.",
+          "link": "p:I don't want to pick it up, it's insides are putrified.",
+          "pid": "18"
+        }
+      ],
+      "name": "investigate",
+      "pid": "38",
+      "position": {
+        "x": "1151",
+        "y": "521"
+      }
     }
   ],
   "name": "Elevator Interior",
-  "startnode": "24",
+  "startnode": "31",
   "creator": "Twine",
   "creator-version": "2.3.14",
   "ifid": "0095AE42-972D-414F-A530-4E2A54AF520A"

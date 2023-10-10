@@ -28,8 +28,8 @@ scene_right = "res://top_floor/blue_tub/blue_tub.tscn"
 scene_left = "res://top_floor/colorful_nurses_hall/colorful_nurses_hall.tscn"
 alt_scene_left = "res://top_floor/julia_door/julia_door.tscn"
 req_flag_left = "custody_convo"
-position = Vector2( 1800, 430 )
-rotation = -63
+position = Vector2( 950, 480 )
+rotation = 218
 song = "sewer_med_flow"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]

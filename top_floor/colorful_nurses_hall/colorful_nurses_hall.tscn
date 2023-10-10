@@ -30,8 +30,8 @@ scene_up = "res://top_floor/nurses_quarters/nurses_quarters.tscn"
 scene_right = "res://top_floor/julia_door/julia_door.tscn"
 scene_down = "res://top_floor/lobby_w_shelves/lobby_w_shelves.tscn"
 scene_left = "res://top_floor/blue_nurse_room/blue_nurse_room.tscn"
-position = Vector2( 1800, 430 )
-rotation = -63
+position = Vector2( 1670, 495 )
+rotation = 270
 song = "sewer_med_flow"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]

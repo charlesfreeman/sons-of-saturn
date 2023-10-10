@@ -18,6 +18,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://tunnels/basement_out/basement_out.tscn"
+position = Vector2( 1860, 1520 )
+rotation = 27
+map = "tunnel"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true

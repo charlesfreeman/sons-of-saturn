@@ -16,6 +16,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 prog_flag = "fallen_through_roof"
+position = Vector2( 1600, 585 )
+rotation = 110
 new_scene_on_ready = true
 new_scene = "elevator_interior_convo"
 

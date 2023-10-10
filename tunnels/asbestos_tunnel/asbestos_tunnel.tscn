@@ -22,6 +22,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://tunnels/ladder_to_hatch/ladder_to_hatch.tscn"
+position = Vector2( 1220, 328 )
+rotation = 270
 song = "sly_sewer_intimate"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]

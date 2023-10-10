@@ -22,6 +22,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_down = "res://maternity/stairs_to_top_floor/stairs_to_top_floor.tscn"
+position = Vector2( 1455, 860 )
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 down_path = true

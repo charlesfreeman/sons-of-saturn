@@ -26,9 +26,10 @@ __meta__ = {
 scene_up = "res://top_floor/door_to_lobby/door_to_lobby.tscn"
 scene_down = "res://top_floor/elevator_door/elevator_door.tscn"
 scene_left = "res://top_floor/piano_near_door/piano_near_door.tscn"
-position = Vector2( 1800, 430 )
-rotation = -63
+position = Vector2( 1270, 1440 )
+rotation = 57
 song = "sewer_med_flow"
+map = "top_floor"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
 up_path = true

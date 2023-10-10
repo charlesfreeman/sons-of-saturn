@@ -18,6 +18,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://tunnels/flooded_tunnel/flooded_tunnel.tscn"
+position = Vector2( 1905, 520 )
+rotation = -10
 song = "sly_sewer_Intimate"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]

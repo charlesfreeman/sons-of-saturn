@@ -18,6 +18,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://maternity/vera_new_office/vera_new_office.tscn"
+position = Vector2( 935, 328 )
+rotation = 307
 song = "sly_sewer_intimate"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]

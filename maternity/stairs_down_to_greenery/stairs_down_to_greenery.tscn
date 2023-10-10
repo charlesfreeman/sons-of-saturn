@@ -22,6 +22,8 @@ __meta__ = {
 }
 scene_up = "res://maternity/courtyard/courtyard.tscn"
 scene_down = "res://maternity/stairs_to_top_floor/stairs_to_top_floor.tscn"
+position = Vector2( 1456, 1100 )
+map = "courtyard"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true

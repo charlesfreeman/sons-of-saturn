@@ -27,8 +27,8 @@ __meta__ = {
 }
 scene_down = "res://top_floor/cribs_looking_right/cribs_looking_right.tscn"
 popup_background = "res://top_floor/cribs_cabinets/cribs_glass_cabinet.png"
-position = Vector2( 1800, 430 )
-rotation = -63
+position = Vector2( 1955, 630 )
+rotation = 270
 
 [node name="PopUp" parent="." instance=ExtResource( 2 )]
 popup_text = [ "Jasper,twisted::Tons of old medicines are stocked here.  You could have hours of fun with the stuff on this shelf.", "Wiggly,sad::All of the best stuff has been picked clean from that cabinet, I'm afraid." ]

@@ -23,7 +23,7 @@ __meta__ = {
 }
 scene_left = "res://maternity/stairs_to_top_floor/stairs_to_top_floor.tscn"
 req_flag_up = "False"
-position = Vector2( 1535, 1218 )
+position = Vector2( 1350, 935 )
 rotation = 90
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]

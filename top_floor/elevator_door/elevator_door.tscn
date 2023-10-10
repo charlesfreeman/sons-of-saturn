@@ -22,8 +22,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_down = "res://top_floor/blue_hallway/blue_hall.tscn"
-position = Vector2( 1800, 430 )
-rotation = -63
+position = Vector2( 1180, 1430 )
+rotation = 270
 song = "sewer_med_flow"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]

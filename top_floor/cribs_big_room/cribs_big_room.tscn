@@ -23,8 +23,8 @@ __meta__ = {
 }
 scene_down = "res://top_floor/cribs_straight_on/cribs_straight_on.tscn"
 popup_background = "res://top_floor/cribs_big_room/big_cribroom_sideview.png"
-position = Vector2( 1800, 430 )
-rotation = -63
+position = Vector2( 1955, 1150 )
+rotation = 228
 
 [node name="DescPopUp" parent="." instance=ExtResource( 3 )]
 popup_text = [ "The room is lined with two rows of cribs.  They are all turned to face you.", "The empty cribs are accusing you of something.  You can feel their ire." ]

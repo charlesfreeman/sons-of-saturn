@@ -28,8 +28,8 @@ scene_right = "res://top_floor/stairs_to_roof_base/stairs_to_roof_base.tscn"
 scene_down = "res://top_floor/nurses_quarters/nurses_quarters.tscn"
 scene_left = "res://top_floor/suitcases/suitcases.tscn"
 req_flag_right = "julia_room_convo"
-position = Vector2( 1800, 430 )
-rotation = -63
+position = Vector2( 975, 820 )
+rotation = 180
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
 left_path = true

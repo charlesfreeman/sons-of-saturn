@@ -26,8 +26,8 @@ __meta__ = {
 scene_up = "res://top_floor/lobby/lobby.tscn"
 scene_down = "res://top_floor/blue_hallway/blue_hall.tscn"
 scene_left = "res://top_floor/colorful_bay_windows/colorful_bay_windows.tscn"
-position = Vector2( 1800, 430 )
-rotation = -63
+position = Vector2( 1760, 1430 )
+rotation = 90
 song = "sewer_med_flow"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]

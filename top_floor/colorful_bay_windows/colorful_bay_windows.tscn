@@ -23,8 +23,7 @@ __meta__ = {
 }
 scene_down = "res://top_floor/door_to_lobby/door_to_lobby.tscn"
 popup_background = "res://top_floor/colorful_bay_windows/atown_looking_out_window.png"
-position = Vector2( 1800, 430 )
-rotation = -63
+position = Vector2( 1820, 1330 )
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 down_path = true

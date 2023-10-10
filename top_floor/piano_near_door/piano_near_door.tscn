@@ -27,8 +27,8 @@ __meta__ = {
 scene_up = "res://top_floor/piano_office/piano_office.tscn"
 scene_down = "res://top_floor/blue_hallway/blue_hall.tscn"
 popup_background = "res://top_floor/piano_near_door/two_pianos_angled.png"
-position = Vector2( 1800, 430 )
-rotation = -63
+position = Vector2( 1390, 1330 )
+rotation = 90
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
 up_path = true

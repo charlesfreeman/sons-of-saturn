@@ -18,6 +18,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_up = "res://tunnels/asbestos_tunnel/asbestos_tunnel.tscn"
+position = Vector2( 1550, 325 )
+rotation = -99
 song = "sly_sewer_intimate"
 footstep_type_up = "Wet"
 

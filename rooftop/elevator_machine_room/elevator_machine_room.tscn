@@ -18,6 +18,8 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+position = Vector2( 900, 585 )
+rotation = 270
 song = "flourescent_hum"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]

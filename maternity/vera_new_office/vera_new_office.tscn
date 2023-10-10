@@ -19,6 +19,9 @@ __meta__ = {
 }
 scene_down = "res://maternity/stairwell_office_hallway_return/stairwell_office_hallway_return.tscn"
 prog_flag = "vera_new_office"
+position = Vector2( 1420, 1020 )
+rotation = 180
+map = "office_stairwell"
 new_scene_on_ready = true
 new_scene = "vera_new_office_convo"
 

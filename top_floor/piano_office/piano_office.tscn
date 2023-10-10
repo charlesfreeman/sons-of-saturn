@@ -22,8 +22,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_down = "res://top_floor/piano_near_door/piano_near_door.tscn"
-position = Vector2( 1800, 430 )
-rotation = -63
+position = Vector2( 1530, 1330 )
+rotation = 53
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
 down_path = true

@@ -18,7 +18,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 scene_right = "res://rooftop/breezeway/breezeway.tscn"
+position = Vector2( 2043, 1580 )
+rotation = -31
 song = "rooftop_wind"
+map = "rooftop"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 right_path = true

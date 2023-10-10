@@ -17,7 +17,12 @@ var map_paths = {
 	"infirmary_2f" : "res://roaming_pov/maps/infirmary_2f_map.png",
 	"iso_cells" : "res://roaming_pov/maps/iso_cells_map.png",
 	"maternity_1f" : "res://roaming_pov/maps/maternity_1f_map.png",
-	"dream" : "res://roaming_pov/maps/dream_map.png"
+	"dream" : "res://roaming_pov/maps/dream_map.png",
+	"tunnel" : "res://roaming_pov/maps/tunnel_map.png",
+	"office_stairwell" : "res://roaming_pov/maps/office_stairwell_office_map_v2.png",
+	"courtyard" : "res://roaming_pov/maps/courtyard_map.png",
+	"top_floor" : "res://roaming_pov/maps/top_floor_map.png",
+	"rooftop" : "res://roaming_pov/maps/rooftop_map.png",
 }
 
 onready var map = $HBoxContainer/VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect

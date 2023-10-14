@@ -174,7 +174,7 @@
       }
     },
     {
-      "text": "On the left side of the room, you see a large, metallic lever, remniscent of an antique prop from an old horror film.  The lever appears to be a circuit breaker switch for the elevator machinery.\n\n[[C->Don't touch that!]]",
+      "text": "On the left side of the room, you see a large, metallic lever, reminiscent of an antique prop from an old horror film.  The lever appears to be a circuit breaker switch for the elevator machinery.\n\n[[C->Don't touch that!]]",
       "links": [
         {
           "name": "C",
@@ -190,7 +190,7 @@
       }
     },
     {
-      "text": "Wiggly::The hospital complex doesn't have power, but this elevator equipment does.  So do a few of the surgical rooms.\n\nWiggly::The central power grid hasn't been functional since the city collapsed, but hospitals and certain pieces of critical infrastracture were supplied with backup high density fuel cannisters.  \n\nWiggly::So stuff like surgical suites, elevators, ventilators, and the like could still run during power outages.\n\n[[That room Julia took me to had working surgical lights.  I guess that's how.]]\n[[\"High density fuel sources?\"]]",
+      "text": "Wiggly::The hospital complex doesn't have power, but this elevator equipment does.  So do a few of the surgical rooms.\n\nWiggly::The central power grid hasn't been functional since the city collapsed, but hospitals and certain pieces of critical infrastructure were supplied with backup high density fuel cannisters.  \n\nWiggly::So stuff like surgical suites, elevators, ventilators, and the like could still run during power outages.\n\n[[That room Julia took me to had working surgical lights.  I guess that's how.]]\n[[\"High density fuel sources?\"]]",
       "links": [
         {
           "name": "That room Julia took me to had working surgical lights.  I guess that's how.",
@@ -246,12 +246,19 @@
       }
     },
     {
-      "text": "Wiggly::Don't touch that!  That will cut the circuit for the elevator equipment, including the backup magnetic locks keeping the elevator from falling. \n\nWiggly::The cables for this elevator are totally rotten.  The magnetic backups are the only thing keeping the cabin suspended.",
+      "text": "Wiggly::Don't touch that!  That will cut the circuit for the elevator equipment, including the backup magnetic locks keeping the elevator from falling. \n\nWiggly::The cables for this elevator are totally rotten.  The magnetic backups are the only thing keeping the cabin suspended.\n\n[[C->p:We need to find another route to the basement.]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:We need to find another route to the basement.",
+          "pid": "7"
+        }
+      ],
       "name": "Don't touch that!",
       "pid": "13",
       "position": {
-        "x": "1339",
-        "y": "1520"
+        "x": "1255",
+        "y": "1545"
       }
     },
     {

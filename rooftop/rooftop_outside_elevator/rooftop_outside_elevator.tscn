@@ -21,6 +21,7 @@ scene_up = "res://rooftop/elevator_machine_room/elevator_machine_room.tscn"
 prog_flag = "machine_room"
 position = Vector2( 1120, 585 )
 rotation = 270
+song = "rooftop_wind"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true

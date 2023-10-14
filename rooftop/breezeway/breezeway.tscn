@@ -19,6 +19,7 @@ __meta__ = {
 }
 scene_up = "res://rooftop/far_from_elevator/far_from_elevator.tscn"
 position = Vector2( 2043, 1300 )
+song = "rooftop_wind"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
 up_path = true

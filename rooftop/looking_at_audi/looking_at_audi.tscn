@@ -18,11 +18,13 @@ __meta__ = {
 prog_flag = "fallen_through_roof"
 position = Vector2( 1600, 585 )
 rotation = 110
+song = "rooftop_wind"
 new_scene_on_ready = true
 new_scene = "elevator_interior_convo"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
+volume_db = -7.598
 autoplay = true
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]

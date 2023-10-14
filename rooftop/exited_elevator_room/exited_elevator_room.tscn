@@ -20,6 +20,7 @@ __meta__ = {
 scene_up = "res://rooftop/looking_at_audi/looking_at_audi.tscn"
 position = Vector2( 1100, 585 )
 rotation = 57
+song = "rooftop_wind"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
 up_path = true

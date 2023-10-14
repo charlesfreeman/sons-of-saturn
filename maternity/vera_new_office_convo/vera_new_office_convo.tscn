@@ -11,9 +11,9 @@ __meta__ = {
 }
 
 [node name="Convo" parent="." instance=ExtResource( 1 )]
-scriptPath = "res://maternity/vera_new_office_convo_return/vera_new_office_convo_return.json"
-backgroundPath = "res://maternity/vera_new_office_convo_return/vera_new_desk_2300x2160.png"
-sliverPath = "res://maternity/vera_new_office_convo_return/vera_new_desk_sliver.png"
+scriptPath = "res://maternity/vera_new_office_convo/vera_new_office_convo.json"
+backgroundPath = "res://maternity/vera_new_office_convo/vera_new_desk_2300x2160.png"
+sliverPath = "res://maternity/vera_new_office_convo/vera_new_desk_sliver.png"
 nextLocation = "res://maternity/vera_new_office/vera_new_office.tscn"
 
 [node name="Documents" parent="." instance=ExtResource( 2 )]

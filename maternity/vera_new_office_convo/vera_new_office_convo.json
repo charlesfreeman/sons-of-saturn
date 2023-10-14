@@ -23,7 +23,8 @@
         "y": "518"
       },
       "tags": [
-        "page1"
+        "page1",
+        "aconfused"
       ]
     },
     {
@@ -47,11 +48,12 @@
         "y": "830"
       },
       "tags": [
-        "page2"
+        "page2",
+        "aguilty"
       ]
     },
     {
-      "text": "Wiggly::We're here - this is Vera's office.  Presumably the one she got after requesting a transfer.\n\nWiggly::I found some of her diary pages in that cabinet drawer, while I was working my way towards you. I hope you find them helpful, miss.\n\n[[Why bother stopping here?  We agreed to meet at the end of the hall.]]\n[[This office looks kind of dingy compared to her old one.]]\n[[p:(Action) Search the cabinet.]]\n",
+      "text": "You emerge from the hatch into a dim, grimy office.  Despite the large window next to the desk, the room remains poorly lit.\n\nWiggly begins speaking in a hushed tone.\n\nWiggly,surprised::This is Vera's office.  Presumably the one she got after requesting a transfer.\n\nWiggly,looking_to_side::I found some of her diary pages in that cabinet drawer, while I was working my way towards you. I think you should have a look at them.\n\nWiggly,surprised::Also, let's mind our voices from here on out.  Julia - or whoever you were talking to - is still probably on this floor.\n\n[[Why bother stopping here?  We agreed to meet at the end of the hall.]]\n[[This office looks kind of dingy compared to her old one.]]\n[[p:(Action) Search the cabinet.]]\n",
       "links": [
         {
           "name": "Why bother stopping here?  We agreed to meet at the end of the hall.",
@@ -74,10 +76,13 @@
       "position": {
         "x": "784",
         "y": "223"
-      }
+      },
+      "tags": [
+        "adisgusted"
+      ]
     },
     {
-      "text": "Wiggly::It was on the way, so I decided hop out of the ducts and take a quick look around.\n\nWiggly::We could have linked up here instead, but I thought the room at the end of the corridors would be easier for you to find.\n\n[[C->start]] ",
+      "text": "Wiggly,looking_to_side::It was on the way, so I decided hop out of the ducts and take a quick look around.\n\nWiggly,half_smile::We could have linked up here instead, but I thought the room at the end of the corridors would be easier for you to find.\n\n[[C->start]] ",
       "links": [
         {
           "name": "C",
@@ -109,7 +114,7 @@
       }
     },
     {
-      "text": "Wiggly::She suspects as much, at least.\n\nWiggly::She might have been correct.  Under the table abortion rings were pretty common in Minerva.  And the medical supply irregularities are...suggestive.\n\n[[p:Let's keep reading->Page 2]] ",
+      "text": "Wiggly,skeptical::She suspects as much, at least.\n\nWiggly,thinking::She might have been correct.  Under the table abortion rings were pretty common in Minerva.  And the medical supply irregularities are...suggestive.\n\n[[p:Let's keep reading->Page 2]] ",
       "links": [
         {
           "name": "p:Let's keep reading",
@@ -125,7 +130,7 @@
       }
     },
     {
-      "text": "Wiggly::She is certainly much more passionate than any accountant I ever interacted with.\n\n[[p:Let's keep reading->Page 2]] ",
+      "text": "Wiggly,skeptical::She is certainly much more passionate than any accountant I ever interacted with.\n\n[[p:Let's keep reading->Page 2]] ",
       "links": [
         {
           "name": "p:Let's keep reading",
@@ -141,7 +146,7 @@
       }
     },
     {
-      "text": "Wiggly::Vera thought so.  And for what it's worth, I think so.\n\n[[p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.]]",
+      "text": "Wiggly,surprised::Vera thought so.  And for what it's worth, I think so.\n\n[[p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.]]",
       "links": [
         {
           "name": "p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.",
@@ -157,7 +162,7 @@
       }
     },
     {
-      "text": "Wiggly::His telegrams definitely corroborate Vera's hunch, I'll say that much.\n\n[[p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.]]",
+      "text": "Wiggly,looking_to_side::His telegrams definitely corroborate Vera's hunch, I'll say that much.\n\n[[p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.]]",
       "links": [
         {
           "name": "p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.",
@@ -173,7 +178,7 @@
       }
     },
     {
-      "text": "Wiggly::Yes.  I bet she took the exact same route through the tunnels we just did, though in reverse.  \n\nWiggly::That room at the end of the corridor is where they would have operated.\n\n[[She must have been really dedicated to finding out the truth if she was willing to go through those disgusting tunnels.]]\n[[p:I wonder if this has anything to do with Julia.]]",
+      "text": "Wiggly,looking_to_side::Yes.  I bet she took the exact same route through the tunnels we just did, though in reverse.  \n\nWiggly,looking_to_side::That room at the end of the corridor is where they would have operated.\n\n[[She must have been really dedicated to finding out the truth if she was willing to go through those disgusting tunnels.]]\n[[p:I wonder if this has anything to do with Julia.]]",
       "links": [
         {
           "name": "She must have been really dedicated to finding out the truth if she was willing to go through those disgusting tunnels.",
@@ -191,10 +196,13 @@
       "position": {
         "x": "792",
         "y": "1132"
-      }
+      },
+      "tags": [
+        "adisgusted"
+      ]
     },
     {
-      "text": "Wiggly::What do you mean?  Those are some of the nicest tunnels in the city.  So spacious, you barely have to duck, and the water is less than knee deep the entire way.\n\nJasper::There isn't even a hint of facetiousness in his voice.  He loves those tunnels.\n\n[[C->p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.]] ",
+      "text": "Wiggly,half_smile::What do you mean?  Those are some of the nicest tunnels in the city.  So spacious, you barely have to duck, and the water is less than knee deep the entire way.\n\nJasper,thinking::There isn't even a hint of facetiousness in his voice.  He loves those tunnels.\n\n[[C->p:Vera was planning to spy on them during one of their operations.  I wonder how that played out.]] ",
       "links": [
         {
           "name": "C",
@@ -210,7 +218,7 @@
       }
     },
     {
-      "text": "Wiggly::Something tells me it might.\n\nWiggly::Let's go search the top floor.  There are a few nurses quarters up there, maybe one of them belonged to Julia.\n\nWiggly::There are also a few neonatal units up there, worth taking a look around.\n\nWiggly::The stairs up are just out the door, across the hall.\n\n[[p:Alright, let's go.]]",
+      "text": "Wiggly,thinking::Something tells me it might.\n\nWiggly,looking_to_side::Let's go search the top floor.  There are a few nurses quarters up there, maybe one of them belonged to Julia.\n\nWiggly,surprised::There are also a few neonatal units up there, worth taking a look around.\n\nWiggly,skeptical::The stairs up are just out the door, across the hall.  Let's move quickly across the hallway, and try not to make too much noise.\n\n[[p:Alright, let's go.]]",
       "links": [
         {
           "name": "p:Alright, let's go.",
@@ -235,7 +243,7 @@
       }
     },
     {
-      "text": "Wiggly::Really, you think so?  I think it feels cozy.\n\nJasper::He seems to find the cramped quarters and thick layer of dust comforting, soothing.\n\n[[C->start]] ",
+      "text": "Wiggly,thinking::Really, you think so?  I think it feels cozy.\n\nJasper,head_tilted::He seems to find the cramped quarters and thick layer of dust comforting, soothing.\n\n[[C->start]] ",
       "links": [
         {
           "name": "C",

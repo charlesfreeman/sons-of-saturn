@@ -11,7 +11,7 @@ extents = Vector2( 258.36, 391.495 )
 extents = Vector2( 173.704, 292.214 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 342.867, 375.959 )
+extents = Vector2( 1023.51, 188.872 )
 
 [node name="PoV" type="TextureRect"]
 margin_right = 2880.0
@@ -25,12 +25,11 @@ __meta__ = {
 }
 scene_up = "res://top_floor/end_of_hallway/end_of_hallway.tscn"
 scene_right = "res://top_floor/blue_tub/blue_tub.tscn"
-scene_left = "res://top_floor/colorful_nurses_hall/colorful_nurses_hall.tscn"
-alt_scene_left = "res://top_floor/julia_door/julia_door.tscn"
-req_flag_left = "custody_convo"
+scene_down = "res://top_floor/julia_door/julia_door.tscn"
+alt_scene_down = "res://top_floor/colorful_nurses_hall/colorful_nurses_hall.tscn"
+req_flag_down = "custody_convo"
 position = Vector2( 950, 480 )
 rotation = 218
-song = "sewer_med_flow"
 
 [node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
 up_path = true
@@ -47,8 +46,8 @@ position = Vector2( 1458.82, 987.107 )
 shape = SubResource( 2 )
 
 [node name="ClickToEnter4" parent="." instance=ExtResource( 4 )]
-left_path = true
+down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter4"]
-position = Vector2( 354.255, 1762.19 )
+position = Vector2( 1034.9, 1949.28 )
 shape = SubResource( 4 )

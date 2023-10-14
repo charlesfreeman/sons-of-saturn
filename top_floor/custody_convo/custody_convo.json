@@ -203,7 +203,7 @@
       }
     },
     {
-      "text": "You enter a room lined with dozens of decrepit suitcases.  The air is stagnant and full of particulate - you feel as though you are the first to breathe this air in decades.\n\nThe suitcases look like they haven't been disturbed in a very long time.  You are worried even the slightest touch might cause them to disintegrate. \n\nWiggly::This room was a communal storage area for patients and nurses.  Hardly anyone had time to retrieve their belongings before evacuating, so all of their stuff is still here.\n\nWiggly,looking_to_side::We should look through these suitcases.  There's a good chance one of them belonged to Julia.\n\n[[I feel like I should be doing this with gloves, and an archeologist's brush.]]\n[[p:(Action) Search through the suitcases.]]",
+      "text": "You enter a room lined with dozens of decrepit suitcases.  The air is stagnant and full of particulates - you feel as though you are the first to breathe this air in decades.\n\nThe suitcases look like they haven't been disturbed in a very long time.  You are worried even the slightest touch might cause them to disintegrate. \n\nWiggly::This room was a communal storage area for patients and nurses.  Hardly anyone had time to retrieve their belongings before evacuating, so all of their stuff is still here.\n\nWiggly,looking_to_side::We should look through these suitcases.  There's a good chance one of them belonged to Julia.\n\n[[I feel like I should be doing this with gloves, and an archeologist's brush.]]\n[[p:(Action) Search through the suitcases.]]",
       "links": [
         {
           "name": "I feel like I should be doing this with gloves, and an archeologist's brush.",
@@ -220,7 +220,7 @@
       "pid": "11",
       "position": {
         "x": "724",
-        "y": "56"
+        "y": "57"
       },
       "tags": [
         "aguilty"

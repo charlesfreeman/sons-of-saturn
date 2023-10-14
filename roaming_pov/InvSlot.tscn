@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://images/new_item_holder.png" type="Texture" id=1]
+[ext_resource path="res://roaming_pov/images/new_item_holder.png" type="Texture" id=1]
 [ext_resource path="res://roaming_pov/InvSlot.gd" type="Script" id=2]
 [ext_resource path="res://fonts/PTSerif-Regular.ttf" type="DynamicFontData" id=3]
 

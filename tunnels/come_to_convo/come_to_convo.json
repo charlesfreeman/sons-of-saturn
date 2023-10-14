@@ -184,11 +184,11 @@
       }
     },
     {
-      "text": "Wiggly::Neither do we.  No one does.  \n\nWiggly::But nonetheless I've seen this before.  So have the other Ferrymen.  \n\nWiggly::A client, most often someone with connections here, enters the city.  And then, usually somewhere near the SATURN Core, they start having delusions of a third party.\n\nWiggly::Their presence might be innocuous enough at first - helpful, even.  But soon the client gets sick, and has trouble walking.  Start having hallucinations.\n\nWiggly::No matter how many times I see it happen, it never fails to shake me to my core - seeing a client, incapacitated, writhing in terror at someone in the room I cannot even see.\n\nWiggly::If we hadn't been separated I might have noticed the signs earlier.  Not that it would have helped much.\n\nJasper,thinking::He's being uncharacteristically blunt, isn't he?  \n\nJasper,sad::We're fucked.\n\n[[You've gone through this before - that means you know what to do?]]",
+      "text": "Wiggly::Neither do we.  No one does.  \n\nWiggly::But nonetheless I've seen this before.  So have the other Ferrymen.  \n\nWiggly::A client, most often someone with connections here, enters the city.  And then, usually somewhere near the SATURN Core, they start having delusions of a third party.\n\nWiggly::Their presence might be innocuous enough at first - helpful, even.  But soon the client gets sick, and has trouble walking.  Start having hallucinations.\n\nWiggly::No matter how many times I see it happen, it never fails to shake me to my core - seeing a client, incapacitated, writhing in terror at someone in the room I cannot even see.\n\nWiggly::If we hadn't been separated I might have noticed the signs earlier.  Not that it would have helped much.\n\nJasper,thinking::He's being uncharacteristically blunt, isn't he?  \n\nJasper,sad::We're fucked.\n\n[[p:You've gone through this before - that means you know what to do?]]",
       "links": [
         {
-          "name": "You've gone through this before - that means you know what to do?",
-          "link": "You've gone through this before - that means you know what to do?",
+          "name": "p:You've gone through this before - that means you know what to do?",
+          "link": "p:You've gone through this before - that means you know what to do?",
           "pid": "11"
         }
       ],
@@ -200,20 +200,20 @@
       }
     },
     {
-      "text": "Wiggly::Hmmmm...\n\nWiggly::Well, we are not completely bereft of options miss.  But there is no way to run away from this.  Julia is attached to you.  You'll need to find a way to shake her off.\n\n[[Your other clients - how did they get through it?]]\n[[Give me the details, how do I shake her off?->Your other clients - how did they get through it?]]",
+      "text": "Wiggly::Hmmmm...\n\nWiggly::Well, we are not completely bereft of options miss.  But there is no way to run away from this.  Julia is attached to you.  You'll need to find a way to shake her off.\n\n[[p:Your other clients - how did they get through it?]]\n[[p:Give me the details, how do I shake her off?->p:Your other clients - how did they get through it?]]",
       "links": [
         {
-          "name": "Your other clients - how did they get through it?",
-          "link": "Your other clients - how did they get through it?",
+          "name": "p:Your other clients - how did they get through it?",
+          "link": "p:Your other clients - how did they get through it?",
           "pid": "14"
         },
         {
-          "name": "Give me the details, how do I shake her off?",
-          "link": "Your other clients - how did they get through it?",
+          "name": "p:Give me the details, how do I shake her off?",
+          "link": "p:Your other clients - how did they get through it?",
           "pid": "14"
         }
       ],
-      "name": "You've gone through this before - that means you know what to do?",
+      "name": "p:You've gone through this before - that means you know what to do?",
       "pid": "11",
       "position": {
         "x": "1252",
@@ -274,7 +274,7 @@
           "pid": "16"
         }
       ],
-      "name": "Your other clients - how did they get through it?",
+      "name": "p:Your other clients - how did they get through it?",
       "pid": "14",
       "position": {
         "x": "1248",
@@ -285,11 +285,11 @@
       ]
     },
     {
-      "text": "Wiggly::Yes.  I'm not going to lie to you, miss.  I've only had one client make it through something like this.  The rest either expired or disappeared.\n\nJasper,thinking::\"Expired\" and \"disappeared\" sound like transparent euphemisms for \"died\" and \"had something even worse happen to them,\" respectively.\n\n[[Good to know.->Your other clients - how did they get through it?]]",
+      "text": "Wiggly::Yes.  I'm not going to lie to you, miss.  I've only had one client make it through something like this.  The rest either expired or disappeared.\n\nJasper,thinking::\"Expired\" and \"disappeared\" sound like transparent euphemisms for \"died\" and \"had something even worse happen to them,\" respectively.\n\n[[Good to know.->p:Your other clients - how did they get through it?]]",
       "links": [
         {
           "name": "Good to know.",
-          "link": "Your other clients - how did they get through it?",
+          "link": "p:Your other clients - how did they get through it?",
           "pid": "14"
         }
       ],

@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/typewriter_click_1.wav-141bf62a1a22c1f39608ae3d38ca6ac7.sample"
+type="AudioStreamWAV"
+uid="uid://bv7r5ekjvfdrp"
+path="res://.godot/imported/typewriter_click_1.wav-141bf62a1a22c1f39608ae3d38ca6ac7.sample"
 
 [deps]
 
 source_file="res://dialogue_system/sounds/typewriter_click_1.wav"
-dest_files=[ "res://.import/typewriter_click_1.wav-141bf62a1a22c1f39608ae3d38ca6ac7.sample" ]
+dest_files=["res://.godot/imported/typewriter_click_1.wav-141bf62a1a22c1f39608ae3d38ca6ac7.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

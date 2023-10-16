@@ -18,8 +18,8 @@ nextLocation = "res://top_floor/piano_office/piano_office.tscn"
 song = "morgue_ambient"
 
 [node name="Documents" parent="." instance=ExtResource( 1 )]
-margin_left = 140.091
-margin_top = -65.6375
-margin_right = 1776.09
-margin_bottom = 2209.36
+offset_left = 140.091
+offset_top = -65.6375
+offset_right = 1776.09
+offset_bottom = 2209.36
 docs = [ "res://top_floor/theater_convo/theater_exchange_1.png", "res://top_floor/theater_convo/theater_exchange_2.png", "res://top_floor/theater_convo/theater_exchange_3.png", "res://top_floor/theater_convo/theater_exchange_4.png" ]

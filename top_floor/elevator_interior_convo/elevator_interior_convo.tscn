@@ -4,8 +4,8 @@
 [ext_resource path="res://sounds/effects/elevator_crash.wav" type="AudioStream" id=2]
 [ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=3]
 [ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=4]
-[ext_resource path="res://top_floor/elevator_interior_convo/rat_leg.png" type="Texture" id=5]
-[ext_resource path="res://top_floor/elevator_interior_convo/rat_arm.png" type="Texture" id=6]
+[ext_resource path="res://top_floor/elevator_interior_convo/rat_leg.png" type="Texture2D" id=5]
+[ext_resource path="res://top_floor/elevator_interior_convo/rat_arm.png" type="Texture2D" id=6]
 [ext_resource path="res://sounds/effects/body_fall_2.wav" type="AudioStream" id=7]
 
 [node name="elevator_interior_convo" type="Control"]
@@ -46,19 +46,19 @@ stream = ExtResource( 2 )
 tag_to_play = "falling"
 
 [node name="CharacterRect" parent="." instance=ExtResource( 4 )]
-margin_left = 1022.0
-margin_top = 1193.94
-margin_right = 2008.0
-margin_bottom = 2183.94
+offset_left = 1022.0
+offset_top = 1193.94
+offset_right = 2008.0
+offset_bottom = 2183.94
 texture = ExtResource( 6 )
 appear_tag = "hand"
 disappear_tag = "remove_hand"
 
 [node name="CharacterRect2" parent="." instance=ExtResource( 4 )]
-margin_left = -163.287
-margin_top = 1019.0
-margin_right = 1252.71
-margin_bottom = 2323.0
+offset_left = -163.287
+offset_top = 1019.0
+offset_right = 1252.71
+offset_bottom = 2323.0
 texture = ExtResource( 5 )
 appear_tag = "foot"
 disappear_tag = ""

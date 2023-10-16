@@ -24,8 +24,8 @@ fade_tag_dict_sliver = {
 song = "crib_wind"
 
 [node name="Documents" parent="." instance=ExtResource( 2 )]
-margin_left = 221.0
-margin_top = 289.0
-margin_right = 2136.0
-margin_bottom = 1886.0
+offset_left = 221.0
+offset_top = 289.0
+offset_right = 2136.0
+offset_bottom = 1886.0
 docs = [ "res://top_floor/abortion_convo/abortion_receipt.png", "res://top_floor/abortion_convo/abortion_receipt_backside.png" ]

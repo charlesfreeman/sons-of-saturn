@@ -1,18 +1,18 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://top_floor/cribs_looking_right/cribs_looking_right.png" type="Texture" id=2]
+[ext_resource path="res://top_floor/cribs_looking_right/cribs_looking_right.png" type="Texture2D" id=2]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 396.85, 466.696 )
+size = Vector2( 396.85, 466.696 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 926.823, 212.712 )
+size = Vector2( 926.823, 212.712 )
 
 [node name="PoV" type="TextureRect"]
-margin_right = 2880.0
-margin_bottom = 2160.0
+offset_right = 2880.0
+offset_bottom = 2160.0
 mouse_filter = 2
 size_flags_horizontal = 3
 texture = ExtResource( 2 )

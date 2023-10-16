@@ -34,8 +34,8 @@ song = "crib_wind"
 new_item = "Key"
 
 [node name="Documents" parent="." instance=ExtResource( 2 )]
-margin_left = 140.091
-margin_top = -65.6375
-margin_right = 1776.09
-margin_bottom = 2209.36
+offset_left = 140.091
+offset_top = -65.6375
+offset_right = 1776.09
+offset_bottom = 2209.36
 docs = [ "res://top_floor/custody_convo/custody_page_1.png", "res://top_floor/custody_convo/custody_page_2.png" ]

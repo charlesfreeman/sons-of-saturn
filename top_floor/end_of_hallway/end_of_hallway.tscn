@@ -1,22 +1,22 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://top_floor/end_of_hallway/ladys_end_of_hallway.png" type="Texture" id=2]
+[ext_resource path="res://top_floor/end_of_hallway/ladys_end_of_hallway.png" type="Texture2D" id=2]
 [ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=3]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 301.123, 498.903 )
+size = Vector2( 301.123, 498.903 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 203.89, 441.536 )
+size = Vector2( 203.89, 441.536 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 822.173, 195.648 )
+size = Vector2( 822.173, 195.648 )
 
 [node name="PoV" type="TextureRect"]
-margin_right = 2880.0
-margin_bottom = 2160.0
+offset_right = 2880.0
+offset_bottom = 2160.0
 mouse_filter = 2
 size_flags_horizontal = 3
 texture = ExtResource( 2 )

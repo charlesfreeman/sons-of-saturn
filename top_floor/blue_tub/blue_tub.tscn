@@ -2,18 +2,18 @@
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=2]
-[ext_resource path="res://top_floor/blue_tub/blue_tub.png" type="Texture" id=3]
+[ext_resource path="res://top_floor/blue_tub/blue_tub.png" type="Texture2D" id=3]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 801.638, 182.551 )
+size = Vector2( 801.638, 182.551 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 453.995, 587.339 )
+size = Vector2( 453.995, 587.339 )
 
 [node name="PoV" type="TextureRect"]
-margin_right = 2880.0
-margin_bottom = 2160.0
+offset_right = 2880.0
+offset_bottom = 2160.0
 mouse_filter = 2
 size_flags_horizontal = 3
 texture = ExtResource( 3 )

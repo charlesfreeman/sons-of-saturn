@@ -1,16 +1,16 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://tunnels/tunnel_leading_down/b_tunnel_leading_down.png" type="Texture" id=2]
+[ext_resource path="res://tunnels/tunnel_leading_down/b_tunnel_leading_down.png" type="Texture2D" id=2]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 468.246, 375.722 )
+size = Vector2( 468.246, 375.722 )
 
 [node name="PoV" type="TextureRect"]
-margin_right = 2880.0
-margin_bottom = 2160.0
-rect_pivot_offset = Vector2( -2548.54, -860.462 )
+offset_right = 2880.0
+offset_bottom = 2160.0
+pivot_offset = Vector2( -2548.54, -860.462 )
 mouse_filter = 2
 size_flags_horizontal = 3
 texture = ExtResource( 2 )

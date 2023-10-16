@@ -1,21 +1,21 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/isolation_wing_top_floor/colorful_chair_hall.png" type="Texture" id=2]
+[ext_resource path="res://infirmary/isolation_wing_top_floor/colorful_chair_hall.png" type="Texture2D" id=2]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 273.033, 298.432 )
+size = Vector2( 273.033, 298.432 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 744.492, 177.791 )
+size = Vector2( 744.492, 177.791 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 271.446, 409.552 )
+size = Vector2( 271.446, 409.552 )
 
 [node name="PoV" type="TextureRect"]
-margin_right = 2880.0
-margin_bottom = 2160.0
+offset_right = 2880.0
+offset_bottom = 2160.0
 mouse_filter = 2
 size_flags_horizontal = 3
 texture = ExtResource( 2 )

@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://infirmary/log_book/LogBook.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/log_book/log_book_post_processing.png" type="Texture" id=3]
+[ext_resource path="res://infirmary/log_book/log_book_post_processing.png" type="Texture2D" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 1430.73, 1068.51 )
+size = Vector2( 1430.73, 1068.51 )
 
 [node name="PoV" type="TextureRect"]
-margin_right = 2880.0
-margin_bottom = 2160.0
+offset_right = 2880.0
+offset_bottom = 2160.0
 mouse_filter = 2
 size_flags_horizontal = 3
 texture = ExtResource( 3 )

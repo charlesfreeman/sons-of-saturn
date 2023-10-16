@@ -1,20 +1,20 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/door_to_breezeway/door_to_breezeway.png" type="Texture" id=2]
+[ext_resource path="res://infirmary/door_to_breezeway/door_to_breezeway.png" type="Texture2D" id=2]
 [ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=3]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
 [ext_resource path="res://sounds/effects/locked_door.wav" type="AudioStream" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 226.779, 311.131 )
+size = Vector2( 226.779, 311.131 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 982.382, 169.852 )
+size = Vector2( 982.382, 169.852 )
 
 [node name="PoV" type="TextureRect"]
-margin_right = 2880.0
-margin_bottom = 2160.0
+offset_right = 2880.0
+offset_bottom = 2160.0
 mouse_filter = 2
 size_flags_horizontal = 3
 texture = ExtResource( 2 )

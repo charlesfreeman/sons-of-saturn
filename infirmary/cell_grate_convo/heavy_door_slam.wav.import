@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/heavy_door_slam.wav-dc290494318e6c01f260a07299850401.sample"
+type="AudioStreamWAV"
+uid="uid://b0pi3lsoyralh"
+path="res://.godot/imported/heavy_door_slam.wav-dc290494318e6c01f260a07299850401.sample"
 
 [deps]
 
 source_file="res://infirmary/cell_grate_convo/heavy_door_slam.wav"
-dest_files=[ "res://.import/heavy_door_slam.wav-dc290494318e6c01f260a07299850401.sample" ]
+dest_files=["res://.godot/imported/heavy_door_slam.wav-dc290494318e6c01f260a07299850401.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

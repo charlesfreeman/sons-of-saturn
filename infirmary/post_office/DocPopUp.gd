@@ -4,9 +4,9 @@ var in_clickable_area = false
 var doc_visible = false
 var index = 0
 
-onready var doc = $Document
+@onready var doc = $Document
 
-export(NodePath) var my_collision_polygon_node_path
+@export var my_collision_polygon_node_path: NodePath
 
 
 func _ready():
@@ -16,7 +16,7 @@ func _ready():
 
 func _on_FullRect_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton \
-	and event.button_index == BUTTON_LEFT \
+	and event.button_index == MOUSE_BUTTON_LEFT \
 	and event.pressed:
 		# if clicking outside activation area or already displayed, hide the document
 		# otherwise, made it visible

@@ -2,9 +2,9 @@
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
 [ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=2]
-[ext_resource path="res://infirmary/julia_first_convo/julia_hunched.png" type="Texture" id=3]
-[ext_resource path="res://infirmary/julia_first_convo/julia_just_stood_up.png" type="Texture" id=4]
-[ext_resource path="res://infirmary/julia_first_convo/julia_hunched_looking_left.png" type="Texture" id=5]
+[ext_resource path="res://infirmary/julia_first_convo/julia_hunched.png" type="Texture2D" id=3]
+[ext_resource path="res://infirmary/julia_first_convo/julia_just_stood_up.png" type="Texture2D" id=4]
+[ext_resource path="res://infirmary/julia_first_convo/julia_hunched_looking_left.png" type="Texture2D" id=5]
 
 [node name="julia_first_convo" type="Control"]
 anchor_right = 1.0
@@ -23,29 +23,29 @@ new_party_mem = "Julia"
 prog_flag = "julia_first_convo"
 
 [node name="JuliaHunched" parent="." instance=ExtResource( 2 )]
-margin_left = -12.5244
-margin_top = 1401.75
-margin_right = 1409.48
-margin_bottom = 2277.75
+offset_left = -12.5244
+offset_top = 1401.75
+offset_right = 1409.48
+offset_bottom = 2277.75
 texture = ExtResource( 3 )
 on_start = true
 appear_tag = ""
 disappear_tag = "left"
 
 [node name="JuliaHunchedLeft" parent="." instance=ExtResource( 2 )]
-margin_left = -29.0
-margin_top = 1235.0
-margin_right = 1465.0
-margin_bottom = 2187.0
+offset_left = -29.0
+offset_top = 1235.0
+offset_right = 1465.0
+offset_bottom = 2187.0
 texture = ExtResource( 5 )
 appear_tag = "left"
 disappear_tag = "stands"
 
 [node name="JuliaStanding" parent="." instance=ExtResource( 2 )]
-margin_left = 472.309
-margin_top = 571.699
-margin_right = 1332.31
-margin_bottom = 2177.7
+offset_left = 472.309
+offset_top = 571.699
+offset_right = 1332.31
+offset_bottom = 2177.7
 texture = ExtResource( 4 )
 appear_tag = "stands"
 disappear_tag = ""

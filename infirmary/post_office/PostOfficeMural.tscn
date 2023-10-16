@@ -2,12 +2,12 @@
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=2]
-[ext_resource path="res://images/post_office_mural.png" type="Texture" id=3]
+[ext_resource path="res://images/post_office_mural.png" type="Texture2D" id=3]
 [ext_resource path="res://roaming_pov/DocPopUp.tscn" type="PackedScene" id=4]
 
 [node name="PoV" type="TextureRect"]
-margin_right = 2880.0
-margin_bottom = 2160.0
+offset_right = 2880.0
+offset_bottom = 2160.0
 mouse_filter = 2
 size_flags_horizontal = 3
 texture = ExtResource( 3 )
@@ -27,4 +27,4 @@ my_collision_polygon_node_path = NodePath("CollisionPolygon2D")
 my_collision_polygon_node_path = NodePath("CollisionPolygon2D")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="DocPopUp"]
-polygon = PoolVector2Array( 1108.29, 1585.34, 1052.85, 401.012, 1874.32, 451.409, 1859.2, 1645.82 )
+polygon = PackedVector2Array( 1108.29, 1585.34, 1052.85, 401.012, 1874.32, 451.409, 1859.2, 1645.82 )

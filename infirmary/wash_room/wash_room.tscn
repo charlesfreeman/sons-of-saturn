@@ -1,22 +1,22 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/wash_room/wash_room.png" type="Texture" id=2]
+[ext_resource path="res://infirmary/wash_room/wash_room.png" type="Texture2D" id=2]
 [ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=3]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 322.904, 290.95 )
+size = Vector2( 322.904, 290.95 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 982.382, 169.852 )
+size = Vector2( 982.382, 169.852 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 640.639, 414.188 )
+size = Vector2( 640.639, 414.188 )
 
 [node name="PoV" type="TextureRect"]
-margin_right = 2880.0
-margin_bottom = 2160.0
+offset_right = 2880.0
+offset_bottom = 2160.0
 mouse_filter = 2
 size_flags_horizontal = 3
 texture = ExtResource( 2 )

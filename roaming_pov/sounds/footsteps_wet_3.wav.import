@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/footsteps_wet_3.wav-7bb949d7ac4c3897f96ad98eac84d1fc.sample"
+type="AudioStreamWAV"
+uid="uid://ckxewtx3fjfg2"
+path="res://.godot/imported/footsteps_wet_3.wav-7bb949d7ac4c3897f96ad98eac84d1fc.sample"
 
 [deps]
 
 source_file="res://roaming_pov/sounds/footsteps_wet_3.wav"
-dest_files=[ "res://.import/footsteps_wet_3.wav-7bb949d7ac4c3897f96ad98eac84d1fc.sample" ]
+dest_files=["res://.godot/imported/footsteps_wet_3.wav-7bb949d7ac4c3897f96ad98eac84d1fc.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

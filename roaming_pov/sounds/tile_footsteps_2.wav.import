@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/tile_footsteps_2.wav-8a0590bb7ee17c5bdd099f7d4cf24b2c.sample"
+type="AudioStreamWAV"
+uid="uid://dwjy8gis2ilry"
+path="res://.godot/imported/tile_footsteps_2.wav-8a0590bb7ee17c5bdd099f7d4cf24b2c.sample"
 
 [deps]
 
 source_file="res://roaming_pov/sounds/tile_footsteps_2.wav"
-dest_files=[ "res://.import/tile_footsteps_2.wav-8a0590bb7ee17c5bdd099f7d4cf24b2c.sample" ]
+dest_files=["res://.godot/imported/tile_footsteps_2.wav-8a0590bb7ee17c5bdd099f7d4cf24b2c.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

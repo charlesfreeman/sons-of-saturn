@@ -1,0 +1,240 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="footsteps_collection_data" version="1.3.0" audacityversion="2.4.2" sel0="18.2226877412" sel1="18.2226877412" vpos="960" h="0.0000000000" zoom="32.0479617659" rate="48000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags/>
+	<wavetrack name="490951__nox-sound__footsteps-walk" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.43327083" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="21490">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fcd0.au" len="21490" min="0.0" max="0.0" rms="0.0"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="0.98208333" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="27729">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f5d0.au" len="27729" min="-0.000821" max="0.00089" rms="0.000045"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="2.32520833" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="27730">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fd94.au" len="27730" min="0.0" max="0.0" rms="0.0"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="3.33618750" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="25649">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fe93.au" len="25649" min="0.0" max="0.0" rms="0.0"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="4.28937500" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="51992">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f978.au" len="51992" min="0.0" max="0.0" rms="0.0"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="5.73360417" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="33275">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fb2d.au" len="33275" min="-0.002354" max="0.002506" rms="0.00019"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="6.86010417" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="30503">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f11b.au" len="30503" min="-0.000689" max="0.000787" rms="0.000047"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="7.92885417" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="36741">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f7df.au" len="36741" min="-0.004112" max="0.005514" rms="0.000362"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="9.05535417" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="34661">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fb62.au" len="34661" min="-0.001361" max="0.001341" rms="0.000118"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="10.10964583" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="1184734">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fcbd.au" len="150584" min="-0.459732" max="0.597233" rms="0.011024"/>
+				</waveblock>
+				<waveblock start="150584">
+					<simpleblockfile filename="eff1f634.au" len="150585" min="-0.32092" max="0.337575" rms="0.008075"/>
+				</waveblock>
+				<waveblock start="301169">
+					<simpleblockfile filename="eff1fb2b.au" len="262144" min="-0.469079" max="0.466445" rms="0.02699"/>
+				</waveblock>
+				<waveblock start="563313">
+					<simpleblockfile filename="eff1fa61.au" len="262144" min="-0.335814" max="0.410134" rms="0.024644"/>
+				</waveblock>
+				<waveblock start="825457">
+					<simpleblockfile filename="eff1f861.au" len="262144" min="-0.161405" max="0.183284" rms="0.00656"/>
+				</waveblock>
+				<waveblock start="1087601">
+					<simpleblockfile filename="eff1fb91.au" len="97133" min="-0.112578" max="0.066316" rms="0.008264"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="490951__nox-sound__footsteps-walk" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="1.31425000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="20797">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f79e.au" len="20797" min="-0.681575" max="0.841395" rms="0.071043"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="490951__nox-sound__footsteps-walk" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.44770833" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="20104">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f43d.au" len="20104" min="-0.649227" max="0.841395" rms="0.076229"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="490951__nox-sound__footsteps-walk" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="1.48756250" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="21490">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fb16.au" len="21490" min="-0.841395" max="0.711624" rms="0.081986"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="490951__nox-sound__footsteps-walk" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.88097917" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="20797">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f4de.au" len="20797" min="-0.610698" max="0.841395" rms="0.073489"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="490951__nox-sound__footsteps-walk" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="1.25647917" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="20104">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f457.au" len="20104" min="-0.74146" max="0.841395" rms="0.068139"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="490951__nox-sound__footsteps-walk" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="6.49904167" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="17331">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fcdd.au" len="17331" min="-0.841395" max="0.497228" rms="0.043095"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="490951__nox-sound__footsteps-walk" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="6.86010417" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="17331">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f298.au" len="17331" min="-0.841395" max="0.726255" rms="0.048584"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="490951__nox-sound__footsteps-walk" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="0"/>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="490951__nox-sound__footsteps-walk" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="9.05535417" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="20797">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1ff14.au" len="20797" min="-0.841395" max="0.554961" rms="0.041834"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="4.78037500" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="20797">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f644.au" len="20797" min="-0.841395" max="0.694011" rms="0.042278"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="5.28583333" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="15945">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fe7b.au" len="15945" min="-0.841395" max="0.513128" rms="0.047126"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="490951__nox-sound__footsteps-walk" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="0"/>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="490951__nox-sound__footsteps-walk" isSelected="1" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="5.61802083" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="17331">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1fcdd.au" len="17331" min="-0.841395" max="0.497228" rms="0.043095"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="490951__nox-sound__footsteps-walk" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="6.42683333" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="20797">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f644.au" len="20797" min="-0.841395" max="0.694011" rms="0.042278"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="490951__nox-sound__footsteps-walk" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="48000" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="6.06577083" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="17331">
+				<waveblock start="0">
+					<simpleblockfile filename="eff1f298.au" len="17331" min="-0.841395" max="0.726255" rms="0.048584"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

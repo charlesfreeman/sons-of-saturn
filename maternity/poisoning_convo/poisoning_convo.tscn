@@ -5,13 +5,13 @@
 [ext_resource path="res://maternity/poisoning_convo/crash.wav" type="AudioStream" id=3]
 [ext_resource path="res://sounds/effects/thunk.wav" type="AudioStream" id=4]
 [ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=5]
-[ext_resource path="res://maternity/poisoning_convo/julia_leg_headdown.png" type="Texture" id=6]
-[ext_resource path="res://maternity/poisoning_convo/julia_onground_dream.png" type="Texture" id=7]
-[ext_resource path="res://maternity/poisoning_convo/julia_head_kiss.png" type="Texture" id=8]
-[ext_resource path="res://maternity/poisoning_convo/julia_leg_noeyes.png" type="Texture" id=9]
-[ext_resource path="res://maternity/poisoning_convo/julia_corner_dream.png" type="Texture" id=10]
+[ext_resource path="res://maternity/poisoning_convo/julia_leg_headdown.png" type="Texture2D" id=6]
+[ext_resource path="res://maternity/poisoning_convo/julia_onground_dream.png" type="Texture2D" id=7]
+[ext_resource path="res://maternity/poisoning_convo/julia_head_kiss.png" type="Texture2D" id=8]
+[ext_resource path="res://maternity/poisoning_convo/julia_leg_noeyes.png" type="Texture2D" id=9]
+[ext_resource path="res://maternity/poisoning_convo/julia_corner_dream.png" type="Texture2D" id=10]
 [ext_resource path="res://maternity/inspection_room_convo/ThornBG.gd" type="Script" id=11]
-[ext_resource path="res://maternity/inspection_room_convo/ring_of_spikes.png" type="Texture" id=12]
+[ext_resource path="res://maternity/inspection_room_convo/ring_of_spikes.png" type="Texture2D" id=12]
 [ext_resource path="res://sounds/effects/switch_flip_slow.wav" type="AudioStream" id=13]
 [ext_resource path="res://sounds/effects/stabbed_watermelon.wav" type="AudioStream" id=14]
 [ext_resource path="res://sounds/effects/switch_flip_fast.wav" type="AudioStream" id=15]
@@ -95,64 +95,64 @@ stream = ExtResource( 19 )
 tag_to_play = "recoil"
 
 [node name="JuliaCorner" parent="." instance=ExtResource( 5 )]
-margin_left = 1180.39
-margin_top = 1208.09
-margin_right = 2137.39
-margin_bottom = 2165.09
+offset_left = 1180.39
+offset_top = 1208.09
+offset_right = 2137.39
+offset_bottom = 2165.09
 texture = ExtResource( 10 )
 appear_tag = "corner"
 disappear_tag = "door"
 
 [node name="JuliaCorner2" parent="." instance=ExtResource( 5 )]
-margin_left = 1180.39
-margin_top = 1208.09
-margin_right = 2137.39
-margin_bottom = 2165.09
+offset_left = 1180.39
+offset_top = 1208.09
+offset_right = 2137.39
+offset_bottom = 2165.09
 texture = ExtResource( 10 )
 appear_tag = "corner2"
 disappear_tag = "tugging"
 
 [node name="JuliaNoEyes" parent="." instance=ExtResource( 5 )]
-margin_left = 391.476
-margin_top = 444.476
-margin_right = 1827.48
-margin_bottom = 2889.48
+offset_left = 391.476
+offset_top = 444.476
+offset_right = 1827.48
+offset_bottom = 2889.48
 texture = ExtResource( 9 )
 appear_tag = "noeyes"
 disappear_tag = "floor_remove"
 
 [node name="JuliaLegHeaddown" parent="." instance=ExtResource( 5 )]
-margin_left = 654.903
-margin_top = 51.2378
-margin_right = 1993.9
-margin_bottom = 2241.24
+offset_left = 654.903
+offset_top = 51.2378
+offset_right = 1993.9
+offset_bottom = 2241.24
 texture = ExtResource( 6 )
 appear_tag = "tugging"
 disappear_tag = "noeyes"
 
 [node name="JuliaOnGround" parent="." instance=ExtResource( 5 )]
-margin_left = 392.0
-margin_top = 1305.0
-margin_right = 1613.0
-margin_bottom = 2372.0
+offset_left = 392.0
+offset_top = 1305.0
+offset_right = 1613.0
+offset_bottom = 2372.0
 texture = ExtResource( 7 )
 appear_tag = "onground"
 disappear_tag = "ceiling"
 
 [node name="JuliaKiss" parent="." instance=ExtResource( 5 )]
-margin_left = -960.097
-margin_top = 203.524
-margin_right = 1467.9
-margin_bottom = 2614.52
+offset_left = -960.097
+offset_top = 203.524
+offset_right = 1467.9
+offset_bottom = 2614.52
 texture = ExtResource( 8 )
 appear_tag = "kiss"
 disappear_tag = "onground"
 
 [node name="ThornBG" type="TextureRect" parent="." groups=["CharacterRects", "DynamicBGs"]]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = -6.0
-margin_right = 2310.0
-margin_bottom = 2178.0
+offset_left = -6.0
+offset_right = 2310.0
+offset_bottom = 2178.0
 mouse_filter = 2
 texture = ExtResource( 12 )
 script = ExtResource( 11 )

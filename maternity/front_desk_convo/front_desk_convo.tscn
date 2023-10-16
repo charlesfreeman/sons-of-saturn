@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
-[ext_resource path="res://maternity/front_desk_convo/julia_looking_through_glass.png" type="Texture" id=2]
+[ext_resource path="res://maternity/front_desk_convo/julia_looking_through_glass.png" type="Texture2D" id=2]
 [ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=3]
-[ext_resource path="res://maternity/front_desk_convo/julia_looking_left.png" type="Texture" id=4]
+[ext_resource path="res://maternity/front_desk_convo/julia_looking_left.png" type="Texture2D" id=4]
 
 [node name="front_desk_convo" type="Control"]
 anchor_right = 1.0
@@ -27,37 +27,37 @@ fade_tag_dict_sliver = {
 }
 
 [node name="LookingForward" parent="." instance=ExtResource( 3 )]
-margin_left = 1114.0
-margin_top = 700.0
-margin_right = 1530.0
-margin_bottom = 2060.0
+offset_left = 1114.0
+offset_top = 700.0
+offset_right = 1530.0
+offset_bottom = 2060.0
 texture = ExtResource( 2 )
 appear_tag = "looking_forward"
 disappear_tag = "looking_left"
 
 [node name="LookingForward2" parent="." instance=ExtResource( 3 )]
-margin_left = 1114.0
-margin_top = 700.0
-margin_right = 1530.0
-margin_bottom = 2060.0
+offset_left = 1114.0
+offset_top = 700.0
+offset_right = 1530.0
+offset_bottom = 2060.0
 texture = ExtResource( 2 )
 appear_tag = "looking_forward_2"
 disappear_tag = "looking_left_2"
 
 [node name="LookingLeft" parent="." instance=ExtResource( 3 )]
-margin_left = 1114.0
-margin_top = 700.0
-margin_right = 1530.0
-margin_bottom = 2060.0
+offset_left = 1114.0
+offset_top = 700.0
+offset_right = 1530.0
+offset_bottom = 2060.0
 texture = ExtResource( 4 )
 appear_tag = "looking_left"
 disappear_tag = "looking_forward_2"
 
 [node name="LookingLeft2" parent="." instance=ExtResource( 3 )]
-margin_left = 1114.0
-margin_top = 700.0
-margin_right = 1530.0
-margin_bottom = 2060.0
+offset_left = 1114.0
+offset_top = 700.0
+offset_right = 1530.0
+offset_bottom = 2060.0
 texture = ExtResource( 4 )
 appear_tag = "looking_left_2"
 disappear_tag = "approach"

@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/crash.wav-e3a594f91252a5f516448fc4cdf29eee.sample"
+type="AudioStreamWAV"
+uid="uid://dprbiwgfs7piv"
+path="res://.godot/imported/crash.wav-e3a594f91252a5f516448fc4cdf29eee.sample"
 
 [deps]
 
 source_file="res://maternity/poisoning_convo/crash.wav"
-dest_files=[ "res://.import/crash.wav-e3a594f91252a5f516448fc4cdf29eee.sample" ]
+dest_files=["res://.godot/imported/crash.wav-e3a594f91252a5f516448fc4cdf29eee.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

@@ -2,14 +2,14 @@
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=2]
-[ext_resource path="res://maternity/tilted_dream_hallways/dream_hallway_1.png" type="Texture" id=3]
+[ext_resource path="res://maternity/tilted_dream_hallways/dream_hallway_1.png" type="Texture2D" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 296.844, 303.472 )
+size = Vector2( 296.844, 303.472 )
 
 [node name="PoV" type="TextureRect"]
-margin_right = 2880.0
-margin_bottom = 2160.0
+offset_right = 2880.0
+offset_bottom = 2160.0
 mouse_filter = 2
 size_flags_horizontal = 3
 texture = ExtResource( 3 )

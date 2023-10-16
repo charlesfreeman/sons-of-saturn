@@ -1,18 +1,18 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://maternity/front_desk/front_desk.png" type="Texture" id=2]
+[ext_resource path="res://maternity/front_desk/front_desk.png" type="Texture2D" id=2]
 [ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 811.517, 150.41 )
+size = Vector2( 811.517, 150.41 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 419.778, 379.319 )
+size = Vector2( 419.778, 379.319 )
 
 [node name="PoV" type="TextureRect"]
-margin_right = 2880.0
-margin_bottom = 2160.0
+offset_right = 2880.0
+offset_bottom = 2160.0
 mouse_filter = 2
 size_flags_horizontal = 3
 texture = ExtResource( 2 )

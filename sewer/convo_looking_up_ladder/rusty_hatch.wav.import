@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/rusty_hatch.wav-692c31b6b097375865be72850ecdb797.sample"
+type="AudioStreamWAV"
+uid="uid://e5m0hw7httg5"
+path="res://.godot/imported/rusty_hatch.wav-692c31b6b097375865be72850ecdb797.sample"
 
 [deps]
 
 source_file="res://sewer/convo_looking_up_ladder/rusty_hatch.wav"
-dest_files=[ "res://.import/rusty_hatch.wav-692c31b6b097375865be72850ecdb797.sample" ]
+dest_files=["res://.godot/imported/rusty_hatch.wav-692c31b6b097375865be72850ecdb797.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

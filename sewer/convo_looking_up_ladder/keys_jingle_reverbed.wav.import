@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/keys_jingle_reverbed.wav-6d18dbb6b132b081e91c6f74d1d7bb75.sample"
+type="AudioStreamWAV"
+uid="uid://c8trkovewy557"
+path="res://.godot/imported/keys_jingle_reverbed.wav-6d18dbb6b132b081e91c6f74d1d7bb75.sample"
 
 [deps]
 
 source_file="res://sewer/convo_looking_up_ladder/keys_jingle_reverbed.wav"
-dest_files=[ "res://.import/keys_jingle_reverbed.wav-6d18dbb6b132b081e91c6f74d1d7bb75.sample" ]
+dest_files=["res://.godot/imported/keys_jingle_reverbed.wav-6d18dbb6b132b081e91c6f74d1d7bb75.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

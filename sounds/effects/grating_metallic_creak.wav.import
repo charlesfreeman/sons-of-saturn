@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/grating_metallic_creak.wav-5b4fe1df424616c15c37eee57d2431e9.sample"
+type="AudioStreamWAV"
+uid="uid://tlwbts1f6pxt"
+path="res://.godot/imported/grating_metallic_creak.wav-5b4fe1df424616c15c37eee57d2431e9.sample"
 
 [deps]
 
 source_file="res://sounds/effects/grating_metallic_creak.wav"
-dest_files=[ "res://.import/grating_metallic_creak.wav-5b4fe1df424616c15c37eee57d2431e9.sample" ]
+dest_files=["res://.godot/imported/grating_metallic_creak.wav-5b4fe1df424616c15c37eee57d2431e9.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

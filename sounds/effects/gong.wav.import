@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/gong.wav-7c2e0e228a773ad2fad211d26b0b1ca6.sample"
+type="AudioStreamWAV"
+uid="uid://bc1ftydx40neb"
+path="res://.godot/imported/gong.wav-7c2e0e228a773ad2fad211d26b0b1ca6.sample"
 
 [deps]
 
 source_file="res://sounds/effects/gong.wav"
-dest_files=[ "res://.import/gong.wav-7c2e0e228a773ad2fad211d26b0b1ca6.sample" ]
+dest_files=["res://.godot/imported/gong.wav-7c2e0e228a773ad2fad211d26b0b1ca6.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

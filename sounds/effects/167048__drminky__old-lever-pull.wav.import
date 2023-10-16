@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/167048__drminky__old-lever-pull.wav-01d5d8fedfd069ceba352b4b4e1dd086.sample"
+type="AudioStreamWAV"
+uid="uid://c0hnv4xieqwvi"
+path="res://.godot/imported/167048__drminky__old-lever-pull.wav-01d5d8fedfd069ceba352b4b4e1dd086.sample"
 
 [deps]
 
 source_file="res://sounds/effects/167048__drminky__old-lever-pull.wav"
-dest_files=[ "res://.import/167048__drminky__old-lever-pull.wav-01d5d8fedfd069ceba352b4b4e1dd086.sample" ]
+dest_files=["res://.godot/imported/167048__drminky__old-lever-pull.wav-01d5d8fedfd069ceba352b4b4e1dd086.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

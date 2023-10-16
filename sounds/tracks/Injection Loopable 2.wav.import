@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/Injection Loopable 2.wav-3fb6ae7355fd154edd8b23a404e6917a.sample"
+type="AudioStreamWAV"
+uid="uid://cm2quyf7nwibd"
+path="res://.godot/imported/Injection Loopable 2.wav-3fb6ae7355fd154edd8b23a404e6917a.sample"
 
 [deps]
 
 source_file="res://sounds/tracks/Injection Loopable 2.wav"
-dest_files=[ "res://.import/Injection Loopable 2.wav-3fb6ae7355fd154edd8b23a404e6917a.sample" ]
+dest_files=["res://.godot/imported/Injection Loopable 2.wav-3fb6ae7355fd154edd8b23a404e6917a.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

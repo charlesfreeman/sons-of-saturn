@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/saturnsounds.wav-55c88f1f0aefbb0e54714b33f9056e3b.sample"
+type="AudioStreamWAV"
+uid="uid://dr0f0bvv8xlfl"
+path="res://.godot/imported/saturnsounds.wav-55c88f1f0aefbb0e54714b33f9056e3b.sample"
 
 [deps]
 
 source_file="res://sounds/tracks/saturnsounds.wav"
-dest_files=[ "res://.import/saturnsounds.wav-55c88f1f0aefbb0e54714b33f9056e3b.sample" ]
+dest_files=["res://.godot/imported/saturnsounds.wav-55c88f1f0aefbb0e54714b33f9056e3b.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/falling_through_roof.wav-6e79ac47749f09a90b9c6a3138025ed1.sample"
+type="AudioStreamWAV"
+uid="uid://bum6n7chtu0a8"
+path="res://.godot/imported/falling_through_roof.wav-6e79ac47749f09a90b9c6a3138025ed1.sample"
 
 [deps]
 
 source_file="res://sounds/effects/falling_through_roof.wav"
-dest_files=[ "res://.import/falling_through_roof.wav-6e79ac47749f09a90b9c6a3138025ed1.sample" ]
+dest_files=["res://.godot/imported/falling_through_roof.wav-6e79ac47749f09a90b9c6a3138025ed1.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

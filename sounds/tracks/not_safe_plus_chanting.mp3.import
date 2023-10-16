@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/not_safe_plus_chanting.mp3-6f16d43ae8a6109221b368ac003571e4.mp3str"
+uid="uid://c8oylxswkwnku"
+path="res://.godot/imported/not_safe_plus_chanting.mp3-6f16d43ae8a6109221b368ac003571e4.mp3str"
 
 [deps]
 
 source_file="res://sounds/tracks/not_safe_plus_chanting.mp3"
-dest_files=[ "res://.import/not_safe_plus_chanting.mp3-6f16d43ae8a6109221b368ac003571e4.mp3str" ]
+dest_files=["res://.godot/imported/not_safe_plus_chanting.mp3-6f16d43ae8a6109221b368ac003571e4.mp3str"]
 
 [params]
 
 loop=true
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

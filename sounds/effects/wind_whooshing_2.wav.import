@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/wind_whooshing_2.wav-2d737d45c8eaa85336de95d78c9d6bae.sample"
+type="AudioStreamWAV"
+uid="uid://bjy4ayi3d1v6u"
+path="res://.godot/imported/wind_whooshing_2.wav-2d737d45c8eaa85336de95d78c9d6bae.sample"
 
 [deps]
 
 source_file="res://sounds/effects/wind_whooshing_2.wav"
-dest_files=[ "res://.import/wind_whooshing_2.wav-2d737d45c8eaa85336de95d78c9d6bae.sample" ]
+dest_files=["res://.godot/imported/wind_whooshing_2.wav-2d737d45c8eaa85336de95d78c9d6bae.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

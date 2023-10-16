@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/weird_humming.mp3-cca903ad651325579be2ad3f87bb4f0b.mp3str"
+uid="uid://bm6lhxv3tyr6g"
+path="res://.godot/imported/weird_humming.mp3-cca903ad651325579be2ad3f87bb4f0b.mp3str"
 
 [deps]
 
 source_file="res://sounds/tracks/weird_humming.mp3"
-dest_files=[ "res://.import/weird_humming.mp3-cca903ad651325579be2ad3f87bb4f0b.mp3str" ]
+dest_files=["res://.godot/imported/weird_humming.mp3-cca903ad651325579be2ad3f87bb4f0b.mp3str"]
 
 [params]
 
 loop=true
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

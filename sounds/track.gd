@@ -2,12 +2,12 @@ extends AudioStreamPlayer
 
 var old_db
 
-onready var tween_fo = $TweenFO
-onready var tween_fi = $TweenFI
+@onready var tween_fo = $TweenFO
+@onready var tween_fi = $TweenFI
 
 
 func _ready():
-	tween_fo.connect("tween_completed", self, "reset_old_song")
+	tween_fo.connect("tween_completed", Callable(self, "reset_old_song"))
 
 
 func fade_out():

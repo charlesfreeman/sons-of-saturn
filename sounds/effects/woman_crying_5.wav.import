@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/woman_crying_5.wav-b17287cabec25ed133401bf7f1bbe82b.sample"
+type="AudioStreamWAV"
+uid="uid://t4lxifnm7j08"
+path="res://.godot/imported/woman_crying_5.wav-b17287cabec25ed133401bf7f1bbe82b.sample"
 
 [deps]
 
 source_file="res://sounds/effects/woman_crying_5.wav"
-dest_files=[ "res://.import/woman_crying_5.wav-b17287cabec25ed133401bf7f1bbe82b.sample" ]
+dest_files=["res://.godot/imported/woman_crying_5.wav-b17287cabec25ed133401bf7f1bbe82b.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

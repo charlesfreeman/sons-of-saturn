@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/elevator_crash.wav-5e00efa11f8f0b7ce889c4199c20a818.sample"
+type="AudioStreamWAV"
+uid="uid://c7k4a6puot50e"
+path="res://.godot/imported/elevator_crash.wav-5e00efa11f8f0b7ce889c4199c20a818.sample"
 
 [deps]
 
 source_file="res://sounds/effects/elevator_crash.wav"
-dest_files=[ "res://.import/elevator_crash.wav-5e00efa11f8f0b7ce889c4199c20a818.sample" ]
+dest_files=["res://.godot/imported/elevator_crash.wav-5e00efa11f8f0b7ce889c4199c20a818.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

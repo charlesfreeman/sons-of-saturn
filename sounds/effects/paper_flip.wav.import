@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/paper_flip.wav-7e14ed7b495c4d76bdf863800fae3111.sample"
+type="AudioStreamWAV"
+uid="uid://yd8pt4sm1goq"
+path="res://.godot/imported/paper_flip.wav-7e14ed7b495c4d76bdf863800fae3111.sample"
 
 [deps]
 
 source_file="res://sounds/effects/paper_flip.wav"
-dest_files=[ "res://.import/paper_flip.wav-7e14ed7b495c4d76bdf863800fae3111.sample" ]
+dest_files=["res://.godot/imported/paper_flip.wav-7e14ed7b495c4d76bdf863800fae3111.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

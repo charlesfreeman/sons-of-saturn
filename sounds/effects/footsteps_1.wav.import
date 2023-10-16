@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/footsteps_1.wav-d2983a760a611b02ddc177db0800160e.sample"
+type="AudioStreamWAV"
+uid="uid://dvgveuml4jj5n"
+path="res://.godot/imported/footsteps_1.wav-d2983a760a611b02ddc177db0800160e.sample"
 
 [deps]
 
 source_file="res://sounds/effects/footsteps_1.wav"
-dest_files=[ "res://.import/footsteps_1.wav-d2983a760a611b02ddc177db0800160e.sample" ]
+dest_files=["res://.godot/imported/footsteps_1.wav-d2983a760a611b02ddc177db0800160e.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

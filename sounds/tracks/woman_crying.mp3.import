@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/woman_crying.mp3-2a1aa75050703267da12ccad4038cc25.mp3str"
+uid="uid://c7nx7x0u3m3j7"
+path="res://.godot/imported/woman_crying.mp3-2a1aa75050703267da12ccad4038cc25.mp3str"
 
 [deps]
 
 source_file="res://sounds/tracks/woman_crying.mp3"
-dest_files=[ "res://.import/woman_crying.mp3-2a1aa75050703267da12ccad4038cc25.mp3str" ]
+dest_files=["res://.godot/imported/woman_crying.mp3-2a1aa75050703267da12ccad4038cc25.mp3str"]
 
 [params]
 
 loop=true
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

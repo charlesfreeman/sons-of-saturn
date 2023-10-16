@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/switch_flip_fast.wav-3881be5a77c0e4cbe12651c1b5f43f1f.sample"
+type="AudioStreamWAV"
+uid="uid://3jv0h8kwq51s"
+path="res://.godot/imported/switch_flip_fast.wav-3881be5a77c0e4cbe12651c1b5f43f1f.sample"
 
 [deps]
 
 source_file="res://sounds/effects/switch_flip_fast.wav"
-dest_files=[ "res://.import/switch_flip_fast.wav-3881be5a77c0e4cbe12651c1b5f43f1f.sample" ]
+dest_files=["res://.godot/imported/switch_flip_fast.wav-3881be5a77c0e4cbe12651c1b5f43f1f.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

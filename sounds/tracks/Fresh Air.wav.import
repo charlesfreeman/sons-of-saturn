@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/Fresh Air.wav-0e4e940bf3080c1c3d1e5ebfcea13153.sample"
+type="AudioStreamWAV"
+uid="uid://ck0hnhv4vie01"
+path="res://.godot/imported/Fresh Air.wav-0e4e940bf3080c1c3d1e5ebfcea13153.sample"
 
 [deps]
 
 source_file="res://sounds/tracks/Fresh Air.wav"
-dest_files=[ "res://.import/Fresh Air.wav-0e4e940bf3080c1c3d1e5ebfcea13153.sample" ]
+dest_files=["res://.godot/imported/Fresh Air.wav-0e4e940bf3080c1c3d1e5ebfcea13153.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

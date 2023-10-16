@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/transient_phoebe.mp3-ff688718e47f401d7bfbec5d87d20d30.mp3str"
+uid="uid://b6n4sg3w3dyv6"
+path="res://.godot/imported/transient_phoebe.mp3-ff688718e47f401d7bfbec5d87d20d30.mp3str"
 
 [deps]
 
 source_file="res://sounds/tracks/transient_phoebe.mp3"
-dest_files=[ "res://.import/transient_phoebe.mp3-ff688718e47f401d7bfbec5d87d20d30.mp3str" ]
+dest_files=["res://.godot/imported/transient_phoebe.mp3-ff688718e47f401d7bfbec5d87d20d30.mp3str"]
 
 [params]
 
 loop=true
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

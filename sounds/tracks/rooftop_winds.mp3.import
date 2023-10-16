@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/rooftop_winds.mp3-c2be8fe6a9efa9f7c0f4f4fd8581b65a.mp3str"
+uid="uid://l1ymnlfkuso1"
+path="res://.godot/imported/rooftop_winds.mp3-c2be8fe6a9efa9f7c0f4f4fd8581b65a.mp3str"
 
 [deps]
 
 source_file="res://sounds/tracks/rooftop_winds.mp3"
-dest_files=[ "res://.import/rooftop_winds.mp3-c2be8fe6a9efa9f7c0f4f4fd8581b65a.mp3str" ]
+dest_files=["res://.godot/imported/rooftop_winds.mp3-c2be8fe6a9efa9f7c0f4f4fd8581b65a.mp3str"]
 
 [params]
 
 loop=true
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

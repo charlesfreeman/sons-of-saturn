@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/tanpura_strum_2.wav-b8385a8303d8ad1e5e3acaea25535d2d.sample"
+type="AudioStreamWAV"
+uid="uid://dcanc37ywqau8"
+path="res://.godot/imported/tanpura_strum_2.wav-b8385a8303d8ad1e5e3acaea25535d2d.sample"
 
 [deps]
 
 source_file="res://sounds/effects/tanpura_strum_2.wav"
-dest_files=[ "res://.import/tanpura_strum_2.wav-b8385a8303d8ad1e5e3acaea25535d2d.sample" ]
+dest_files=["res://.godot/imported/tanpura_strum_2.wav-b8385a8303d8ad1e5e3acaea25535d2d.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

@@ -1,8 +1,8 @@
 extends Button
 
-export var label_text = ""
+@export var label_text = ""
 
-onready var label = $Label
+@onready var label = $Label
 
 
 func _ready():
@@ -10,7 +10,7 @@ func _ready():
 	
 
 func change_color(color: Color):
-	label.add_color_override("font_color", color)
+	label.add_theme_color_override("font_color", color)
 
 
 func _on_TitleMenuOpt_focus_entered():

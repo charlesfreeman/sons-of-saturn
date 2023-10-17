@@ -1,9 +1,9 @@
 extends TextureRect
 
-onready var continue_button = $VBoxContainer/Continue
-onready var new_game = $VBoxContainer/NewGame
-onready var load_button = $VBoxContainer/LoadGame
-onready var options_button = $VBoxContainer/Options
+@onready var continue_button = $VBoxContainer/Continue
+@onready var new_game = $VBoxContainer/NewGame
+@onready var load_button = $VBoxContainer/LoadGame
+@onready var options_button = $VBoxContainer/Options
 
 
 func _ready():

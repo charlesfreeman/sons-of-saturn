@@ -4,14 +4,14 @@ const spokenLine = preload("res://dialogue_system/SpokenLine.tscn")
 const spokenLineNochar = preload("res://dialogue_system/SpokenLineNoChar.tscn")
 const spokenLineNarrator = preload("res://dialogue_system/SpokenLineNarrator.tscn")
 
-onready var twison = preload("res://modules/twison-godot/twison_helper.gd")
-onready var Twison = twison.new()
-onready var button_container = $ButtonContainer
-onready var scroll_container = $ScrollContainer
-onready var spoken_lines_container = $ScrollContainer/SpokenLinesContainer
-onready var tween = $Tween
-onready var scroll_bar = scroll_container.get_v_scrollbar()
-onready var typewriter = $RanSoundContainer
+@onready var twison = preload("res://modules/twison-godot/twison_helper.gd")
+@onready var Twison = twison.new()
+@onready var button_container = $ButtonContainer
+@onready var scroll_container = $ScrollContainer
+@onready var spoken_lines_container = $ScrollContainer/SpokenLinesContainer
+@onready var tween = $Tween
+@onready var scroll_bar = scroll_container.get_v_scroll_bar()
+@onready var typewriter = $RanSoundContainer
 var dialogueOption = load("res://dialogue_system/DialogueOption.tscn")
 var continueButton = load("res://dialogue_system/ContinueButton.tscn")
 
@@ -84,7 +84,7 @@ func init():
 
 	self.buttons_array = get_tree().get_nodes_in_group("buttons")
 	
-	scroll_bar.connect("changed", self, "handle_scrollbar_changed")
+	scroll_bar.connect("changed", Callable(self, "handle_scrollbar_changed"))
 	scroll_bar.modulate = Color(0, 0, 0, 0)
 	
 	var starting_node = Twison.get_starting_node()
@@ -149,14 +149,14 @@ func _load_next_block(name):
 			elif len(self.link_names) == 1:
 				self._add_buttons()
 			else:
-				self.continue_button = continueButton.instance()
+				self.continue_button = continueButton.instantiate()
 				button_container.add_child(self.continue_button)
-				self.continue_button.connect("pressed", self, "_final_continue")
+				self.continue_button.connect("pressed", Callable(self, "_final_continue"))
 				self.continue_button.grab_focus()
 		else:
-			self.continue_button = continueButton.instance()
+			self.continue_button = continueButton.instantiate()
 			button_container.add_child(self.continue_button)
-			self.continue_button.connect("pressed", self, "_on_ContinueButton_pressed")
+			self.continue_button.connect("pressed", Callable(self, "_on_ContinueButton_pressed"))
 			self.continue_button.grab_focus()
 	# if chapter is in stack and multiple buttons, skip straight to displaying
 	# all the buttons.  Rationale is that player doesn't need to see the same
@@ -220,26 +220,26 @@ func _load_paragraph(paragraph):
 		if current_char != "You":
 			state_changed = true
 		if char_name == "Narrator":
-			var linebreak = spokenLineNochar.instance()
+			var linebreak = spokenLineNochar.instantiate()
 			linebreak.set_text("  ------- ------- ------- ------- ------- ")
 			spoken_lines_container.add_child(linebreak)
 			
-			var spoken_line = spokenLineNarrator.instance()
+			var spoken_line = spokenLineNarrator.instantiate()
 			spoken_line.set_text(text)
 			spoken_lines_container.add_child(spoken_line)
 		else:
-			var spoken_line = spokenLine.instance()
+			var spoken_line = spokenLine.instantiate()
 			
 			spoken_line.set_speaker_name(char_name)
 			spoken_line.set_dialogue_line(text)
 			spoken_lines_container.add_child(spoken_line)
 	else:
 		if current_char == "Narrator":
-			var spoken_line = spokenLineNarrator.instance()
+			var spoken_line = spokenLineNarrator.instantiate()
 			spoken_line.set_text(text)
 			spoken_lines_container.add_child(spoken_line)
 		else:
-			var spoken_line = spokenLineNochar.instance()
+			var spoken_line = spokenLineNochar.instantiate()
 			spoken_line.set_text(text)
 			spoken_lines_container.add_child(spoken_line)
 			
@@ -269,9 +269,9 @@ func _add_buttons():
 				var text_array = button_text.split("->")
 				display_button = display_button or text_array[1] in self.links_clicked
 		if display_button:
-			var dialogue_opt = dialogueOption.instance()
+			var dialogue_opt = dialogueOption.instantiate()
 			button_container.add_child(dialogue_opt)
-			dialogue_opt.connect("pressed", self, "_pressed", [i])
+			dialogue_opt.connect("pressed", Callable(self, "_pressed").bind(i))
 			# TODO consider if buttons_array at all necessary
 			self.buttons_array.append(dialogue_opt)
 			if button_text in self.links_clicked:
@@ -335,14 +335,14 @@ func _on_ContinueButton_pressed():
 				self.continue_button.queue_free()
 				self._add_buttons()
 			else:
-				self.continue_button.disconnect("pressed", self, "_on_ContinueButton_pressed")
-				self.continue_button.connect("pressed", self, "_final_continue")
+				self.continue_button.disconnect("pressed", Callable(self, "_on_ContinueButton_pressed"))
+				self.continue_button.connect("pressed", Callable(self, "_final_continue"))
 
 
 func _make_continue_end():
-	self.continue_button = continueButton.instance()
+	self.continue_button = continueButton.instantiate()
 	button_container.add_child(self.continue_button)
-	self.continue_button.connect("pressed", self, "_load_next_scene")
+	self.continue_button.connect("pressed", Callable(self, "_load_next_scene"))
 	self.continue_button.grab_focus()
 
 

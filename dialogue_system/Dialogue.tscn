@@ -23,49 +23,49 @@ VScrollBar/styles/scroll_focus = null
 [node name="VBoxContainer" type="VBoxContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_min_size = Vector2( 1680, 0 )
+custom_minimum_size = Vector2( 1680, 0 )
 mouse_filter = 2
 size_flags_vertical = 3
 theme = ExtResource( 8 )
-custom_constants/separation = 50
+theme_override_constants/separation = 50
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
-margin_right = 3840.0
-margin_bottom = 1960.0
+offset_right = 3840.0
+offset_bottom = 1960.0
 size_flags_vertical = 3
 theme = SubResource( 1 )
 scroll_horizontal_enabled = false
 
 [node name="SpokenLinesContainer" type="VBoxContainer" parent="ScrollContainer"]
-margin_right = 3828.0
-margin_bottom = 2160.0
+offset_right = 3828.0
+offset_bottom = 2160.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_constants/separation = 50
+theme_override_constants/separation = 50
 
 [node name="Control" type="Control" parent="ScrollContainer/SpokenLinesContainer"]
-margin_right = 3828.0
-margin_bottom = 2160.0
-rect_min_size = Vector2( 0, 2160 )
+offset_right = 3828.0
+offset_bottom = 2160.0
+custom_minimum_size = Vector2( 0, 2160 )
 size_flags_vertical = 3
 
 [node name="Tween" type="Tween" parent="."]
 
 [node name="ButtonContainer" type="VBoxContainer" parent="."]
-margin_top = 2010.0
-margin_right = 3840.0
-margin_bottom = 2010.0
-custom_constants/separation = 15
+offset_top = 2010.0
+offset_right = 3840.0
+offset_bottom = 2010.0
+theme_override_constants/separation = 15
 
 [node name="Control" type="Control" parent="."]
-margin_top = 2060.0
-margin_right = 3840.0
-margin_bottom = 2160.0
-rect_min_size = Vector2( 0, 100 )
+offset_top = 2060.0
+offset_right = 3840.0
+offset_bottom = 2160.0
+custom_minimum_size = Vector2( 0, 100 )
 
 [node name="RanSoundContainer" type="Node" parent="."]
 script = ExtResource( 4 )

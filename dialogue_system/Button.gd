@@ -1,6 +1,6 @@
 extends TextureButton
 
-onready var label_node = $HBoxContainer/OptionText
+@onready var label_node = $HBoxContainer/OptionText
 
 var button_text
 var next_passage
@@ -54,8 +54,8 @@ func extract_text_and_modifiers(text: String):
 	set_label_text(_insert_newlines(button_text_minus_mods))
 	
 	var num_newlines = len(label_node.text.split("\n"))
-	self.rect_min_size.y = num_newlines * 64
-	label_node.rect_min_size.y = num_newlines * 64
+	self.custom_minimum_size.y = num_newlines * 64
+	label_node.custom_minimum_size.y = num_newlines * 64
 	
 	if self.progression_button:
 		change_color(Color(1, 0.5, 0, 1))
@@ -82,7 +82,7 @@ func set_label_text(text: String):
 	if text == "Continue" or text == "C":
 		self.button_text = "\u00AC Continue"
 		self.continue_mode = true
-		$HBoxContainer.set("custom_constants/separation", 50)
+		$HBoxContainer.set("theme_override_constants/separation", 50)
 	else:
 		self.button_text = text
 	self.mode_set = true
@@ -104,7 +104,7 @@ func set_as_clicked():
 
 
 func change_color(color: Color):
-	label_node.add_color_override("font_color", color)
+	label_node.add_theme_color_override("font_color", color)
 
 
 func set_as_progression():
@@ -125,7 +125,7 @@ func get_next_passage() -> String:
 
 
 func _on_DialogueOption_focus_entered():
-	label_node.add_color_override("font_color", Color(1,1,0,1))
+	label_node.add_theme_color_override("font_color", Color(1,1,0,1))
 
 
 func _on_DialogueOption_focus_exited():

@@ -1,6 +1,6 @@
 extends TextureButton
 
-onready var text_label = $HBoxContainer/ContinueText
+@onready var text_label = $HBoxContainer/ContinueText
 
 var button_text : String
 var next_passage : String

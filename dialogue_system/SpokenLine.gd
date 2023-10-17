@@ -1,7 +1,7 @@
 extends VBoxContainer
 
-onready var speaker_name = $SpeakerName
-onready var dialogue_line = $TextLine/DialogueLine
+@onready var speaker_name = $SpeakerName
+@onready var dialogue_line = $TextLine/DialogueLine
 
 # for associating the char with the right color
 # TODO remove "Wigley"

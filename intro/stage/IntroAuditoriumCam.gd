@@ -1,6 +1,6 @@
 extends Camera2D
 
-onready var tween = $Tween
+@onready var tween = $Tween
 
 
 func _ready():
@@ -9,7 +9,7 @@ func _ready():
 
 
 func _on_Tween_tween_completed(object, key):
-	yield(get_tree().create_timer(2.0), "timeout")
+	await get_tree().create_timer(2.0).timeout
 	var options = SceneManager.create_options()
 	var general_options = SceneManager.create_general_options()
 	SceneManager.change_scene("intro_convo", options, options, general_options)

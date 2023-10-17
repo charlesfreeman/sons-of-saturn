@@ -89,7 +89,9 @@ func _load_file(filePath: String):
 		return data
 	
 	var text = jsonFile.get_as_text()
-	data = parse_json(text)
+	var test_json_conv = JSON.new()
+	test_json_conv.parse(text)
+	data = test_json_conv.get_data()
 	jsonFile.close()
 
 	return data

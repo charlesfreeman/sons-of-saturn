@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://addons/mixing-desk/sound/nonspatial/ran_cont.gd" type="Script" id=1]
-[ext_resource path="res://fonts/PTSerifReg96.tres" type="DynamicFont" id=2]
+[ext_resource path="res://fonts/PTSerifReg96.tres" type="FontFile" id=2]
 [ext_resource path="res://roaming_pov/DescPopUp.gd" type="Script" id=3]
 [ext_resource path="res://dialogue_system/sounds/typewriter_click_5.wav" type="AudioStream" id=4]
 [ext_resource path="res://dialogue_system/sounds/typewriter_click_1.wav" type="AudioStream" id=5]
@@ -10,7 +10,7 @@
 [ext_resource path="res://dialogue_system/sounds/typewriter_click_3.wav" type="AudioStream" id=8]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 1430.73, 1068.51 )
+size = Vector2( 1430.73, 1068.51 )
 
 [node name="DescPopUp" type="Area2D" groups=["desc_popups", "popups"]]
 z_index = 1
@@ -20,40 +20,40 @@ popup_text = [ "Example Text" ]
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 1600.0
-margin_right = 2880.0
-margin_bottom = 2356.0
-rect_scale = Vector2( 1, 0.68 )
+offset_top = 1600.0
+offset_right = 2880.0
+offset_bottom = 2356.0
+scale = Vector2( 1, 0.68 )
 mouse_filter = 2
-custom_constants/separation = 20
+theme_override_constants/separation = 20
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Control" type="Control" parent="VBoxContainer"]
-margin_right = 2880.0
-margin_bottom = 487.0
+offset_right = 2880.0
+offset_bottom = 487.0
 mouse_filter = 2
 size_flags_vertical = 3
 
 [node name="LabelContainer" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 507.0
-margin_right = 2880.0
-margin_bottom = 635.0
+offset_top = 507.0
+offset_right = 2880.0
+offset_bottom = 635.0
 mouse_filter = 2
-custom_constants/separation = 200
+theme_override_constants/separation = 200
 
 [node name="Control" type="Control" parent="VBoxContainer/LabelContainer"]
-margin_bottom = 128.0
+offset_bottom = 128.0
 mouse_filter = 2
 
 [node name="Label" type="Label" parent="VBoxContainer/LabelContainer"]
-margin_left = 200.0
-margin_right = 2680.0
-margin_bottom = 128.0
+offset_left = 200.0
+offset_right = 2680.0
+offset_bottom = 128.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 2 )
+theme_override_fonts/font = ExtResource( 2 )
 valign = 1
 autowrap = true
 __meta__ = {
@@ -61,16 +61,16 @@ __meta__ = {
 }
 
 [node name="Control2" type="Control" parent="VBoxContainer/LabelContainer"]
-margin_left = 2880.0
-margin_right = 2880.0
-margin_bottom = 128.0
+offset_left = 2880.0
+offset_right = 2880.0
+offset_bottom = 128.0
 mouse_filter = 2
 
 [node name="Control2" type="Control" parent="VBoxContainer"]
-margin_top = 655.0
-margin_right = 2880.0
-margin_bottom = 756.0
-rect_min_size = Vector2( 0, 101 )
+offset_top = 655.0
+offset_right = 2880.0
+offset_bottom = 756.0
+custom_minimum_size = Vector2( 0, 101 )
 
 [node name="FullRect" type="Area2D" parent="."]
 modulate = Color( 1, 1, 1, 0 )

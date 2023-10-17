@@ -1,52 +1,52 @@
 extends TextureRect
 
-export(String, FILE) var scene_up = "None"
-export(String, FILE) var scene_right = "None"
-export(String, FILE) var scene_down = "None"
-export(String, FILE) var scene_left = "None"
+@export var scene_up = "None" # (String, FILE)
+@export var scene_right = "None" # (String, FILE)
+@export var scene_down = "None" # (String, FILE)
+@export var scene_left = "None" # (String, FILE)
 
-export(String, FILE) var alt_scene_up = "None"
-export(String, FILE) var alt_scene_right = "None"
-export(String, FILE) var alt_scene_down = "None"
-export(String, FILE) var alt_scene_left = "None"
+@export var alt_scene_up = "None" # (String, FILE)
+@export var alt_scene_right = "None" # (String, FILE)
+@export var alt_scene_down = "None" # (String, FILE)
+@export var alt_scene_left = "None" # (String, FILE)
 
-export(String, FILE) var popup_background = "None"
+@export var popup_background = "None" # (String, FILE)
 
-export var non_roam_scene_up = false
-export var non_roam_scene_right = false
-export var non_roam_scene_down = false
-export var non_roam_scene_left = false
+@export var non_roam_scene_up = false
+@export var non_roam_scene_right = false
+@export var non_roam_scene_down = false
+@export var non_roam_scene_left = false
 
-export var req_flag_up = "None"
-export var req_flag_right = "None"
-export var req_flag_down = "None"
-export var req_flag_left = "None"
+@export var req_flag_up = "None"
+@export var req_flag_right = "None"
+@export var req_flag_down = "None"
+@export var req_flag_left = "None"
 
-export var prog_flag = "None"
+@export var prog_flag = "None"
 
-export var position = Vector2(800, 800)
-export var rotation = 0
+@export var position = Vector2(800, 800)
+@export var rotation = 0
 
-export var song = "None"
-export var soundscape = "None"
+@export var song = "None"
+@export var soundscape = "None"
 
 # change this to "Wet" to change to wet footsteps
 # will likely add more options later
-export var footstep_type_up = "Tile"
-export var footstep_type_right = "Tile"
-export var footstep_type_down = "Tile"
-export var footstep_type_left = "Tile"
+@export var footstep_type_up = "Tile"
+@export var footstep_type_right = "Tile"
+@export var footstep_type_down = "Tile"
+@export var footstep_type_left = "Tile"
 
 # set this to something if new mini-map needed when entering this area
-export var map = "None"
+@export var map = "None"
 
 # functionality to moving to new scene instead of new PoV already exists but sometimes more natural
 # to transition after having entered new PoV
-export var new_scene_on_ready = false
-export(String, FILE) var new_scene = "None"
+@export var new_scene_on_ready = false
+@export var new_scene = "None" # (String, FILE)
 
-onready var area = $ClickToEnter
-onready var bg = self.texture
+@onready var area = $ClickToEnter
+@onready var bg = self.texture
 
 var default_bg = true
 
@@ -65,7 +65,7 @@ func _ready():
 	# only if the prog flag for this PoV has not yet been flipped.  If it has it isn't loaded. 
 	if new_scene_on_ready and not Global.get_prog_flag(prog_flag):
 		Global.flip_prog_flag(prog_flag)
-		yield(get_tree().create_timer(1.0), "timeout")
+		await get_tree().create_timer(1.0).timeout
 		var options = SceneManager.create_options()
 		var general_options = SceneManager.create_general_options()
 		SceneManager.change_scene(new_scene, options, options, general_options)
@@ -79,11 +79,11 @@ func _ready():
 	Global.change_soundscape(soundscape)
 	
 	for node in get_tree().get_nodes_in_group("popups"):
-		node.connect("disable_buttons", self, "_disable_buttons")
-		node.connect("enable_buttons", self, "_enable_buttons")
-		node.connect("swap_bg", self, "_swap_bg")
+		node.connect("disable_buttons", Callable(self, "_disable_buttons"))
+		node.connect("enable_buttons", Callable(self, "_enable_buttons"))
+		node.connect("swap_bg", Callable(self, "_swap_bg"))
 	for node in get_tree().get_nodes_in_group("desc_popups"):
-		node.connect("new_item", self, "_new_item")
+		node.connect("new_item", Callable(self, "_new_item"))
 
 
 func swap_bg():

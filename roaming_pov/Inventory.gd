@@ -2,7 +2,7 @@ extends GridContainer
 
 var num_items = 0
 
-onready var inv_slots = [$Inv1, $Inv2, $Inv3]
+@onready var inv_slots = [$Inv1, $Inv2, $Inv3]
 
 
 func _ready():

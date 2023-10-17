@@ -25,25 +25,25 @@ var map_paths = {
 	"rooftop" : "res://roaming_pov/maps/rooftop_map.png",
 }
 
-onready var map = $HBoxContainer/VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect
-onready var camera = $HBoxContainer/VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect/Camera2D
-onready var char_rect = $HBoxContainer/VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect/CharRect
-onready var up_button = $HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/UpButton
-onready var right_button = $HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/RightButton
-onready var down_button = $HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/DownButton
-onready var left_button = $HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/LeftButton
-onready var inventory = $HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer/Inventory
-onready var transition_screen = $HBoxContainer/TransitionScreen
-onready var transition_screen_texture = $HBoxContainer/TransitionScreenTexture
-onready var tile_footsteps = $HBoxContainer/TileFootsteps
-onready var wet_footsteps = $HBoxContainer/WetFootsteps
-onready var door_unlock = $HBoxContainer/DoorUnlock
-onready var esc_opts = $EscOpts
-onready var esc_opts_resume = $EscOpts/Buttons/Resume
-onready var autosave = $Autosave
-onready var save = $Save
-onready var hbox = $HBoxContainer
-onready var footstep_types = {
+@onready var map = $HBoxContainer/VBoxContainer/MapHBox/MapBoundary/SubViewportContainer/SubViewport/TextureRect
+@onready var camera = $HBoxContainer/VBoxContainer/MapHBox/MapBoundary/SubViewportContainer/SubViewport/TextureRect/Camera2D
+@onready var char_rect = $HBoxContainer/VBoxContainer/MapHBox/MapBoundary/SubViewportContainer/SubViewport/TextureRect/CharRect
+@onready var up_button = $HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/UpButton
+@onready var right_button = $HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/RightButton
+@onready var down_button = $HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/DownButton
+@onready var left_button = $HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/LeftButton
+@onready var inventory = $HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer/Inventory
+@onready var transition_screen = $HBoxContainer/TransitionScreen
+@onready var transition_screen_texture = $HBoxContainer/TransitionScreenTexture
+@onready var tile_footsteps = $HBoxContainer/TileFootsteps
+@onready var wet_footsteps = $HBoxContainer/WetFootsteps
+@onready var door_unlock = $HBoxContainer/DoorUnlock
+@onready var esc_opts = $EscOpts
+@onready var esc_opts_resume = $EscOpts/Buttons/Resume
+@onready var autosave = $Autosave
+@onready var save = $Save
+@onready var hbox = $HBoxContainer
+@onready var footstep_types = {
 	"Tile" : tile_footsteps,
 	"Wet" : wet_footsteps,
 	"DoorUnlock" : door_unlock,
@@ -51,7 +51,7 @@ onready var footstep_types = {
 
 
 func _ready():
-	char_rect.rect_pivot_offset = char_rect.rect_size / 2
+	char_rect.pivot_offset = char_rect.size / 2
 	_load_PoV_instance()
 	
 	Global.set_scene_type("roaming_pov")
@@ -143,7 +143,7 @@ func _load_PoV_instance():
 	pov_scene = load(Global.get_location())
 	pov_instance = pov_scene.instance()
 	if pov_instance.map != "None":
-		Global.set_region(pov_instance.map)
+		Global.set_region_enabled(pov_instance.map)
 		region_local = pov_instance.map
 		map.texture = load(map_paths[pov_instance.map])
 	else:
@@ -154,14 +154,14 @@ func _load_PoV_instance():
 	add_child(pov_instance)
 	move_child(pov_instance, 0)
 	_update_buttons()
-	pov_instance.connect("move_pov_up", self, "_on_UpButton_pressed")
-	pov_instance.connect("move_pov_right", self, "_on_RightButton_pressed")
-	pov_instance.connect("move_pov_down", self, "_on_DownButton_pressed")
-	pov_instance.connect("move_pov_left", self, "_on_LeftButton_pressed")
-	pov_instance.connect("disable_buttons", self, "_disable_buttons")
-	pov_instance.connect("enable_buttons", self, "_enable_buttons")
-	pov_instance.connect("swap_bg", self, "swap_texture")
-	pov_instance.connect("new_item", self, "_new_item")
+	pov_instance.connect("move_pov_up", Callable(self, "_on_UpButton_pressed"))
+	pov_instance.connect("move_pov_right", Callable(self, "_on_RightButton_pressed"))
+	pov_instance.connect("move_pov_down", Callable(self, "_on_DownButton_pressed"))
+	pov_instance.connect("move_pov_left", Callable(self, "_on_LeftButton_pressed"))
+	pov_instance.connect("disable_buttons", Callable(self, "_disable_buttons"))
+	pov_instance.connect("enable_buttons", Callable(self, "_enable_buttons"))
+	pov_instance.connect("swap_bg", Callable(self, "swap_texture"))
+	pov_instance.connect("new_item", Callable(self, "_new_item"))
 	set_pos_rot(pov_instance.position, pov_instance.rotation)
 
 
@@ -172,7 +172,7 @@ func _on_TransitionScreen_transitioned():
 
 func _on_TransitionScreenTexture_transitioned():
 	pov_instance.swap_bg()
-	get_tree().call_group("diff_bg", "make_visible")
+	get_tree().call_group("diff_bg", "_make_visible")
 
 
 func _update_buttons():
@@ -227,11 +227,11 @@ func _new_item(item):
 	
 	
 func set_pos_rot(pos, rot):
-	char_rect.rect_position.x = pos.x
-	char_rect.rect_position.y = pos.y
-	char_rect.rect_rotation = rot
-	camera.position.x = pos.x + (char_rect.rect_size.x / 2)
-	camera.position.y = pos.y + (char_rect.rect_size.y / 2)
+	char_rect.position.x = pos.x
+	char_rect.position.y = pos.y
+	char_rect.rotation = rot
+	camera.position.x = pos.x + (char_rect.size.x / 2)
+	camera.position.y = pos.y + (char_rect.size.y / 2)
 
 
 func _on_Resume_pressed():

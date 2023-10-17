@@ -1,12 +1,12 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://roaming_pov/Autosave.gd" type="Script" id=1]
-[ext_resource path="res://roaming_pov/images/saving_icon_trimmed.png" type="Texture" id=2]
+[ext_resource path="res://roaming_pov/images/saving_icon_trimmed.png" type="Texture2D" id=2]
 
-[sub_resource type="DynamicFontData" id=3]
+[sub_resource type="FontFile" id=3]
 font_path = "res://fonts/PTSerif-Regular.ttf"
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="FontFile" id=2]
 size = 48
 outline_size = 6
 outline_color = Color( 0, 0, 0, 1 )
@@ -15,10 +15,10 @@ font_data = SubResource( 3 )
 
 [node name="Save" type="HBoxContainer"]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 63.0
-margin_top = 2037.0
-margin_right = 338.0
-margin_bottom = 2101.0
+offset_left = 63.0
+offset_top = 2037.0
+offset_right = 338.0
+offset_bottom = 2101.0
 mouse_filter = 2
 script = ExtResource( 1 )
 __meta__ = {
@@ -26,20 +26,20 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_right = 90.0
-margin_bottom = 64.0
+offset_right = 90.0
+offset_bottom = 64.0
 size_flags_horizontal = 3
 texture = ExtResource( 2 )
 expand = true
 stretch_mode = 5
 
 [node name="Label" type="Label" parent="."]
-margin_left = 94.0
-margin_right = 275.0
-margin_bottom = 64.0
+offset_left = 94.0
+offset_right = 275.0
+offset_bottom = 64.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 2 )
+theme_override_fonts/font = SubResource( 2 )
 text = "Saving..."
 valign = 1
 

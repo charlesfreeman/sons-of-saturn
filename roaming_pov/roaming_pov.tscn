@@ -1,45 +1,45 @@
 [gd_scene load_steps=38 format=2]
 
-[ext_resource path="res://roaming_pov/images/cone_of_vision.png" type="Texture" id=1]
+[ext_resource path="res://roaming_pov/images/cone_of_vision.png" type="Texture2D" id=1]
 [ext_resource path="res://roaming_pov/roaming_pov.gd" type="Script" id=2]
-[ext_resource path="res://roaming_pov/images/sg_arrow_green_right.png" type="Texture" id=3]
-[ext_resource path="res://roaming_pov/images/sg_arrow_dark_down.png" type="Texture" id=4]
-[ext_resource path="res://roaming_pov/images/sg_arrow_pink_left_desaturated.png" type="Texture" id=5]
-[ext_resource path="res://roaming_pov/images/sg_arrow_pink_up_desaturated.png" type="Texture" id=6]
-[ext_resource path="res://roaming_pov/images/sg_arrow_dark_right.png" type="Texture" id=7]
-[ext_resource path="res://roaming_pov/images/sg_arrow_pink_down_desaturated.png" type="Texture" id=8]
-[ext_resource path="res://roaming_pov/images/sg_arrow_green_up.png" type="Texture" id=9]
-[ext_resource path="res://roaming_pov/images/sg_arrow_dark_up.png" type="Texture" id=10]
-[ext_resource path="res://roaming_pov/images/new_crossroad.png" type="Texture" id=11]
-[ext_resource path="res://roaming_pov/images/sg_arrow_pink_right_desaturated.png" type="Texture" id=12]
-[ext_resource path="res://roaming_pov/images/sg_arrow_green_down.png" type="Texture" id=13]
-[ext_resource path="res://roaming_pov/images/sg_arrow_dark_left.png" type="Texture" id=14]
-[ext_resource path="res://roaming_pov/images/sg_arrow_green_left.png" type="Texture" id=15]
+[ext_resource path="res://roaming_pov/images/sg_arrow_green_right.png" type="Texture2D" id=3]
+[ext_resource path="res://roaming_pov/images/sg_arrow_dark_down.png" type="Texture2D" id=4]
+[ext_resource path="res://roaming_pov/images/sg_arrow_pink_left_desaturated.png" type="Texture2D" id=5]
+[ext_resource path="res://roaming_pov/images/sg_arrow_pink_up_desaturated.png" type="Texture2D" id=6]
+[ext_resource path="res://roaming_pov/images/sg_arrow_dark_right.png" type="Texture2D" id=7]
+[ext_resource path="res://roaming_pov/images/sg_arrow_pink_down_desaturated.png" type="Texture2D" id=8]
+[ext_resource path="res://roaming_pov/images/sg_arrow_green_up.png" type="Texture2D" id=9]
+[ext_resource path="res://roaming_pov/images/sg_arrow_dark_up.png" type="Texture2D" id=10]
+[ext_resource path="res://roaming_pov/images/new_crossroad.png" type="Texture2D" id=11]
+[ext_resource path="res://roaming_pov/images/sg_arrow_pink_right_desaturated.png" type="Texture2D" id=12]
+[ext_resource path="res://roaming_pov/images/sg_arrow_green_down.png" type="Texture2D" id=13]
+[ext_resource path="res://roaming_pov/images/sg_arrow_dark_left.png" type="Texture2D" id=14]
+[ext_resource path="res://roaming_pov/images/sg_arrow_green_left.png" type="Texture2D" id=15]
 [ext_resource path="res://roaming_pov/TransitionScreen.tscn" type="PackedScene" id=16]
-[ext_resource path="res://roaming_pov/maps/sewer_map.png" type="Texture" id=17]
+[ext_resource path="res://roaming_pov/maps/sewer_map.png" type="Texture2D" id=17]
 [ext_resource path="res://roaming_pov/PartyMember.tscn" type="PackedScene" id=18]
 [ext_resource path="res://addons/mixing-desk/sound/nonspatial/ran_cont.gd" type="Script" id=20]
 [ext_resource path="res://roaming_pov/PartyContainer.gd" type="Script" id=21]
-[ext_resource path="res://roaming_pov/images/gui_boundary.png" type="Texture" id=22]
+[ext_resource path="res://roaming_pov/images/gui_boundary.png" type="Texture2D" id=22]
 [ext_resource path="res://roaming_pov/sounds/tile_footsteps_3.wav" type="AudioStream" id=23]
 [ext_resource path="res://roaming_pov/sounds/tile_footsteps_2.wav" type="AudioStream" id=24]
 [ext_resource path="res://roaming_pov/sounds/tile_footsteps_1.wav" type="AudioStream" id=25]
 [ext_resource path="res://roaming_pov/sounds/tile_footsteps_4.wav" type="AudioStream" id=26]
 [ext_resource path="res://roaming_pov/InvSlot.tscn" type="PackedScene" id=27]
 [ext_resource path="res://roaming_pov/Inventory.gd" type="Script" id=28]
-[ext_resource path="res://roaming_pov/images/new_map_border.png" type="Texture" id=29]
+[ext_resource path="res://roaming_pov/images/new_map_border.png" type="Texture2D" id=29]
 [ext_resource path="res://roaming_pov/sounds/footsteps_wet_1.wav" type="AudioStream" id=30]
 [ext_resource path="res://roaming_pov/sounds/footsteps_wet_3.wav" type="AudioStream" id=31]
-[ext_resource path="res://roaming_pov/images/saving_icon_trimmed.png" type="Texture" id=32]
+[ext_resource path="res://roaming_pov/images/saving_icon_trimmed.png" type="Texture2D" id=32]
 [ext_resource path="res://roaming_pov/Autosave.gd" type="Script" id=33]
 [ext_resource path="res://title_screen/TitleMenuOpt.tscn" type="PackedScene" id=34]
 [ext_resource path="res://sounds/effects/door_unlock_shortened.wav" type="AudioStream" id=35]
 [ext_resource path="res://roaming_pov/Save.tscn" type="PackedScene" id=36]
 
-[sub_resource type="DynamicFontData" id=3]
+[sub_resource type="FontFile" id=3]
 font_path = "res://fonts/PTSerif-Regular.ttf"
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="FontFile" id=2]
 size = 48
 outline_size = 6
 outline_color = Color( 0, 0, 0, 1 )
@@ -49,7 +49,7 @@ font_data = SubResource( 3 )
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_min_size = Vector2( 960, 0 )
+custom_minimum_size = Vector2( 960, 0 )
 mouse_filter = 2
 script = ExtResource( 2 )
 __meta__ = {
@@ -59,8 +59,8 @@ __meta__ = {
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 2880.0
-rect_min_size = Vector2( 960, 0 )
+offset_left = 2880.0
+custom_minimum_size = Vector2( 960, 0 )
 mouse_filter = 2
 size_flags_stretch_ratio = 5.0
 __meta__ = {
@@ -68,112 +68,112 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
-margin_right = 15.0
-margin_bottom = 2160.0
-rect_min_size = Vector2( 15, 0 )
+offset_right = 15.0
+offset_bottom = 2160.0
+custom_minimum_size = Vector2( 15, 0 )
 texture = ExtResource( 22 )
 expand = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
-margin_left = 19.0
-margin_right = 960.0
-margin_bottom = 2160.0
+offset_left = 19.0
+offset_right = 960.0
+offset_bottom = 2160.0
 mouse_filter = 2
 size_flags_horizontal = 3
-custom_constants/separation = 30
+theme_override_constants/separation = 30
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Control" type="Control" parent="HBoxContainer/VBoxContainer"]
-margin_right = 941.0
+offset_right = 941.0
 
 [node name="MapHBox" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
-margin_top = 30.0
-margin_right = 941.0
-margin_bottom = 730.0
-custom_constants/separation = 34
+offset_top = 30.0
+offset_right = 941.0
+offset_bottom = 730.0
+theme_override_constants/separation = 34
 
 [node name="Control" type="Control" parent="HBoxContainer/VBoxContainer/MapHBox"]
-margin_bottom = 700.0
+offset_bottom = 700.0
 
 [node name="MapBoundary" type="TextureRect" parent="HBoxContainer/VBoxContainer/MapHBox"]
-margin_left = 34.0
-margin_right = 907.0
-margin_bottom = 700.0
-rect_min_size = Vector2( 0, 700 )
+offset_left = 34.0
+offset_right = 907.0
+offset_bottom = 700.0
+custom_minimum_size = Vector2( 0, 700 )
 size_flags_horizontal = 3
 texture = ExtResource( 29 )
 expand = true
 
-[node name="ViewportContainer" type="ViewportContainer" parent="HBoxContainer/VBoxContainer/MapHBox/MapBoundary"]
-margin_left = 44.0
-margin_top = 45.0
-margin_right = 819.0
-margin_bottom = 654.0
+[node name="SubViewportContainer" type="SubViewportContainer" parent="HBoxContainer/VBoxContainer/MapHBox/MapBoundary"]
+offset_left = 44.0
+offset_top = 45.0
+offset_right = 819.0
+offset_bottom = 654.0
 stretch = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Viewport" type="Viewport" parent="HBoxContainer/VBoxContainer/MapHBox/MapBoundary/ViewportContainer"]
+[node name="SubViewport" type="SubViewport" parent="HBoxContainer/VBoxContainer/MapHBox/MapBoundary/SubViewportContainer"]
 size = Vector2( 775, 609 )
 handle_input_locally = false
 render_target_update_mode = 3
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport"]
-margin_right = 3000.0
-margin_bottom = 2005.0
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/VBoxContainer/MapHBox/MapBoundary/SubViewportContainer/SubViewport"]
+offset_right = 3000.0
+offset_bottom = 2005.0
 mouse_filter = 2
 texture = ExtResource( 17 )
 
-[node name="CharRect" type="TextureRect" parent="HBoxContainer/VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect"]
-margin_left = 1600.0
-margin_top = 585.0
-margin_right = 1665.0
-margin_bottom = 655.0
-rect_rotation = 109.6
-rect_pivot_offset = Vector2( 32.5, 35 )
+[node name="CharRect" type="TextureRect" parent="HBoxContainer/VBoxContainer/MapHBox/MapBoundary/SubViewportContainer/SubViewport/TextureRect"]
+offset_left = 1600.0
+offset_top = 585.0
+offset_right = 1665.0
+offset_bottom = 655.0
+rotation = 109.6
+pivot_offset = Vector2( 32.5, 35 )
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 5
 
-[node name="Camera2D" type="Camera2D" parent="HBoxContainer/VBoxContainer/MapHBox/MapBoundary/ViewportContainer/Viewport/TextureRect"]
+[node name="Camera2D" type="Camera2D" parent="HBoxContainer/VBoxContainer/MapHBox/MapBoundary/SubViewportContainer/SubViewport/TextureRect"]
 position = Vector2( 1600, 600 )
 current = true
 zoom = Vector2( 0.75, 0.75 )
-smoothing_enabled = true
-smoothing_speed = 7.0
+position_smoothing_enabled = true
+position_smoothing_speed = 7.0
 
 [node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer/MapHBox"]
-margin_left = 941.0
-margin_right = 941.0
-margin_bottom = 700.0
+offset_left = 941.0
+offset_right = 941.0
+offset_bottom = 700.0
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer"]
-margin_top = 760.0
-margin_right = 941.0
-margin_bottom = 1010.0
+offset_top = 760.0
+offset_right = 941.0
+offset_bottom = 1010.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/MarginContainer"]
-margin_right = 941.0
-margin_bottom = 250.0
-custom_constants/separation = 34
+offset_right = 941.0
+offset_bottom = 250.0
+theme_override_constants/separation = 34
 
 [node name="Control" type="Control" parent="HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer"]
-margin_bottom = 250.0
+offset_bottom = 250.0
 
 [node name="Inventory" type="GridContainer" parent="HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer"]
-margin_left = 34.0
-margin_right = 907.0
-margin_bottom = 250.0
+offset_left = 34.0
+offset_right = 907.0
+offset_bottom = 250.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
-custom_constants/vseparation = 20
-custom_constants/hseparation = 59
+theme_override_constants/v_separation = 20
+theme_override_constants/h_separation = 59
 columns = 3
 script = ExtResource( 28 )
 __meta__ = {
@@ -183,128 +183,128 @@ __meta__ = {
 [node name="Inv1" parent="HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer/Inventory" instance=ExtResource( 27 )]
 
 [node name="Inv2" parent="HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer/Inventory" instance=ExtResource( 27 )]
-margin_left = 309.0
-margin_right = 559.0
+offset_left = 309.0
+offset_right = 559.0
 
 [node name="Inv3" parent="HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer/Inventory" instance=ExtResource( 27 )]
-margin_left = 618.0
-margin_right = 868.0
+offset_left = 618.0
+offset_right = 868.0
 
 [node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer"]
-margin_left = 941.0
-margin_right = 941.0
-margin_bottom = 250.0
+offset_left = 941.0
+offset_right = 941.0
+offset_bottom = 250.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
-margin_top = 1040.0
-margin_right = 941.0
-margin_bottom = 1807.0
-hint_tooltip = "Show on hover"
+offset_top = 1040.0
+offset_right = 941.0
+offset_bottom = 1807.0
+tooltip_text = "Show on hover"
 size_flags_horizontal = 3
 size_flags_vertical = 0
 
 [node name="Placeholder" type="Control" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
-margin_right = 83.0
-margin_bottom = 767.0
+offset_right = 83.0
+offset_bottom = 767.0
 size_flags_horizontal = 3
 
 [node name="GridContainer" type="GridContainer" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
-margin_left = 87.0
-margin_right = 854.0
-margin_bottom = 767.0
+offset_left = 87.0
+offset_right = 854.0
+offset_bottom = 767.0
 columns = 3
 
 [node name="Placeholder" type="Control" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_right = 228.0
-margin_bottom = 228.0
+offset_right = 228.0
+offset_bottom = 228.0
 
 [node name="UpButton" type="TextureButton" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_left = 232.0
-margin_right = 535.0
-margin_bottom = 228.0
+offset_left = 232.0
+offset_right = 535.0
+offset_bottom = 228.0
 mouse_filter = 1
 texture_normal = ExtResource( 6 )
 texture_hover = ExtResource( 9 )
 texture_disabled = ExtResource( 10 )
 
 [node name="Placeholder2" type="Control" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_left = 539.0
-margin_right = 767.0
-margin_bottom = 228.0
+offset_left = 539.0
+offset_right = 767.0
+offset_bottom = 228.0
 
 [node name="LeftButton" type="TextureButton" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_top = 232.0
-margin_right = 228.0
-margin_bottom = 535.0
+offset_top = 232.0
+offset_right = 228.0
+offset_bottom = 535.0
 texture_normal = ExtResource( 5 )
 texture_hover = ExtResource( 15 )
 texture_disabled = ExtResource( 14 )
 
 [node name="Placeholder3" type="TextureRect" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_left = 232.0
-margin_top = 232.0
-margin_right = 535.0
-margin_bottom = 535.0
+offset_left = 232.0
+offset_top = 232.0
+offset_right = 535.0
+offset_bottom = 535.0
 texture = ExtResource( 11 )
 expand = true
 
 [node name="RightButton" type="TextureButton" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_left = 539.0
-margin_top = 232.0
-margin_right = 767.0
-margin_bottom = 535.0
+offset_left = 539.0
+offset_top = 232.0
+offset_right = 767.0
+offset_bottom = 535.0
 texture_normal = ExtResource( 12 )
 texture_hover = ExtResource( 3 )
 texture_disabled = ExtResource( 7 )
 
 [node name="Placeholder4" type="Control" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_top = 539.0
-margin_right = 228.0
-margin_bottom = 767.0
+offset_top = 539.0
+offset_right = 228.0
+offset_bottom = 767.0
 
 [node name="DownButton" type="TextureButton" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_left = 232.0
-margin_top = 539.0
-margin_right = 535.0
-margin_bottom = 767.0
+offset_left = 232.0
+offset_top = 539.0
+offset_right = 535.0
+offset_bottom = 767.0
 texture_normal = ExtResource( 8 )
 texture_hover = ExtResource( 13 )
 texture_disabled = ExtResource( 4 )
 
 [node name="Placeholder5" type="Control" parent="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer"]
-margin_left = 539.0
-margin_top = 539.0
-margin_right = 767.0
-margin_bottom = 767.0
+offset_left = 539.0
+offset_top = 539.0
+offset_right = 767.0
+offset_bottom = 767.0
 
 [node name="Placeholder2" type="Control" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
-margin_left = 858.0
-margin_right = 941.0
-margin_bottom = 767.0
+offset_left = 858.0
+offset_right = 941.0
+offset_bottom = 767.0
 size_flags_horizontal = 3
 
 [node name="PartyContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
-margin_top = 1837.0
-margin_right = 941.0
-margin_bottom = 2130.0
+offset_top = 1837.0
+offset_right = 941.0
+offset_bottom = 2130.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_constants/separation = 120
+theme_override_constants/separation = 120
 script = ExtResource( 21 )
 
 [node name="Control" type="Control" parent="HBoxContainer/VBoxContainer/PartyContainer"]
-margin_bottom = 293.0
+offset_bottom = 293.0
 
 [node name="Amelie" parent="HBoxContainer/VBoxContainer/PartyContainer" instance=ExtResource( 18 )]
-margin_left = 120.0
-margin_right = 450.0
-margin_bottom = 293.0
-rect_min_size = Vector2( 330, 0 )
+offset_left = 120.0
+offset_right = 450.0
+offset_bottom = 293.0
+custom_minimum_size = Vector2( 330, 0 )
 
 [node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer"]
-margin_top = 2160.0
-margin_right = 941.0
-margin_bottom = 2160.0
+offset_top = 2160.0
+offset_right = 941.0
+offset_bottom = 2160.0
 
 [node name="TransitionScreen" parent="HBoxContainer" instance=ExtResource( 16 )]
 
@@ -355,10 +355,10 @@ stream = ExtResource( 35 )
 
 [node name="Autosave" type="HBoxContainer" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 63.0
-margin_top = 2037.0
-margin_right = 419.0
-margin_bottom = 2101.0
+offset_left = 63.0
+offset_top = 2037.0
+offset_right = 419.0
+offset_bottom = 2101.0
 mouse_filter = 2
 script = ExtResource( 33 )
 __meta__ = {
@@ -366,20 +366,20 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="Autosave"]
-margin_right = 70.0
-margin_bottom = 64.0
+offset_right = 70.0
+offset_bottom = 64.0
 size_flags_horizontal = 3
 texture = ExtResource( 32 )
 expand = true
 stretch_mode = 5
 
 [node name="Label" type="Label" parent="Autosave"]
-margin_left = 74.0
-margin_right = 356.0
-margin_bottom = 64.0
+offset_left = 74.0
+offset_right = 356.0
+offset_bottom = 64.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 2 )
+theme_override_fonts/font = SubResource( 2 )
 text = "Autosaving..."
 valign = 1
 
@@ -397,29 +397,29 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="Buttons" type="VBoxContainer" parent="EscOpts"]
-margin_left = 458.0
-margin_top = 584.0
-margin_right = 1562.0
-margin_bottom = 1539.0
+offset_left = 458.0
+offset_top = 584.0
+offset_right = 1562.0
+offset_bottom = 1539.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Resume" parent="EscOpts/Buttons" instance=ExtResource( 34 )]
-margin_right = 1104.0
-margin_bottom = 315.0
+offset_right = 1104.0
+offset_bottom = 315.0
 label_text = "Resume"
 
 [node name="Save" parent="EscOpts/Buttons" instance=ExtResource( 34 )]
-margin_top = 319.0
-margin_right = 1104.0
-margin_bottom = 635.0
+offset_top = 319.0
+offset_right = 1104.0
+offset_bottom = 635.0
 label_text = "Save Game"
 
 [node name="Exit" parent="EscOpts/Buttons" instance=ExtResource( 34 )]
-margin_top = 639.0
-margin_right = 1104.0
-margin_bottom = 955.0
+offset_top = 639.0
+offset_right = 1104.0
+offset_bottom = 955.0
 label_text = "Exit to Title"
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/UpButton" to="." method="_on_UpButton_pressed"]

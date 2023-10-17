@@ -6,7 +6,7 @@ var item_texture_paths = {
 	"Key" : "res://roaming_pov/images/key_inventory.png",
 }
 
-onready var item = $Item
+@onready var item = $Item
 
 
 func _ready():
@@ -18,4 +18,4 @@ func set_item(item_name: String):
 
 
 func set_tooltip(name: String):
-	item.hint_tooltip = name
+	item.tooltip_text = name

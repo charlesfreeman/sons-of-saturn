@@ -7,19 +7,19 @@ var enabled = true
 var perm_disabled = false
 var popup_visible = false
 
-onready var popup = $VBoxContainer
-onready var label = $VBoxContainer/LabelContainer/Label
-onready var typewriter = $RanSoundContainer
+@onready var popup = $VBoxContainer
+@onready var label = $VBoxContainer/LabelContainer/Label
+@onready var typewriter = $RanSoundContainer
 
-export var popup_on_entry = false
-export var popup_text = ["example text for popup", "example 2"]
-export var diff_background = false
-export var nav_popup = false
+@export var popup_on_entry = false
+@export var popup_text = ["example text for popup", "example 2"]
+@export var diff_background = false
+@export var nav_popup = false
 # for single use popups to work we need to set a progression flag for them so
 # we can remember if they've been invoked.
-export var single_use = false
-export var prog_flag = "None"
-export var new_item = "None"
+@export var single_use = false
+@export var prog_flag = "None"
+@export var new_item = "None"
 
 signal disable_buttons
 signal enable_buttons
@@ -45,7 +45,7 @@ func _ready():
 
 func _on_FullRect_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton \
-	and event.button_index == BUTTON_LEFT \
+	and event.button_index == MOUSE_BUTTON_LEFT \
 	and event.pressed or Input.is_action_pressed("ui_up"):
 		progress_popup()
 		
@@ -98,7 +98,7 @@ func _show_next_text():
 		self.index = 0
 
 
-func make_visible():
+func _make_visible():
 	if not popup_visible:
 		popup.show()
 		popup_visible = true

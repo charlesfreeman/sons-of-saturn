@@ -1,8 +1,8 @@
 extends HBoxContainer
 
-onready var fadein = $TweenFadeIn
-onready var hold = $TweenHold
-onready var fadeout = $TweenFadeOut
+@onready var fadein = $TweenFadeIn
+@onready var hold = $TweenHold
+@onready var fadeout = $TweenFadeOut
 
 
 func _ready():

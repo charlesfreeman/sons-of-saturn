@@ -1,20 +1,20 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://images/wigley_looking_left_230x307.png" type="Texture" id=1]
+[ext_resource path="res://images/wigley_looking_left_230x307.png" type="Texture2D" id=1]
 
 [node name="VBoxContainer" type="VBoxContainer"]
-margin_left = 290.0
-margin_right = 520.0
-margin_bottom = 296.0
+offset_left = 290.0
+offset_right = 520.0
+offset_bottom = 296.0
 
 [node name="Control" type="Control" parent="."]
-margin_right = 230.0
-margin_bottom = 62.0
+offset_right = 230.0
+offset_bottom = 62.0
 size_flags_vertical = 3
 
 [node name="TextureButton2" type="TextureButton" parent="."]
-margin_top = 66.0
-margin_right = 230.0
-margin_bottom = 296.0
+offset_top = 66.0
+offset_right = 230.0
+offset_bottom = 296.0
 texture_normal = ExtResource( 1 )
 stretch_mode = 4

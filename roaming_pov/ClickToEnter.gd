@@ -1,9 +1,9 @@
 extends Area2D
 
-export var up_path = false
-export var right_path = false
-export var down_path = false
-export var left_path = false
+@export var up_path = false
+@export var right_path = false
+@export var down_path = false
+@export var left_path = false
 
 var enabled = true
 
@@ -16,10 +16,10 @@ signal left
 func _ready():
 	add_to_group("click_areas")
 	# should probably be doing this in the parent node but fuck it
-	connect("up", get_parent(), "_move_pov_up")
-	connect("right", get_parent(), "_move_pov_right")
-	connect("down", get_parent(), "_move_pov_down")
-	connect("left", get_parent(), "_move_pov_left")
+	connect("up", Callable(get_parent(), "_move_pov_up"))
+	connect("right", Callable(get_parent(), "_move_pov_right"))
+	connect("down", Callable(get_parent(), "_move_pov_down"))
+	connect("left", Callable(get_parent(), "_move_pov_left"))
 
 
 func _on_ClickToEnter_mouse_entered():
@@ -41,7 +41,7 @@ func _on_ClickToEnter_mouse_exited():
 
 func _on_ClickToEnter_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton \
-	and event.button_index == BUTTON_LEFT \
+	and event.button_index == MOUSE_BUTTON_LEFT \
 	and event.pressed:
 		if self.enabled:
 			if up_path:

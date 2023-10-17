@@ -2,9 +2,9 @@ extends Area2D
 
 var in_area = false
 
-export var next_scene = "None"
-export var alt_next_scene = "None"
-export var alt_req_prog_flag = "None"
+@export var next_scene = "None"
+@export var alt_next_scene = "None"
+@export var alt_req_prog_flag = "None"
 
 
 func _ready():
@@ -23,7 +23,7 @@ func _on_ClickToSearch_mouse_exited():
 
 func _on_ClickToSearch_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton \
-		and event.button_index == BUTTON_LEFT \
+		and event.button_index == MOUSE_BUTTON_LEFT \
 		and event.pressed:
 			var options = SceneManager.create_options()
 			var general_options = SceneManager.create_general_options()

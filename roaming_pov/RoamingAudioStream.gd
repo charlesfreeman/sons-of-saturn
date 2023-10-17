@@ -1,6 +1,6 @@
 extends AudioStreamPlayer
 
-export var sound_files = []
+@export var sound_files = []
 
 var i = 0
 var num_sounds

@@ -1,28 +1,28 @@
 extends HBoxContainer
 
-export var subject = ""
-export(String, FILE, "*.json") var scriptPath = "res://dialogue_system/conversations/test_scene.json"
-export(String, FILE, "*.png") var backgroundPath = "res://images/looking_up_well_square.png"
-export(String, FILE, "*.png") var sliverPath = "res://infirmary/morgue_convo/autopsy_table_sliver.png"
-export(String, FILE) var soundscapePath = "res://sounds/545664__nox-sound__ambiance-stream-sewer-reverb-small-loop-stereo-dr05.wav"
-export(String) var nextScenePath = "roaming_pov"
-export(String, FILE, "*.tscn") var nextLocation = "res://infirmary/post_office/PostOfficeMural.tscn"
-export var tag_dict = {}
-export var tag_dict_sliver = {}
-export var fade_tag_dict = {}
-export var fade_tag_dict_sliver = {}
-export var lights_tag_dict = {}
-export var lights_tag_dict_sliver = {}
+@export var subject = ""
+@export var scriptPath = "res://dialogue_system/conversations/test_scene.json" # (String, FILE, "*.json")
+@export var backgroundPath = "res://images/looking_up_well_square.png" # (String, FILE, "*.png")
+@export var sliverPath = "res://infirmary/morgue_convo/autopsy_table_sliver.png" # (String, FILE, "*.png")
+@export var soundscapePath = "res://sounds/545664__nox-sound__ambiance-stream-sewer-reverb-small-loop-stereo-dr05.wav" # (String, FILE)
+@export var nextScenePath: String = "roaming_pov"
+@export var nextLocation = "res://infirmary/post_office/PostOfficeMural.tscn" # (String, FILE, "*.tscn")
+@export var tag_dict = {}
+@export var tag_dict_sliver = {}
+@export var fade_tag_dict = {}
+@export var fade_tag_dict_sliver = {}
+@export var lights_tag_dict = {}
+@export var lights_tag_dict_sliver = {}
 # might need to refactor to array if ever want to add more than one party mem
 # following a convo
-export var new_party_mem = ""
-export var mem_to_remove = ""
-export var prog_flag = "None"
+@export var new_party_mem = ""
+@export var mem_to_remove = ""
+@export var prog_flag = "None"
 
-onready var avatar = $View/CanvasLayer/Avatar
-onready var background = $View
-onready var bg_sliver = $RightSideBG
-onready var dialogue_sys = $HBoxContainer/Dialogue
+@onready var avatar = $View/CanvasLayer/Avatar
+@onready var background = $View
+@onready var bg_sliver = $RightSideBG
+@onready var dialogue_sys = $HBoxContainer/Dialogue
 var amelie = "aneutral"
 var wiggly = "wneutral"
 var current_char = "You"
@@ -121,7 +121,7 @@ func _on_Dialogue_tag(tags):
 				change_background("res://intro/intro_convo/ia_dark_stage_center_silhouette.png")
 				# TODO change to dark sliver here once produced
 				# TODO will probably need to emit sound signals at some point as well
-				yield(get_tree().create_timer(1.0), "timeout")
+				await get_tree().create_timer(1.0).timeout
 				change_background(lights_tag_dict[tag])
 				change_background_sliver(lights_tag_dict_sliver[tag])
 			elif tag in char_profiles.keys():

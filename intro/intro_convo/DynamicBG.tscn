@@ -1,15 +1,15 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://intro/intro_convo/DynamicBGScript.gd" type="Script" id=1]
-[ext_resource path="res://artwork/GSL/SubParis_4.jpg" type="Texture" id=2]
+[ext_resource path="res://artwork/GSL/SubParis_4.jpg" type="Texture2D" id=2]
 [ext_resource path="res://sounds/effects/switch_flip_fast.wav" type="AudioStream" id=3]
 [ext_resource path="res://sounds/effects/switch_flip_slow.wav" type="AudioStream" id=4]
 
 [node name="DynamicBG" type="TextureRect" groups=["CharacterRects", "DynamicBGs"]]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = -6.0
-margin_right = 2310.0
-margin_bottom = 2178.0
+offset_left = -6.0
+offset_right = 2310.0
+offset_bottom = 2178.0
 mouse_filter = 2
 texture = ExtResource( 2 )
 script = ExtResource( 1 )

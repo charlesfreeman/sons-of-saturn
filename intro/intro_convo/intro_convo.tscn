@@ -2,25 +2,25 @@
 
 [ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
 [ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=2]
-[ext_resource path="res://intro/intro_convo/stage_bright_bg_2300x2160.png" type="Texture" id=3]
-[ext_resource path="res://intro/intro_convo/amelie_string_looking_down.png" type="Texture" id=4]
+[ext_resource path="res://intro/intro_convo/stage_bright_bg_2300x2160.png" type="Texture2D" id=3]
+[ext_resource path="res://intro/intro_convo/amelie_string_looking_down.png" type="Texture2D" id=4]
 [ext_resource path="res://intro/intro_convo/DynamicBG.tscn" type="PackedScene" id=5]
-[ext_resource path="res://intro/intro_convo/all_black_2300x2160_2.png" type="Texture" id=6]
-[ext_resource path="res://intro/intro_convo/amelie_string_looking_up.png" type="Texture" id=7]
-[ext_resource path="res://intro/intro_convo/jasper_suspend.png" type="Texture" id=8]
-[ext_resource path="res://intro/intro_convo/wiggly_a_pose.png" type="Texture" id=9]
-[ext_resource path="res://artwork/GSL/Berlin_Unterwelt_3.jpg" type="Texture" id=10]
-[ext_resource path="res://artwork/GSL/Illusion_Caves_3.jpg" type="Texture" id=11]
-[ext_resource path="res://artwork/GSL/Crystalline_Caverns_3.jpg" type="Texture" id=12]
-[ext_resource path="res://artwork/GSL/Opener_Cave.jpg" type="Texture" id=13]
-[ext_resource path="res://intro/intro_convo/looking_up_well_bg.png" type="Texture" id=14]
+[ext_resource path="res://intro/intro_convo/all_black_2300x2160_2.png" type="Texture2D" id=6]
+[ext_resource path="res://intro/intro_convo/amelie_string_looking_up.png" type="Texture2D" id=7]
+[ext_resource path="res://intro/intro_convo/jasper_suspend.png" type="Texture2D" id=8]
+[ext_resource path="res://intro/intro_convo/wiggly_a_pose.png" type="Texture2D" id=9]
+[ext_resource path="res://artwork/GSL/Berlin_Unterwelt_3.jpg" type="Texture2D" id=10]
+[ext_resource path="res://artwork/GSL/Illusion_Caves_3.jpg" type="Texture2D" id=11]
+[ext_resource path="res://artwork/GSL/Crystalline_Caverns_3.jpg" type="Texture2D" id=12]
+[ext_resource path="res://artwork/GSL/Opener_Cave.jpg" type="Texture2D" id=13]
+[ext_resource path="res://intro/intro_convo/looking_up_well_bg.png" type="Texture2D" id=14]
 [ext_resource path="res://sounds/effects/switch_flip_fast.wav" type="AudioStream" id=15]
 [ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=16]
-[ext_resource path="res://artwork/DALLE/DALL·E 2023-05-02 12.15.00 - woman dancing in the style of zdzisław beksiński.png" type="Texture" id=17]
-[ext_resource path="res://artwork/DALLE/DALL·E 2023-05-02 14.55.20.png" type="Texture" id=18]
-[ext_resource path="res://artwork/DALLE/DALL·E 2023-05-02 15.56.57 - piles of eyes scattered about a theater backdrop in the style of zdzislaw beksinski.png" type="Texture" id=19]
+[ext_resource path="res://artwork/DALLE/DALL·E 2023-05-02 12.15.00 - woman dancing in the style of zdzisław beksiński.png" type="Texture2D" id=17]
+[ext_resource path="res://artwork/DALLE/DALL·E 2023-05-02 14.55.20.png" type="Texture2D" id=18]
+[ext_resource path="res://artwork/DALLE/DALL·E 2023-05-02 15.56.57 - piles of eyes scattered about a theater backdrop in the style of zdzislaw beksinski.png" type="Texture2D" id=19]
 [ext_resource path="res://sounds/effects/devil_piano.wav" type="AudioStream" id=20]
-[ext_resource path="res://intro/intro_convo/wiggly_looking_down_dark.png" type="Texture" id=21]
+[ext_resource path="res://intro/intro_convo/wiggly_looking_down_dark.png" type="Texture2D" id=21]
 
 [node name="intro_convo" type="Control"]
 anchor_right = 1.0
@@ -30,85 +30,85 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_right = 2300.0
-margin_bottom = 2160.0
+offset_right = 2300.0
+offset_bottom = 2160.0
 texture = ExtResource( 6 )
 
 [node name="BGPandora" parent="." instance=ExtResource( 5 )]
-margin_left = 417.0
-margin_top = 196.0
-margin_right = 2074.0
-margin_bottom = 1600.0
+offset_left = 417.0
+offset_top = 196.0
+offset_right = 2074.0
+offset_bottom = 1600.0
 texture = ExtResource( 10 )
 expand = true
 stretch_mode = 5
 new_bg_tag = "bg_pandora"
 
 [node name="BGTrestle" parent="." instance=ExtResource( 5 )]
-margin_left = 360.0
-margin_top = 96.0
-margin_right = 1847.0
-margin_bottom = 1564.0
+offset_left = 360.0
+offset_top = 96.0
+offset_right = 1847.0
+offset_bottom = 1564.0
 texture = ExtResource( 12 )
 expand = true
 stretch_mode = 5
 new_bg_tag = "bg_trestle"
 
 [node name="BGSewer" parent="." instance=ExtResource( 5 )]
-margin_left = 138.0
-margin_top = 50.0
-margin_right = 2195.0
-margin_bottom = 2032.0
+offset_left = 138.0
+offset_top = 50.0
+offset_right = 2195.0
+offset_bottom = 2032.0
 texture = ExtResource( 14 )
 expand = true
 stretch_mode = 5
 new_bg_tag = "bg_sewer"
 
 [node name="BGOutbound" parent="." instance=ExtResource( 5 )]
-margin_left = 341.163
-margin_top = -207.103
-margin_right = 2612.16
-margin_bottom = 2375.9
+offset_left = 341.163
+offset_top = -207.103
+offset_right = 2612.16
+offset_bottom = 2375.9
 texture = ExtResource( 13 )
 expand = true
 stretch_mode = 5
 new_bg_tag = "bg_outbound_lines"
 
 [node name="BGPioneers" parent="." instance=ExtResource( 5 )]
-margin_left = 355.0
-margin_top = 346.0
-margin_right = 2046.0
-margin_bottom = 1566.0
+offset_left = 355.0
+offset_top = 346.0
+offset_right = 2046.0
+offset_bottom = 1566.0
 texture = ExtResource( 11 )
 expand = true
 stretch_mode = 5
 new_bg_tag = "bg_pioneers"
 
 [node name="BGHell" parent="." instance=ExtResource( 5 )]
-margin_left = 412.0
-margin_top = 346.0
-margin_right = 2082.0
-margin_bottom = 1780.0
+offset_left = 412.0
+offset_top = 346.0
+offset_right = 2082.0
+offset_bottom = 1780.0
 texture = ExtResource( 18 )
 expand = true
 stretch_mode = 5
 new_bg_tag = "bg_hell"
 
 [node name="BGRedFigure" parent="." instance=ExtResource( 5 )]
-margin_left = 442.0
-margin_top = 318.0
-margin_right = 2232.0
-margin_bottom = 1915.0
+offset_left = 442.0
+offset_top = 318.0
+offset_right = 2232.0
+offset_bottom = 1915.0
 texture = ExtResource( 17 )
 expand = true
 stretch_mode = 5
 new_bg_tag = "bg_red_figure"
 
 [node name="BGEye" parent="." instance=ExtResource( 5 )]
-margin_left = 383.0
-margin_top = 296.0
-margin_right = 2018.0
-margin_bottom = 1823.0
+offset_left = 383.0
+offset_top = 296.0
+offset_right = 2018.0
+offset_bottom = 1823.0
 texture = ExtResource( 19 )
 expand = true
 stretch_mode = 5
@@ -116,9 +116,9 @@ new_bg_tag = "bg_eyes"
 
 [node name="DynamicBG" parent="." instance=ExtResource( 5 )]
 modulate = Color( 0.392157, 0.392157, 0.392157, 1 )
-margin_left = 0.0
-margin_right = 2300.0
-margin_bottom = 2160.0
+offset_left = 0.0
+offset_right = 2300.0
+offset_bottom = 2160.0
 texture = ExtResource( 3 )
 is_visible = true
 
@@ -137,29 +137,29 @@ fade_tag_dict_sliver = {
 }
 
 [node name="AmelieHeadDown" parent="." instance=ExtResource( 2 )]
-margin_left = 861.0
-margin_top = 613.0
-margin_right = 1561.0
-margin_bottom = 1450.0
+offset_left = 861.0
+offset_top = 613.0
+offset_right = 1561.0
+offset_bottom = 1450.0
 texture = ExtResource( 4 )
 dark_on_start = true
 appear_tag = ""
 disappear_tag = "wakeup"
 
 [node name="AmelieLookingUp" parent="." instance=ExtResource( 2 )]
-margin_left = 834.052
-margin_top = 570.781
-margin_right = 1508.05
-margin_bottom = 1569.78
+offset_left = 834.052
+offset_top = 570.781
+offset_right = 1508.05
+offset_bottom = 1569.78
 texture = ExtResource( 7 )
 appear_tag = "wakeup"
 disappear_tag = "lookingup"
 
 [node name="Jasper" parent="." instance=ExtResource( 2 )]
-margin_left = 1361.0
-margin_top = 1072.0
-margin_right = 1884.0
-margin_bottom = 1562.0
+offset_left = 1361.0
+offset_top = 1072.0
+offset_right = 1884.0
+offset_bottom = 1562.0
 texture = ExtResource( 8 )
 appear_tag = ""
 disappear_tag = "lookingup"
@@ -167,20 +167,20 @@ brighten_tag = "lightup_jasper"
 appear_dark_tag = "jasper_dark"
 
 [node name="Wiggly" parent="." instance=ExtResource( 2 )]
-margin_left = 388.252
-margin_top = -265.0
-margin_right = 1957.25
-margin_bottom = 1001.0
+offset_left = 388.252
+offset_top = -265.0
+offset_right = 1957.25
+offset_bottom = 1001.0
 texture = ExtResource( 21 )
 flip_v = true
 appear_tag = ""
 appear_dark_tag = "ferryman_overhead_dark"
 
 [node name="WigglySuspend" parent="." instance=ExtResource( 2 )]
-margin_left = 502.0
-margin_top = 937.509
-margin_right = 934.0
-margin_bottom = 1584.51
+offset_left = 502.0
+offset_top = 937.509
+offset_right = 934.0
+offset_bottom = 1584.51
 texture = ExtResource( 9 )
 appear_tag = ""
 disappear_tag = "lookingup"

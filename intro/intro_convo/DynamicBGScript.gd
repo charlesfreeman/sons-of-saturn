@@ -1,10 +1,10 @@
 extends TextureRect
 
 # tag for transferring to this background
-export var new_bg_tag = ""
+@export var new_bg_tag = ""
 # set this to true for the first bg, for all others leave as is
 # internal methods manipulate this as well
-export var is_visible = false
+@export var is_visible = false
 
 
 var global_tag = ""

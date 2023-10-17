@@ -40,14 +40,14 @@ var prog_flags = {
 # loading and displaying the corresponding textures
 var inventory = ["Jasper"]
 
-onready var mag_glass = load("res://roaming_pov/images/mag_glass.png")
-onready var cont_sym = load("res://roaming_pov/images/cont_arrow.png")
-onready var pointer_up = load("res://roaming_pov/images/arrow_up_cursor.png")
-onready var pointer_right = load("res://roaming_pov/images/arrow_right_cursor.png")
-onready var pointer_down = load("res://roaming_pov/images/arrow_down_cursor.png")
-onready var pointer_left = load("res://roaming_pov/images/arrow_left_cursor.png")
+@onready var mag_glass = load("res://roaming_pov/images/mag_glass.png")
+@onready var cont_sym = load("res://roaming_pov/images/cont_arrow.png")
+@onready var pointer_up = load("res://roaming_pov/images/arrow_up_cursor.png")
+@onready var pointer_right = load("res://roaming_pov/images/arrow_right_cursor.png")
+@onready var pointer_down = load("res://roaming_pov/images/arrow_down_cursor.png")
+@onready var pointer_left = load("res://roaming_pov/images/arrow_left_cursor.png")
 
-onready var cursors = {
+@onready var cursors = {
 	"null" : null,
 	"mag_glass" : mag_glass,
 	"cont_sym" : cont_sym,
@@ -127,7 +127,7 @@ func remove_from_inv(item_name: String):
 func get_region():
 	return self.region
 	
-func set_region(map: String):
+func set_region_enabled(map: String):
 	self.region = map
 	
 func get_location():
@@ -153,7 +153,7 @@ func save_game():
 	var sgame = File.new()
 	sgame.open("user://savegame.save", File.WRITE)
 	var save_data = produce_save_dict()
-	sgame.store_line(to_json(save_data))
+	sgame.store_line(JSON.new().stringify(save_data))
 	sgame.close()
 	
 func load_game():
@@ -161,7 +161,9 @@ func load_game():
 	if not sgame.file_exists("user://savegame.save"):
 		return # Error! We don't have a save to load.
 	sgame.open("user://savegame.save", File.READ)
-	var save_data = parse_json(sgame.get_line())
+	var test_json_conv = JSON.new()
+	test_json_conv.parse(sgame.get_line())
+	var save_data = test_json_conv.get_data()
 	print(save_data.keys())
 	location = save_data["location"]
 	region = save_data["region"]

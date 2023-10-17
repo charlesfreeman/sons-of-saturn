@@ -150,17 +150,15 @@ func produce_save_dict():
 	return save_dict
 	
 func save_game():
-	var sgame = File.new()
-	sgame.open("user://savegame.save", File.WRITE)
+	var sgame = FileAccess.open("user://sonsofsaturn.save", FileAccess.WRITE)
 	var save_data = produce_save_dict()
 	sgame.store_line(JSON.new().stringify(save_data))
 	sgame.close()
 	
 func load_game():
-	var sgame = File.new()
-	if not sgame.file_exists("user://savegame.save"):
+	if not check_save_exists():
 		return # Error! We don't have a save to load.
-	sgame.open("user://savegame.save", File.READ)
+	var sgame = FileAccess.open("user://sonsofsaturn.save", FileAccess.READ)
 	var test_json_conv = JSON.new()
 	test_json_conv.parse(sgame.get_line())
 	var save_data = test_json_conv.get_data()
@@ -175,8 +173,7 @@ func load_game():
 	SceneManager.change_scene(scene_type, options, options, general_options)
 	
 func check_save_exists():
-	var sgame = File.new()
-	return sgame.file_exists("user://savegame.save")
+	return FileAccess.file_exists("user://sonsofsaturn.save")
 	
 func reset_prog_flags():
 	for key in prog_flags.keys():

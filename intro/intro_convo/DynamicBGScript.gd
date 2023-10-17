@@ -6,6 +6,7 @@ extends TextureRect
 # internal methods manipulate this as well
 @export var is_visible = false
 
+@onready var tween = create_tween()
 
 var global_tag = ""
 var d_level = 0.3
@@ -20,45 +21,33 @@ func _ready():
 func appear_disappear(tag):
 	# special case so might as well hardcode
 	if tag == "brighten_stage" and self.name == "DynamicBG":
-		$TweenMostlyDarkToBright.interpolate_property(self, "modulate", 
-		  self.modulate, Color(1, 1, 1, 1), 0.4, 
-		  Tween.TRANS_LINEAR, Tween.EASE_IN)
-		$TweenMostlyDarkToBright.start()
+		tween.tween_property(self, "modulate", 
+		  Color(1, 1, 1, 1), 0.4).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN)
 	if tag.begins_with("bg") and is_visible:
 		global_tag = tag
-		print("darkening bg")
 		# play sound effect
 		$SwitchFlipSlow.play()
 		# tween for going fully visible to totally dark and transparent
-		$TweenTotalDarken.interpolate_property(self, "modulate", 
-		self.modulate, Color(0, 0, 0, 0), 0.75, 
-		Tween.TRANS_EXPO, Tween.EASE_OUT)
-		$TweenTotalDarken.start()
+		tween.tween_property(self, "modulate", Color(0, 0, 0, 0), 
+		  0.4).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
 		is_visible = false
 
 
 # if intercepted tag matches exported var, make this bg visible
 func new_bg(tag):
-	print("new_bg_tag: ", new_bg_tag)
 	if tag == new_bg_tag:
-		print("brightening bg")
 		is_visible = true
 		# play sound effect
 		$SwitchFlipFast.play()
 		# tween for going totally dark to fully visible
-		$TweenTotalBrighten.interpolate_property(self, "modulate", 
-		  self.modulate, Color(1, 1, 1, 1), 0.4, 
-		  Tween.TRANS_EXPO, Tween.EASE_OUT)
-		$TweenTotalBrighten.start()
+		tween.tween_property(self, "modulate", Color(1, 1, 1, 1), 
+		  0.4).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
 
 
 func _on_TweenTotalDarken_tween_completed(_object, _key):
-	print("dark tween completed")
 	# hacky "wait around and do nothing" tween
-	$TweenWaitDark.interpolate_property(self, "modulate", 
-	  Color(0, 0, 0, 0), Color(0, 0, 0, 0), 0.25, 
-	  Tween.TRANS_LINEAR, Tween.EASE_IN)
-	$TweenWaitDark.start()
+	tween.tween_property(self, "modulate", 
+	  Color(0, 0, 0, 0), 0.25).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN)
 
 
 func _on_TweenDark_tween_completed(_object, _key):

@@ -1,11 +1,11 @@
 extends Camera2D
 
-@onready var tween = $Tween
+@onready var tween = create_tween()
 
 
 func _ready():
-	tween.interpolate_property(self, "zoom", Vector2(1, 1), Vector2(0.75, 0.75), 30, Tween.TRANS_QUAD, Tween.EASE_IN_OUT, 2)
-	tween.start()
+	tween.tween_property(self, "zoom", Vector2(0.75, 0.75), 
+	  30).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN_OUT)
 
 
 func _on_Tween_tween_completed(object, key):

@@ -1,32 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://gent118w7jqg"]
 
-[ext_resource path="res://conversation_pov/CharacterRect.gd" type="Script" id=1]
-[ext_resource path="res://sewer/convo_looking_up_well/wiggly_looking_down_placeholder.png" type="Texture2D" id=2]
+[ext_resource type="Script" path="res://conversation_pov/CharacterRect.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bqt56qisg03u1" path="res://sewer/convo_looking_up_well/wiggly_looking_down_placeholder.png" id="2"]
 
 [node name="CharacterRect" type="TextureRect" groups=["CharacterRects"]]
-modulate = Color( 1, 1, 1, 0 )
+modulate = Color(1, 1, 1, 0)
 offset_left = 663.0
 offset_right = 1523.0
 offset_bottom = 860.0
 mouse_filter = 2
-texture = ExtResource( 2 )
-expand = true
+texture = ExtResource("2")
+expand_mode = 1
 stretch_mode = 5
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("1")
 appear_tag = "ferryman"
 disappear_tag = "rise"
-
-[node name="TweenIn" type="Tween" parent="."]
-
-[node name="TweenOut" type="Tween" parent="."]
-
-[node name="TweenOutSlow" type="Tween" parent="."]
-
-[node name="TweenBrighten" type="Tween" parent="."]
-
-[node name="TweenDarken" type="Tween" parent="."]
-
-[node name="TweenAppearDark" type="Tween" parent="."]

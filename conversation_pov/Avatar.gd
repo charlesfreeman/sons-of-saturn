@@ -1,7 +1,7 @@
 extends TextureRect
 
-onready var tween_darken = $TweenDarken
-onready var tween_brighten = $TweenBrighten
+@onready var tween_darken = $TweenDarken
+@onready var tween_brighten = $TweenBrighten
 
 var o_level = 0.75
 var d_level = 0.75

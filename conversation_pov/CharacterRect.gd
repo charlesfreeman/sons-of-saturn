@@ -1,13 +1,13 @@
 extends TextureRect
 
-export var on_start = false
-export var dark_on_start = false
-export var appear_tag = ""
-export var disappear_tag = ""
-export var disappear_slow_tag = ""
-export var brighten_tag = ""
-export var darken_tag = ""
-export var appear_dark_tag = ""
+@export var on_start = false
+@export var dark_on_start = false
+@export var appear_tag = ""
+@export var disappear_tag = ""
+@export var disappear_slow_tag = ""
+@export var brighten_tag = ""
+@export var darken_tag = ""
+@export var appear_dark_tag = ""
 
 
 func _ready():

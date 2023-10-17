@@ -1,7 +1,7 @@
 extends AudioStreamPlayer
 
-export var tag_to_play = ""
-export var play_once = false
+@export var tag_to_play = ""
+@export var play_once = false
 
 var played = false
 

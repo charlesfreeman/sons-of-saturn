@@ -1,38 +1,38 @@
 extends Control
 
-export var subject = ""
-export(String, FILE, "*.json") var scriptPath = "res://dialogue_system/conversations/test_scene.json"
-export(String, FILE, "*.png") var backgroundPath = "res://images/looking_up_well_square.png"
-export(String, FILE, "*.png") var sliverPath = "res://infirmary/morgue_convo/autopsy_table_sliver.png"
-export(String) var nextScenePath = "roaming_pov"
-export(String, FILE, "*.tscn") var nextLocation = "res://infirmary/post_office/PostOfficeMural.tscn"
-export var tag_dict = {}
-export var tag_dict_sliver = {}
-export var fade_tag_dict = {}
-export var fade_tag_dict_sliver = {}
+@export var subject = ""
+@export var scriptPath = "res://dialogue_system/conversations/test_scene.json" # (String, FILE, "*.json")
+@export var backgroundPath = "res://images/looking_up_well_square.png" # (String, FILE, "*.png")
+@export var sliverPath = "res://infirmary/morgue_convo/autopsy_table_sliver.png" # (String, FILE, "*.png")
+@export var nextScenePath: String = "roaming_pov"
+@export var nextLocation = "res://infirmary/post_office/PostOfficeMural.tscn" # (String, FILE, "*.tscn")
+@export var tag_dict = {}
+@export var tag_dict_sliver = {}
+@export var fade_tag_dict = {}
+@export var fade_tag_dict_sliver = {}
 # might need to refactor to array if ever want to add more than one party mem
 # following a convo
-export var new_party_mem = ""
-export var mem_to_remove = ""
-export var prog_flag = "None"
-export var song = "None"
-export var soundscape = "None"
-export var new_item = "None"
-export var remove_item = "None"
+@export var new_party_mem = ""
+@export var mem_to_remove = ""
+@export var prog_flag = "None"
+@export var song = "None"
+@export var soundscape = "None"
+@export var new_item = "None"
+@export var remove_item = "None"
 # if true, checks the value of prog_flag to see if played before.
 # you must set prog_flag to some value to use this
-export var play_only_once = false
+@export var play_only_once = false
 
-onready var avatar = $Convo/View/CanvasLayer/Avatar
-onready var background = $Convo/View
-onready var bg_sliver = $Convo/RightSideBG
-onready var dialogue_sys = $Convo/HBoxContainer/Dialogue
-onready var transition_screen = $Convo/TransitionScreen
-onready var convo = $Convo
-onready var esc_opts = $EscOpts
-onready var esc_opts_resume = $EscOpts/Node2D/Buttons/Resume
-onready var save = $Save
-onready var current_bg_path = backgroundPath
+@onready var avatar = $Convo/View/CanvasLayer/Avatar
+@onready var background = $Convo/View
+@onready var bg_sliver = $Convo/RightSideBG
+@onready var dialogue_sys = $Convo/HBoxContainer/Dialogue
+@onready var transition_screen = $Convo/TransitionScreen
+@onready var convo = $Convo
+@onready var esc_opts = $EscOpts
+@onready var esc_opts_resume = $EscOpts/Node2D/Buttons/Resume
+@onready var save = $Save
+@onready var current_bg_path = backgroundPath
 
 
 # need var to store tag so we can communicate between _on_Dialogue_tag and 

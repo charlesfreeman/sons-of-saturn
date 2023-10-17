@@ -1,14 +1,14 @@
 extends TextureRect
 
-export var docs = []
+@export var docs = []
 
 # assuming we're never going to have a document longer than 9 pages
 var indexes = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-onready var convo = get_parent().get_node("Convo")
+@onready var convo = get_parent().get_node("Convo")
 
 func _ready():
-	convo.connect("tag", self, "_on_Convo_tag")
+	convo.connect("tag", Callable(self, "_on_Convo_tag"))
 
 
 func _on_Convo_tag(tag):

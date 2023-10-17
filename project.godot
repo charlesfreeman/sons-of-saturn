@@ -21,8 +21,6 @@ config/windows_native_icon="res://images/SoSHeader.ico"
 Global="*res://Global.gd"
 SceneManager="*res://addons/scene_manager/scene_manager.tscn"
 Scenes="*res://addons/scene_manager/scenes.gd"
-Mdm="*res://sounds/MDM.tscn"
-Mds="*res://sounds/MDS.tscn"
 TrackManager="*res://sounds/TrackManager.tscn"
 
 [display]
@@ -35,7 +33,7 @@ window/size/fullscreen=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/mixing-desk/plugin.cfg", "res://addons/scene_manager/plugin.cfg")
+enabled=PackedStringArray("res://addons/scene_manager/plugin.cfg")
 
 [input]
 

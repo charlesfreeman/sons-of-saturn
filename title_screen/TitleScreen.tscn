@@ -1,58 +1,46 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://cn7txqa5rdktw"]
 
-[ext_resource path="res://title_screen/sons_of_saturn_title_screen.png" type="Texture2D" id=1]
-[ext_resource path="res://title_screen/TitleMenuOpt.tscn" type="PackedScene" id=2]
-[ext_resource path="res://title_screen/TitleScreen.gd" type="Script" id=3]
+[ext_resource type="Texture2D" uid="uid://d2vue17mxphhg" path="res://title_screen/sons_of_saturn_title_screen.png" id="1"]
+[ext_resource type="PackedScene" path="res://title_screen/TitleMenuOpt.tscn" id="2"]
+[ext_resource type="Script" path="res://title_screen/TitleScreen.gd" id="3"]
 
-[sub_resource type="Theme" id=1]
+[sub_resource type="Theme" id="1"]
 
 [node name="TextureRect" type="TextureRect"]
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-theme = SubResource( 1 )
-texture = ExtResource( 1 )
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+theme = SubResource("1")
+texture = ExtResource("1")
+script = ExtResource("3")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
 offset_left = 2648.12
 offset_top = 805.679
 offset_right = 3274.12
 offset_bottom = 1645.68
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Continue" parent="VBoxContainer" instance=ExtResource( 2 )]
-offset_right = 626.0
-offset_bottom = 277.0
+[node name="Continue" parent="VBoxContainer" instance=ExtResource("2")]
+layout_mode = 2
 label_text = "Continue"
 
-[node name="NewGame" parent="VBoxContainer" instance=ExtResource( 2 )]
-offset_top = 281.0
-offset_right = 626.0
-offset_bottom = 558.0
+[node name="NewGame" parent="VBoxContainer" instance=ExtResource("2")]
+layout_mode = 2
 label_text = "New Game"
 
-[node name="Exit" parent="VBoxContainer" instance=ExtResource( 2 )]
-offset_top = 562.0
-offset_right = 626.0
-offset_bottom = 840.0
+[node name="Exit" parent="VBoxContainer" instance=ExtResource("2")]
+layout_mode = 2
 label_text = "Exit"
 
-[node name="LoadGame" parent="VBoxContainer" instance=ExtResource( 2 )]
+[node name="LoadGame" parent="VBoxContainer" instance=ExtResource("2")]
 visible = false
-offset_top = 399.0
-offset_right = 626.0
-offset_bottom = 595.0
+layout_mode = 2
 label_text = "Load Game"
 
-[node name="Options" parent="VBoxContainer" instance=ExtResource( 2 )]
+[node name="Options" parent="VBoxContainer" instance=ExtResource("2")]
 visible = false
-offset_top = 749.0
-offset_right = 626.0
+layout_mode = 2
 label_text = "Options"
 
 [connection signal="pressed" from="VBoxContainer/Continue" to="VBoxContainer/Continue" method="_on_Continue_pressed"]

@@ -1,4 +1,4 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://0q7ifty8us3v"]
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://ye521haib2ai"]
 
 [ext_resource type="Shader" path="res://addons/scene_manager/scene_manager.gdshader" id="2"]
 

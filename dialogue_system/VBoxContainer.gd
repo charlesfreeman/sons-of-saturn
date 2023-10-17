@@ -9,15 +9,14 @@ const spokenLineNarrator = preload("res://dialogue_system/SpokenLineNarrator.tsc
 @onready var button_container = $ButtonContainer
 @onready var scroll_container = $ScrollContainer
 @onready var spoken_lines_container = $ScrollContainer/SpokenLinesContainer
-@onready var tween = $Tween
 @onready var scroll_bar = scroll_container.get_v_scroll_bar()
 @onready var typewriter = $RanSoundContainer
+@onready var tween = create_tween()
+
 var dialogueOption = load("res://dialogue_system/DialogueOption.tscn")
 var continueButton = load("res://dialogue_system/ContinueButton.tscn")
-
 var script_path = "res://dialogue_system/conversations/test_scene.json"
 var next_scene = "roaming_pov"
-
 var max_scroll_length = 0
 var passage_index = 0
 var paragraph_array
@@ -99,8 +98,8 @@ func handle_scrollbar_changed():
 	
 	
 func _scroll_to_end():
-	tween.interpolate_property(scroll_container, "scroll_vertical", scroll_container.scroll_vertical, max_scroll_length, 0.3, Tween.TRANS_QUAD, Tween.EASE_IN)
-	tween.start()
+	tween.tween_property(scroll_container, "scroll_vertical", max_scroll_length, 
+	  0.3).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
 	
 	
 # handles setting up next twison passage and corresponding links

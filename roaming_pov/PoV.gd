@@ -24,8 +24,8 @@ extends TextureRect
 
 @export var prog_flag = "None"
 
-@export var position = Vector2(800, 800)
-@export var rotation = 0
+@export var position_char = Vector2(800, 800)
+@export var rotation_char = 0
 
 @export var song = "None"
 @export var soundscape = "None"
@@ -57,8 +57,8 @@ signal move_pov_right
 
 signal disable_buttons
 signal enable_buttons
-signal swap_bg
-signal new_item(item)
+signal swap_bg_signal
+signal new_item_signal(item)
 
 func _ready():
 	# currently all convos that start with entering a room are one-offs. here we load the convo 
@@ -81,9 +81,9 @@ func _ready():
 	for node in get_tree().get_nodes_in_group("popups"):
 		node.connect("disable_buttons", Callable(self, "_disable_buttons"))
 		node.connect("enable_buttons", Callable(self, "_enable_buttons"))
-		node.connect("swap_bg", Callable(self, "_swap_bg"))
+		node.connect("swap_bg_signal", Callable(self, "_swap_bg"))
 	for node in get_tree().get_nodes_in_group("desc_popups"):
-		node.connect("new_item", Callable(self, "_new_item"))
+		node.connect("new_item_signal", Callable(self, "_new_item"))
 
 
 func swap_bg():
@@ -113,7 +113,7 @@ func _enable_buttons():
 	emit_signal("enable_buttons")
 	
 func _swap_bg():
-	emit_signal("swap_bg")
+	emit_signal("swap_bg_signal")
 	
 func _new_item(item):
-	emit_signal("new_item", item)
+	emit_signal("new_item_signal", item)

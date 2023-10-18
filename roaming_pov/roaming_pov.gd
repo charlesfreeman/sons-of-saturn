@@ -141,7 +141,7 @@ func swap_texture():
 
 func _load_PoV_instance():
 	pov_scene = load(Global.get_location())
-	pov_instance = pov_scene.instance()
+	pov_instance = pov_scene.instantiate()
 	if pov_instance.map != "None":
 		Global.set_region_enabled(pov_instance.map)
 		region_local = pov_instance.map
@@ -160,8 +160,8 @@ func _load_PoV_instance():
 	pov_instance.connect("move_pov_left", Callable(self, "_on_LeftButton_pressed"))
 	pov_instance.connect("disable_buttons", Callable(self, "_disable_buttons"))
 	pov_instance.connect("enable_buttons", Callable(self, "_enable_buttons"))
-	pov_instance.connect("swap_bg", Callable(self, "swap_texture"))
-	pov_instance.connect("new_item", Callable(self, "_new_item"))
+	pov_instance.connect("swap_bg_signal", Callable(self, "swap_texture"))
+	pov_instance.connect("new_item_signal", Callable(self, "_new_item"))
 	set_pos_rot(pov_instance.position, pov_instance.rotation)
 
 

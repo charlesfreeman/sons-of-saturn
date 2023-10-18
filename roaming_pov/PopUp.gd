@@ -84,7 +84,7 @@ var popup_visible = false
 @onready var popup = $HBoxContainer
 @onready var label = $HBoxContainer/VBoxContainer/LabelContainer/Label
 @onready var texture = $HBoxContainer/MarginContainer/TextureRect
-@onready var typewriter = $RanSoundContainer
+@onready var typewriter = $TypewriterSounds
 
 signal disable_buttons
 signal enable_buttons

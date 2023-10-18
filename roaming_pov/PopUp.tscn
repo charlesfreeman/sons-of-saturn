@@ -1,140 +1,111 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=10 format=3 uid="uid://b52gtlhb1qrtv"]
 
-[ext_resource path="res://addons/mixing-desk/sound/nonspatial/ran_cont.gd" type="Script" id=1]
-[ext_resource path="res://roaming_pov/PopUp.gd" type="Script" id=2]
-[ext_resource path="res://fonts/PTSerifReg96.tres" type="FontFile" id=3]
-[ext_resource path="res://dialogue_system/sounds/typewriter_click_5.wav" type="AudioStream" id=4]
-[ext_resource path="res://dialogue_system/sounds/typewriter_click_1.wav" type="AudioStream" id=5]
-[ext_resource path="res://dialogue_system/sounds/typewriter_click_2.wav" type="AudioStream" id=6]
-[ext_resource path="res://dialogue_system/sounds/typewriter_click_4.wav" type="AudioStream" id=7]
-[ext_resource path="res://dialogue_system/sounds/typewriter_click_3.wav" type="AudioStream" id=8]
+[ext_resource type="Script" path="res://roaming_pov/PopUp.gd" id="2"]
+[ext_resource type="FontFile" path="res://fonts/PTSerifReg96.tres" id="3"]
+[ext_resource type="AudioStream" uid="uid://dgic7pgxuruex" path="res://dialogue_system/sounds/typewriter_click_5.wav" id="4"]
+[ext_resource type="PackedScene" uid="uid://ck0qxjjpqb3lf" path="res://sounds/RandomSoundContainer.tscn" id="4_j7yhk"]
+[ext_resource type="AudioStream" uid="uid://bv7r5ekjvfdrp" path="res://dialogue_system/sounds/typewriter_click_1.wav" id="5"]
+[ext_resource type="AudioStream" uid="uid://btxt4q756no5y" path="res://dialogue_system/sounds/typewriter_click_2.wav" id="6"]
+[ext_resource type="AudioStream" uid="uid://t4s0pj6pfavt" path="res://dialogue_system/sounds/typewriter_click_4.wav" id="7"]
+[ext_resource type="AudioStream" uid="uid://vvo127q5iry3" path="res://dialogue_system/sounds/typewriter_click_3.wav" id="8"]
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 1430.73, 1068.51 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(1430.73, 1068.51)
 
 [node name="PopUp" type="Area2D" groups=["popups"]]
-script = ExtResource( 2 )
+script = ExtResource("2")
 
 [node name="FullRect" type="Area2D" parent="."]
-modulate = Color( 1, 1, 1, 0 )
+modulate = Color(1, 1, 1, 0)
 z_index = -2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FullRect"]
-position = Vector2( 1444.46, 1078.03 )
 z_index = 2
-shape = SubResource( 2 )
+position = Vector2(1444.46, 1078.03)
+shape = SubResource("2")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(2805, 756)
 offset_top = 75.0
 offset_right = 2880.0
 offset_bottom = 831.0
-custom_minimum_size = Vector2( 2805, 756 )
 mouse_filter = 2
 theme_override_constants/separation = 80
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Control" type="Control" parent="HBoxContainer"]
-offset_bottom = 756.0
+layout_mode = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
-offset_left = 80.0
-offset_right = 836.0
-offset_bottom = 756.0
-custom_minimum_size = Vector2( 756, 0 )
+custom_minimum_size = Vector2(756, 0)
+layout_mode = 2
 size_flags_vertical = 3
 
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer/MarginContainer"]
-offset_right = 756.0
-offset_bottom = 756.0
-expand = true
+layout_mode = 2
+expand_mode = 1
 stretch_mode = 6
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
-offset_left = 916.0
-offset_right = 2880.0
-offset_bottom = 756.0
-mouse_filter = 2
+layout_mode = 2
 size_flags_horizontal = 3
+mouse_filter = 2
 theme_override_constants/separation = 0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Control4" type="Control" parent="HBoxContainer/VBoxContainer"]
-offset_right = 1964.0
-offset_bottom = 50.0
-custom_minimum_size = Vector2( 0, 50 )
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
 
 [node name="Control" type="Control" parent="HBoxContainer/VBoxContainer"]
-offset_top = 50.0
-offset_right = 1964.0
-offset_bottom = 259.0
-mouse_filter = 2
+layout_mode = 2
 size_flags_vertical = 3
+mouse_filter = 2
 
 [node name="LabelContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
-offset_top = 259.0
-offset_right = 1964.0
-offset_bottom = 387.0
+layout_mode = 2
 mouse_filter = 2
 theme_override_constants/separation = 150
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/LabelContainer"]
-offset_right = 1814.0
-offset_bottom = 128.0
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource( 3 )
-valign = 1
-autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+theme_override_fonts/font = ExtResource("3")
 
 [node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer/LabelContainer"]
-offset_left = 1964.0
-offset_right = 1964.0
-offset_bottom = 128.0
+layout_mode = 2
 mouse_filter = 2
 
 [node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer"]
-offset_top = 387.0
-offset_right = 1964.0
-offset_bottom = 596.0
-mouse_filter = 2
+layout_mode = 2
 size_flags_vertical = 3
+mouse_filter = 2
 
 [node name="Control3" type="Control" parent="HBoxContainer/VBoxContainer"]
-offset_top = 596.0
-offset_right = 1964.0
-offset_bottom = 756.0
-custom_minimum_size = Vector2( 0, 160 )
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
 
-[node name="RanSoundContainer" type="Node" parent="."]
-script = ExtResource( 1 )
+[node name="TypewriterSounds" parent="." instance=ExtResource("4_j7yhk")]
 volume_range = 8.0
 pitch_range = 0.3
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="RanSoundContainer"]
-stream = ExtResource( 5 )
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="TypewriterSounds"]
+stream = ExtResource("5")
 volume_db = -30.0
 
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="RanSoundContainer"]
-stream = ExtResource( 6 )
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="TypewriterSounds"]
+stream = ExtResource("6")
 volume_db = -30.0
 
-[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="RanSoundContainer"]
-stream = ExtResource( 8 )
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="TypewriterSounds"]
+stream = ExtResource("8")
 volume_db = -30.0
 
-[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="RanSoundContainer"]
-stream = ExtResource( 7 )
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="TypewriterSounds"]
+stream = ExtResource("7")
 volume_db = -30.0
 
-[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="RanSoundContainer"]
-stream = ExtResource( 4 )
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="TypewriterSounds"]
+stream = ExtResource("4")
 volume_db = -30.0
 
 [connection signal="mouse_entered" from="." to="." method="_on_OnClickPopUp_mouse_entered"]

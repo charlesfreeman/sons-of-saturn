@@ -1,13 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=2 format=3 uid="uid://jolgswyig48g"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+script = ExtResource("1")

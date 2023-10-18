@@ -32,7 +32,7 @@ func set_speaker_name(char_name):
 	var char_color = self.char_colors[char_name]
 	# onready var's don't seem to be working, must resort to direct reference
 	# probably a timing issue?
-	$SpeakerName.append_bbcode("[color=%s]"%char_color+char_name+"[/color]")
+	$SpeakerName.text = "[color=%s]"%char_color+char_name+"[/color]"
 	
 	
 func set_dialogue_line(text):

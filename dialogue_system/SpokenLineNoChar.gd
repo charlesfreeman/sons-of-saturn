@@ -6,7 +6,7 @@ func _ready():
 
 
 func set_text(line_text: String):
-	$TextLine.text = line_text
+	$TextLine.set_text(line_text)
 	
 
 func make_grey():

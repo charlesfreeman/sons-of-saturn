@@ -10,9 +10,7 @@ const spokenLineNarrator = preload("res://dialogue_system/SpokenLineNarrator.tsc
 @onready var scroll_container = $ScrollContainer
 @onready var spoken_lines_container = $ScrollContainer/SpokenLinesContainer
 @onready var scroll_bar = scroll_container.get_v_scroll_bar()
-@onready var typewriter = $RanSoundContainer
-@onready var tween = create_tween()
-
+@onready var typewriter = $TypewriterSounds
 var dialogueOption = load("res://dialogue_system/DialogueOption.tscn")
 var continueButton = load("res://dialogue_system/ContinueButton.tscn")
 var script_path = "res://dialogue_system/conversations/test_scene.json"
@@ -98,8 +96,8 @@ func handle_scrollbar_changed():
 	
 	
 func _scroll_to_end():
-	tween.tween_property(scroll_container, "scroll_vertical", max_scroll_length, 
-	  0.3).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
+	var tween = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
+	tween.tween_property(scroll_container, "scroll_vertical", max_scroll_length, 0.3)
 	
 	
 # handles setting up next twison passage and corresponding links
@@ -174,9 +172,9 @@ func _split_block(block):
 	for i in range(parray.size()):
 		if parray[i] == "":
 			indices_to_cut.append(i)
-	indices_to_cut.invert()
+	indices_to_cut.reverse()
 	for index in indices_to_cut:
-		parray.remove(index)
+		parray.remove_at(index)
 	return parray
 
 
@@ -291,7 +289,7 @@ func _add_buttons():
 func _remove_buttons():
 	for i in range(len(buttons_array)-1, -1, -1):
 		self.buttons_array[i].queue_free()
-		self.buttons_array.remove(i)
+		self.buttons_array.remove_at(i)
 
 
 # check if n'th dialogue option in list has been clicked before

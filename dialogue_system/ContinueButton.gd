@@ -11,7 +11,7 @@ signal play_click
 func _ready():
 	# TODO: can still "scroll" the continue button.  Very, very minor issue
 	# but should probably fix eventually
-	text_label.get_v_scroll().modulate = Color(0, 0, 0, 0)
+	text_label.get_v_scroll_bar().modulate = Color(0, 0, 0, 0)
 	self.button_text = "\u00AC Continue"
 
 
@@ -27,11 +27,11 @@ func get_next_passage() -> String:
 
 func _on_ContinueButton_focus_entered():
 	var highlighted_text = "[color=yellow]" + self.button_text + "[/color]"
-	text_label.set_bbcode(highlighted_text)
+	text_label.text = highlighted_text
 
 
 func _on_ContinueButton_focus_exited():
-	text_label.set_bbcode(self.button_text)
+	text_label.text = self.button_text
 
 
 func _on_ContinueButton_mouse_entered():

@@ -21,7 +21,6 @@ var tag_db = {}
 # while parsing the file. It allows faster tag operations, especially if there are many of both of them.
 # I honestly don't know why you might wanna disable it, but the option is there.
 func parse_file(filePath: String, \
-				linkFilter: FuncRef = null, \
 				construct_tag_db = true):
 	data = {}
 	passages = {}
@@ -34,11 +33,6 @@ func parse_file(filePath: String, \
 		_tag_db_enabled = true
 		_construct_tag_db()
 	
-	if (linkFilter == null):
-		linkFilter = funcref(self, "link_filter_erase")
-
-	_filter_links(linkFilter)
-
 func _extract_passages():
 	for passage in data["passages"]:
 		var pid = int(passage["pid"])
@@ -63,7 +57,7 @@ func _construct_tag_db(return_it: bool = false):
 	else:
 		tag_db = tags
 
-func _filter_links(linkFilter: FuncRef):
+func _filter_links():
 	# \[\[(.+?(?=\]\]))\]\]
 	var link_regex = "\\[\\[(.+?(?=\\]\\]))\\]\\]"
 	var reg = RegEx.new()
@@ -74,25 +68,17 @@ func _filter_links(linkFilter: FuncRef):
 		text = passages[passage]["text"]
 		
 		for result in reg.search_all(text):
-			var newLink = linkFilter.call_func(result)
-			text = text.replace(result.get_string(), newLink)
+			text = text.replace(result.get_string(), "")
 		
 		text = text.strip_edges(true, true)
 		passages[passage]["text"] = text
 
 func _load_file(filePath: String):
-	var jsonFile = File.new()
-	jsonFile.open(filePath, jsonFile.READ)
-	
-	if (jsonFile.get_error()):
-		printerr("Cannot open json file!")
-		return data
-	
+	var jsonFile = FileAccess.open(filePath, FileAccess.READ)
 	var text = jsonFile.get_as_text()
 	var test_json_conv = JSON.new()
 	test_json_conv.parse(text)
 	data = test_json_conv.get_data()
-	jsonFile.close()
 
 	return data
 

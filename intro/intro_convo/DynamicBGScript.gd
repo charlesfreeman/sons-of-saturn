@@ -6,8 +6,6 @@ extends TextureRect
 # internal methods manipulate this as well
 @export var is_visible = false
 
-@onready var tween = create_tween()
-
 var global_tag = ""
 var d_level = 0.3
 
@@ -21,6 +19,7 @@ func _ready():
 func appear_disappear(tag):
 	# special case so might as well hardcode
 	if tag == "brighten_stage" and self.name == "DynamicBG":
+		var tween = create_tween()
 		tween.tween_property(self, "modulate", 
 		  Color(1, 1, 1, 1), 0.4).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN)
 	if tag.begins_with("bg") and is_visible:
@@ -28,6 +27,7 @@ func appear_disappear(tag):
 		# play sound effect
 		$SwitchFlipSlow.play()
 		# tween for going fully visible to totally dark and transparent
+		var tween = create_tween()
 		tween.tween_property(self, "modulate", Color(0, 0, 0, 0), 
 		  0.4).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
 		is_visible = false
@@ -40,12 +40,14 @@ func new_bg(tag):
 		# play sound effect
 		$SwitchFlipFast.play()
 		# tween for going totally dark to fully visible
+		var tween = create_tween()
 		tween.tween_property(self, "modulate", Color(1, 1, 1, 1), 
 		  0.4).set_trans(Tween.TRANS_EXPO).set_ease(Tween.EASE_OUT)
 
 
 func _on_TweenTotalDarken_tween_completed(_object, _key):
 	# hacky "wait around and do nothing" tween
+	var tween = create_tween()
 	tween.tween_property(self, "modulate", 
 	  Color(0, 0, 0, 0), 0.25).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN)
 

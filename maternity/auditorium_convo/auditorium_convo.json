@@ -37,7 +37,10 @@
       "position": {
         "x": "1183",
         "y": "758"
-      }
+      },
+      "tags": [
+        "auncertain"
+      ]
     },
     {
       "text": "Julia,lost_in_thought::I...\n\nJulia,concerned::Yes, sorry.  What's the matter?\n\n[[p:I'm guessing you visit this auditorium often?->Get Going]]",

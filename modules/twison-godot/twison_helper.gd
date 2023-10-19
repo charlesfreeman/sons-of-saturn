@@ -32,6 +32,8 @@ func parse_file(filePath: String, \
 	if (construct_tag_db):
 		_tag_db_enabled = true
 		_construct_tag_db()
+		
+	_filter_links()
 	
 func _extract_passages():
 	for passage in data["passages"]:

@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://iixmogfouhrb" path="res://conversation_pov/rose_border_flipped.png" id="7"]
 [ext_resource type="Script" path="res://conversation_pov/Avatar.gd" id="8"]
 [ext_resource type="PackedScene" uid="uid://brsmqtvugbox" path="res://title_screen/TitleMenuOpt.tscn" id="9"]
-[ext_resource type="PackedScene" path="res://roaming_pov/Save.tscn" id="10"]
+[ext_resource type="PackedScene" uid="uid://owqjduquypwg" path="res://roaming_pov/Save.tscn" id="10"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -44,8 +44,8 @@ offset_left = 1755.0
 offset_top = 1555.0
 offset_right = -1629.0
 offset_bottom = -43.0
-expand_mode = 1
-stretch_mode = 6
+expand_mode = 4
+stretch_mode = 5
 script = ExtResource("8")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Convo"]
@@ -123,6 +123,8 @@ label_text = "Save Game"
 layout_mode = 2
 label_text = "Exit to Title"
 
+[connection signal="change_char" from="Convo/HBoxContainer/Dialogue" to="." method="_on_dialogue_change_char"]
+[connection signal="tag" from="Convo/HBoxContainer/Dialogue" to="." method="_on_dialogue_tag"]
 [connection signal="transitioned" from="Convo/TransitionScreen" to="." method="_on_TransitionScreen_transitioned"]
 [connection signal="pressed" from="EscOpts/Node2D/Buttons/Resume" to="." method="_on_Resume_pressed"]
 [connection signal="pressed" from="EscOpts/Node2D/Buttons/Save" to="." method="_on_Save_pressed"]

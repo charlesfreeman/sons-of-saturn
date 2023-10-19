@@ -153,7 +153,7 @@ func _unpause_game():
 	
 # assume this is called every time either character or emotion changes
 # dialogue sys does labor of tracking state
-func _on_Control_change_char(character, emotion):
+func _on_dialogue_change_char(character, emotion):
 	if character != "Narrator":
 		if character != subject:
 			subject_speaking = false
@@ -208,7 +208,7 @@ func change_background_sliver(res_path):
 	bg_sliver.texture = new_background_sliver
 
 
-func _on_Dialogue_tag(tags):
+func _on_dialogue_tag(tags):
 	for tag in tags:
 		emit_signal("tag", tag)
 		get_tree().call_group("CharacterRects", "appear_disappear", tag)

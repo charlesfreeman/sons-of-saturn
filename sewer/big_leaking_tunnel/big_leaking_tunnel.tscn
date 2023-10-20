@@ -1,31 +1,28 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://bca8lnaonpxau"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://sewer/big_leaking_tunnel/big_leaking_tunnel_2.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://b3rvsq68w8hgn" path="res://sewer/big_leaking_tunnel/big_leaking_tunnel_2.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 323.867, 328.738 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(810.068, 742)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
-offset_bottom = 2160.0
+offset_bottom = 2168.0
+size_flags_horizontal = 0
 mouse_filter = 2
-size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_up = "res://sewer/drain_stairwell/drain_stairwell.tscn"
-position = Vector2( 1630, 460 )
-rotation = -74
+position_char = Vector2(1630, 460)
+rotation_char = -74
 song = "big_leaking_tunnel"
 footstep_type_up = "Wet"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 683.866, 1187.1 )
-shape = SubResource( 1 )
+position = Vector2(926.966, 1153)
+shape = SubResource("1")

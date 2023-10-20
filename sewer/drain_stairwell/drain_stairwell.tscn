@@ -1,32 +1,29 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://bxpwjn3fvq58c"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://sewer/drain_stairwell/drain_stairs_2.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bignovrlb2e15" path="res://sewer/drain_stairwell/drain_stairs_2.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 395.603, 547.718 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(925.901, 1093.93)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_up = "ladder_convo"
 non_roam_scene_up = true
-position = Vector2( 1295, 580 )
-rotation = 180
+position_char = Vector2(1295, 580)
+rotation_char = 180
 song = "drain_stairwell"
 footstep_type_up = "Wet"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1488.05, 605.677 )
-shape = SubResource( 1 )
+position = Vector2(1479, 749)
+shape = SubResource("1")

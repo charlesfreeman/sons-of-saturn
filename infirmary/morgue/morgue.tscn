@@ -1,41 +1,38 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=6 format=3 uid="uid://c2ybrtqe4hm5s"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/morgue/morgue_1.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://j1xtltcu7641" path="res://infirmary/morgue/morgue_1.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 319.651, 1079.75 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(474, 1486)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 1088, 257 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(1624, 369.5)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_down = "res://infirmary/morgue_stairwell_base/morgue_stairwell_base.tscn"
 scene_left = "res://infirmary/autopsy_table/autospy_table.tscn"
-position = Vector2( 1340, 920 )
-rotation = 305
+position_char = Vector2(1340, 920)
+rotation_char = 305
 map = "morgue"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 left_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 320.349, 1080.25 )
-shape = SubResource( 1 )
+position = Vector2(254, 1292)
+shape = SubResource("1")
 
-[node name="ClickToEnter2" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter2" parent="." instance=ExtResource("3")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 1784, 1904 )
-shape = SubResource( 2 )
+position = Vector2(1516, 1960.25)
+shape = SubResource("2")

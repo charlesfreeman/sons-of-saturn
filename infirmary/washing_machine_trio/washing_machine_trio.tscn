@@ -1,32 +1,29 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://cvatybdpn3ykv"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/washing_machine_trio/washing_machine_trio.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://qpvfelih4v6g" path="res://infirmary/washing_machine_trio/washing_machine_trio.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 982.382, 169.852 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(1549, 258)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_down = "res://infirmary/wash_room/wash_room.tscn"
 prog_flag = "washing_machine_trio"
-position = Vector2( 1950, 1115 )
-rotation = 90
+position_char = Vector2(1950, 1115)
+rotation_char = 90
 new_scene_on_ready = true
 new_scene = "julia_first_convo"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("4")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1458.13, 1979.57 )
-shape = SubResource( 2 )
+position = Vector2(1462.5, 2018)
+shape = SubResource("2")

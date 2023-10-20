@@ -1,58 +1,55 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=8 format=3 uid="uid://ccnr1kv6wmqf1"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/morgue_stairwell_1f/morgue_stairwell_1f.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://buvwjk2jfrjr0" path="res://infirmary/morgue_stairwell_1f/morgue_stairwell_1f.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 61.9389, 161.24 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(102.322, 274.418)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 611.309, 290.672 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(1253, 503)
 
-[sub_resource type="RectangleShape2D" id=3]
-size = Vector2( 416.863, 600.821 )
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(635, 866.87)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_right = "res://infirmary/morgue_stairwell_base/morgue_stairwell_base.tscn"
 scene_down = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.tscn"
 req_flag_left = "False"
-position = Vector2( 1265, 1278 )
-rotation = 270
+position_char = Vector2(1265, 1278)
+rotation_char = 270
 map = "infirmary_1f"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 right_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 2490.03, 1689.79 )
-scale = Vector2( 6.14727, 2.78772 )
-shape = SubResource( 1 )
+position = Vector2(2494.5, 1563.5)
+scale = Vector2(6.14727, 2.78772)
+shape = SubResource("1")
 
-[node name="ClickToEnter2" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter2" parent="." instance=ExtResource("3")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 1482.98, 1851.61 )
-shape = SubResource( 2 )
+position = Vector2(1488.5, 1894.5)
+shape = SubResource("2")
 
-[node name="ClickToEnter3" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter3" parent="." instance=ExtResource("3")]
 left_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter3"]
-position = Vector2( 439.826, 1538.46 )
-shape = SubResource( 3 )
+position = Vector2(497.5, 1405.44)
+shape = SubResource("3")
 
-[node name="PopUp" parent="." instance=ExtResource( 4 )]
-popup_text = [ "Wiggly,skeptical::The door at the top of this stairwell is locked.", "Wiggly,surprised::If we want to go to the top floor we'll have to use the mirror stairwell in the opposing wing." ]
+[node name="PopUp" parent="." instance=ExtResource("4")]
+popup_text = ["Wiggly,skeptical::The door at the top of this stairwell is locked.", "Wiggly,surprised::If we want to go to the top floor we'll have to use the mirror stairwell in the opposing wing."]
 nav_popup_left = true

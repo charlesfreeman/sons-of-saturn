@@ -1,44 +1,41 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://6553jkh1eiqp"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/medicine_cabinet/medicine_cabinet.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/DescPopUp.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dvn4d6qunlnkh" path="res://infirmary/medicine_cabinet/medicine_cabinet.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://5dc1iq5ulpnt" path="res://roaming_pov/DescPopUp.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 963.333, 195.529 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(1800.02, 325)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 433.141, 546.345 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(817.191, 957.562)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_down = "res://infirmary/isolation_cells/isolation_cells.tscn"
 popup_background = "res://infirmary/medicine_cabinet/medicine_cabinet_sideview.png"
-position = Vector2( 1504, 880 )
+position_char = Vector2(1504, 880)
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("4")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1140.65, 1953.89 )
-shape = SubResource( 1 )
+position = Vector2(1558.99, 1981.5)
+shape = SubResource("1")
 
-[node name="DescPopUp" parent="." instance=ExtResource( 3 )]
-popup_text = [ "This supply closet was once stocked with a huge supply of exotic chemicals.  Unfortunately, all of the fun ones have been stolen or destroyed.", "There are no documents or ledgers to be seen either.  Seems this lead wasn't as useful as hoped.", "Despite this, one of the remaining vials catches your eye.  \"Noradrenaline.\"  Sounds useful.  You decide to take the vial with you.", "You attach one of the covered syringes found in the drawer in case the substance is ever needed intraveneously, and stow it in your pocket." ]
+[node name="DescPopUp" parent="." instance=ExtResource("3")]
+popup_text = ["This supply closet was once stocked with a huge supply of exotic chemicals.  Unfortunately, all of the fun ones have been stolen or destroyed.", "There are no documents or ledgers to be seen either.  Seems this lead wasn't as useful as hoped.", "Despite this, one of the remaining vials catches your eye.  \"Noradrenaline.\"  Sounds useful.  You decide to take the vial with you.", "You attach one of the covered syringes found in the drawer in case the substance is ever needed intraveneously, and stow it in your pocket."]
 diff_background = true
 single_use = true
 prog_flag = "medicine_cabinet_inspection"
 new_item = "Stimulants"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DescPopUp"]
-position = Vector2( 2429.62, 1031.61 )
-shape = SubResource( 2 )
+position = Vector2(2237.6, 1237.22)
+shape = SubResource("2")

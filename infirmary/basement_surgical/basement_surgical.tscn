@@ -1,42 +1,39 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://chp5t7bcotkwq"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/basement_surgical/basement_surgical.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=5]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://kga4ufxmmbau" path="res://infirmary/basement_surgical/basement_surgical.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="5"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 1188.96, 196.5 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(1915, 297.5)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 297, 247.5 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(472, 510)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_down = "res://infirmary/isolation_cells/isolation_cells.tscn"
 popup_background = "res://infirmary/basement_surgical/basement_poster.png"
-position = Vector2( 1730, 968 )
-rotation = 90
+position_char = Vector2(1730, 968)
+rotation_char = 90
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1483.31, 1941.5 )
-shape = SubResource( 1 )
+position = Vector2(1469, 1988.75)
+shape = SubResource("1")
 
-[node name="PopUp" parent="." instance=ExtResource( 5 )]
-popup_text = [ "Amelie,confused::Looks like a poster for some weird old Ballet?", "Amelie,disgusted::The main actress's head looks weird.  Like it was plastered on.", "Amelie,uncertain::Odd place to advertise this stuff.  I guess they put on musicals for the patients." ]
+[node name="PopUp" parent="." instance=ExtResource("5")]
+popup_text = ["Amelie,confused::Looks like a poster for some weird old Ballet?", "Amelie,disgusted::The main actress's head looks weird.  Like it was plastered on.", "Amelie,uncertain::Odd place to advertise this stuff.  I guess they put on musicals for the patients."]
 diff_background = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
-position = Vector2( 2253.73, 1075.5 )
-shape = SubResource( 2 )
+position = Vector2(2258, 1062)
+shape = SubResource("2")

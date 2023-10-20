@@ -1,41 +1,38 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://4c5wlym5473w"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/trash_chute/trash_chute.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToSearch.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://d1qn4cb5tudpi" path="res://infirmary/trash_chute/trash_chute.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToSearch.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 450.991, 386.563 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(973, 781.361)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 1311.85, 167.81 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(1882, 392)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_down = "res://infirmary/bright_arched_hallway/bright_arched_hallway.tscn"
-position = Vector2( 1475, 580 )
+position_char = Vector2(1475, 580)
 
-[node name="ClickToSearch" parent="." instance=ExtResource( 3 )]
+[node name="ClickToSearch" parent="." instance=ExtResource("3")]
 next_scene = "vera_diary_convo_2"
 alt_next_scene = "vera_diary_convo_2_return"
 alt_req_prog_flag = "trash_chute_convo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
-position = Vector2( 2168.69, 1117.44 )
-shape = SubResource( 1 )
+position = Vector2(2214.5, 1007.68)
+shape = SubResource("1")
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("4")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1328.82, 1974.47 )
-shape = SubResource( 2 )
+position = Vector2(1468, 1954)
+shape = SubResource("2")

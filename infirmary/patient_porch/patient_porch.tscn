@@ -1,39 +1,36 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://fqb38ow57xi7"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/patient_porch/bright_patterned_porch.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=5]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://tc1jvip8iqjq" path="res://infirmary/patient_porch/bright_patterned_porch.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="5"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 1195.5, 196.5 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(1755.61, 345.875)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 640.485, 457.5 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(970.181, 771.812)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_down = "res://infirmary/isolation_wing_top_floor/isolation_wing_top_floor.tscn"
-position = Vector2( 990, 1120 )
+position_char = Vector2(990, 1120)
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1641.47, 1941.5 )
-shape = SubResource( 1 )
+position = Vector2(1575.8, 1975.94)
+shape = SubResource("1")
 
-[node name="PopUp" parent="." instance=ExtResource( 5 )]
-popup_text = [ "Amelie,uncertain::This must have been some sort of patient porch.", "Amelie,guilty::The lighting is bright, and those patterns are beautiful.  But I still feel like I'm in a cage.", "Jasper,sad::I think that is by design." ]
+[node name="PopUp" parent="." instance=ExtResource("5")]
+popup_text = ["Amelie,uncertain::This must have been some sort of patient porch.", "Amelie,guilty::The lighting is bright, and those patterns are beautiful.  But I still feel like I'm in a cage.", "Jasper,sad::I think that is by design."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
-position = Vector2( 1602.48, 996.5 )
-shape = SubResource( 2 )
+position = Vector2(1693.09, 1048.91)
+shape = SubResource("2")

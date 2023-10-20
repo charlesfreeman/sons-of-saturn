@@ -1,68 +1,65 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=9 format=3 uid="uid://bv1dcg0oetpa1"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/isolation_cells/isolation_cells.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cskevrvakxqgk" path="res://infirmary/isolation_cells/isolation_cells.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 833.166, 154.256 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(1439, 340)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 325.198, 716.197 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(677, 1234)
 
-[sub_resource type="RectangleShape2D" id=3]
-size = Vector2( 371.232, 709.847 )
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(545, 1185)
 
-[sub_resource type="RectangleShape2D" id=4]
-size = Vector2( 334.722, 342.879 )
+[sub_resource type="RectangleShape2D" id="4"]
+size = Vector2(725, 668)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_up = "res://infirmary/basement_surgical/basement_surgical.tscn"
 scene_down = "res://infirmary/isolation_stairwell_base/isolation_stairwell_base.tscn"
 scene_left = "res://infirmary/medicine_cabinet/medicine_cabinet.tscn"
 req_flag_right = "door_open_popup"
 prog_flag = "isolation_cells"
-position = Vector2( 1450, 968 )
-rotation = 90
+position_char = Vector2(1450, 968)
+rotation_char = 90
 map = "iso_cells"
 new_scene_on_ready = true
 new_scene = "cell_grate_convo"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1461.3, 1995.17 )
-shape = SubResource( 1 )
+position = Vector2(1451.5, 1965)
+shape = SubResource("1")
 
-[node name="ClickToEnter2" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter2" parent="." instance=ExtResource("3")]
 left_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 550.133, 1039.55 )
-shape = SubResource( 2 )
+position = Vector2(585.5, 1085)
+shape = SubResource("2")
 
-[node name="PopUp" parent="." instance=ExtResource( 4 )]
-popup_text = [ "Amelie,confused::What?  This door was sealed shut just a few seconds ago...", "Amelie,guilty::Of course it only reopens now that my guide is long gone..." ]
+[node name="PopUp" parent="." instance=ExtResource("4")]
+popup_text = ["Amelie,confused::What?  This door was sealed shut just a few seconds ago...", "Amelie,guilty::Of course it only reopens now that my guide is long gone..."]
 prog_flag = "door_open_popup"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
-position = Vector2( 2243.89, 1071.3 )
-shape = SubResource( 3 )
+position = Vector2(2307.5, 1100.5)
+shape = SubResource("3")
 
-[node name="ClickToEnter3" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter3" parent="." instance=ExtResource("3")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter3"]
-position = Vector2( 1397.81, 1111.26 )
-shape = SubResource( 4 )
+position = Vector2(1391.5, 1066)
+shape = SubResource("4")

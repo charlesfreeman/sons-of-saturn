@@ -1,55 +1,52 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=8 format=3 uid="uid://dsxjnbqkl5i4o"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/dayroom_chairs/dayroom_chairs.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=5]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dom71oip55rye" path="res://infirmary/dayroom_chairs/dayroom_chairs.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="5"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 876.246, 206.641 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(1463, 408)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 236.979, 582.647 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(502, 931)
 
-[sub_resource type="RectangleShape2D" id=3]
-size = Vector2( 602.247, 303.194 )
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(1309, 582)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_down = "res://infirmary/conduits_hallway/conduits_hallway.tscn"
 scene_left = "res://infirmary/bright_arched_hallway/bright_arched_hallway.tscn"
 popup_background = "res://infirmary/dayroom_chairs/dayroom_chairs_popup.png"
 req_flag_up = "vera_office_convo"
 prog_flag = "overgrowth_pink_hallway"
-position = Vector2( 1730, 686 )
+position_char = Vector2(1730, 686)
 map = "infirmary_1f"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1573.79, 1942.78 )
-shape = SubResource( 1 )
+position = Vector2(1488.5, 1945)
+shape = SubResource("1")
 
-[node name="ClickToEnter2" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter2" parent="." instance=ExtResource("3")]
 left_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 246.527, 1127.87 )
-shape = SubResource( 2 )
+position = Vector2(260, 1133.5)
+shape = SubResource("2")
 
-[node name="PopUp" parent="." instance=ExtResource( 5 )]
-popup_text = [ "Amelie,confused::Why are all these chairs lined up like this?  There's nothing else here.", "Wiggly,looking_to_side::There used to be an entertainment table they all faced.  It went missing a few years ago.", "Amelie,shocked::An entertainment table?  For card games and such?  That sounds fun.  What happened to it?", "Wiggly,half_smile::Honestly? Someone probably dragged it up to the roof so they could throw it off.", "Amelie,guilty::..." ]
+[node name="PopUp" parent="." instance=ExtResource("5")]
+popup_text = ["Amelie,confused::Why are all these chairs lined up like this?  There's nothing else here.", "Wiggly,looking_to_side::There used to be an entertainment table they all faced.  It went missing a few years ago.", "Amelie,shocked::An entertainment table?  For card games and such?  That sounds fun.  What happened to it?", "Wiggly,half_smile::Honestly? Someone probably dragged it up to the roof so they could throw it off.", "Amelie,guilty::..."]
 diff_background = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
-position = Vector2( 1442.11, 1292.07 )
-shape = SubResource( 3 )
+position = Vector2(1445.5, 1284)
+shape = SubResource("3")

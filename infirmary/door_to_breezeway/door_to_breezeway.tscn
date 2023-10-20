@@ -1,50 +1,47 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=8 format=3 uid="uid://dhgah7k8hx6pm"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/door_to_breezeway/door_to_breezeway.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
-[ext_resource path="res://sounds/effects/locked_door.wav" type="AudioStream" id=5]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cb67h7qyjo4di" path="res://infirmary/door_to_breezeway/door_to_breezeway.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
+[ext_resource type="AudioStream" uid="uid://b1rdgy8qbe3ih" path="res://sounds/effects/locked_door.wav" id="5"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 226.779, 311.131 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(502, 716)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 982.382, 169.852 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(1320, 376)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_up = "res://maternity/breezeway/breezeway.tscn"
 scene_down = "res://infirmary/top_floor_middle_hallway/top_floor_middle_hallway.tscn"
 req_flag_up = "julia_first_convo"
-position = Vector2( 1506, 600 )
+position_char = Vector2(1506, 600)
 footstep_type_up = "DoorUnlock"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("4")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1429.55, 946.173 )
-shape = SubResource( 1 )
+position = Vector2(1430, 952)
+shape = SubResource("1")
 
-[node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter2" parent="." instance=ExtResource("4")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 1458.13, 1979.57 )
-shape = SubResource( 2 )
+position = Vector2(1427, 1957)
+shape = SubResource("2")
 
-[node name="PopUp" parent="." instance=ExtResource( 3 )]
-popup_text = [ "Amelie,uncertain::Door's locked.  Pretty sure this is the way to the maternity ward.  I'll have to find another way through." ]
+[node name="PopUp" parent="." instance=ExtResource("3")]
+popup_text = ["Amelie,uncertain::Door's locked.  Pretty sure this is the way to the maternity ward.  I'll have to find another way through."]
 nav_popup_up = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="PopUp"]
-stream = ExtResource( 5 )
+stream = ExtResource("5")

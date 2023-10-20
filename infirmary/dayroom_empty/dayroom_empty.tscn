@@ -1,56 +1,53 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=8 format=3 uid="uid://bbwkfeulk7onv"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://infirmary/dayroom_empty/dayroom_empty.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=5]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cqmqwfia6tgmv" path="res://infirmary/dayroom_empty/dayroom_empty.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="5"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 876.246, 206.641 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(1605.96, 334.77)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 207.73, 752.707 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(360.865, 1395.35)
 
-[sub_resource type="RectangleShape2D" id=3]
-size = Vector2( 336.529, 303.194 )
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(598.265, 544.597)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_down = "res://infirmary/overgrowth_pink_hallway/overgrowth_pink_hallway.tscn"
 scene_left = "res://infirmary/conduits_hallway/conduits_hallway.tscn"
 popup_background = "res://infirmary/dayroom_empty/door_to_nowhere.png"
 req_flag_up = "vera_office_convo"
 prog_flag = "overgrowth_pink_hallway"
-position = Vector2( 1685, 1278 )
-rotation = 90
+position_char = Vector2(1685, 1278)
+rotation_char = 90
 map = "infirmary_1f"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1573.79, 1942.78 )
-shape = SubResource( 1 )
+position = Vector2(1556.98, 1969.39)
+shape = SubResource("1")
 
-[node name="ClickToEnter2" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter2" parent="." instance=ExtResource("3")]
 left_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 254.876, 1034.79 )
-shape = SubResource( 2 )
+position = Vector2(263.568, 1038.68)
+shape = SubResource("2")
 
-[node name="PopUp" parent="." instance=ExtResource( 5 )]
-popup_text = [ "Amelie,uncertain::Why's this door bricked off?  I bet there's something good on the other side.", "Wiggly,skeptical::Actually, I don't think there's anything at all on the other side.  Look out the window.  It doesn't lead anywhere.", "Amelie,confused::Huh.  So this place just has random doors to nowhere?", "Wiggly,looking_to_side::I think this used to lead \"somewhere,\" but this building was partially demolished and appended to dozens of times.  Weird little artifacts like this are the result." ]
+[node name="PopUp" parent="." instance=ExtResource("5")]
+popup_text = ["Amelie,uncertain::Why's this door bricked off?  I bet there's something good on the other side.", "Wiggly,skeptical::Actually, I don't think there's anything at all on the other side.  Look out the window.  It doesn't lead anywhere.", "Amelie,confused::Huh.  So this place just has random doors to nowhere?", "Wiggly,looking_to_side::I think this used to lead \"somewhere,\" but this building was partially demolished and appended to dozens of times.  Weird little artifacts like this are the result."]
 diff_background = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
-position = Vector2( 1637.28, 1046.18 )
-shape = SubResource( 3 )
+position = Vector2(1615.13, 1035.7)
+shape = SubResource("3")

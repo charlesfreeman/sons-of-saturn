@@ -113,7 +113,8 @@ var previous_av = "Amelie"
 signal tag(tag)
 
 
-func _ready():	
+func _ready():
+	Global.set_cursor("null")
 	Global.change_song(song)
 	Global.change_soundscape(soundscape)
 	Global.set_scene_type(get_tree().current_scene.name)

@@ -6,15 +6,9 @@ func _ready():
 
 
 func save():
-	var tween = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
-	tween.tween_property(self, "modulate", Color(1, 1, 1, 1), 0.15)
-
-
-func _on_TweenFadeIn_tween_completed(_object, _key):
-	var tween = create_tween()
-	tween.tween_property(self, "modulate", self.modulate, 0.75)
-
-
-func _on_TweenHold_tween_completed(_object, _key):
-	var tween = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
-	tween.tween_property(self, "modulate", Color(0, 0, 0, 0), 0.15)
+	var tween_fadein = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
+	await tween_fadein.tween_property(self, "modulate", Color(1, 1, 1, 1), 0.15).finished
+	var tween_hold = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
+	await tween_hold.tween_property(self, "modulate", self.modulate, 0.75).finished
+	var tween_fadeout = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
+	await tween_fadeout.tween_property(self, "modulate", Color(0, 0, 0, 0), 0.15).finished

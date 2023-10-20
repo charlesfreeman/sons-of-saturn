@@ -61,6 +61,7 @@ signal swap_bg_signal
 signal new_item_signal(item)
 
 func _ready():
+	Global.set_cursor("null")
 	# currently all convos that start with entering a room are one-offs. here we load the convo 
 	# only if the prog flag for this PoV has not yet been flipped.  If it has it isn't loaded. 
 	if new_scene_on_ready and not Global.get_prog_flag(prog_flag):
@@ -81,7 +82,7 @@ func _ready():
 	for node in get_tree().get_nodes_in_group("popups"):
 		node.connect("disable_buttons", Callable(self, "_disable_buttons"))
 		node.connect("enable_buttons", Callable(self, "_enable_buttons"))
-		node.connect("swap_bg_signal", Callable(self, "_swap_bg"))
+		node.connect("swap_bg_signal", Callable(self, "_swap_bg_signal"))
 	for node in get_tree().get_nodes_in_group("desc_popups"):
 		node.connect("new_item_signal", Callable(self, "_new_item"))
 
@@ -112,7 +113,7 @@ func _disable_buttons():
 func _enable_buttons():
 	emit_signal("enable_buttons")
 	
-func _swap_bg():
+func _swap_bg_signal():
 	emit_signal("swap_bg_signal")
 	
 func _new_item(item):

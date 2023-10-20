@@ -162,7 +162,7 @@ func _load_PoV_instance():
 	pov_instance.connect("enable_buttons", Callable(self, "_enable_buttons"))
 	pov_instance.connect("swap_bg_signal", Callable(self, "swap_texture"))
 	pov_instance.connect("new_item_signal", Callable(self, "_new_item"))
-	set_pos_rot(pov_instance.position, pov_instance.rotation)
+	set_pos_rot(pov_instance.position_char, pov_instance.rotation_char)
 
 
 func _on_TransitionScreen_transitioned():
@@ -229,7 +229,7 @@ func _new_item(item):
 func set_pos_rot(pos, rot):
 	char_rect.position.x = pos.x
 	char_rect.position.y = pos.y
-	char_rect.rotation = rot
+	char_rect.rotation_degrees = rot
 	camera.position.x = pos.x + (char_rect.size.x / 2)
 	camera.position.y = pos.y + (char_rect.size.y / 2)
 

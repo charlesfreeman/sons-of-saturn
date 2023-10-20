@@ -88,7 +88,7 @@ var popup_visible = false
 
 signal disable_buttons
 signal enable_buttons
-signal swap_bg
+signal swap_bg_signal
 
 
 func _ready():
@@ -150,7 +150,7 @@ func progress_popup():
 			get_tree().call_group("click_areas", "enable")
 			emit_signal("enable_buttons")
 			if diff_background:
-				emit_signal("swap_bg")
+				emit_signal("swap_bg_signal")
 		elif (self.in_clickable_area and self.enabled and not self.perm_disabled) or self.index != 0:
 			advance_popup()
 
@@ -163,7 +163,7 @@ func advance_popup():
 		if has_node("./AudioStreamPlayer"):
 			get_node("./AudioStreamPlayer").play()
 		if diff_background:
-			emit_signal("swap_bg")
+			emit_signal("swap_bg_signal")
 	self._show_next_text()
 
 

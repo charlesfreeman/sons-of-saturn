@@ -9,7 +9,7 @@ var popup_visible = false
 
 @onready var popup = $VBoxContainer
 @onready var label = $VBoxContainer/LabelContainer/Label
-@onready var typewriter = $RanSoundContainer
+@onready var typewriter = $TypewriterSounds
 
 @export var popup_on_entry = false
 @export var popup_text = ["example text for popup", "example 2"]
@@ -23,8 +23,8 @@ var popup_visible = false
 
 signal disable_buttons
 signal enable_buttons
-signal swap_bg
-signal new_item(item)
+signal swap_bg_signal
+signal new_item_signal(item)
 
 
 func _ready():
@@ -67,9 +67,9 @@ func progress_popup():
 		get_tree().call_group("click_areas", "enable")
 		emit_signal("enable_buttons")
 		if diff_background:
-			emit_signal("swap_bg")
+			emit_signal("swap_bg_signal")
 		if new_item != "None":
-			emit_signal("new_item", new_item)
+			emit_signal("new_item_signal", new_item)
 	elif (self.in_clickable_area and self.enabled and not self.perm_disabled) or self.index != 0:
 		advance_popup()
 
@@ -83,7 +83,7 @@ func advance_popup():
 		if has_node("./AudioStreamPlayer"):
 			get_node("./AudioStreamPlayer").play()
 		if diff_background:
-			emit_signal("swap_bg")
+			emit_signal("swap_bg_signal")
 	self._show_next_text()
 
 

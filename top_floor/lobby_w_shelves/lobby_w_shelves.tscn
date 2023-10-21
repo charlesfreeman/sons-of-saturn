@@ -1,54 +1,51 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=8 format=3 uid="uid://dt7cgh3strxgs"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=2]
-[ext_resource path="res://top_floor/lobby_w_shelves/central_lobby_shelves.png" type="Texture2D" id=3]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://bbt57lc6q6cpk" path="res://top_floor/lobby_w_shelves/central_lobby_shelves.png" id="3"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 311.755, 365.103 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(635, 736)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 578.347, 256.502 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(1046, 414)
 
-[sub_resource type="RectangleShape2D" id=3]
-size = Vector2( 506.381, 379.389 )
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(1121, 731)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 3 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("3")
+script = ExtResource("1")
 scene_up = "res://top_floor/colorful_nurses_hall/colorful_nurses_hall.tscn"
 scene_left = "res://top_floor/yellow_door_hallway/yellow_door_hallway.tscn"
 popup_background = "res://top_floor/lobby_w_shelves/shelves.png"
-position = Vector2( 2050, 500 )
-rotation = -57
+position_char = Vector2(2050, 500)
+rotation_char = -57
 song = "sewer_med_flow"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("4")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 630.247, 1006.49 )
-shape = SubResource( 1 )
+position = Vector2(644.5, 1032)
+shape = SubResource("1")
 
-[node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter2" parent="." instance=ExtResource("4")]
 left_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 601.765, 1897.96 )
-shape = SubResource( 2 )
+position = Vector2(533, 1942)
+shape = SubResource("2")
 
-[node name="PopUp" parent="." instance=ExtResource( 2 )]
-popup_text = [ "Amelie,uncertain::These shelves are awfully ornate.", "Wiggly,looking_to_side::Yep, they used to be lined with medications too.  Mostly for the nurses on staff here.", "Wiggly,half_smile::Mostly amphetamines, you know?  We picked these shelves clean years ago." ]
+[node name="PopUp" parent="." instance=ExtResource("2")]
+popup_text = ["Amelie,uncertain::These shelves are awfully ornate.", "Wiggly,looking_to_side::Yep, they used to be lined with medications too.  Mostly for the nurses on staff here.", "Wiggly,half_smile::Mostly amphetamines, you know?  We picked these shelves clean years ago."]
 diff_background = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
-position = Vector2( 2016.67, 944.585 )
-shape = SubResource( 3 )
+position = Vector2(1951.5, 971.5)
+shape = SubResource("3")

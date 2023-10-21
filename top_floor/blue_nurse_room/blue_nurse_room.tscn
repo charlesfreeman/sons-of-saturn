@@ -1,41 +1,38 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://cyac2oaayfthe"]
 
-[ext_resource path="res://top_floor/blue_nurse_room/blue_pink_nurse_room.png" type="Texture2D" id=1]
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=4]
+[ext_resource type="Texture2D" uid="uid://c1jgkelad54g8" path="res://top_floor/blue_nurse_room/blue_pink_nurse_room.png" id="1"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 966.831, 191.724 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(2048, 315)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 676.083, 489.402 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(1535, 870)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 1 )
-script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("1")
+script = ExtResource("2")
 scene_down = "res://top_floor/colorful_nurses_hall/colorful_nurses_hall.tscn"
-position = Vector2( 1535, 610 )
-rotation = 216
+position_char = Vector2(1535, 610)
+rotation_char = 216
 song = "sewer_med_flow"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1425.23, 1949.67 )
-shape = SubResource( 1 )
+position = Vector2(1578, 1990.5)
+shape = SubResource("1")
 
-[node name="PopUp" parent="." instance=ExtResource( 4 )]
-popup_text = [ "Amelie,uncertain::What's up with this room?  It's way less dilapidated than the others on this hall.", "Wiggly,neutral::All of the rooms on this hall are nurses quarters.", "Wiggly,thinking::I'm not sure why this one is so intact.  But my guess is that one of the other ferryman uses this room as a camping spot or something." ]
+[node name="PopUp" parent="." instance=ExtResource("4")]
+popup_text = ["Amelie,uncertain::What's up with this room?  It's way less dilapidated than the others on this hall.", "Wiggly,neutral::All of the rooms on this hall are nurses quarters.", "Wiggly,thinking::I'm not sure why this one is so intact.  But my guess is that one of the other ferryman uses this room as a camping spot or something."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
-position = Vector2( 1423.75, 979.279 )
-shape = SubResource( 2 )
+position = Vector2(1537.5, 1080)
+shape = SubResource("2")

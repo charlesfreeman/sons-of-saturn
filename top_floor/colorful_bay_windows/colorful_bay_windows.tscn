@@ -1,41 +1,38 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://bqtxtwb7cc27m"]
 
-[ext_resource path="res://top_floor/colorful_bay_windows/central_colorful_bay_windows.png" type="Texture2D" id=1]
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/DescPopUp.tscn" type="PackedScene" id=4]
+[ext_resource type="Texture2D" uid="uid://ctpdcdnxrqdei" path="res://top_floor/colorful_bay_windows/central_colorful_bay_windows.png" id="1"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://5dc1iq5ulpnt" path="res://roaming_pov/DescPopUp.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 966.831, 191.724 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(2010, 390)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 804.327, 461.845 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(1682, 1030)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 1 )
-script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("1")
+script = ExtResource("2")
 scene_down = "res://top_floor/door_to_lobby/door_to_lobby.tscn"
 popup_background = "res://top_floor/colorful_bay_windows/atown_looking_out_window.png"
-position = Vector2( 1820, 1330 )
+position_char = Vector2(1820, 1330)
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1425.23, 1949.67 )
-shape = SubResource( 1 )
+position = Vector2(1440, 1957)
+shape = SubResource("1")
 
-[node name="DescPopUp" parent="." instance=ExtResource( 4 )]
-popup_text = [ "You can see a bit more of the wing from this angle.  You were unable to get a good look from the first floor.", "The grass is clearly artificial.  Artificial, ambient light from the dome scatters overhead.  None of it feels natural." ]
+[node name="DescPopUp" parent="." instance=ExtResource("4")]
+popup_text = ["You can see a bit more of the wing from this angle.  You were unable to get a good look from the first floor.", "The grass is clearly artificial.  Artificial, ambient light from the dome scatters overhead.  None of it feels natural."]
 diff_background = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DescPopUp"]
-position = Vector2( 1487.23, 993.382 )
-shape = SubResource( 2 )
+position = Vector2(1455, 1004)
+shape = SubResource("2")

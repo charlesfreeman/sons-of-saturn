@@ -1,40 +1,37 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=6 format=3 uid="uid://brur4u0ff046b"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://top_floor/stairs_to_roof_looking_up/door_to_roof.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://71xsjmg763n" path="res://top_floor/stairs_to_roof_looking_up/door_to_roof.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 1126.1, 178.152 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(2041, 377)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 587.992, 598.683 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(879, 1121)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_up = "res://rooftop/looking_left/looking_left.tscn"
 scene_down = "res://top_floor/stairs_to_roof_base/stairs_to_roof_base.tscn"
-position = Vector2( 800, 990 )
-rotation = 52
+position_char = Vector2(800, 990)
+rotation_char = 52
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("4")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1527.44, 1977.76 )
-shape = SubResource( 1 )
+position = Vector2(1565.5, 1952.5)
+shape = SubResource("1")
 
-[node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter2" parent="." instance=ExtResource("4")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 1848.16, 1118.96 )
-shape = SubResource( 2 )
+position = Vector2(1851.5, 1095.5)
+shape = SubResource("2")

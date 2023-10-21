@@ -1,57 +1,54 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=8 format=3 uid="uid://dlffoewgfnvpd"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://top_floor/end_of_hallway/ladys_end_of_hallway.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://br1v35hwbac43" path="res://top_floor/end_of_hallway/ladys_end_of_hallway.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 301.123, 498.903 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(560, 1043)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 203.89, 441.536 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(378, 635)
 
-[sub_resource type="RectangleShape2D" id=3]
-size = Vector2( 822.173, 195.648 )
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(1253, 343)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_right = "res://top_floor/stairs_to_roof_base/stairs_to_roof_base.tscn"
 scene_down = "res://top_floor/nurses_quarters/nurses_quarters.tscn"
 scene_left = "res://top_floor/suitcases/suitcases.tscn"
 req_flag_right = "julia_room_convo"
-position = Vector2( 975, 820 )
-rotation = 180
+position_char = Vector2(975, 820)
+rotation_char = 180
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("4")]
 left_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 845.011, 1161.72 )
-shape = SubResource( 1 )
+position = Vector2(881, 1249.5)
+shape = SubResource("1")
 
-[node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter2" parent="." instance=ExtResource("4")]
 right_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 1744.05, 1048.04 )
-shape = SubResource( 2 )
+position = Vector2(1725, 1070.5)
+shape = SubResource("2")
 
-[node name="ClickToEnter3" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter3" parent="." instance=ExtResource("4")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter3"]
-position = Vector2( 1435.8, 1956.75 )
-shape = SubResource( 3 )
+position = Vector2(1484.5, 1977.5)
+shape = SubResource("3")
 
-[node name="PopUp" parent="." instance=ExtResource( 3 )]
-popup_text = [ "Wiggly,surprised::That's the way to the roof.  We don't need to go up there for anything, I hope." ]
+[node name="PopUp" parent="." instance=ExtResource("3")]
+popup_text = ["Wiggly,surprised::That's the way to the roof.  We don't need to go up there for anything, I hope."]
 nav_popup_right = true

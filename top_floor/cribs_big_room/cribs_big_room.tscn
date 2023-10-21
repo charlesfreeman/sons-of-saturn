@@ -1,42 +1,39 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://bt0s1c1yajh4k"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://top_floor/cribs_big_room/big_cribroom_windowview.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/DescPopUp.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://k4b14wx0tb45" path="res://top_floor/cribs_big_room/big_cribroom_windowview.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://5dc1iq5ulpnt" path="res://roaming_pov/DescPopUp.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 1019.19, 300.775 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(1998, 587)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 1071.62, 170.703 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(1965, 302)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_down = "res://top_floor/cribs_straight_on/cribs_straight_on.tscn"
 popup_background = "res://top_floor/cribs_big_room/big_cribroom_sideview.png"
-position = Vector2( 1955, 1150 )
-rotation = 228
+position_char = Vector2(1955, 1150)
+rotation_char = 228
 
-[node name="DescPopUp" parent="." instance=ExtResource( 3 )]
-popup_text = [ "The room is lined with two rows of cribs.  They are all turned to face you.", "The empty cribs are accusing you of something.  You can feel their ire." ]
+[node name="DescPopUp" parent="." instance=ExtResource("3")]
+popup_text = ["The room is lined with two rows of cribs.  They are all turned to face you.", "The empty cribs are accusing you of something.  You can feel their ire."]
 diff_background = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DescPopUp"]
-position = Vector2( 1370.64, 1406.18 )
-shape = SubResource( 1 )
+position = Vector2(1342, 1409.5)
+shape = SubResource("1")
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("4")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1425.11, 1974.57 )
-shape = SubResource( 2 )
+position = Vector2(1496.5, 2004)
+shape = SubResource("2")

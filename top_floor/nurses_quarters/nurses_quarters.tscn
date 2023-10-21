@@ -1,53 +1,50 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://uqsh05e5dcxh"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://top_floor/nurses_quarters/central_nurses_quarters.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bp1cdii1v8cng" path="res://top_floor/nurses_quarters/central_nurses_quarters.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 258.36, 391.495 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(563, 636.341)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 173.704, 292.214 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(344, 472)
 
-[sub_resource type="RectangleShape2D" id=4]
-size = Vector2( 1023.51, 188.872 )
+[sub_resource type="RectangleShape2D" id="4"]
+size = Vector2(1547, 319)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_up = "res://top_floor/end_of_hallway/end_of_hallway.tscn"
 scene_right = "res://top_floor/blue_tub/blue_tub.tscn"
 scene_down = "res://top_floor/julia_door/julia_door.tscn"
 alt_scene_down = "res://top_floor/colorful_nurses_hall/colorful_nurses_hall.tscn"
 req_flag_down = "custody_convo"
-position = Vector2( 950, 480 )
-rotation = 218
+position_char = Vector2(950, 480)
+rotation_char = 218
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("4")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 406.689, 947.407 )
-shape = SubResource( 1 )
+position = Vector2(354.5, 1069.83)
+shape = SubResource("1")
 
-[node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter2" parent="." instance=ExtResource("4")]
 right_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 1458.82, 987.107 )
-shape = SubResource( 2 )
+position = Vector2(1434, 1074)
+shape = SubResource("2")
 
-[node name="ClickToEnter4" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter4" parent="." instance=ExtResource("4")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter4"]
-position = Vector2( 1034.9, 1949.28 )
-shape = SubResource( 4 )
+position = Vector2(794.5, 1998.5)
+shape = SubResource("4")

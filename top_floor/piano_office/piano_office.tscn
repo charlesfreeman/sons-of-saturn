@@ -1,42 +1,39 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://csvjp1trn8ufe"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://top_floor/piano_office/piano_office.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToSearch.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://djiq00ap31wnc" path="res://top_floor/piano_office/piano_office.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToSearch.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 835.663, 233.389 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(1350, 419)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 312.58, 217.03 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(670, 790)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_down = "res://top_floor/piano_near_door/piano_near_door.tscn"
-position = Vector2( 1530, 1330 )
-rotation = 53
+position_char = Vector2(1530, 1330)
+rotation_char = 53
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("4")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1183.55, 1922.52 )
-shape = SubResource( 1 )
+position = Vector2(1355, 1927.5)
+shape = SubResource("1")
 
-[node name="ClickToSearch" parent="." instance=ExtResource( 3 )]
+[node name="ClickToSearch" parent="." instance=ExtResource("3")]
 next_scene = "theater_convo"
 alt_next_scene = "theater_convo_return"
 alt_req_prog_flag = "theater_convo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
-position = Vector2( 2576.15, 1440.03 )
-shape = SubResource( 2 )
+position = Vector2(2507, 1531)
+shape = SubResource("2")

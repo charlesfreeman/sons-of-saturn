@@ -1,53 +1,50 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=8 format=3 uid="uid://c7t25ixy6htny"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://maternity/crib_overlook/overgrown_crib.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToSearch.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://ydrgbo65v0hx" path="res://maternity/crib_overlook/overgrown_crib.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToSearch.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 1088.96, 133.342 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(1647, 251)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 185.726, 678.291 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(360, 1134)
 
-[sub_resource type="RectangleShape2D" id=3]
-size = Vector2( 769.889, 546.066 )
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(1164, 833)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_down = "res://maternity/stairwell_office_hallway/stairwell_office_hallway.tscn"
 scene_left = "res://maternity/front_desk/front_desk.tscn"
-position = Vector2( 2050, 1218 )
-rotation = 90
+position_char = Vector2(2050, 1218)
+rotation_char = 90
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("4")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1475.23, 2019.64 )
-shape = SubResource( 1 )
+position = Vector2(1548.5, 2011.5)
+shape = SubResource("1")
 
-[node name="ClickToEnter2" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter2" parent="." instance=ExtResource("4")]
 left_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 200.549, 1147.69 )
-shape = SubResource( 2 )
+position = Vector2(198, 1273)
+shape = SubResource("2")
 
-[node name="ClickToSearch" parent="." instance=ExtResource( 3 )]
+[node name="ClickToSearch" parent="." instance=ExtResource("3")]
 next_scene = "crib_overlook_convo"
 alt_next_scene = "crib_overlook_convo_return"
 alt_req_prog_flag = "crib_overlook_convo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
-position = Vector2( 1533.97, 1203.72 )
-shape = SubResource( 3 )
+position = Vector2(1459, 1290.5)
+shape = SubResource("3")

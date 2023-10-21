@@ -1,43 +1,40 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=6 format=3 uid="uid://bsgesmfbhiiq"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://maternity/front_desk/front_desk.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://b028gli4vliog" path="res://maternity/front_desk/front_desk.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 811.517, 150.41 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(1562, 279)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 419.778, 379.319 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(711, 701)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_up = "res://maternity/bed_overlook/bed_overlook.tscn"
 scene_down = "res://maternity/crib_overlook/crib_overlook.tscn"
 prog_flag = "front_desk"
-position = Vector2( 2065, 1020 )
-rotation = -13
+position_char = Vector2(2065, 1020)
+rotation_char = -13
 new_scene_on_ready = true
 new_scene = "front_desk_convo"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 2063.17, 2001.31 )
-shape = SubResource( 1 )
+position = Vector2(2069, 2008.5)
+shape = SubResource("1")
 
-[node name="ClickToEnter2" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter2" parent="." instance=ExtResource("3")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
-position = Vector2( 2151.84, 979.939 )
-shape = SubResource( 2 )
+position = Vector2(2144.5, 984.5)
+shape = SubResource("2")

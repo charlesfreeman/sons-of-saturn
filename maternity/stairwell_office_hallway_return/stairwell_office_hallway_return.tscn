@@ -1,45 +1,42 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://df40yssiiuos8"]
 
-[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=1]
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=2]
-[ext_resource path="res://maternity/stairwell_office_hallway/ladys_hallway_left_right_forward.png" type="Texture2D" id=3]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="1"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://c336hrdif7l74" path="res://maternity/stairwell_office_hallway/ladys_hallway_left_right_forward.png" id="3"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 300.019, 382.372 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(525, 698)
 
-[sub_resource type="RectangleShape2D" id=3]
-size = Vector2( 304.493, 621.144 )
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(450.846, 1223)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 3 )
-script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("3")
+script = ExtResource("2")
 scene_left = "res://maternity/stairs_to_top_floor/stairs_to_top_floor.tscn"
 req_flag_up = "False"
-position = Vector2( 1350, 935 )
-rotation = 90
+position_char = Vector2(1350, 935)
+rotation_char = 90
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("4")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1432.37, 1008.27 )
-shape = SubResource( 1 )
+position = Vector2(1457.5, 999)
+shape = SubResource("1")
 
-[node name="ClickToEnter3" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter3" parent="." instance=ExtResource("4")]
 left_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter3"]
-position = Vector2( 583.4, 1154.04 )
-shape = SubResource( 3 )
+position = Vector2(656.577, 1299.5)
+shape = SubResource("3")
 
-[node name="PopUp2" parent="." instance=ExtResource( 1 )]
-popup_text = [ "Jasper,twisted::Julia's that way!  Probably!  What are you thinking?", "Wiggly,surprised::I recommend avoiding that area, Miss.  Let's go up the stairs on the left, quickly." ]
+[node name="PopUp2" parent="." instance=ExtResource("1")]
+popup_text = ["Jasper,twisted::Julia's that way!  Probably!  What are you thinking?", "Wiggly,surprised::I recommend avoiding that area, Miss.  Let's go up the stairs on the left, quickly."]
 nav_popup_up = true

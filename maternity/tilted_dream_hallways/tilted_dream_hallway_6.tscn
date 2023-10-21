@@ -1,31 +1,28 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://bulab38stvu5b"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=2]
-[ext_resource path="res://maternity/tilted_dream_hallways/dream_hallway_6.png" type="Texture2D" id=3]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://bueeb8dd2h25e" path="res://maternity/tilted_dream_hallways/dream_hallway_6.png" id="3"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 500.032, 450.822 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(1161, 936)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 3 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("3")
+script = ExtResource("1")
 scene_up = "poisoning_convo"
 non_roam_scene_up = true
-position = Vector2( 800, 1500 )
-rotation = -210
+position_char = Vector2(800, 1500)
+rotation_char = -210
 song = "alien_w_heart_fast"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 2 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("2")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1549.98, 1079.51 )
-shape = SubResource( 1 )
+position = Vector2(1501.5, 1064)
+shape = SubResource("1")

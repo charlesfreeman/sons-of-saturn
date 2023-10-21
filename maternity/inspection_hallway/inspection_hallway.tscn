@@ -1,31 +1,28 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://cekyw6cwa6tnc"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://maternity/inspection_hallway/ladys_hallway_yellow.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://c40etvmkw88ku" path="res://maternity/inspection_hallway/ladys_hallway_yellow.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 698.172, 185.025 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(937, 309)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_down = "res://maternity/front_desk/front_desk.tscn"
 prog_flag = "inspection_hallway"
-position = Vector2( 1850, 473 )
-rotation = 270
+position_char = Vector2(1850, 473)
+rotation_char = 270
 new_scene_on_ready = true
 new_scene = "inspection_room_convo"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1430.68, 1968.57 )
-shape = SubResource( 1 )
+position = Vector2(1434.5, 1988.5)
+shape = SubResource("1")

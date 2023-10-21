@@ -1,29 +1,26 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://do08fcfj25q8j"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://maternity/breezeway/breezeway.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dd1byqx3680ri" path="res://maternity/breezeway/breezeway.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 218.842, 282.836 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(588, 690)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_up = "res://maternity/dome/dome.tscn"
-position = Vector2( 962, 1600 )
+position_char = Vector2(962, 1600)
 map = "maternity_1f"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1418.44, 1107.81 )
-shape = SubResource( 1 )
+position = Vector2(1425, 1120)
+shape = SubResource("1")

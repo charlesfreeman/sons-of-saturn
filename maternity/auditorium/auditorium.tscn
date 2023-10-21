@@ -1,40 +1,37 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://btfjyo2tm5dhv"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://maternity/auditorium/hospital_auditorium.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToSearch.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cg8yr3l88i3pd" path="res://maternity/auditorium/hospital_auditorium.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToSearch.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 750.062, 134.164 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(1636, 285)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 932.326, 584.823 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(1583, 1120)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_down = "res://maternity/right_curved_hallway/right_curved_hallway.tscn"
-position = Vector2( 1330, 1070 )
-rotation = 5
+position_char = Vector2(1330, 1070)
+rotation_char = 5
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 4 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("4")]
 down_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1507.11, 2010.01 )
-shape = SubResource( 1 )
+position = Vector2(1537, 2005.5)
+shape = SubResource("1")
 
-[node name="ClickToSearch" parent="." instance=ExtResource( 3 )]
+[node name="ClickToSearch" parent="." instance=ExtResource("3")]
 next_scene = "auditorium_convo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
-position = Vector2( 1706.25, 1050.81 )
-shape = SubResource( 2 )
+position = Vector2(1728.5, 1123)
+shape = SubResource("2")

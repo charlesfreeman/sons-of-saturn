@@ -1,36 +1,33 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=6 format=3 uid="uid://cm271pnfujf6i"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://maternity/dream_inspection_hallway/dream_inspection_hallway.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dxovo3j6uxo1o" path="res://maternity/dream_inspection_hallway/dream_inspection_hallway.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 322.49, 402 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(707, 731)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_up = "res://maternity/dream_surgical_overlook/dream_surgical_overlook.tscn"
-position = Vector2( 2330, 1000 )
+position_char = Vector2(2330, 1000)
 song = "alien_w_heart_med"
 map = "dream"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1440.51, 1092 )
-shape = SubResource( 1 )
+position = Vector2(1411.5, 1112.5)
+shape = SubResource("1")
 
-[node name="PopUp" parent="." instance=ExtResource( 4 )]
+[node name="PopUp" parent="." instance=ExtResource("4")]
 popup_on_entry = true
-popup_text = [ "Amelie,sad::I...I'm not feeling great...", "Jasper,head_tilted::I'm aware.  Just try to keep moving.  ", "Jasper,twisted::Wiggly said he would meet us at the end of this hall.  Let's get away from Julia and find him." ]
+popup_text = ["Amelie,sad::I...I'm not feeling great...", "Jasper,head_tilted::I'm aware.  Just try to keep moving.  ", "Jasper,twisted::Wiggly said he would meet us at the end of this hall.  Let's get away from Julia and find him."]
 single_use = true

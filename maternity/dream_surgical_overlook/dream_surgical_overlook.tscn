@@ -1,30 +1,27 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://dp1p78h2m2aep"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://maternity/dream_surgical_overlook/dream_surgical_overlook.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://chdkbwis8lr84" path="res://maternity/dream_surgical_overlook/dream_surgical_overlook.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 211.492, 826.501 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(404, 1468)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_left = "res://maternity/tilted_dream_hallways/tilted_dream_hallway_1.tscn"
-position = Vector2( 2400, 420 )
-rotation = -20
+position_char = Vector2(2400, 420)
+rotation_char = -20
 song = "alien_w_heart_med"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 left_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 231.511, 1153.5 )
-shape = SubResource( 1 )
+position = Vector2(209, 1155)
+shape = SubResource("1")

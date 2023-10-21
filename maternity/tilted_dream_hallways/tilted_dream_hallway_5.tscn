@@ -1,30 +1,27 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://d2ho2tbu50e8d"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=2]
-[ext_resource path="res://maternity/tilted_dream_hallways/dream_hallway_5.png" type="Texture2D" id=3]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://c04enp3bh8u0a" path="res://maternity/tilted_dream_hallways/dream_hallway_5.png" id="3"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 296.844, 303.472 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(733, 712)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 3 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("3")
+script = ExtResource("1")
 scene_up = "res://maternity/tilted_dream_hallways/tilted_dream_hallway_6.tscn"
-position = Vector2( 650, 1230 )
-rotation = -170
+position_char = Vector2(650, 1230)
+rotation_char = -170
 song = "alien_w_heart_fast"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 2 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("2")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1473.78, 998.283 )
-shape = SubResource( 1 )
+position = Vector2(1467.5, 988)
+shape = SubResource("1")

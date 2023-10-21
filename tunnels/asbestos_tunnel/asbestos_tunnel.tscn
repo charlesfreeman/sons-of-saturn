@@ -1,41 +1,38 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://c1i472soj74f3"]
 
-[ext_resource path="res://roaming_pov/PoV.gd" type="Script" id=1]
-[ext_resource path="res://tunnels/asbestos_tunnel/asbestos_tunnels.png" type="Texture2D" id=2]
-[ext_resource path="res://roaming_pov/ClickToEnter.tscn" type="PackedScene" id=3]
-[ext_resource path="res://roaming_pov/PopUp.tscn" type="PackedScene" id=4]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://mjtf7cyliyxb" path="res://tunnels/asbestos_tunnel/asbestos_tunnels.png" id="2"]
+[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="4"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 389.882, 420.219 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(673, 774)
 
-[sub_resource type="RectangleShape2D" id=2]
-size = Vector2( 372.93, 839.093 )
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(694, 1260)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
 offset_bottom = 2160.0
-mouse_filter = 2
 size_flags_horizontal = 3
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+mouse_filter = 2
+texture = ExtResource("2")
+script = ExtResource("1")
 scene_up = "res://tunnels/ladder_to_hatch/ladder_to_hatch.tscn"
-position = Vector2( 1220, 328 )
-rotation = 270
+position_char = Vector2(1220, 328)
+rotation_char = 270
 song = "sly_sewer_intimate"
 
-[node name="ClickToEnter" parent="." instance=ExtResource( 3 )]
+[node name="ClickToEnter" parent="." instance=ExtResource("3")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2( 1566.41, 969.615 )
-shape = SubResource( 1 )
+position = Vector2(1556.5, 985)
+shape = SubResource("1")
 
-[node name="PopUp" parent="." instance=ExtResource( 4 )]
-popup_text = [ "Amelie,uncertain::I can barely breathe in here.  What's this dusty stuff wrapped all over the pipes and all over the floor?", "Wiggly,looking_to_side::It's insulation.  They wrapped all of the steam pipes in it to prevent heat loss.  We used to tear some off and use it as bedding material during nap time.", "Jasper,head_tilted::...", "Amelie,disgusted::Is this stuff, like ,safe to breathe?", "Wiggly,thinking::Hmmm.  I'd just try not to think too much about it." ]
+[node name="PopUp" parent="." instance=ExtResource("4")]
+popup_text = ["Amelie,uncertain::I can barely breathe in here.  What's this dusty stuff wrapped all over the pipes and all over the floor?", "Wiggly,looking_to_side::It's insulation.  They wrapped all of the steam pipes in it to prevent heat loss.  We used to tear some off and use it as bedding material during nap time.", "Jasper,head_tilted::...", "Amelie,disgusted::Is this stuff, like ,safe to breathe?", "Wiggly,thinking::Hmmm.  I'd just try not to think too much about it."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
-position = Vector2( 460.328, 1101.66 )
-shape = SubResource( 2 )
+position = Vector2(558, 1241)
+shape = SubResource("2")

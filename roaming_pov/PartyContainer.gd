@@ -14,3 +14,6 @@ func _ready():
 			char_texture.custom_minimum_size.x = 359
 			char_texture.texture = load(character_dict[character])
 			add_child(char_texture)
+	var control_node = Control.new()
+	control_node.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	add_child(control_node)

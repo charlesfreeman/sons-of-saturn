@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://pk6o1qxwxqi3"]
+[gd_scene load_steps=4 format=3 uid="uid://pk6o1qxwxqi3"]
 
 [ext_resource type="Script" path="res://dialogue_system/SpokenLineNoChar.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://cxllua8qit72w" path="res://fonts/PTSerif-Regular.ttf" id="2_noewx"]
+[ext_resource type="Script" path="res://dialogue_system/TextLine.gd" id="3_lrasq"]
 
-[node name="SpokenLineNoChar" type="HBoxContainer" groups=["SpokenLines"]]
+[node name="SpokenLineNoChar" type="HBoxContainer"]
 offset_right = 1680.0
 offset_bottom = 40.0
 script = ExtResource("1")
@@ -12,9 +13,9 @@ script = ExtResource("1")
 custom_minimum_size = Vector2(55, 0)
 layout_mode = 2
 
-[node name="TextLine" type="Label" parent="."]
+[node name="TextLine" type="Label" parent="." groups=["SpokenLines"]]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("2_noewx")
-theme_override_font_sizes/font_size = 32
 autowrap_mode = 3
+script = ExtResource("3_lrasq")

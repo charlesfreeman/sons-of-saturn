@@ -9,10 +9,12 @@ signal play_click
 
 # Hide button by default
 func _ready():
+	print("making continue button")
 	# TODO: can still "scroll" the continue button.  Very, very minor issue
 	# but should probably fix eventually
 	text_label.get_v_scroll_bar().modulate = Color(0, 0, 0, 0)
 	self.button_text = "\u00AC Continue"
+	text_label.set_font_size()
 
 
 # Method to set the text of the button
@@ -28,10 +30,12 @@ func get_next_passage() -> String:
 func _on_ContinueButton_focus_entered():
 	var highlighted_text = "[color=yellow]" + self.button_text + "[/color]"
 	text_label.text = highlighted_text
+	text_label.set_font_size()
 
 
 func _on_ContinueButton_focus_exited():
 	text_label.text = self.button_text
+	text_label.set_font_size()
 
 
 func _on_ContinueButton_mouse_entered():

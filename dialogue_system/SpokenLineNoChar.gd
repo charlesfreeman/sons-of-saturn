@@ -7,6 +7,7 @@ func _ready():
 
 func set_text(line_text: String):
 	$TextLine.set_text(line_text)
+	$TextLine.set_font_size()
 	
 
 func make_grey():

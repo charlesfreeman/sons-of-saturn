@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cqw2jkmcgbyfk"]
+[gd_scene load_steps=5 format=3 uid="uid://cqw2jkmcgbyfk"]
 
 [ext_resource type="Script" path="res://dialogue_system/SpokenLine.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://cxllua8qit72w" path="res://fonts/PTSerif-Regular.ttf" id="2_ew5yh"]
+[ext_resource type="Script" path="res://dialogue_system/DialogueLine.gd" id="3_fcw61"]
+[ext_resource type="Script" path="res://dialogue_system/SpeakerName.gd" id="3_lamif"]
 
-[node name="SpokenLine" type="VBoxContainer" groups=["SpokenLines"]]
+[node name="SpokenLine" type="VBoxContainer"]
 offset_right = 1680.0
 offset_bottom = 33.0
 script = ExtResource("1")
@@ -12,10 +14,10 @@ script = ExtResource("1")
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_fonts/normal_font = ExtResource("2_ew5yh")
-theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
 fit_content = true
 scroll_active = false
+script = ExtResource("3_lamif")
 
 [node name="Control" type="Control" parent="."]
 custom_minimum_size = Vector2(0, 10)
@@ -28,9 +30,9 @@ layout_mode = 2
 custom_minimum_size = Vector2(55, 0)
 layout_mode = 2
 
-[node name="DialogueLine" type="Label" parent="TextLine"]
+[node name="DialogueLine" type="Label" parent="TextLine" groups=["SpokenLines"]]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("2_ew5yh")
-theme_override_font_sizes/font_size = 32
 autowrap_mode = 3
+script = ExtResource("3_fcw61")

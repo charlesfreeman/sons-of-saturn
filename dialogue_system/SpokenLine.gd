@@ -37,6 +37,8 @@ func set_speaker_name(char_name):
 	
 func set_dialogue_line(text):
 	$TextLine/DialogueLine.text = text
+	$SpeakerName.set_font_size()
+	$TextLine/DialogueLine.set_font_size()
 
 
 func make_grey():

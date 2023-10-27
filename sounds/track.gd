@@ -2,7 +2,7 @@ extends AudioStreamPlayer
 
 var old_db
 
-@export var oneoff = false
+@export var independent = false
 
 
 func _ready():

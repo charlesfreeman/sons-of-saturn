@@ -20,7 +20,7 @@ func play(song: String):
 	if song == current_song:
 		pass
 	elif check_for_song(song):
-		if get_node(song).oneoff:
+		if get_node(song).independent:
 			# NOTE might want to change this to fade_in
 			# if just a one-off, just play the song and don't update the state
 			# of the current song

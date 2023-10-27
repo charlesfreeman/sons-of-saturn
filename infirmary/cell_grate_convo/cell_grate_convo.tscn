@@ -48,6 +48,7 @@ offset_top = 513.0
 offset_right = 2868.0
 offset_bottom = 2457.0
 texture = ExtResource("3")
+expand_mode = 2
 appear_tag = "slink"
 disappear_tag = "peer"
 
@@ -58,6 +59,7 @@ offset_top = 690.0
 offset_right = 2318.0
 offset_bottom = 2267.0
 texture = ExtResource("4")
+expand_mode = 5
 appear_tag = "peer"
 disappear_tag = "enter"
 

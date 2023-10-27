@@ -30,7 +30,6 @@ func extract_text_and_modifiers(text: String):
 	var button_text_minus_mods
 	
 	if "->" in text:
-		print("splitting link")
 		var text_array = text.split("->")
 		link_text = text_array[0]
 		next_passage_name = text_array[1]

@@ -241,6 +241,10 @@ func _load_paragraph(paragraph):
 
 
 func _add_buttons():
+	# Amelie char texture loaded upon buttons being added
+	if len(self.link_names) > 1:
+		emit_signal("change_char", "Amelie", "neutral")
+
 	for i in range(len(self.link_names)):
 		var button_text = self.link_names[i]
 		var display_button = true

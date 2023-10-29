@@ -1,33 +1,33 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=20 format=3 uid="uid://go7a0mpd08ww"]
 
-[ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
-[ext_resource path="res://conversation_pov/ConvoSoundEffect.tscn" type="PackedScene" id=2]
-[ext_resource path="res://maternity/poisoning_convo/crash.wav" type="AudioStream" id=3]
-[ext_resource path="res://sounds/effects/thunk.wav" type="AudioStream" id=4]
-[ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=5]
-[ext_resource path="res://maternity/poisoning_convo/julia_leg_headdown.png" type="Texture2D" id=6]
-[ext_resource path="res://maternity/poisoning_convo/julia_onground_dream.png" type="Texture2D" id=7]
-[ext_resource path="res://maternity/poisoning_convo/julia_head_kiss.png" type="Texture2D" id=8]
-[ext_resource path="res://maternity/poisoning_convo/julia_leg_noeyes.png" type="Texture2D" id=9]
-[ext_resource path="res://maternity/poisoning_convo/julia_corner_dream.png" type="Texture2D" id=10]
-[ext_resource path="res://maternity/inspection_room_convo/ThornBG.gd" type="Script" id=11]
-[ext_resource path="res://maternity/inspection_room_convo/ring_of_spikes.png" type="Texture2D" id=12]
-[ext_resource path="res://sounds/effects/switch_flip_slow.wav" type="AudioStream" id=13]
-[ext_resource path="res://sounds/effects/stabbed_watermelon.wav" type="AudioStream" id=14]
-[ext_resource path="res://sounds/effects/switch_flip_fast.wav" type="AudioStream" id=15]
-[ext_resource path="res://sounds/effects/locked_door.wav" type="AudioStream" id=16]
-[ext_resource path="res://sounds/effects/punch.wav" type="AudioStream" id=17]
-[ext_resource path="res://sounds/effects/body_fall.wav" type="AudioStream" id=18]
-[ext_resource path="res://sounds/effects/recoil.wav" type="AudioStream" id=19]
+[ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://conversation_pov/ConvoSoundEffect.tscn" id="2"]
+[ext_resource type="AudioStream" uid="uid://dprbiwgfs7piv" path="res://maternity/poisoning_convo/crash.wav" id="3"]
+[ext_resource type="AudioStream" uid="uid://0jg0ovbon6y" path="res://sounds/effects/thunk.wav" id="4"]
+[ext_resource type="PackedScene" uid="uid://gent118w7jqg" path="res://conversation_pov/CharacterRect.tscn" id="5"]
+[ext_resource type="Texture2D" uid="uid://bk4b7pxxqinm3" path="res://maternity/poisoning_convo/julia_leg_headdown.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://0e6uu62ktpd7" path="res://maternity/poisoning_convo/julia_onground_dream.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://bjx3mnh4mtkab" path="res://maternity/poisoning_convo/julia_head_kiss.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://dc7a88vywwjs8" path="res://maternity/poisoning_convo/julia_leg_noeyes.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cfx265mdq1yt1" path="res://maternity/poisoning_convo/julia_corner_dream.png" id="10"]
+[ext_resource type="Script" path="res://maternity/inspection_room_convo/ThornBG.gd" id="11"]
+[ext_resource type="Texture2D" uid="uid://lecssy0flbek" path="res://maternity/inspection_room_convo/ring_of_spikes.png" id="12"]
+[ext_resource type="AudioStream" uid="uid://c1kei8apftl3m" path="res://sounds/effects/switch_flip_slow.wav" id="13"]
+[ext_resource type="AudioStream" uid="uid://cth0q32ooes2l" path="res://sounds/effects/stabbed_watermelon.wav" id="14"]
+[ext_resource type="AudioStream" uid="uid://3jv0h8kwq51s" path="res://sounds/effects/switch_flip_fast.wav" id="15"]
+[ext_resource type="AudioStream" uid="uid://b1rdgy8qbe3ih" path="res://sounds/effects/locked_door.wav" id="16"]
+[ext_resource type="AudioStream" uid="uid://cbyc015c05yc0" path="res://sounds/effects/punch.wav" id="17"]
+[ext_resource type="AudioStream" uid="uid://bs3yl6fcxl2jv" path="res://sounds/effects/body_fall.wav" id="18"]
+[ext_resource type="AudioStream" uid="uid://2yaf36wtu3su" path="res://sounds/effects/recoil.wav" id="19"]
 
 [node name="poisoning_convo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Convo" parent="." instance=ExtResource( 1 )]
+[node name="Convo" parent="." instance=ExtResource("1")]
+layout_mode = 1
 scriptPath = "res://maternity/poisoning_convo/poisoning_convo.json"
 backgroundPath = "res://maternity/poisoning_convo/abor_room_dream_0.png"
 sliverPath = "res://maternity/poisoning_convo/abor_room_sliver.png"
@@ -64,112 +64,110 @@ fade_tag_dict_sliver = {
 mem_to_remove = "Julia"
 song = "loop_injectable_2"
 
-[node name="ConvoSoundEffect" parent="." instance=ExtResource( 2 )]
-stream = ExtResource( 3 )
+[node name="ConvoSoundEffect" parent="." instance=ExtResource("2")]
+stream = ExtResource("3")
 volume_db = -10.0
 tag_to_play = "fall"
 
-[node name="ConvoSoundEffect2" parent="." instance=ExtResource( 2 )]
-stream = ExtResource( 4 )
+[node name="ConvoSoundEffect2" parent="." instance=ExtResource("2")]
+stream = ExtResource("4")
 tag_to_play = "thunk"
 
-[node name="StabbedSoundEffect" parent="." instance=ExtResource( 2 )]
-stream = ExtResource( 14 )
+[node name="StabbedSoundEffect" parent="." instance=ExtResource("2")]
+stream = ExtResource("14")
 volume_db = -9.416
 tag_to_play = "stabbed"
 
-[node name="LockedDoor" parent="." instance=ExtResource( 2 )]
-stream = ExtResource( 16 )
+[node name="LockedDoor" parent="." instance=ExtResource("2")]
+stream = ExtResource("16")
 tag_to_play = "door_locked"
 
-[node name="Kick" parent="." instance=ExtResource( 2 )]
-stream = ExtResource( 17 )
+[node name="Kick" parent="." instance=ExtResource("2")]
+stream = ExtResource("17")
 tag_to_play = "kick"
 
-[node name="BodyFall" parent="." instance=ExtResource( 2 )]
-stream = ExtResource( 18 )
+[node name="BodyFall" parent="." instance=ExtResource("2")]
+stream = ExtResource("18")
 tag_to_play = "body_fall"
 
-[node name="Recoil" parent="." instance=ExtResource( 2 )]
-stream = ExtResource( 19 )
+[node name="Recoil" parent="." instance=ExtResource("2")]
+stream = ExtResource("19")
 tag_to_play = "recoil"
 
-[node name="JuliaCorner" parent="." instance=ExtResource( 5 )]
+[node name="JuliaCorner" parent="." instance=ExtResource("5")]
+layout_mode = 0
 offset_left = 1180.39
 offset_top = 1208.09
 offset_right = 2137.39
 offset_bottom = 2165.09
-texture = ExtResource( 10 )
+texture = ExtResource("10")
 appear_tag = "corner"
 disappear_tag = "door"
 
-[node name="JuliaCorner2" parent="." instance=ExtResource( 5 )]
+[node name="JuliaCorner2" parent="." instance=ExtResource("5")]
+layout_mode = 0
 offset_left = 1180.39
 offset_top = 1208.09
 offset_right = 2137.39
 offset_bottom = 2165.09
-texture = ExtResource( 10 )
+texture = ExtResource("10")
 appear_tag = "corner2"
 disappear_tag = "tugging"
 
-[node name="JuliaNoEyes" parent="." instance=ExtResource( 5 )]
+[node name="JuliaNoEyes" parent="." instance=ExtResource("5")]
+layout_mode = 0
 offset_left = 391.476
 offset_top = 444.476
 offset_right = 1827.48
 offset_bottom = 2889.48
-texture = ExtResource( 9 )
+texture = ExtResource("9")
 appear_tag = "noeyes"
 disappear_tag = "floor_remove"
 
-[node name="JuliaLegHeaddown" parent="." instance=ExtResource( 5 )]
+[node name="JuliaLegHeaddown" parent="." instance=ExtResource("5")]
+layout_mode = 0
 offset_left = 654.903
 offset_top = 51.2378
 offset_right = 1993.9
 offset_bottom = 2241.24
-texture = ExtResource( 6 )
+texture = ExtResource("6")
 appear_tag = "tugging"
 disappear_tag = "noeyes"
 
-[node name="JuliaOnGround" parent="." instance=ExtResource( 5 )]
+[node name="JuliaOnGround" parent="." instance=ExtResource("5")]
+layout_mode = 0
 offset_left = 392.0
 offset_top = 1305.0
 offset_right = 1613.0
 offset_bottom = 2372.0
-texture = ExtResource( 7 )
+texture = ExtResource("7")
 appear_tag = "onground"
 disappear_tag = "ceiling"
 
-[node name="JuliaKiss" parent="." instance=ExtResource( 5 )]
+[node name="JuliaKiss" parent="." instance=ExtResource("5")]
+layout_mode = 0
 offset_left = -960.097
 offset_top = 203.524
 offset_right = 1467.9
 offset_bottom = 2614.52
-texture = ExtResource( 8 )
+texture = ExtResource("8")
 appear_tag = "kiss"
 disappear_tag = "onground"
 
 [node name="ThornBG" type="TextureRect" parent="." groups=["CharacterRects", "DynamicBGs"]]
-modulate = Color( 1, 1, 1, 0 )
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
 offset_left = -6.0
 offset_right = 2310.0
 offset_bottom = 2178.0
 mouse_filter = 2
-texture = ExtResource( 12 )
-script = ExtResource( 11 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="TweenAppear" type="Tween" parent="ThornBG"]
-
-[node name="TweenDisappear" type="Tween" parent="ThornBG"]
+texture = ExtResource("12")
+script = ExtResource("11")
 
 [node name="SwitchFlipSlow" type="AudioStreamPlayer" parent="ThornBG"]
-stream = ExtResource( 13 )
+stream = ExtResource("13")
 volume_db = -15.0
 
 [node name="SwitchFlipFast" type="AudioStreamPlayer" parent="ThornBG"]
-stream = ExtResource( 15 )
+stream = ExtResource("15")
 volume_db = -15.0
-
-[connection signal="tween_completed" from="ThornBG/TweenAppear" to="ThornBG" method="_on_TweenAppear_tween_completed"]

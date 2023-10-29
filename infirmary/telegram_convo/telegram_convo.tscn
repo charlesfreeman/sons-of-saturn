@@ -1,16 +1,16 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://bkel7u0yuhv1i"]
 
-[ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
-[ext_resource path="res://conversation_pov/Documents.tscn" type="PackedScene" id=2]
+[ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://kxdt3256877o" path="res://conversation_pov/Documents.tscn" id="2"]
 
 [node name="telegram_convo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Convo" parent="." instance=ExtResource( 1 )]
+[node name="Convo" parent="." instance=ExtResource("1")]
+layout_mode = 1
 scriptPath = "res://infirmary/telegram_convo/telegram_convo.json"
 backgroundPath = "res://infirmary/telegram_convo/tann_office_crop_2300x2160.png"
 sliverPath = "res://infirmary/telegram_convo/tann_office_sliver.png"
@@ -18,5 +18,10 @@ nextLocation = "res://infirmary/tann_office/tann_office.tscn"
 prog_flag = "tann_office_convo"
 song = "soft_wind"
 
-[node name="Documents" parent="." instance=ExtResource( 2 )]
-docs = [ "res://infirmary/telegram_convo/Telegram1.png", "res://infirmary/telegram_convo/Telegram2.png", "res://infirmary/telegram_convo/Telegram3.png", "res://infirmary/telegram_convo/Telegram4.png", "res://infirmary/telegram_convo/Telegram5.png", "res://infirmary/telegram_convo/Telegram6.png", "res://infirmary/telegram_convo/Telegram7.png" ]
+[node name="Documents" parent="." instance=ExtResource("2")]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 203.0
+offset_right = 1893.0
+offset_bottom = 1963.0
+docs = ["res://infirmary/telegram_convo/Telegram1.png", "res://infirmary/telegram_convo/Telegram2.png", "res://infirmary/telegram_convo/Telegram3.png", "res://infirmary/telegram_convo/Telegram4.png", "res://infirmary/telegram_convo/Telegram5.png", "res://infirmary/telegram_convo/Telegram6.png", "res://infirmary/telegram_convo/Telegram7.png"]

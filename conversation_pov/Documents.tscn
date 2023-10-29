@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://kxdt3256877o"]
 
-[ext_resource path="res://conversation_pov/Documents.gd" type="Script" id=1]
-[ext_resource path="res://sounds/effects/paper_flip.wav" type="AudioStream" id=2]
+[ext_resource type="Script" path="res://conversation_pov/Documents.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://yd8pt4sm1goq" path="res://sounds/effects/paper_flip.wav" id="2"]
 
 [node name="Documents" type="TextureRect"]
 offset_left = 130.0
@@ -9,13 +9,10 @@ offset_top = 130.0
 offset_right = 1766.0
 offset_bottom = 2030.0
 mouse_filter = 2
-expand = true
-stretch_mode = 6
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+expand_mode = 2
+stretch_mode = 5
+script = ExtResource("1")
 
 [node name="PageFlip" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 2 )
+stream = ExtResource("2")
 volume_db = -20.0

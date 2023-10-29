@@ -27,8 +27,8 @@ texture = ExtResource("2")
 script = ExtResource("1")
 scene_up = "res://maternity/crib_overlook/crib_overlook.tscn"
 scene_down = "res://maternity/right_curved_hallway/right_curved_hallway.tscn"
-req_flag_right = "wiggly_reunite"
-req_flag_left = "wiggly_reunite"
+req_flag_right = "False"
+req_flag_left = "False"
 position_char = Vector2(1535, 1218)
 rotation_char = 90
 

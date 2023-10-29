@@ -471,12 +471,11 @@
       "name": "p:(Action) Confront Julia.",
       "pid": "25",
       "position": {
-        "x": "1535",
+        "x": "1534",
         "y": "2322"
       },
       "tags": [
         "corner2",
-        "corner",
         "afuming"
       ]
     },

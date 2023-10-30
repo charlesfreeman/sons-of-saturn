@@ -10,6 +10,7 @@ var soundscape = "None"
 var soundscapes = []
 var dbrightness = 0.6
 var cursor = "null"
+var font_size = 48
 
 var prog_flags = {
 	"overgrowth_pink_hallway" : false,

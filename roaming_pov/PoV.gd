@@ -77,7 +77,6 @@ func _ready():
 	# get_parent().set_pos(position)
 	
 	Global.change_song(song)
-	Global.change_soundscape(soundscape)
 	
 	for node in get_tree().get_nodes_in_group("popups"):
 		node.connect("disable_buttons", Callable(self, "_disable_buttons"))

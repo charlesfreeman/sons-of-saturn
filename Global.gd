@@ -60,13 +60,26 @@ var inventory = ["Jasper"]
 
 
 func _ready():
-	for c in Mds.get_children():
-		soundscapes.append(c.get_name())
+	print("Mds soundscapes (ready)")
+#	for c in Mds.get_childrent():
+#		soundscapes.append(c.get_name())
 
 func set_cursor(new_cursor):
 	Input.set_custom_mouse_cursor(cursors[new_cursor])
 	cursor = new_cursor
 	
+# for resetting the cursor upon exiting ClickToSearch and PopUps (simply 
+# setting null overwrites the cursor of popups in some cases)
+func search_release_cursor():
+	if cursor == "mag_glass":
+		set_cursor("null")
+
+# same but for ClickToEnter
+func enter_release_cursor():
+	if cursor.begins_with("pointer"):
+		set_cursor("null")
+
+# for the pause screen in roaming_pov
 func pause_cursor():
 	Input.set_custom_mouse_cursor(null)
 	

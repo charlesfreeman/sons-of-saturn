@@ -1,7 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://b52gtlhb1qrtv"]
+[gd_scene load_steps=11 format=3 uid="uid://b52gtlhb1qrtv"]
 
 [ext_resource type="Script" path="res://roaming_pov/PopUp.gd" id="2"]
-[ext_resource type="FontFile" path="res://fonts/PTSerifReg96.tres" id="3"]
+[ext_resource type="FontFile" uid="uid://cxllua8qit72w" path="res://fonts/PTSerif-Regular.ttf" id="3_t76fq"]
 [ext_resource type="AudioStream" uid="uid://dgic7pgxuruex" path="res://dialogue_system/sounds/typewriter_click_5.wav" id="4"]
 [ext_resource type="PackedScene" uid="uid://ck0qxjjpqb3lf" path="res://sounds/RandomSoundContainer.tscn" id="4_j7yhk"]
 [ext_resource type="AudioStream" uid="uid://bv7r5ekjvfdrp" path="res://dialogue_system/sounds/typewriter_click_1.wav" id="5"]
@@ -10,7 +10,13 @@
 [ext_resource type="AudioStream" uid="uid://vvo127q5iry3" path="res://dialogue_system/sounds/typewriter_click_3.wav" id="8"]
 
 [sub_resource type="RectangleShape2D" id="2"]
-size = Vector2(1430.73, 1068.51)
+size = Vector2(2797, 2103)
+
+[sub_resource type="LabelSettings" id="LabelSettings_txwts"]
+font = ExtResource("3_t76fq")
+font_size = 96
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
 
 [node name="PopUp" type="Area2D" groups=["popups"]]
 script = ExtResource("2")
@@ -18,10 +24,11 @@ script = ExtResource("2")
 [node name="FullRect" type="Area2D" parent="."]
 modulate = Color(1, 1, 1, 0)
 z_index = -2
+input_pickable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FullRect"]
 z_index = 2
-position = Vector2(1444.46, 1078.03)
+position = Vector2(1418.5, 1084.5)
 shape = SubResource("2")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
@@ -43,7 +50,7 @@ size_flags_vertical = 3
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer/MarginContainer"]
 layout_mode = 2
 expand_mode = 1
-stretch_mode = 6
+stretch_mode = 5
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
 layout_mode = 2
@@ -69,7 +76,13 @@ theme_override_constants/separation = 150
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("3")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_constants/line_spacing = 5
+theme_override_fonts/font = ExtResource("3_t76fq")
+theme_override_font_sizes/font_size = 96
+label_settings = SubResource("LabelSettings_txwts")
+autowrap_mode = 3
 
 [node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer/LabelContainer"]
 layout_mode = 2
@@ -108,6 +121,7 @@ volume_db = -30.0
 stream = ExtResource("4")
 volume_db = -30.0
 
+[connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="mouse_entered" from="." to="." method="_on_OnClickPopUp_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_OnClickPopUp_mouse_exited"]
 [connection signal="input_event" from="FullRect" to="." method="_on_FullRect_input_event"]

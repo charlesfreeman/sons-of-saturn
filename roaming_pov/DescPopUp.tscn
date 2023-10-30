@@ -1,6 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://5dc1iq5ulpnt"]
+[gd_scene load_steps=11 format=3 uid="uid://5dc1iq5ulpnt"]
 
-[ext_resource type="FontFile" path="res://fonts/PTSerifReg96.tres" id="2"]
+[ext_resource type="FontFile" uid="uid://cxllua8qit72w" path="res://fonts/PTSerif-Regular.ttf" id="2_0betb"]
 [ext_resource type="Script" path="res://roaming_pov/DescPopUp.gd" id="3"]
 [ext_resource type="PackedScene" uid="uid://ck0qxjjpqb3lf" path="res://sounds/RandomSoundContainer.tscn" id="3_6oh82"]
 [ext_resource type="AudioStream" uid="uid://dgic7pgxuruex" path="res://dialogue_system/sounds/typewriter_click_5.wav" id="4"]
@@ -9,8 +9,15 @@
 [ext_resource type="AudioStream" uid="uid://t4s0pj6pfavt" path="res://dialogue_system/sounds/typewriter_click_4.wav" id="7"]
 [ext_resource type="AudioStream" uid="uid://vvo127q5iry3" path="res://dialogue_system/sounds/typewriter_click_3.wav" id="8"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_mhcfv"]
+line_spacing = 30.0
+font = ExtResource("2_0betb")
+font_size = 96
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+
 [sub_resource type="RectangleShape2D" id="2"]
-size = Vector2(1430.73, 1068.51)
+size = Vector2(2776, 2109)
 
 [node name="DescPopUp" type="Area2D" groups=["desc_popups", "popups"]]
 z_index = 1
@@ -36,7 +43,7 @@ mouse_filter = 2
 [node name="LabelContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 mouse_filter = 2
-theme_override_constants/separation = 200
+theme_override_constants/separation = 235
 
 [node name="Control" type="Control" parent="VBoxContainer/LabelContainer"]
 layout_mode = 2
@@ -46,7 +53,12 @@ mouse_filter = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("2")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("2_0betb")
+theme_override_font_sizes/font_size = 96
+label_settings = SubResource("LabelSettings_mhcfv")
+autowrap_mode = 3
 
 [node name="Control2" type="Control" parent="VBoxContainer/LabelContainer"]
 layout_mode = 2
@@ -62,7 +74,7 @@ z_index = -2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FullRect"]
 z_index = 2
-position = Vector2(1444.46, 1078.03)
+position = Vector2(1413, 1073.5)
 shape = SubResource("2")
 
 [node name="TypewriterSounds" parent="." instance=ExtResource("3_6oh82")]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cn7txqa5rdktw"]
 
-[ext_resource type="Texture2D" uid="uid://d2vue17mxphhg" path="res://title_screen/sons_of_saturn_title_screen.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://oi8yvg5xpm5" path="res://title_screen/title_screen.png" id="1_rlibn"]
 [ext_resource type="PackedScene" uid="uid://brsmqtvugbox" path="res://title_screen/TitleMenuOpt.tscn" id="2"]
 [ext_resource type="Script" path="res://title_screen/TitleScreen.gd" id="3"]
 
@@ -11,7 +11,7 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme = SubResource("1")
-texture = ExtResource("1")
+texture = ExtResource("1_rlibn")
 script = ExtResource("3")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]

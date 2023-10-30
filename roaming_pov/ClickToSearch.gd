@@ -18,26 +18,25 @@ func _on_ClickToSearch_mouse_entered():
 
 func _on_ClickToSearch_mouse_exited():
 	in_area = false
-	Global.set_cursor("null")
+	Global.search_release_cursor()
+	
+	
+func _change_scene():
+	var options = SceneManager.create_options()
+	var general_options = SceneManager.create_general_options()
+	if alt_next_scene == "None" or not Global.get_prog_flag(alt_req_prog_flag):
+		SceneManager.change_scene(next_scene, options, options, general_options)
+	else:
+		SceneManager.change_scene(alt_next_scene, options, options, general_options)
 
 
 func _on_ClickToSearch_input_event(viewport, event, shape_idx):
-	if event is InputEventMouseButton \
-		and event.button_index == MOUSE_BUTTON_LEFT \
-		and event.pressed:
-			var options = SceneManager.create_options()
-			var general_options = SceneManager.create_general_options()
-			if alt_next_scene == "None" or not Global.get_prog_flag(alt_req_prog_flag):
-				SceneManager.change_scene(next_scene, options, options, general_options)
-			else:
-				SceneManager.change_scene(alt_next_scene, options, options, general_options)
+	if (event is InputEventMouseButton \
+	and event.button_index == MOUSE_BUTTON_LEFT \
+	and event.pressed):
+		self._change_scene()
 
 
 func _input(event):
 	if Input.is_action_pressed("ui_accept") and in_area:
-		var options = SceneManager.create_options()
-		var general_options = SceneManager.create_general_options()
-		if alt_next_scene == "None" or not Global.get_prog_flag(alt_req_prog_flag):
-			SceneManager.change_scene(next_scene, options, options, general_options)
-		else:
-			SceneManager.change_scene(alt_next_scene, options, options, general_options)
+		self._change_scene()

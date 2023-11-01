@@ -25,6 +25,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Convo" parent="." instance=ExtResource("1")]
 layout_mode = 1
@@ -39,6 +41,7 @@ fade_tag_dict = {
 "chair": "res://maternity/poisoning_convo/chair_legs_dream_2300x2160.png",
 "closer": "res://maternity/poisoning_convo/abor_room_dream_2.png",
 "corner": "res://maternity/poisoning_convo/dream_corner_2300x2160.png",
+"corner2": "res://maternity/poisoning_convo/dream_corner_2300x2160.png",
 "door": "res://maternity/poisoning_convo/door_abor_dream_2300x2160.png",
 "fall": "res://maternity/poisoning_convo/ampoules_dream.png",
 "hole": "res://maternity/poisoning_convo/wiggly_peering_dream.png",
@@ -53,6 +56,7 @@ fade_tag_dict_sliver = {
 "chair": "res://maternity/poisoning_convo/chair_legs_dream_sliver.png",
 "closer": "res://maternity/poisoning_convo/abor_room_sliver.png",
 "corner": "res://maternity/poisoning_convo/dream_corner_sliver.png",
+"corner2": "res://maternity/poisoning_convo/dream_corner_sliver.png",
 "door": "res://maternity/poisoning_convo/door_abor_dream_sliver.png",
 "fall": "res://maternity/poisoning_convo/ampoules_dream_sliver.png",
 "hole": "res://maternity/poisoning_convo/wiggly_peering_dream_sliver.png",

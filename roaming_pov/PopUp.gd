@@ -55,16 +55,15 @@ var char_path_dict = {
 	"Jasper" : jasper_profiles,
 }
 
-var in_clickable_area = false
 var popup_done = false
 var index = 0
 var characters_array = []
 var emotions_array = []
 var text_array = []
 var all_in_party = true
-var enabled = true
 var perm_disabled = false
 var popup_visible = false
+var in_area = false
 
 @export var popup_on_entry = false
 @export var popup_text = [
@@ -85,6 +84,7 @@ var popup_visible = false
 @onready var label = $HBoxContainer/VBoxContainer/LabelContainer/Label
 @onready var texture = $HBoxContainer/MarginContainer/TextureRect
 @onready var typewriter = $TypewriterSounds
+@onready var full_rect = $FullRect
 
 signal disable_buttons
 signal enable_buttons
@@ -134,12 +134,24 @@ func _on_FullRect_input_event(_viewport, event, _shape_idx):
 
 func _input(event):
 	if Input.is_action_pressed("ui_accept"):
-		self.progress_popup()
-#
+		if in_area:
+			advance_popup()
+		else:
+			progress_popup()
 		
+
+func _on_input_event(_viewport, event, _shape_idx):
+	if event is InputEventMouseButton \
+	and event.button_index == MOUSE_BUTTON_LEFT \
+	and event.pressed:
+		if not self.perm_disabled:
+			advance_popup()
+
+
 func progress_popup():
 	if all_in_party:
 		if self.popup_done:
+			full_rect.input_pickable = false
 			if prog_flag != "None":
 				Global.flip_prog_flag(prog_flag)
 				if single_use:
@@ -151,8 +163,10 @@ func progress_popup():
 			emit_signal("enable_buttons")
 			if diff_background:
 				emit_signal("swap_bg_signal")
-		elif (self.in_clickable_area and self.enabled and not self.perm_disabled) or self.index != 0:
+				await get_tree().create_timer(0.8).timeout
+		elif self.index != 0:
 			advance_popup()
+
 
 func advance_popup():
 	get_tree().call_group("click_areas", "disable")
@@ -165,6 +179,9 @@ func advance_popup():
 		if diff_background:
 			emit_signal("swap_bg_signal")
 	self._show_next_text()
+	if diff_background and self.index == 0:
+		await get_tree().create_timer(0.8).timeout
+	full_rect.input_pickable = true
 
 
 func _check_in_party():
@@ -198,20 +215,21 @@ func _make_visible():
 
 
 func _on_OnClickPopUp_mouse_entered():
-	if self.enabled and not self.perm_disabled:
-		self.in_clickable_area = true
+	if not self.perm_disabled:
+		in_area = true
 		Global.set_cursor("mag_glass")
 
 
 func _on_OnClickPopUp_mouse_exited():
-	self.in_clickable_area = false
-	if self.enabled and not self.perm_disabled:
-		Global.set_cursor("null")
+	in_area = false
+	Global.search_release_cursor()
 		
 		
 func enable():
-	self.enabled = true
+	self.input_pickable = true
 		
 		
 func disable():
-	self.enabled = false
+	self.input_pickable = false
+
+

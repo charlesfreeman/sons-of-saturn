@@ -1,15 +1,15 @@
 extends Area2D
 
-var in_clickable_area = false
 var popup_done = false
 var index = 0
-var enabled = true
 var perm_disabled = false
 var popup_visible = false
+var in_area = false
 
 @onready var popup = $VBoxContainer
 @onready var label = $VBoxContainer/LabelContainer/Label
 @onready var typewriter = $TypewriterSounds
+@onready var full_rect = $FullRect
 
 @export var popup_on_entry = false
 @export var popup_text = ["example text for popup", "example 2"]
@@ -46,31 +46,44 @@ func _ready():
 func _on_FullRect_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton \
 	and event.button_index == MOUSE_BUTTON_LEFT \
-	and event.pressed or Input.is_action_pressed("ui_up"):
+	and event.pressed:
 		progress_popup()
 		
 
 func _input(event):
 	if Input.is_action_pressed("ui_accept"):
-		self.progress_popup()
+		if in_area:
+			advance_popup()
+		else:
+			progress_popup()
+
+
+func _on_input_event(_viewport, event, _shape_idx):
+	if event is InputEventMouseButton \
+	and event.button_index == MOUSE_BUTTON_LEFT \
+	and event.pressed:
+		if not self.perm_disabled:
+			advance_popup()
 
 
 func progress_popup():
 	if self.popup_done:
+		Global.set_cursor("null")
+		full_rect.input_pickable = false
 		if prog_flag != "None":
 			Global.flip_prog_flag(prog_flag)
 			if single_use:
 				self.perm_disabled = true
 		popup.hide()
 		self.popup_done = false
-		Global.set_cursor("null")
-		get_tree().call_group("click_areas", "enable")
-		emit_signal("enable_buttons")
 		if diff_background:
 			emit_signal("swap_bg_signal")
+			await get_tree().create_timer(0.8).timeout
 		if new_item != "None":
 			emit_signal("new_item_signal", new_item)
-	elif (self.in_clickable_area and self.enabled and not self.perm_disabled) or self.index != 0:
+		get_tree().call_group("click_areas", "enable")
+		emit_signal("enable_buttons")
+	elif self.index != 0:
 		advance_popup()
 
 
@@ -85,6 +98,9 @@ func advance_popup():
 		if diff_background:
 			emit_signal("swap_bg_signal")
 	self._show_next_text()
+	if diff_background and self.index == 0:
+		await get_tree().create_timer(0.8).timeout
+	full_rect.input_pickable = true
 
 
 func _show_next_text():
@@ -107,22 +123,21 @@ func _make_visible():
 
 
 func _on_OnClickPopUp_mouse_entered():
-	if self.enabled and not self.perm_disabled:
-		self.in_clickable_area = true
+	if not self.perm_disabled:
+		self.in_area = true
 		Global.set_cursor("mag_glass")
 
 
 func _on_OnClickPopUp_mouse_exited():
-	self.in_clickable_area = false
-	if self.enabled and not self.perm_disabled:
-		Global.set_cursor("null")
+	self.in_area = false
+	Global.search_release_cursor()
 		
 		
 func enable():
-	print("enabling")
-	self.enabled = true
+	self.input_pickable = true
 		
 		
 func disable():
-	print("disabling")
-	self.enabled = false
+	self.input_pickable = false
+
+

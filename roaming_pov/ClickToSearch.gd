@@ -8,7 +8,7 @@ var in_area = false
 
 
 func _ready():
-	pass
+	add_to_group("click_areas")
 
 
 func _on_ClickToSearch_mouse_entered():
@@ -40,3 +40,12 @@ func _on_ClickToSearch_input_event(viewport, event, shape_idx):
 func _input(event):
 	if Input.is_action_pressed("ui_accept") and in_area:
 		self._change_scene()
+
+
+func enable():
+	self.input_pickable = true
+		
+		
+func disable():
+	self.input_pickable = false
+	

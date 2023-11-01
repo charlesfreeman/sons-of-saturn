@@ -13,8 +13,12 @@ config_version=5
 config/name="Sons of Saturn"
 run/main_scene="res://title_screen/TitleScreen.tscn"
 config/features=PackedStringArray("4.1")
+boot_splash/image="res://title_screen/SoS_logo_clear_bg.png"
+boot_splash/fullsize=false
 config/icon="res://artwork/SoSHeader.png"
-config/windows_native_icon="res://images/SoSHeader.ico"
+config/macos_native_icon="res://artwork/icon.icns"
+config/windows_native_icon="res://artwork/SoSHeader.ico"
+boot_splash/minimum_display_time=2000
 
 [autoload]
 
@@ -27,7 +31,7 @@ TrackManager="*res://sounds/TrackManager.tscn"
 
 window/size/viewport_width=3840
 window/size/viewport_height=2160
-window/stretch/mode="viewport"
+window/stretch/mode="canvas_items"
 window/size/fullscreen=true
 
 [editor_plugins]

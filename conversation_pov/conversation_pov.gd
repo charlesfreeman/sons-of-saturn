@@ -16,7 +16,6 @@ extends Control
 @export var mem_to_remove = ""
 @export var prog_flag = "None"
 @export var song = "None"
-@export var soundscape = "None"
 @export var new_item = "None"
 @export var remove_item = "None"
 # if true, checks the value of prog_flag to see if played before.
@@ -117,7 +116,6 @@ signal tag(tag)
 func _ready():
 	Global.set_cursor("null")
 	Global.change_song(song)
-	Global.change_soundscape(soundscape)
 	Global.set_scene_type(get_tree().current_scene.name)
 	dialogue_sys.set_script_path(scriptPath)
 	dialogue_sys.set_next_scene_path(nextScenePath)
@@ -265,7 +263,6 @@ func _on_Resume_pressed():
 
 
 func _on_Save_pressed():
-	print("saving convo")
 	save.save()
 	Global.save_game()
 

@@ -13,7 +13,6 @@ const continue_text = "C->"
 @onready var scroll_bar = scroll_container.get_v_scroll_bar()
 @onready var typewriter = $VBoxContainer/TypewriterSounds
 var dialogueOption = load("res://dialogue_system/DialogueOption.tscn")
-var continueButton = load("res://dialogue_system/ContinueButton.tscn")
 var script_path = "res://dialogue_system/conversations/test_scene.json"
 var next_scene = "roaming_pov"
 var max_scroll_length = 0

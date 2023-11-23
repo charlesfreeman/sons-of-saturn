@@ -126,7 +126,7 @@
       }
     },
     {
-      "text": "Wiggly::...\n\nWiggly::Miss.  There wasn't anyone else with you.\n\nWiggly::Not in the hallway, and not in the room.\n\nJasper::How could he have missed her?  She was right there.  He must have not been paying attention.\n\n[[p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.]]\n[[p:I must have taken a big blow to the head.  I remember a woman, who said her name was Julia, leading me to that room.->p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.]]",
+      "text": "Wiggly::...\n\nWiggly::Miss.  There wasn't anyone else with you.\n\nWiggly::Not in the hallway, and not in the room.\n\nJasper,head_tilted::How could he have missed her?  She was right there.  He must have not been paying attention.\n\n[[p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.]]\n[[p:I must have taken a big blow to the head.  I remember a woman, who said her name was Julia, leading me to that room.->p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.]]",
       "links": [
         {
           "name": "p:You must have missed her.  She was right behind me in the hallway, and tried restraining me in the room.",
@@ -144,7 +144,10 @@
       "position": {
         "x": "1316",
         "y": "902"
-      }
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
       "text": "Wiggly::...\n\nWiggly::I...see.  This is very bad, miss.  Very serious.\n\nWiggly::This \"Julia\" who's been following you - she's not like you or me.  She's a part of Minerva.  And for whatever reason, she's attached to you.\n\n[[p:How can someone be \"part of Minerva\"?]]\n[[p:Who is \"Julia,\" exactly?->p:How can someone be \"part of Minerva\"?]]",
@@ -195,7 +198,7 @@
       "name": "p:But I still don't understand how?",
       "pid": "10",
       "position": {
-        "x": "1252",
+        "x": "1253",
         "y": "1359"
       }
     },
@@ -242,7 +245,10 @@
       "position": {
         "x": "916",
         "y": "760"
-      }
+      },
+      "tags": [
+        "adisgusted"
+      ]
     },
     {
       "text": "Wiggly::Hmm.  I don't see how that could have happened, but if you say so, miss.\n\n[[C->p:Hey, hey, I hear you.]] ",
@@ -335,7 +341,10 @@
       "position": {
         "x": "1309",
         "y": "1954"
-      }
+      },
+      "tags": [
+        "aguilty"
+      ]
     },
     {
       "text": "Wiggly::I agree.  The tunnels behind me are pretty much a straight shot.  They terminate at a hatch that leads up to one of the maternity ward offices.  I suggest we start heading through them.\n\nWiggly::Are you feeling stable, good to walk?  We can spend a few more minutes recovering here, but I wouldn't want to linger for long.\n\n[[p:I actually feel better than before getting knocked out.]]\n[[p:Trust me, I'm not going to feel any better in a few minutes.->p:I actually feel better than before getting knocked out.]]",
@@ -354,7 +363,7 @@
       "name": "p:Alright.  I don't see any point in wasting time.",
       "pid": "18",
       "position": {
-        "x": "1249",
+        "x": "1250",
         "y": "2232"
       },
       "tags": [
@@ -378,11 +387,16 @@
       }
     },
     {
-      "text": "Wiggly::If you say so, miss.\n\n[[C->Rises]]",
+      "text": "Wiggly::If you say so, miss.\n\nWiggly::Oh, yeah, Miss, did you manage to grab the medicine from the storage closet I mentioned?\n\n[[p:Yes.  It's right here in my shirt pocked.]]\n[[p:I've got your uppers, don't worry.->p:Yes.  It's right here in my shirt pocked.]]",
       "links": [
         {
-          "name": "C",
-          "link": "Rises",
+          "name": "p:Yes.  It's right here in my shirt pocked.",
+          "link": "p:Yes.  It's right here in my shirt pocked.",
+          "pid": "21"
+        },
+        {
+          "name": "p:I've got your uppers, don't worry.",
+          "link": "p:Yes.  It's right here in my shirt pocked.",
           "pid": "21"
         }
       ],
@@ -391,15 +405,106 @@
       "position": {
         "x": "1250",
         "y": "2382"
+      },
+      "tags": [
+        "asad"
+      ]
+    },
+    {
+      "text": "Wiggly immediately reaches forward and confiscates the bottle of stimulants.\n\nWiggly::Oh thank goodness, I was worried there might not be any more of these in this part of the city.\n\nWiggly::You usually have to venture deep into the Core to find this stuff.\n\n[[C->drinks bottle]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "drinks bottle",
+          "pid": "22"
+        }
+      ],
+      "name": "p:Yes.  It's right here in my shirt pocked.",
+      "pid": "21",
+      "position": {
+        "x": "1254",
+        "y": "2536"
+      },
+      "tags": [
+        "looking_at_bottle"
+      ]
+    },
+    {
+      "text": "TAG\n\n[[C->wipes mouth]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "wipes mouth",
+          "pid": "23"
+        }
+      ],
+      "name": "drinks bottle",
+      "pid": "22",
+      "position": {
+        "x": "1246",
+        "y": "2734"
+      },
+      "tags": [
+        "drinks_bottle"
+      ]
+    },
+    {
+      "text": "Wiggly::Alright!  Let's keep going.\n\n[[p:Uh.  Yeah.  Let's do that.]]\n[[p:Did you not leave any for me?]]",
+      "links": [
+        {
+          "name": "p:Uh.  Yeah.  Let's do that.",
+          "link": "p:Uh.  Yeah.  Let's do that.",
+          "pid": "24"
+        },
+        {
+          "name": "p:Did you not leave any for me?",
+          "link": "p:Did you not leave any for me?",
+          "pid": "25"
+        }
+      ],
+      "name": "wipes mouth",
+      "pid": "23",
+      "position": {
+        "x": "1250",
+        "y": "2920"
+      },
+      "tags": [
+        "wipes_mouth",
+        "adisgusted"
+      ]
+    },
+    {
+      "text": "",
+      "name": "p:Uh.  Yeah.  Let's do that.",
+      "pid": "24",
+      "position": {
+        "x": "1179",
+        "y": "3136"
       }
     },
     {
-      "text": "Wiggly rises from his kneeling position and moves behind your chair, perhaps to help you stand if he feels it necessary.\n\nWiggly::I'll be following you, miss.\n\nJasper,head_tilted::Ready when you are.",
-      "name": "Rises",
-      "pid": "21",
+      "text": "Wiggly::Oh, sorry Miss.  I didn't know you wanted any.\n\n[[p:Whatever.  Let's get moving.]]",
+      "links": [
+        {
+          "name": "p:Whatever.  Let's get moving.",
+          "link": "p:Whatever.  Let's get moving.",
+          "pid": "26"
+        }
+      ],
+      "name": "p:Did you not leave any for me?",
+      "pid": "25",
       "position": {
-        "x": "1250",
-        "y": "2532"
+        "x": "1329",
+        "y": "3136"
+      }
+    },
+    {
+      "text": "",
+      "name": "p:Whatever.  Let's get moving.",
+      "pid": "26",
+      "position": {
+        "x": "1329",
+        "y": "3286"
       }
     }
   ],

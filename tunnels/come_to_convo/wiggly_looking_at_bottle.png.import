@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c00m5c1swaqt1"
-path="res://.godot/imported/wiggly_looking_down.png-d9dcc824101e32a52d7f7bba3a45f457.ctex"
+uid="uid://c8ee2piangiqq"
+path="res://.godot/imported/wiggly_looking_at_bottle.png-5b10eea3d89ef18e99cee75bfc000ef8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tunnels/come_to_convo/wiggly_looking_down.png"
-dest_files=["res://.godot/imported/wiggly_looking_down.png-d9dcc824101e32a52d7f7bba3a45f457.ctex"]
+source_file="res://tunnels/come_to_convo/wiggly_looking_at_bottle.png"
+dest_files=["res://.godot/imported/wiggly_looking_at_bottle.png-5b10eea3d89ef18e99cee75bfc000ef8.ctex"]
 
 [params]
 

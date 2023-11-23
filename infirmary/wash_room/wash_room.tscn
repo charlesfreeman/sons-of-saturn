@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://1k5q1uj26qq1" path="res://infirmary/wash_room/wash_room.png" id="2"]
 [ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="3"]
-[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="4"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(757, 572)
@@ -25,6 +25,8 @@ scene_up = "res://infirmary/washing_machine_trio/washing_machine_trio.tscn"
 scene_down = "res://infirmary/top_floor_middle_hallway/top_floor_middle_hallway.tscn"
 alt_scene_up = "res://infirmary/washing_machine_trio_w_julia/washing_machine_trio_w_julia.tscn"
 req_flag_up = "julia_first_convo"
+position_char = Vector2(1785, 775)
+rotation_char = 146
 
 [node name="ClickToEnter" parent="." instance=ExtResource("4")]
 up_path = true

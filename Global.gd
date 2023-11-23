@@ -92,22 +92,6 @@ func change_song(new_song):
 func stop_song():
 	TrackManager.stop()
 	
-func change_soundscape(scape_name):
-	if scape_name == "Stop":
-		if Global.soundscape != "None":
-			self.stop_soundscape()
-	elif scape_name != "None" and scape_name != Global.soundscape:
-		if Global.soundscape != "None":
-			stop_soundscape()
-		var ss = Mds.get_node(scape_name)
-		ss.play()
-		Global.soundscape = scape_name
-			
-func stop_soundscape():
-	var ss = Mds.get_node(Global.soundscape)
-	ss.stop()
-	Global.soundscape = "None"
-
 func flip_prog_flag(flag: String):
 	prog_flags[flag] = true
 	

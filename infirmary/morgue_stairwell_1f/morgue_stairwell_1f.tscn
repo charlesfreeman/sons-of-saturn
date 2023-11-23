@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://buvwjk2jfrjr0" path="res://infirmary/morgue_stairwell_1f/morgue_stairwell_1f.png" id="2"]
-[ext_resource type="PackedScene" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="4"]
 
 [sub_resource type="RectangleShape2D" id="1"]
@@ -51,5 +51,5 @@ position = Vector2(497.5, 1405.44)
 shape = SubResource("3")
 
 [node name="PopUp" parent="." instance=ExtResource("4")]
-popup_text = ["Wiggly,skeptical::The door at the top of this stairwell is locked.", "Wiggly,surprised::If we want to go to the top floor we'll have to use the mirror stairwell in the opposing wing."]
+popup_text = ["Amelie,uncertain::The door at the top of this stairwell is locked.", "Amelie,guilty::We'll have to find another way up."]
 nav_popup_left = true

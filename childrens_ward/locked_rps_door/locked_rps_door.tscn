@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://bv2o1sm63g7co"]
+
+[ext_resource type="Texture2D" uid="uid://crry2w56s80ai" path="res://childrens_ward/locked_rps_door/locked_rps_door.png" id="1_4mjx0"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2_4y82i"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="3_r2o8l"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="4_6a8ea"]
+[ext_resource type="AudioStream" uid="uid://b1rdgy8qbe3ih" path="res://sounds/effects/locked_door.wav" id="5_oegxh"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(502, 716)
+
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(1320, 376)
+
+[node name="PoV" type="TextureRect"]
+offset_right = 2880.0
+offset_bottom = 2160.0
+size_flags_horizontal = 3
+mouse_filter = 2
+texture = ExtResource("1_4mjx0")
+script = ExtResource("2_4y82i")
+req_flag_up = "safe_convo"
+footstep_type_up = "DoorUnlock"
+
+[node name="ClickToEnter" parent="." instance=ExtResource("3_r2o8l")]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2(1430, 952)
+shape = SubResource("1")
+
+[node name="ClickToEnter2" parent="." instance=ExtResource("3_r2o8l")]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2(1427, 1957)
+shape = SubResource("2")
+
+[node name="PopUp" parent="." instance=ExtResource("4_6a8ea")]
+popup_text = ["Amelie,guilty::Door's a little ajar but still locked.  Bolt's bent, hopefully we can still get it to open.", "Jasper,twisted::Stop shaking on the door.  We're just down the hall from Julia..."]
+nav_popup_up = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="PopUp"]
+stream = ExtResource("5_oegxh")

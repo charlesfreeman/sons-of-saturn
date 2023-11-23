@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bn2v3622broua"]
+
+[ext_resource type="Script" path="res://childrens_ward/bull_in_china_shop/bull_in_china_shop.gd" id="1_aa15p"]
+[ext_resource type="Texture2D" uid="uid://br20l34wlvjws" path="res://childrens_ward/bull_in_china_shop/solid_dark_red.png" id="2_bktya"]
+[ext_resource type="AudioStream" uid="uid://07k72v0oir52" path="res://childrens_ward/bull_in_china_shop/fumbling.wav" id="3_5sffo"]
+
+[node name="bull_in_china_shop" type="Node"]
+script = ExtResource("1_aa15p")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bktya")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_5sffo")
+autoplay = true
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

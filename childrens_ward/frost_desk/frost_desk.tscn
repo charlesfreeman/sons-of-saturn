@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://covwbjp0uv1uq"]
+
+[ext_resource type="Texture2D" uid="uid://b400q3tgsyqeo" path="res://childrens_ward/frost_desk/safe_closed_wideview.png" id="1_ry6qx"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2_8bkuq"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="3_0p5bx"]
+[ext_resource type="PackedScene" uid="uid://ci7tcshn6y7qf" path="res://roaming_pov/ClickToSearch.tscn" id="4_wx6bs"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(1476, 224)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6rky7"]
+size = Vector2(929, 592)
+
+[node name="PoV" type="TextureRect"]
+offset_right = 2880.0
+offset_bottom = 2160.0
+size_flags_horizontal = 3
+mouse_filter = 2
+texture = ExtResource("1_ry6qx")
+script = ExtResource("2_8bkuq")
+req_flag_up = "safe_convo"
+footstep_type_up = "DoorUnlock"
+
+[node name="ClickToEnter" parent="." instance=ExtResource("3_0p5bx")]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2(1606, 2037)
+shape = SubResource("1")
+
+[node name="ClickToSearch" parent="." instance=ExtResource("4_wx6bs")]
+next_scene = "res://childrens_ward/frost_convo/frost_convo.tscn"
+alt_next_scene = "safe_convo"
+alt_req_prog_flag = "vera_final_note"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
+position = Vector2(1372.5, 1546)
+shape = SubResource("RectangleShape2D_6rky7")

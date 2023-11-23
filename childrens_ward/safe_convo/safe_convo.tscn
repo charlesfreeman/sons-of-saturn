@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://by44qlvrgwbcb"]
+
+[ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1_tm2b6"]
+[ext_resource type="PackedScene" uid="uid://kxdt3256877o" path="res://conversation_pov/Documents.tscn" id="2_vbty1"]
+
+[node name="safe_convo" type="Node"]
+
+[node name="Convo" parent="." instance=ExtResource("1_tm2b6")]
+scriptPath = "res://childrens_ward/safe_convo/safe_convo.json"
+backgroundPath = "res://childrens_ward/safe_convo/safe_closed_medium_distance.png"
+sliverPath = "res://childrens_ward/safe_convo/safe_medium_distance_sliver.png"
+fade_tag_dict = {
+"open": "res://childrens_ward/safe_convo/safe_open_medium_distance.png",
+"safe_closeup": "res://childrens_ward/safe_convo/safe_open_closeup.png",
+"skeleton_key": "res://childrens_ward/safe_convo/safe_key.png"
+}
+fade_tag_dict_sliver = {
+"open": "res://childrens_ward/safe_convo/safe_medium_distance_sliver.png",
+"safe_closeup": "res://childrens_ward/safe_convo/safe_open_closeup_sliver.png",
+"skeleton_key": "res://childrens_ward/safe_convo/safe_key_sliver.png"
+}
+
+[node name="Documents" parent="." instance=ExtResource("2_vbty1")]
+docs = ["res://childrens_ward/safe_convo/stillbirth_doc.png"]

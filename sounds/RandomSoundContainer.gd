@@ -1,5 +1,11 @@
 extends Node
 
+const name_to_global_map = {
+	"TileFootsteps" : "footsteps_vol",
+	"WetFootsteps" : "footsteps_vol",
+	"TypewriterSounds" : "typewriter_vol",
+}
+
 var vols = []
 var pitches = []
 var soundlist = []
@@ -16,7 +22,11 @@ func _ready():
 
 
 func play(num=0, ran=true):
-	self._get_ransnd().play()
+	var name = self.get_name()
+	var volume_reduction = Global.get(name_to_global_map[name])
+	var song = self._get_ransnd()
+	song.volume_db += volume_reduction
+	song.play()
 	
 	
 func _get_ransnd():

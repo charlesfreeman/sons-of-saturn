@@ -3,7 +3,7 @@
 [ext_resource type="AudioStream" uid="uid://dg22u44d7vj6n" path="res://sounds/tracks/alien_drips.wav" id="1"]
 [ext_resource type="Script" path="res://sounds/track.gd" id="2"]
 
-[node name="AudioPlayer" type="AudioStreamPlayer"]
+[node name="AudioPlayer" type="AudioStreamPlayer" groups=["track"]]
 stream = ExtResource("1")
 volume_db = -11.0
 script = ExtResource("2")

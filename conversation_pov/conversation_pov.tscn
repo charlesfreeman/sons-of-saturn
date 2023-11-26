@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://c8jjh104nr2k3"]
+[gd_scene load_steps=32 format=3 uid="uid://c8jjh104nr2k3"]
 
 [ext_resource type="Script" path="res://conversation_pov/conversation_pov.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://dmeuc34mb41io" path="res://dialogue_system/Dialogue.tscn" id="2"]
@@ -11,6 +11,26 @@
 [ext_resource type="Script" path="res://conversation_pov/Avatar.gd" id="8"]
 [ext_resource type="PackedScene" uid="uid://brsmqtvugbox" path="res://title_screen/TitleMenuOpt.tscn" id="9"]
 [ext_resource type="PackedScene" uid="uid://owqjduquypwg" path="res://roaming_pov/Save.tscn" id="10"]
+[ext_resource type="Script" path="res://conversation_pov/FontSize.gd" id="12_hpmbm"]
+[ext_resource type="FontFile" uid="uid://cxllua8qit72w" path="res://fonts/PTSerif-Regular.ttf" id="12_th77l"]
+[ext_resource type="Script" path="res://conversation_pov/TypewriterVolSlider.gd" id="13_avs6i"]
+[ext_resource type="Script" path="res://conversation_pov/FontNumberLabel.gd" id="13_plprj"]
+[ext_resource type="Script" path="res://conversation_pov/FootstepsVol.gd" id="14_4qdtg"]
+[ext_resource type="Script" path="res://conversation_pov/TRNumLabel.gd" id="14_kevhm"]
+[ext_resource type="StyleBox" uid="uid://cj4qxtuohsewx" path="res://conversation_pov/new_style_box_line.tres" id="14_lgq6u"]
+[ext_resource type="Script" path="res://conversation_pov/SoundEffectVol.gd" id="15_6qkcn"]
+[ext_resource type="Script" path="res://conversation_pov/SoundTrackVol.gd" id="16_j48o0"]
+[ext_resource type="Script" path="res://conversation_pov/Brightness.gd" id="17_abqqi"]
+[ext_resource type="Script" path="res://conversation_pov/Contrast.gd" id="18_l45ce"]
+[ext_resource type="Script" path="res://conversation_pov/FSNumLabel.gd" id="18_xmvvx"]
+[ext_resource type="Script" path="res://conversation_pov/Saturation.gd" id="19_8eje0"]
+[ext_resource type="Script" path="res://conversation_pov/SENumLabel.gd" id="20_slyqq"]
+[ext_resource type="Script" path="res://conversation_pov/STNumLabel.gd" id="22_uywnc"]
+[ext_resource type="Script" path="res://conversation_pov/BrightnessNumLabel.gd" id="24_dia0e"]
+[ext_resource type="Script" path="res://conversation_pov/ContrastNumLabel.gd" id="26_c5c0r"]
+[ext_resource type="Script" path="res://conversation_pov/SaturationNumLabel.gd" id="28_84wlf"]
+[ext_resource type="Script" path="res://conversation_pov/OptionsButton.gd" id="30_3dgtj"]
+[ext_resource type="Script" path="res://conversation_pov/ResetButton.gd" id="31_x6xa6"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -98,8 +118,6 @@ layout_mode = 2
 texture = ExtResource("6")
 expand_mode = 1
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Convo"]
-
 [node name="TransitionScreen" parent="Convo" instance=ExtResource("5")]
 
 [node name="Save" parent="." instance=ExtResource("10")]
@@ -132,13 +150,351 @@ label_text = "Resume"
 layout_mode = 2
 label_text = "Save Game"
 
+[node name="Options" parent="EscOpts/Node2D/Buttons" instance=ExtResource("9")]
+layout_mode = 2
+label_text = "Options"
+
 [node name="Exit" parent="EscOpts/Node2D/Buttons" instance=ExtResource("9")]
 layout_mode = 2
 label_text = "Exit to Title"
+
+[node name="Options" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Node2D" type="Node2D" parent="Options"]
+z_index = 1
+
+[node name="Buttons" type="VBoxContainer" parent="Options/Node2D"]
+offset_left = 412.0
+offset_top = 394.0
+offset_right = 1916.0
+offset_bottom = 1800.0
+
+[node name="FontLabelContainer" type="HBoxContainer" parent="Options/Node2D/Buttons"]
+layout_mode = 2
+
+[node name="FontSizeLabel" type="Label" parent="Options/Node2D/Buttons/FontLabelContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "Font Size: "
+
+[node name="FontNumberLabel" type="Label" parent="Options/Node2D/Buttons/FontLabelContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "48
+"
+script = ExtResource("13_plprj")
+
+[node name="FontSize" type="HSlider" parent="Options/Node2D/Buttons" groups=["option_slider"]]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_styles/slider = ExtResource("14_lgq6u")
+min_value = 24.0
+max_value = 72.0
+value = 48.0
+script = ExtResource("12_hpmbm")
+
+[node name="TRLabelContainer" type="HBoxContainer" parent="Options/Node2D/Buttons"]
+layout_mode = 2
+
+[node name="TRVolLabel" type="Label" parent="Options/Node2D/Buttons/TRLabelContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "Typewriter Volume (dB): "
+
+[node name="TRNumLabel" type="Label" parent="Options/Node2D/Buttons/TRLabelContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "0
+"
+script = ExtResource("14_kevhm")
+
+[node name="TypewriterVol" type="HSlider" parent="Options/Node2D/Buttons" groups=["option_slider"]]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_styles/slider = ExtResource("14_lgq6u")
+min_value = -50.0
+max_value = 0.0
+script = ExtResource("13_avs6i")
+
+[node name="FSLabelContainer" type="HBoxContainer" parent="Options/Node2D/Buttons"]
+layout_mode = 2
+
+[node name="FSVolLabel" type="Label" parent="Options/Node2D/Buttons/FSLabelContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "Footstep Volume (dB): "
+
+[node name="FSNumLabel" type="Label" parent="Options/Node2D/Buttons/FSLabelContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "0
+"
+script = ExtResource("18_xmvvx")
+
+[node name="FootstepsVol" type="HSlider" parent="Options/Node2D/Buttons" groups=["option_slider"]]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_styles/slider = ExtResource("14_lgq6u")
+min_value = -50.0
+max_value = 0.0
+script = ExtResource("14_4qdtg")
+
+[node name="SELabelContainer" type="HBoxContainer" parent="Options/Node2D/Buttons"]
+layout_mode = 2
+
+[node name="SEVolLabel" type="Label" parent="Options/Node2D/Buttons/SELabelContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "Sound Effect Volume (dB): "
+
+[node name="SENumLabel" type="Label" parent="Options/Node2D/Buttons/SELabelContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "0
+"
+script = ExtResource("20_slyqq")
+
+[node name="SoundEffectVol" type="HSlider" parent="Options/Node2D/Buttons" groups=["option_slider"]]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_styles/slider = ExtResource("14_lgq6u")
+min_value = -50.0
+max_value = 0.0
+script = ExtResource("15_6qkcn")
+
+[node name="STLabelContainer" type="HBoxContainer" parent="Options/Node2D/Buttons"]
+layout_mode = 2
+
+[node name="STVolLabel" type="Label" parent="Options/Node2D/Buttons/STLabelContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "Sound Track Volume (dB): "
+
+[node name="STNumLabel" type="Label" parent="Options/Node2D/Buttons/STLabelContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "0
+"
+script = ExtResource("22_uywnc")
+
+[node name="SoundTrackVol" type="HSlider" parent="Options/Node2D/Buttons" groups=["option_slider"]]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_styles/slider = ExtResource("14_lgq6u")
+min_value = -50.0
+max_value = 0.0
+script = ExtResource("16_j48o0")
+
+[node name="BrightnessLabelContainer" type="HBoxContainer" parent="Options/Node2D/Buttons"]
+layout_mode = 2
+
+[node name="BrightnessLabel" type="Label" parent="Options/Node2D/Buttons/BrightnessLabelContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "Brightness: "
+
+[node name="BrightnessNumLabel" type="Label" parent="Options/Node2D/Buttons/BrightnessLabelContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "1"
+script = ExtResource("24_dia0e")
+
+[node name="Brightness" type="HSlider" parent="Options/Node2D/Buttons" groups=["option_slider"]]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_styles/slider = ExtResource("14_lgq6u")
+min_value = 0.3
+max_value = 3.0
+step = 0.01
+value = 1.0
+script = ExtResource("17_abqqi")
+
+[node name="ContrastLabelContainer2" type="HBoxContainer" parent="Options/Node2D/Buttons"]
+layout_mode = 2
+
+[node name="ContrastLabel" type="Label" parent="Options/Node2D/Buttons/ContrastLabelContainer2"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "Contrast: "
+
+[node name="ContrastNumLabel" type="Label" parent="Options/Node2D/Buttons/ContrastLabelContainer2"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "1"
+script = ExtResource("26_c5c0r")
+
+[node name="Contrast" type="HSlider" parent="Options/Node2D/Buttons" groups=["option_slider"]]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_styles/slider = ExtResource("14_lgq6u")
+min_value = 0.3
+max_value = 3.0
+step = 0.01
+value = 1.0
+script = ExtResource("18_l45ce")
+
+[node name="SaturationLabelContainer" type="HBoxContainer" parent="Options/Node2D/Buttons"]
+layout_mode = 2
+
+[node name="SaturationLabel" type="Label" parent="Options/Node2D/Buttons/SaturationLabelContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "Saturation: "
+
+[node name="SaturationNumLabel" type="Label" parent="Options/Node2D/Buttons/SaturationLabelContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 64
+text = "1"
+script = ExtResource("28_84wlf")
+
+[node name="Saturation" type="HSlider" parent="Options/Node2D/Buttons" groups=["option_slider"]]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_styles/slider = ExtResource("14_lgq6u")
+min_value = 0.3
+max_value = 3.0
+step = 0.01
+value = 1.0
+script = ExtResource("19_8eje0")
+
+[node name="Control" type="Control" parent="Options/Node2D/Buttons"]
+layout_mode = 2
+
+[node name="Buttons" type="HBoxContainer" parent="Options/Node2D/Buttons"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="Control" type="Control" parent="Options/Node2D/Buttons/Buttons"]
+layout_mode = 2
+
+[node name="ExitButton" type="Button" parent="Options/Node2D/Buttons/Buttons"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+script = ExtResource("30_3dgtj")
+
+[node name="Label" type="Label" parent="Options/Node2D/Buttons/Buttons/ExitButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 100
+text = "Exit"
+
+[node name="Control2" type="Control" parent="Options/Node2D/Buttons/Buttons"]
+custom_minimum_size = Vector2(680, 0)
+layout_mode = 2
+
+[node name="ResetButton" type="Button" parent="Options/Node2D/Buttons/Buttons"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+script = ExtResource("31_x6xa6")
+
+[node name="Label" type="Label" parent="Options/Node2D/Buttons/Buttons/ResetButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("12_th77l")
+theme_override_font_sizes/font_size = 100
+text = "Reset All"
 
 [connection signal="change_char" from="Convo/HBoxContainer/Dialogue" to="." method="_on_dialogue_change_char"]
 [connection signal="tag" from="Convo/HBoxContainer/Dialogue" to="." method="_on_dialogue_tag"]
 [connection signal="transitioned" from="Convo/TransitionScreen" to="." method="_on_TransitionScreen_transitioned"]
 [connection signal="pressed" from="EscOpts/Node2D/Buttons/Resume" to="." method="_on_Resume_pressed"]
 [connection signal="pressed" from="EscOpts/Node2D/Buttons/Save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="EscOpts/Node2D/Buttons/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="EscOpts/Node2D/Buttons/Exit" to="." method="_on_Exit_pressed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/FontSize" to="Options/Node2D/Buttons/FontLabelContainer/FontNumberLabel" method="_on_font_size_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/FontSize" to="Options/Node2D/Buttons/FontSize" method="_on_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/TypewriterVol" to="Options/Node2D/Buttons/TRLabelContainer/TRNumLabel" method="_on_typewriter_vol_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/TypewriterVol" to="Options/Node2D/Buttons/TypewriterVol" method="_on_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/FootstepsVol" to="Options/Node2D/Buttons/FSLabelContainer/FSNumLabel" method="_on_footsteps_vol_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/FootstepsVol" to="Options/Node2D/Buttons/FootstepsVol" method="_on_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/SoundEffectVol" to="Options/Node2D/Buttons/SELabelContainer/SENumLabel" method="_on_sound_effect_vol_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/SoundEffectVol" to="Options/Node2D/Buttons/SoundEffectVol" method="_on_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/SoundTrackVol" to="Options/Node2D/Buttons/STLabelContainer/STNumLabel" method="_on_sound_track_vol_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/SoundTrackVol" to="Options/Node2D/Buttons/SoundTrackVol" method="_on_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/Brightness" to="Options/Node2D/Buttons/BrightnessLabelContainer/BrightnessNumLabel" method="_on_brightness_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/Brightness" to="Options/Node2D/Buttons/Brightness" method="_on_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/Contrast" to="Options/Node2D/Buttons/ContrastLabelContainer2/ContrastNumLabel" method="_on_contrast_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/Contrast" to="Options/Node2D/Buttons/Contrast" method="_on_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/Saturation" to="Options/Node2D/Buttons/SaturationLabelContainer/SaturationNumLabel" method="_on_saturation_value_changed"]
+[connection signal="value_changed" from="Options/Node2D/Buttons/Saturation" to="Options/Node2D/Buttons/Saturation" method="_on_value_changed"]
+[connection signal="focus_entered" from="Options/Node2D/Buttons/Buttons/ExitButton" to="Options/Node2D/Buttons/Buttons/ExitButton" method="_on_focus_entered"]
+[connection signal="focus_exited" from="Options/Node2D/Buttons/Buttons/ExitButton" to="Options/Node2D/Buttons/Buttons/ExitButton" method="_on_focus_exited"]
+[connection signal="mouse_entered" from="Options/Node2D/Buttons/Buttons/ExitButton" to="Options/Node2D/Buttons/Buttons/ExitButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Options/Node2D/Buttons/Buttons/ExitButton" to="Options/Node2D/Buttons/Buttons/ExitButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="Options/Node2D/Buttons/Buttons/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="focus_entered" from="Options/Node2D/Buttons/Buttons/ResetButton" to="Options/Node2D/Buttons/Buttons/ResetButton" method="_on_focus_entered"]
+[connection signal="focus_exited" from="Options/Node2D/Buttons/Buttons/ResetButton" to="Options/Node2D/Buttons/Buttons/ResetButton" method="_on_focus_exited"]
+[connection signal="mouse_entered" from="Options/Node2D/Buttons/Buttons/ResetButton" to="Options/Node2D/Buttons/Buttons/ResetButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Options/Node2D/Buttons/Buttons/ResetButton" to="Options/Node2D/Buttons/Buttons/ResetButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="Options/Node2D/Buttons/Buttons/ResetButton" to="Options/Node2D/Buttons/Buttons/ResetButton" method="_on_pressed"]

@@ -29,6 +29,7 @@ extends Control
 @onready var transition_screen = $Convo/TransitionScreen
 @onready var convo = $Convo
 @onready var esc_opts = $EscOpts
+@onready var options = $Options
 @onready var esc_opts_resume = $EscOpts/Node2D/Buttons/Resume
 @onready var save = $Save
 @onready var current_bg_path = backgroundPath
@@ -134,10 +135,13 @@ func _ready():
 
 func _input(event):
 	if Input.is_action_pressed("ui_cancel"):
-		if not esc_opts.visible:
+		if not esc_opts.visible and not options.visible:
 			self._pause_game()
-		else:
+		elif esc_opts.visible:
 			self._unpause_game()
+		elif options.visible:
+			options.visible = false
+			esc_opts.visible = true
 
 
 func _pause_game():
@@ -272,3 +276,12 @@ func _on_Exit_pressed():
 	var general_options = SceneManager.create_general_options()
 	SceneManager.change_scene("TitleScreen", options, options, general_options)
 
+
+func _on_exit_button_pressed():
+	options.visible = false
+	esc_opts.visible = true
+
+
+func _on_options_pressed():
+	esc_opts.visible = false
+	options.visible = true

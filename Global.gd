@@ -11,6 +11,13 @@ var soundscapes = []
 var dbrightness = 0.6
 var cursor = "null"
 var font_size = 48
+var footstep_vol = 0
+var typewriter_vol = 0
+var sound_effect_vol = 0
+var sound_track_vol = 0
+var brightness = 1
+var contrast = 1
+var saturation = 1
 
 var prog_flags = {
 	"overgrowth_pink_hallway" : false,
@@ -60,10 +67,32 @@ var inventory = ["Jasper"]
 
 
 func _ready():
-	print("Mds soundscapes (ready)")
-#	for c in Mds.get_childrent():
-#		soundscapes.append(c.get_name())
+	pass
 
+func set_font_size(new_font_size):
+	self.font_size = new_font_size
+
+func set_footstep_vol(new_footstep_vol):
+	self.footstep_vol = new_footstep_vol
+
+func set_typewriter_vol(new_typewriter_vol):
+	self.typewriter_vol = new_typewriter_vol
+
+func set_sound_effect_vol(new_sound_effect_vol):
+	self.sound_effect_vol = new_sound_effect_vol
+
+func set_sound_track_vol(new_sound_track_vol):
+	self.sound_track_vol = new_sound_track_vol
+
+func set_brightness(new_brightness):
+	self.brightness = new_brightness
+	
+func set_contrast(new_contrast):
+	self.contrast = new_contrast
+	
+func set_saturation(new_saturation):
+	self.saturation = new_saturation
+	
 func set_cursor(new_cursor):
 	Input.set_custom_mouse_cursor(cursors[new_cursor])
 	cursor = new_cursor
@@ -144,6 +173,14 @@ func produce_save_dict():
 		"party" : party,
 		"prog_flags" : prog_flags,
 		"scene_type" : scene_type,
+		"font_size" : font_size,
+		"footstep_vol" : footstep_vol,
+		"typewriter_vol" : typewriter_vol,
+		"sound_effect_vol" : sound_effect_vol,
+		"sound_track_vol" : sound_track_vol,
+		"brightness" : brightness,
+		"contrast" : contrast,
+		"saturation" : saturation,
 	}
 	return save_dict
 	
@@ -166,6 +203,14 @@ func load_game():
 	party = save_data["party"]
 	prog_flags = save_data["prog_flags"]
 	scene_type = save_data["scene_type"]
+	font_size = save_data["font_size"]
+	footstep_vol = save_data["footstep_vol"]
+	typewriter_vol = save_data["typewriter_vol"]
+	sound_effect_vol = save_data["sound_effect_vol"]
+	sound_track_vol = save_data["sound_track_vol"]
+	brightness = save_data["brightness"]
+	contrast = save_data["contrast"]
+	saturation = save_data["saturation"]
 	var options = SceneManager.create_options()
 	var general_options = SceneManager.create_general_options()
 	SceneManager.change_scene(scene_type, options, options, general_options)

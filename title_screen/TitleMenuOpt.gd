@@ -43,3 +43,10 @@ func _on_NewGame_pressed():
 	var general_options = SceneManager.create_general_options()
 	SceneManager.change_scene("Stage", options, options, general_options)
 
+
+func hide_option():
+	self.visible = false
+
+
+func show_option():
+	self.visible = true

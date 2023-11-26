@@ -1,9 +1,10 @@
 extends TextureRect
 
 @onready var continue_button = $VBoxContainer/Continue
-@onready var new_game = $VBoxContainer/NewGame
-@onready var load_button = $VBoxContainer/LoadGame
+@onready var new_game_button = $VBoxContainer/NewGame
 @onready var options_button = $VBoxContainer/Options
+@onready var exit_button = $VBoxContainer/Exit
+@onready var options_menu = $OptionsMenu
 
 
 func _ready():
@@ -16,16 +17,28 @@ func _ready():
 	if not Global.check_save_exists():
 		continue_button.change_color(Color(Global.dbrightness, Global.dbrightness, Global.dbrightness, 1))
 		continue_button.disabled = true
-		new_game.grab_focus()
+		new_game_button.grab_focus()
 	else:
 		continue_button.grab_focus()
-	
-	# disable load and options buttons for now, until implementations done
-	load_button.disabled = true
-	load_button.change_color(Color(Global.dbrightness, Global.dbrightness, Global.dbrightness, 1))
-	options_button.disabled = true
-	options_button.change_color(Color(Global.dbrightness, Global.dbrightness, Global.dbrightness, 1))
+
+
+func _input(event):
+	if Input.is_action_pressed("ui_cancel"):
+		if options_menu.visible:
+			options_menu.visible = false
+			get_tree().call_group("title_menu_opt", "show_option")
 
 
 func _on_Exit_pressed():
 	get_tree().quit()
+
+
+func _on_exit_button_pressed():
+	options_menu.visible = false
+	get_tree().call_group("title_menu_opt", "show_option")
+
+
+func _on_options_pressed():
+	options_menu.visible = true
+	get_tree().call_group("title_menu_opt", "hide_option")
+	

@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://go7a0mpd08ww"]
 
 [ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1"]
-[ext_resource type="PackedScene" path="res://conversation_pov/ConvoSoundEffect.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://byn2lurvh5x2f" path="res://conversation_pov/ConvoSoundEffect.tscn" id="2"]
 [ext_resource type="AudioStream" uid="uid://dprbiwgfs7piv" path="res://maternity/poisoning_convo/crash.wav" id="3"]
 [ext_resource type="AudioStream" uid="uid://0jg0ovbon6y" path="res://sounds/effects/thunk.wav" id="4"]
 [ext_resource type="PackedScene" uid="uid://gent118w7jqg" path="res://conversation_pov/CharacterRect.tscn" id="5"]

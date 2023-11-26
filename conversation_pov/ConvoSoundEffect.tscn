@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=2 format=3 uid="uid://byn2lurvh5x2f"]
 
-[ext_resource path="res://conversation_pov/ConvoSoundEffect.gd" type="Script" id=2]
+[ext_resource type="Script" path="res://conversation_pov/ConvoSoundEffect.gd" id="2"]
 
 [node name="ConvoSoundEffect" type="AudioStreamPlayer" groups=["convo_sound_effect"]]
-script = ExtResource( 2 )
+script = ExtResource("2")

@@ -39,6 +39,7 @@ var map_paths = {
 @onready var wet_footsteps = $HBoxContainer/WetFootsteps
 @onready var door_unlock = $HBoxContainer/DoorUnlock
 @onready var esc_opts = $EscOpts
+@onready var options_menu = $Options
 @onready var esc_opts_resume = $EscOpts/Buttons/Resume
 @onready var autosave = $Autosave
 @onready var save = $Save
@@ -73,10 +74,13 @@ func _input(event):
 		if not left_button.disabled:
 			_on_LeftButton_pressed()
 	elif Input.is_action_pressed("ui_cancel"):
-		if not esc_opts.visible:
+		if not esc_opts.visible and not options_menu.visible:
 			self._pause_game()
-		else:
+		elif esc_opts.visible:
 			self._unpause_game()
+		elif options_menu.visible:
+			options_menu.visible = false
+			esc_opts.visible = true
 
 
 func _on_UpButton_pressed():
@@ -208,6 +212,7 @@ func _enable_buttons():
 func _pause_game():
 	hbox.modulate = Color(0.6, 0.6, 0.6, 1)
 	pov_instance.modulate = Color(1, 1, 1, 0.6)
+	get_tree().call_group("click_areas", "disable")
 	self._disable_buttons()
 	Global.pause_cursor()
 	esc_opts.visible = true
@@ -217,6 +222,7 @@ func _pause_game():
 func _unpause_game():
 	hbox.modulate = Color(1, 1, 1, 1)
 	pov_instance.modulate = Color(1, 1, 1, 1)
+	get_tree().call_group("click_areas", "enable")
 	self._enable_buttons()
 	Global.unpause_cursor()
 	esc_opts.visible = false
@@ -248,3 +254,12 @@ func _on_Exit_pressed():
 	var general_options = SceneManager.create_general_options()
 	SceneManager.change_scene("TitleScreen", options, options, general_options)
 
+
+func _on_options_pressed():
+	esc_opts.visible = false
+	options_menu.visible = true
+
+
+func _on_exit_button_pressed():
+	options_menu.visible = false
+	esc_opts.visible = true

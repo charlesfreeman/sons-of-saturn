@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://dmeuc34mb41io"]
+[gd_scene load_steps=11 format=3 uid="uid://dmeuc34mb41io"]
 
 [ext_resource type="Script" path="res://dialogue_system/DialogueSys.gd" id="1_h7fmf"]
 [ext_resource type="AudioStream" uid="uid://dgic7pgxuruex" path="res://dialogue_system/sounds/typewriter_click_5.wav" id="2"]
 [ext_resource type="PackedScene" uid="uid://ck0qxjjpqb3lf" path="res://sounds/RandomSoundContainer.tscn" id="3_q6f7s"]
+[ext_resource type="Script" path="res://dialogue_system/SpokenLinesContainer.gd" id="3_xi2xm"]
 [ext_resource type="AudioStream" uid="uid://bv7r5ekjvfdrp" path="res://dialogue_system/sounds/typewriter_click_1.wav" id="5"]
 [ext_resource type="AudioStream" uid="uid://t4s0pj6pfavt" path="res://dialogue_system/sounds/typewriter_click_4.wav" id="6"]
 [ext_resource type="AudioStream" uid="uid://vvo127q5iry3" path="res://dialogue_system/sounds/typewriter_click_3.wav" id="7"]
@@ -47,11 +48,12 @@ layout_mode = 2
 size_flags_vertical = 3
 theme = SubResource("1")
 
-[node name="SpokenLinesContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer"]
+[node name="SpokenLinesContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer" groups=["lines_container"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/separation = 50
+script = ExtResource("3_xi2xm")
 
 [node name="Control" type="Control" parent="VBoxContainer/ScrollContainer/SpokenLinesContainer"]
 custom_minimum_size = Vector2(0, 2160)

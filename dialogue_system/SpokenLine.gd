@@ -41,6 +41,3 @@ func set_dialogue_line(text):
 	$SpeakerName.set_font_size()
 	$TextLine/DialogueLine.set_font_size()
 
-
-func make_grey():
-	self.modulate = Color(Global.dbrightness, Global.dbrightness, Global.dbrightness, 1)

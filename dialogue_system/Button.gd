@@ -1,4 +1,4 @@
-extends TextureButton
+extends MarginContainer
 
 @onready var label_node = $HBoxContainer/OptionText
 
@@ -10,6 +10,7 @@ var continue_mode: bool = false
 var mode_set: bool = false
 
 signal play_click
+signal pressed
 
 
 func _ready():
@@ -50,32 +51,13 @@ func extract_text_and_modifiers(text: String):
 	if "p" in modifiers:
 		set_as_progression()
 	
-	set_label_text(_insert_newlines(button_text_minus_mods))
-	
-	var num_newlines = len(label_node.text.split("\n"))
-	self.custom_minimum_size.y = num_newlines * 64
-	label_node.custom_minimum_size.y = num_newlines * 64
+	set_label_text(button_text_minus_mods)
 	
 	if self.progression_button:
 		change_color(Color(1, 0.5, 0, 1))
 	elif self.clicked:
 		change_color(Color(Global.dbrightness, Global.dbrightness, Global.dbrightness, 1))
 
-
-func _insert_newlines(text: String) -> String:
-	var line_length = 47
-	if text.length() >= line_length:
-		var index = line_length
-		while index < text.length():
-			while text[index] != " ":
-				index -= 1
-			index += 1
-			text = text.insert(index, "\n")
-			index += 1
-			index += 1
-			index += line_length
-	return text
- 
 
 func set_label_text(text: String):
 	if text == "Continue" or text == "C":
@@ -139,13 +121,15 @@ func _on_DialogueOption_focus_exited():
 
 
 func _on_DialogueOption_mouse_entered():
-	self.grab_focus()
+	$DialogueOption.grab_focus()
 
 
 func _on_DialogueOption_mouse_exited():
-	self.release_focus()
+	$DialogueOption.release_focus()
 
 
 func _on_DialogueOption_pressed():
 	emit_signal("play_click")
+	emit_signal("pressed")
+	
 

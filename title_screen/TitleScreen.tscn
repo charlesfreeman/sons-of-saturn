@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://cn7txqa5rdktw"]
+[gd_scene load_steps=31 format=3 uid="uid://cn7txqa5rdktw"]
 
 [ext_resource type="Texture2D" uid="uid://oi8yvg5xpm5" path="res://title_screen/title_screen.png" id="1_rlibn"]
 [ext_resource type="PackedScene" uid="uid://brsmqtvugbox" path="res://title_screen/TitleMenuOpt.tscn" id="2"]
@@ -23,6 +23,12 @@
 [ext_resource type="Script" path="res://conversation_pov/Saturation.gd" id="21_uthuh"]
 [ext_resource type="Script" path="res://conversation_pov/OptionsButton.gd" id="22_gu7c2"]
 [ext_resource type="Script" path="res://conversation_pov/ResetButton.gd" id="23_js5sd"]
+[ext_resource type="Script" path="res://roaming_pov/SaveLoad.gd" id="24_4dexk"]
+[ext_resource type="Script" path="res://roaming_pov/SaveContainer.gd" id="25_qjupx"]
+[ext_resource type="Texture2D" uid="uid://y2dvr8k76pp6" path="res://save_load_icons/menu_border.png" id="25_yiysb"]
+[ext_resource type="Script" path="res://roaming_pov/AutosaveFile.gd" id="28_tg07k"]
+[ext_resource type="Texture2D" uid="uid://bwv3mscnhu1li" path="res://thumbnails/saving_icon_trimmed.png" id="29_uop1l"]
+[ext_resource type="PackedScene" uid="uid://c482jsbryp8w4" path="res://Options/yes_no_option.tscn" id="31_k5f6w"]
 
 [sub_resource type="Theme" id="1"]
 
@@ -44,6 +50,10 @@ offset_bottom = 1645.68
 [node name="Continue" parent="VBoxContainer" instance=ExtResource("2")]
 layout_mode = 2
 label_text = "Continue"
+
+[node name="SaveLoad" parent="VBoxContainer" instance=ExtResource("2")]
+layout_mode = 2
+label_text = "Load Game"
 
 [node name="NewGame" parent="VBoxContainer" instance=ExtResource("2")]
 layout_mode = 2
@@ -366,7 +376,109 @@ theme_override_fonts/font = ExtResource("4_csnuj")
 theme_override_font_sizes/font_size = 100
 text = "Reset All"
 
+[node name="SaveLoad" type="Control" parent="."]
+visible = false
+z_index = 3
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1771.0
+offset_top = 477.0
+offset_right = 3419.0
+offset_bottom = 1660.0
+script = ExtResource("24_4dexk")
+
+[node name="TextureRect" type="TextureRect" parent="SaveLoad"]
+layout_mode = 0
+offset_left = -247.0
+offset_top = -157.0
+offset_right = 1874.0
+offset_bottom = 1470.0
+texture = ExtResource("25_yiysb")
+
+[node name="Saves" type="ScrollContainer" parent="SaveLoad"]
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -65.0
+offset_right = 51.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="SaveContainer" type="VBoxContainer" parent="SaveLoad/Saves"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 22
+script = ExtResource("25_qjupx")
+
+[node name="AutosaveFile" type="Button" parent="SaveLoad/Saves/SaveContainer" groups=["saveload_button"]]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 130)
+layout_mode = 2
+script = ExtResource("28_tg07k")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SaveLoad/Saves/SaveContainer/AutosaveFile"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="SaveLoad/Saves/SaveContainer/AutosaveFile/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("29_uop1l")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Control" type="Control" parent="SaveLoad/Saves/SaveContainer/AutosaveFile/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SaveLoad/Saves/SaveContainer/AutosaveFile/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("4_csnuj")
+theme_override_font_sizes/font_size = 72
+text = "Last Autosave"
+
+[node name="ExitButton" type="Button" parent="SaveLoad" groups=["saveload_button"]]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 1
+custom_minimum_size = Vector2(250, 120)
+layout_mode = 0
+offset_left = 30.0
+offset_top = 1216.0
+offset_right = 280.0
+offset_bottom = 1336.0
+script = ExtResource("22_gu7c2")
+
+[node name="Label" type="Label" parent="SaveLoad/ExitButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("4_csnuj")
+theme_override_font_sizes/font_size = 100
+text = "Exit"
+
+[node name="LoadGameOption" parent="SaveLoad" instance=ExtResource("31_k5f6w")]
+offset_left = 351.0
+offset_right = 1241.0
+label_text = "Load this Save File?"
+
+[node name="DeleteGameOption" parent="SaveLoad" instance=ExtResource("31_k5f6w")]
+label_text = "Delete Save File?"
+
 [connection signal="pressed" from="VBoxContainer/Continue" to="VBoxContainer/Continue" method="_on_Continue_pressed"]
+[connection signal="pressed" from="VBoxContainer/SaveLoad" to="." method="_on_save_load_pressed"]
 [connection signal="pressed" from="VBoxContainer/NewGame" to="VBoxContainer/NewGame" method="_on_NewGame_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_Exit_pressed"]
@@ -396,3 +508,20 @@ text = "Reset All"
 [connection signal="mouse_entered" from="OptionsMenu/Node2D/Buttons/Buttons/ResetButton" to="OptionsMenu/Node2D/Buttons/Buttons/ResetButton" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="OptionsMenu/Node2D/Buttons/Buttons/ResetButton" to="OptionsMenu/Node2D/Buttons/Buttons/ResetButton" method="_on_mouse_exited"]
 [connection signal="pressed" from="OptionsMenu/Node2D/Buttons/Buttons/ResetButton" to="OptionsMenu/Node2D/Buttons/Buttons/ResetButton" method="_on_pressed"]
+[connection signal="stage_deletion" from="SaveLoad/Saves/SaveContainer" to="SaveLoad" method="_on_save_container_stage_deletion"]
+[connection signal="stage_savegame" from="SaveLoad/Saves/SaveContainer" to="SaveLoad" method="_on_save_container_stage_savegame"]
+[connection signal="focus_entered" from="SaveLoad/Saves/SaveContainer/AutosaveFile" to="SaveLoad/Saves/SaveContainer/AutosaveFile" method="_on_focus_entered"]
+[connection signal="focus_exited" from="SaveLoad/Saves/SaveContainer/AutosaveFile" to="SaveLoad/Saves/SaveContainer/AutosaveFile" method="_on_focus_exited"]
+[connection signal="mouse_entered" from="SaveLoad/Saves/SaveContainer/AutosaveFile" to="SaveLoad/Saves/SaveContainer/AutosaveFile" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="SaveLoad/Saves/SaveContainer/AutosaveFile" to="SaveLoad/Saves/SaveContainer/AutosaveFile" method="_on_mouse_exited"]
+[connection signal="pressed" from="SaveLoad/Saves/SaveContainer/AutosaveFile" to="SaveLoad/Saves/SaveContainer/AutosaveFile" method="_on_pressed"]
+[connection signal="stage_savegame" from="SaveLoad/Saves/SaveContainer/AutosaveFile" to="SaveLoad" method="_on_save_container_stage_savegame"]
+[connection signal="focus_entered" from="SaveLoad/ExitButton" to="SaveLoad/ExitButton" method="_on_focus_entered"]
+[connection signal="focus_exited" from="SaveLoad/ExitButton" to="SaveLoad/ExitButton" method="_on_focus_exited"]
+[connection signal="mouse_entered" from="SaveLoad/ExitButton" to="SaveLoad/ExitButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="SaveLoad/ExitButton" to="SaveLoad/ExitButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="SaveLoad/ExitButton" to="." method="_on_saveload_exit_button_pressed"]
+[connection signal="no_pressed" from="SaveLoad/LoadGameOption" to="SaveLoad" method="_on_loadgame_no_button_pressed"]
+[connection signal="yes_pressed" from="SaveLoad/LoadGameOption" to="SaveLoad" method="_on_loadgame_yes_button_pressed"]
+[connection signal="no_pressed" from="SaveLoad/DeleteGameOption" to="SaveLoad" method="_on_delete_no_button_pressed"]
+[connection signal="yes_pressed" from="SaveLoad/DeleteGameOption" to="SaveLoad" method="_on_delete_yes_button_pressed"]

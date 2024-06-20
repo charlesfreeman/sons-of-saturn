@@ -32,7 +32,7 @@ func _on_TitleMenuOpt_mouse_exited():
 
 
 func _on_Continue_pressed():
-	Global.load_game()
+	Global.load_game("user://sonsofsaturn.save")
 
 
 func _on_NewGame_pressed():

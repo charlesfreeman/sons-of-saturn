@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://b4q0i8fjl1i33"]
+
+[ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1_1d2lj"]
+[ext_resource type="PackedScene" uid="uid://byn2lurvh5x2f" path="res://conversation_pov/ConvoSoundEffect.tscn" id="2_gc8fq"]
+[ext_resource type="AudioStream" uid="uid://cda07jod3jyel" path="res://childrens_ward/visitors_log_convo/breaking_bone_1.wav" id="3_t7a7y"]
+[ext_resource type="AudioStream" uid="uid://d2slup5qa488e" path="res://childrens_ward/mom_room_convo/breaking_bone_2.wav" id="4_w007v"]
+
+[node name="mom_convo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Convo" parent="." instance=ExtResource("1_1d2lj")]
+layout_mode = 1
+offset_left = -1.0
+offset_top = 1.0
+offset_right = -1.0
+offset_bottom = 1.0
+scriptPath = "res://childrens_ward/mom_room_convo/mom_convo.json"
+backgroundPath = "res://childrens_ward/mom_room_convo/mom_room_convo_pov.png"
+sliverPath = "res://childrens_ward/mom_room_convo/mom_room_convo_pov_sliver.png"
+nextLocation = "res://childrens_ward/wheelchair_hall_final/wheelchair_hall_after_angela.tscn"
+fade_tag_dict = {
+"approach_bed": "res://childrens_ward/mom_room_convo/mom_bed_closeup.png",
+"back_to_room": "res://childrens_ward/mom_room_convo/mom_room_convo_pov.png",
+"hand_closeup": "res://childrens_ward/mom_room_convo/mom_hand_mold_bg.png"
+}
+fade_tag_dict_sliver = {
+"approach_bed": "res://childrens_ward/mom_room_convo/mom_bed_closeup_sliver.png",
+"back_to_room": "res://childrens_ward/mom_room_convo/mom_room_convo_pov_sliver.png",
+"hand_closeup": "res://childrens_ward/mom_room_convo/mold_ceiling_sliver.png"
+}
+
+[node name="BoneBreak1" parent="." instance=ExtResource("2_gc8fq")]
+stream = ExtResource("3_t7a7y")
+tag_to_play = "BoneBreak1"
+
+[node name="BoneBreak2" parent="." instance=ExtResource("2_gc8fq")]
+stream = ExtResource("4_w007v")
+tag_to_play = "BoneBreak2"

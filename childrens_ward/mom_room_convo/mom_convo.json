@@ -1,0 +1,329 @@
+{
+  "passages": [
+    {
+      "text": "Mom::...\n\nMom::...\n\nMom::...\n\n[[p:Hey, Mom.  Sorry I haven't visited.  I need to take your hand back with me, so I can claim your estate.]]\n[[p:Fuck you.  I don't want to talk.  Just let me rip off your hand so I can have my inheritance.->p:Hey, Mom.  Sorry I haven't visited.  I need to take your hand back with me, so I can claim your estate.]]",
+      "links": [
+        {
+          "name": "p:Hey, Mom.  Sorry I haven't visited.  I need to take your hand back with me, so I can claim your estate.",
+          "link": "p:Hey, Mom.  Sorry I haven't visited.  I need to take your hand back with me, so I can claim your estate.",
+          "pid": "2"
+        },
+        {
+          "name": "p:Fuck you.  I don't want to talk.  Just let me rip off your hand so I can have my inheritance.",
+          "link": "p:Hey, Mom.  Sorry I haven't visited.  I need to take your hand back with me, so I can claim your estate.",
+          "pid": "2"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "1179",
+        "y": "606"
+      },
+      "tags": [
+        "breathing_machine"
+      ]
+    },
+    {
+      "text": "Mom::...\n\n[[p:Yeah, I'm being blunt.  But I think you owe this to me.->p:You've done very little for me, throughout my life.  Just let me rip your hand off, so I can prove that you are dead, please.]]\n[[p:You've done very little for me, throughout my life.  Just let me rip your hand off, so I can prove that you are dead, please.]]\n[[p:I don't care how you feel about it.  I'm done caring about how you feel.  I'm done letting it define me.->p:You've done very little for me, throughout my life.  Just let me rip your hand off, so I can prove that you are dead, please.]]",
+      "links": [
+        {
+          "name": "p:Yeah, I'm being blunt.  But I think you owe this to me.",
+          "link": "p:You've done very little for me, throughout my life.  Just let me rip your hand off, so I can prove that you are dead, please.",
+          "pid": "3"
+        },
+        {
+          "name": "p:You've done very little for me, throughout my life.  Just let me rip your hand off, so I can prove that you are dead, please.",
+          "link": "p:You've done very little for me, throughout my life.  Just let me rip your hand off, so I can prove that you are dead, please.",
+          "pid": "3"
+        },
+        {
+          "name": "p:I don't care how you feel about it.  I'm done caring about how you feel.  I'm done letting it define me.",
+          "link": "p:You've done very little for me, throughout my life.  Just let me rip your hand off, so I can prove that you are dead, please.",
+          "pid": "3"
+        }
+      ],
+      "name": "p:Hey, Mom.  Sorry I haven't visited.  I need to take your hand back with me, so I can claim your estate.",
+      "pid": "2",
+      "position": {
+        "x": "1186",
+        "y": "751"
+      },
+      "tags": [
+        "afuming"
+      ]
+    },
+    {
+      "text": "Mom::...\n\n[[p:Look, for once, this is my call, and my call alone.  Not yours.  Not that dumb doll's.  Mine.]]\n[[p:I know.  I wasn't smart, or pretty, or regal, in any of the ways you wanted.  But I'm done feeling guilty for that.->p:Look, for once, this is my call, and my call alone.  Not yours.  Not that dumb doll's.  Mine.]]\n[[p:The door to hell is open, and you want me to stay?->p:Look, for once, this is my call, and my call alone.  Not yours.  Not that dumb doll's.  Mine.]]",
+      "links": [
+        {
+          "name": "p:Look, for once, this is my call, and my call alone.  Not yours.  Not that dumb doll's.  Mine.",
+          "link": "p:Look, for once, this is my call, and my call alone.  Not yours.  Not that dumb doll's.  Mine.",
+          "pid": "4"
+        },
+        {
+          "name": "p:I know.  I wasn't smart, or pretty, or regal, in any of the ways you wanted.  But I'm done feeling guilty for that.",
+          "link": "p:Look, for once, this is my call, and my call alone.  Not yours.  Not that dumb doll's.  Mine.",
+          "pid": "4"
+        },
+        {
+          "name": "p:The door to hell is open, and you want me to stay?",
+          "link": "p:Look, for once, this is my call, and my call alone.  Not yours.  Not that dumb doll's.  Mine.",
+          "pid": "4"
+        }
+      ],
+      "name": "p:You've done very little for me, throughout my life.  Just let me rip your hand off, so I can prove that you are dead, please.",
+      "pid": "3",
+      "position": {
+        "x": "1179",
+        "y": "905"
+      },
+      "tags": [
+        "aguilty"
+      ]
+    },
+    {
+      "text": "Mom::...\n\n[[p:Yeah.  I threw Whiskers down the well.  I'm not letting you hold it over me anymore.->p:In a way, you killed the cat, through me.]]\n[[p:You didn't even love Whiskers.  You loved that you had an excuse to finally get rid of me.->p:In a way, you killed the cat, through me.]]\n[[p:In a way, you killed the cat, through me.]]",
+      "links": [
+        {
+          "name": "p:Yeah.  I threw Whiskers down the well.  I'm not letting you hold it over me anymore.",
+          "link": "p:In a way, you killed the cat, through me.",
+          "pid": "5"
+        },
+        {
+          "name": "p:You didn't even love Whiskers.  You loved that you had an excuse to finally get rid of me.",
+          "link": "p:In a way, you killed the cat, through me.",
+          "pid": "5"
+        },
+        {
+          "name": "p:In a way, you killed the cat, through me.",
+          "link": "p:In a way, you killed the cat, through me.",
+          "pid": "5"
+        }
+      ],
+      "name": "p:Look, for once, this is my call, and my call alone.  Not yours.  Not that dumb doll's.  Mine.",
+      "pid": "4",
+      "position": {
+        "x": "1179",
+        "y": "1056"
+      },
+      "tags": [
+        "asad"
+      ]
+    },
+    {
+      "text": "Mom::...\n\n[[p:Of course I regret it.  But I regret it for myself.  Not for you.->p:Fuck off...]]\n[[p:Fuck off...]]",
+      "links": [
+        {
+          "name": "p:Of course I regret it.  But I regret it for myself.  Not for you.",
+          "link": "p:Fuck off...",
+          "pid": "6"
+        },
+        {
+          "name": "p:Fuck off...",
+          "link": "p:Fuck off...",
+          "pid": "6"
+        }
+      ],
+      "name": "p:In a way, you killed the cat, through me.",
+      "pid": "5",
+      "position": {
+        "x": "1179",
+        "y": "1207"
+      },
+      "tags": [
+        "asad"
+      ]
+    },
+    {
+      "text": "Mom::...\n\n[[p:I might just be a secretion of your dying, diseased brain.  But I can still accomplish one meaningful deed.]]\n[[p:I know I only exist through you.  But I have business to take care of, and you're not going to get in the way.->p:I might just be a secretion of your dying, diseased brain.  But I can still accomplish one meaningful deed.]]",
+      "links": [
+        {
+          "name": "p:I might just be a secretion of your dying, diseased brain.  But I can still accomplish one meaningful deed.",
+          "link": "p:I might just be a secretion of your dying, diseased brain.  But I can still accomplish one meaningful deed.",
+          "pid": "7"
+        },
+        {
+          "name": "p:I know I only exist through you.  But I have business to take care of, and you're not going to get in the way.",
+          "link": "p:I might just be a secretion of your dying, diseased brain.  But I can still accomplish one meaningful deed.",
+          "pid": "7"
+        }
+      ],
+      "name": "p:Fuck off...",
+      "pid": "6",
+      "position": {
+        "x": "1179",
+        "y": "1357"
+      },
+      "tags": [
+        "aneutral"
+      ]
+    },
+    {
+      "text": "Mom::...\n\n[[p:Just in case I am real, there's still one thing you can do for me.]]\n[[p:I'm pretty sure you won't be able to feel this, but still, I'll try to make this quick.->p:Just in case I am real, there's still one thing you can do for me.]]",
+      "links": [
+        {
+          "name": "p:Just in case I am real, there's still one thing you can do for me.",
+          "link": "p:Just in case I am real, there's still one thing you can do for me.",
+          "pid": "8"
+        },
+        {
+          "name": "p:I'm pretty sure you won't be able to feel this, but still, I'll try to make this quick.",
+          "link": "p:Just in case I am real, there's still one thing you can do for me.",
+          "pid": "8"
+        }
+      ],
+      "name": "p:I might just be a secretion of your dying, diseased brain.  But I can still accomplish one meaningful deed.",
+      "pid": "7",
+      "position": {
+        "x": "1178",
+        "y": "1507"
+      },
+      "tags": [
+        "aguilty"
+      ]
+    },
+    {
+      "text": "You approach Mom and slip your hands under the covers, not daring to look.  You feel the protrusions of ribs running underneath your fingertips.  Your hand glides up to the shoulderblade, and runs down the mossy remnants of the arm until you reach the hand.\n\n[[p:(Action) Tear off the hand.]]",
+      "links": [
+        {
+          "name": "p:(Action) Tear off the hand.",
+          "link": "p:(Action) Tear off the hand.",
+          "pid": "9"
+        }
+      ],
+      "name": "p:Just in case I am real, there's still one thing you can do for me.",
+      "pid": "8",
+      "position": {
+        "x": "1178",
+        "y": "1657"
+      },
+      "tags": [
+        "approach_bed"
+      ]
+    },
+    {
+      "text": "The skin about the wrist tears with almost no effort.  The radial and ulnar joints disarticulate with a pop that vibrates your nerves.\n\n[[C->hand]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "hand",
+          "pid": "10"
+        }
+      ],
+      "name": "p:(Action) Tear off the hand.",
+      "pid": "9",
+      "position": {
+        "x": "1178",
+        "y": "1807"
+      },
+      "tags": [
+        "BoneBreak1"
+      ]
+    },
+    {
+      "text": "With one more quick yank, the entire hand shears off.\n\n[[p:I can collect my inheritance now.]]\n[[p:Thanks for this, Mom.->p:I can collect my inheritance now.]]",
+      "links": [
+        {
+          "name": "p:I can collect my inheritance now.",
+          "link": "p:I can collect my inheritance now.",
+          "pid": "11"
+        },
+        {
+          "name": "p:Thanks for this, Mom.",
+          "link": "p:I can collect my inheritance now.",
+          "pid": "11"
+        }
+      ],
+      "name": "hand",
+      "pid": "10",
+      "position": {
+        "x": "1178",
+        "y": "1957"
+      },
+      "tags": [
+        "hand_closeup",
+        "BoneBreak2"
+      ]
+    },
+    {
+      "text": "Mom::...\n\n[[p:I'm going to throw the switch in Angela's room.  Once that's done, the power in this room will go out too.]]",
+      "links": [
+        {
+          "name": "p:I'm going to throw the switch in Angela's room.  Once that's done, the power in this room will go out too.",
+          "link": "p:I'm going to throw the switch in Angela's room.  Once that's done, the power in this room will go out too.",
+          "pid": "12"
+        }
+      ],
+      "name": "p:I can collect my inheritance now.",
+      "pid": "11",
+      "position": {
+        "x": "1178",
+        "y": "2107"
+      },
+      "tags": [
+        "back_to_room"
+      ]
+    },
+    {
+      "text": "Mom::...\n\n[[p:I know.  When that happens, if I'm \"like Julia,\" then I'll be leaving too.->p:It's ok.  I'm ready.]]\n[[p:It's ok.  I'm ready.]]",
+      "links": [
+        {
+          "name": "p:I know.  When that happens, if I'm \"like Julia,\" then I'll be leaving too.",
+          "link": "p:It's ok.  I'm ready.",
+          "pid": "13"
+        },
+        {
+          "name": "p:It's ok.  I'm ready.",
+          "link": "p:It's ok.  I'm ready.",
+          "pid": "13"
+        }
+      ],
+      "name": "p:I'm going to throw the switch in Angela's room.  Once that's done, the power in this room will go out too.",
+      "pid": "12",
+      "position": {
+        "x": "1178",
+        "y": "2257"
+      }
+    },
+    {
+      "text": "Mom::...\n\n[[p:Anyway, I've gotten what I needed.  Goodbye, Mom.]]\n[[p:I'm leaving now.  You won't be hearing from me again.->p:Anyway, I've gotten what I needed.  Goodbye, Mom.]]",
+      "links": [
+        {
+          "name": "p:Anyway, I've gotten what I needed.  Goodbye, Mom.",
+          "link": "p:Anyway, I've gotten what I needed.  Goodbye, Mom.",
+          "pid": "14"
+        },
+        {
+          "name": "p:I'm leaving now.  You won't be hearing from me again.",
+          "link": "p:Anyway, I've gotten what I needed.  Goodbye, Mom.",
+          "pid": "14"
+        }
+      ],
+      "name": "p:It's ok.  I'm ready.",
+      "pid": "13",
+      "position": {
+        "x": "1178",
+        "y": "2407"
+      }
+    },
+    {
+      "text": "Mom::...\n\nMom::.........\n\nMom::..............",
+      "name": "p:Anyway, I've gotten what I needed.  Goodbye, Mom.",
+      "pid": "14",
+      "position": {
+        "x": "1178",
+        "y": "2557"
+      },
+      "tags": [
+        "breathing_machine"
+      ]
+    }
+  ],
+  "name": "Skeleton Mom Convo",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "91900336-CACD-4171-8838-EDDCB70C1A50"
+}
+

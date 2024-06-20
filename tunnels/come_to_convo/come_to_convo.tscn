@@ -12,6 +12,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Convo" parent="." instance=ExtResource("1")]
 layout_mode = 1
@@ -22,6 +24,7 @@ sliverPath = "res://tunnels/come_to_convo/wiggly_looking_down_sliver.png"
 nextLocation = "res://tunnels/basement_room/basement_room.tscn"
 new_party_mem = "Wiggly"
 song = "sly_sewer_intimate"
+remove_item = "Stimulants"
 
 [node name="DrinkingBottle" parent="." instance=ExtResource("2_ynooe")]
 layout_mode = 0

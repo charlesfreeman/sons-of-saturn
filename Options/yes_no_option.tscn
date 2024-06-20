@@ -1,0 +1,106 @@
+[gd_scene load_steps=5 format=3 uid="uid://c482jsbryp8w4"]
+
+[ext_resource type="FontFile" uid="uid://cxllua8qit72w" path="res://fonts/PTSerif-Regular.ttf" id="1_l4ja8"]
+[ext_resource type="Script" path="res://Options/yes_no_option.gd" id="1_xloc8"]
+[ext_resource type="Script" path="res://conversation_pov/OptionsButton.gd" id="2_pgo8a"]
+[ext_resource type="Texture2D" uid="uid://c7pemekc6gddx" path="res://save_load_icons/yes_no_bg.png" id="2_wiv1h"]
+
+[node name="YesNoOption" type="Control"]
+visible = false
+z_index = 1
+layout_mode = 3
+anchors_preset = 0
+offset_left = 235.0
+offset_top = 425.0
+offset_right = 1125.0
+offset_bottom = 823.0
+script = ExtResource("1_xloc8")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -131.0
+offset_top = -119.0
+offset_right = 988.0
+offset_bottom = 569.0
+texture = ExtResource("2_wiv1h")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 38.0
+offset_bottom = -227.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("1_l4ja8")
+theme_override_font_sizes/font_size = 100
+text = "Delete Save File?"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="YesButton" type="Button" parent="HBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(300, 120)
+layout_mode = 2
+script = ExtResource("2_pgo8a")
+
+[node name="Label" type="Label" parent="HBoxContainer/YesButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("1_l4ja8")
+theme_override_font_sizes/font_size = 100
+text = "Yes"
+
+[node name="NoButton" type="Button" parent="HBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(265, 120)
+layout_mode = 2
+script = ExtResource("2_pgo8a")
+
+[node name="Label" type="Label" parent="HBoxContainer/NoButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("1_l4ja8")
+theme_override_font_sizes/font_size = 100
+text = "No"
+
+[node name="Control2" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="focus_entered" from="HBoxContainer/YesButton" to="HBoxContainer/YesButton" method="_on_focus_entered"]
+[connection signal="focus_exited" from="HBoxContainer/YesButton" to="HBoxContainer/YesButton" method="_on_focus_exited"]
+[connection signal="mouse_entered" from="HBoxContainer/YesButton" to="HBoxContainer/YesButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="HBoxContainer/YesButton" to="HBoxContainer/YesButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="HBoxContainer/YesButton" to="." method="_on_yes_button_pressed"]
+[connection signal="focus_entered" from="HBoxContainer/NoButton" to="HBoxContainer/NoButton" method="_on_focus_entered"]
+[connection signal="focus_exited" from="HBoxContainer/NoButton" to="HBoxContainer/NoButton" method="_on_focus_exited"]
+[connection signal="mouse_entered" from="HBoxContainer/NoButton" to="HBoxContainer/NoButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="HBoxContainer/NoButton" to="HBoxContainer/NoButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="HBoxContainer/NoButton" to="." method="_on_no_button_pressed"]

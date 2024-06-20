@@ -1,0 +1,101 @@
+[gd_scene load_steps=8 format=3 uid="uid://7a18pp2ttgk4"]
+
+[ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1_f3tlh"]
+[ext_resource type="PackedScene" uid="uid://gent118w7jqg" path="res://conversation_pov/CharacterRect.tscn" id="2_41blx"]
+[ext_resource type="Texture2D" uid="uid://cdwgswbjicrqm" path="res://childrens_ward/angela_room_convo/julia_in_chair_nodding_off.png" id="3_ck32w"]
+[ext_resource type="Texture2D" uid="uid://biaqtabd7y8s" path="res://childrens_ward/julia_final_convo/julia_looks_up.png" id="5_npv1t"]
+[ext_resource type="Texture2D" uid="uid://brlqgj5ue557d" path="res://childrens_ward/julia_final_convo/julia_walking.png" id="6_oh33a"]
+[ext_resource type="Texture2D" uid="uid://oy7dah5vgcak" path="res://childrens_ward/julia_final_convo/julia_sad.png" id="7_7yq7l"]
+[ext_resource type="Texture2D" uid="uid://c1csf76ajj10m" path="res://childrens_ward/julia_final_convo/julia_lever.png" id="8_ra78p"]
+
+[node name="angela_room_convo" type="Node"]
+
+[node name="Convo" parent="." instance=ExtResource("1_f3tlh")]
+subject = "Julia"
+scriptPath = "res://childrens_ward/julia_final_convo/julia_final_convo.json"
+backgroundPath = "res://childrens_ward/julia_final_convo/angela_room_tv_on.png"
+sliverPath = "res://childrens_ward/julia_final_convo/angela_room_tv_sliver.png"
+nextScenePath = "JuliaHandOnLever"
+song = "tension_softer"
+remove_item = "Giant Rat"
+
+[node name="JuliaInChair" parent="." instance=ExtResource("2_41blx")]
+offset_left = 1252.0
+offset_top = 670.0
+offset_right = 1876.0
+offset_bottom = 1298.0
+texture = ExtResource("3_ck32w")
+appear_tag = "julia_in_chair"
+disappear_tag = "head_raise"
+
+[node name="JuliaLooksUp" parent="." instance=ExtResource("2_41blx")]
+offset_left = 1252.0
+offset_top = 706.0
+offset_right = 1850.0
+offset_bottom = 1304.0
+texture = ExtResource("5_npv1t")
+appear_tag = "head_raise"
+disappear_tag = "walking"
+
+[node name="JuliaWalksToYou" parent="." instance=ExtResource("2_41blx")]
+offset_left = 1356.0
+offset_top = 585.0
+offset_right = 1985.0
+offset_bottom = 1703.0
+texture = ExtResource("6_oh33a")
+appear_tag = "walking"
+disappear_tag = "julia_sad"
+
+[node name="JuliaWalksToYou2" parent="." instance=ExtResource("2_41blx")]
+offset_left = 1356.0
+offset_top = 585.0
+offset_right = 1985.0
+offset_bottom = 1703.0
+texture = ExtResource("6_oh33a")
+appear_tag = "walking2"
+disappear_tag = "julia_sad2"
+
+[node name="JuliaWalksToYou3" parent="." instance=ExtResource("2_41blx")]
+offset_left = 1356.0
+offset_top = 585.0
+offset_right = 1985.0
+offset_bottom = 1703.0
+texture = ExtResource("6_oh33a")
+appear_tag = "walking3"
+disappear_tag = "julia_sad3"
+
+[node name="JuliaSad" parent="." instance=ExtResource("2_41blx")]
+offset_left = 1392.0
+offset_top = 575.0
+offset_right = 1960.0
+offset_bottom = 1610.0
+texture = ExtResource("7_7yq7l")
+appear_tag = "julia_sad"
+disappear_tag = "walking2"
+
+[node name="JuliaSad2" parent="." instance=ExtResource("2_41blx")]
+offset_left = 1392.0
+offset_top = 575.0
+offset_right = 1960.0
+offset_bottom = 1610.0
+texture = ExtResource("7_7yq7l")
+appear_tag = "julia_sad2"
+disappear_tag = "walking3"
+
+[node name="JuliaSad3" parent="." instance=ExtResource("2_41blx")]
+offset_left = 1392.0
+offset_top = 575.0
+offset_right = 1960.0
+offset_bottom = 1610.0
+texture = ExtResource("7_7yq7l")
+appear_tag = "julia_sad3"
+disappear_tag = "lever"
+
+[node name="JuliaHandOnLever" parent="." instance=ExtResource("2_41blx")]
+offset_left = 66.0
+offset_top = 721.0
+offset_right = 926.0
+offset_bottom = 1581.0
+texture = ExtResource("8_ra78p")
+appear_tag = "lever"
+disappear_tag = ""

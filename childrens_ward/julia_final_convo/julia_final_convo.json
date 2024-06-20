@@ -1,0 +1,465 @@
+{
+  "passages": [
+    {
+      "text": "TAG\n\n[[C->Head raise.]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Head raise.",
+          "pid": "2"
+        }
+      ],
+      "name": "start",
+      "pid": "1",
+      "position": {
+        "x": "1177",
+        "y": "756"
+      },
+      "tags": [
+        "julia_in_chair",
+        "tension_soft"
+      ]
+    },
+    {
+      "text": "Julia::What are you doing here?  How did you get out of that room?  \n\nJulia::I knew I should have dealt with you sooner.  I just thought it might be good to let you sputter on the ground for a few minutes.\n\n[[C->Gets up]]\n\n",
+      "links": [
+        {
+          "name": "C",
+          "link": "Gets up",
+          "pid": "3"
+        }
+      ],
+      "name": "Head raise.",
+      "pid": "2",
+      "position": {
+        "x": "1181",
+        "y": "906"
+      },
+      "tags": [
+        "head_raise"
+      ]
+    },
+    {
+      "text": "Julia rises to apprehend you, seemingly more out of a sense of obligation than genuine spite.\n\n[[p:You trafficked dozens of infants.  You sent them down here to die!]]\n[[p:Angela isn't ever going to wake up.  Neither are any of the other kids you sent down here.  Give up!]]",
+      "links": [
+        {
+          "name": "p:You trafficked dozens of infants.  You sent them down here to die!",
+          "link": "p:You trafficked dozens of infants.  You sent them down here to die!",
+          "pid": "19"
+        },
+        {
+          "name": "p:Angela isn't ever going to wake up.  Neither are any of the other kids you sent down here.  Give up!",
+          "link": "p:Angela isn't ever going to wake up.  Neither are any of the other kids you sent down here.  Give up!",
+          "pid": "20"
+        }
+      ],
+      "name": "Gets up",
+      "pid": "3",
+      "position": {
+        "x": "1180",
+        "y": "1054"
+      },
+      "tags": [
+        "afuming",
+        "walking"
+      ]
+    },
+    {
+      "text": "Julia::Please.  Stop.  Please.\n\nJulia::Undo it.  It never was.  She never was.\n\n[[p:You loved Angela, didn't you?]]",
+      "links": [
+        {
+          "name": "p:You loved Angela, didn't you?",
+          "link": "p:You loved Angela, didn't you?",
+          "pid": "5"
+        }
+      ],
+      "name": "Throw shoes",
+      "pid": "4",
+      "position": {
+        "x": "1093",
+        "y": "1594"
+      }
+    },
+    {
+      "text": "Julia::That little parasite destroyed my body.  Destroyed my career.  I resent her.\n\nJulia::I never wanted her inside of me.  I never wanted a child.  I shouldn't have a child.  It wasn't my choice.  \n\nJulia::Please, just leave me alone!\n\n[[p:You shouldn't have had to carry Angela.  You weren't wrong to try and get rid of her.  But she wasn't at fault for being born.]]\n[[p:No.  You don't deserve to be left alone.->p:You shouldn't have had to carry Angela.  You weren't wrong to try and get rid of her.  But she wasn't at fault for being born.]]",
+      "links": [
+        {
+          "name": "p:You shouldn't have had to carry Angela.  You weren't wrong to try and get rid of her.  But she wasn't at fault for being born.",
+          "link": "p:You shouldn't have had to carry Angela.  You weren't wrong to try and get rid of her.  But she wasn't at fault for being born.",
+          "pid": "6"
+        },
+        {
+          "name": "p:No.  You don't deserve to be left alone.",
+          "link": "p:You shouldn't have had to carry Angela.  You weren't wrong to try and get rid of her.  But she wasn't at fault for being born.",
+          "pid": "6"
+        }
+      ],
+      "name": "p:You loved Angela, didn't you?",
+      "pid": "5",
+      "position": {
+        "x": "1081",
+        "y": "1786"
+      },
+      "tags": [
+        "aneutral",
+        "walking2"
+      ]
+    },
+    {
+      "text": "Julia::Rosalind's team was supposed to take care of her.  They said they would.  She cried and cried when they took her away but it was for her own good.\n\nJulia::It's their fault I had to carry her in the first place.  They just wouldn't let me get rid of her.  \n\n[[p:Maybe what happened to Angela wasn't your fault.  But what about all the kids you helped Dr. Tann steal?]]\n[[p:Come on.  You knew better than to believe Rosalind.  You knew what was going to happen.->p:Maybe what happened to Angela wasn't your fault.  But what about all the kids you helped Dr. Tann steal?]]",
+      "links": [
+        {
+          "name": "p:Maybe what happened to Angela wasn't your fault.  But what about all the kids you helped Dr. Tann steal?",
+          "link": "p:Maybe what happened to Angela wasn't your fault.  But what about all the kids you helped Dr. Tann steal?",
+          "pid": "8"
+        },
+        {
+          "name": "p:Come on.  You knew better than to believe Rosalind.  You knew what was going to happen.",
+          "link": "p:Maybe what happened to Angela wasn't your fault.  But what about all the kids you helped Dr. Tann steal?",
+          "pid": "8"
+        }
+      ],
+      "name": "p:You shouldn't have had to carry Angela.  You weren't wrong to try and get rid of her.  But she wasn't at fault for being born.",
+      "pid": "6",
+      "position": {
+        "x": "1123",
+        "y": "1995"
+      },
+      "tags": [
+        "aguilty",
+        "julia_sad2"
+      ]
+    },
+    {
+      "text": "Julia::Because...\n\nJulia::Because I knew she was going to die down here.  I knew what Rosalind was doing to these kids.\n\nJulia::Who are you to judge me?  What should I have done?  Pretend to love a kid that I hated?  My daughter shouldn't have been born.\n\n[[C->Throw shoes]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Throw shoes",
+          "pid": "4"
+        }
+      ],
+      "name": "p:Then why are you here?  If you really feel so guilt free?",
+      "pid": "7",
+      "position": {
+        "x": "1091",
+        "y": "1408"
+      },
+      "tags": [
+        "julia_sad"
+      ]
+    },
+    {
+      "text": "Julia::Rosalind is doing important work in the Core.  She needs subjects.  The amount of good she could do if she pulls this off...\n\nJulia::And we were doing those women a favor.  Do you know what kind of person ends up at this hospital?  They couldn't support another child.  \n\nJulia::All of the pregnant women I treated had only convinced themselves they wanted their child because they had no other options.\n\n[[p:Doesn't matter.  That wasn't you or Rosalind's choice to make.->p:At the end of the day, a lot of mothers had their children stolen and killed because of you.]]\n[[p:At the end of the day, a lot of mothers had their children stolen and killed because of you.]]",
+      "links": [
+        {
+          "name": "p:Doesn't matter.  That wasn't you or Rosalind's choice to make.",
+          "link": "p:At the end of the day, a lot of mothers had their children stolen and killed because of you.",
+          "pid": "9"
+        },
+        {
+          "name": "p:At the end of the day, a lot of mothers had their children stolen and killed because of you.",
+          "link": "p:At the end of the day, a lot of mothers had their children stolen and killed because of you.",
+          "pid": "9"
+        }
+      ],
+      "name": "p:Maybe what happened to Angela wasn't your fault.  But what about all the kids you helped Dr. Tann steal?",
+      "pid": "8",
+      "position": {
+        "x": "1086",
+        "y": "2188"
+      },
+      "tags": [
+        "aneutral",
+        "walking3"
+      ]
+    },
+    {
+      "text": "Julia heard you, but she is staring past you now.  She is quiet.  And solemn.  \n\nSeveral agonizing moments of silence rise and fall.  Suddenly, violently, the tension is shattered, and Julia looks right at you.\n\nJulia::There must be some way to undo it all.  Go back to the way things were before.\n\nJulia::Tell me how to undo it.\n\n[[p:You can't undo it.  You have to accept what happened.]]\n[[p:Angela is dead.  So are all those other kids.  They can't forgive you.->p:You can't undo it.  You have to accept what happened.]]",
+      "links": [
+        {
+          "name": "p:You can't undo it.  You have to accept what happened.",
+          "link": "p:You can't undo it.  You have to accept what happened.",
+          "pid": "10"
+        },
+        {
+          "name": "p:Angela is dead.  So are all those other kids.  They can't forgive you.",
+          "link": "p:You can't undo it.  You have to accept what happened.",
+          "pid": "10"
+        }
+      ],
+      "name": "p:At the end of the day, a lot of mothers had their children stolen and killed because of you.",
+      "pid": "9",
+      "position": {
+        "x": "1249",
+        "y": "2416"
+      },
+      "tags": [
+        "aguilty",
+        "julia_sad3"
+      ]
+    },
+    {
+      "text": "Julia::That's it then?\n\nJulia::Nothing I can do will ever change it.\n\n[[p:It's too late to correct the damage, even partially.  You can't even ask for forgiveness at this point.]]\n[[p:The past is washed away by the present.  It only continues to linger because you haven't accepted your guilt.]]",
+      "links": [
+        {
+          "name": "p:It's too late to correct the damage, even partially.  You can't even ask for forgiveness at this point.",
+          "link": "p:It's too late to correct the damage, even partially.  You can't even ask for forgiveness at this point.",
+          "pid": "11"
+        },
+        {
+          "name": "p:The past is washed away by the present.  It only continues to linger because you haven't accepted your guilt.",
+          "link": "p:The past is washed away by the present.  It only continues to linger because you haven't accepted your guilt.",
+          "pid": "12"
+        }
+      ],
+      "name": "p:You can't undo it.  You have to accept what happened.",
+      "pid": "10",
+      "position": {
+        "x": "1258",
+        "y": "2564"
+      },
+      "tags": [
+        "aneutral"
+      ]
+    },
+    {
+      "text": "Julia::So all those mothers who went to their graves hating me, there's nothing I can do?  All I can do is \"move on?\"\n\n[[p:All you can do now is acknowledge the pain you've caused.]]",
+      "links": [
+        {
+          "name": "p:All you can do now is acknowledge the pain you've caused.",
+          "link": "p:All you can do now is acknowledge the pain you've caused.",
+          "pid": "21"
+        }
+      ],
+      "name": "p:It's too late to correct the damage, even partially.  You can't even ask for forgiveness at this point.",
+      "pid": "11",
+      "position": {
+        "x": "1132",
+        "y": "2661"
+      }
+    },
+    {
+      "text": "Julia::It hasn't been washed away.  I still feel it.  I feel the pain I caused.  I feel the hate and anguish that those mothers took to their grave.\n\n[[C->Moving on]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Moving on",
+          "pid": "13"
+        }
+      ],
+      "name": "p:The past is washed away by the present.  It only continues to linger because you haven't accepted your guilt.",
+      "pid": "12",
+      "position": {
+        "x": "1358",
+        "y": "2718"
+      }
+    },
+    {
+      "text": "Julia::Everyone just tells you to move on, but no one ever actually tells you how to do that.  \n\nJulia::I can't stop thinking about it.  I won't stop thinking about it.\n\nJulia::I don't deserve to stop thinking about it!\n\n[[p:No one deserves to.  We're all tarnished.->p:Torturing yourself isn't going to undo what you did to Angela, or those other kids.]]\n[[p:Torturing yourself isn't going to undo what you did to Angela, or those other kids.]]",
+      "links": [
+        {
+          "name": "p:No one deserves to.  We're all tarnished.",
+          "link": "p:Torturing yourself isn't going to undo what you did to Angela, or those other kids.",
+          "pid": "14"
+        },
+        {
+          "name": "p:Torturing yourself isn't going to undo what you did to Angela, or those other kids.",
+          "link": "p:Torturing yourself isn't going to undo what you did to Angela, or those other kids.",
+          "pid": "14"
+        }
+      ],
+      "name": "Moving on",
+      "pid": "13",
+      "position": {
+        "x": "1262",
+        "y": "2894"
+      },
+      "tags": [
+        "aguilty"
+      ]
+    },
+    {
+      "text": "Julia::...\n\nJulia::What I'm doing really is pointless isn't it?\n\nJulia::She isn't going to wake up.  There was never any hope of her waking up.\n\n[[p:She was never going to make it out of the well after you threw her down there.->p:The only thing you can do now is relieve her of pain.]]\n[[p:The only thing you can do now is relieve her of pain.]]",
+      "links": [
+        {
+          "name": "p:She was never going to make it out of the well after you threw her down there.",
+          "link": "p:The only thing you can do now is relieve her of pain.",
+          "pid": "15"
+        },
+        {
+          "name": "p:The only thing you can do now is relieve her of pain.",
+          "link": "p:The only thing you can do now is relieve her of pain.",
+          "pid": "15"
+        }
+      ],
+      "name": "p:Torturing yourself isn't going to undo what you did to Angela, or those other kids.",
+      "pid": "14",
+      "position": {
+        "x": "1349",
+        "y": "3046"
+      },
+      "tags": [
+        "asad"
+      ]
+    },
+    {
+      "text": "Julia's gaze drifts.  She's looking past you.\n\nAfter a few moments, she glances at the circuit breaker on her right.\n\nHer gaze returns to you.\n\nJulia::...\n\nJulia::If I flip that breaker, Angela's body will finally cease to function.  So will I.  \n\nJulia::I can end the pain.  That's all I can do now.\n\n[[p:Do what you can now.  That's all that anyone can ask.]]",
+      "links": [
+        {
+          "name": "p:Do what you can now.  That's all that anyone can ask.",
+          "link": "p:Do what you can now.  That's all that anyone can ask.",
+          "pid": "16"
+        }
+      ],
+      "name": "p:The only thing you can do now is relieve her of pain.",
+      "pid": "15",
+      "position": {
+        "x": "1423",
+        "y": "3196"
+      }
+    },
+    {
+      "text": "Julia::...\n\nJulia::Are you...like me?\n\nJulia::When I pull this switch, what happens to you?\n\n[[p:I'm real.  I don't need Rosalind to exist.]]\n[[p:I'm probably going to die.  But, right now, I'm alive.  That's what matters.->p:I'm real.  I don't need Rosalind to exist.]]\n[[p:It doesn't matter.  What matters is that I'm true to myself right now.->p:I'm real.  I don't need Rosalind to exist.]]",
+      "links": [
+        {
+          "name": "p:I'm real.  I don't need Rosalind to exist.",
+          "link": "p:I'm real.  I don't need Rosalind to exist.",
+          "pid": "22"
+        },
+        {
+          "name": "p:I'm probably going to die.  But, right now, I'm alive.  That's what matters.",
+          "link": "p:I'm real.  I don't need Rosalind to exist.",
+          "pid": "22"
+        },
+        {
+          "name": "p:It doesn't matter.  What matters is that I'm true to myself right now.",
+          "link": "p:I'm real.  I don't need Rosalind to exist.",
+          "pid": "22"
+        }
+      ],
+      "name": "p:Do what you can now.  That's all that anyone can ask.",
+      "pid": "16",
+      "position": {
+        "x": "1424",
+        "y": "3347"
+      },
+      "tags": [
+        "aguilty",
+        "lever"
+      ]
+    },
+    {
+      "text": "",
+      "name": "p:Keep one eye closed, one open.  Focus on what the closed eye sees.  It'll help you ease into it.",
+      "pid": "17",
+      "position": {
+        "x": "1259",
+        "y": "3646"
+      }
+    },
+    {
+      "text": "",
+      "name": "p:Just focus on the present moment.  That's all any of us have.",
+      "pid": "18",
+      "position": {
+        "x": "1461",
+        "y": "3643"
+      }
+    },
+    {
+      "text": "Julia::Those kids were unwanted.  Even if the mothers said otherwise, I could see it in their faces, in their bodies.  \n\nJulia::I was doing them a favor.\n\n[[p:Then why are you here?  If you really feel so guilt free?]]",
+      "links": [
+        {
+          "name": "p:Then why are you here?  If you really feel so guilt free?",
+          "link": "p:Then why are you here?  If you really feel so guilt free?",
+          "pid": "7"
+        }
+      ],
+      "name": "p:You trafficked dozens of infants.  You sent them down here to die!",
+      "pid": "19",
+      "position": {
+        "x": "1102",
+        "y": "1199"
+      }
+    },
+    {
+      "text": "Julia::You don't know that.  Her heart is still beating.  Parts of her brain stem are still fully intact.\n\nJulia::She might wake up.  She has to wake up.  I can't leave until she wakes up.\n\n[[p:Then why are you still here?  If you're so confident in her recovery?]]",
+      "links": [
+        {
+          "name": "p:Then why are you still here?  If you're so confident in her recovery?",
+          "link": "p:Then why are you still here?  If you're so confident in her recovery?",
+          "pid": "23"
+        }
+      ],
+      "name": "p:Angela isn't ever going to wake up.  Neither are any of the other kids you sent down here.  Give up!",
+      "pid": "20",
+      "position": {
+        "x": "1250",
+        "y": "1201"
+      }
+    },
+    {
+      "text": "Julia::Acknowledging it won't fix anything!  You can't fix anything!\n\nJulia::I can't just move on...\n\n[[C->Moving on]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Moving on",
+          "pid": "13"
+        }
+      ],
+      "name": "p:All you can do now is acknowledge the pain you've caused.",
+      "pid": "21",
+      "position": {
+        "x": "1128",
+        "y": "2806"
+      }
+    },
+    {
+      "text": "Julia::Can you...Can you talk me through it?  I don't know what it will be like after I pull this switch.  After I'm gone.  \n\n[[p:Keep one eye closed, one open.  Focus on what the closed eye sees.  It'll help you ease into it.]]\n[[p:Just focus on the present moment.  That's all any of us have.]]",
+      "links": [
+        {
+          "name": "p:Keep one eye closed, one open.  Focus on what the closed eye sees.  It'll help you ease into it.",
+          "link": "p:Keep one eye closed, one open.  Focus on what the closed eye sees.  It'll help you ease into it.",
+          "pid": "17"
+        },
+        {
+          "name": "p:Just focus on the present moment.  That's all any of us have.",
+          "link": "p:Just focus on the present moment.  That's all any of us have.",
+          "pid": "18"
+        }
+      ],
+      "name": "p:I'm real.  I don't need Rosalind to exist.",
+      "pid": "22",
+      "position": {
+        "x": "1379",
+        "y": "3497"
+      }
+    },
+    {
+      "text": "Julia::Because...\n\nJulia::Because I know what Rosalind does to these kids.\n\nJulia::I can't let Rosalind have her.  I've already let her have too much.\n\nJulia::Who are you to judge me?  What should I have done?  Pretend to love a kid that I hated?  \n\nJulia::Angela shouldn't have been born.\n\n[[C->Throw shoes]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Throw shoes",
+          "pid": "4"
+        }
+      ],
+      "name": "p:Then why are you still here?  If you're so confident in her recovery?",
+      "pid": "23",
+      "position": {
+        "x": "1250",
+        "y": "1351"
+      },
+      "tags": [
+        "julia_sad"
+      ]
+    }
+  ],
+  "name": "Final Julia Encounter",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "61272A8C-B88B-49BB-AC56-9B04B5B7A9EB"
+}
+

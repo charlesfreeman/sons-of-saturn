@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsktjlr54m6f6"]
+
+[ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1_67oqn"]
+[ext_resource type="PackedScene" uid="uid://byn2lurvh5x2f" path="res://conversation_pov/ConvoSoundEffect.tscn" id="2_g832d"]
+[ext_resource type="AudioStream" uid="uid://c7goq8qu2tu6h" path="res://childrens_ward/scientist_desk_convo/retro_beep.wav" id="3_la3rk"]
+
+[node name="scientist_desk_convo" type="Node"]
+
+[node name="Convo" parent="." instance=ExtResource("1_67oqn")]
+scriptPath = "res://childrens_ward/scientist_desk_convo/scientist_desk_convo.json"
+backgroundPath = "res://childrens_ward/scientist_desk_convo/scientist_computer_closeup_off.png"
+sliverPath = "res://childrens_ward/scientist_desk_convo/scientist_computer_closeup_sliver.png"
+nextScenePath = "scientist_computer"
+tag_dict = {
+"juggler": "res://childrens_ward/scientist_desk_convo/scientist_computer_closeup_juggler.png",
+"lines": "res://childrens_ward/scientist_desk_convo/scientist_computer_closeup_lines.png"
+}
+tag_dict_sliver = {
+"juggler": "res://childrens_ward/scientist_desk_convo/scientist_computer_closeup_sliver.png",
+"lines": "res://childrens_ward/scientist_desk_convo/scientist_computer_closeup_sliver.png"
+}
+prog_flag = "scientist_computer_convo"
+
+[node name="ConvoSoundEffect" parent="." instance=ExtResource("2_g832d")]
+stream = ExtResource("3_la3rk")
+volume_db = -20.0
+tag_to_play = "beep"

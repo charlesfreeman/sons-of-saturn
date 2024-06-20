@@ -1,0 +1,139 @@
+
+
+{
+  "passages": [
+    {
+      "text": "You approach a strange plastic box, tucked away in the back of an old closet.  This seems to have been an impromptu office of some sort.\n\n[[What is that thing?]]\n[[How am I supposed to use it?]]\n[[p:(Action) Punch the plastic box.]]",
+      "links": [
+        {
+          "name": "What is that thing?",
+          "link": "What is that thing?",
+          "pid": "2"
+        },
+        {
+          "name": "How am I supposed to use it?",
+          "link": "How am I supposed to use it?",
+          "pid": "4"
+        },
+        {
+          "name": "p:(Action) Punch the plastic box.",
+          "link": "p:(Action) Punch the plastic box.",
+          "pid": "3"
+        }
+      ],
+      "name": "start",
+      "pid": "1",
+      "position": {
+        "x": "1179",
+        "y": "606"
+      },
+      "tags": [
+        "aconfused"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::It's an old computing box, remember?  We used to see these all of the time when we lived here.\n\nJasper,surprised::They're very valuable now.  There aren't enough rare metals on the surface to produce them anymore.\n\nJasper,head_tilted::I'm surprised it hasn't been stolen actually.  I guess the Ferryman did say people don't come down here much.\n\n[[C->start]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "start",
+          "pid": "1"
+        }
+      ],
+      "name": "What is that thing?",
+      "pid": "2",
+      "position": {
+        "x": "1004",
+        "y": "756"
+      }
+    },
+    {
+      "text": "The machine whirs to life following your swift strike.  You can hear worn belts being driven for the first time in decades.  A series of strange beeps are emitted like rifle fire.\n\nJasper,surprised::That worked?\n\n[[C->Juggler]]\n\n",
+      "links": [
+        {
+          "name": "C",
+          "link": "Juggler",
+          "pid": "5"
+        }
+      ],
+      "name": "p:(Action) Punch the plastic box.",
+      "pid": "3",
+      "position": {
+        "x": "1254",
+        "y": "756"
+      },
+      "tags": [
+        "juggler",
+        "computer",
+        "beep"
+      ]
+    },
+    {
+      "text": "Jasper,head_tilted::I think you use these arrow keys to move around the screen, and this button to select stuff.\n\nJasper,thinking::I don't know how to turn it on, though.\n\n[[C->start]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "start",
+          "pid": "1"
+        }
+      ],
+      "name": "How am I supposed to use it?",
+      "pid": "4",
+      "position": {
+        "x": "1134",
+        "y": "756"
+      }
+    },
+    {
+      "text": "Jasper,head_tilted::What is this?  It's just some weird dancing juggler program.\n\nJasper,thinking::This isn't what we want.\n\n[[p:(Action) Hit it again.]]",
+      "links": [
+        {
+          "name": "p:(Action) Hit it again.",
+          "link": "p:(Action) Hit it again.",
+          "pid": "6"
+        }
+      ],
+      "name": "Juggler",
+      "pid": "5",
+      "position": {
+        "x": "1254",
+        "y": "906"
+      }
+    },
+    {
+      "text": "The program changes again following the second strike.  The computing box now loads a set of text documents.  It looks like you can search through them.\n\n[[p:(Action) Read through the text documents.]]",
+      "links": [
+        {
+          "name": "p:(Action) Read through the text documents.",
+          "link": "p:(Action) Read through the text documents.",
+          "pid": "7"
+        }
+      ],
+      "name": "p:(Action) Hit it again.",
+      "pid": "6",
+      "position": {
+        "x": "1253",
+        "y": "1056"
+      },
+      "tags": [
+        "lines",
+        "beep"
+      ]
+    },
+    {
+      "text": "",
+      "name": "p:(Action) Read through the text documents.",
+      "pid": "7",
+      "position": {
+        "x": "1254",
+        "y": "1206"
+      }
+    }
+  ],
+  "name": "scientist_desk_convo",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "29731434-4896-45D9-9982-EB848FBB74B2"
+}
+

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bppd2uivxqn0q"
-path="res://.godot/imported/chute_room.png-e9736c4f980d71b2f9a049501b16e46b.ctex"
+uid="uid://b4pnqpa1k0532"
+path="res://.godot/imported/scientist_computer_closeup_off.png-1b6c335db141591cdf0150b6ce680c6a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://infirmary/chute_room/chute_room.png"
-dest_files=["res://.godot/imported/chute_room.png-e9736c4f980d71b2f9a049501b16e46b.ctex"]
+source_file="res://childrens_ward/scientist_desk_convo/scientist_computer_closeup_off.png"
+dest_files=["res://.godot/imported/scientist_computer_closeup_off.png-1b6c335db141591cdf0150b6ce680c6a.ctex"]
 
 [params]
 

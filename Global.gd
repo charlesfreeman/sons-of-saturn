@@ -1,13 +1,12 @@
 extends Node
 
-var location = "res://sewer/just_stood_up/just_stood_up.tscn"
+var location = "res://childrens_ward/empty_room/empty_room.tscn"
 var region = "None"
 # Amelie always assumed to be in party, never reason to check
 var party = ["Wiggly"]
 var scene_type = "TitleScreen"
 var active_popup = false
-var soundscape = "None"
-var soundscapes = []
+var retro_font_mode = false
 var dbrightness = 0.6
 var cursor = "null"
 var font_size = 48
@@ -40,6 +39,14 @@ var prog_flags = {
 	"julia_room" : false,
 	"julia_room_convo" : false,
 	"fallen_through_roof" : false,
+	"scientist_computer_convo" : false,
+	"scientist_computer_convo_2" : false,
+	"double_hall_entered" : false,
+	"angela_room_convo" : false,
+	"vera_final_convo" : false,
+	"not_visited_vera" : true,
+	"safe_convo" : false,
+	"finished_game" : false,
 	"None" : true,
 	"False" : false,
 }
@@ -124,6 +131,9 @@ func stop_song():
 func flip_prog_flag(flag: String):
 	prog_flags[flag] = true
 	
+func negate_prog_flag(flag: String):
+	prog_flags[flag] = false
+	
 func get_prog_flag(flag: String):
 	return prog_flags[flag]
 
@@ -172,6 +182,7 @@ func produce_save_dict():
 		"region" : region,
 		"party" : party,
 		"prog_flags" : prog_flags,
+		"inventory" : inventory,
 		"scene_type" : scene_type,
 		"font_size" : font_size,
 		"footstep_vol" : footstep_vol,
@@ -184,16 +195,26 @@ func produce_save_dict():
 	}
 	return save_dict
 	
-func save_game():
+func autosave():
 	var sgame = FileAccess.open("user://sonsofsaturn.save", FileAccess.WRITE)
 	var save_data = produce_save_dict()
-	sgame.store_line(JSON.new().stringify(save_data))
+	sgame.store_line(JSON.stringify(save_data))
 	sgame.close()
 	
-func load_game():
-	if not check_save_exists():
+func save_game():
+	print("saving game")
+	var time = Time.get_datetime_string_from_system()
+	var savename = "user://" + "sos_" + region + "_" + time.replace(":", "_") + ".save"
+	print("savename: ", savename)
+	var sgame = FileAccess.open(savename, FileAccess.WRITE)
+	var save_data = produce_save_dict()
+	sgame.store_line(JSON.stringify(save_data))
+	sgame.close()
+	
+func load_game(savegame_string):
+	if not check_save_exists(savegame_string):
 		return # Error! We don't have a save to load.
-	var sgame = FileAccess.open("user://sonsofsaturn.save", FileAccess.READ)
+	var sgame = FileAccess.open(savegame_string, FileAccess.READ)
 	var test_json_conv = JSON.new()
 	test_json_conv.parse(sgame.get_line())
 	var save_data = test_json_conv.get_data()
@@ -202,6 +223,8 @@ func load_game():
 	region = save_data["region"]
 	party = save_data["party"]
 	prog_flags = save_data["prog_flags"]
+	if save_data.has("inventory"):
+		inventory = save_data["inventory"]
 	scene_type = save_data["scene_type"]
 	font_size = save_data["font_size"]
 	footstep_vol = save_data["footstep_vol"]
@@ -215,11 +238,16 @@ func load_game():
 	var general_options = SceneManager.create_general_options()
 	SceneManager.change_scene(scene_type, options, options, general_options)
 	
-func check_save_exists():
-	return FileAccess.file_exists("user://sonsofsaturn.save")
+func delete_save(sg_to_delete):
+	var dir = DirAccess.open("user://")
+	dir.remove(sg_to_delete)
+	
+func check_save_exists(savegame_string):
+	return FileAccess.file_exists(savegame_string)
 	
 func reset_prog_flags():
 	for key in prog_flags.keys():
 		prog_flags[key] = false
 	prog_flags["None"] = true
+	prog_flags["not_visited_vera"] = true
 	

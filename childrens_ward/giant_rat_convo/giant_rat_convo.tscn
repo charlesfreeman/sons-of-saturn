@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://co3lj8jtkwk7t"]
+
+[ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1_m4mkv"]
+[ext_resource type="PackedScene" uid="uid://byn2lurvh5x2f" path="res://conversation_pov/ConvoSoundEffect.tscn" id="2_o7nwa"]
+[ext_resource type="AudioStream" uid="uid://ck3duw4ftabbe" path="res://childrens_ward/giant_rat_convo/untying_shoe.wav" id="3_swd4s"]
+[ext_resource type="AudioStream" uid="uid://btmwtt8sd7dcd" path="res://childrens_ward/giant_rat_convo/pulling_sock_off.wav" id="3_u35da"]
+[ext_resource type="AudioStream" uid="uid://d11pu3y1vtxjq" path="res://childrens_ward/giant_rat_convo/putting_shoe_on.wav" id="4_fixxu"]
+
+[node name="giant_rat_convo" type="Node"]
+
+[node name="Convo" parent="." instance=ExtResource("1_m4mkv")]
+subject = "Giant Rat"
+scriptPath = "res://childrens_ward/giant_rat_convo/giant_rat_convo.json"
+backgroundPath = "res://childrens_ward/giant_rat_convo/all_black_2300x2160.png"
+sliverPath = "res://childrens_ward/giant_rat_convo/all_black_sliver.png"
+nextLocation = "res://childrens_ward/long_hall/long_hall.tscn"
+fade_tag_dict = {
+"giant_rat": "res://childrens_ward/giant_rat_convo/giant_rat_convo.png",
+"looking_down": "res://childrens_ward/giant_rat_convo/elevator_floor_w_rat.png",
+"standing_up": "res://childrens_ward/giant_rat_convo/elevator_interior_2300x2160.png",
+"toe": "res://childrens_ward/giant_rat_convo/broken_toe.png"
+}
+fade_tag_dict_sliver = {
+"giant_rat": "res://childrens_ward/giant_rat_convo/giant_rat_convo_sliver.png",
+"looking_down": "res://childrens_ward/giant_rat_convo/elevator_floor_sliver.png",
+"standing_up": "res://childrens_ward/giant_rat_convo/elevator_interior_sliver.png",
+"toe": "res://childrens_ward/giant_rat_convo/toe_sliver.png"
+}
+new_item = "Jasper + Giant Rat"
+remove_item = "Jasper"
+
+[node name="UntyingShoe" parent="." instance=ExtResource("2_o7nwa")]
+stream = ExtResource("3_swd4s")
+volume_db = -12.0
+tag_to_play = "untying_shoe"
+
+[node name="TakingOffSock" parent="." instance=ExtResource("2_o7nwa")]
+stream = ExtResource("3_u35da")
+volume_db = -12.0
+tag_to_play = "taking_off_sock"
+
+[node name="PuttingOnShoe" parent="." instance=ExtResource("2_o7nwa")]
+stream = ExtResource("4_fixxu")
+volume_db = -12.0
+tag_to_play = "putting_on_shoe"

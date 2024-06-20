@@ -1,0 +1,816 @@
+{
+  "passages": [
+    {
+      "text": "The horrific visions rattling your spinal column slowly begin to fade.  The images and figures are replaced by a pervasive darkness.  \n\nThe tendrils of your nervous system begin to slowly reawaken.  An internal monologue slowly creeps back to life.\n\nYour proprioceptive senses inform you that you are laying on your side.  Slowly, you begin to feel the faint ring of pain emanating from your left big toe.\n\n[[p:Is this what being dead is like?]]",
+      "links": [
+        {
+          "name": "p:Is this what being dead is like?",
+          "link": "p:Is this what being dead is like?",
+          "pid": "2"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "1180",
+        "y": "608"
+      },
+      "tags": [
+        "add_giant_rat",
+        "saturn"
+      ]
+    },
+    {
+      "text": "Rasping Voice::No.  This isn't what being dead is like.\n\nRasping Voice::I have known death.  This is not its nature.\n\n[[p:Then what is being dead like?]]",
+      "links": [
+        {
+          "name": "p:Then what is being dead like?",
+          "link": "p:Then what is being dead like?",
+          "pid": "3"
+        }
+      ],
+      "name": "p:Is this what being dead is like?",
+      "pid": "2",
+      "position": {
+        "x": "1180",
+        "y": "755"
+      }
+    },
+    {
+      "text": "Rasping Voice::Close your left eye, but not your right.  Focus on what your left eye is seeing.\n\nRasping Voice::The left eye doesn't see anything, nor does it see the absence of anything.\n\nRasping Voice::That's what being dead is like.\n\n[[p:I can't open either of my eyes right now.  I'll have to try it later.]]\n[[p:Don't make me think about that, right now I'm focusing on the backs of my eyelids.->p:I can't open either of my eyes right now.  I'll have to try it later.]]",
+      "links": [
+        {
+          "name": "p:I can't open either of my eyes right now.  I'll have to try it later.",
+          "link": "p:I can't open either of my eyes right now.  I'll have to try it later.",
+          "pid": "4"
+        },
+        {
+          "name": "p:Don't make me think about that, right now I'm focusing on the backs of my eyelids.",
+          "link": "p:I can't open either of my eyes right now.  I'll have to try it later.",
+          "pid": "4"
+        }
+      ],
+      "name": "p:Then what is being dead like?",
+      "pid": "3",
+      "position": {
+        "x": "1179",
+        "y": "908"
+      },
+      "tags": [
+        "aconfused"
+      ]
+    },
+    {
+      "text": "Rasping Voice::It pains me to see you wasting such life, such vigor.  \n\nRasping Voice::When death comes, will you wish you spent more of your time staring at the back of your eyelids?\n\nThe pain from your toe grows closer.  You begin to feel the pressure.\n\nThe mild odor of putrification returns to your nostrils.  You hear a distant creaking.  \n\nJust as all of your gears and tendons start to whirl, you hear a familiar voice.\n\nJasper,sad::We've...We've got to wake up.\n\n[[p:(Action) Open your right eye.]]",
+      "links": [
+        {
+          "name": "p:(Action) Open your right eye.",
+          "link": "p:(Action) Open your right eye.",
+          "pid": "5"
+        }
+      ],
+      "name": "p:I can't open either of my eyes right now.  I'll have to try it later.",
+      "pid": "4",
+      "position": {
+        "x": "1182",
+        "y": "1078"
+      }
+    },
+    {
+      "text": "The muscles in your face manage to pry your right eye open.  You are lying face to face with the giant rat on the floor of the elevator cabin.\n\nIt begins to whisper to you.\n\nGiant Rat::Yes.  Now focus on what the left eye sees.  Get a real taste for it.\n\n[[p:Am I hallucinating this or are you really talking to me?]]\n[[p:This would have been shocking to me two or three hours ago.]]",
+      "links": [
+        {
+          "name": "p:Am I hallucinating this or are you really talking to me?",
+          "link": "p:Am I hallucinating this or are you really talking to me?",
+          "pid": "6"
+        },
+        {
+          "name": "p:This would have been shocking to me two or three hours ago.",
+          "link": "p:This would have been shocking to me two or three hours ago.",
+          "pid": "7"
+        }
+      ],
+      "name": "p:(Action) Open your right eye.",
+      "pid": "5",
+      "position": {
+        "x": "1185",
+        "y": "1228"
+      },
+      "tags": [
+        "adisgusted",
+        "giant_rat",
+        "front_desk_ambient"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::You're hallucinating.\n\nGiant Rat::I'm really talking to you.  \n\nGiant Rat::Directly, without words.  We collided during the freefall.  Our nervous systems became entangled.\n\n[[Thanks for breaking my fall.]]\n[[p:But how?  You were dead.]]",
+      "links": [
+        {
+          "name": "Thanks for breaking my fall.",
+          "link": "Thanks for breaking my fall.",
+          "pid": "24"
+        },
+        {
+          "name": "p:But how?  You were dead.",
+          "link": "p:But how?  You were dead.",
+          "pid": "8"
+        }
+      ],
+      "name": "p:Am I hallucinating this or are you really talking to me?",
+      "pid": "6",
+      "position": {
+        "x": "1107",
+        "y": "1378"
+      },
+      "tags": [
+        "aconfused"
+      ]
+    },
+    {
+      "text": "Giant Rat::Really?  You've been maintaining a dialogue with that creature in your pocket for quite some time now.\n\nGiant Rat::Is this so different?\n\n[[p:But Jasper isn't dead.  You're dead.  Or at least you were.]]",
+      "links": [
+        {
+          "name": "p:But Jasper isn't dead.  You're dead.  Or at least you were.",
+          "link": "p:But Jasper isn't dead.  You're dead.  Or at least you were.",
+          "pid": "15"
+        }
+      ],
+      "name": "p:This would have been shocking to me two or three hours ago.",
+      "pid": "7",
+      "position": {
+        "x": "1307",
+        "y": "1353"
+      }
+    },
+    {
+      "text": "Giant Rat::The architecture of my nervous system is still fully intact.  When we collided, I received one last glorious injection of life.\n\nGiant Rat::I thank you for the donation.  I only got to live 622 days before dying in that elevator cabin.  \n\nGiant Rat::Such a humiliatingly brief lapse of time.\n\n[[That makes me feel really grateful for my 9528 days.]]\n[[What could have killed you?  How can a creature of such girth possibly die?]]\n[[p:Your life was short, but you achieved such an impressive mass before you died!  Teach me your secrets!]]\n\n",
+      "links": [
+        {
+          "name": "That makes me feel really grateful for my 9528 days.",
+          "link": "That makes me feel really grateful for my 9528 days.",
+          "pid": "16"
+        },
+        {
+          "name": "What could have killed you?  How can a creature of such girth possibly die?",
+          "link": "What could have killed you?  How can a creature of such girth possibly die?",
+          "pid": "39"
+        },
+        {
+          "name": "p:Your life was short, but you achieved such an impressive mass before you died!  Teach me your secrets!",
+          "link": "p:Your life was short, but you achieved such an impressive mass before you died!  Teach me your secrets!",
+          "pid": "9"
+        }
+      ],
+      "name": "p:But how?  You were dead.",
+      "pid": "8",
+      "position": {
+        "x": "1137",
+        "y": "1527"
+      },
+      "tags": [
+        "aguilty"
+      ]
+    },
+    {
+      "text": "Giant Rat::Life is not easy for a baby rat.  If you don't get big, quickly, you will be eaten by the other baby rats.  Or your own parents.\n\nGiant Rat::It's time for you to decide: what kind of rat are you going to be?\n\n[[p:I'm going to be a giant rat.  I'm going to eat all my siblings and also my own kids.]]\n[[p:I stopped growing fifteen years ago.  I'm a tiny rat and always be.]]",
+      "links": [
+        {
+          "name": "p:I'm going to be a giant rat.  I'm going to eat all my siblings and also my own kids.",
+          "link": "p:I'm going to be a giant rat.  I'm going to eat all my siblings and also my own kids.",
+          "pid": "10"
+        },
+        {
+          "name": "p:I stopped growing fifteen years ago.  I'm a tiny rat and always be.",
+          "link": "p:I stopped growing fifteen years ago.  I'm a tiny rat and always be.",
+          "pid": "11"
+        }
+      ],
+      "name": "p:Your life was short, but you achieved such an impressive mass before you died!  Teach me your secrets!",
+      "pid": "9",
+      "position": {
+        "x": "1073",
+        "y": "1674"
+      }
+    },
+    {
+      "text": "The mere thought of this exercise in dominance reinvigorates you.  You regain some control of your muscles.  You are able to open both eyes now.\n\nJasper,twisted::We've appreciated this rat long enough.  I think it is time to stand up.\n\n[[p:(Action) Stand up.]]",
+      "links": [
+        {
+          "name": "p:(Action) Stand up.",
+          "link": "p:(Action) Stand up.",
+          "pid": "12"
+        }
+      ],
+      "name": "p:I'm going to be a giant rat.  I'm going to eat all my siblings and also my own kids.",
+      "pid": "10",
+      "position": {
+        "x": "1032",
+        "y": "1828"
+      }
+    },
+    {
+      "text": "Your body immediately begins to punish you for this act of psychological cowardice.  The quiet pain in your big toe suddenly grows to a deafening roar.\n\nYou've regained control of your muscles, but the pain makes it impossible to stand.\n\nJasper,thinking::You think we should take a look at your toe?  It's really starting to hurt.\n\n[[p:Alright, let's take a look.]]\n[[p:I'm better off not knowing.]]",
+      "links": [
+        {
+          "name": "p:Alright, let's take a look.",
+          "link": "p:Alright, let's take a look.",
+          "pid": "13"
+        },
+        {
+          "name": "p:I'm better off not knowing.",
+          "link": "p:I'm better off not knowing.",
+          "pid": "14"
+        }
+      ],
+      "name": "p:I stopped growing fifteen years ago.  I'm a tiny rat and always be.",
+      "pid": "11",
+      "position": {
+        "x": "1200",
+        "y": "1956"
+      },
+      "tags": [
+        "adisgusted"
+      ]
+    },
+    {
+      "text": "Your attempt at standing is immediately thwarted by an incredible pain in your big toe.\n\nJasper,twisted::Ahg!  Your toe, it's probably broken.  Take the shoe off so we can take a look.\n\n[[p:Alright, let's take a look.]]\n[[p:I'm better off not knowing.]]",
+      "links": [
+        {
+          "name": "p:Alright, let's take a look.",
+          "link": "p:Alright, let's take a look.",
+          "pid": "13"
+        },
+        {
+          "name": "p:I'm better off not knowing.",
+          "link": "p:I'm better off not knowing.",
+          "pid": "14"
+        }
+      ],
+      "name": "p:(Action) Stand up.",
+      "pid": "12",
+      "position": {
+        "x": "1032",
+        "y": "1971"
+      },
+      "tags": [
+        "adisgusted"
+      ]
+    },
+    {
+      "text": "You begin to slowly unravel the laces binding your foot.  After undoing the knots, you begin to remove the shoe.  As it slides off, blood begins to return to your injured extremity.  With it comes pain, more burning and violent than before.\n\n[[C->Sock]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Sock",
+          "pid": "19"
+        }
+      ],
+      "name": "p:Alright, let's take a look.",
+      "pid": "13",
+      "position": {
+        "x": "957",
+        "y": "2128"
+      },
+      "tags": [
+        "untying_shoe"
+      ]
+    },
+    {
+      "text": "Jasper::Alright.  But we've got to deal with that pain somehow.  Right now it's too bad to walk.\n\nJasper::Take some of the painkillers the Ferryman gave you.  Should be alright if you just take four or five.\n\n[[p:But I'm not sure how strong they are, four or five might be lethal.]]\n[[p:Sure, I don't even care anymore.]]",
+      "links": [
+        {
+          "name": "p:But I'm not sure how strong they are, four or five might be lethal.",
+          "link": "p:But I'm not sure how strong they are, four or five might be lethal.",
+          "pid": "17"
+        },
+        {
+          "name": "p:Sure, I don't even care anymore.",
+          "link": "p:Sure, I don't even care anymore.",
+          "pid": "18"
+        }
+      ],
+      "name": "p:I'm better off not knowing.",
+      "pid": "14",
+      "position": {
+        "x": "1107",
+        "y": "2128"
+      }
+    },
+    {
+      "text": "Giant Rat::We collided during the freefall.  Our nervous systems are now coupled.\n\n[[C->p:But how?  You were dead.]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:But how?  You were dead.",
+          "pid": "8"
+        }
+      ],
+      "name": "p:But Jasper isn't dead.  You're dead.  Or at least you were.",
+      "pid": "15",
+      "position": {
+        "x": "1305",
+        "y": "1488"
+      }
+    },
+    {
+      "text": "Giant Rat::Such beautiful longevity.  I cannot stand to see it taken for granted.  \n\nGiant Rat::What did you see?  While you were so close to the edge?\n\n[[I dreamt that I was a wolf.  The other wolves kicked me, and stole my food.  There was nothing I could do.]]\n[[I dreamt that I was running around the basement of this hospital, naked, but I wasn't the only one.  There was another me.->I dreamt that I was a wolf.  The other wolves kicked me, and stole my food.  There was nothing I could do.]]\n[[I dreamt that I was strung up in a theater, getting shown visions of hell and of eyes getting gouged out, until I woke up flat on my back in a sewer.->I dreamt that I was a wolf.  The other wolves kicked me, and stole my food.  There was nothing I could do.]]",
+      "links": [
+        {
+          "name": "I dreamt that I was a wolf.  The other wolves kicked me, and stole my food.  There was nothing I could do.",
+          "link": "I dreamt that I was a wolf.  The other wolves kicked me, and stole my food.  There was nothing I could do.",
+          "pid": "28"
+        },
+        {
+          "name": "I dreamt that I was running around the basement of this hospital, naked, but I wasn't the only one.  There was another me.",
+          "link": "I dreamt that I was a wolf.  The other wolves kicked me, and stole my food.  There was nothing I could do.",
+          "pid": "28"
+        },
+        {
+          "name": "I dreamt that I was strung up in a theater, getting shown visions of hell and of eyes getting gouged out, until I woke up flat on my back in a sewer.",
+          "link": "I dreamt that I was a wolf.  The other wolves kicked me, and stole my food.  There was nothing I could do.",
+          "pid": "28"
+        }
+      ],
+      "name": "That makes me feel really grateful for my 9528 days.",
+      "pid": "16",
+      "position": {
+        "x": "1227",
+        "y": "1677"
+      }
+    },
+    {
+      "text": "Jasper,head_tilted::Come on.  You used to down half a bottle of these every time someone said something mean to you. \n\nJasper,twisted::You've got to deal with the pain somehow.  You don't want to die on the floor of this elevator cabin while deliriously conversing with a dead rat.\n\nGiant Rat::Don't mind him.  There is no better way to leave this world.\n\n[[p:Alright, fine.->p:Sure, I don't even care anymore.]]\n[[p:No.  I can do this without painkillers.]]",
+      "links": [
+        {
+          "name": "p:Alright, fine.",
+          "link": "p:Sure, I don't even care anymore.",
+          "pid": "18"
+        },
+        {
+          "name": "p:No.  I can do this without painkillers.",
+          "link": "p:No.  I can do this without painkillers.",
+          "pid": "26"
+        }
+      ],
+      "name": "p:But I'm not sure how strong they are, four or five might be lethal.",
+      "pid": "17",
+      "position": {
+        "x": "804",
+        "y": "2875"
+      },
+      "tags": [
+        "aguilty"
+      ]
+    },
+    {
+      "text": "You place four of the small capsules in your palm, toss them in your mouth, and swallow them all at once.  They lightly scrape your dry esophagus as they descend.\n\nThe capsules hit your stomach acid.  They begin to dissolve.\n\nNearly instantly, the pain begins to subside.  You feel as though you might be able to stand soon.\n\n[[p:Wow, these kick in fast.]]",
+      "links": [
+        {
+          "name": "p:Wow, these kick in fast.",
+          "link": "p:Wow, these kick in fast.",
+          "pid": "25"
+        }
+      ],
+      "name": "p:Sure, I don't even care anymore.",
+      "pid": "18",
+      "position": {
+        "x": "974",
+        "y": "2874"
+      }
+    },
+    {
+      "text": "You slowly begin to remove your sock, the last remaining bandage.  Your toe comes into full visibility.\n\n[[C->Toe]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Toe",
+          "pid": "20"
+        }
+      ],
+      "name": "Sock",
+      "pid": "19",
+      "position": {
+        "x": "852",
+        "y": "2247"
+      },
+      "tags": [
+        "taking_off_sock"
+      ]
+    },
+    {
+      "text": "Your glorious big toe arrives in your field of vision.  It hosts brilliant shades red and purple, beautiful unlike any of your other appendages.\n\n[[p:Holy shit.]]\n[[p:I'm gonna die down here->p:Holy shit.]]",
+      "links": [
+        {
+          "name": "p:Holy shit.",
+          "link": "p:Holy shit.",
+          "pid": "21"
+        },
+        {
+          "name": "p:I'm gonna die down here",
+          "link": "p:Holy shit.",
+          "pid": "21"
+        }
+      ],
+      "name": "Toe",
+      "pid": "20",
+      "position": {
+        "x": "818",
+        "y": "2386"
+      },
+      "tags": [
+        "toe",
+        "adisgusted"
+      ]
+    },
+    {
+      "text": "Jasper,head_tilted::That...looks bad.  \n\n[[C->back to rat]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "back to rat",
+          "pid": "40"
+        }
+      ],
+      "name": "p:Holy shit.",
+      "pid": "21",
+      "position": {
+        "x": "882",
+        "y": "2506"
+      },
+      "tags": [
+        "aguilty"
+      ]
+    },
+    {
+      "text": "Jasper,thinking::We're definitely better off not seeing it.  \n\nJasper,head_tilted::But we've got to deal with that pain somehow.  Right now it's too bad to walk.\n\nJasper,twisted::Take some of the painkillers the Ferryman gave you.  Should be alright if you just take four or five.\n\n[[p:But I'm not sure how strong they are, four or five might be lethal.]]\n[[p:Sure, I don't even care anymore.]]",
+      "links": [
+        {
+          "name": "p:But I'm not sure how strong they are, four or five might be lethal.",
+          "link": "p:But I'm not sure how strong they are, four or five might be lethal.",
+          "pid": "17"
+        },
+        {
+          "name": "p:Sure, I don't even care anymore.",
+          "link": "p:Sure, I don't even care anymore.",
+          "pid": "18"
+        }
+      ],
+      "name": "p:Yeah, just looking at it just makes it hurt more.",
+      "pid": "22",
+      "position": {
+        "x": "584",
+        "y": "2604"
+      }
+    },
+    {
+      "text": "Jasper,head_tilted::Out of what?  We don't have any first aid supplies.\n\nJasper,thinking::I guess we could prepare a splint out of giant rat bones?\n\nGiant Rat::Yes.  Use me.  Take my body and treat it as a bandage, a glorious end.\n\nJasper,head_tilted::...\n\nJasper,thinking::On second thought he sounds a little too eager for that role.\n\nJasper,sad::At the very least please put it away for now, it is painful to look at.\n\n[[p:(Action) Put your shoe back on.]]\n\n",
+      "links": [
+        {
+          "name": "p:(Action) Put your shoe back on.",
+          "link": "p:(Action) Put your shoe back on.",
+          "pid": "27"
+        }
+      ],
+      "name": "p:Can't we at least make a splint for it?",
+      "pid": "23",
+      "position": {
+        "x": "915",
+        "y": "2677"
+      }
+    },
+    {
+      "text": "Giant Rat::It's the least I could do in return for this essential gift.\n\n[[C->p:Am I hallucinating this or are you really talking to me?]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:Am I hallucinating this or are you really talking to me?",
+          "pid": "6"
+        }
+      ],
+      "name": "Thanks for breaking my fall.",
+      "pid": "24",
+      "position": {
+        "x": "884",
+        "y": "1479"
+      }
+    },
+    {
+      "text": "Jasper::The Ferryman did mention they were something atypical.  Probably designed to be fast acting.\n\n[[p:(Action) Try to stand up.]]",
+      "links": [
+        {
+          "name": "p:(Action) Try to stand up.",
+          "link": "p:(Action) Try to stand up.",
+          "pid": "29"
+        }
+      ],
+      "name": "p:Wow, these kick in fast.",
+      "pid": "25",
+      "position": {
+        "x": "974",
+        "y": "3024"
+      }
+    },
+    {
+      "text": "Jasper::Fine.  Then do it.\n\n[[p:(Action) Try to stand up.]]",
+      "links": [
+        {
+          "name": "p:(Action) Try to stand up.",
+          "link": "p:(Action) Try to stand up.",
+          "pid": "29"
+        }
+      ],
+      "name": "p:No.  I can do this without painkillers.",
+      "pid": "26",
+      "position": {
+        "x": "804",
+        "y": "3025"
+      }
+    },
+    {
+      "text": "You slowly slide the sock back over your foot, gritting your teeth as you do so.  The shoe follows, and you secure it with a loose knot.\n\nThe wound is now successfully rebandaged.  The pressure marginally eases the pain.\n\nJasper,twisted::We've got to deal with that pain somehow.  Right now it's too bad to walk.\n\nJasper,surprised::Take some of the painkillers the Ferryman gave you.  Should be alright if you just take four or five.\n\n[[p:But I'm not sure how strong they are, four or five might be lethal.]]\n[[p:Sure, I don't even care anymore.]]",
+      "links": [
+        {
+          "name": "p:But I'm not sure how strong they are, four or five might be lethal.",
+          "link": "p:But I'm not sure how strong they are, four or five might be lethal.",
+          "pid": "17"
+        },
+        {
+          "name": "p:Sure, I don't even care anymore.",
+          "link": "p:Sure, I don't even care anymore.",
+          "pid": "18"
+        }
+      ],
+      "name": "p:(Action) Put your shoe back on.",
+      "pid": "27",
+      "position": {
+        "x": "581",
+        "y": "2807"
+      },
+      "tags": [
+        "ashocked",
+        "putting_on_shoe"
+      ]
+    },
+    {
+      "text": "Giant Rat::Don't worry about any of that any longer.\n\nGiant Rat::I won't steal any of your food.  I've consigned myself to digesting my own fat and muscle during this final excursion.\n\n[[C->p:But how?  You were dead.]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:But how?  You were dead.",
+          "pid": "8"
+        }
+      ],
+      "name": "I dreamt that I was a wolf.  The other wolves kicked me, and stole my food.  There was nothing I could do.",
+      "pid": "28",
+      "position": {
+        "x": "1261",
+        "y": "1818"
+      }
+    },
+    {
+      "text": "You return your sock and shoe to your foot, securing the strings with a tight knot.\n\n[[C->Standing Up]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Standing Up",
+          "pid": "30"
+        }
+      ],
+      "name": "p:(Action) Try to stand up.",
+      "pid": "29",
+      "position": {
+        "x": "974",
+        "y": "3174"
+      }
+    },
+    {
+      "text": "You right yourself, placing most of your weight on your uninjured foot and leaning against the side of the cabin.\n\nJasper::All things considered, we did pretty well for a ten meter drop.\n\n[[p:Easy for you to say.  I'm the one with the broken toe.]]\n[[p:Funny how you keep coming out of this shit unscathed.->p:Easy for you to say.  I'm the one with the broken toe.]]",
+      "links": [
+        {
+          "name": "p:Easy for you to say.  I'm the one with the broken toe.",
+          "link": "p:Easy for you to say.  I'm the one with the broken toe.",
+          "pid": "31"
+        },
+        {
+          "name": "p:Funny how you keep coming out of this shit unscathed.",
+          "link": "p:Easy for you to say.  I'm the one with the broken toe.",
+          "pid": "31"
+        }
+      ],
+      "name": "Standing Up",
+      "pid": "30",
+      "position": {
+        "x": "974",
+        "y": "3324"
+      },
+      "tags": [
+        "aguilty",
+        "standing_up",
+        "remove_subject"
+      ]
+    },
+    {
+      "text": "Jasper,sad::If it's any consolation, I'm pretty sure one of my glass eyes is scratched.\n\nJasper,thinking::I don't feel it, but now I'm even uglier.\n\n[[C->Doors]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Doors",
+          "pid": "32"
+        }
+      ],
+      "name": "p:Easy for you to say.  I'm the one with the broken toe.",
+      "pid": "31",
+      "position": {
+        "x": "899",
+        "y": "3474"
+      }
+    },
+    {
+      "text": "Jasper,twisted::Let's get going.  We have a lot of ground to canvass.\n\n[[p:(Action) Hobble out of the elevator.]]",
+      "links": [
+        {
+          "name": "p:(Action) Hobble out of the elevator.",
+          "link": "p:(Action) Hobble out of the elevator.",
+          "pid": "33"
+        }
+      ],
+      "name": "Doors",
+      "pid": "32",
+      "position": {
+        "x": "899",
+        "y": "3624"
+      }
+    },
+    {
+      "text": "Giant Rat::Wait!  No!  Don't go!\n\n[[p:What, you want us to hang out here with you?]]\n[[p:We can't stay here.->p:What, you want us to hang out here with you?]]",
+      "links": [
+        {
+          "name": "p:What, you want us to hang out here with you?",
+          "link": "p:What, you want us to hang out here with you?",
+          "pid": "34"
+        },
+        {
+          "name": "p:We can't stay here.",
+          "link": "p:What, you want us to hang out here with you?",
+          "pid": "34"
+        }
+      ],
+      "name": "p:(Action) Hobble out of the elevator.",
+      "pid": "33",
+      "position": {
+        "x": "899",
+        "y": "3774"
+      },
+      "tags": [
+        "auncertain",
+        "looking_down"
+      ]
+    },
+    {
+      "text": "Giant Rat::No, of course not.  This cabin is a poor tomb...\n\nGiant Rat::Take me with you.  I failed to make the most of any of my 622 days.\n\nJasper,thinking::You don't owe this rancid furball anything...\n\nGiant Rat::You owe me nothing, but you could give me everything!\n\nGiant Rat::I wasted so much time.  Please, take me with you.  Let me enjoy this last injection of life.\n\n[[p:(Take the Giant Rat) Sure, you can go in the same pocket as Jasper.]]",
+      "links": [
+        {
+          "name": "p:(Take the Giant Rat) Sure, you can go in the same pocket as Jasper.",
+          "link": "p:(Take the Giant Rat) Sure, you can go in the same pocket as Jasper.",
+          "pid": "35"
+        }
+      ],
+      "name": "p:What, you want us to hang out here with you?",
+      "pid": "34",
+      "position": {
+        "x": "824",
+        "y": "3924"
+      }
+    },
+    {
+      "text": "Jasper::Hey what the fu-\n\n[[p:(Action) Shove the Giant Rat into the pocket with Jasper.]]",
+      "links": [
+        {
+          "name": "p:(Action) Shove the Giant Rat into the pocket with Jasper.",
+          "link": "p:(Action) Shove the Giant Rat into the pocket with Jasper.",
+          "pid": "36"
+        }
+      ],
+      "name": "p:(Take the Giant Rat) Sure, you can go in the same pocket as Jasper.",
+      "pid": "35",
+      "position": {
+        "x": "749",
+        "y": "4074"
+      },
+      "tags": [
+        "standing_up"
+      ]
+    },
+    {
+      "text": "Jasper,surprised::Augh!\n\nJasper,twisted::This thing is disgusting!  How could you do this to me?\n\n[[p:Just hold on for a little while.  We'll just take him somewhere nice, so he doesn't have to spend eternity stuck in this elevator shaft.]]\n[[p:Quit being such a crybaby.  It's fine.]]",
+      "links": [
+        {
+          "name": "p:Just hold on for a little while.  We'll just take him somewhere nice, so he doesn't have to spend eternity stuck in this elevator shaft.",
+          "link": "p:Just hold on for a little while.  We'll just take him somewhere nice, so he doesn't have to spend eternity stuck in this elevator shaft.",
+          "pid": "38"
+        },
+        {
+          "name": "p:Quit being such a crybaby.  It's fine.",
+          "link": "p:Quit being such a crybaby.  It's fine.",
+          "pid": "37"
+        }
+      ],
+      "name": "p:(Action) Shove the Giant Rat into the pocket with Jasper.",
+      "pid": "36",
+      "position": {
+        "x": "749",
+        "y": "4224"
+      },
+      "tags": [
+        "aguilty"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::Putrid liquids are literally leaking from it's orifices and soaking my vintage plush body.  I'm not being a \"crybaby.\"\n\nJasper,sad::Please, just take him to where he needs to go, so I don't have to sit in here with him...\n\nGiant Rat::You have my eternal thanks.\n\n[[p:(Action) Exit the elevator.]]",
+      "links": [
+        {
+          "name": "p:(Action) Exit the elevator.",
+          "link": "p:(Action) Exit the elevator.",
+          "pid": "41"
+        }
+      ],
+      "name": "p:Quit being such a crybaby.  It's fine.",
+      "pid": "37",
+      "position": {
+        "x": "702",
+        "y": "4378"
+      }
+    },
+    {
+      "text": "Jasper,twisted::I'm getting soaked by putrid liquids leaking out from this thing!\n\nGiant Rat::My ancestors and offspring are in eternal debt to you.\n\nGiant Rat::Though, I think I ate most of my own children.\n\nJasper,sad::Please, just take him to where he needs to go, so I don't have to sit in here with him...\n\n[[p:(Action) Exit the elevator.]]",
+      "links": [
+        {
+          "name": "p:(Action) Exit the elevator.",
+          "link": "p:(Action) Exit the elevator.",
+          "pid": "41"
+        }
+      ],
+      "name": "p:Just hold on for a little while.  We'll just take him somewhere nice, so he doesn't have to spend eternity stuck in this elevator shaft.",
+      "pid": "38",
+      "position": {
+        "x": "869",
+        "y": "4374"
+      }
+    },
+    {
+      "text": "Giant Rat::A group of kids from this ward found me, and beat me to death.\n\nGiant Rat::They tossed me here, into the elevator cabin, when they were done.\n\n[[C->p:But how?  You were dead.]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:But how?  You were dead.",
+          "pid": "8"
+        }
+      ],
+      "name": "What could have killed you?  How can a creature of such girth possibly die?",
+      "pid": "39",
+      "position": {
+        "x": "1393",
+        "y": "1688"
+      }
+    },
+    {
+      "text": "Jasper,twisted::We can't fix this.  Put the sock back on.\n\n[[p:Yeah, just looking at it just makes it hurt more.]]\n[[p:Can't we at least make a splint for it?]]",
+      "links": [
+        {
+          "name": "p:Yeah, just looking at it just makes it hurt more.",
+          "link": "p:Yeah, just looking at it just makes it hurt more.",
+          "pid": "22"
+        },
+        {
+          "name": "p:Can't we at least make a splint for it?",
+          "link": "p:Can't we at least make a splint for it?",
+          "pid": "23"
+        }
+      ],
+      "name": "back to rat",
+      "pid": "40",
+      "position": {
+        "x": "680",
+        "y": "2469"
+      },
+      "tags": [
+        "giant_rat"
+      ]
+    },
+    {
+      "text": "",
+      "name": "p:(Action) Exit the elevator.",
+      "pid": "41",
+      "position": {
+        "x": "756",
+        "y": "4528"
+      }
+    }
+  ],
+  "name": "Giant Rat Convo",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "736E6C50-78B1-44A0-9F58-233851BB43F4"
+}
+

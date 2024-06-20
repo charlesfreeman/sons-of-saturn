@@ -33,6 +33,7 @@ var next_location = ""
 var prog_flag = "None"
 # for tracking if current_char or emotion state has changed
 var state_changed = false
+var wiggly_mode = false
 
 # multiple aliases used for same character in some cases
 # need this dict to compress them
@@ -54,6 +55,11 @@ var char_aliases = {
 	"Frost" : "Frost",
 	"Note" : "Note",
 	"Dead Cat" : "Dead Cat",
+	"Giant Rat" : "Giant Rat",
+	"Rasping Voice" : "Rasping Voice",
+	"Muffled Voice" : "Muffled Voice",
+	"Ivory Woman" : "Ivory Woman",
+	"Mom" : "Mom",
 	"Narrator" : "Narrator",
 }
 
@@ -71,6 +77,11 @@ var emotions = {
 	"Frost" : "Frost",
 	"Note" : "None",
 	"Dead Cat" : "Dead Cat",
+	"Giant Rat" : "Giant Rat",
+	"Rasping Voice" : "Rasping Voice",
+	"Muffled Voice" : "Muffled Voice",
+	"Ivory Woman" : "Ivory Woman",
+	"Mom" : "Mom",
 	"Narrator" : "None",
 }
 
@@ -209,7 +220,12 @@ func _load_paragraph(paragraph):
 			state_changed = true
 		if char_name == "Narrator":
 			var linebreak = spokenLineNochar.instantiate()
-			linebreak.set_text("  ------- ------- ------- ------- ------- ")
+			# this is hacky and won't fix it if such a delimiter line is already on screen when
+			# the font is changed.  But it works for now
+			if Global.font_size < 69:
+				linebreak.set_text("  ------- ------- ------- ------- ------- ")
+			else:
+				linebreak.set_text("  ------- ------- ------- ------- ")
 			spoken_lines_container.add_child(linebreak)
 			
 			var spoken_line = spokenLineNarrator.instantiate()
@@ -244,7 +260,10 @@ func _load_paragraph(paragraph):
 func _add_buttons():
 	# Amelie char texture loaded upon buttons being added
 	if len(self.link_names) > 1:
-		emit_signal("change_char", "Amelie", "neutral")
+		if not wiggly_mode:
+			emit_signal("change_char", "Amelie", "neutral")
+		else:
+			emit_signal("change_char", "WigglyTag", "neutral")
 
 	for i in range(len(self.link_names)):
 		var button_text = self.link_names[i]
@@ -272,7 +291,7 @@ func _add_buttons():
 			# this shouldn't ever occur but it's something to remember
 			if i == 0:
 				# TODO might need to release focus first but I'm not sure
-				dialogue_opt.grab_focus()
+				dialogue_opt.grab_button_focus()
 	# after adding buttons the ScrollContainer is sometimes resized, so we need
 	# to make sure the scrollbar is set to the very end
 	_scroll_to_end()
@@ -285,7 +304,7 @@ func _add_continue_button(method_to_connect: String):
 	self.buttons_array.append(dialogue_opt)
 	dialogue_opt.extract_text_and_modifiers(continue_text)
 	dialogue_opt.set_opt_number(0)
-	dialogue_opt.grab_focus()
+	dialogue_opt.grab_button_focus()
 
 
 func _remove_buttons():
@@ -377,9 +396,21 @@ func _load_next_scene():
 	Global.set_location(next_location)
 	if prog_flag != "None":
 		Global.flip_prog_flag(prog_flag)
-	var options = SceneManager.create_options()
-	var general_options = SceneManager.create_general_options()
-	SceneManager.change_scene(next_scene, options, options, general_options)
+	if next_scene == "credits":
+		var fade_out_options = SceneManager.create_options(10)
+		var options = SceneManager.create_options()
+		var general_options = SceneManager.create_general_options()
+		SceneManager.change_scene(next_scene, fade_out_options, options, general_options)
+	elif next_scene == "TitleScreen":
+		Global.flip_prog_flag("finished_game")
+		var fade_out_options = SceneManager.create_options(5)
+		var options = SceneManager.create_options()
+		var general_options = SceneManager.create_general_options()
+		SceneManager.change_scene(next_scene, fade_out_options, options, general_options)
+	else:
+		var options = SceneManager.create_options()
+		var general_options = SceneManager.create_general_options()
+		SceneManager.change_scene(next_scene, options, options, general_options)
 
 
 

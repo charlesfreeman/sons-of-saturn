@@ -9,6 +9,7 @@ var char_colors = {"Wigley": "aqua",
 	"Wiggly": "aqua",
 	"Ferryman": "aqua", 
 	"You": "red", 
+	"Amelie": "red",
 	"Tann": "fuchsia", 
 	"Ansel": "blue",
 	"Vera": "green",
@@ -18,15 +19,21 @@ var char_colors = {"Wigley": "aqua",
 	"Note" : "white",
 	"Frail Woman": "purple",
 	"Julia": "purple",
+	"Muffled Voice": "purple",
 	"Voice": "green",
 	"Malformed Lump": "green",
 	"Jasper": "green",
-	"Dead Cat": "grey"
+	"Dead Cat": "grey",
+	"Giant Rat": "light_salmon",
+	"Rasping Voice": "light_salmon",
+	"Ivory Woman": "fuchsia",
+	"Mom": "ivory",
 }
 
 
 func _ready():
-	pass
+	if Global.retro_font_mode:
+		$SpeakerName.visible = false
 
 
 func set_speaker_name(char_name):

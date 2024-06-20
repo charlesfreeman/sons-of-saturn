@@ -56,7 +56,10 @@ func extract_text_and_modifiers(text: String):
 	if self.progression_button:
 		change_color(Color(1, 0.5, 0, 1))
 	elif self.clicked:
-		change_color(Color(Global.dbrightness, Global.dbrightness, Global.dbrightness, 1))
+		if Global.retro_font_mode:
+			change_color(Color(0, Global.dbrightness, 0, 1))
+		else:
+			change_color(Color(Global.dbrightness, Global.dbrightness, Global.dbrightness, 1))
 
 
 func set_label_text(text: String):
@@ -111,10 +114,16 @@ func _on_DialogueOption_focus_entered():
 
 func _on_DialogueOption_focus_exited():
 	if not self.progression_button:
-		if not self.clicked:
-			change_color(Color(1, 1, 1, 1))
+		if Global.retro_font_mode:
+			if not self.clicked:
+				change_color(Color(0, 1, 0, 1))
+			else:
+				change_color(Color(0, 0.5, 0, 1))
 		else:
-			change_color(Color(0.75, 0.75, 0.75, 1))
+			if not self.clicked:
+				change_color(Color(1, 1, 1, 1))
+			else:
+				change_color(Color(Global.dbrightness, Global.dbrightness, Global.dbrightness, 1))
 	else:
 		# change color to orange
 		change_color(Color(1, 0.5, 0, 1))
@@ -132,4 +141,7 @@ func _on_DialogueOption_pressed():
 	emit_signal("play_click")
 	emit_signal("pressed")
 	
+	
+func grab_button_focus():
+	$DialogueOption.grab_focus()
 

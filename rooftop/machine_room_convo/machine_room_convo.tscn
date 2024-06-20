@@ -1,20 +1,20 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://dekdqthvif5as"]
 
-[ext_resource path="res://conversation_pov/conversation_pov.tscn" type="PackedScene" id=1]
-[ext_resource path="res://conversation_pov/CharacterRect.tscn" type="PackedScene" id=2]
-[ext_resource path="res://rooftop/machine_room_convo/wiggly_looking_down.png" type="Texture2D" id=3]
-[ext_resource path="res://rooftop/machine_room_convo/wiggly_pointing_to_fuse.png" type="Texture2D" id=4]
-[ext_resource path="res://rooftop/machine_room_convo/wiggly_hands_in_pockets.png" type="Texture2D" id=5]
-[ext_resource path="res://rooftop/machine_room_convo/wiggly_looking_at_panel.png" type="Texture2D" id=6]
+[ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://gent118w7jqg" path="res://conversation_pov/CharacterRect.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://c141m1w1chf5w" path="res://rooftop/machine_room_convo/wiggly_looking_down.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://b4c30t317qrju" path="res://rooftop/machine_room_convo/wiggly_pointing_to_fuse.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bwbuepcywjiah" path="res://rooftop/machine_room_convo/wiggly_hands_in_pockets.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://eaubedj3yw0i" path="res://rooftop/machine_room_convo/wiggly_looking_at_panel.png" id="6"]
 
 [node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Convo" parent="." instance=ExtResource( 1 )]
+[node name="Convo" parent="." instance=ExtResource("1")]
+layout_mode = 1
 subject = "Wiggly"
 scriptPath = "res://rooftop/machine_room_convo/machine_room_convo.json"
 backgroundPath = "res://rooftop/machine_room_convo/elevator_machine_room_crop.png"
@@ -26,48 +26,53 @@ fade_tag_dict = {
 mem_to_remove = "Wiggly"
 song = "flourescent_hum"
 
-[node name="HandsInPockets" parent="." instance=ExtResource( 2 )]
+[node name="HandsInPockets" parent="." instance=ExtResource("2")]
+layout_mode = 0
 offset_left = 565.0
 offset_top = 671.0
 offset_right = 1188.0
 offset_bottom = 2187.0
-texture = ExtResource( 5 )
+texture = ExtResource("5")
 appear_tag = ""
 disappear_tag = "points"
 
-[node name="HandsInPockets2" parent="." instance=ExtResource( 2 )]
+[node name="HandsInPockets2" parent="." instance=ExtResource("2")]
+layout_mode = 0
 offset_left = 565.0
 offset_top = 671.0
 offset_right = 1188.0
 offset_bottom = 2187.0
-texture = ExtResource( 5 )
+texture = ExtResource("5")
 appear_tag = "pockets"
 disappear_tag = "resigned"
 
-[node name="PointingToFuse" parent="." instance=ExtResource( 2 )]
+[node name="PointingToFuse" parent="." instance=ExtResource("2")]
+layout_mode = 0
 offset_left = 818.0
 offset_top = 736.0
 offset_right = 1805.0
 offset_bottom = 2413.0
-texture = ExtResource( 4 )
+texture = ExtResource("4")
 appear_tag = "points"
 disappear_tag = "pockets"
 
-[node name="LookingDown" parent="." instance=ExtResource( 2 )]
+[node name="LookingDown" parent="." instance=ExtResource("2")]
+layout_mode = 0
 offset_left = 565.0
 offset_top = 671.0
 offset_right = 1184.0
 offset_bottom = 2187.0
-texture = ExtResource( 3 )
+texture = ExtResource("3")
 appear_tag = "resigned"
 disappear_tag = ""
 
-[node name="LookingAtPanel" parent="." instance=ExtResource( 2 )]
+[node name="LookingAtPanel" parent="." instance=ExtResource("2")]
+layout_mode = 0
 offset_left = 682.163
 offset_top = 784.697
 offset_right = 1484.16
 offset_bottom = 2333.7
-texture = ExtResource( 6 )
+texture = ExtResource("6")
 on_start = true
 appear_tag = ""
 disappear_tag = "points"

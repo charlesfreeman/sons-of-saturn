@@ -1,8 +1,6 @@
 extends Camera2D
 
 
-
-
 func _ready():
 	var tween = create_tween().set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN_OUT)
 	await tween.tween_property(self, "zoom", Vector2(1.33, 1.33), 30).finished

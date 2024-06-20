@@ -1,0 +1,1249 @@
+{
+  "passages": [
+	{
+	  "text": "You rest your head next to the figure laying beneath the sheets.  You are enveloped by the heat radiating from its perimeter.\n\nGiant Rat::Such warmth...\n\nGiant Rat::So many cold nights I spent in that elevator cabin....\n\nGiant Rat::Maybe we could move in a little closer?\n\nGiant Rat::In fact, I wouldn't mind wrapping up beside them.  We can't waste precious body heat, after all.\n\nJasper,twisted::Don't do it.  If you get to close, you might be tempted to touch them.  You can never control yourself.  We can't have that.\n\nJasper,thinking::Besides, look at this figure's frame.  It would feel like cuddling a radiator covered in cloth.\n\n[[p:(Action) Embrace the covered figure.]]",
+	  "links": [
+		{
+		  "name": "p:(Action) Embrace the covered figure.",
+		  "link": "p:(Action) Embrace the covered figure.",
+		  "pid": "2"
+		}
+	  ],
+	  "name": "p:(Action) Lie down next to the ivory woman.",
+	  "pid": "1",
+	  "position": {
+		"x": "937",
+		"y": "766"
+	  },
+	  "tags": [
+		"lie_in_bed"
+	  ]
+	},
+	{
+	  "text": "You move closer.  You cannot help it.  \n\nYou wrap your arms around the section most resembling a torso.  You nuzzle your head onto the figure's shoulder.  Your heart starts palpitating, and you feel your left leg being drawn over the lump's lower section.\n\nThe warmth begins to permeate your being.\n\nThen, you hear it: the covered figure begins to speak.\n\nIvory Woman::That feels nice, doesn't it, Amelie?\n\n[[p:(Action) Start crying.]]\n[[p:Yes.  Yes!  I've been waiting my whole life for this!]]",
+	  "links": [
+		{
+		  "name": "p:(Action) Start crying.",
+		  "link": "p:(Action) Start crying.",
+		  "pid": "3"
+		},
+		{
+		  "name": "p:Yes.  Yes!  I've been waiting my whole life for this!",
+		  "link": "p:Yes.  Yes!  I've been waiting my whole life for this!",
+		  "pid": "4"
+		}
+	  ],
+	  "name": "p:(Action) Embrace the covered figure.",
+	  "pid": "2",
+	  "position": {
+		"x": "1027",
+		"y": "907"
+	  },
+	  "tags": [
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::Your tears, I feel them hitting the sheet.  I know every one of them by name.  I feel the goosebumps on your skin.  I am here.\n\n[[p:Why are you being so nice to me?  No one has ever been so nice to me!]]\n[[p:You're trying to get something out of me!  That's the only reason you would let me lay here!]]",
+	  "links": [
+		{
+		  "name": "p:Why are you being so nice to me?  No one has ever been so nice to me!",
+		  "link": "p:Why are you being so nice to me?  No one has ever been so nice to me!",
+		  "pid": "5"
+		},
+		{
+		  "name": "p:You're trying to get something out of me!  That's the only reason you would let me lay here!",
+		  "link": "p:You're trying to get something out of me!  That's the only reason you would let me lay here!",
+		  "pid": "6"
+		}
+	  ],
+	  "name": "p:(Action) Start crying.",
+	  "pid": "3",
+	  "position": {
+		"x": "953",
+		"y": "1056"
+	  },
+	  "tags": [
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::I know.  I bet it felt like more than one.\n\nIvory Woman::Your tears, I feel them hitting the sheet.  I know every one of them by name.  I feel the goosebumps on your skin.  I am here.\n\n[[p:Why are you being so nice to me?  No one has ever been so nice to me!]]\n[[p:You're trying to get something out of me!  That's the only reason you would let me lay here!]]",
+	  "links": [
+		{
+		  "name": "p:Why are you being so nice to me?  No one has ever been so nice to me!",
+		  "link": "p:Why are you being so nice to me?  No one has ever been so nice to me!",
+		  "pid": "5"
+		},
+		{
+		  "name": "p:You're trying to get something out of me!  That's the only reason you would let me lay here!",
+		  "link": "p:You're trying to get something out of me!  That's the only reason you would let me lay here!",
+		  "pid": "6"
+		}
+	  ],
+	  "name": "p:Yes.  Yes!  I've been waiting my whole life for this!",
+	  "pid": "4",
+	  "position": {
+		"x": "1136",
+		"y": "1047"
+	  },
+	  "tags": [
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::You're an orphaned baby monkey.  The least anyone can do for you is be your cloth mother.\n\nIvory Woman::That's all I am.  That's all I can ever do for you.\n\nIvory Woman::Just lay here with me in the warmth, for just a little while.  \n\nThe figure seems to shift, only a little.  Somehow, you feel it returning your embrace.\n\nIvory Woman::I can feel your pain.  Your unease.  What is wrong?\n\n[[p:I'm being followed by a scary lady and I fell down an elevator shaft and I hit my head and broke my toe, and now you and this dead rat are talking to me, and...]]",
+	  "links": [
+		{
+		  "name": "p:I'm being followed by a scary lady and I fell down an elevator shaft and I hit my head and broke my toe, and now you and this dead rat are talking to me, and...",
+		  "link": "p:I'm being followed by a scary lady and I fell down an elevator shaft and I hit my head and broke my toe, and now you and this dead rat are talking to me, and...",
+		  "pid": "7"
+		}
+	  ],
+	  "name": "p:Why are you being so nice to me?  No one has ever been so nice to me!",
+	  "pid": "5",
+	  "position": {
+		"x": "1109",
+		"y": "1204"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::There's nothing you can give me.  There's nothing I can take.\n\nIvory Woman::Just lay here with me in the warmth, for just a little while.  I don't want anything.\n\nThe figure seems to shift, only a little.  Somehow, you feel it returning your embrace.\n\nIvory Woman::I can feel your pain.  Your unease.  What is wrong?\n\n[[p:I'm being followed by a scary lady and I fell down an elevator shaft and I hit my head and broke my toe, and now you and this dead rat are talking to me, and...]]",
+	  "links": [
+		{
+		  "name": "p:I'm being followed by a scary lady and I fell down an elevator shaft and I hit my head and broke my toe, and now you and this dead rat are talking to me, and...",
+		  "link": "p:I'm being followed by a scary lady and I fell down an elevator shaft and I hit my head and broke my toe, and now you and this dead rat are talking to me, and...",
+		  "pid": "7"
+		}
+	  ],
+	  "name": "p:You're trying to get something out of me!  That's the only reason you would let me lay here!",
+	  "pid": "6",
+	  "position": {
+		"x": "1254",
+		"y": "1212"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::Shhhh, shhhh, it's alright, it's alright.  No one is gonna get you in here.\n\nIvory Woman::You're safe in this room.\n\nJasper,twisted::It doesn't know that for sure.  Plenty of things could still get you.\n\nJasper,thinking::This thing could still get you.\n\n[[p:Can I join you under the sheet?]]\n[[p:Please, I just want to see your face...->p:Can I join you under the sheet?]]",
+	  "links": [
+		{
+		  "name": "p:Can I join you under the sheet?",
+		  "link": "p:Can I join you under the sheet?",
+		  "pid": "8"
+		},
+		{
+		  "name": "p:Please, I just want to see your face...",
+		  "link": "p:Can I join you under the sheet?",
+		  "pid": "8"
+		}
+	  ],
+	  "name": "p:I'm being followed by a scary lady and I fell down an elevator shaft and I hit my head and broke my toe, and now you and this dead rat are talking to me, and...",
+	  "pid": "7",
+	  "position": {
+		"x": "1165",
+		"y": "1364"
+	  },
+	  "tags": [
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::No, Amelie.  I am extremely deteriorated.  It is best that you remember my body and my face as they were.\n\n[[p:But I don't know your face.  Do I?]]",
+	  "links": [
+		{
+		  "name": "p:But I don't know your face.  Do I?",
+		  "link": "p:But I don't know your face.  Do I?",
+		  "pid": "9"
+		}
+	  ],
+	  "name": "p:Can I join you under the sheet?",
+	  "pid": "8",
+	  "position": {
+		"x": "1286",
+		"y": "1514"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::You should, Amelie.  I was your case worker.\n\nIvory Woman::At least, I'm what's left of her...\n\nJasper,twisted::Amelie, we have to get out of here.\n\nJasper,surprised::This is a fraud, a wire mother, we're in danger.\n\nJasper,twisted::Please, I beg you, get up right now and run, run anywhere, scratch at the door until it yields, consider suicide if you have to, anything.\n\nIvory Woman::Jasper really doesn't like me, huh?\n\nIvory Woman::I suppose it remembers who I am.\n\nIvory Woman::I could never understand why you kept talking to that little doll.  But now I know.\n\nJasper,twisted::Amelie, get up.  We have to go.\n\nJasper,thinking::You aren't safe here.  You're only safe if you listen to me.\n\nJasper,surprised::Why aren't you standing up?  This is why no one will ever love you.\n\nIvory Woman::There.  Now we can continue our conversation.\n\n[[Case worker?  I never had a case worker...]]\n[[p:Hold on, why does Jasper hate you so much?]]",
+	  "links": [
+		{
+		  "name": "Case worker?  I never had a case worker...",
+		  "link": "Case worker?  I never had a case worker...",
+		  "pid": "12"
+		},
+		{
+		  "name": "p:Hold on, why does Jasper hate you so much?",
+		  "link": "p:Hold on, why does Jasper hate you so much?",
+		  "pid": "10"
+		}
+	  ],
+	  "name": "p:But I don't know your face.  Do I?",
+	  "pid": "9",
+	  "position": {
+		"x": "1291",
+		"y": "1663"
+	  },
+	  "tags": [
+		"auncertain"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::Jasper is just doing what it was born to do - protect you from the truth.\n\nIvory Woman::Tell me, Amelie, do you remember when I first gave Jasper to you?\n\n[[p:What are you talking about?  I've always had Jasper.]]\n[[p:I...I don't want to remember...]]",
+	  "links": [
+		{
+		  "name": "p:What are you talking about?  I've always had Jasper.",
+		  "link": "p:What are you talking about?  I've always had Jasper.",
+		  "pid": "11"
+		},
+		{
+		  "name": "p:I...I don't want to remember...",
+		  "link": "p:I...I don't want to remember...",
+		  "pid": "13"
+		}
+	  ],
+	  "name": "p:Hold on, why does Jasper hate you so much?",
+	  "pid": "10",
+	  "position": {
+		"x": "1285",
+		"y": "1816"
+	  },
+	  "tags": [
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::No, Amelie.  You haven't.  I gave him to you - along with a lot of other stuffed animals.  But you only wanted the one shaped like a cat.\n\nIvory Woman::Do you remember why?  Why would you want the one shaped like a cat?\n\nIvory Woman::You can remember - remember the reason you came into my care.\n\n[[p:No, no, no, I can't, I won't.]]\n[[p:Please.  Please don't do this.->p:No, no, no, I can't, I won't.]]",
+	  "links": [
+		{
+		  "name": "p:No, no, no, I can't, I won't.",
+		  "link": "p:No, no, no, I can't, I won't.",
+		  "pid": "14"
+		},
+		{
+		  "name": "p:Please.  Please don't do this.",
+		  "link": "p:No, no, no, I can't, I won't.",
+		  "pid": "14"
+		}
+	  ],
+	  "name": "p:What are you talking about?  I've always had Jasper.",
+	  "pid": "11",
+	  "position": {
+		"x": "1265",
+		"y": "1975"
+	  },
+	  "tags": [
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::Oh but you did.  You had me.  I came into your life at around the same time Jasper did.\n\nIvory Woman::In fact, I was the one who gave you that doll, though I didn't think much of it at the time.\n\n[[p:What are you talking about?  I've always had Jasper.]]\n[[p:I...I don't want to remember...]]",
+	  "links": [
+		{
+		  "name": "p:What are you talking about?  I've always had Jasper.",
+		  "link": "p:What are you talking about?  I've always had Jasper.",
+		  "pid": "11"
+		},
+		{
+		  "name": "p:I...I don't want to remember...",
+		  "link": "p:I...I don't want to remember...",
+		  "pid": "13"
+		}
+	  ],
+	  "name": "Case worker?  I never had a case worker...",
+	  "pid": "12",
+	  "position": {
+		"x": "1126",
+		"y": "1822"
+	  },
+	  "tags": [
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::You have to, Amelie.  Please, don't run away from it this time.\n\nIvory Woman::I offered you a lot of stuffed animals to play with.  But you only wanted the one shaped like a cat.\n\nIvory Woman::Do you remember why?  Why would you want the one shaped like a cat?\n\nIvory Woman::You can remember - remember the reason you came into my care.\n\n[[p:No, no, no, I can't, I won't.]]\n[[p:Please.  Please don't do this.->p:No, no, no, I can't, I won't.]]",
+	  "links": [
+		{
+		  "name": "p:No, no, no, I can't, I won't.",
+		  "link": "p:No, no, no, I can't, I won't.",
+		  "pid": "14"
+		},
+		{
+		  "name": "p:Please.  Please don't do this.",
+		  "link": "p:No, no, no, I can't, I won't.",
+		  "pid": "14"
+		}
+	  ],
+	  "name": "p:I...I don't want to remember...",
+	  "pid": "13",
+	  "position": {
+		"x": "1104",
+		"y": "1972"
+	  },
+	  "tags": [
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::I failed you as a case worker.  The least I owe you is to make sure you understand your own past.\n\nIvory Woman::So, go on.  Say what you did.\n\nIvory Woman::Aloud.\n\n[[p:I killed my cat!]]\n[[p:I KILLED MY CAT!->p:I killed my cat!]]\n[[p:(Action) Start crying.->p:I killed my cat!]]\n[[p:I killed my cat...->p:I killed my cat!]]\n[[p:Why did I do it?  Why did I do it?->p:I killed my cat!]]",
+	  "links": [
+		{
+		  "name": "p:I killed my cat!",
+		  "link": "p:I killed my cat!",
+		  "pid": "15"
+		},
+		{
+		  "name": "p:I KILLED MY CAT!",
+		  "link": "p:I killed my cat!",
+		  "pid": "15"
+		},
+		{
+		  "name": "p:(Action) Start crying.",
+		  "link": "p:I killed my cat!",
+		  "pid": "15"
+		},
+		{
+		  "name": "p:I killed my cat...",
+		  "link": "p:I killed my cat!",
+		  "pid": "15"
+		},
+		{
+		  "name": "p:Why did I do it?  Why did I do it?",
+		  "link": "p:I killed my cat!",
+		  "pid": "15"
+		}
+	  ],
+	  "name": "p:No, no, no, I can't, I won't.",
+	  "pid": "14",
+	  "position": {
+		"x": "1264",
+		"y": "2125"
+	  },
+	  "tags": [
+		"ashocked",
+		"tension"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::Yes.  You threw her down the well in your backyard.  She drowned.\n\nIvory Woman::After a few days, you confessed to your mom, Rosalind.\n\nIvory Woman::A few days after that, she dropped you off with me.  She never visited.\n\n[[p:She kept screaming after I threw her in, I can't get it out of my head...]]\n[[p:I fucked up, I fucked up, I regretted it the second I did it, why did I do it...->p:She kept screaming after I threw her in, I can't get it out of my head...]]",
+	  "links": [
+		{
+		  "name": "p:She kept screaming after I threw her in, I can't get it out of my head...",
+		  "link": "p:She kept screaming after I threw her in, I can't get it out of my head...",
+		  "pid": "16"
+		},
+		{
+		  "name": "p:I fucked up, I fucked up, I regretted it the second I did it, why did I do it...",
+		  "link": "p:She kept screaming after I threw her in, I can't get it out of my head...",
+		  "pid": "16"
+		}
+	  ],
+	  "name": "p:I killed my cat!",
+	  "pid": "15",
+	  "position": {
+		"x": "1265",
+		"y": "2275"
+	  },
+	  "tags": [
+		"ashocked"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::Then why did you do it, Amelie?  Why, if it caused you such pain?\n\n[[p:I wanted to be the one who wasn't getting hit for once, is that too much to ask?]]\n[[p:I didn't have the guts to send myself down the well.  So I sent something else.->p:I wanted to be the one who wasn't getting hit for once, is that too much to ask?]]",
+	  "links": [
+		{
+		  "name": "p:I wanted to be the one who wasn't getting hit for once, is that too much to ask?",
+		  "link": "p:I wanted to be the one who wasn't getting hit for once, is that too much to ask?",
+		  "pid": "17"
+		},
+		{
+		  "name": "p:I didn't have the guts to send myself down the well.  So I sent something else.",
+		  "link": "p:I wanted to be the one who wasn't getting hit for once, is that too much to ask?",
+		  "pid": "17"
+		}
+	  ],
+	  "name": "p:She kept screaming after I threw her in, I can't get it out of my head...",
+	  "pid": "16",
+	  "position": {
+		"x": "1265",
+		"y": "2425"
+	  },
+	  "tags": [
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::Your home life seemed very troubled.\n\nIvory Woman::But Mom wasn't the one to throw the cat down the well, was she?\n\n[[p:It was fifteen years ago - every cell in my body has been replaced since then, right?  Right?]]\n[[p:That just couldn't have been me...I know it was, but I just can't understand...]]",
+	  "links": [
+		{
+		  "name": "p:It was fifteen years ago - every cell in my body has been replaced since then, right?  Right?",
+		  "link": "p:It was fifteen years ago - every cell in my body has been replaced since then, right?  Right?",
+		  "pid": "18"
+		},
+		{
+		  "name": "p:That just couldn't have been me...I know it was, but I just can't understand...",
+		  "link": "p:That just couldn't have been me...I know it was, but I just can't understand...",
+		  "pid": "19"
+		}
+	  ],
+	  "name": "p:I wanted to be the one who wasn't getting hit for once, is that too much to ask?",
+	  "pid": "17",
+	  "position": {
+		"x": "1265",
+		"y": "2575"
+	  },
+	  "tags": [
+		"asad"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::Your brain cells don't replace themselves so rapidly I am afraid.\n\nIvory Woman::You might have been piloting a mostly different skinsack.  But the one calling the shots was still you.\n\n[[p:Please!  Stop torturing me with this!  Why torture me with this?]]\n[[p:I could have  just never thought about any of that stuff ever again!  My life would have been fine!->p:Please!  Stop torturing me with this!  Why torture me with this?]]",
+	  "links": [
+		{
+		  "name": "p:Please!  Stop torturing me with this!  Why torture me with this?",
+		  "link": "p:Please!  Stop torturing me with this!  Why torture me with this?",
+		  "pid": "20"
+		},
+		{
+		  "name": "p:I could have  just never thought about any of that stuff ever again!  My life would have been fine!",
+		  "link": "p:Please!  Stop torturing me with this!  Why torture me with this?",
+		  "pid": "20"
+		}
+	  ],
+	  "name": "p:It was fifteen years ago - every cell in my body has been replaced since then, right?  Right?",
+	  "pid": "18",
+	  "position": {
+		"x": "1193",
+		"y": "2725"
+	  },
+	  "tags": [
+		"afuming"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::That violent little girl was you, Amelie.  She's still in there.\n\nIvory Woman::We can both feel it.\n\n[[p:Please!  Stop torturing me with this!  Why torture me with this?]]\n[[p:I could have  just never thought about any of that stuff ever again!  My life would have been fine!->p:Please!  Stop torturing me with this!  Why torture me with this?]]",
+	  "links": [
+		{
+		  "name": "p:Please!  Stop torturing me with this!  Why torture me with this?",
+		  "link": "p:Please!  Stop torturing me with this!  Why torture me with this?",
+		  "pid": "20"
+		},
+		{
+		  "name": "p:I could have  just never thought about any of that stuff ever again!  My life would have been fine!",
+		  "link": "p:Please!  Stop torturing me with this!  Why torture me with this?",
+		  "pid": "20"
+		}
+	  ],
+	  "name": "p:That just couldn't have been me...I know it was, but I just can't understand...",
+	  "pid": "19",
+	  "position": {
+		"x": "1340",
+		"y": "2725"
+	  },
+	  "tags": [
+		"afuming"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::I already failed you once.  This time I'm doing the right thing.  The painful thing.\n\nIvory Woman::You would become so upset when I tried to explain this to you.  I liked you better quiet.\n\n[[p:I'd have been better off if you had never told me.]]",
+	  "links": [
+		{
+		  "name": "p:I'd have been better off if you had never told me.",
+		  "link": "p:I'd have been better off if you had never told me.",
+		  "pid": "21"
+		}
+	  ],
+	  "name": "p:Please!  Stop torturing me with this!  Why torture me with this?",
+	  "pid": "20",
+	  "position": {
+		"x": "1217",
+		"y": "2876"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::I didn't tell you anything you didn't already know.  Nothing that you didn't already feel.\n\nIvory Woman::Do you really want to spend your whole life not accepting what really happened?  \n\nIvory Woman::Put your hand on your chest.  Feel that lump living rent free in your pocket.\n\n[[p:(Action) Put your hand over Jasper, and press him into your heart.]]",
+	  "links": [
+		{
+		  "name": "p:(Action) Put your hand over Jasper, and press him into your heart.",
+		  "link": "p:(Action) Put your hand over Jasper, and press him into your heart.",
+		  "pid": "22"
+		}
+	  ],
+	  "name": "p:I'd have been better off if you had never told me.",
+	  "pid": "21",
+	  "position": {
+		"x": "1191",
+		"y": "3025"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::Run your fingers all around the head, the matted torso, and the mis-shapen limbs.\n\nIvory Woman::Get a good feel for the knotted scar tissue that formed around a brain splinter.\n\nIvory Woman::Doesn't he feel less powerful now?\n\n[[p:It never shuts the fuck up, but the one time I need it to say something, anything, it won't!]]\n[[p:Please, please, Jasper, say something...->p:It never shuts the fuck up, but the one time I need it to say something, anything, it won't!]]",
+	  "links": [
+		{
+		  "name": "p:It never shuts the fuck up, but the one time I need it to say something, anything, it won't!",
+		  "link": "p:It never shuts the fuck up, but the one time I need it to say something, anything, it won't!",
+		  "pid": "23"
+		},
+		{
+		  "name": "p:Please, please, Jasper, say something...",
+		  "link": "p:It never shuts the fuck up, but the one time I need it to say something, anything, it won't!",
+		  "pid": "23"
+		}
+	  ],
+	  "name": "p:(Action) Put your hand over Jasper, and press him into your heart.",
+	  "pid": "22",
+	  "position": {
+		"x": "1191",
+		"y": "3175"
+	  },
+	  "tags": [
+		"afuming"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::It's screaming right now, trying to protect you from this truth.  But I won't let it through.  Not this time.\n\n[[p:How am I supposed to live?  How am I supposed to continue?]]",
+	  "links": [
+		{
+		  "name": "p:How am I supposed to live?  How am I supposed to continue?",
+		  "link": "p:How am I supposed to live?  How am I supposed to continue?",
+		  "pid": "24"
+		}
+	  ],
+	  "name": "p:It never shuts the fuck up, but the one time I need it to say something, anything, it won't!",
+	  "pid": "23",
+	  "position": {
+		"x": "1190",
+		"y": "3325"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::I can't tell you that, Amelie.  No one can tell you how to live with yourself.\n\nIvory Woman::But I can tell you what to do next.  Throw that doll into the pneumatic line.\n\nIvory Woman::There's a portal in the bathroom.  Put it in, close the hatch, and send it away.\n\n[[p:How can I live without Jasper?  How am I supposed to make it?]]",
+	  "links": [
+		{
+		  "name": "p:How can I live without Jasper?  How am I supposed to make it?",
+		  "link": "p:How can I live without Jasper?  How am I supposed to make it?",
+		  "pid": "25"
+		}
+	  ],
+	  "name": "p:How am I supposed to live?  How am I supposed to continue?",
+	  "pid": "24",
+	  "position": {
+		"x": "1186",
+		"y": "3475"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::I don't know.  But I do know you can't go any further with him.\n\nIvory Woman::The tumor has gotten too large.  Your other neural regions are about to burst from the pressure.\n\n[[p:I have to do this.  I have to slice my gut open.]]\n[[p:This is going to hurt, isn't it?  Forever.]]\n\n",
+	  "links": [
+		{
+		  "name": "p:I have to do this.  I have to slice my gut open.",
+		  "link": "p:I have to do this.  I have to slice my gut open.",
+		  "pid": "26"
+		},
+		{
+		  "name": "p:This is going to hurt, isn't it?  Forever.",
+		  "link": "p:This is going to hurt, isn't it?  Forever.",
+		  "pid": "27"
+		}
+	  ],
+	  "name": "p:How can I live without Jasper?  How am I supposed to make it?",
+	  "pid": "25",
+	  "position": {
+		"x": "1187",
+		"y": "3625"
+	  },
+	  "tags": [
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::Don't expect this to be painless.\n\nIvory Woman::But it has to be excised.\n\n[[p:(Action) Move towards the pneumatic trash chute in the bathroom.]]",
+	  "links": [
+		{
+		  "name": "p:(Action) Move towards the pneumatic trash chute in the bathroom.",
+		  "link": "p:(Action) Move towards the pneumatic trash chute in the bathroom.",
+		  "pid": "28"
+		}
+	  ],
+	  "name": "p:I have to do this.  I have to slice my gut open.",
+	  "pid": "26",
+	  "position": {
+		"x": "1111",
+		"y": "3775"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::Your shield is gone.  Your heart is going to burst like a glass flower.\n\nIvory Woman::Shards will end up in your other organs.  It's going to sting.\n\n[[p:(Action) Move towards the pneumatic trash chute in the bathroom.]]",
+	  "links": [
+		{
+		  "name": "p:(Action) Move towards the pneumatic trash chute in the bathroom.",
+		  "link": "p:(Action) Move towards the pneumatic trash chute in the bathroom.",
+		  "pid": "28"
+		}
+	  ],
+	  "name": "p:This is going to hurt, isn't it?  Forever.",
+	  "pid": "27",
+	  "position": {
+		"x": "1261",
+		"y": "3775"
+	  }
+	},
+	{
+	  "text": "TAG\n\n[[C->p:(Action) Open the hatch.]]",
+	  "links": [
+		{
+		  "name": "C",
+		  "link": "p:(Action) Open the hatch.",
+		  "pid": "29"
+		}
+	  ],
+	  "name": "p:(Action) Move towards the pneumatic trash chute in the bathroom.",
+	  "pid": "28",
+	  "position": {
+		"x": "1262",
+		"y": "3925"
+	  },
+	  "tags": [
+		"trash_closed"
+	  ]
+	},
+	{
+	  "text": "TAG\n\n[[p:(Action) Put Jasper in the trash chute.]]",
+	  "links": [
+		{
+		  "name": "p:(Action) Put Jasper in the trash chute.",
+		  "link": "p:(Action) Put Jasper in the trash chute.",
+		  "pid": "30"
+		}
+	  ],
+	  "name": "p:(Action) Open the hatch.",
+	  "pid": "29",
+	  "position": {
+		"x": "1261",
+		"y": "4075"
+	  },
+	  "tags": [
+		"trash_open"
+	  ]
+	},
+	{
+	  "text": "You take one last good look at Jasper.\n\nIt's expression is tortured, a face that's screaming but completely mute.\n\n[[p:You stunted me, made my limbs grow short.  I never want to see you again!]]\n[[p:I wouldn't have made it without you.  But it's time, Jasper.]]\n[[p:You're a tumor grown around a lie.  I'm ready for the truth.]]",
+	  "links": [
+		{
+		  "name": "p:You stunted me, made my limbs grow short.  I never want to see you again!",
+		  "link": "p:You stunted me, made my limbs grow short.  I never want to see you again!",
+		  "pid": "31"
+		},
+		{
+		  "name": "p:I wouldn't have made it without you.  But it's time, Jasper.",
+		  "link": "p:I wouldn't have made it without you.  But it's time, Jasper.",
+		  "pid": "32"
+		},
+		{
+		  "name": "p:You're a tumor grown around a lie.  I'm ready for the truth.",
+		  "link": "p:You're a tumor grown around a lie.  I'm ready for the truth.",
+		  "pid": "33"
+		}
+	  ],
+	  "name": "p:(Action) Put Jasper in the trash chute.",
+	  "pid": "30",
+	  "position": {
+		"x": "1262",
+		"y": "4225"
+	  },
+	  "tags": [
+		"trash_jasper_in",
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "TAG\n\n[[p:(Action) Return to the Ivory Woman.]]",
+	  "links": [
+		{
+		  "name": "p:(Action) Return to the Ivory Woman.",
+		  "link": "p:(Action) Return to the Ivory Woman.",
+		  "pid": "42"
+		}
+	  ],
+	  "name": "p:You stunted me, made my limbs grow short.  I never want to see you again!",
+	  "pid": "31",
+	  "position": {
+		"x": "1111",
+		"y": "4375"
+	  },
+	  "tags": [
+		"trash_closed"
+	  ]
+	},
+	{
+	  "text": "TAG\n\n[[p:(Action) Return to the Ivory Woman.]]",
+	  "links": [
+		{
+		  "name": "p:(Action) Return to the Ivory Woman.",
+		  "link": "p:(Action) Return to the Ivory Woman.",
+		  "pid": "42"
+		}
+	  ],
+	  "name": "p:I wouldn't have made it without you.  But it's time, Jasper.",
+	  "pid": "32",
+	  "position": {
+		"x": "1261",
+		"y": "4375"
+	  },
+	  "tags": [
+		"trash_closed"
+	  ]
+	},
+	{
+	  "text": "TAG\n\n[[p:(Action) Return to the Ivory Woman.]]",
+	  "links": [
+		{
+		  "name": "p:(Action) Return to the Ivory Woman.",
+		  "link": "p:(Action) Return to the Ivory Woman.",
+		  "pid": "42"
+		}
+	  ],
+	  "name": "p:You're a tumor grown around a lie.  I'm ready for the truth.",
+	  "pid": "33",
+	  "position": {
+		"x": "1411",
+		"y": "4375"
+	  },
+	  "tags": [
+		"trash_closed",
+		"trash_closed_sound"
+	  ]
+	},
+	{
+	  "text": "Jasper,twisted::There's no way out of this room.  We're here, to stay.\n\n[[p:I know...]]",
+	  "links": [
+		{
+		  "name": "p:I know...",
+		  "link": "p:I know...",
+		  "pid": "35"
+		}
+	  ],
+	  "name": "Untitled Passage 1",
+	  "pid": "34",
+	  "position": {
+		"x": "273",
+		"y": "303"
+	  }
+	},
+	{
+	  "text": "Jasper,sad::You're always the slow one.  Even though you're young, you're never quick enough.\n\n[[p:I know that too.]]\n[[p:That's kind of mean...->p:I know that too.]]",
+	  "links": [
+		{
+		  "name": "p:I know that too.",
+		  "link": "p:I know that too.",
+		  "pid": "36"
+		},
+		{
+		  "name": "p:That's kind of mean...",
+		  "link": "p:I know that too.",
+		  "pid": "36"
+		}
+	  ],
+	  "name": "p:I know...",
+	  "pid": "35",
+	  "position": {
+		"x": "279",
+		"y": "428"
+	  },
+	  "tags": [
+		"bolt_up"
+	  ]
+	},
+	{
+	  "text": "Jasper,head_tilted::If you were just a little sharper, and listened to me, we wouldn't be here.\n\n[[C->hands in hair]]\n",
+	  "links": [
+		{
+		  "name": "C",
+		  "link": "hands in hair",
+		  "pid": "41"
+		}
+	  ],
+	  "name": "p:I know that too.",
+	  "pid": "36",
+	  "position": {
+		"x": "268",
+		"y": "558"
+	  },
+	  "tags": [
+		"hands_on_face"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::You don't have to put up with this, Amelie.\n\nIvory Woman::You always have.  But you don't have to.\n\nJasper::...\n\n[[p:...I don't?]]",
+	  "links": [
+		{
+		  "name": "p:...I don't?",
+		  "link": "p:...I don't?",
+		  "pid": "38"
+		}
+	  ],
+	  "name": "ivory figure",
+	  "pid": "37",
+	  "position": {
+		"x": "273",
+		"y": "973"
+	  },
+	  "tags": [
+		"bolt_up",
+		"breathing_machine",
+		"tension_softer"
+	  ]
+	},
+	{
+	  "text": "You turn and face the figure that spoke to you.  Despite the decrepit environment, you feel an invitational pull to join the figure.\n\nJasper,twisted::Don't talk to that thing!  Stay away from it!  It'll only make things worse.\n\nJasper,head_tilted::Why do you never listen to what I say?\n\nGiant Rat::This ivory figure...I think it likes you...\n\nGiant Rat::I think you should join them.  Lay beside them.\n\nJasper,twisted::Please, Amelie.  How can you trust it?  I can tell what it thinks of you.  It thinks you're ugly.\n\nJasper,head_tilted::We need to keep looking for a way out of here.\n\n[[p:(Action) Lie down next to the ivory woman.]]",
+	  "links": [
+		{
+		  "name": "p:(Action) Lie down next to the ivory woman.",
+		  "link": "p:(Action) Lie down next to the ivory woman.",
+		  "pid": "1"
+		}
+	  ],
+	  "name": "p:...I don't?",
+	  "pid": "38",
+	  "position": {
+		"x": "273",
+		"y": "1123"
+	  },
+	  "tags": [
+		"room_pov",
+		"remove_subject"
+	  ]
+	},
+	{
+	  "text": "",
+	  "name": "p:(Action) Turn and face the ivory figure.",
+	  "pid": "39",
+	  "position": {
+		"x": "387",
+		"y": "1378"
+	  }
+	},
+	{
+	  "text": "Jasper::...\n\n[[C->p:(Action) Turn and face the ivory figure.]] ",
+	  "links": [
+		{
+		  "name": "C",
+		  "link": "p:(Action) Turn and face the ivory figure.",
+		  "pid": "39"
+		}
+	  ],
+	  "name": "p:Fuck you, Jasper.",
+	  "pid": "40",
+	  "position": {
+		"x": "200",
+		"y": "1279"
+	  }
+	},
+	{
+	  "text": "Jasper::But I should know better than to count on you.\n\n[[C->back to hands in face]]",
+	  "links": [
+		{
+		  "name": "C",
+		  "link": "back to hands in face",
+		  "pid": "60"
+		}
+	  ],
+	  "name": "hands in hair",
+	  "pid": "41",
+	  "position": {
+		"x": "268",
+		"y": "716"
+	  },
+	  "tags": [
+		"hands_in_hair"
+	  ]
+	},
+	{
+	  "text": "TAG\n\n[[p:I got rid of Jasper.  I'm alone, now.]]\n[[p:I'm a killer, aren't I?->p:I got rid of Jasper.  I'm alone, now.]]",
+	  "links": [
+		{
+		  "name": "p:I got rid of Jasper.  I'm alone, now.",
+		  "link": "p:I got rid of Jasper.  I'm alone, now.",
+		  "pid": "43"
+		},
+		{
+		  "name": "p:I'm a killer, aren't I?",
+		  "link": "p:I got rid of Jasper.  I'm alone, now.",
+		  "pid": "43"
+		}
+	  ],
+	  "name": "p:(Action) Return to the Ivory Woman.",
+	  "pid": "42",
+	  "position": {
+		"x": "1146",
+		"y": "4529"
+	  },
+	  "tags": [
+		"lie_in_bed",
+		"tension_softest"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::I know it hurts.  You have to learn how to live again.\n\nIvory Woman::But you will learn, in time.\n\nIvory Woman::Finally cutting off Jasper - that's something to be proud of.\n\nIvory Woman::You've come to me so many times, but you've never been able to severe that cord.  Until now.\n\n[[p:This is my first time here...->p:What are you talking about?  I've been here before?]]\n[[p:What are you talking about?  I've been here before?]]\n",
+	  "links": [
+		{
+		  "name": "p:This is my first time here...",
+		  "link": "p:What are you talking about?  I've been here before?",
+		  "pid": "44"
+		},
+		{
+		  "name": "p:What are you talking about?  I've been here before?",
+		  "link": "p:What are you talking about?  I've been here before?",
+		  "pid": "44"
+		}
+	  ],
+	  "name": "p:I got rid of Jasper.  I'm alone, now.",
+	  "pid": "43",
+	  "position": {
+		"x": "1280",
+		"y": "4600"
+	  },
+	  "tags": [
+		"aconfused",
+		"tension_softer"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::This isn't your first visit, Amelie.  You've come to me, many times before.\n\nIvory Woman::Usually running away from Rosalind, or sometimes Julia, or one of the other nurses.  But, always, you're getting bossed around by that doll.\n\nIvory Woman::This is not your first time here.\n\n[[p:You mean, a long time ago, right?  When I was a kid?]]",
+	  "links": [
+		{
+		  "name": "p:You mean, a long time ago, right?  When I was a kid?",
+		  "link": "p:You mean, a long time ago, right?  When I was a kid?",
+		  "pid": "52"
+		}
+	  ],
+	  "name": "p:What are you talking about?  I've been here before?",
+	  "pid": "44",
+	  "position": {
+		"x": "1405",
+		"y": "4639"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::You always remember some life before you got here.  It's a little different every time.  But you always think it was real.\n\nIvory Woman::But, this was the first time I've ever seen you get rid of that doll...\n\n[[How could I be here if I wasn't a person?]]\n[[Wiggly talked to me, way outside of Minerva, before we got here.  How could he talk to me if I wasn't real?]]\n[[p:How do I know if I'm real, for sure?]]",
+	  "links": [
+		{
+		  "name": "How could I be here if I wasn't a person?",
+		  "link": "How could I be here if I wasn't a person?",
+		  "pid": "46"
+		},
+		{
+		  "name": "Wiggly talked to me, way outside of Minerva, before we got here.  How could he talk to me if I wasn't real?",
+		  "link": "Wiggly talked to me, way outside of Minerva, before we got here.  How could he talk to me if I wasn't real?",
+		  "pid": "47"
+		},
+		{
+		  "name": "p:How do I know if I'm real, for sure?",
+		  "link": "p:How do I know if I'm real, for sure?",
+		  "pid": "48"
+		}
+	  ],
+	  "name": "p:No.  I'm real.  I remember getting here, crawling through the sewers with Wiggly, the Ferryman.  I remember my life before.",
+	  "pid": "45",
+	  "position": {
+		"x": "1026",
+		"y": "4956"
+	  },
+	  "tags": [
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::This ward is haunted, you know.  It's a kind of purgatory, for people too lonely to die.\n\nIvory Woman::The scientists here tried to transplant the minds of the old into the bodies of the young.\n\nIvory Woman::I'm not sure they always got the direction right...\n\n[[C->p:No.  I'm real.  I remember getting here, crawling through the sewers with Wiggly, the Ferryman.  I remember my life before.]] ",
+	  "links": [
+		{
+		  "name": "C",
+		  "link": "p:No.  I'm real.  I remember getting here, crawling through the sewers with Wiggly, the Ferryman.  I remember my life before.",
+		  "pid": "45"
+		}
+	  ],
+	  "name": "How could I be here if I wasn't a person?",
+	  "pid": "46",
+	  "position": {
+		"x": "875",
+		"y": "5106"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::Is he here right now?  Is he talking to you presently?\n\nIvory Woman::Right now, you remember him talking to you, in your memories.  Just like every other Amelie.\n\nIvory Woman::Memories can be implanted.  Right now is the only thing you really have.\n\n[[C->p:No.  I'm real.  I remember getting here, crawling through the sewers with Wiggly, the Ferryman.  I remember my life before.]] ",
+	  "links": [
+		{
+		  "name": "C",
+		  "link": "p:No.  I'm real.  I remember getting here, crawling through the sewers with Wiggly, the Ferryman.  I remember my life before.",
+		  "pid": "45"
+		}
+	  ],
+	  "name": "Wiggly talked to me, way outside of Minerva, before we got here.  How could he talk to me if I wasn't real?",
+	  "pid": "47",
+	  "position": {
+		"x": "1018",
+		"y": "5118"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::That woman, bundled up in the bed across the hall - she's the one you came here to see.\n\n[[p:Mom...]]\n[[p:I don't want to see her.]]",
+	  "links": [
+		{
+		  "name": "p:Mom...",
+		  "link": "p:Mom...",
+		  "pid": "49"
+		},
+		{
+		  "name": "p:I don't want to see her.",
+		  "link": "p:I don't want to see her.",
+		  "pid": "54"
+		}
+	  ],
+	  "name": "p:How do I know if I'm real, for sure?",
+	  "pid": "48",
+	  "position": {
+		"x": "1256",
+		"y": "5112"
+	  },
+	  "tags": [
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::Yes.  That's Rosalind.  I can't be certain, but I think she's your host.\n\nIvory Woman::If you really want to know what you are, pay her a visit.\n\n[[p:So, if I pull the plug on Mom, and I'm still here, then I'm real?]]\n[[p:I'm not ready to kill my Mom...]]",
+	  "links": [
+		{
+		  "name": "p:So, if I pull the plug on Mom, and I'm still here, then I'm real?",
+		  "link": "p:So, if I pull the plug on Mom, and I'm still here, then I'm real?",
+		  "pid": "50"
+		},
+		{
+		  "name": "p:I'm not ready to kill my Mom...",
+		  "link": "p:I'm not ready to kill my Mom...",
+		  "pid": "55"
+		}
+	  ],
+	  "name": "p:Mom...",
+	  "pid": "49",
+	  "position": {
+		"x": "1256",
+		"y": "5262"
+	  },
+	  "tags": [
+		"auncertain"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::Yes.  Then, you can know for sure.\n\nIvory Woman::There's no switch in Rosalind's room.  But she's on the same circuit as Angela.\n\nIvory Woman::The electrical wires are in sync with my nerves.  I can feel it.\n\nIvory Woman::Throw the switch in Angela's room, and Rosalind will leave us.  So will Angela, and so will Julia.\n\n[[p:And so will I...]]\n\n",
+	  "links": [
+		{
+		  "name": "p:And so will I...",
+		  "link": "p:And so will I...",
+		  "pid": "51"
+		}
+	  ],
+	  "name": "p:So, if I pull the plug on Mom, and I'm still here, then I'm real?",
+	  "pid": "50",
+	  "position": {
+		"x": "1256",
+		"y": "5412"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::Probably.\n\nIvory Woman::This is the part where I tell you to not pull the plug.  Usually, you complain, and cry, and get angry.  But ultimately you always listen.\n\nIvory Woman::I'm not doing that today.  You finally managed to toss that moldy doll.  It's time you decide this for yourself.\n\nIvory Woman::Do you know how rare having real power over your life is?  It's almost always an illusion...\n\nIvory Woman::Savor this.\n\n[[p:I won't waste this.  I promise.]]\n[[p:...->p:I won't waste this.  I promise.]]",
+	  "links": [
+		{
+		  "name": "p:I won't waste this.  I promise.",
+		  "link": "p:I won't waste this.  I promise.",
+		  "pid": "56"
+		},
+		{
+		  "name": "p:...",
+		  "link": "p:I won't waste this.  I promise.",
+		  "pid": "56"
+		}
+	  ],
+	  "name": "p:And so will I...",
+	  "pid": "51",
+	  "position": {
+		"x": "1260",
+		"y": "5562"
+	  },
+	  "tags": [
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::No, Amelie.  Not as a child.\n\nIvory Woman::Time is fragmented, hard for me to discern.  But always, you look as you do now.  The same age, the same hair.\n\nIvory Woman::I've kept memories of you as a child, scattered about.  That is not who comes to visit.\n\n[[p:I don't see how that's possible.  You must be confused.]]",
+	  "links": [
+		{
+		  "name": "p:I don't see how that's possible.  You must be confused.",
+		  "link": "p:I don't see how that's possible.  You must be confused.",
+		  "pid": "53"
+		}
+	  ],
+	  "name": "p:You mean, a long time ago, right?  When I was a kid?",
+	  "pid": "52",
+	  "position": {
+		"x": "1533",
+		"y": "4699"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::Haven't you wondered how Julia got here?  How she came to haunt these halls?\n\nIvory Woman::You've met her host - that poor lump in the room she visited.\n\nIvory Woman::Until Angela expires, Julia is trapped here.\n\nIvory Woman::I'm afraid it's the same for you.\n\n[[p:No.  I'm real.  I remember getting here, crawling through the sewers with Wiggly, the Ferryman.  I remember my life before.]]",
+	  "links": [
+		{
+		  "name": "p:No.  I'm real.  I remember getting here, crawling through the sewers with Wiggly, the Ferryman.  I remember my life before.",
+		  "link": "p:No.  I'm real.  I remember getting here, crawling through the sewers with Wiggly, the Ferryman.  I remember my life before.",
+		  "pid": "45"
+		}
+	  ],
+	  "name": "p:I don't see how that's possible.  You must be confused.",
+	  "pid": "53",
+	  "position": {
+		"x": "1533",
+		"y": "4849"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::You don't have to be friendly with her.  But I think she's your host.\n\nIvory Woman::If you really want to know what you are, pay her a visit.\n\n[[p:So, if I pull the plug on Mom, and I'm still here, then I'm real?]]\n[[p:I'm not ready to kill my Mom...]]",
+	  "links": [
+		{
+		  "name": "p:So, if I pull the plug on Mom, and I'm still here, then I'm real?",
+		  "link": "p:So, if I pull the plug on Mom, and I'm still here, then I'm real?",
+		  "pid": "50"
+		},
+		{
+		  "name": "p:I'm not ready to kill my Mom...",
+		  "link": "p:I'm not ready to kill my Mom...",
+		  "pid": "55"
+		}
+	  ],
+	  "name": "p:I don't want to see her.",
+	  "pid": "54",
+	  "position": {
+		"x": "1381",
+		"y": "5262"
+	  },
+	  "tags": [
+		"auncertain"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::Then don't.  I'm done taking decisions away from you.\n\nIvory Woman::But pulling that plug is the only way you're ever going to get the answer you want.\n\nIvory Woman::There's no switch in Rosalind's room.  But she's on the same circuit as Angela.\n\nIvory Woman::The electrical wires are in sync with my nerves.  I can feel it.\n\nIvory Woman::Throw the switch in Angela's room, and Rosalind will leave us.  So will Angela, and so will Julia.\n\n[[p:And so will I...]]\n",
+	  "links": [
+		{
+		  "name": "p:And so will I...",
+		  "link": "p:And so will I...",
+		  "pid": "51"
+		}
+	  ],
+	  "name": "p:I'm not ready to kill my Mom...",
+	  "pid": "55",
+	  "position": {
+		"x": "1380",
+		"y": "5412"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::My time here is nearly over, Amelie.  Conversing like this, it strains the remnants of my nervous system to the brink.\n\nIvory Woman::I'm about to expire.  I won't be around to comfort you during future visits.  I'm sorry.\n\n[[p:No!  Please!  Do you know how much I need you?->p:You can't leave me like this you bitch!]]\n[[p:You can't leave me like this you bitch!]]",
+	  "links": [
+		{
+		  "name": "p:No!  Please!  Do you know how much I need you?",
+		  "link": "p:You can't leave me like this you bitch!",
+		  "pid": "57"
+		},
+		{
+		  "name": "p:You can't leave me like this you bitch!",
+		  "link": "p:You can't leave me like this you bitch!",
+		  "pid": "57"
+		}
+	  ],
+	  "name": "p:I won't waste this.  I promise.",
+	  "pid": "56",
+	  "position": {
+		"x": "1260",
+		"y": "5712"
+	  },
+	  "tags": [
+		"afuming"
+	  ]
+	},
+	{
+	  "text": "Ivory Woman::My organs are failing, Amelie.  You have to find your own way, without me.\n\nIvory Woman::In this life and the next.\n\nIvory Woman::I can do one final thing for you.\n\n[[C->door unlock]]",
+	  "links": [
+		{
+		  "name": "C",
+		  "link": "door unlock",
+		  "pid": "58"
+		}
+	  ],
+	  "name": "p:You can't leave me like this you bitch!",
+	  "pid": "57",
+	  "position": {
+		"x": "1260",
+		"y": "5862"
+	  }
+	},
+	{
+	  "text": "Ivory Woman::I just disabled the magnets keeping the door locked.  You should be able to leave now.\n\nIvory Woman::This is the best I can do for you... You were owed so much more...\n\nIvory Woman::Goodbye, Amelie...\n\n[[C->breathing ceases]]",
+	  "links": [
+		{
+		  "name": "C",
+		  "link": "breathing ceases",
+		  "pid": "59"
+		}
+	  ],
+	  "name": "door unlock",
+	  "pid": "58",
+	  "position": {
+		"x": "1260",
+		"y": "6012"
+	  },
+	  "tags": [
+		"door_unlock"
+	  ]
+	},
+	{
+	  "text": "The mechanic breathing that was filling the background has ceased.  The warmth that attracted you to the mattress begins to dissipate.  The ivory woman is gone.",
+	  "name": "breathing ceases",
+	  "pid": "59",
+	  "position": {
+		"x": "1260",
+		"y": "6162"
+	  },
+	  "tags": [
+		"breathing_machine"
+	  ]
+	},
+	{
+	  "text": "Jasper,twisted::I try to keep you safe, but you just aren't good enough.  I'm sorry.\n\n[[p:You aren't telling me anything I don't already know, deep down...->ivory figure]]\n[[p:Shut up!  Please, just stop!->ivory figure]]",
+	  "links": [
+		{
+		  "name": "p:You aren't telling me anything I don't already know, deep down...",
+		  "link": "ivory figure",
+		  "pid": "37"
+		},
+		{
+		  "name": "p:Shut up!  Please, just stop!",
+		  "link": "ivory figure",
+		  "pid": "37"
+		}
+	  ],
+	  "name": "back to hands in face",
+	  "pid": "60",
+	  "position": {
+		"x": "268",
+		"y": "866"
+	  },
+	  "tags": [
+		"hands_on_face"
+	  ]
+	}
+  ],
+  "name": "Case Worker",
+  "startnode": "34",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "23C4BC36-DDB0-4967-BA55-129A4439F1FC"
+}
+

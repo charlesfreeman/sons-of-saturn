@@ -1,12 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://bwtnlljfi0tey"]
+[gd_scene load_steps=6 format=3 uid="uid://bwtnlljfi0tey"]
 
 [ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1_lrtoi"]
+[ext_resource type="PackedScene" uid="uid://byn2lurvh5x2f" path="res://conversation_pov/ConvoSoundEffect.tscn" id="2_sfkls"]
+[ext_resource type="AudioStream" uid="uid://ci3yx56u6n6mx" path="res://sounds/effects/wooden_door_close.wav" id="3_n2sy7"]
+[ext_resource type="AudioStream" uid="uid://0jg0ovbon6y" path="res://sounds/effects/thunk.wav" id="4_cdn18"]
+[ext_resource type="AudioStream" uid="uid://cn7e6ypeyj88e" path="res://childrens_ward/case_worker_convo/magnetic_door_unlock.wav" id="5_g3ndi"]
 
 [node name="case_worker_convo" type="Node"]
 
 [node name="Convo" parent="." instance=ExtResource("1_lrtoi")]
+subject = "Amelie"
+scriptPath = "res://childrens_ward/case_worker_convo/case_worker_convo.json"
 backgroundPath = "res://childrens_ward/case_worker_convo/case_worker_mirror_just_sat_down.png"
 sliverPath = "res://childrens_ward/case_worker_convo/case_worker_mirror_sliver.png"
+nextLocation = "res://childrens_ward/case_worker_room_2/case_worker_room_2.tscn"
 tag_dict = {
 "bolt_up": "res://childrens_ward/case_worker_convo/case_worker_mirror_bolted_up.png",
 "hands_in_hair": "res://childrens_ward/case_worker_convo/case_worker_mirror_shaking_head.png",
@@ -18,12 +25,31 @@ tag_dict_sliver = {
 "hands_on_face": "res://childrens_ward/case_worker_convo/case_worker_mirror_sliver.png"
 }
 fade_tag_dict = {
+"lie_in_bed": "res://childrens_ward/case_worker_convo/case_worker_in_bed.png",
+"room_pov": "res://childrens_ward/case_worker_convo/case_worker_bed_view.png",
 "trash_closed": "res://childrens_ward/case_worker_convo/trash_portal_jasper_closed.png",
 "trash_jasper_in": "res://childrens_ward/case_worker_convo/trash_portal_jasper_in.png",
 "trash_open": "res://childrens_ward/case_worker_convo/trash_portal_jasper_putting_in.png"
 }
 fade_tag_dict_sliver = {
+"lie_in_bed": "res://childrens_ward/case_worker_convo/case_worker_in_bed_sliver.png",
+"room_pov": "res://childrens_ward/case_worker_convo/case_worker_sliver.png",
 "trash_closed": "res://childrens_ward/case_worker_convo/trash_portal_jasper_closed_sliver.png",
 "trash_jasper_in": "res://childrens_ward/case_worker_convo/trash_portal_jasper_in_sliver.png",
 "trash_open": "res://childrens_ward/case_worker_convo/trash_portal_jasper_putting_in_sliver.png"
 }
+song = "tension"
+new_item = "Giant Rat"
+remove_item = "Jasper + Giant Rat"
+
+[node name="OpeningTrash" parent="." instance=ExtResource("2_sfkls")]
+stream = ExtResource("3_n2sy7")
+tag_to_play = "trash_open"
+
+[node name="ClosingTrash" parent="." instance=ExtResource("2_sfkls")]
+stream = ExtResource("4_cdn18")
+tag_to_play = "trash_closed_sound"
+
+[node name="UnlockDoor" parent="." instance=ExtResource("2_sfkls")]
+stream = ExtResource("5_g3ndi")
+tag_to_play = "unlock_door"

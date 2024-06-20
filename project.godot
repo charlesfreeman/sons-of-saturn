@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Sons of Saturn"
 run/main_scene="res://title_screen/TitleScreen.tscn"
-config/features=PackedStringArray("4.1")
+config/features=PackedStringArray("4.2")
 boot_splash/image="res://title_screen/SoS_logo_clear_bg.png"
 boot_splash/fullsize=false
 config/icon="res://artwork/SoSHeader.png"
@@ -26,11 +26,14 @@ Global="*res://Global.gd"
 SceneManager="*res://addons/scene_manager/scene_manager.tscn"
 Scenes="*res://addons/scene_manager/scenes.gd"
 TrackManager="*res://sounds/TrackManager.tscn"
+GlobalWorldEnvironment="*res://world_environment.tscn"
+Godotsteam="*res://addons/godotsteam/godotsteam.gd"
 
 [display]
 
 window/size/viewport_width=3840
 window/size/viewport_height=2160
+window/size/mode=3
 window/stretch/mode="canvas_items"
 window/size/fullscreen=true
 

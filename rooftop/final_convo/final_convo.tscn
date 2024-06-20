@@ -1,0 +1,185 @@
+[gd_scene load_steps=12 format=3 uid="uid://buurpri2t0ysy"]
+
+[ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1_ayibd"]
+[ext_resource type="PackedScene" uid="uid://gent118w7jqg" path="res://conversation_pov/CharacterRect.tscn" id="2_bg5y4"]
+[ext_resource type="Texture2D" uid="uid://dboatsxrip2vq" path="res://rooftop/final_convo/amelie_on_rails_just_tossed_rat.png" id="3_e4pqp"]
+[ext_resource type="Texture2D" uid="uid://cr3jqkt4rraun" path="res://rooftop/final_convo/amelie_on_rails_looking_forward.png" id="4_mtwog"]
+[ext_resource type="Texture2D" uid="uid://dff8wf64dgdu4" path="res://rooftop/final_convo/amelie_on_rails_looking_right.png" id="5_mi6su"]
+[ext_resource type="Texture2D" uid="uid://d2mfkcqq7or7d" path="res://rooftop/final_convo/amelie_on_rails_rearing_for_toss.png" id="6_8i8xh"]
+[ext_resource type="Texture2D" uid="uid://buawvcxp76tnu" path="res://rooftop/final_convo/rat_flying_through_air_1.png" id="7_7prib"]
+[ext_resource type="Texture2D" uid="uid://b0a226lcl3han" path="res://rooftop/final_convo/rat_flying_through_air_2.png" id="8_o83ef"]
+[ext_resource type="Texture2D" uid="uid://ccb0sde2ladcq" path="res://rooftop/final_convo/wiggly_looking_over_rails.png" id="9_uhl6s"]
+[ext_resource type="Texture2D" uid="uid://2oi57gt5bokg" path="res://rooftop/final_convo/wiggly_on_rails_looking_left.png" id="10_3nsvs"]
+[ext_resource type="Texture2D" uid="uid://4ts075xq0aqr" path="res://rooftop/final_convo/wiggly_on_rails_exiting.png" id="11_4ptlp"]
+
+[node name="rooftop_final_convo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Convo" parent="." instance=ExtResource("1_ayibd")]
+layout_mode = 1
+scriptPath = "res://rooftop/final_convo/final_convo.json"
+backgroundPath = "res://rooftop/final_convo/minerva_behind_rails.png"
+sliverPath = "res://rooftop/final_convo/minerva_behind_rails_sliver.png"
+nextScenePath = "credits"
+new_party_mem = "Wiggly"
+song = "rooftop_wind"
+remove_item = "Stillbirth Certificate"
+
+[node name="AmelieJustTossed" parent="." instance=ExtResource("2_bg5y4")]
+layout_mode = 0
+offset_left = 191.0
+offset_top = 1300.0
+offset_right = 957.0
+offset_bottom = 2160.0
+texture = ExtResource("3_e4pqp")
+expand_mode = 0
+appear_tag = "flying_through_air"
+disappear_tag = "amelie_forward3"
+
+[node name="AmelieLookingForward" parent="." instance=ExtResource("2_bg5y4")]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 1300.0
+offset_right = 1136.0
+offset_bottom = 2160.0
+texture = ExtResource("4_mtwog")
+expand_mode = 0
+appear_tag = "amelie_forward"
+disappear_tag = "amelie_right"
+
+[node name="AmelieLookingForward2" parent="." instance=ExtResource("2_bg5y4")]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 1300.0
+offset_right = 1136.0
+offset_bottom = 2160.0
+texture = ExtResource("4_mtwog")
+expand_mode = 0
+appear_tag = "amelie_forward2"
+disappear_tag = "rear_back"
+
+[node name="AmelieLookingForward3" parent="." instance=ExtResource("2_bg5y4")]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 1300.0
+offset_right = 1136.0
+offset_bottom = 2160.0
+texture = ExtResource("4_mtwog")
+expand_mode = 0
+appear_tag = "amelie_forward3"
+disappear_tag = ""
+
+[node name="AmelieLookingRight" parent="." instance=ExtResource("2_bg5y4")]
+layout_mode = 0
+offset_left = 241.0
+offset_top = 1300.0
+offset_right = 1101.0
+offset_bottom = 2160.0
+texture = ExtResource("5_mi6su")
+expand_mode = 0
+appear_tag = "amelie_right"
+disappear_tag = "amelie_forward2"
+
+[node name="AmelieRearing" parent="." instance=ExtResource("2_bg5y4")]
+layout_mode = 0
+offset_left = 253.0
+offset_top = 1203.0
+offset_right = 827.0
+offset_bottom = 2160.0
+texture = ExtResource("6_8i8xh")
+expand_mode = 0
+appear_tag = "rear_back"
+disappear_tag = "flying_through_air"
+
+[node name="RatFlyingClose" parent="." instance=ExtResource("2_bg5y4")]
+layout_mode = 0
+offset_left = 569.0
+offset_top = 500.0
+offset_right = 974.0
+offset_bottom = 898.0
+texture = ExtResource("7_7prib")
+expand_mode = 0
+appear_tag = "flying_through_air"
+disappear_tag = "flying_far"
+
+[node name="RatFlyingFar" parent="." instance=ExtResource("2_bg5y4")]
+layout_mode = 0
+offset_left = 1060.0
+offset_top = 438.0
+offset_right = 1153.0
+offset_bottom = 501.0
+texture = ExtResource("8_o83ef")
+expand_mode = 0
+appear_tag = "flying_far"
+disappear_tag = "rat_disappears"
+
+[node name="WigglyLookingForward" parent="." instance=ExtResource("2_bg5y4")]
+layout_mode = 0
+offset_left = 1260.0
+offset_top = 1263.0
+offset_right = 2120.0
+offset_bottom = 2160.0
+texture = ExtResource("9_uhl6s")
+expand_mode = 0
+appear_tag = "wiggly_forward"
+disappear_tag = "wiggly_left"
+
+[node name="WigglyLookingForward2" parent="." instance=ExtResource("2_bg5y4")]
+layout_mode = 0
+offset_left = 1260.0
+offset_top = 1263.0
+offset_right = 2120.0
+offset_bottom = 2160.0
+texture = ExtResource("9_uhl6s")
+expand_mode = 0
+appear_tag = "wiggly_forward2"
+disappear_tag = "wiggly_left2"
+
+[node name="WigglyLookingForward3" parent="." instance=ExtResource("2_bg5y4")]
+layout_mode = 0
+offset_left = 1260.0
+offset_top = 1263.0
+offset_right = 2120.0
+offset_bottom = 2160.0
+texture = ExtResource("9_uhl6s")
+expand_mode = 0
+appear_tag = "wiggly_forward3"
+disappear_tag = "wiggly_leaving"
+
+[node name="WigglyLookingLeft" parent="." instance=ExtResource("2_bg5y4")]
+layout_mode = 0
+offset_left = 1314.0
+offset_top = 1263.0
+offset_right = 2174.0
+offset_bottom = 2160.0
+texture = ExtResource("10_3nsvs")
+expand_mode = 0
+appear_tag = "wiggly_left"
+disappear_tag = "wiggly_forward2"
+
+[node name="WigglyLookingLeft2" parent="." instance=ExtResource("2_bg5y4")]
+layout_mode = 0
+offset_left = 1314.0
+offset_top = 1263.0
+offset_right = 2174.0
+offset_bottom = 2160.0
+texture = ExtResource("10_3nsvs")
+expand_mode = 0
+appear_tag = "wiggly_left2"
+disappear_tag = "wiggly_forward3"
+
+[node name="WigglyExiting" parent="." instance=ExtResource("2_bg5y4")]
+layout_mode = 0
+offset_left = 1311.0
+offset_top = 1245.0
+offset_right = 2171.0
+offset_bottom = 2171.0
+texture = ExtResource("11_4ptlp")
+expand_mode = 0
+appear_tag = "wiggly_leaving"
+disappear_tag = "wiggly_gone"

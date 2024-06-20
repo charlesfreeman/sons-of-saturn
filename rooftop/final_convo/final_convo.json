@@ -1,0 +1,269 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Wiggly::Ah!  You're back again.\n\nWiggly,surprised::Is your toe feeling any better now that you've put a splint around it?\n\nAmelie::Not really.  It doesn't really look like a toe anymore.\n\nAmelie::But, for once, everything else is alright.\n\nAmelie::For the first time, I feel like I'm myself.  No one else is pulling the strings.\n\nWiggly,laughing::I'm glad to hear that.  \n\nWiggly::So, do you still feel like going deeper into the city?\n\nAmelie::No.  I got what I came here for.\n\nAmelie,sad::I'm honestly a little disappointed.  It looks more beautiful than I remember.  From here, at least.\n\nAmelie::But I think it's best we leave it be.\n\nWiggly,looking_to_side::Ah.  I see.\n\nWiggly::I guess you found her, huh...\n\nAmelie,guilty::Yes.  She was wrapped up in one of the beds, down there.  I couldn't even see her face.  But I knew who it was.\n\nAmelie,guilty::I got what I needed from her.\n\nAmelie,guilty::And, well, I found something else down there, too.\n\n[[C->amelie turns to wiggly]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "amelie turns to wiggly",
+          "pid": "10"
+        }
+      ],
+      "name": "amelie reappears",
+      "pid": "1",
+      "position": {
+        "x": "1299",
+        "y": "173"
+      },
+      "tags": [
+        "wiggly_left",
+        "amelie_forward"
+      ]
+    },
+    {
+      "text": "Amelie::You should feel upset.  And angry.  And hurt.  It's fine to feel that way.\n\nAmelie::They took a lot away from you.\n\nWiggly,sad::...\n\nAmelie::Just don't do what I did.\n\nAmelie::Move on, and don't let it ruin the life you have left.\n\n[[C->wiggly turns again]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "wiggly turns again",
+          "pid": "13"
+        }
+      ],
+      "name": "part 2",
+      "pid": "2",
+      "position": {
+        "x": "1285",
+        "y": "374"
+      }
+    },
+    {
+      "text": "TAG\n\n[[C->amelie alone]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "amelie alone",
+          "pid": "4"
+        }
+      ],
+      "name": "Wiggly leaves",
+      "pid": "3",
+      "position": {
+        "x": "1180",
+        "y": "906"
+      },
+      "tags": [
+        "wiggly_leaving"
+      ]
+    },
+    {
+      "text": "Amelie::...\n\nGiant Rat::This view, it fills me with such life.  Tears are flooding my eyesockets.\n\nAmelie::Oh, hey.  I honestly forgot I still had you with me.\n\nGiant Rat::I've been trying to conserve the life I've been given.\n\nGiant Rat::But this, it makes me swell.\n\nGiant Rat::I am being called home, this I can feel.\n\nGiant Rat::Amelie, I need you to throw me, as far as you can.\n\nGiant Rat::I have just this tiny sliver of life left to give the world.  I must give it all back before I leave.\n\nAmelie::You want me to toss you off the roof and towards the Core?\n\nGiant Rat::Yes.  From there I can make it to the river.  The current will take me where I need to go.\n\nAmelie::You seem so gung-ho, so thrilled just to exist...\n\nAmelie::Kids from the basement beat you to death, right?  How can you live without resenting what they did to you?\n\nGiant Rat::Some animate bits of organic matter were cruel to me.  I harbor no resentment over it.\n\nGiant Rat::Do you resent lightning for striking you?\n\nAmelie::You ate your own babies!  Do you not feel guilty or upset about that, at least?\n\nGiant Rat::I shouldn't have eaten my babies.  But I can't undo it.  Rats cannot travel through time.\n\nGiant Rat::But I know how to live now.  Every moment I live in harmony, I do right by them.\n\nGiant Rat::In a few hours this body and mind will die again.  But I will never be dead.  Every moment I have, I am alive.\n\nGiant Rat::I'm not going to waste that.\n\nAmelie::...\n\nAmelie::Alright.  Let's do this.\n\n[[C->rear back]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "rear back",
+          "pid": "5"
+        }
+      ],
+      "name": "amelie alone",
+      "pid": "4",
+      "position": {
+        "x": "1180",
+        "y": "1056"
+      },
+      "tags": [
+        "wiggly_gone"
+      ]
+    },
+    {
+      "text": "TAG\n\n[[C->flying through air]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "flying through air",
+          "pid": "6"
+        }
+      ],
+      "name": "rear back",
+      "pid": "5",
+      "position": {
+        "x": "1180",
+        "y": "1206"
+      },
+      "tags": [
+        "rear_back"
+      ]
+    },
+    {
+      "text": "TAG\n\n[[C->flying far away]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "flying far away",
+          "pid": "7"
+        }
+      ],
+      "name": "flying through air",
+      "pid": "6",
+      "position": {
+        "x": "1180",
+        "y": "1356"
+      },
+      "tags": [
+        "flying_through_air"
+      ]
+    },
+    {
+      "text": "TAG\n\n[[C->left alone]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "left alone",
+          "pid": "8"
+        }
+      ],
+      "name": "flying far away",
+      "pid": "7",
+      "position": {
+        "x": "1180",
+        "y": "1506"
+      },
+      "tags": [
+        "flying_far",
+        "amelie_forward3"
+      ]
+    },
+    {
+      "text": "Amelie::...\n\nAmelie::I guess, now I can try just being alone.",
+      "name": "left alone",
+      "pid": "8",
+      "position": {
+        "x": "1181",
+        "y": "1656"
+      },
+      "tags": [
+        "rat_disappears"
+      ]
+    },
+    {
+      "text": "Wiggly::...\n\nWiggly::...\n\nWiggly,looking_to_side::.....\n\n[[C->amelie reappears]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "amelie reappears",
+          "pid": "1"
+        }
+      ],
+      "name": "Untitled Passage 1",
+      "pid": "9",
+      "position": {
+        "x": "1177",
+        "y": "120"
+      },
+      "tags": [
+        "wiggly_forward",
+        "breathing_machine_softer"
+      ]
+    },
+    {
+      "text": "Amelie::Something you should see.\n\n[[C->wiggly also turns]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "wiggly also turns",
+          "pid": "11"
+        }
+      ],
+      "name": "amelie turns to wiggly",
+      "pid": "10",
+      "position": {
+        "x": "1424",
+        "y": "226"
+      },
+      "tags": [
+        "amelie_right"
+      ]
+    },
+    {
+      "text": "Wiggly,skeptical::W...What's this?\n\nWiggly::That's my name on the paper.\n\nAmelie,guilty::It's a certificate stating that you were stillborn.  \n\nAmelie::Issued to your parents.\n\nAmelie::You weren't really an orphan, Paul.\n\nAmelie::You, and a lot of other kids, were stolen and trafficked.  Probably by Rosalind, and this other doctor named Tann.\n\n[[C->wiggly turns forward again]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "wiggly turns forward again",
+          "pid": "12"
+        }
+      ],
+      "name": "wiggly also turns",
+      "pid": "11",
+      "position": {
+        "x": "1545",
+        "y": "284"
+      },
+      "tags": [
+        "wiggly_forward2"
+      ]
+    },
+    {
+      "text": "Wiggly::...\n\nWiggly::.....\n\nWiggly,neutral::.......\n\nWiggly::I...don't really know how to feel, about that.\n\n[[C->part 2]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "part 2",
+          "pid": "2"
+        }
+      ],
+      "name": "wiggly turns forward again",
+      "pid": "12",
+      "position": {
+        "x": "1161",
+        "y": "294"
+      }
+    },
+    {
+      "text": "Wiggly::Can I...have an hour or so?  Alone?  Just...Wait here.  \n\nWiggly::You'll be safe, if you wait here.\n\nWiggly::I understand this is a somewhat unprofessional request, but I just need a bit of time to myself.\n\n[[C->wiggly faces city again]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "wiggly faces city again",
+          "pid": "14"
+        }
+      ],
+      "name": "wiggly turns again",
+      "pid": "13",
+      "position": {
+        "x": "1408",
+        "y": "443"
+      },
+      "tags": [
+        "wiggly_left2"
+      ]
+    },
+    {
+      "text": "Wiggly::This is...difficult for me to understand.\n\nAmelie::You have no practice standing up for yourself, do you?\n\nAmelie::Take all the time you need.  I'm not going anywhere.\n\nAmelie::But...where are you going to go?  I'm just curious.\n\nWiggly::I have a room down in the boilers where I like to cry and smash bottles some times.\n\nWiggly::I call it my sad place.  It's got lots of weird pipes and vents that are fun to crawl through.\n\nWiggly::Usually it cheers me up, but this time I don't know.\n\nAmelie::Uhm.  Yeah, sure.  Go run around down there all you need to.\n\nAmelie::I think I'll just wait right here.  I enjoy the view.\n\nWiggly::Thanks.  I'll be back, before the skylights shut off.\n\n[[C->Wiggly leaves]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Wiggly leaves",
+          "pid": "3"
+        }
+      ],
+      "name": "wiggly faces city again",
+      "pid": "14",
+      "position": {
+        "x": "1543",
+        "y": "515"
+      },
+      "tags": [
+        "wiggly_forward3",
+        "amelie_forward2"
+      ]
+    }
+  ],
+  "name": "Rooftop Final Convo",
+  "startnode": "9",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "950647C2-A31B-4864-9BB1-50441D817A84"
+}
+

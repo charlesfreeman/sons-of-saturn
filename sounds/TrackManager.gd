@@ -20,18 +20,22 @@ func play(song: String):
 	if song == current_song:
 		pass
 	elif check_for_song(song):
-		if get_node(song).independent:
+		var track = get_node(song)
+		if track.independent:
 			# NOTE might want to change this to fade_in
 			# if just a one-off, just play the song and don't update the state
 			# of the current song
-			self.get_node(song).play()
+			if not track.playing:
+				track.play()
+			else:
+				track.fade_out()
 		elif current_song != "None":
 			self.get_node(current_song).fade_out()
-			self.get_node(song).fade_in()
+			track.fade_in()
 			current_song = song
 		# fade in new song (no old song playing)
 		else:
-			self.get_node(song).fade_in()
+			track.fade_in()
 			current_song = song
 	# fade out song (no new song)
 	elif song == "None":
@@ -44,3 +48,8 @@ func play(song: String):
 func stop():
 	self.get_node(current_song).fade_out()
 	current_song = "None"
+
+
+func definitely_play(song):
+	if not get_node(song).playing:
+		get_node(song).play()

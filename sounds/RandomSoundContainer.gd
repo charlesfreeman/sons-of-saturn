@@ -1,8 +1,8 @@
 extends Node
 
 const name_to_global_map = {
-	"TileFootsteps" : "footsteps_vol",
-	"WetFootsteps" : "footsteps_vol",
+	"TileFootsteps" : "footstep_vol",
+	"WetFootsteps" : "footstep_vol",
 	"TypewriterSounds" : "typewriter_vol",
 }
 

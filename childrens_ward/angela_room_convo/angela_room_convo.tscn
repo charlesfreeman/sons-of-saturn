@@ -1,0 +1,70 @@
+[gd_scene load_steps=9 format=3 uid="uid://6a248nukxkxi"]
+
+[ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1_c471n"]
+[ext_resource type="PackedScene" uid="uid://gent118w7jqg" path="res://conversation_pov/CharacterRect.tscn" id="2_3gr2h"]
+[ext_resource type="Texture2D" uid="uid://cgv7684c6273e" path="res://childrens_ward/angela_room_convo/angela_room_leaf_overlay.png" id="3_up67u"]
+[ext_resource type="Texture2D" uid="uid://cdwgswbjicrqm" path="res://childrens_ward/angela_room_convo/julia_in_chair_nodding_off.png" id="4_00seu"]
+[ext_resource type="Texture2D" uid="uid://dqj2jc6uy4mk2" path="res://childrens_ward/angela_room_convo/julia_slouching_on_lump.png" id="5_kjb50"]
+[ext_resource type="Texture2D" uid="uid://dg6ep4nuo0wkw" path="res://childrens_ward/angela_room_convo/julia_laying_down.png" id="6_3o1e2"]
+[ext_resource type="PackedScene" uid="uid://byn2lurvh5x2f" path="res://conversation_pov/ConvoSoundEffect.tscn" id="7_85nvw"]
+[ext_resource type="AudioStream" uid="uid://cm0na2t3kr75" path="res://sounds/effects/footsteps_approaching.wav" id="8_prme3"]
+
+[node name="angela_room_convo" type="Node"]
+
+[node name="Convo" parent="." instance=ExtResource("1_c471n")]
+scriptPath = "res://childrens_ward/angela_room_convo/angela_room_convo.json"
+backgroundPath = "res://childrens_ward/angela_room_convo/angela_room_tv_off.png"
+sliverPath = "res://childrens_ward/angela_room_convo/angela_room_tv_sliver.png"
+nextLocation = "res://childrens_ward/wheelchair_hall_after_angela/wheelchair_hall_after_angela.tscn"
+fade_tag_dict = {
+"ferns": "res://childrens_ward/angela_room_convo/angela_room_fern_pov.png",
+"lump": "res://childrens_ward/angela_room_convo/angela_room_lump.png",
+"tv_on": "res://childrens_ward/angela_room_convo/angela_room_tv_on.png",
+"wheelchair": "res://childrens_ward/angela_room_convo/wheelchair_hall_2300x2160.png"
+}
+fade_tag_dict_sliver = {
+"ferns": "res://childrens_ward/angela_room_convo/angela_room_fern_pov_sliver.png",
+"lump": "res://childrens_ward/angela_room_convo/angela_room_lump_sliver.png",
+"tv_on": "res://childrens_ward/angela_room_convo/angela_room_tv_sliver.png",
+"wheelchair": "res://childrens_ward/angela_room_convo/wheelchair_hall_sliver.png"
+}
+prog_flag = "angela_room_convo"
+
+[node name="JuliaInChair" parent="." instance=ExtResource("2_3gr2h")]
+offset_left = 1693.0
+offset_top = 684.0
+offset_right = 2553.0
+offset_bottom = 1544.0
+texture = ExtResource("4_00seu")
+appear_tag = "sitting"
+disappear_tag = "slouching"
+
+[node name="JuliaSlouching" parent="." instance=ExtResource("2_3gr2h")]
+offset_left = 968.0
+offset_top = 813.0
+offset_right = 1783.0
+offset_bottom = 1645.0
+texture = ExtResource("5_kjb50")
+appear_tag = "slouching"
+disappear_tag = "laying_down"
+
+[node name="Ferns" parent="." instance=ExtResource("2_3gr2h")]
+offset_left = -1.0
+offset_right = 2950.0
+offset_bottom = 2160.0
+texture = ExtResource("3_up67u")
+appear_tag = "ferns"
+disappear_tag = "wheelchair"
+
+[node name="JuliaLayingDown" parent="." instance=ExtResource("2_3gr2h")]
+offset_left = 935.0
+offset_top = 969.0
+offset_right = 1628.0
+offset_bottom = 1378.0
+texture = ExtResource("6_3o1e2")
+appear_tag = "laying_down"
+disappear_tag = "wheelchair"
+
+[node name="Footsteps" parent="." instance=ExtResource("7_85nvw")]
+stream = ExtResource("8_prme3")
+tag_to_play = "footsteps"

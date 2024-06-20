@@ -1,0 +1,307 @@
+
+
+{
+  "passages": [
+    {
+      "text": "You enter a small room filled with cold and stagnant air.  A small, wrinkled lump rests on the periphery of the bed, covered in ferns.\n\n[[p:(Action) Inspect the lump.]]\n[[p:Is that thing on the bed alive?]]\n",
+      "links": [
+        {
+          "name": "p:(Action) Inspect the lump.",
+          "link": "p:(Action) Inspect the lump.",
+          "pid": "2"
+        },
+        {
+          "name": "p:Is that thing on the bed alive?",
+          "link": "p:Is that thing on the bed alive?",
+          "pid": "3"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "1179",
+        "y": "606"
+      },
+      "tags": [
+        "aguilty"
+      ]
+    },
+    {
+      "text": "TAG\n\n[[p:Do you think this is...Angela?]]",
+      "links": [
+        {
+          "name": "p:Do you think this is...Angela?",
+          "link": "p:Do you think this is...Angela?",
+          "pid": "4"
+        }
+      ],
+      "name": "p:(Action) Inspect the lump.",
+      "pid": "2",
+      "position": {
+        "x": "1104",
+        "y": "756"
+      },
+      "tags": [
+        "lump"
+      ]
+    },
+    {
+      "text": "Jasper,thinking::So you feel it too...\n\n[[p:Do you think this is...Angela?]]",
+      "links": [
+        {
+          "name": "p:Do you think this is...Angela?",
+          "link": "p:Do you think this is...Angela?",
+          "pid": "4"
+        }
+      ],
+      "name": "p:Is that thing on the bed alive?",
+      "pid": "3",
+      "position": {
+        "x": "1258",
+        "y": "756"
+      },
+      "tags": [
+        "lump"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::This is her room.  And that lump's about the right size and shape for a toddler...\n\n[[C->TV Turns on]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "TV Turns on",
+          "pid": "5"
+        }
+      ],
+      "name": "p:Do you think this is...Angela?",
+      "pid": "4",
+      "position": {
+        "x": "1258",
+        "y": "906"
+      }
+    },
+    {
+      "text": "Your focus is interrupted by the tortured hiss of static.  The television set in the corner has sprung to life, along with the lamp that sits atop it.\n\n[[C->footsteps]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "footsteps",
+          "pid": "6"
+        }
+      ],
+      "name": "TV Turns on",
+      "pid": "5",
+      "position": {
+        "x": "1258",
+        "y": "1056"
+      },
+      "tags": [
+        "tv_on",
+        "tv_static"
+      ]
+    },
+    {
+      "text": "You concentrate your hearing.  The sound is faint but disturbingly clear: approaching footsteps.\n\nJasper,twisted::Hide!\n\n[[p:(Action) Dive into the ferns in the corner.]]",
+      "links": [
+        {
+          "name": "p:(Action) Dive into the ferns in the corner.",
+          "link": "p:(Action) Dive into the ferns in the corner.",
+          "pid": "7"
+        }
+      ],
+      "name": "footsteps",
+      "pid": "6",
+      "position": {
+        "x": "1258",
+        "y": "1206"
+      },
+      "tags": [
+        "footsteps"
+      ]
+    },
+    {
+      "text": "You slither into the interior of a thick blanket of ferns suffocating the corner of the room nearest the entrance.  You can make out slices of the bedframe from your vantage point.\n\n[[C->footsteps grow louder]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "footsteps grow louder",
+          "pid": "8"
+        }
+      ],
+      "name": "p:(Action) Dive into the ferns in the corner.",
+      "pid": "7",
+      "position": {
+        "x": "1257",
+        "y": "1356"
+      },
+      "tags": [
+        "ferns"
+      ]
+    },
+    {
+      "text": "The footsteps grow louder.  The television begins to scream.\n\n[[C->Julia enters.]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Julia enters.",
+          "pid": "9"
+        }
+      ],
+      "name": "footsteps grow louder",
+      "pid": "8",
+      "position": {
+        "x": "1257",
+        "y": "1506"
+      }
+    },
+    {
+      "text": "TAG\n\n[[C->jasper reacts]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "jasper reacts",
+          "pid": "10"
+        }
+      ],
+      "name": "Julia enters.",
+      "pid": "9",
+      "position": {
+        "x": "1257",
+        "y": "1656"
+      }
+    },
+    {
+      "text": "Jasper::...\n\n[[C->Julia sits]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Julia sits",
+          "pid": "11"
+        }
+      ],
+      "name": "jasper reacts",
+      "pid": "10",
+      "position": {
+        "x": "1257",
+        "y": "1806"
+      },
+      "tags": [
+        "sitting"
+      ]
+    },
+    {
+      "text": "TAG\n\n[[C->Julia nods off]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Julia nods off",
+          "pid": "12"
+        }
+      ],
+      "name": "Julia sits",
+      "pid": "11",
+      "position": {
+        "x": "1257",
+        "y": "1956"
+      }
+    },
+    {
+      "text": "TAG\n\n[[C->Julia asleep]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Julia asleep",
+          "pid": "13"
+        }
+      ],
+      "name": "Julia nods off",
+      "pid": "12",
+      "position": {
+        "x": "1257",
+        "y": "2106"
+      },
+      "tags": [
+        "slouching"
+      ]
+    },
+    {
+      "text": "TAG\n\n[[C->planning escape]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "planning escape",
+          "pid": "14"
+        }
+      ],
+      "name": "Julia asleep",
+      "pid": "13",
+      "position": {
+        "x": "1258",
+        "y": "2256"
+      },
+      "tags": [
+        "laying_down"
+      ]
+    },
+    {
+      "text": "Jasper,head_tilted::...\n\nJasper::.....\n\nJasper::.......\n\nJasper,twisted::I think she's asleep.  Get out of here, now.\n\n[[p:(Action) Quietly slip through the ferns and out of the room.]]",
+      "links": [
+        {
+          "name": "p:(Action) Quietly slip through the ferns and out of the room.",
+          "link": "p:(Action) Quietly slip through the ferns and out of the room.",
+          "pid": "15"
+        }
+      ],
+      "name": "planning escape",
+      "pid": "14",
+      "position": {
+        "x": "1258",
+        "y": "2406"
+      }
+    },
+    {
+      "text": "TAG\n\n[[p:Whew.  That was close.]]\n[[p:How did she get down here?->p:Whew.  That was close.]]",
+      "links": [
+        {
+          "name": "p:Whew.  That was close.",
+          "link": "p:Whew.  That was close.",
+          "pid": "16"
+        },
+        {
+          "name": "p:How did she get down here?",
+          "link": "p:Whew.  That was close.",
+          "pid": "16"
+        }
+      ],
+      "name": "p:(Action) Quietly slip through the ferns and out of the room.",
+      "pid": "15",
+      "position": {
+        "x": "1258",
+        "y": "2556"
+      },
+      "tags": [
+        "wheelchair",
+        "tv_static_softer"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::Shut up!\n\nJasper,head_tilted::We're still right outside her room.\n\nJasper,sad::Quickly, let's keep moving before she hears us.",
+      "name": "p:Whew.  That was close.",
+      "pid": "16",
+      "position": {
+        "x": "1258",
+        "y": "2706"
+      },
+      "tags": [
+        "wheelchair",
+        "tv_static_softer"
+      ]
+    }
+  ],
+  "name": "Angela's Room",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "63BC03CF-620A-4E33-AF56-D3E17A617E7E"
+}
+

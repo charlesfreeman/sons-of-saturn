@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://dq8vc6r2wl321"]
+
+[ext_resource type="Texture2D" uid="uid://b77kxbf4u3211" path="res://childrens_ward/julia_hand_on_lever/julia_hand_on_lever_16_9.png" id="1_b8n64"]
+[ext_resource type="Script" path="res://childrens_ward/julia_hand_on_lever/JuliaCam.gd" id="2_33l8t"]
+[ext_resource type="Script" path="res://childrens_ward/julia_hand_on_lever/JuliaLeverTexture.gd" id="2_qf5iv"]
+[ext_resource type="AudioStream" uid="uid://bv88e18f0ulxo" path="res://sounds/effects/lever_pulled.wav" id="4_wlxjx"]
+
+[node name="SubViewportContainer" type="SubViewportContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SubViewport" type="SubViewport" parent="."]
+handle_input_locally = false
+size = Vector2i(3840, 2160)
+render_target_update_mode = 4
+
+[node name="TextureRect" type="TextureRect" parent="SubViewport"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("1_b8n64")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("2_qf5iv")
+
+[node name="Camera2D" type="Camera2D" parent="SubViewport/TextureRect"]
+position = Vector2(1920, 1080)
+script = ExtResource("2_33l8t")
+
+[node name="Lever" type="AudioStreamPlayer" parent="SubViewport/TextureRect"]
+stream = ExtResource("4_wlxjx")
+
+[connection signal="swap_texture" from="SubViewport/TextureRect/Camera2D" to="SubViewport/TextureRect" method="_on_camera_2d_swap_texture"]

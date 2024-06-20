@@ -1,0 +1,462 @@
+{
+  "passages": [
+    {
+      "text": "The door behind you suddenly slams shut.  You can hear the lock cylinders sliding into place.\n\n[[p:Try to open the door.]]\n[[p:(Action) Kick the door.]]",
+      "links": [
+        {
+          "name": "p:Try to open the door.",
+          "link": "p:Try to open the door.",
+          "pid": "2"
+        },
+        {
+          "name": "p:(Action) Kick the door.",
+          "link": "p:(Action) Kick the door.",
+          "pid": "3"
+        }
+      ],
+      "name": "door slam",
+      "pid": "1",
+      "position": {
+        "x": "1179",
+        "y": "606"
+      },
+      "tags": [
+        "afuming",
+        "door_slam"
+      ]
+    },
+    {
+      "text": "Muffled Voice::That's not going to work.\n\nMuffled Voice::You aren't leaving this room until I say so.\n\nJasper,thinking::Oh no...\n\n[[p:(Action) Look through the viewport.]]",
+      "links": [
+        {
+          "name": "p:(Action) Look through the viewport.",
+          "link": "p:(Action) Look through the viewport.",
+          "pid": "4"
+        }
+      ],
+      "name": "p:Try to open the door.",
+      "pid": "2",
+      "position": {
+        "x": "1104",
+        "y": "756"
+      },
+      "tags": [
+        "tension"
+      ]
+    },
+    {
+      "text": "Muffled Voice::That's really the only trick you know, isn't it?\n\nMuffled Voice::Beat it until it opens, or gives you what you want.\n\nMuffled Voice::I guess that's all you were ever taught.\n\nJasper,thinking::Oh no...\n\n[[p:(Action) Look through the viewport.]]",
+      "links": [
+        {
+          "name": "p:(Action) Look through the viewport.",
+          "link": "p:(Action) Look through the viewport.",
+          "pid": "4"
+        }
+      ],
+      "name": "p:(Action) Kick the door.",
+      "pid": "3",
+      "position": {
+        "x": "1254",
+        "y": "756"
+      },
+      "tags": [
+        "door_kick",
+        "tension"
+      ]
+    },
+    {
+      "text": "TAG\n\n[[C->viewport continue]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "viewport continue",
+          "pid": "5"
+        }
+      ],
+      "name": "p:(Action) Look through the viewport.",
+      "pid": "4",
+      "position": {
+        "x": "1104",
+        "y": "906"
+      },
+      "tags": [
+        "viewport"
+      ]
+    },
+    {
+      "text": "Jasper,sad::I already knew it was her...\n\nJulia::Look at you, running around, acting like you own the place.\n\nJulia::You're exhibiting clear and willful non-compliance.  I'll remember that when you enter my care.\n\n[[How did you even know I was here?]]\n[[p:I'll find a way out of here.  Just like last time.]]\n[[p:Let me out of here!  You bitch!]]\n[[p:(Action) Kick the door again.]]",
+      "links": [
+        {
+          "name": "How did you even know I was here?",
+          "link": "How did you even know I was here?",
+          "pid": "6"
+        },
+        {
+          "name": "p:I'll find a way out of here.  Just like last time.",
+          "link": "p:I'll find a way out of here.  Just like last time.",
+          "pid": "9"
+        },
+        {
+          "name": "p:Let me out of here!  You bitch!",
+          "link": "p:Let me out of here!  You bitch!",
+          "pid": "7"
+        },
+        {
+          "name": "p:(Action) Kick the door again.",
+          "link": "p:(Action) Kick the door again.",
+          "pid": "8"
+        }
+      ],
+      "name": "viewport continue",
+      "pid": "5",
+      "position": {
+        "x": "1104",
+        "y": "1056"
+      },
+      "tags": [
+        "afuming"
+      ]
+    },
+    {
+      "text": "Julia::Do you really think I couldn't hear you?  You aren't subtle.\n\nJasper,sad::...\n\nJulia::I just needed to wait for you leave, and hang back until you thought you entered one of these rooms without thinking.\n\nJulia::That's the mistake people like you always make.  You think you're safe.  You let your guard down.\n\nJulia::Not me.  Not anymore.\n\n[[C->viewport continue]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "viewport continue",
+          "pid": "5"
+        }
+      ],
+      "name": "How did you even know I was here?",
+      "pid": "6",
+      "position": {
+        "x": "872",
+        "y": "1193"
+      }
+    },
+    {
+      "text": "Julia::I don't like your tone, miss.\n\nJulia::In fact...\n\n[[C->Julia slaps button]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Julia slaps button",
+          "pid": "10"
+        }
+      ],
+      "name": "p:Let me out of here!  You bitch!",
+      "pid": "7",
+      "position": {
+        "x": "1168",
+        "y": "1193"
+      }
+    },
+    {
+      "text": "Julia::Miss, that's an extremely childish way to behave.\n\nJulia::In fact, you know what...\n\n[[C->Julia slaps button]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Julia slaps button",
+          "pid": "10"
+        }
+      ],
+      "name": "p:(Action) Kick the door again.",
+      "pid": "8",
+      "position": {
+        "x": "1308",
+        "y": "1203"
+      },
+      "tags": [
+        "door_kick"
+      ]
+    },
+    {
+      "text": "Julia::You better hurry if that's the plan.\n\n[[C->Julia slaps button]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Julia slaps button",
+          "pid": "10"
+        }
+      ],
+      "name": "p:I'll find a way out of here.  Just like last time.",
+      "pid": "9",
+      "position": {
+        "x": "1021",
+        "y": "1191"
+      }
+    },
+    {
+      "text": "Through the door, you hear the muffled sound of a switch being thrown.\n\nNot long after, you can sense a gentle hiss vibrating the air.\n\nJulia::Hear that?  It's the sound of BZ gas filling the room.\n\nJulia::It'll take a few minutes, but before long, the concentration will be high enough that I don't think I'll have any trouble getting you into a restrainment jacket.\n\n[[You can just press some buttons outside these rooms and have them filled with BZ gas?  I don't believe you!]]\n[[p:That's cheating!  You should come in here and try and restrain me, one on one!]]\n[[p:Do you have any idea how fried my brain nugget is?  Your dumb gas isn't gonna have any effect whatsoever.]]",
+      "links": [
+        {
+          "name": "You can just press some buttons outside these rooms and have them filled with BZ gas?  I don't believe you!",
+          "link": "You can just press some buttons outside these rooms and have them filled with BZ gas?  I don't believe you!",
+          "pid": "11"
+        },
+        {
+          "name": "p:That's cheating!  You should come in here and try and restrain me, one on one!",
+          "link": "p:That's cheating!  You should come in here and try and restrain me, one on one!",
+          "pid": "12"
+        },
+        {
+          "name": "p:Do you have any idea how fried my brain nugget is?  Your dumb gas isn't gonna have any effect whatsoever.",
+          "link": "p:Do you have any idea how fried my brain nugget is?  Your dumb gas isn't gonna have any effect whatsoever.",
+          "pid": "13"
+        }
+      ],
+      "name": "Julia slaps button",
+      "pid": "10",
+      "position": {
+        "x": "1020",
+        "y": "1341"
+      },
+      "tags": [
+        "afuming",
+        "gas_leak",
+        "lever"
+      ]
+    },
+    {
+      "text": "Julia::They're outfitted with this mechanism in the event that we need to subdue and restrain a patient before moving them.\n\nJulia::This method is exclusively reserved for violent patients, such as yourself.\n\n[[C->Julia slaps button]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "Julia slaps button",
+          "pid": "10"
+        }
+      ],
+      "name": "You can just press some buttons outside these rooms and have them filled with BZ gas?  I don't believe you!",
+      "pid": "11",
+      "position": {
+        "x": "858",
+        "y": "1497"
+      }
+    },
+    {
+      "text": "Julia::I tried that, Miss.\n\nJulia::I could have just gassed you in that surgical room earlier.  But, instead, I tried to be nice.\n\nJulia::It didn't end well for me.  I'm not repeating that mistake.\n\n[[p:What was going on with that fern lump you were visiting earlier, huh?  Why are you down here?]]\n[[p:Why won't you just leave me alone?  I don't have anything to do with you!]]",
+      "links": [
+        {
+          "name": "p:What was going on with that fern lump you were visiting earlier, huh?  Why are you down here?",
+          "link": "p:What was going on with that fern lump you were visiting earlier, huh?  Why are you down here?",
+          "pid": "14"
+        },
+        {
+          "name": "p:Why won't you just leave me alone?  I don't have anything to do with you!",
+          "link": "p:Why won't you just leave me alone?  I don't have anything to do with you!",
+          "pid": "15"
+        }
+      ],
+      "name": "p:That's cheating!  You should come in here and try and restrain me, one on one!",
+      "pid": "12",
+      "position": {
+        "x": "978",
+        "y": "1492"
+      },
+      "tags": [
+        "afuming"
+      ]
+    },
+    {
+      "text": "Julia::Please.  By the time I get back with a gas mask, you'll be frozen and helpless.\n\nJulia::Ever hear about those tourists who get tetrodotoxin poisoning from octopuses?  They end up flat on their back, unable to fight anything.\n\nJulia::They can't even close their eyes.  The sun burns holes in their corneas.\n\nJulia::Luckily for you the lights here are dim.\n\n[[p:What was going on with that fern lump you were visiting earlier, huh?  Why are you down here?]]\n[[p:Why won't you just leave me alone?  I don't have anything to do with you!]]",
+      "links": [
+        {
+          "name": "p:What was going on with that fern lump you were visiting earlier, huh?  Why are you down here?",
+          "link": "p:What was going on with that fern lump you were visiting earlier, huh?  Why are you down here?",
+          "pid": "14"
+        },
+        {
+          "name": "p:Why won't you just leave me alone?  I don't have anything to do with you!",
+          "link": "p:Why won't you just leave me alone?  I don't have anything to do with you!",
+          "pid": "15"
+        }
+      ],
+      "name": "p:Do you have any idea how fried my brain nugget is?  Your dumb gas isn't gonna have any effect whatsoever.",
+      "pid": "13",
+      "position": {
+        "x": "1102",
+        "y": "1491"
+      },
+      "tags": [
+        "afuming"
+      ]
+    },
+    {
+      "text": "Julia seems a little rattled by your retort.\n\nJulia::I know who you are, Miss.  I know what kind of blood you have in you.\n\nJulia::...\n\n[[C->Julia leaves]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Julia leaves",
+          "pid": "16"
+        }
+      ],
+      "name": "p:What was going on with that fern lump you were visiting earlier, huh?  Why are you down here?",
+      "pid": "14",
+      "position": {
+        "x": "1153",
+        "y": "1635"
+      }
+    },
+    {
+      "text": "Julia seems a little rattled by your retort.\n\nJulia::I know who you are, Miss.  I can't just leave you alone.\n\nJulia::I know what kind of blood you have in you, and on you.\n\nJulia::...\n\n[[C->Julia leaves]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Julia leaves",
+          "pid": "16"
+        }
+      ],
+      "name": "p:Why won't you just leave me alone?  I don't have anything to do with you!",
+      "pid": "15",
+      "position": {
+        "x": "1012",
+        "y": "1631"
+      }
+    },
+    {
+      "text": "Julia::I'll be back in a few minutes with a gas mask.  I recommend lying down, it'll make the transition feel a little smoother.\n\n[[C->Julia disappears]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Julia disappears",
+          "pid": "17"
+        }
+      ],
+      "name": "Julia leaves",
+      "pid": "16",
+      "position": {
+        "x": "1153",
+        "y": "1785"
+      }
+    },
+    {
+      "text": "Julia glides down the hall, escaping your field of view.\n\n[[p:Fucking bitch!]]\n[[p:(Action) Kick the door, again.]]",
+      "links": [
+        {
+          "name": "p:Fucking bitch!",
+          "link": "p:Fucking bitch!",
+          "pid": "18"
+        },
+        {
+          "name": "p:(Action) Kick the door, again.",
+          "link": "p:(Action) Kick the door, again.",
+          "pid": "19"
+        }
+      ],
+      "name": "Julia disappears",
+      "pid": "17",
+      "position": {
+        "x": "1153",
+        "y": "1935"
+      },
+      "tags": [
+        "afuming",
+        "back_to_room"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::Cool it.  We need to focus on finding a way out of here before the concentration of BZ gas gets too high.  \n\n[[C->don't know time]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "don't know time",
+          "pid": "22"
+        }
+      ],
+      "name": "p:Fucking bitch!",
+      "pid": "18",
+      "position": {
+        "x": "1080",
+        "y": "2081"
+      }
+    },
+    {
+      "text": "Jasper,twisted::Cool it.  We need to focus on finding a way out of here before the concentration of BZ gas gets too high.  \n\n[[C->don't know time]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "don't know time",
+          "pid": "22"
+        }
+      ],
+      "name": "p:(Action) Kick the door, again.",
+      "pid": "19",
+      "position": {
+        "x": "1230",
+        "y": "2083"
+      },
+      "tags": [
+        "door_kick"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::I tell you what to do because I'm protecting you.  You listen because deep down you know you need it.\n\n[[C->don't know time]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "don't know time",
+          "pid": "22"
+        }
+      ],
+      "name": "Why do you always tell me what to do?  Why do I always listen?",
+      "pid": "20",
+      "position": {
+        "x": "1066",
+        "y": "2383"
+      }
+    },
+    {
+      "text": "",
+      "name": "p:(Action) Manically search the room for an exit.",
+      "pid": "21",
+      "position": {
+        "x": "1248",
+        "y": "2383"
+      }
+    },
+    {
+      "text": "Jasper,thinking::I don't know how much time we have.\n\n[[Why do you always tell me what to do?  Why do I always listen?]]\n[[p:(Action) Manically search the room for an exit.]]",
+      "links": [
+        {
+          "name": "Why do you always tell me what to do?  Why do I always listen?",
+          "link": "Why do you always tell me what to do?  Why do I always listen?",
+          "pid": "20"
+        },
+        {
+          "name": "p:(Action) Manically search the room for an exit.",
+          "link": "p:(Action) Manically search the room for an exit.",
+          "pid": "21"
+        }
+      ],
+      "name": "don't know time",
+      "pid": "22",
+      "position": {
+        "x": "1173",
+        "y": "2240"
+      },
+      "tags": [
+        "aguilty"
+      ]
+    },
+    {
+      "text": "You do a quick scan of the room.\n\nThe jagged outline of a person rests beneath another rancid pile of soiled blankets.  Portions of an ivory neckline protrude from the sheets.\n\n[[C->door slam]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "door slam",
+          "pid": "1"
+        }
+      ],
+      "name": "Untitled Passage 1",
+      "pid": "23",
+      "position": {
+        "x": "1177",
+        "y": "456"
+      }
+    }
+  ],
+  "name": "Julia Locks You In",
+  "startnode": "23",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "60819BBC-F824-4241-B93D-AB4BD6A0A1D7"
+}
+

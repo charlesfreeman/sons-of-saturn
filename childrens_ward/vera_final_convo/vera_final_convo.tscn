@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://2so2kdkwx7sj"]
+
+[ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1_bp8o6"]
+[ext_resource type="Script" path="res://childrens_ward/vera_final_convo/vera_final_convo.gd" id="1_danpb"]
+[ext_resource type="PackedScene" uid="uid://kxdt3256877o" path="res://conversation_pov/Documents.tscn" id="2_s1t0g"]
+[ext_resource type="PackedScene" uid="uid://byn2lurvh5x2f" path="res://conversation_pov/ConvoSoundEffect.tscn" id="3_xbs4h"]
+[ext_resource type="AudioStream" uid="uid://dhdg50tx1td6m" path="res://childrens_ward/vera_final_convo/yank.wav" id="4_uhp7l"]
+[ext_resource type="AudioStream" uid="uid://bv88e18f0ulxo" path="res://sounds/effects/lever_pulled.wav" id="5_dhjwn"]
+
+[node name="vera_final_convo" type="Node"]
+script = ExtResource("1_danpb")
+
+[node name="Convo" parent="." instance=ExtResource("1_bp8o6")]
+scriptPath = "res://childrens_ward/vera_final_convo/vera_final_convo.json"
+backgroundPath = "res://childrens_ward/vera_final_convo/vera_bed_convo_pov.png"
+sliverPath = "res://childrens_ward/vera_final_convo/vera_bed_convo_pov_sliver.png"
+nextLocation = "res://childrens_ward/locked_rps_door/locked_rps_door.tscn"
+fade_tag_dict = {
+"back_to_room": "res://childrens_ward/vera_final_convo/vera_bed_convo_pov.png",
+"hand_closeup": "res://childrens_ward/vera_final_convo/vera_hand_closeup.png",
+"lever": "res://childrens_ward/vera_final_convo/vera_room_lever.png"
+}
+fade_tag_dict_sliver = {
+"back_to_room": "res://childrens_ward/vera_final_convo/vera_bed_convo_pov_sliver.png",
+"hand_closeup": "res://childrens_ward/vera_final_convo/vera_hand_closeup_sliver.png",
+"lever": "res://childrens_ward/vera_final_convo/vera_room_lever_sliver.png"
+}
+prog_flag = "vera_final_convo"
+
+[node name="Documents" parent="." instance=ExtResource("2_s1t0g")]
+docs = ["res://childrens_ward/vera_final_convo/vera_doc_1.png", "res://childrens_ward/vera_final_convo/vera_doc_2.png"]
+
+[node name="Yank" parent="." instance=ExtResource("3_xbs4h")]
+stream = ExtResource("4_uhp7l")
+tag_to_play = "yank"
+
+[node name="PullLever" parent="." instance=ExtResource("3_xbs4h")]
+stream = ExtResource("5_dhjwn")
+tag_to_play = "lever_pulled"

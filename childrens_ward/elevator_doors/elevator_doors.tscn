@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://c0in80dt25v5i"]
+
+[ext_resource type="Texture2D" uid="uid://ceehohvq16yk1" path="res://childrens_ward/elevator_doors/rps_elevator.png" id="1_iknmr"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2_yxxh8"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="3_ftc5b"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="4_xvgvk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2rb0h"]
+size = Vector2(2009.5, 325)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gpjqv"]
+size = Vector2(1336, 1090)
+
+[node name="PoV" type="TextureRect"]
+offset_right = 2880.0
+offset_bottom = 2160.0
+size_flags_horizontal = 3
+mouse_filter = 2
+texture = ExtResource("1_iknmr")
+script = ExtResource("2_yxxh8")
+scene_down = "res://childrens_ward/long_hall/long_hall.tscn"
+
+[node name="ClickToEnter" parent="." instance=ExtResource("3_ftc5b")]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2(1472.25, 1990.5)
+shape = SubResource("RectangleShape2D_2rb0h")
+
+[node name="PopUp" parent="." instance=ExtResource("4_xvgvk")]
+popup_text = ["Amelie,guilty::This is how we got down here, but I don't really know how we're going to get out...", "Jasper,thinking::You should have thought of that before telling the Ferryman to drop us down..."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
+position = Vector2(1453, 1009)
+shape = SubResource("RectangleShape2D_gpjqv")

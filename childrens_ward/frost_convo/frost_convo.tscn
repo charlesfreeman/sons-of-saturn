@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://pbxghgnmwcq5"]
+[gd_scene load_steps=5 format=3 uid="uid://pbxghgnmwcq5"]
 
 [ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1_yodhf"]
 [ext_resource type="PackedScene" uid="uid://kxdt3256877o" path="res://conversation_pov/Documents.tscn" id="2_8tox5"]
+[ext_resource type="PackedScene" uid="uid://byn2lurvh5x2f" path="res://conversation_pov/ConvoSoundEffect.tscn" id="3_t26cr"]
+[ext_resource type="AudioStream" uid="uid://re3iejourxqe" path="res://sounds/effects/file_cabinet.wav" id="4_soim4"]
 
 [node name="frost_convo" type="Node"]
 
@@ -9,6 +11,7 @@
 scriptPath = "res://childrens_ward/frost_convo/frost_convo.json"
 backgroundPath = "res://childrens_ward/frost_convo/safe_closed_convo_pov.png"
 sliverPath = "res://childrens_ward/frost_convo/safe_closed_convo_pov_sliver.png"
+nextLocation = "res://childrens_ward/frost_desk/frost_desk.tscn"
 fade_tag_dict = {
 "drawer": "res://childrens_ward/frost_convo/frost_desk_drawer.png",
 "full_view": "res://childrens_ward/frost_convo/safe_closed_convo_pov.png",
@@ -19,6 +22,11 @@ fade_tag_dict_sliver = {
 "full_view": "res://childrens_ward/frost_convo/safe_closed_convo_pov_sliver.png",
 "safe": "res://childrens_ward/frost_convo/safe_medium_distance_sliver.png"
 }
+song = "morgue_ambient"
 
 [node name="Documents" parent="." instance=ExtResource("2_8tox5")]
 docs = ["res://childrens_ward/frost_convo/frost_convo_docs_1.png", "res://childrens_ward/frost_convo/frost_convo_docs_2.png", "res://childrens_ward/frost_convo/frost_convo_docs_3.png", "res://childrens_ward/frost_convo/frost_convo_docs_4.png", "res://childrens_ward/frost_convo/frost_convo_docs_5.png", "res://childrens_ward/frost_convo/frost_convo_docs_6.png"]
+
+[node name="FilingCabinet" parent="." instance=ExtResource("3_t26cr")]
+stream = ExtResource("4_soim4")
+tag_to_play = "drawer"

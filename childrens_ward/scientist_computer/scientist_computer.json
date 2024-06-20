@@ -1,0 +1,206 @@
+{
+  "passages": [
+    {
+      "text": "Both subjects immediately entered a coma after we put them in the ephaptic amplifier.  The whole experiment, toast, immediately.  It would be kind of funny if my career wasn't riding on this.\n\nI suspect Valchek might have installed the transmitter with the wrong chirality.  Idiot.  I'll have a look at it when I get a chance.\n\nRosalind has agreed to source an even younger subject to serve as the recipient.  We believe that even by age eight the neural plasticity might be too diminished to support takeover by a mature subject.\n\nBut who knows if we can even get funding for more experiments if neither of them wakes up?\n\n[[C->Screen]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Screen",
+          "pid": "8"
+        }
+      ],
+      "name": "Log Entry 1",
+      "pid": "1",
+      "position": {
+        "x": "1317",
+        "y": "1672"
+      },
+      "tags": [
+        "beep"
+      ]
+    },
+    {
+      "text": "Hypothesis: A new tool, the ephaptic amplifier, allows for the enhancement of the natural ephaptic coupling that occurs between spatially adjacent neurons.  \n\nWe propose that the application of this device on two test subjects will allow for the nervous system of one subject, the transmitter, to temporarily override the neural activations of the recipient.\n\nSubjects: Study is to be performed on two volunteers, Alpha and Beta.\n\nAlpha: Male, moderately overweight, 64 years old.  Relatively healthy for his age, albeit with limited mobility.\n\nBeta: Male, underweight, 12 years old.  Somewhat sickly.\n\nSetup: Subject Alpha is to be constrained to the ephaptic amplifier, as the transmitter, while subject Beta is to be constrained to the receiver.\n\nWhile some degree of spatial proximity is required, we have placed the subjects in adjacent but completely sound and vision isolated chambers.\n\nAlpha will be asked to perform a series of specific physical actions, such as jumping and bending over.  Beta will be monitored to see if he performs actions that mirror these commands.\n\n[[C->Screen]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Screen",
+          "pid": "8"
+        }
+      ],
+      "name": "Experimental Setup",
+      "pid": "2",
+      "position": {
+        "x": "1172",
+        "y": "1675"
+      },
+      "tags": [
+        "beep"
+      ]
+    },
+    {
+      "text": "My career is over.  Beta died overnight.  We aren't sure, but we thing the neuronal override from alpha wasn't compatible with his nervous system.  Kid probably forgot how to breathe or something.\n\nWe're sending him off to the coroner in administration.  Hopefully he finds something interesting.  If not, then I guess I'm going back to school.\n\n[[C->Screen]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Screen",
+          "pid": "8"
+        }
+      ],
+      "name": "Log Entry 2",
+      "pid": "3",
+      "position": {
+        "x": "1472",
+        "y": "1681"
+      },
+      "tags": [
+        "beep"
+      ]
+    },
+    {
+      "text": "We still haven't heard back from the coroner.  Everyone is pretty high strung around here.  We all know what'll happen if the higher ups find out about this before we can squeeze any kind of result out of this trainwreck.\n\nValchek seems like he might be losing it, actually.  He came into my office today, freaking out because he said that kid we sent off to the coroner was following him around.  If he wasn't such a fuck-up I'd feel bad for him.\n\nWe're having a lot of electrical problems, too.  I think the ephaptic amplifier must have fried a few of the circuits.  I guess we put it a little too close to the wiring.\n\nWhat a nightmare...\n\n[[C->Screen]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Screen",
+          "pid": "8"
+        }
+      ],
+      "name": "Log Entry 3",
+      "pid": "4",
+      "position": {
+        "x": "1653",
+        "y": "1692"
+      },
+      "tags": [
+        "beep"
+      ]
+    },
+    {
+      "text": "I saw Beta today.\n\nThe kid who died, I saw him.  Just standing in the operating room.  I think Valchek saw him too, but no one else.\n\nHe looked exactly the same, except his eyes... I don't even want to think about it.\n\nI think we didn't insulate the ephaptic amplifier well enough.  That's what's causing these hallucinatory spasms.  Hopefully symptoms subside within a few days.\n\nAlso, the coroner just got back with us.  Cause of death: hypoxia brought about by nervous collapse.\n\n[[C->Screen]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Screen",
+          "pid": "8"
+        }
+      ],
+      "name": "Log Entry 4",
+      "pid": "5",
+      "position": {
+        "x": "1804",
+        "y": "1700"
+      },
+      "tags": [
+        "beep"
+      ]
+    },
+    {
+      "text": "I haven't slept in two days.  Beta follows me everywhere now.  I can't get away from him.\n\nEven now, he's standing right behind me.  I can see his awful eyeless face reflecting off the monitor.\n\nAt one point, he even spoke... He doesn't seem to know he's dead.\n\nI scream at him, try to grab him, drop to my knees and beg him to leave, but nothing.  He just stares at me with those horrible holes in his skull.\n\nValchek fucked up the experiment.  He got the chirality wrong, so Alpha is the real host.  That's why Valchek is dead.  That's why Beta won't leave.\n\nIf I want to get rid of Beta, I have to get rid of Alpha.\n\n[[C->Screen]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Screen",
+          "pid": "8"
+        }
+      ],
+      "name": "Log Entry 5",
+      "pid": "6",
+      "position": {
+        "x": "1950",
+        "y": "1702"
+      },
+      "tags": [
+        "beep"
+      ]
+    },
+    {
+      "text": "I threw the switch in Alpha's room.  He's expired now.\n\nI can't see Beta anymore.  But somehow, I know he's still here.  Still watching.\n\nMy nervous system has been warped, deformed.  It has synchronized with his.  He'll always be here.\n\nI think I'm going to hike along a pioneer route, at the edge of town.  Hopefully that will help me clear my head.  I'm soon to be a wanted man anyway.\n\n[[C->Screen]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Screen",
+          "pid": "8"
+        }
+      ],
+      "name": "Log Entry 6",
+      "pid": "7",
+      "position": {
+        "x": "2097",
+        "y": "1704"
+      },
+      "tags": [
+        "beep"
+      ]
+    },
+    {
+      "text": "Experiment Logs\n\n[[Experimental Setup]]\n[[Log Entry 1]]\n[[Log Entry 2]]\n[[Log Entry 3]]\n[[Log Entry 4]]\n[[Log Entry 5]]\n[[Log Entry 6]]\n[[Exit]]",
+      "links": [
+        {
+          "name": "Experimental Setup",
+          "link": "Experimental Setup",
+          "pid": "2"
+        },
+        {
+          "name": "Log Entry 1",
+          "link": "Log Entry 1",
+          "pid": "1"
+        },
+        {
+          "name": "Log Entry 2",
+          "link": "Log Entry 2",
+          "pid": "3"
+        },
+        {
+          "name": "Log Entry 3",
+          "link": "Log Entry 3",
+          "pid": "4"
+        },
+        {
+          "name": "Log Entry 4",
+          "link": "Log Entry 4",
+          "pid": "5"
+        },
+        {
+          "name": "Log Entry 5",
+          "link": "Log Entry 5",
+          "pid": "6"
+        },
+        {
+          "name": "Log Entry 6",
+          "link": "Log Entry 6",
+          "pid": "7"
+        },
+        {
+          "name": "Exit",
+          "link": "Exit",
+          "pid": "9"
+        }
+      ],
+      "name": "Screen",
+      "pid": "8",
+      "position": {
+        "x": "1508",
+        "y": "1363"
+      }
+    },
+    {
+      "text": "",
+      "name": "Exit",
+      "pid": "9",
+      "position": {
+        "x": "2243",
+        "y": "1694"
+      },
+      "tags": [
+        "retro_mode_false"
+      ]
+    }
+  ],
+  "name": "Experiment Logs",
+  "startnode": "8",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "C4891DED-0387-4015-A574-B15D7CAAF565"
+}
+

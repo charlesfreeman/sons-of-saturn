@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=3 uid="uid://ba50pxldh3spd"]
+
+[ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1_c86sp"]
+[ext_resource type="PackedScene" uid="uid://byn2lurvh5x2f" path="res://conversation_pov/ConvoSoundEffect.tscn" id="2_r32l1"]
+[ext_resource type="AudioStream" uid="uid://b0pi3lsoyralh" path="res://infirmary/cell_grate_convo/heavy_door_slam.wav" id="3_5o7df"]
+[ext_resource type="AudioStream" uid="uid://b1rdgy8qbe3ih" path="res://sounds/effects/locked_door.wav" id="4_c6c3o"]
+[ext_resource type="AudioStream" uid="uid://th4vegb3x80i" path="res://childrens_ward/case_worker_convo/gas_leak.wav" id="5_naflk"]
+[ext_resource type="AudioStream" uid="uid://bv88e18f0ulxo" path="res://sounds/effects/lever_pulled.wav" id="6_7vje1"]
+
+[node name="julia_locks_door" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Convo" parent="." instance=ExtResource("1_c86sp")]
+layout_mode = 1
+offset_left = -1.0
+offset_top = 1.0
+offset_right = -1.0
+offset_bottom = 1.0
+subject = "Julia"
+scriptPath = "res://childrens_ward/julia_locks_door/julia_locks_door.json"
+backgroundPath = "res://childrens_ward/julia_locks_door/case_worker_bed_view.png"
+sliverPath = "res://childrens_ward/julia_locks_door/case_worker_sliver.png"
+nextScenePath = "bull_in_china_shop"
+nextLocation = "res://maternity/auditorium/auditorium.tscn"
+fade_tag_dict = {
+"back_to_room": "res://childrens_ward/julia_locks_door/case_worker_bed_view.png",
+"door_slam": "res://childrens_ward/julia_locks_door/door_with_porthole.png",
+"viewport": "res://childrens_ward/julia_locks_door/port_hole.png"
+}
+fade_tag_dict_sliver = {
+"back_to_room": "res://childrens_ward/julia_locks_door/case_worker_sliver.png",
+"door_slam": "res://childrens_ward/julia_locks_door/door_with_porthole_sliver.png",
+"viewport": "res://childrens_ward/julia_locks_door/port_hole_sliver.png"
+}
+
+[node name="DoorSlam" parent="." instance=ExtResource("2_r32l1")]
+stream = ExtResource("3_5o7df")
+volume_db = -15.4
+tag_to_play = "door_slam"
+
+[node name="DoorShake" parent="." instance=ExtResource("2_r32l1")]
+stream = ExtResource("4_c6c3o")
+volume_db = -5.0
+tag_to_play = "door_kick"
+
+[node name="GasLeak" parent="." instance=ExtResource("2_r32l1")]
+stream = ExtResource("5_naflk")
+volume_db = -20.0
+tag_to_play = "gas_leak"
+play_once = true
+
+[node name="PullLever" parent="." instance=ExtResource("2_r32l1")]
+stream = ExtResource("6_7vje1")
+tag_to_play = "lever"
+play_once = true

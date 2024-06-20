@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://b157uhmarcx0x"]
+
+[ext_resource type="Texture2D" uid="uid://46qtnas2erwm" path="res://childrens_ward/long_hall/creed_long_hall.png" id="1_6ybeq"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2_mclwq"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="3_fr37p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aq4gn"]
+size = Vector2(586, 750.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_japfg"]
+size = Vector2(1809.5, 374)
+
+[node name="PoV" type="TextureRect"]
+offset_right = 2880.0
+offset_bottom = 2160.0
+size_flags_horizontal = 3
+mouse_filter = 2
+texture = ExtResource("1_6ybeq")
+script = ExtResource("2_mclwq")
+scene_up = "res://childrens_ward/fork/fork.tscn"
+scene_down = "res://childrens_ward/elevator_doors/elevator_doors.tscn"
+map = "basement"
+
+[node name="ClickToEnter" parent="." instance=ExtResource("3_fr37p")]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2(1402, 1000.75)
+shape = SubResource("RectangleShape2D_aq4gn")
+
+[node name="ClickToEnter2" parent="." instance=ExtResource("3_fr37p")]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2(1491.25, 1953)
+shape = SubResource("RectangleShape2D_japfg")

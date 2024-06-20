@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bv2o1sm63g7co"]
+[gd_scene load_steps=10 format=3 uid="uid://bv2o1sm63g7co"]
 
 [ext_resource type="Texture2D" uid="uid://crry2w56s80ai" path="res://childrens_ward/locked_rps_door/locked_rps_door.png" id="1_4mjx0"]
 [ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2_4y82i"]
@@ -7,10 +7,16 @@
 [ext_resource type="AudioStream" uid="uid://b1rdgy8qbe3ih" path="res://sounds/effects/locked_door.wav" id="5_oegxh"]
 
 [sub_resource type="RectangleShape2D" id="1"]
-size = Vector2(502, 716)
+size = Vector2(716, 1063)
 
 [sub_resource type="RectangleShape2D" id="2"]
 size = Vector2(1320, 376)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_plghy"]
+size = Vector2(439, 1080)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ktth7"]
+size = Vector2(442.5, 1073.5)
 
 [node name="PoV" type="TextureRect"]
 offset_right = 2880.0
@@ -19,14 +25,19 @@ size_flags_horizontal = 3
 mouse_filter = 2
 texture = ExtResource("1_4mjx0")
 script = ExtResource("2_4y82i")
+scene_up = "res://childrens_ward/experiment_hall_straighton/experiment_hall_straighton.tscn"
+scene_right = "res://childrens_ward/vera_room/vera_room.tscn"
+scene_down = "res://childrens_ward/wheelchair_hall_after_angela/wheelchair_hall_after_angela.tscn"
+scene_left = "res://childrens_ward/childrens_cots/childrens_beds.tscn"
 req_flag_up = "safe_convo"
+req_flag_right = "not_visited_vera"
 footstep_type_up = "DoorUnlock"
 
 [node name="ClickToEnter" parent="." instance=ExtResource("3_r2o8l")]
 up_path = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
-position = Vector2(1430, 952)
+position = Vector2(1405, 1125.5)
 shape = SubResource("1")
 
 [node name="ClickToEnter2" parent="." instance=ExtResource("3_r2o8l")]
@@ -36,9 +47,27 @@ down_path = true
 position = Vector2(1427, 1957)
 shape = SubResource("2")
 
+[node name="ClickToEnter3" parent="." instance=ExtResource("3_r2o8l")]
+left_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter3"]
+position = Vector2(743, 1186)
+shape = SubResource("RectangleShape2D_plghy")
+
+[node name="ClickToEnter4" parent="." instance=ExtResource("3_r2o8l")]
+right_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter4"]
+position = Vector2(2074.75, 1108.25)
+shape = SubResource("RectangleShape2D_ktth7")
+
 [node name="PopUp" parent="." instance=ExtResource("4_6a8ea")]
 popup_text = ["Amelie,guilty::Door's a little ajar but still locked.  Bolt's bent, hopefully we can still get it to open.", "Jasper,twisted::Stop shaking on the door.  We're just down the hall from Julia..."]
 nav_popup_up = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="PopUp"]
 stream = ExtResource("5_oegxh")
+
+[node name="PopUp2" parent="." instance=ExtResource("4_6a8ea")]
+popup_text = ["Amelie,guilty::We made our decision.  Let's just let her rest..."]
+nav_popup_right = true

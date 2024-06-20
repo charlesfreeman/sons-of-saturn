@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://c0togd7dah8dt"]
+
+[ext_resource type="Texture2D" uid="uid://ds0qc7vwubpag" path="res://childrens_ward/frog_bed/frog_on_bed.png" id="1_ua7f5"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2_aaekh"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="3_8vu74"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="4_sfyf6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_asaek"]
+size = Vector2(2040, 336.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w4foo"]
+size = Vector2(737, 689)
+
+[node name="PoV" type="TextureRect"]
+offset_right = 2880.0
+offset_bottom = 2160.0
+size_flags_horizontal = 3
+mouse_filter = 2
+texture = ExtResource("1_ua7f5")
+script = ExtResource("2_aaekh")
+scene_down = "res://childrens_ward/childrens_cots/childrens_beds.tscn"
+popup_background = "res://childrens_ward/frog_bed/frog_zoomed_in.png"
+
+[node name="ClickToEnter" parent="." instance=ExtResource("3_8vu74")]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2(1425, 1978.25)
+shape = SubResource("RectangleShape2D_asaek")
+
+[node name="PopUp" parent="." instance=ExtResource("4_sfyf6")]
+popup_text = ["Amelie,uncertain::Toy frog, huh?", "Amelie,guilty::I guess this was the children's ward..."]
+diff_background = true
+steam_ach = "FROG"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
+position = Vector2(749.5, 895.5)
+shape = SubResource("RectangleShape2D_w4foo")

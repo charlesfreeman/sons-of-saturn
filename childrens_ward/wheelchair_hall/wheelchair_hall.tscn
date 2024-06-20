@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://t27376gubc44"]
+
+[ext_resource type="Texture2D" uid="uid://cskdi777wkk16" path="res://childrens_ward/wheelchair_hall/basement_wheelchair_hall.png" id="1_qphos"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2_wt8wn"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="3_aotnt"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="4_y80l0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3dgr"]
+size = Vector2(785, 1186)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_otmvs"]
+size = Vector2(1916, 353)
+
+[node name="PoV" type="TextureRect"]
+offset_right = 2880.0
+offset_bottom = 2160.0
+size_flags_horizontal = 3
+mouse_filter = 2
+texture = ExtResource("1_qphos")
+script = ExtResource("2_wt8wn")
+scene_right = "res://childrens_ward/angela_room/angela_room.tscn"
+scene_down = "res://childrens_ward/double_hall_wo_person/double_hall_wo_person.tscn"
+
+[node name="ClickToEnter" parent="." instance=ExtResource("3_aotnt")]
+right_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2(2035, 1039)
+shape = SubResource("RectangleShape2D_v3dgr")
+
+[node name="ClickToEnter2" parent="." instance=ExtResource("3_aotnt")]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2(1535, 1967.5)
+shape = SubResource("RectangleShape2D_otmvs")
+
+[node name="PopUp" parent="." instance=ExtResource("4_y80l0")]
+popup_on_entry = true
+popup_text = ["Jasper,head_tilted::She's gone... Who was that lady?", "Amelie,guilty::I didn't get a great look, but it looked like...me."]
+single_use = true

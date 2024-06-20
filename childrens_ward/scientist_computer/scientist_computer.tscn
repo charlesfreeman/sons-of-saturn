@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://0tbut2lp73sv"]
+
+[ext_resource type="Script" path="res://childrens_ward/scientist_computer/scientist_computer.gd" id="1_hobwu"]
+[ext_resource type="PackedScene" uid="uid://dmeuc34mb41io" path="res://dialogue_system/Dialogue.tscn" id="2_3wivi"]
+[ext_resource type="Texture2D" uid="uid://dlduo0vi1t040" path="res://childrens_ward/scientist_computer/scientist_computer_use_scene.png" id="3_jugiv"]
+
+[node name="scientist_computer" type="Node2D"]
+script = ExtResource("1_hobwu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_jugiv")
+
+[node name="DialogueSys" parent="." instance=ExtResource("2_3wivi")]
+custom_minimum_size = Vector2(500, 800)
+offset_left = 1196.0
+offset_top = 470.0
+offset_right = 2812.0
+offset_bottom = 1678.0
+
+[connection signal="tag" from="DialogueSys" to="." method="_on_dialogue_sys_tag"]

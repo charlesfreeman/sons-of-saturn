@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://cfyooqh5weiqw"]
+
+[ext_resource type="Texture2D" uid="uid://dd3p1anpuaspt" path="res://childrens_ward/case_worker_room/case_worker_room.png" id="1_4741s"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2_gff42"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="3_tuq7n"]
+[ext_resource type="PackedScene" uid="uid://ci7tcshn6y7qf" path="res://roaming_pov/ClickToSearch.tscn" id="4_8d1vk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1a784"]
+size = Vector2(1153.5, 809)
+
+[node name="PoV" type="TextureRect"]
+offset_right = 2880.0
+offset_bottom = 2160.0
+size_flags_horizontal = 3
+mouse_filter = 2
+texture = ExtResource("1_4741s")
+script = ExtResource("2_gff42")
+
+[node name="ClickToEnter" parent="." instance=ExtResource("3_tuq7n")]
+down_path = true
+
+[node name="ClickToSearch" parent="." instance=ExtResource("4_8d1vk")]
+next_scene = "julia_locks_door"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
+position = Vector2(1552.25, 1087.5)
+shape = SubResource("RectangleShape2D_1a784")

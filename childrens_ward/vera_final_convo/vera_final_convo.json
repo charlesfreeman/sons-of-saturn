@@ -1,0 +1,596 @@
+
+
+{
+  "passages": [
+    {
+      "text": "You enter another small basement room, where yet another mesh of bedsheets and greenery cover an emaciated figure.  The air here is vibrantly fetid, moreso than any other rooms.\n\nEvery surface is overrun with ferns and dense, dizzying mold patterns.  Thin wires conveying fluids snake around the base of the bed, and infiltrate the sheets at the seams.\n\n[[C->lever]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "lever",
+          "pid": "20"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "1021",
+        "y": "281"
+      },
+      "tags": [
+        "breathing_machine"
+      ]
+    },
+    {
+      "text": "You can't see much through the canopy, but the figure appears mangled and emmaciated.  A thick layer of moss and mold sits atop the mattress, the product of decades free of disturbances.\n\n[[C->hand closeup]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "hand closeup",
+          "pid": "21"
+        }
+      ],
+      "name": "p:(Action) Take a closer look at the body beneath the ferns.",
+      "pid": "2",
+      "position": {
+        "x": "1020",
+        "y": "652"
+      }
+    },
+    {
+      "text": "You try and free the note from the figure's ivory grip.  But the figure resists your pulls - it won't let you have it.\n\n[[C->back to room]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "back to room",
+          "pid": "28"
+        }
+      ],
+      "name": "p:(Action) Take the note from the frozen hand.",
+      "pid": "3",
+      "position": {
+        "x": "1136",
+        "y": "883"
+      },
+      "tags": [
+        "auncertain",
+        "yank"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::Hear that hum?  This room is still powered, like the elevator room.\n\nJasper,thinking::See those cables?  I think that machine is sustaining this person.\n\nJasper,surprised::But you know there is life hiding beneath that foliage.  I know you can feel it.\n\nJasper,thinking::You can feel the clammy misery smothering the lump's skin.  You can feel the mold spores feeding on its nervous system.  \n\nJasper,head_tilted::You can even sense the bed sores that have fused its back to the mattress.\n\n[[I'm shutting this out.  I'm not going to feel this.->back to room]]\n[[The air in this room is putrifying my bone marrow.  Of course I can feel it.->back to room]]",
+      "links": [
+        {
+          "name": "I'm shutting this out.  I'm not going to feel this.",
+          "link": "back to room",
+          "pid": "28"
+        },
+        {
+          "name": "The air in this room is putrifying my bone marrow.  Of course I can feel it.",
+          "link": "back to room",
+          "pid": "28"
+        }
+      ],
+      "name": "I don't see how that's possible.",
+      "pid": "4",
+      "position": {
+        "x": "656",
+        "y": "1100"
+      },
+      "tags": [
+        "adisgusted"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::That's an old school breaker.  So, you'll cut the power.\n\nJasper,sad::Don't be coy.  You know what will happen if you do that.\n\n[[Yeah.  Whoever is underneath these ferns will be cut off from life support.]]\n[[Someone has to pull the plug at some point, don't they?]]",
+      "links": [
+        {
+          "name": "Yeah.  Whoever is underneath these ferns will be cut off from life support.",
+          "link": "Yeah.  Whoever is underneath these ferns will be cut off from life support.",
+          "pid": "6"
+        },
+        {
+          "name": "Someone has to pull the plug at some point, don't they?",
+          "link": "Someone has to pull the plug at some point, don't they?",
+          "pid": "7"
+        }
+      ],
+      "name": "0,;:So, what happens if I pull this lever?",
+      "pid": "5",
+      "position": {
+        "x": "985",
+        "y": "1126"
+      },
+      "tags": [
+        "lever",
+        "aguilty"
+      ]
+    },
+    {
+      "text": "Jasper,head_tilted::Yes.  You throw the switch, and the flow of electrons and fluids will be cut off.  Brain function, if there is any, will cease, and any corneas attached to the lump will begin to cloud.\n\nJasper,thinking::Every memory embedded in their synapses will be lost forever.  Their dream of seeing the sun for the first time will be obliterated.\n\nJasper,twisted::All of this, a mechanical consequence of neurons signalling a contraction in your bicep, allowing you to throw the switch.\n\nJasper,head_twisted::Are you sure you can live with that?\n\n[[Is there no way to help this thing?  No way to save it?]]\n[[I can feel this lump's agony.  It wants to die.]]",
+      "links": [
+        {
+          "name": "Is there no way to help this thing?  No way to save it?",
+          "link": "Is there no way to help this thing?  No way to save it?",
+          "pid": "10"
+        },
+        {
+          "name": "I can feel this lump's agony.  It wants to die.",
+          "link": "I can feel this lump's agony.  It wants to die.",
+          "pid": "11"
+        }
+      ],
+      "name": "Yeah.  Whoever is underneath these ferns will be cut off from life support.",
+      "pid": "6",
+      "position": {
+        "x": "894",
+        "y": "1249"
+      },
+      "tags": [
+        "asad"
+      ]
+    },
+    {
+      "text": "Jasper::I don't think we have to do anything.\n\nJasper::We had nothing to do with this lump ending up like this.  There's no reason we need to get our hands dirty.\n\nJasper::Unless you want to, that is.\n\n[[C->back to room]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "back to room",
+          "pid": "28"
+        }
+      ],
+      "name": "Someone has to pull the plug at some point, don't they?",
+      "pid": "7",
+      "position": {
+        "x": "1043",
+        "y": "1246"
+      }
+    },
+    {
+      "text": "Jasper,head_tilted::Alright.  If you'd really rather leave this organ sack alive like this, then I don't think we're gonna get that note.\n\nJasper,sad::We need to find a key to get those double doors in the hallway open.  We probably need to backtrack if we want to find it, unfortunately...\n\n[[C->breathing off]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "breathing off",
+          "pid": "30"
+        }
+      ],
+      "name": "0,1;p:Don't flip the switch, and leave the decrepit husk be.",
+      "pid": "8",
+      "position": {
+        "x": "1386",
+        "y": "1204"
+      }
+    },
+    {
+      "text": "You pull on the lever, gently stressing the ligaments contraining your right shoulder to its designated socket.  The connection is severed.  The oxygen, nutrients, and viscous slushes cease flowing.\n\nAn electric chill works its way into your brain stem.  Hypoxia sets in, and brain cell death begins to occur.  After only a few minutes, the cerebral cortex disintegrates, like a snowball thrown into an open flame.\n\nOdorous gases escape from the carcass's failing envelope.  Vestigial remnants of muscle contort and contract.  Blood begins to pool in the cadaver's lower portions.\n\n[[C->music stops]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "music stops",
+          "pid": "29"
+        }
+      ],
+      "name": "0,1;p:Pull the switch.",
+      "pid": "9",
+      "position": {
+        "x": "1197",
+        "y": "1244"
+      },
+      "tags": [
+        "vera_killed",
+        "aguilty",
+        "lever_pulled"
+      ]
+    },
+    {
+      "text": "Jasper,head_tilted::The delimiters separating this lump from its environment have disintegrated.  Much of it's epidermis has fused with the bedding, or is being digested by the mold.\n\nJasper,sad::Only remnants of ligaments and tissue remain, articulating the skeleton, protecting critical organs, and fertilizing the ferns.\n\nJasper,twisted::We're looking at a breathing carcass.  Any interference is likely to be fatal.  There is no saving it.\n\n[[C->back to room]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "back to room",
+          "pid": "28"
+        }
+      ],
+      "name": "Is there no way to help this thing?  No way to save it?",
+      "pid": "10",
+      "position": {
+        "x": "789",
+        "y": "1397"
+      }
+    },
+    {
+      "text": "Jasper,head_tilted::Are you sure you aren't just projecting?  I'm not sure that this assortment of ligaments and tissue feels anything.\n\n[[I just do.  I can feel its painful innervations and consumption and unfed lust.]]",
+      "links": [
+        {
+          "name": "I just do.  I can feel its painful innervations and consumption and unfed lust.",
+          "link": "I just do.  I can feel its painful innervations and consumption and unfed lust.",
+          "pid": "12"
+        }
+      ],
+      "name": "I can feel this lump's agony.  It wants to die.",
+      "pid": "11",
+      "position": {
+        "x": "928",
+        "y": "1408"
+      }
+    },
+    {
+      "text": "Jasper,sad::...\n\nJasper,surprised::I know.  I can feel it too.\n\nJasper,turned_away::But you don't owe this pile anything.  Someone else did this.  Someone else can take care of it.\n\nJasper,twisted::No one ever pulled the plug on you.  You don't owe this pile anything.\n\n[[C->back to room]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "back to room",
+          "pid": "28"
+        }
+      ],
+      "name": "I just do.  I can feel its painful innervations and consumption and unfed lust.",
+      "pid": "12",
+      "position": {
+        "x": "913",
+        "y": "1546"
+      }
+    },
+    {
+      "text": "Jasper,thinking::You don't have to see it that way.\n\nJasper,head_tilted::If you had decided to just walk out of here, you would have left this cadaverous husk to needlessly suffer for decades.\n\nJasper,sad::Both paths would have forever tainted your soul.\n\nJasper,twisted::Let's take a look at that note they were holding.  Something tells me they might be a bit more yielding now.\n\n[[p:What am I supposed to even grab it with?  My blood soaked hands?]]\n[[p:I'm an alive person, who can just pick things up, whenever I want.  Wow.]]",
+      "links": [
+        {
+          "name": "p:What am I supposed to even grab it with?  My blood soaked hands?",
+          "link": "p:What am I supposed to even grab it with?  My blood soaked hands?",
+          "pid": "15"
+        },
+        {
+          "name": "p:I'm an alive person, who can just pick things up, whenever I want.  Wow.",
+          "link": "p:I'm an alive person, who can just pick things up, whenever I want.  Wow.",
+          "pid": "16"
+        }
+      ],
+      "name": "p:I-, I'm pretty sure I just killed a person.",
+      "pid": "13",
+      "position": {
+        "x": "1113",
+        "y": "1514"
+      },
+      "tags": [
+        "aguilty"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::No!  Shake that feeling off.  Exorcise it, violently.\n\nJasper,surprised::If you had decided to just walk out of here, you would have left this cadaverous husk to linger on in agony for decades.\n\nJasper,head_tilted::Both paths would have forever tainted your soul.\n\nJasper,twisted::Forget those thoughts, and grab that note.  That's what we came here for.\n\n[[Why do you even care about that note?  We don't know anything about it, or who this even was...]]\n[[p:What am I supposed to even grab it with?  My blood soaked hands?]]\n[[p:I'm an alive person, who can just pick things up, whenever I want.  Wow.]]",
+      "links": [
+        {
+          "name": "Why do you even care about that note?  We don't know anything about it, or who this even was...",
+          "link": "Why do you even care about that note?  We don't know anything about it, or who this even was...",
+          "pid": "22"
+        },
+        {
+          "name": "p:What am I supposed to even grab it with?  My blood soaked hands?",
+          "link": "p:What am I supposed to even grab it with?  My blood soaked hands?",
+          "pid": "15"
+        },
+        {
+          "name": "p:I'm an alive person, who can just pick things up, whenever I want.  Wow.",
+          "link": "p:I'm an alive person, who can just pick things up, whenever I want.  Wow.",
+          "pid": "16"
+        }
+      ],
+      "name": "p:I think I did the right thing, but I still feel guilt...",
+      "pid": "14",
+      "position": {
+        "x": "1281",
+        "y": "1441"
+      },
+      "tags": [
+        "asad"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::Just grab it by the edges so you don't blot out the words.\n\nJasper,thinking::I get the vibe that it says something important...\n\n[[p:(Action) Take the note from the dead woman's hand.->Page 1]]",
+      "links": [
+        {
+          "name": "p:(Action) Take the note from the dead woman's hand.",
+          "link": "Page 1",
+          "pid": "17"
+        }
+      ],
+      "name": "p:What am I supposed to even grab it with?  My blood soaked hands?",
+      "pid": "15",
+      "position": {
+        "x": "1199",
+        "y": "1603"
+      }
+    },
+    {
+      "text": "Jasper,head_tilted::Yes.  And you should use your alive hands to grab that note.\n\nJasper,thinking::I get the vibe that it says something important...\n\n[[p:(Action) Take the note from the dead woman's hand.->Page 1]]",
+      "links": [
+        {
+          "name": "p:(Action) Take the note from the dead woman's hand.",
+          "link": "Page 1",
+          "pid": "17"
+        }
+      ],
+      "name": "p:I'm an alive person, who can just pick things up, whenever I want.  Wow.",
+      "pid": "16",
+      "position": {
+        "x": "1350",
+        "y": "1559"
+      }
+    },
+    {
+      "text": "Note::If you're reading this note, I'm dead.\n\nNote::I've written copies of this note, trying to get them out, over and over.  Nothing escapes from down here.\n\nNote::Dr. Anthony Tann is stealing infants and telling the mothers that they are dead.  He and his nurses pump them full of deliriants during delivery, swap the infant out for a corpse, and hands them a certificate declaring that their child was stillborn.\n\nNote::I watched this happen, from the vents in the surgical suite.  I was caught, beaten, and injected with some poison.\n\nNote::Since then, I can't stay awake.  I can't get out of bed.  I can't think.  They don't even bother restraining me. \n\nNote::The doctor says I have encephalitis.  I've tried to tell them what happened.  They respond by pumping me full of sedatives.  No one is allowed to visit.  No one gets my notes.\n\n[[C->Page 2]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "Page 2",
+          "pid": "24"
+        }
+      ],
+      "name": "Page 1",
+      "pid": "17",
+      "position": {
+        "x": "1515",
+        "y": "1721"
+      },
+      "tags": [
+        "page1"
+      ]
+    },
+    {
+      "text": "Jasper::Oh my...I guess it was...\n\nJasper::Sounds like she got caught spying on that operation.\n\nJasper::That's what you get for sticking your nose places it doesn't belong.\n\n[[p:She tried to do the right thing.  She deserved better than this.]]\n[[p:She held onto this note for years, hoping someone would find it and do the right thing.  We have to finish what she started.]]",
+      "links": [
+        {
+          "name": "p:She tried to do the right thing.  She deserved better than this.",
+          "link": "p:She tried to do the right thing.  She deserved better than this.",
+          "pid": "25"
+        },
+        {
+          "name": "p:She held onto this note for years, hoping someone would find it and do the right thing.  We have to finish what she started.",
+          "link": "p:She held onto this note for years, hoping someone would find it and do the right thing.  We have to finish what she started.",
+          "pid": "26"
+        }
+      ],
+      "name": "p:T-This was Vera?",
+      "pid": "18",
+      "position": {
+        "x": "1505",
+        "y": "2039"
+      },
+      "tags": [
+        "afuming"
+      ]
+    },
+    {
+      "text": "Jasper,thinking::Yeah... I guess we did...\n\nJasper,head_tilted::Sounds like she got caught spying on that operation.\n\nJasper,twisted::That's what you get for sticking your nose places it doesn't belong.\n\n[[p:She tried to do the right thing.  She deserved better than this.]]\n[[p:She held onto this note for years, hoping someone would find it and do the right thing.  We have to finish what she started.]]",
+      "links": [
+        {
+          "name": "p:She tried to do the right thing.  She deserved better than this.",
+          "link": "p:She tried to do the right thing.  She deserved better than this.",
+          "pid": "25"
+        },
+        {
+          "name": "p:She held onto this note for years, hoping someone would find it and do the right thing.  We have to finish what she started.",
+          "link": "p:She held onto this note for years, hoping someone would find it and do the right thing.  We have to finish what she started.",
+          "pid": "26"
+        }
+      ],
+      "name": "p:We just killed the accounting lady...",
+      "pid": "19",
+      "position": {
+        "x": "1789",
+        "y": "1968"
+      },
+      "tags": [
+        "afuming"
+      ]
+    },
+    {
+      "text": "An old lever rests precariously in the on position above the bedridden figure.  It appears rusty, though you feel that you could through the switch if needed.\n\n[[C->back to pov]]",
+      "links": [
+        {
+          "name": "C",
+          "link": "back to pov",
+          "pid": "23"
+        }
+      ],
+      "name": "lever",
+      "pid": "20",
+      "position": {
+        "x": "1018",
+        "y": "406"
+      },
+      "tags": [
+        "lever"
+      ]
+    },
+    {
+      "text": "The outline of a pale hand can be seen emerging from the canopy of bedding and foliage.  The rotten fingers are wrapt tight around a weathered piece of parchment.\n\n[[p:(Action) Take the note from the frozen hand.]]",
+      "links": [
+        {
+          "name": "p:(Action) Take the note from the frozen hand.",
+          "link": "p:(Action) Take the note from the frozen hand.",
+          "pid": "3"
+        }
+      ],
+      "name": "hand closeup",
+      "pid": "21",
+      "position": {
+        "x": "1024",
+        "y": "776"
+      },
+      "tags": [
+        "hand_closeup"
+      ]
+    },
+    {
+      "text": "Jasper,thinking::I...I don't know.\n\nJasper,head_tilted::But, the second we entered this room, I could feel something.\n\nJasper,twisted::I knew we had to grab it.\n\n[[C->p:I think I did the right thing, but I still feel guilt...]] ",
+      "links": [
+        {
+          "name": "C",
+          "link": "p:I think I did the right thing, but I still feel guilt...",
+          "pid": "14"
+        }
+      ],
+      "name": "Why do you even care about that note?  We don't know anything about it, or who this even was...",
+      "pid": "22",
+      "position": {
+        "x": "1515",
+        "y": "1452"
+      }
+    },
+    {
+      "text": "An electric hum permeates the thick, viscous air.  This room lives, and breathes.\n\n[[p:(Action) Take a closer look at the body beneath the ferns.]]",
+      "links": [
+        {
+          "name": "p:(Action) Take a closer look at the body beneath the ferns.",
+          "link": "p:(Action) Take a closer look at the body beneath the ferns.",
+          "pid": "2"
+        }
+      ],
+      "name": "back to pov",
+      "pid": "23",
+      "position": {
+        "x": "1024",
+        "y": "527"
+      },
+      "tags": [
+        "back_to_room"
+      ]
+    },
+    {
+      "text": "Note::I drift in and out.  Every day is shorter than the last.  My swolen brain is about to leak through my ears.\n\nNote::I'm keeping this note locked, tight in my palm, until I expire.  Hopefully no one notices until rigor mortis sets in.\n\nNote::Sneak into Frost's office after hours.  He leaves every day at 6:30.\n\nNote::He has a safe where he keeps those certificates, and keys to experiment rooms.  The safe combo is 38-43-99.  Easy to remember.\n\nNote::Go to the office.  Bust open the safe.  Tell the city what is happening.\n\nNote::Coroner, please give this note to Alex in accounting.\n\nNote::-Vera\n\n[[p:T-This was Vera?]]\n[[p:We just killed the accounting lady...]]",
+      "links": [
+        {
+          "name": "p:T-This was Vera?",
+          "link": "p:T-This was Vera?",
+          "pid": "18"
+        },
+        {
+          "name": "p:We just killed the accounting lady...",
+          "link": "p:We just killed the accounting lady...",
+          "pid": "19"
+        }
+      ],
+      "name": "Page 2",
+      "pid": "24",
+      "position": {
+        "x": "1515",
+        "y": "1848"
+      },
+      "tags": [
+        "page2",
+        "ashocked"
+      ]
+    },
+    {
+      "text": "Jasper,sad::She's not going to *get* better than this, Amelie.  She's dead.\n\nJasper,thinking::So are all of the kids they dragged down here.  So is Julia's kid, probably.\n\nJasper,head_tilted::Don't you get what happened?  They used the kids they were stealing for experiments in the labs down here.\n\nJasper,sad::That's what happened to them.\n\nJasper,twisted::They're already dead.\n\nJasper,thinking::The people who did this to Vera, they're probably dead too.\n\nJasper,sad::They got away with it.\n\nJasper,head_tilted::We're twenty years too late.  There's nothing we can do.\n\n[[p:...]]",
+      "links": [
+        {
+          "name": "p:...",
+          "link": "p:...",
+          "pid": "27"
+        }
+      ],
+      "name": "p:She tried to do the right thing.  She deserved better than this.",
+      "pid": "25",
+      "position": {
+        "x": "1492",
+        "y": "2211"
+      }
+    },
+    {
+      "text": "Jasper,thinking::There's nothing we can do for her, Amelie.  It's too late.\n\nJasper,twisted::Don't you get what happened?  They used the kids they were stealing for experiments in the labs down here.\n\nJasper,thinking::That's what happened to Julia's kid.  That's what happened to all of the kids she helped send down here.\n\nJasper,sad::They're already dead.\n\nJasper,thinking::The people who did this to Vera, they're probably dead too.\n\nJasper,twisted::They got away with it.\n\nJasper,sad::We're twenty years too late.  There's nothing we can do.",
+      "name": "p:She held onto this note for years, hoping someone would find it and do the right thing.  We have to finish what she started.",
+      "pid": "26",
+      "position": {
+        "x": "1727",
+        "y": "2209"
+      }
+    },
+    {
+      "text": "Jasper,twisted::Come on.  Let's go use this combo to open the safe in that office we past.\n\nJasper,thinking::We really can't afford to linger.",
+      "name": "p:...",
+      "pid": "27",
+      "position": {
+        "x": "1488",
+        "y": "2362"
+      }
+    },
+    {
+      "text": "Jasper,head_tilted::I think this lump...might still be alive?\n\n[[I don't see how that's possible.]]\n[[0,;:So, what happens if I pull this lever?]]\n[[0,1;p:Pull the switch.]]\n[[0,1;p:Don't flip the switch, and leave the decrepit husk be.]]",
+      "links": [
+        {
+          "name": "I don't see how that's possible.",
+          "link": "I don't see how that's possible.",
+          "pid": "4"
+        },
+        {
+          "name": "0,;:So, what happens if I pull this lever?",
+          "link": "0,;:So, what happens if I pull this lever?",
+          "pid": "5"
+        },
+        {
+          "name": "0,1;p:Pull the switch.",
+          "link": "0,1;p:Pull the switch.",
+          "pid": "9"
+        },
+        {
+          "name": "0,1;p:Don't flip the switch, and leave the decrepit husk be.",
+          "link": "0,1;p:Don't flip the switch, and leave the decrepit husk be.",
+          "pid": "8"
+        }
+      ],
+      "name": "back to room",
+      "pid": "28",
+      "position": {
+        "x": "1139",
+        "y": "1022"
+      },
+      "tags": [
+        "back_to_room"
+      ]
+    },
+    {
+      "text": "The prisoner has finally been released.\n\n[[p:I-, I'm pretty sure I just killed a person.]]\n[[p:I think I did the right thing, but I still feel guilt...]]",
+      "links": [
+        {
+          "name": "p:I-, I'm pretty sure I just killed a person.",
+          "link": "p:I-, I'm pretty sure I just killed a person.",
+          "pid": "13"
+        },
+        {
+          "name": "p:I think I did the right thing, but I still feel guilt...",
+          "link": "p:I think I did the right thing, but I still feel guilt...",
+          "pid": "14"
+        }
+      ],
+      "name": "music stops",
+      "pid": "29",
+      "position": {
+        "x": "1161",
+        "y": "1368"
+      },
+      "tags": [
+        "breathing_machine",
+        "soft_wind"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::There was a safe in one of the offices we passed by earlier.  I think we should go check it out.",
+      "name": "breathing off",
+      "pid": "30",
+      "position": {
+        "x": "1386",
+        "y": "1354"
+      },
+      "tags": [
+        "breathing_machine"
+      ]
+    }
+  ],
+  "name": "Vera Final Encounter",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "18FD1042-BD7D-4F5F-A43F-77E31E235643"
+}
+

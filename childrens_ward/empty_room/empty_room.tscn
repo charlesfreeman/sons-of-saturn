@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://bgrpqdcwqdir3"]
+
+[ext_resource type="Texture2D" uid="uid://q6uim5xunbvs" path="res://childrens_ward/empty_room/creedmoor_room.png" id="1_7cxv3"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2_xtnft"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="3_v67kk"]
+[ext_resource type="PackedScene" uid="uid://b52gtlhb1qrtv" path="res://roaming_pov/PopUp.tscn" id="4_f0gdf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_asaek"]
+size = Vector2(1666, 344.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p2bf6"]
+size = Vector2(932.5, 620)
+
+[node name="PoV" type="TextureRect"]
+offset_right = 2880.0
+offset_bottom = 2160.0
+size_flags_horizontal = 3
+mouse_filter = 2
+texture = ExtResource("1_7cxv3")
+script = ExtResource("2_xtnft")
+scene_down = "res://childrens_ward/end_of_hall/end_of_hall.tscn"
+popup_background = "res://childrens_ward/empty_room/gsl_poster.png"
+
+[node name="ClickToEnter" parent="." instance=ExtResource("3_v67kk")]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2(1612, 1974.25)
+shape = SubResource("RectangleShape2D_asaek")
+
+[node name="PopUp" parent="." instance=ExtResource("4_f0gdf")]
+popup_text = ["Amelie,shocked::This is a beautiful old poster.  It's a shame the edges are so faded.", "Amelie,sad::We don't have anything this fancy looking on the surface anymore..."]
+diff_background = true
+steam_ach = "EMPTY_ROOM_POSTER"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PopUp"]
+position = Vector2(479.75, 330)
+shape = SubResource("RectangleShape2D_p2bf6")

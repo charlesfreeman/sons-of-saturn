@@ -1,0 +1,42 @@
+
+
+{
+  "passages": [
+    {
+      "text": "Jasper,thinking::Sounds like they were doing some pretty wild experiments down here...\n\n[[p:Think Julia played any role in this?]]\n[[p:I'm sure Mom had something to do with it...->p:Think Julia played any role in this?]]",
+      "links": [
+        {
+          "name": "p:Think Julia played any role in this?",
+          "link": "p:Think Julia played any role in this?",
+          "pid": "2"
+        },
+        {
+          "name": "p:I'm sure Mom had something to do with it...",
+          "link": "p:Think Julia played any role in this?",
+          "pid": "2"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "739",
+        "y": "923.5"
+      }
+    },
+    {
+      "text": "Jasper,head_tilted::Let's not jump to conclusions.\n\nJasper,twisted::We'll learn more if we keep looking around.  Lets go!",
+      "name": "p:Think Julia played any role in this?",
+      "pid": "2",
+      "position": {
+        "x": "743",
+        "y": "1073.5"
+      }
+    }
+  ],
+  "name": "scientist desk convo 2",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "87F4C821-BAC8-4100-AD2B-E230B23A9B84"
+}
+

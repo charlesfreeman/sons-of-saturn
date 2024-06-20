@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=3 uid="uid://caq3g0ly2pl3c"]
+
+[ext_resource type="Texture2D" uid="uid://dkcmecibmwiru" path="res://childrens_ward/double_hall_wo_person/creed_double_hall_wo_person.png" id="1_6b45u"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2_ovo5u"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="3_l07tp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2rb0h"]
+size = Vector2(2009.5, 344)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wljgc"]
+size = Vector2(577, 766)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_46sae"]
+size = Vector2(595, 1134)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l2sgu"]
+size = Vector2(599, 1056)
+
+[node name="PoV" type="TextureRect"]
+offset_right = 2880.0
+offset_bottom = 2160.0
+size_flags_horizontal = 3
+mouse_filter = 2
+texture = ExtResource("1_6b45u")
+script = ExtResource("2_ovo5u")
+scene_up = "res://childrens_ward/wheelchair_hall_after_angela/wheelchair_hall_after_angela.tscn"
+scene_right = "res://childrens_ward/operating_room/operating_room.tscn"
+scene_down = "res://childrens_ward/fork/fork.tscn"
+scene_left = "res://childrens_ward/frost_desk_safe_open/frost_desk_safe_open.tscn"
+alt_scene_up = "res://childrens_ward/wheelchair_hall/wheelchair_hall.tscn"
+alt_scene_left = "res://childrens_ward/frost_desk/frost_desk.tscn"
+req_flag_up = "angela_room_convo"
+req_flag_left = "safe_convo"
+
+[node name="ClickToEnter" parent="." instance=ExtResource("3_l07tp")]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2(1472.25, 1981)
+shape = SubResource("RectangleShape2D_2rb0h")
+
+[node name="ClickToEnter2" parent="." instance=ExtResource("3_l07tp")]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2(1426.5, 984)
+shape = SubResource("RectangleShape2D_wljgc")
+
+[node name="ClickToEnter3" parent="." instance=ExtResource("3_l07tp")]
+left_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter3"]
+position = Vector2(733.5, 1049)
+shape = SubResource("RectangleShape2D_46sae")
+
+[node name="ClickToEnter4" parent="." instance=ExtResource("3_l07tp")]
+right_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter4"]
+position = Vector2(2150, 1045)
+shape = SubResource("RectangleShape2D_l2sgu")

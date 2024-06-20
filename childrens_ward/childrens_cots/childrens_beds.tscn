@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://jpuq5smoqf0y"]
+
+[ext_resource type="Texture2D" uid="uid://c1l4058anw8ha" path="res://childrens_ward/childrens_cots/three_child_beds.png" id="1_gww1q"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2_8tjwq"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="3_exxyr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_asaek"]
+size = Vector2(1924, 363.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vjqhg"]
+size = Vector2(527, 1127)
+
+[node name="PoV" type="TextureRect"]
+offset_right = 2880.0
+offset_bottom = 2160.0
+size_flags_horizontal = 3
+mouse_filter = 2
+texture = ExtResource("1_gww1q")
+script = ExtResource("2_8tjwq")
+scene_right = "res://childrens_ward/frog_bed/frog_bed.tscn"
+scene_down = "res://childrens_ward/locked_rps_door/locked_rps_door.tscn"
+
+[node name="ClickToEnter" parent="." instance=ExtResource("3_exxyr")]
+down_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2(1483, 1964.75)
+shape = SubResource("RectangleShape2D_asaek")
+
+[node name="ClickToEnter2" parent="." instance=ExtResource("3_exxyr")]
+right_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter2"]
+position = Vector2(2613.5, 1165.5)
+shape = SubResource("RectangleShape2D_vjqhg")

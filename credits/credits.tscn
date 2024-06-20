@@ -1,0 +1,192 @@
+[gd_scene load_steps=5 format=3 uid="uid://bnk5ina3n5w8s"]
+
+[ext_resource type="Texture2D" uid="uid://chqnh8rxao5vl" path="res://credits/stage_empty_16_9.jpg" id="1_513dh"]
+[ext_resource type="Script" path="res://credits/credits.gd" id="1_y4arq"]
+[ext_resource type="FontFile" uid="uid://c1sr30qx47mfw" path="res://fonts/DraconianTypewritter.ttf" id="2_hypf5"]
+[ext_resource type="Texture2D" uid="uid://71n3w07h63iu" path="res://credits/SonsOfSaturnLogoClearBG.png" id="4_vejak"]
+
+[node name="credits" type="Node2D"]
+script = ExtResource("1_y4arq")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_513dh")
+
+[node name="Logo" type="TextureRect" parent="TextureRect"]
+visible = false
+layout_mode = 0
+offset_left = 449.0
+offset_top = 641.0
+offset_right = 3427.0
+offset_bottom = 1609.0
+texture = ExtResource("4_vejak")
+
+[node name="Developed" type="Control" parent="TextureRect"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="TextureRect/Developed"]
+layout_mode = 0
+offset_left = 1101.0
+offset_top = 957.0
+offset_right = 2295.0
+offset_bottom = 1600.0
+theme_override_fonts/font = ExtResource("2_hypf5")
+theme_override_font_sizes/font_size = 96
+text = "Developed By:"
+
+[node name="Label2" type="Label" parent="TextureRect/Developed"]
+layout_mode = 0
+offset_left = 1089.0
+offset_top = 1139.0
+offset_right = 2789.0
+offset_bottom = 1495.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_hypf5")
+theme_override_font_sizes/font_size = 150
+text = "Charles Lawson"
+
+[node name="Soundtrack" type="Control" parent="TextureRect"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="TextureRect/Soundtrack"]
+layout_mode = 0
+offset_left = 1101.0
+offset_top = 957.0
+offset_right = 2295.0
+offset_bottom = 1600.0
+theme_override_fonts/font = ExtResource("2_hypf5")
+theme_override_font_sizes/font_size = 96
+text = "Soundtrack:"
+
+[node name="Label2" type="Label" parent="TextureRect/Soundtrack"]
+layout_mode = 0
+offset_left = 1089.0
+offset_top = 1139.0
+offset_right = 2789.0
+offset_bottom = 1495.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_hypf5")
+theme_override_font_sizes/font_size = 150
+text = "Seth Emans"
+
+[node name="Collage" type="Control" parent="TextureRect"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="TextureRect/Collage"]
+layout_mode = 0
+offset_left = 1101.0
+offset_top = 957.0
+offset_right = 2295.0
+offset_bottom = 1600.0
+theme_override_fonts/font = ExtResource("2_hypf5")
+theme_override_font_sizes/font_size = 96
+text = "Collage Pieces:"
+
+[node name="Label2" type="Label" parent="TextureRect/Collage"]
+layout_mode = 0
+offset_left = 1089.0
+offset_top = 1139.0
+offset_right = 2789.0
+offset_bottom = 1495.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_hypf5")
+theme_override_font_sizes/font_size = 150
+text = "Alex Burden"
+
+[node name="Amelie" type="Control" parent="TextureRect"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="TextureRect/Amelie"]
+layout_mode = 0
+offset_left = 1101.0
+offset_top = 957.0
+offset_right = 2295.0
+offset_bottom = 1600.0
+theme_override_fonts/font = ExtResource("2_hypf5")
+theme_override_font_sizes/font_size = 96
+text = "Amelie Model:"
+
+[node name="Label2" type="Label" parent="TextureRect/Amelie"]
+layout_mode = 0
+offset_left = 1089.0
+offset_top = 1139.0
+offset_right = 2789.0
+offset_bottom = 1495.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_hypf5")
+theme_override_font_sizes/font_size = 150
+text = "Amelie"
+
+[node name="Wiggly" type="Control" parent="TextureRect"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="TextureRect/Wiggly"]
+layout_mode = 0
+offset_left = 1101.0
+offset_top = 957.0
+offset_right = 2295.0
+offset_bottom = 1600.0
+theme_override_fonts/font = ExtResource("2_hypf5")
+theme_override_font_sizes/font_size = 96
+text = "Wiggly Model:"
+
+[node name="Label2" type="Label" parent="TextureRect/Wiggly"]
+layout_mode = 0
+offset_left = 1089.0
+offset_top = 1139.0
+offset_right = 2789.0
+offset_bottom = 1495.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_hypf5")
+theme_override_font_sizes/font_size = 150
+text = "Austin"
+
+[node name="Julia" type="Control" parent="TextureRect"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="TextureRect/Julia"]
+layout_mode = 0
+offset_left = 1101.0
+offset_top = 957.0
+offset_right = 2295.0
+offset_bottom = 1600.0
+theme_override_fonts/font = ExtResource("2_hypf5")
+theme_override_font_sizes/font_size = 96
+text = "Julia Model:"
+
+[node name="Label2" type="Label" parent="TextureRect/Julia"]
+layout_mode = 0
+offset_left = 1089.0
+offset_top = 1139.0
+offset_right = 2789.0
+offset_bottom = 1495.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_hypf5")
+theme_override_font_sizes/font_size = 150
+text = "\"her\"
+"

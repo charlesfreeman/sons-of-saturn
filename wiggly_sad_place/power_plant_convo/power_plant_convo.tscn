@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://crxbcln5fhdgf"]
+
+[ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1_3w6qo"]
+
+[node name="power_plant_convo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Convo" parent="." instance=ExtResource("1_3w6qo")]
+layout_mode = 1
+scriptPath = "res://wiggly_sad_place/power_plant_convo/power_plant_convo.json"
+backgroundPath = "res://wiggly_sad_place/power_plant_convo/jasper_on_floor.png"
+sliverPath = "res://wiggly_sad_place/power_plant_convo/jasper_on_floor_sliver.png"
+nextLocation = "res://wiggly_sad_place/power_plant_no_jasper/sad_place_no_jasper.tscn"
+song = "weird_hum"
+wiggly_mode = true

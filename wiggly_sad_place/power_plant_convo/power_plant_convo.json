@@ -1,0 +1,162 @@
+
+
+{
+  "passages": [
+    {
+      "text": "You look down to find a familiar purple lump clinging to the ground.\n\nIt's Jasper.\n\n[[p:Jasper?  How did you get here, I wonder?]]\n[[p:Somehow, I knew I would find you here.->p:Jasper?  How did you get here, I wonder?]]\n\n\n",
+      "links": [
+        {
+          "name": "p:Jasper?  How did you get here, I wonder?",
+          "link": "p:Jasper?  How did you get here, I wonder?",
+          "pid": "2"
+        },
+        {
+          "name": "p:Somehow, I knew I would find you here.",
+          "link": "p:Jasper?  How did you get here, I wonder?",
+          "pid": "2"
+        }
+      ],
+      "name": "Untitled Passage",
+      "pid": "1",
+      "position": {
+        "x": "1707",
+        "y": "617"
+      },
+      "tags": [
+        "wsurprised"
+      ]
+    },
+    {
+      "text": "Jasper,sad::...\n\n[[p:This is my sad place.  I come here to break bottles and cry.]]\n[[p:Amelie said she threw you into the pneumatic trash chute, so I guess it makes sense that you ended up here, my favorite spot.->p:This is my sad place.  I come here to break bottles and cry.]]",
+      "links": [
+        {
+          "name": "p:This is my sad place.  I come here to break bottles and cry.",
+          "link": "p:This is my sad place.  I come here to break bottles and cry.",
+          "pid": "3"
+        },
+        {
+          "name": "p:Amelie said she threw you into the pneumatic trash chute, so I guess it makes sense that you ended up here, my favorite spot.",
+          "link": "p:This is my sad place.  I come here to break bottles and cry.",
+          "pid": "3"
+        }
+      ],
+      "name": "p:Jasper?  How did you get here, I wonder?",
+      "pid": "2",
+      "position": {
+        "x": "1712",
+        "y": "763"
+      },
+      "tags": [
+        "wsad"
+      ]
+    },
+    {
+      "text": "Jasper,head_tilted::...\n\n[[p:Yeah.  My whole life turned out to be a lie.  I'm not taking it very well.]]\n[[p:I'm confused, and upset.  But that's my problem to deal with, not yours.->p:Yeah.  My whole life turned out to be a lie.  I'm not taking it very well.]]\n[[p:I've been upset before, but it feels different this time, like nothing is real, like my thoughts aren't my own.  I'm scared.->p:Yeah.  My whole life turned out to be a lie.  I'm not taking it very well.]]",
+      "links": [
+        {
+          "name": "p:Yeah.  My whole life turned out to be a lie.  I'm not taking it very well.",
+          "link": "p:Yeah.  My whole life turned out to be a lie.  I'm not taking it very well.",
+          "pid": "4"
+        },
+        {
+          "name": "p:I'm confused, and upset.  But that's my problem to deal with, not yours.",
+          "link": "p:Yeah.  My whole life turned out to be a lie.  I'm not taking it very well.",
+          "pid": "4"
+        },
+        {
+          "name": "p:I've been upset before, but it feels different this time, like nothing is real, like my thoughts aren't my own.  I'm scared.",
+          "link": "p:Yeah.  My whole life turned out to be a lie.  I'm not taking it very well.",
+          "pid": "4"
+        }
+      ],
+      "name": "p:This is my sad place.  I come here to break bottles and cry.",
+      "pid": "3",
+      "position": {
+        "x": "1713",
+        "y": "904"
+      },
+      "tags": [
+        "wsad"
+      ]
+    },
+    {
+      "text": "Jasper,twisted::...\n\n[[p:Yes.  I feel resentment.  I feel hurt.  They took so much away from me...]]\n[[p:All this time, I thought they did me a favor by taking me into those labs, putting me to work in the tunnels.->p:Yes.  I feel resentment.  I feel hurt.  They took so much away from me...]]\n",
+      "links": [
+        {
+          "name": "p:Yes.  I feel resentment.  I feel hurt.  They took so much away from me...",
+          "link": "p:Yes.  I feel resentment.  I feel hurt.  They took so much away from me...",
+          "pid": "5"
+        },
+        {
+          "name": "p:All this time, I thought they did me a favor by taking me into those labs, putting me to work in the tunnels.",
+          "link": "p:Yes.  I feel resentment.  I feel hurt.  They took so much away from me...",
+          "pid": "5"
+        }
+      ],
+      "name": "p:Yeah.  My whole life turned out to be a lie.  I'm not taking it very well.",
+      "pid": "4",
+      "position": {
+        "x": "1701",
+        "y": "1055"
+      },
+      "tags": [
+        "wthinking"
+      ]
+    },
+    {
+      "text": "Jasper,thinking::...\n\n[[p:You're such a pretty doll.  You deserve better than to rot on the floor of this boiler room forever.]]\n[[p:Let's get you to a better place, somewhere nice to rest.->p:You're such a pretty doll.  You deserve better than to rot on the floor of this boiler room forever.]]",
+      "links": [
+        {
+          "name": "p:You're such a pretty doll.  You deserve better than to rot on the floor of this boiler room forever.",
+          "link": "p:You're such a pretty doll.  You deserve better than to rot on the floor of this boiler room forever.",
+          "pid": "6"
+        },
+        {
+          "name": "p:Let's get you to a better place, somewhere nice to rest.",
+          "link": "p:You're such a pretty doll.  You deserve better than to rot on the floor of this boiler room forever.",
+          "pid": "6"
+        }
+      ],
+      "name": "p:Yes.  I feel resentment.  I feel hurt.  They took so much away from me...",
+      "pid": "5",
+      "position": {
+        "x": "1703",
+        "y": "1196"
+      },
+      "tags": [
+        "wlooking_to_side"
+      ]
+    },
+    {
+      "text": "Jasper,sad::...\n\n[[p:(Action) Put Jasper in your pocket.]]",
+      "links": [
+        {
+          "name": "p:(Action) Put Jasper in your pocket.",
+          "link": "p:(Action) Put Jasper in your pocket.",
+          "pid": "7"
+        }
+      ],
+      "name": "p:You're such a pretty doll.  You deserve better than to rot on the floor of this boiler room forever.",
+      "pid": "6",
+      "position": {
+        "x": "1698",
+        "y": "1349"
+      }
+    },
+    {
+      "text": "",
+      "name": "p:(Action) Put Jasper in your pocket.",
+      "pid": "7",
+      "position": {
+        "x": "1694",
+        "y": "1503"
+      }
+    }
+  ],
+  "name": "wiggly_finds_jasper",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "56518150-31E3-47A9-A21B-557342D5F143"
+}
+

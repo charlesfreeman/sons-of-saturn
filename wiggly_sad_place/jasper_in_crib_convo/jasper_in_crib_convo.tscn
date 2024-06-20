@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://0o3332ewl511"]
+
+[ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1_b7jov"]
+
+[node name="jasper_in_crib_convo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Convo" parent="." instance=ExtResource("1_b7jov")]
+layout_mode = 1
+scriptPath = "res://wiggly_sad_place/jasper_in_crib_convo/jasper_in_crib_convo.json"
+backgroundPath = "res://wiggly_sad_place/jasper_in_crib_convo/jasper_crib_no_jasper.png"
+sliverPath = "res://wiggly_sad_place/jasper_in_crib_convo/jasper_in_crib_sliver.png"
+nextScenePath = "TitleScreen"
+nextLocation = "res://maternity/auditorium/auditorium.tscn"
+fade_tag_dict = {
+"jasper_in_crib": "res://wiggly_sad_place/jasper_in_crib_convo/jasper_in_crib.png"
+}
+fade_tag_dict_sliver = {
+"jasper_in_crib": "res://wiggly_sad_place/jasper_in_crib_convo/jasper_in_crib_sliver.png"
+}
+song = "soft_wind"
+wiggly_mode = true

@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://bt2t8twxvxayc"]
+
+[ext_resource type="Texture2D" uid="uid://c04d30sd1ux8v" path="res://wiggly_sad_place/power_plant_no_jasper/wiggly_sad_place_no_jasper.png" id="1_vr8up"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2_3xiqm"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="3_udou4"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(673, 774)
+
+[node name="PoV" type="TextureRect"]
+offset_right = 2880.0
+offset_bottom = 2160.0
+size_flags_horizontal = 3
+mouse_filter = 2
+texture = ExtResource("1_vr8up")
+script = ExtResource("2_3xiqm")
+scene_up = "res://wiggly_sad_place/underground_pipes/underground_pipes.tscn"
+position_char = Vector2(1220, 328)
+rotation_char = 270
+song = "weird_hum"
+wiggly_mode = true
+
+[node name="ClickToEnter" parent="." instance=ExtResource("3_udou4")]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2(1764, 1271)
+shape = SubResource("1")

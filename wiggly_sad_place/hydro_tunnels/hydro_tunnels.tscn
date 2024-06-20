@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://bf5kdqpsxad44"]
+
+[ext_resource type="Texture2D" uid="uid://cjyjogiewcs3q" path="res://wiggly_sad_place/hydro_tunnels/hydro_tunnels.png" id="1_lc73s"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2_7ody2"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="3_4mofc"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(983, 953)
+
+[node name="PoV" type="TextureRect"]
+offset_right = 2880.0
+offset_bottom = 2160.0
+size_flags_horizontal = 3
+mouse_filter = 2
+texture = ExtResource("1_lc73s")
+script = ExtResource("2_7ody2")
+scene_up = "res://wiggly_sad_place/ducts/ducts.tscn"
+position_char = Vector2(1220, 328)
+rotation_char = 270
+song = "sly_sewer_intimate"
+footstep_type_up = "Wet"
+
+[node name="ClickToEnter" parent="." instance=ExtResource("3_4mofc")]
+up_path = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToEnter"]
+position = Vector2(1501.5, 1018.5)
+shape = SubResource("1")

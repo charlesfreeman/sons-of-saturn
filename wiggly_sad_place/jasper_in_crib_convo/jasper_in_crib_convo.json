@@ -1,0 +1,38 @@
+{
+  "passages": [
+    {
+      "text": "Jasper,head_tilted::...\n\nWiggly,neutral::This is where you'll be staying.  Forever, I think.\n\nJasper,surprised::...\n\nWiggly,surprised::I'm not as smart as a lot of the people who worked here, or some of the people who come through.  But I see some things clearly.\n\nWiggly,skeptical::Even when we were just walking through the halls, or sitting alone in the boilers, I could feel you worming into me.\n\nJasper,sad::...\n\nWiggly,sad::I feel bad, but I still have time left.  I have life.\n\nWiggly,thinking::That's a lot more than many people ever get, you know?\n\nWiggly,looking_to_side::It's more than most people have right now.  Most people are dead, forever.\n\nJasper,thinking::...\n\nWiggly,looking_to_side::Some people didn't treat me kindly.  But I'm not going to let them take away the rest of what I have.\n\nWiggly,surprised::And I'm not going to let you take it away either.\n\nJasper,surprised::...\n\nWiggly,neutral::I brought you here because I'm nice.  I thought it seemed like a good spot, to rest.\n\nWiggly,surprised::I know you mean well.\n\nWiggly,skeptical::But you aren't coming with me.  Amelie is better off without you, too.\n\nJasper,sad::...\n\nWiggly,neutral::I have a client to get home.  She might be my last.  I hope she's still waiting for me.\n\nWiggly,looking_to_side::Goodbye, Jasper.\n\nJasper,sad::...\n\nJasper,sad::....\n\nJasper,sad::.....\n",
+      "name": "p:(Action) Place Jasper in the crib.",
+      "pid": "1",
+      "position": {
+        "x": "1170",
+        "y": "636"
+      },
+      "tags": [
+        "jasper_in_crib"
+      ]
+    },
+    {
+      "text": "Wiggly,looking_to_side::Here we are.\n\n[[p:(Action) Place Jasper in the crib.]]",
+      "links": [
+        {
+          "name": "p:(Action) Place Jasper in the crib.",
+          "link": "p:(Action) Place Jasper in the crib.",
+          "pid": "1"
+        }
+      ],
+      "name": "Untitled Passage 1",
+      "pid": "2",
+      "position": {
+        "x": "1176",
+        "y": "475"
+      }
+    }
+  ],
+  "name": "wiggly_leaves_jasper",
+  "startnode": "2",
+  "creator": "Twine",
+  "creator-version": "2.3.14",
+  "ifid": "ACEF8E92-48F0-4A88-A1F0-47EB0FB62592"
+}
+

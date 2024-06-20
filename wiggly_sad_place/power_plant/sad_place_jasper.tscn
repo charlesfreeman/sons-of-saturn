@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://bdnae5bhkqvju"]
+
+[ext_resource type="Texture2D" uid="uid://b3mckc364d3el" path="res://wiggly_sad_place/power_plant/wiggly_sad_place.png" id="1_s0vcl"]
+[ext_resource type="Script" path="res://roaming_pov/PoV.gd" id="2_yevfc"]
+[ext_resource type="PackedScene" uid="uid://cwp6ojlkpf317" path="res://roaming_pov/ClickToEnter.tscn" id="3_ibslm"]
+[ext_resource type="PackedScene" uid="uid://ci7tcshn6y7qf" path="res://roaming_pov/ClickToSearch.tscn" id="4_jw8x7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r8134"]
+size = Vector2(553, 608)
+
+[node name="PoV" type="TextureRect"]
+offset_right = 2880.0
+offset_bottom = 2160.0
+size_flags_horizontal = 3
+mouse_filter = 2
+texture = ExtResource("1_s0vcl")
+script = ExtResource("2_yevfc")
+position_char = Vector2(1220, 328)
+rotation_char = 270
+song = "weird_hum"
+
+[node name="ClickToEnter" parent="." instance=ExtResource("3_ibslm")]
+up_path = true
+
+[node name="ClickToSearch" parent="." instance=ExtResource("4_jw8x7")]
+next_scene = "power_plant_convo"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickToSearch"]
+position = Vector2(1384, 1789)
+shape = SubResource("RectangleShape2D_r8134")

@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://gent118w7jqg" path="res://conversation_pov/CharacterRect.tscn" id="2"]
 [ext_resource type="Texture2D" uid="uid://bvg5aacr8h5or" path="res://infirmary/cell_grate_convo/wiggly_slinking.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://mo1yu3po1gar" path="res://infirmary/cell_grate_convo/wiggly_looking_around_corner.png" id="4"]
-[ext_resource type="PackedScene" path="res://conversation_pov/ConvoSoundEffect.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://byn2lurvh5x2f" path="res://conversation_pov/ConvoSoundEffect.tscn" id="5"]
 [ext_resource type="AudioStream" uid="uid://b0pi3lsoyralh" path="res://infirmary/cell_grate_convo/heavy_door_slam.wav" id="6"]
 [ext_resource type="AudioStream" uid="uid://b1rdgy8qbe3ih" path="res://sounds/effects/locked_door.wav" id="7"]
 

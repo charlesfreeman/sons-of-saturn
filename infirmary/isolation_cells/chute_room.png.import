@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4uekkvc80il1"
-path="res://.godot/imported/isolation_wing_top_floor.png-50022828e94f23cbcd6afcd94f54e5a3.ctex"
+uid="uid://bppd2uivxqn0q"
+path="res://.godot/imported/chute_room.png-4318d6fff531ca240b28f66c81209217.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://infirmary/isolation_wing_top_floor/isolation_wing_top_floor.png"
-dest_files=["res://.godot/imported/isolation_wing_top_floor.png-50022828e94f23cbcd6afcd94f54e5a3.ctex"]
+source_file="res://infirmary/isolation_cells/chute_room.png"
+dest_files=["res://.godot/imported/chute_room.png-4318d6fff531ca240b28f66c81209217.ctex"]
 
 [params]
 

@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://by44qlvrgwbcb"]
+[gd_scene load_steps=5 format=3 uid="uid://by44qlvrgwbcb"]
 
 [ext_resource type="PackedScene" uid="uid://c8jjh104nr2k3" path="res://conversation_pov/conversation_pov.tscn" id="1_tm2b6"]
 [ext_resource type="PackedScene" uid="uid://kxdt3256877o" path="res://conversation_pov/Documents.tscn" id="2_vbty1"]
+[ext_resource type="PackedScene" uid="uid://byn2lurvh5x2f" path="res://conversation_pov/ConvoSoundEffect.tscn" id="3_njrof"]
+[ext_resource type="AudioStream" uid="uid://lq3srpcpq34n" path="res://childrens_ward/safe_convo/kicking_safe_w_bone_breaking.wav" id="4_b1n11"]
 
 [node name="safe_convo" type="Node"]
 
@@ -9,6 +11,7 @@
 scriptPath = "res://childrens_ward/safe_convo/safe_convo.json"
 backgroundPath = "res://childrens_ward/safe_convo/safe_closed_medium_distance.png"
 sliverPath = "res://childrens_ward/safe_convo/safe_medium_distance_sliver.png"
+nextLocation = "res://childrens_ward/frost_desk_safe_open/frost_desk_safe_open.tscn"
 fade_tag_dict = {
 "open": "res://childrens_ward/safe_convo/safe_open_medium_distance.png",
 "safe_closeup": "res://childrens_ward/safe_convo/safe_open_closeup.png",
@@ -19,6 +22,17 @@ fade_tag_dict_sliver = {
 "safe_closeup": "res://childrens_ward/safe_convo/safe_open_closeup_sliver.png",
 "skeleton_key": "res://childrens_ward/safe_convo/safe_key_sliver.png"
 }
+prog_flag = "safe_convo"
+song = "front_desk_ambient"
+new_item = "Key"
+new_item_2 = "Stillbirth Certificate"
 
 [node name="Documents" parent="." instance=ExtResource("2_vbty1")]
 docs = ["res://childrens_ward/safe_convo/stillbirth_doc.png"]
+
+[node name="KickingSafe" parent="." instance=ExtResource("3_njrof")]
+stream = ExtResource("4_b1n11")
+volume_db = -12.0
+tag_to_play = "kick_safe"
+
+[node name="SearchingPaper" parent="." instance=ExtResource("3_njrof")]

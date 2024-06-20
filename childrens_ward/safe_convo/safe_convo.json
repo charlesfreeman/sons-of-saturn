@@ -1,261 +1,254 @@
-
-
 {
   "passages": [
-    {
-      "text": "You return to the suspiscous safe in Frost's office, ready to take a crack at getting it open.\n\n[[So the lady I just killed says I should just be able to kick this thing and it'll open, right?]]\n[[p:(Action) Kick the safe.]]",
-      "links": [
-        {
-          "name": "So the lady I just killed says I should just be able to kick this thing and it'll open, right?",
-          "link": "So the lady I just killed says I should just be able to kick this thing and it'll open, right?",
-          "pid": "2"
-        },
-        {
-          "name": "p:(Action) Kick the safe.",
-          "link": "p:(Action) Kick the safe.",
-          "pid": "3"
-        }
-      ],
-      "name": "start",
-      "pid": "1",
-      "position": {
-        "x": "1180",
-        "y": "607.5"
-      },
-      "tags": [
-        "aguilty"
-      ]
-    },
-    {
-      "text": "Jasper,head_tilted::Yes.  Let's hope it hasn't rusted shut.\n\n[[C->start]]",
-      "links": [
-        {
-          "name": "C",
-          "link": "start",
-          "pid": "1"
-        }
-      ],
-      "name": "So the lady I just killed says I should just be able to kick this thing and it'll open, right?",
-      "pid": "2",
-      "position": {
-        "x": "1083",
-        "y": "757.5"
-      }
-    },
-    {
-      "text": "You're left foot collides with the safe's chassis.  The remains of your big toe's bone shatters with an audible crackle.  Waves of excruciating pain vibrate the nerves throughout your leg.\n\n[[p:Augh, fuck!  I forgot my toe was broken!]]\n[[p:(Action) Start crying.->p:Augh, fuck!  I forgot my toe was broken!]]",
-      "links": [
-        {
-          "name": "p:Augh, fuck!  I forgot my toe was broken!",
-          "link": "p:Augh, fuck!  I forgot my toe was broken!",
-          "pid": "4"
-        },
-        {
-          "name": "p:(Action) Start crying.",
-          "link": "p:Augh, fuck!  I forgot my toe was broken!",
-          "pid": "4"
-        }
-      ],
-      "name": "p:(Action) Kick the safe.",
-      "pid": "3",
-      "position": {
-        "x": "1222",
-        "y": "756.5"
-      },
-      "tags": [
-        "open",
-        "kick_safe",
-        "adisgusted"
-      ]
-    },
-    {
-      "text": "Jasper,twisted::Shut up!  We still aren't far from Julia...\n\nYou bite your tongue, coming close to drawing blood.  The pain is radiant and penetrating.\n\nJasper,thinking::How can you forget something like that?  Seriously...\n\nJasper,head_tilted::Pst, hey, we got the safe open.  Lets take a look, quickly.\n\n[[p:(Action) Peer into the safe.]]",
-      "links": [
-        {
-          "name": "p:(Action) Peer into the safe.",
-          "link": "p:(Action) Peer into the safe.",
-          "pid": "5"
-        }
-      ],
-      "name": "p:Augh, fuck!  I forgot my toe was broken!",
-      "pid": "4",
-      "position": {
-        "x": "1221",
-        "y": "906.5"
-      }
-    },
-    {
-      "text": "The safe houses an unkempt pile of documents.  Most of them seem to pertain to administrative minutia, much of it presumably incriminating.\n\nYour fingers glide through the papers, hunting for something solid.  After some sifting, your left index grazes a hunk of lightly rusted metal.\n\n[[C->skeleton key]]",
-      "links": [
-        {
-          "name": "C",
-          "link": "skeleton key",
-          "pid": "6"
-        }
-      ],
-      "name": "p:(Action) Peer into the safe.",
-      "pid": "5",
-      "position": {
-        "x": "1221",
-        "y": "1056.5"
-      },
-      "tags": [
-        "safe_closeup"
-      ]
-    },
-    {
-      "text": "You pull out an oddly shaped skeleton key.\n\n[[p:Let's try this on the locked door outside.]]",
-      "links": [
-        {
-          "name": "p:Let's try this on the locked door outside.",
-          "link": "p:Let's try this on the locked door outside.",
-          "pid": "7"
-        }
-      ],
-      "name": "skeleton key",
-      "pid": "6",
-      "position": {
-        "x": "1222",
-        "y": "1204.5"
-      },
-      "tags": [
-        "skeleton_key"
-      ]
-    },
-    {
-      "text": "Jasper,thinking::Sure.  Let's hope the mechanism isn't too deformed, that door looked pretty warped.\n\nJasper,twisted::But before we go let's keep looking through this safe.  Vera seemed to think there was something really incriminating in here.\n\nJasper,sad::Might be something that helps us deal with Julia...\n\n[[p:(Action) Keep searching the safe.]]",
-      "links": [
-        {
-          "name": "p:(Action) Keep searching the safe.",
-          "link": "p:(Action) Keep searching the safe.",
-          "pid": "8"
-        }
-      ],
-      "name": "p:Let's try this on the locked door outside.",
-      "pid": "7",
-      "position": {
-        "x": "1222",
-        "y": "1354.5"
-      }
-    },
-    {
-      "text": "You fight through stack after stack of meaningless minutia: financial ledgers, medication inventories, nurse shift logs.  None of it means anything to you.\n\nEventually, you arrive at a stack of thick, rigid documents.  Their corners are hard, and their sides sturdy.\n\nJasper,head_tilted::Those look like certificates of some sort.  Huh.  Looks like they were meant to document instances of stillbirth.  \n\nJasper,twisted::There must be some reason they wanted these confiscated.  Let's flip through them.\n\nYou comb through the stack, looking for familiar names.  One entry seems familiar.\n\n[[C->Page 1]]",
-      "links": [
-        {
-          "name": "C",
-          "link": "Page 1",
-          "pid": "9"
-        }
-      ],
-      "name": "p:(Action) Keep searching the safe.",
-      "pid": "8",
-      "position": {
-        "x": "1222",
-        "y": "1504.5"
-      },
-      "tags": [
-        "paper_sifting",
-        "safe_closeup"
-      ]
-    },
-    {
-      "text": "Jasper,head_tilted::...What?  Paul Lowman?\n\nJasper,thinking::That's Wiggly's real name, right?\n\nJasper,sad::But, he wasn't stillborn...\n\n[[p:Neither were a lot of these other kids, I'm guessing...]]\n[[p:Don't you see what's going on?  They were stealing kids and telling the mothers they were dead on arrival.]]",
-      "links": [
-        {
-          "name": "p:Neither were a lot of these other kids, I'm guessing...",
-          "link": "p:Neither were a lot of these other kids, I'm guessing...",
-          "pid": "10"
-        },
-        {
-          "name": "p:Don't you see what's going on?  They were stealing kids and telling the mothers they were dead on arrival.",
-          "link": "p:Don't you see what's going on?  They were stealing kids and telling the mothers they were dead on arrival.",
-          "pid": "11"
-        }
-      ],
-      "name": "Page 1",
-      "pid": "9",
-      "position": {
-        "x": "1222",
-        "y": "1654.5"
-      },
-      "tags": [
-        "page1",
-        "aguilty"
-      ]
-    },
-    {
-      "text": "Jasper,sad::Do you think...what Vera was saying was right?\n\nJasper,head_tilted::They were faking stillbirths, and stealing the kids?\n\nJasper,twisted::And Wiggly was one of these stolen kids?  He thinks he's an orphan.\n\n[[p:I mean, how else would \"Paul Lowman\" also be the name of our guide?]]",
-      "links": [
-        {
-          "name": "p:I mean, how else would \"Paul Lowman\" also be the name of our guide?",
-          "link": "p:I mean, how else would \"Paul Lowman\" also be the name of our guide?",
-          "pid": "12"
-        }
-      ],
-      "name": "p:Neither were a lot of these other kids, I'm guessing...",
-      "pid": "10",
-      "position": {
-        "x": "1147",
-        "y": "1804.5"
-      }
-    },
-    {
-      "text": "Jasper,thinking::That certainly lines up with what Vera was saying...\n\nJasper,head_tilted::You think Wiggly was one of these stolen kids?  He thinks he's an orphan.\n\n[[p:I mean, how else would \"Paul Lowman\" also be the name of our guide?]]",
-      "links": [
-        {
-          "name": "p:I mean, how else would \"Paul Lowman\" also be the name of our guide?",
-          "link": "p:I mean, how else would \"Paul Lowman\" also be the name of our guide?",
-          "pid": "12"
-        }
-      ],
-      "name": "p:Don't you see what's going on?  They were stealing kids and telling the mothers they were dead on arrival.",
-      "pid": "11",
-      "position": {
-        "x": "1299",
-        "y": "1804.5"
-      }
-    },
-    {
-      "text": "Jasper,sad::It does seem likely they are the same...\n\n[[p:I'm going to hold on to this document.  When we see Wiggly again, I think we need to tell him.]]",
-      "links": [
-        {
-          "name": "p:I'm going to hold on to this document.  When we see Wiggly again, I think we need to tell him.",
-          "link": "p:I'm going to hold on to this document.  When we see Wiggly again, I think we need to tell him.",
-          "pid": "13"
-        }
-      ],
-      "name": "p:I mean, how else would \"Paul Lowman\" also be the name of our guide?",
-      "pid": "12",
-      "position": {
-        "x": "1210",
-        "y": "1959.5"
-      }
-    },
-    {
-      "text": "Jasper,twisted::It's none of your business, and might cause a bad reaction.\n\nJasper,sad::But if you must...\n\n[[p:Let's go open that door.  I want to get further from Julia.]]",
-      "links": [
-        {
-          "name": "p:Let's go open that door.  I want to get further from Julia.",
-          "link": "p:Let's go open that door.  I want to get further from Julia.",
-          "pid": "14"
-        }
-      ],
-      "name": "p:I'm going to hold on to this document.  When we see Wiggly again, I think we need to tell him.",
-      "pid": "13",
-      "position": {
-        "x": "1211",
-        "y": "2119.5"
-      }
-    },
-    {
-      "text": "",
-      "name": "p:Let's go open that door.  I want to get further from Julia.",
-      "pid": "14",
-      "position": {
-        "x": "1211",
-        "y": "2269.5"
-      }
-    }
+	{
+	  "text": "You return to the suspiscous safe in Frost's office, ready to take a crack at getting it open.\n\n[[p:(Action) Open the dial lock.]]",
+	  "links": [
+		{
+		  "name": "p:(Action) Open the dial lock.",
+		  "link": "p:(Action) Open the dial lock.",
+		  "pid": "14"
+		}
+	  ],
+	  "name": "start",
+	  "pid": "1",
+	  "position": {
+		"x": "1232",
+		"y": "427"
+	  },
+	  "tags": [
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "You're left foot collides with the safe's chassis.  The remains of your big toe's bone shatters with an audible crackle.  Waves of excruciating pain radiate the nerves throughout your leg.\n\nJasper,surprised::What are you doing!?!\n\n[[p:Augh, fuck!  I forgot my toe was broken!]]\n[[p:(Action) Start crying.->p:Augh, fuck!  I forgot my toe was broken!]]",
+	  "links": [
+		{
+		  "name": "p:Augh, fuck!  I forgot my toe was broken!",
+		  "link": "p:Augh, fuck!  I forgot my toe was broken!",
+		  "pid": "3"
+		},
+		{
+		  "name": "p:(Action) Start crying.",
+		  "link": "p:Augh, fuck!  I forgot my toe was broken!",
+		  "pid": "3"
+		}
+	  ],
+	  "name": "p:(Action) Kick the safe.",
+	  "pid": "2",
+	  "position": {
+		"x": "1222",
+		"y": "756"
+	  },
+	  "tags": [
+		"open",
+		"kick_safe",
+		"adisgusted"
+	  ]
+	},
+	{
+	  "text": "Jasper,twisted::Shut up!  We still aren't far from Julia...\n\nYou bite your tongue, coming close to drawing blood.  The pain is radiant and penetrating.\n\nJasper,thinking::How can you forget something like that?  Seriously...\n\nJasper,head_tilted::Pst, hey, we got the safe open.  Lets take a look, quickly.\n\n[[p:(Action) Peer into the safe.]]",
+	  "links": [
+		{
+		  "name": "p:(Action) Peer into the safe.",
+		  "link": "p:(Action) Peer into the safe.",
+		  "pid": "4"
+		}
+	  ],
+	  "name": "p:Augh, fuck!  I forgot my toe was broken!",
+	  "pid": "3",
+	  "position": {
+		"x": "1221",
+		"y": "906"
+	  }
+	},
+	{
+	  "text": "The safe houses an unkempt pile of documents.  Most of them seem to pertain to administrative minutia, much of it presumably incriminating.\n\nYour fingers glide through the papers, hunting for something solid.  After some sifting, your left index grazes a hunk of lightly rusted metal.\n\n[[C->skeleton key]]",
+	  "links": [
+		{
+		  "name": "C",
+		  "link": "skeleton key",
+		  "pid": "5"
+		}
+	  ],
+	  "name": "p:(Action) Peer into the safe.",
+	  "pid": "4",
+	  "position": {
+		"x": "1221",
+		"y": "1056"
+	  },
+	  "tags": [
+		"safe_closeup"
+	  ]
+	},
+	{
+	  "text": "You pull out an oddly shaped skeleton key.\n\n[[p:Let's try this on the locked door outside.]]",
+	  "links": [
+		{
+		  "name": "p:Let's try this on the locked door outside.",
+		  "link": "p:Let's try this on the locked door outside.",
+		  "pid": "6"
+		}
+	  ],
+	  "name": "skeleton key",
+	  "pid": "5",
+	  "position": {
+		"x": "1222",
+		"y": "1204"
+	  },
+	  "tags": [
+		"skeleton_key"
+	  ]
+	},
+	{
+	  "text": "Jasper,thinking::Sure.  Let's hope the mechanism isn't too deformed, that door looked pretty warped.\n\nJasper,twisted::But before we go let's keep looking through this safe.  Vera seemed to think there was something really incriminating in here.\n\nJasper,sad::Might be something that helps us deal with Julia...\n\n[[p:(Action) Keep searching the safe.]]",
+	  "links": [
+		{
+		  "name": "p:(Action) Keep searching the safe.",
+		  "link": "p:(Action) Keep searching the safe.",
+		  "pid": "7"
+		}
+	  ],
+	  "name": "p:Let's try this on the locked door outside.",
+	  "pid": "6",
+	  "position": {
+		"x": "1222",
+		"y": "1354"
+	  }
+	},
+	{
+	  "text": "You fight through stack after stack of meaningless minutia: financial ledgers, medication inventories, nurse shift logs.  None of it means anything to you.\n\nEventually, you arrive at a stack of thick, rigid documents.  Their corners are hard, and their sides sturdy.\n\nJasper,head_tilted::Those look like certificates of some sort.  Huh.  Looks like they were meant to document instances of stillbirth.  \n\nJasper,twisted::There must be some reason they wanted these confiscated.  Let's flip through them.\n\nYou comb through the stack, looking for familiar names.  One entry seems familiar.\n\n[[C->Page 1]]",
+	  "links": [
+		{
+		  "name": "C",
+		  "link": "Page 1",
+		  "pid": "8"
+		}
+	  ],
+	  "name": "p:(Action) Keep searching the safe.",
+	  "pid": "7",
+	  "position": {
+		"x": "1222",
+		"y": "1504"
+	  },
+	  "tags": [
+		"paper_sifting",
+		"safe_closeup"
+	  ]
+	},
+	{
+	  "text": "Jasper,head_tilted::...What?  Paul Lowman?\n\nJasper,thinking::That's Wiggly's real name, right?\n\nJasper,sad::But, he wasn't stillborn...\n\n[[p:Neither were a lot of these other kids, I'm guessing...]]\n[[p:Don't you see what's going on?  They were stealing kids and telling the mothers they were dead on arrival.]]",
+	  "links": [
+		{
+		  "name": "p:Neither were a lot of these other kids, I'm guessing...",
+		  "link": "p:Neither were a lot of these other kids, I'm guessing...",
+		  "pid": "9"
+		},
+		{
+		  "name": "p:Don't you see what's going on?  They were stealing kids and telling the mothers they were dead on arrival.",
+		  "link": "p:Don't you see what's going on?  They were stealing kids and telling the mothers they were dead on arrival.",
+		  "pid": "10"
+		}
+	  ],
+	  "name": "Page 1",
+	  "pid": "8",
+	  "position": {
+		"x": "1222",
+		"y": "1654"
+	  },
+	  "tags": [
+		"page1",
+		"aguilty"
+	  ]
+	},
+	{
+	  "text": "Jasper,sad::Do you think...what Vera was saying was right?\n\nJasper,head_tilted::They were faking stillbirths, and stealing the kids?\n\nJasper,twisted::And Wiggly was one of these stolen kids?  He thinks he's an orphan.\n\n[[p:I mean, how else would \"Paul Lowman\" also be the name of our guide?]]",
+	  "links": [
+		{
+		  "name": "p:I mean, how else would \"Paul Lowman\" also be the name of our guide?",
+		  "link": "p:I mean, how else would \"Paul Lowman\" also be the name of our guide?",
+		  "pid": "11"
+		}
+	  ],
+	  "name": "p:Neither were a lot of these other kids, I'm guessing...",
+	  "pid": "9",
+	  "position": {
+		"x": "1147",
+		"y": "1804"
+	  }
+	},
+	{
+	  "text": "Jasper,thinking::That certainly lines up with what Vera was saying...\n\nJasper,head_tilted::You think Wiggly was one of these stolen kids?  He thinks he's an orphan.\n\n[[p:I mean, how else would \"Paul Lowman\" also be the name of our guide?]]",
+	  "links": [
+		{
+		  "name": "p:I mean, how else would \"Paul Lowman\" also be the name of our guide?",
+		  "link": "p:I mean, how else would \"Paul Lowman\" also be the name of our guide?",
+		  "pid": "11"
+		}
+	  ],
+	  "name": "p:Don't you see what's going on?  They were stealing kids and telling the mothers they were dead on arrival.",
+	  "pid": "10",
+	  "position": {
+		"x": "1299",
+		"y": "1804"
+	  }
+	},
+	{
+	  "text": "Jasper,sad::It does seem likely they are the same...\n\n[[p:I'm going to hold on to this document.  When we see Wiggly again, I think we need to tell him.]]",
+	  "links": [
+		{
+		  "name": "p:I'm going to hold on to this document.  When we see Wiggly again, I think we need to tell him.",
+		  "link": "p:I'm going to hold on to this document.  When we see Wiggly again, I think we need to tell him.",
+		  "pid": "12"
+		}
+	  ],
+	  "name": "p:I mean, how else would \"Paul Lowman\" also be the name of our guide?",
+	  "pid": "11",
+	  "position": {
+		"x": "1210",
+		"y": "1959"
+	  }
+	},
+	{
+	  "text": "Jasper,twisted::It's none of your business, and might cause a bad reaction.\n\nJasper,sad::But if you must...\n\n[[p:Let's go open that door.  I want to get further from Julia.]]",
+	  "links": [
+		{
+		  "name": "p:Let's go open that door.  I want to get further from Julia.",
+		  "link": "p:Let's go open that door.  I want to get further from Julia.",
+		  "pid": "13"
+		}
+	  ],
+	  "name": "p:I'm going to hold on to this document.  When we see Wiggly again, I think we need to tell him.",
+	  "pid": "12",
+	  "position": {
+		"x": "1211",
+		"y": "2119"
+	  }
+	},
+	{
+	  "text": "",
+	  "name": "p:Let's go open that door.  I want to get further from Julia.",
+	  "pid": "13",
+	  "position": {
+		"x": "1211",
+		"y": "2269"
+	  }
+	},
+	{
+	  "text": "Jasper,head_tilted::Hmm.  The dial lock seems to have rusted shut.\n\nJasper,thinking::I guess we won't be able to open it the normal way.\n\nJasper,twisted::We need to find some other way to get this open.  I can't understand how, I just know something important is in here...\n\n[[p:(Action) Kick the safe.]]",
+	  "links": [
+		{
+		  "name": "p:(Action) Kick the safe.",
+		  "link": "p:(Action) Kick the safe.",
+		  "pid": "2"
+		}
+	  ],
+	  "name": "p:(Action) Open the dial lock.",
+	  "pid": "14",
+	  "position": {
+		"x": "1228",
+		"y": "581"
+	  }
+	}
   ],
   "name": "Safe Convo",
   "startnode": "1",

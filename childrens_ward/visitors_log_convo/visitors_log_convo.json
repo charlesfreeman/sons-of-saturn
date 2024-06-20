@@ -3,7 +3,7 @@
 {
   "passages": [
     {
-      "text": "A visitation logbook lies conspicuously atop the pile of documents strewn about the room.  As before, the booklet's placement is suspiciously prominent.\n\n[[p:(Action) Read the visitor's logs.]]\n[[p:(Action) Leave.]]",
+      "text": "A visitation logbook lies atop the pile of documents strewn about the room.  As before, the booklet's placement is conspicuous.\n\n[[p:(Action) Read the visitor's logs.]]\n[[p:(Action) Leave.]]",
       "links": [
         {
           "name": "p:(Action) Read the visitor's logs.",
@@ -20,11 +20,14 @@
       "pid": "1",
       "position": {
         "x": "1179",
-        "y": "607.5"
-      }
+        "y": "607"
+      },
+      "tags": [
+        "auncertain"
+      ]
     },
     {
-      "text": "You open the first page of the log book.  Entries of visits, organized into time slots, populate the rows of the sheet.\n\nYou scan the columns for familiar names: Rosalind.  Julia.  Thomas.  Paul Loman.  Amelie.  \n\nNone appear.\n\n[[p:(Action) Scan the next page.]]",
+      "text": "You open the first page of the log book.  Entries of visits, organized into time slots, populate the rows of the sheet.\n\nYou scan the columns for familiar names: Rosalind.  Julia.  Angela.  Paul Loman.  Amelie.  \n\nNone appear.\n\n[[p:(Action) Scan the next page.]]",
       "links": [
         {
           "name": "p:(Action) Scan the next page.",
@@ -36,7 +39,7 @@
       "pid": "2",
       "position": {
         "x": "1238",
-        "y": "766.5"
+        "y": "766"
       },
       "tags": [
         "page1"
@@ -47,12 +50,12 @@
       "name": "p:(Action) Leave.",
       "pid": "3",
       "position": {
-        "x": "997",
-        "y": "768.5"
+        "x": "1050",
+        "y": "749"
       }
     },
     {
-      "text": "You scan the second page.  No familiar names appear.\n\nVisitations appear relatively sparse.  You could scan this entire book for familiar names in not much time.  Years of hospital visits are recorded, so you're likely to find a little info on Julia and Thomas at least.\n\n[[p:(Action) Scan the rest of the booklet.]]",
+      "text": "You scan the second page.  Again, no familiar names appear.\n\nVisitations appear relatively sparse.  You could scan this entire book for familiar names in not much time.  Years of hospital visits are recorded, so you're likely to find a little info on Julia and Thomas at least.\n\n[[p:(Action) Scan the rest of the booklet.]]",
       "links": [
         {
           "name": "p:(Action) Scan the rest of the booklet.",
@@ -64,14 +67,14 @@
       "pid": "4",
       "position": {
         "x": "1238",
-        "y": "916.5"
+        "y": "916"
       },
       "tags": [
         "page2"
       ]
     },
     {
-      "text": "You spend several minutes running your eyes over the entries on every page.  Years of visitation slip by, depressingly quickly.  You see no mention of Julia.  Nor of Thomas.\n\n[[C->final page]]",
+      "text": "You spend several minutes running your eyes over the entries on every page.  Years of visitation slip by, depressingly quickly.  You see no mention of Julia, nor of Angela.\n\n[[C->final page]]",
       "links": [
         {
           "name": "C",
@@ -83,11 +86,11 @@
       "pid": "5",
       "position": {
         "x": "1238",
-        "y": "1066.5"
+        "y": "1066"
       }
     },
     {
-      "text": "You arrive at the final page.  The columns terminate.  No more visits.\n\nNot a single mention of Julia or Thomas in the entire booklet.\n\nShe never visited her son, who was two stories below her quarters...\n\n[[p:That's too sad for me to even want to acknowledge.]]\n[[p:I understand.  I'd be too ashamed to visit.->p:That's too sad for me to even want to acknowledge.]]\n[[p:Good for her.  This place is depressing.->p:That's too sad for me to even want to acknowledge.]]",
+      "text": "You arrive at the final page.  The columns terminate.  No more visits.\n\nNot a single mention of Julia or Angela in the entire booklet.\n\nJasper::Julia never visited her daughter after sending her here, even though she lived two floors below her in the same building...\n\n[[p:That's too sad for me to even want to acknowledge.]]\n[[p:I understand.  I'd be too ashamed to visit.]]\n[[p:Good for her.  This place is depressing.]]",
       "links": [
         {
           "name": "p:That's too sad for me to even want to acknowledge.",
@@ -96,48 +99,51 @@
         },
         {
           "name": "p:I understand.  I'd be too ashamed to visit.",
-          "link": "p:That's too sad for me to even want to acknowledge.",
-          "pid": "7"
+          "link": "p:I understand.  I'd be too ashamed to visit.",
+          "pid": "8"
         },
         {
           "name": "p:Good for her.  This place is depressing.",
-          "link": "p:That's too sad for me to even want to acknowledge.",
-          "pid": "7"
+          "link": "p:Good for her.  This place is depressing.",
+          "pid": "9"
         }
       ],
       "name": "final page",
       "pid": "6",
       "position": {
         "x": "1238",
-        "y": "1216.5"
+        "y": "1216"
       },
       "tags": [
-        "page3"
+        "page3",
+        "aguilty"
       ]
     },
     {
-      "text": "We're in agreement.  The best way to move on from tragedy is to pretend the tragedy never happened and never think about it again.  Send the tragedy to the basement, and then get it together.\n\nOh yeah, what were we doing here again?\n\n[[p:Looking for some way to remove Julia's attachment.]]",
-      "links": [
-        {
-          "name": "p:Looking for some way to remove Julia's attachment.",
-          "link": "p:Looking for some way to remove Julia's attachment.",
-          "pid": "8"
-        }
-      ],
+      "text": "Jasper,sad::Then don't.  No one is making you.\n\nJasper,twisted::We have other things to worry about.  Let's keep looking for ways to shake Julia off.",
       "name": "p:That's too sad for me to even want to acknowledge.",
       "pid": "7",
       "position": {
-        "x": "1238",
-        "y": "1366.5"
+        "x": "1088",
+        "y": "1366"
       }
     },
     {
-      "text": "Right.  Let's go find her son's room.",
-      "name": "p:Looking for some way to remove Julia's attachment.",
+      "text": "Jasper,sad::I mean, it took you nearly twenty years to come pay Mom a visit...\n\nJasper,twisted::We shouldn't waste any more time here.  Let's keep looking for ways to shake Julia off.",
+      "name": "p:I understand.  I'd be too ashamed to visit.",
       "pid": "8",
       "position": {
+        "x": "1359",
+        "y": "1366"
+      }
+    },
+    {
+      "text": "Jasper,sad::I'm sure it was pretty depressing for Angela too.\n\nJasper,twisted::But, we have other things to worry about.  Let's keep looking for ways to shake Julia off.",
+      "name": "p:Good for her.  This place is depressing.",
+      "pid": "9",
+      "position": {
         "x": "1238",
-        "y": "1516.5"
+        "y": "1366"
       }
     }
   ],

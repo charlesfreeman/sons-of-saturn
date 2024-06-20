@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bov7t4piaa41r" path="res://artwork/GSL/Opener_Cave.jpg" id="13"]
 [ext_resource type="Texture2D" uid="uid://dm6l0j1y31gf0" path="res://intro/intro_convo/looking_up_well_bg.png" id="14"]
 [ext_resource type="AudioStream" uid="uid://3jv0h8kwq51s" path="res://sounds/effects/switch_flip_fast.wav" id="15"]
-[ext_resource type="PackedScene" path="res://conversation_pov/ConvoSoundEffect.tscn" id="16"]
+[ext_resource type="PackedScene" uid="uid://byn2lurvh5x2f" path="res://conversation_pov/ConvoSoundEffect.tscn" id="16"]
 [ext_resource type="Texture2D" uid="uid://fdgc8jitq1ib" path="res://artwork/DALLE/DALL·E 2023-05-02 12.15.00 - woman dancing in the style of zdzisław beksiński.png" id="17"]
 [ext_resource type="Texture2D" uid="uid://5lrt7t1en8n" path="res://artwork/DALLE/DALL·E 2023-05-02 14.55.20.png" id="18"]
 [ext_resource type="Texture2D" uid="uid://c8rtxv647ht7" path="res://artwork/DALLE/DALL·E 2023-05-02 15.56.57 - piles of eyes scattered about a theater backdrop in the style of zdzislaw beksinski.png" id="19"]
@@ -38,10 +38,10 @@ texture = ExtResource("6")
 
 [node name="BGPandora" parent="." instance=ExtResource("5")]
 layout_mode = 0
-offset_left = 417.0
+offset_left = 241.0
 offset_top = 196.0
 offset_right = 2074.0
-offset_bottom = 1600.0
+offset_bottom = 1701.0
 texture = ExtResource("10")
 expand_mode = 1
 stretch_mode = 5
@@ -62,7 +62,7 @@ new_bg_tag = "bg_trestle"
 layout_mode = 0
 offset_left = 138.0
 offset_top = 50.0
-offset_right = 2195.0
+offset_right = 2141.0
 offset_bottom = 2032.0
 texture = ExtResource("14")
 expand_mode = 1
@@ -82,10 +82,10 @@ new_bg_tag = "bg_outbound_lines"
 
 [node name="BGPioneers" parent="." instance=ExtResource("5")]
 layout_mode = 0
-offset_left = 355.0
+offset_left = 254.0
 offset_top = 346.0
 offset_right = 2046.0
-offset_bottom = 1566.0
+offset_bottom = 1609.0
 texture = ExtResource("11")
 expand_mode = 1
 stretch_mode = 5
@@ -93,10 +93,10 @@ new_bg_tag = "bg_pioneers"
 
 [node name="BGHell" parent="." instance=ExtResource("5")]
 layout_mode = 0
-offset_left = 412.0
+offset_left = 279.0
 offset_top = 346.0
 offset_right = 2082.0
-offset_bottom = 1780.0
+offset_bottom = 1833.0
 texture = ExtResource("18")
 expand_mode = 1
 stretch_mode = 5
@@ -104,10 +104,10 @@ new_bg_tag = "bg_hell"
 
 [node name="BGRedFigure" parent="." instance=ExtResource("5")]
 layout_mode = 0
-offset_left = 442.0
+offset_left = 267.0
 offset_top = 318.0
 offset_right = 2232.0
-offset_bottom = 1915.0
+offset_bottom = 1972.0
 texture = ExtResource("17")
 expand_mode = 1
 stretch_mode = 5
@@ -161,10 +161,10 @@ disappear_tag = "wakeup"
 
 [node name="AmelieLookingUp" parent="." instance=ExtResource("2")]
 layout_mode = 0
-offset_left = 834.052
-offset_top = 570.781
-offset_right = 1508.05
-offset_bottom = 1569.78
+offset_left = 798.0
+offset_top = 571.0
+offset_right = 1506.0
+offset_bottom = 1498.0
 texture = ExtResource("7")
 appear_tag = "wakeup"
 disappear_tag = "lookingup"

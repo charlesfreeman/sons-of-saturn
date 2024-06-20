@@ -79,6 +79,7 @@ var in_area = false
 # we can remember if they've been invoked.
 @export var single_use = false
 @export var prog_flag = "None"
+@export var steam_ach = "None"
 
 @onready var popup = $HBoxContainer
 @onready var label = $HBoxContainer/VBoxContainer/LabelContainer/Label
@@ -89,6 +90,7 @@ var in_area = false
 signal disable_buttons
 signal enable_buttons
 signal swap_bg_signal
+signal steam_achievement(ach_name)
 
 
 func _ready():
@@ -151,6 +153,12 @@ func _on_input_event(_viewport, event, _shape_idx):
 func progress_popup():
 	if all_in_party:
 		if self.popup_done:
+			if steam_ach != "None":
+				if not Steam.getAchievement(steam_ach)["achieved"]:
+					emit_signal("steam_achievement", steam_ach)
+					Steam.setAchievement(steam_ach)
+					Steam.storeStats()
+	
 			full_rect.input_pickable = false
 			if prog_flag != "None":
 				Global.flip_prog_flag(prog_flag)

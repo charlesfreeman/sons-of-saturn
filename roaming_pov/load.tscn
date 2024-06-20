@@ -1,0 +1,76 @@
+[gd_scene load_steps=7 format=3 uid="uid://cran0qgi4qsno"]
+
+[ext_resource type="Script" path="res://roaming_pov/LoadSave.gd" id="1_yyp3u"]
+[ext_resource type="FontFile" uid="uid://cxllua8qit72w" path="res://fonts/PTSerif-Regular.ttf" id="2_iwerd"]
+[ext_resource type="Texture2D" uid="uid://bwmgc4p40iwwv" path="res://thumbnails/big_leaking_tunnel_2.png" id="2_qejh6"]
+[ext_resource type="Texture2D" uid="uid://o6csyhcqbr06" path="res://save_load_icons/trash_red.png" id="5_u2xjk"]
+[ext_resource type="Texture2D" uid="uid://i8xsce2707e5" path="res://save_load_icons/trash.png" id="6_yxhko"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6vpda"]
+load_path = "res://.godot/imported/trash.png-daa1e25e9bc6fea14f3cb826cfa60ce8.ctex"
+
+[node name="Load" type="Button" groups=["load_button", "saveload_button"]]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(400, 130)
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+script = ExtResource("1_yyp3u")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_qejh6")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("2_iwerd")
+theme_override_font_sizes/font_size = 72
+text = "Save"
+
+[node name="Control2" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DeleteButton" type="TextureButton" parent="HBoxContainer"]
+custom_minimum_size = Vector2(110, 0)
+layout_mode = 2
+texture_normal = ExtResource("6_yxhko")
+texture_pressed = ExtResource("5_u2xjk")
+texture_hover = ExtResource("5_u2xjk")
+texture_disabled = SubResource("CompressedTexture2D_6vpda")
+texture_focused = ExtResource("5_u2xjk")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Control3" type="Control" parent="HBoxContainer"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]
+[connection signal="focus_exited" from="." to="." method="_on_focus_exited"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="pressed" from="HBoxContainer/DeleteButton" to="." method="_on_delete_button_pressed"]

@@ -25,6 +25,7 @@ signal disable_buttons
 signal enable_buttons
 signal swap_bg_signal
 signal new_item_signal(item)
+signal steam_achievement(ach_name)
 
 
 func _ready():

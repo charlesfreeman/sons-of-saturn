@@ -28,7 +28,6 @@ extends TextureRect
 @export var rotation_char = 0
 
 @export var song = "None"
-@export var soundscape = "None"
 
 # change this to "Wet" to change to wet footsteps
 # will likely add more options later
@@ -44,6 +43,8 @@ extends TextureRect
 # to transition after having entered new PoV
 @export var new_scene_on_ready = false
 @export var new_scene = "None" # (String, FILE)
+@export var wiggly_mode = false
+@export var remove_jasper = false
 
 @onready var area = $ClickToEnter
 @onready var bg = self.texture
@@ -59,6 +60,7 @@ signal disable_buttons
 signal enable_buttons
 signal swap_bg_signal
 signal new_item_signal(item)
+signal steam_achievement(ach_name)
 
 func _ready():
 	Global.set_cursor("null")
@@ -66,7 +68,8 @@ func _ready():
 	# only if the prog flag for this PoV has not yet been flipped.  If it has it isn't loaded. 
 	if new_scene_on_ready and not Global.get_prog_flag(prog_flag):
 		Global.flip_prog_flag(prog_flag)
-		await get_tree().create_timer(1.0).timeout
+		# todo consider reinstating this (leads to bug)
+#		await get_tree().create_timer(1.0).timeout
 		var options = SceneManager.create_options()
 		var general_options = SceneManager.create_general_options()
 		SceneManager.change_scene(new_scene, options, options, general_options)
@@ -82,6 +85,7 @@ func _ready():
 		node.connect("disable_buttons", Callable(self, "_disable_buttons"))
 		node.connect("enable_buttons", Callable(self, "_enable_buttons"))
 		node.connect("swap_bg_signal", Callable(self, "_swap_bg_signal"))
+		node.connect("steam_achievement", Callable(self, "_steam_achievement"))
 	for node in get_tree().get_nodes_in_group("desc_popups"):
 		node.connect("new_item_signal", Callable(self, "_new_item"))
 
@@ -117,3 +121,7 @@ func _swap_bg_signal():
 	
 func _new_item(item):
 	emit_signal("new_item_signal", item)
+
+func _steam_achievement(ach_name):
+	print("emitting steam ach, PoV.gd")
+	emit_signal("steam_achievement", ach_name)

@@ -23,6 +23,9 @@ var map_paths = {
 	"courtyard" : "res://roaming_pov/maps/courtyard_map.png",
 	"top_floor" : "res://roaming_pov/maps/top_floor_map.png",
 	"rooftop" : "res://roaming_pov/maps/rooftop_map.png",
+	"basement" : "res://roaming_pov/maps/basement_map.png",
+	"sad_place_tunnel_map" : "res://roaming_pov/maps/wiggly_tunnel_map.png",
+	"sad_place_crib_map" : "res://roaming_pov/maps/wiggly_crib_map.png",
 }
 
 @onready var map = $HBoxContainer/VBoxContainer/MapHBox/MapBoundary/SubViewportContainer/SubViewport/TextureRect
@@ -33,6 +36,7 @@ var map_paths = {
 @onready var down_button = $HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/DownButton
 @onready var left_button = $HBoxContainer/VBoxContainer/HBoxContainer/GridContainer/LeftButton
 @onready var inventory = $HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer/Inventory
+@onready var inv1 = $HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer/Inventory/Inv1
 @onready var transition_screen = $HBoxContainer/TransitionScreen
 @onready var transition_screen_texture = $HBoxContainer/TransitionScreenTexture
 @onready var tile_footsteps = $HBoxContainer/TileFootsteps
@@ -44,6 +48,11 @@ var map_paths = {
 @onready var autosave = $Autosave
 @onready var save = $Save
 @onready var hbox = $HBoxContainer
+@onready var amelie = $HBoxContainer/VBoxContainer/PartyContainer/Amelie
+@onready var saveload = $SaveLoad
+@onready var load_game_option = $SaveLoad/LoadGameOption
+@onready var delete_game_option = $SaveLoad/DeleteGameOption
+@onready var steam_achievement = $SteamAchievement
 @onready var footstep_types = {
 	"Tile" : tile_footsteps,
 	"Wet" : wet_footsteps,
@@ -56,7 +65,7 @@ func _ready():
 	_load_PoV_instance()
 	
 	Global.set_scene_type("roaming_pov")
-	Global.save_game()
+	Global.autosave()
 	autosave.save()
 	
 
@@ -74,12 +83,21 @@ func _input(event):
 		if not left_button.disabled:
 			_on_LeftButton_pressed()
 	elif Input.is_action_pressed("ui_cancel"):
-		if not esc_opts.visible and not options_menu.visible:
+		if load_game_option.visible:
+			load_game_option.visible = false
+			saveload.enable_savegames()
+		elif delete_game_option.visible:
+			delete_game_option.visible = false
+			saveload.enable_savegames()
+		elif not esc_opts.visible and not options_menu.visible and not saveload.visible:
 			self._pause_game()
 		elif esc_opts.visible:
 			self._unpause_game()
 		elif options_menu.visible:
 			options_menu.visible = false
+			esc_opts.visible = true
+		elif saveload.visible:
+			saveload.visible = false
 			esc_opts.visible = true
 
 
@@ -146,6 +164,12 @@ func swap_texture():
 func _load_PoV_instance():
 	pov_scene = load(Global.get_location())
 	pov_instance = pov_scene.instantiate()
+	
+	if pov_instance.wiggly_mode:
+		self._hide_amelie()
+	if pov_instance.remove_jasper:
+		self._hide_jasper()
+	
 	if pov_instance.map != "None":
 		Global.set_region_enabled(pov_instance.map)
 		region_local = pov_instance.map
@@ -166,11 +190,13 @@ func _load_PoV_instance():
 	pov_instance.connect("enable_buttons", Callable(self, "_enable_buttons"))
 	pov_instance.connect("swap_bg_signal", Callable(self, "swap_texture"))
 	pov_instance.connect("new_item_signal", Callable(self, "_new_item"))
+	pov_instance.connect("steam_achievement", Callable(self, "_steam_achievement"))
 	set_pos_rot(pov_instance.position_char, pov_instance.rotation_char)
 
 
 func _on_TransitionScreen_transitioned():
 	remove_child(pov_instance)
+	pov_instance.queue_free()
 	_load_PoV_instance()
 
 
@@ -232,6 +258,10 @@ func _new_item(item):
 	inventory.add_item(item)
 	
 	
+func _steam_achievement(steam_ach: String):
+	steam_achievement.load_ach_display(steam_ach)
+	
+	
 func set_pos_rot(pos, rot):
 	char_rect.position.x = pos.x
 	char_rect.position.y = pos.y
@@ -245,8 +275,8 @@ func _on_Resume_pressed():
 	
 
 func _on_Save_pressed():
-	save.save()
-	Global.save_game()
+	esc_opts.visible = false
+	saveload.visible = true
 
 
 func _on_Exit_pressed():
@@ -262,4 +292,17 @@ func _on_options_pressed():
 
 func _on_exit_button_pressed():
 	options_menu.visible = false
+	esc_opts.visible = true
+
+
+func _hide_amelie():
+	amelie.visible = false
+	
+	
+func _hide_jasper():
+	inv1.clear_texture()
+
+
+func _on_saveload_exit_button_pressed():
+	saveload.visible = false
 	esc_opts.visible = true

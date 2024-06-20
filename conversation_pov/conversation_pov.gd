@@ -17,10 +17,12 @@ extends Control
 @export var prog_flag = "None"
 @export var song = "None"
 @export var new_item = "None"
+@export var new_item_2 = "None"
 @export var remove_item = "None"
 # if true, checks the value of prog_flag to see if played before.
 # you must set prog_flag to some value to use this
 @export var play_only_once = false
+@export var wiggly_mode = false
 
 @onready var avatar = $Convo/View/CanvasLayer/Avatar
 @onready var background = $Convo/View
@@ -32,6 +34,9 @@ extends Control
 @onready var options = $Options
 @onready var esc_opts_resume = $EscOpts/Node2D/Buttons/Resume
 @onready var save = $Save
+@onready var saveload = $SaveLoad
+@onready var load_game_option = $SaveLoad/LoadGameOption
+@onready var delete_game_option = $SaveLoad/DeleteGameOption
 @onready var current_bg_path = backgroundPath
 
 
@@ -41,6 +46,7 @@ var fade_tag
 
 # var to store Amelie's current emotion, since this is handled differently
 var amelie_emotion = "aneutral"
+var wiggly_emotion = "wneutral"
 
 # array to keep track of which tags already been emitted, so we might avoid
 # playing the same effects repeatedly
@@ -59,6 +65,18 @@ var amelie_profiles = {
 	"asad" : "res://conversation_pov/char_profiles/amelie/amelie_sad.png",
 	"ashocked" : "res://conversation_pov/char_profiles/amelie/amelie_shocked.png",
 	"auncertain" : "res://conversation_pov/char_profiles/amelie/amelie_uncertain.png",
+}
+
+var wiggly_tag_profiles = {
+	"whalf_smile" : "res://conversation_pov/char_profiles/wiggly/wiggly_half_smile.png",
+	"wlaughing" : "res://conversation_pov/char_profiles/wiggly/wiggly_laughing.png",
+	"wlooking_to_side" : "res://conversation_pov/char_profiles/wiggly/wiggly_looking_to_side.png",
+	"wsad" : "res://conversation_pov/char_profiles/wiggly/wiggly_sad.png",
+	"wskeptical" : "res://conversation_pov/char_profiles/wiggly/wiggly_skeptical.png",
+	"wsurprised" : "res://conversation_pov/char_profiles/wiggly/wiggly_surprised.png",
+	"wwincing" : "res://conversation_pov/char_profiles/wiggly/wiggly_wincing.png",
+	"wthinking" : "res://conversation_pov/char_profiles/wiggly/wiggly_thinking.png",
+	"wneutral" : "res://conversation_pov/char_profiles/wiggly/wiggly_neutral.png",
 }
 
 var wiggly_profiles = {
@@ -105,6 +123,7 @@ var misc_profiles = {
 	"Leslie" : "res://conversation_pov/char_profiles/misc/leslie_in_mirror.png",
 	"Robert" : "res://conversation_pov/char_profiles/misc/robert_in_mirror.png",
 	"Frost" : "res://conversation_pov/char_profiles/misc/frost_profile.png",
+	"Giant Rat" : "res://conversation_pov/char_profiles/misc/giant_rat_profile.png"
 }
 
 # need to track state of subjects for changing profiles mid convo
@@ -118,6 +137,7 @@ func _ready():
 	Global.set_cursor("null")
 	Global.change_song(song)
 	Global.set_scene_type(get_tree().current_scene.name)
+	dialogue_sys.wiggly_mode = self.wiggly_mode
 	dialogue_sys.set_script_path(scriptPath)
 	dialogue_sys.set_next_scene_path(nextScenePath)
 	dialogue_sys.set_mem_to_add(new_party_mem)
@@ -129,18 +149,29 @@ func _ready():
 	change_background_sliver(sliverPath)
 	if new_item != "None":
 		Global.add_to_inv(new_item)
+	if new_item_2 != "None":
+		Global.add_to_inv(new_item_2)
 	if remove_item != "None":
 		Global.remove_from_inv(remove_item)
 
 
-func _input(event):
+func _input(_event):
 	if Input.is_action_pressed("ui_cancel"):
-		if not esc_opts.visible and not options.visible:
+		if load_game_option.visible:
+			load_game_option.visible = false
+			saveload.enable_savegames()
+		elif delete_game_option.visible:
+			delete_game_option.visible = false
+			saveload.enable_savegames()
+		elif not esc_opts.visible and not options.visible and not saveload.visible:
 			self._pause_game()
 		elif esc_opts.visible:
 			self._unpause_game()
 		elif options.visible:
 			options.visible = false
+			esc_opts.visible = true
+		elif saveload.visible:
+			saveload.visible = false
 			esc_opts.visible = true
 
 
@@ -174,6 +205,8 @@ func load_texture(character, emotion):
 	match character:
 		"Amelie":
 			avatar.texture = load(amelie_profiles[amelie_emotion])
+		"WigglyTag":
+			avatar.texture = load(wiggly_tag_profiles[wiggly_emotion])
 		"Wiggly":
 			avatar.texture = load(wiggly_profiles[emotion])
 		"Jasper":
@@ -234,6 +267,8 @@ func _on_dialogue_tag(tags):
 			# used immediately
 			elif tag in amelie_profiles.keys():
 				amelie_emotion = tag
+			elif tag in wiggly_tag_profiles.keys():
+				wiggly_emotion = tag
 				
 			elif tag == "add_wiggly":
 				self._add_subject("Wiggly")
@@ -241,6 +276,8 @@ func _on_dialogue_tag(tags):
 				self._add_subject("Julia")
 			elif tag == "add_dead_cat":
 				self._add_subject("Dead Cat")
+			elif tag == "add_giant_rat":
+				self._add_subject("Giant Rat")
 			elif tag == "remove_subject":
 				self._remove_subject()
 
@@ -248,10 +285,6 @@ func _on_dialogue_tag(tags):
 				Global.change_song(tag)
 			elif tag == "stop_song":
 				Global.stop_song()
-			elif tag in Global.soundscapes:
-				Global.change_soundscape(tag)
-			elif tag == "stop_soundscape":
-				Global.stop_soundscape()
 				
 			get_tree().call_group("convo_sound_effect", "check_tag", tag)
 
@@ -267,8 +300,9 @@ func _on_Resume_pressed():
 
 
 func _on_Save_pressed():
-	save.save()
-	Global.save_game()
+	# TODO replace use of save symbol
+	esc_opts.visible = false
+	saveload.visible = true
 
 
 func _on_Exit_pressed():
@@ -285,3 +319,8 @@ func _on_exit_button_pressed():
 func _on_options_pressed():
 	esc_opts.visible = false
 	options.visible = true
+
+
+func _on_saveload_exit_button_pressed():
+	saveload.visible = false
+	esc_opts.visible = true

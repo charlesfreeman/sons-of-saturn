@@ -5,9 +5,9 @@ func _ready():
 	self.value = Global.brightness
 
 
-func _on_value_changed(value):
-	Global.set_brightness(value)
-	GlobalWorldEnvironment.environment.adjustment_brightness = value
+func _on_value_changed(new_value):
+	Global.set_brightness(new_value)
+	GlobalWorldEnvironment.environment.adjustment_brightness = new_value
 
 
 func reset():

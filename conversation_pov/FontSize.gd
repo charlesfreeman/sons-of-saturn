@@ -7,8 +7,8 @@ func _ready():
 	self.grab_focus()
 
 
-func _on_value_changed(value):
-	Global.set_font_size(value)
+func _on_value_changed(new_value):
+	Global.set_font_size(new_value)
 	get_tree().call_group("SpokenLines", "set_font_size")
 	get_tree().call_group("lines_container", "set_separation")
 

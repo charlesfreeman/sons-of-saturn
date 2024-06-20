@@ -5,9 +5,9 @@ func _ready():
 	self.value = Global.contrast
 
 
-func _on_value_changed(value):
-	GlobalWorldEnvironment.environment.adjustment_contrast = value
-	Global.set_contrast(value)
+func _on_value_changed(new_value):
+	GlobalWorldEnvironment.environment.adjustment_contrast = new_value
+	Global.set_contrast(new_value)
 
 
 func reset():

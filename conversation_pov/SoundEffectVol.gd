@@ -6,8 +6,8 @@ func _ready():
 	self.value = Global.sound_effect_vol
 
 
-func _on_value_changed(value):
-	Global.set_sound_effect_vol(value)
+func _on_value_changed(new_value):
+	Global.set_sound_effect_vol(new_value)
 	get_tree().call_group("convo_sound_effect", "reduce_volume")
 
 

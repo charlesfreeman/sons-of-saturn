@@ -25,3 +25,12 @@ func _on_mouse_entered():
 
 func _on_mouse_exited():
 	self.release_focus()
+
+
+func disable():
+	self.mouse_filter = MOUSE_FILTER_IGNORE
+
+
+func enable():
+	self.mouse_filter = MOUSE_FILTER_PASS 
+	

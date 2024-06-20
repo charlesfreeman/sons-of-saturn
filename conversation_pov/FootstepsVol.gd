@@ -6,8 +6,8 @@ func _ready():
 	self.value = Global.footstep_vol
 
 
-func _on_value_changed(value):
-	Global.set_footstep_vol(value)
+func _on_value_changed(new_value):
+	Global.set_footstep_vol(new_value)
 
 
 func reset():
